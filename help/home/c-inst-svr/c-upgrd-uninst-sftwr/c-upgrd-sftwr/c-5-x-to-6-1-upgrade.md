@@ -180,8 +180,7 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
    >
    >例如，要啟動「簡體中文」，請建立命令行設定中傳遞的快捷方式。
    >
-   >
-   ```
+   >```
    >Insight.exe -zh-cn
    >```
    >
