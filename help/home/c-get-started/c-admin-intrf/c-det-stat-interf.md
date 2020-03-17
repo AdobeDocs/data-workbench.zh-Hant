@@ -5,7 +5,7 @@ title: 詳細狀態介面
 topic: Data workbench
 uuid: c4d375d9-431f-4b0a-ba15-b7a10501b2e2
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: fd3afa80250d5ae20b7758ba840fd4d436545cf2
 
 ---
 
@@ -69,7 +69,7 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;StageName&nbsp;13.0&nbsp;sec
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;.&nbsp;.
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Log&nbsp;Processing\ProfileName&nbsp;0.8&nbsp;sec
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;StageName&nbsp;0.8&nbsp;sec</code> </p> <p>完成查詢所需的時間通常與所有維度的總大小成比例。 在檢視每個維度的大小後，您可以評估特定維度是否足夠有用，並且通常足以證明維度的效能成本合理。 否則，可以在「配置檔案管理器」中刪除 <span class="wintitle"> 維</span>。 請參閱<a href="../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-prof-mgr.md"> 「描述檔管理員</a>」。 </p> <p>元素名稱清單過大（即超過128 MB）的維度，即使總位址空間使用量未接近限制，仍可能導致「記憶體不足」錯誤。 </p> <p>此外，如果您使用資料工作台伺服器叢集，但未使用集中式標準化，則元素名稱清單較大的維度會對傳送記憶體預算產生重大影響。 如需集中式標準化的詳細資訊，請參閱資料 <i>集設定指南</i>。 如果儲存所有組合的元素名稱清單所需的記憶體量超過群集中所有伺服器的100 MB，則即使查詢活動很輕，您也可能會收到「超出發送記憶體預算」錯誤。 例如，如果您的四伺服器叢集在每個伺服器上有超過25 MB的儲存元素名稱清單，您可能會收到錯誤。 </p> </td> 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;StageName&nbsp;0.8&nbsp;sec</code> </p> <p>完成查詢所需的時間通常與所有維度的總大小成比例。 在檢視每個維度的大小後，您可以評估特定維度是否足夠有用，並且通常足以證明維度的效能成本合理。 否則，可以在「配置檔案管理器」中刪除 <span class="wintitle"> 維</span>。<p>元素名稱清單過大（即超過128 MB）的維度，即使總位址空間使用量未接近限制，仍可能導致「記憶體不足」錯誤。 </p> <p>此外，如果您使用資料工作台伺服器叢集，但未使用集中式標準化，則元素名稱清單較大的維度會對傳送記憶體預算產生重大影響。 如需集中式標準化的詳細資訊，請參閱資料 <i>集設定指南</i>。 如果儲存所有組合的元素名稱清單所需的記憶體量超過群集中所有伺服器的100 MB，則即使查詢活動很輕，您也可能會收到「超出發送記憶體預算」錯誤。 例如，如果您的四伺服器叢集在每個伺服器上有超過25 MB的儲存元素名稱清單，您可能會收到錯誤。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>監視日誌處理和轉換所花費的時間 </p> </td> 
