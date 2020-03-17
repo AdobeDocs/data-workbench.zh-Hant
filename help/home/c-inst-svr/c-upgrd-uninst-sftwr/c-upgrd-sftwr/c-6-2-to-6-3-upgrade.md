@@ -3,7 +3,7 @@ description: 升級Data Workbench 6.3的伺服器元件。
 title: DWB Server升級版6.2至6.3
 uuid: e12b6cc1-070e-4bc7-bc64-203d11cfeae9
 translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+source-git-commit: 79d5a2f44ade88f25f7621a4738d14c43777fc9f
 
 ---
 
@@ -22,26 +22,27 @@ source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
    1. 在「工作站配置」 **[!UICONTROL Proxy Password]** 部分中將 [!DNL string"] 「」的數 [!DNL EncryptedString]據類型從 ** 「」更改。
 
       ```
-      Proxy User Name = string: 
-      Proxy Password = EncryptedString:   ( 
-      
-<i>從Proxy密碼=字串</i>)使用位址檔案=bool:true」
+        Proxy User Name = string: 
+        Proxy Password = EncryptedString:   ( 
+        from Proxy Password = String) 
+        Use Address File = bool: true
+      ```
 
-    1.添加新條目以啟用新的名稱值對轉換：*BuildNameValuePair*和*ExtractNameValuePairs*。
-    
-    開啟工作區，然後以滑鼠右鍵按一下**管理員** > **描述檔管理員**。
-    
-    在**Context**下，按一下**Base**欄中的**meta.cfg**檔案，然後按一下**Make Local**。 在「用戶」表列中，按一下右鍵並選擇「工作站**中的**開啟** > **」。
-    
-    ![](assets/meta_cfg.png)
-    
-    *在新視窗中，按一下**metadata**並新增可接受的子範本。
-    
-    ![](assets/meta_cfg_child.png)
-    
-    *開啟**transformation**並新增範本。
-    
-    ![](assets/meta_cfg_template.png)
+   1. 添加新條目以啟用新的名稱值對轉換： *BuildNameValuePair* 和 *ExtractNameValuePairs*。
+
+      開啟工作區，然後以滑鼠右鍵按一 **下「管理** >描 **述檔管理員**」。
+
+      在「 **Base**」( **Base)欄中，按一下** meta.cfg **檔案，然後按一下「** Make Local Context **」(製作本機上**&#x200B;下文)。 從「用戶」表列中，按一下右鍵並選擇「在工 **作站中** 」 **>「開啟」**。
+
+      ![](assets/meta_cfg.png)
+
+      * 在新視窗中，按一下中繼資 **料** ，並新增可接受的子範本。
+
+         ![](assets/meta_cfg_child.png)
+
+      * 開啟 **轉換** ，並新增範本。
+
+         ![](assets/meta_cfg_template.png)
 
 * **更新快速合併改良功能**。 在轉換期間，將參數或變更值新增至下列設定檔案，以運用資料工作台中的速度改進功能。
 
