@@ -5,7 +5,7 @@ title: 安裝資料工作台地理位置
 topic: Data workbench
 uuid: 2c3d2e4a-97a7-4afc-b72d-c012db77e535
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: fd3afa80250d5ae20b7758ba840fd4d436545cf2
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
 
 若要完成這些步驟，您必須擁有資料工作台伺服器上檔案的存取權。
 
-如果您訂閱了其中一個可選的資料服務，您也必須安裝資料服務設定檔及其查閱檔案。 如需這些服務的詳細資訊，請參 [閱使用資料服務](../../../home/c-geo-oview/c-wk-data-svcs/c-wk-data-svcs.md)。
+如果您訂閱了其中一個可選的資料服務，您也必須安裝資料服務設定檔及其查閱檔案。
 
 有關安裝、配置和操作資料工作台的系統需求的資訊，請 [!DNL Geography]參閱最低系 *統需求文檔* 。
 
