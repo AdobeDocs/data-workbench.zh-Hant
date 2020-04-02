@@ -5,7 +5,7 @@ title: 追蹤Flash豐富式媒體內容中的訪客活動
 topic: Data workbench
 uuid: fe2e75eb-0897-4f63-b582-b4f1fdce02a1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 48892b1b4fc9e9fdeacee8ca318025f43f2d0064
 
 ---
 
@@ -30,7 +30,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    ```
 
 1. 建立名為的空白檔 [!DNL flashtag.txt] 案，並將檔案置於您的網頁伺服器上。
-1. 在步驟1中的函式中，用檔案位置的完全限定或相對路徑替換[!DNL [PATH_TO_WEB_SERVER]]佔位符 [!DNL flashtag.txt] 。 例如：
+1. 在步驟1的函式中，以檔案位置的完全限定或相對路徑取代\[[!DNL PATH_TO_WEB_SERVER]\]預留位置 [!DNL flashtag.txt] 。 例如：
 
    ```
    var FLASHTAGURI = http://www.mysite.com/flashtag/flashtag.txt”;
@@ -44,7 +44,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    此範例說明on(release)事件的使用；但是，標籤()函式可能會透過您想要追蹤的任何事件來參考，例如on(press)、on(rollover)、on(roullop)或on(keypress)事件。
 
-   [!DNL [PUT_PAGE_NAME_HERE]]佔位符應替換為表示要跟蹤的頁面或事件的名稱的字串。 [!DNL [PUT_PAGE_NAME_HERE]]變數可手動修改，也可通過變數引用修改，以表示應用程式中頁面或事件的唯一 [!DNL Flash] 名稱。 取代[!DNL [PUT_PAGE_NAME_HERE]]佔位符的值可由簡單名稱組成，也可以構造為表示與完整URI類似的層次結構。 例如：
+   應以字串取代\[[!DNL PUT_PAGE_NAME_HERE]\]預留位置，該字串代表您所追蹤之頁面或事件的名稱。 您可以手動修改\[[!DNL PUT_PAGE_NAME_HERE]\]變數，或透過變數參考來表示應用程式中頁面或事件的唯一名 [!DNL Flash] 稱。 取代\[[!DNL PUT_PAGE_NAME_HERE]\]預留位置的值可能由簡單名稱組成，或可能結構化為表示與完整URI類似的階層結構。 例如：
 
    ```
    on(release) {tag(“/about_us/index.swf","[PUT_ADDITIONAL_VAR_HERE]");}
@@ -52,13 +52,13 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    Adobe建議您在程式碼部署之前，先編譯頁面名稱和事件名稱的書面規格，以便協調業務需求和開發工作，並降低額外開發週期的可能性。
 
-1. 視需要，可收集其他變數，並與影片中的頁面或事件建立關 [!DNL Flash] 聯。 要執行此操作，請用一組名稱=值對替換[!DNL [PUT_ADDITIONAL_VAR_HERE]]佔位符，這些對由&amp;符號(&amp;)分隔。 例如：
+1. 視需要，可收集其他變數，並與影片中的頁面或事件建立關 [!DNL Flash] 聯。 若要這麼做，請將\[[!DNL PUT_ADDITIONAL_VAR_HERE]\]預留位置取代為一組名稱=值配對，並以&amp;符號(&amp;)分隔。 例如：
 
    ```
    on(release) {tag(“/about_us/index.swf"," var1=value1&var2=value2");}
    ```
 
-   可手動或透過變數參考修改變數，以表示要收集的其他屬性以及與頁面或事件相關聯。 如果沒有可收集的其他變數，請刪除[!DNL [PUT_ADDITIONAL_VAR_HERE]]。
+   可手動或透過變數參考修改變數，以表示要收集的其他屬性以及與頁面或事件相關聯。 如果沒有可收集的其他變數，請移除\[[!DNL PUT_ADDITIONAL_VAR_HERE]\]。
 
    您在豐富式媒體內容中的訪 [!DNL Flash] 客追蹤設定現已完成。 調用事件時，將調用標 [!DNL (PAGENAME,VARIABLES)] 記函式，導致對以下檔案發出HTTP請求。 除了可能觸發的其他函式（如影片中所定義）外，還會呼叫此函 [!DNL Flash] 數：
 
@@ -73,7 +73,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   <tr> 
    <th colname="col1" class="entry"> W3C名稱 </th> 
    <th colname="col2" class="entry"> 收集的資料 </th> 
-   <th colname="col3" class="entry"> 解釋 </th> 
+   <th colname="col3" class="entry"> 說明 </th> 
    <th colname="col4" class="entry"> 範例 </th> 
   </tr> 
  </thead>
@@ -122,7 +122,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> cs(referrer) </td> 
-   <td colname="col2"> 反向連結 URL </td> 
+   <td colname="col2"> 反向連結URL </td> 
    <td colname="col3"> 用戶端傳送的HTTP反向連結欄位內容 </td> 
    <td colname="col4"></td> 
   </tr> 
