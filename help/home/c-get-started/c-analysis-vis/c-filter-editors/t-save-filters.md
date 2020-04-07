@@ -5,7 +5,7 @@ title: 儲存和載入篩選
 topic: Data workbench
 uuid: 5312b9c4-0193-4d45-af54-e8f6d2706bf2
 translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+source-git-commit: 3e8f2c01b913afb25fe5f6bde1c7ec5145059266
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
 
 儲存和載入篩選器的步驟。
 
-1. 以滑鼠右鍵按一下篩選器的名稱( **或[!UICONCONTROL[noname]]** （如果篩選器是新的），然後按一下 **[!UICONTROL Save Filter]**。
+1. 以滑鼠右鍵按一下篩選器的名稱(如果 **是新篩選器[!UICONTROL noname]\** )，然後按一下 **[!UICONTROL Save Filter]**。
 1. 在標籤中輸入所要的篩選器名 **[!UICONTROL Save As]** 稱。
 
    ![步驟資訊](assets/vis_FilterEditor_SaveFilter.png)
