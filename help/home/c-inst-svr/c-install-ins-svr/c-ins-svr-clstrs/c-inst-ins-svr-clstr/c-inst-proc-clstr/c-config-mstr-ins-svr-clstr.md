@@ -4,7 +4,7 @@ solution: Insight
 title: 為群集配置Master Insight Server
 uuid: c3ac38e3-79c5-4863-9156-194589a6bcbd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
 
 ---
 
@@ -64,7 +64,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
       ![](assets/cfg_cluster_AddressDefinition1IP.png)
 
-1. 如果伺服器連接到多個網路，請重複步驟6，將這些網路的處 [!DNL Insight Servers] 理添加到網路位置。
+1. 如果伺服器連接到多個網路，請重複步驟6，將這些網路的 [!DNL Insight Servers] 處理添加到網路位置。
 
    以下示例顯示了一個四個連接到 [!DNL Insight Servers] 兩個網路（「公司內部網」和「Internet」）的群集。
 
@@ -78,7 +78,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 ## 更新群集的訪問控制檔案 {#section-fce1367d92a445168c35e9ca506e7d6b}
 
-要在群 [!DNL Insight Servers] 集中使用，群集中的每 [!DNL Insight Server] 個群集(包括主 [!DNL Insight Server]伺服器)必須屬於群集伺服器訪問控制組。 群集伺服器組標識允許參與群集的伺服器（按IP地址）。 雖然此檔案在主機上維護和管 [!DNL Insight Server]理，但群集中的所有成員 [!DNL Insight Servers] 都使用該檔案。
+要在群 [!DNL Insight Servers] 集中使用，群集中的每 [!DNL Insight Server] 個群集(包括主 [!DNL Insight Server]伺服器)必須屬於群集伺服器訪問控制組。 群集伺服器組標識允許參與群集的伺服器（按IP地址）。 雖然此檔案在主機上進行維護和管 [!DNL Insight Server]理，但群集中的所有成員 [!DNL Insight Servers] 都使用該檔案。
 
 **要編輯訪問控制檔案**
 
@@ -137,7 +137,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 1. 展開元件結構。
 1. 在群集主伺服器地址參數中，指定主伺服器（主伺服器）的IP地址 **[!UICONTROL Insight Server]**。
 
-   ![](assets/cfg_cluster_SyncFile_(CentralCopy).png)
+   ![](assets/cfg_cluster_SyncFile_CentralCopy.png)
 
    要建立記錄主日誌和處理之間每次進 [!DNL Insight Server] 行同步的日 [!DNL Insight Servers]志，請確保「啟用同步日誌」參數設定為「true」。
 
