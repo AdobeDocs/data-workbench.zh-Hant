@@ -3,7 +3,7 @@ description: 「資料工作台」提供安裝工作站（用戶端）應用程�
 title: 工作站設定嚮導
 uuid: e2bf6606-e7ba-439f-b50c-118706ab5b7d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
 
 ---
 
@@ -52,7 +52,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
       >
       >一開始 ****** 將會安裝不含伺服器詳細資訊的一般Insight.cfg檔案。 建議您使用新安裝的 ***Insight.cfg*** 檔案並加以自訂，而非從先前的安裝移動檔案。 由於安裝工作站的路徑已經更改，因此建議添加字型、刪除 *User資料夾*，以及刪除*TraceFileComponent *。
 
-1. （可選）選擇**自訂**以選擇語言套件以及程式和資料檔案的位置。
+1. （可選）選 **擇「自定** 」以選擇語言包以及程式和資料檔案的位置。
 1. 在「開始」菜 **單中選擇快捷方式的位置**。
 
    ![](assets/6_4_workstation_wizard_folder.png)
