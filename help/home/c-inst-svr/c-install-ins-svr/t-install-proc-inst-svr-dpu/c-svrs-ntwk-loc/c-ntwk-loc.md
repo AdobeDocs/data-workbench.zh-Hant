@@ -1,17 +1,17 @@
 ---
-description: 從概念上講，地址檔案與聯網電腦上的ETC\HOSTS檔案有相同的用途。
+description: 從概念上講，地址檔案與聯網電腦上的ETC&bsol;HOSTS檔案有相同的用途。
 solution: Insight
 title: 網路位置
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
 translation-type: tm+mt
-source-git-commit: f6ec885266de6b6d99615d73fad2a1c22897424b
+source-git-commit: e8612fab1c13ca5262816dde7deaa6fd8bedbc62
 
 ---
 
 
 # 網路位置{#network-locations}
 
-從概念上講，地址檔案與聯網電腦上的ETC\HOSTS檔案有相同的用途。
+從概念上講，地址檔案與聯網電腦上的ETC&amp;bsol;HOSTS檔案有相同的用途。
 
 但是，與描述單個名稱集合的HOSTS檔案不同，地址檔案包含多個名稱集合，稱為網路位置。
 
