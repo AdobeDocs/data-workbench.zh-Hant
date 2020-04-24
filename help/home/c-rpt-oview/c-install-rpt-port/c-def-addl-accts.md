@@ -5,12 +5,12 @@ title: 定義附加帳戶
 topic: Data workbench
 uuid: 5ad98b52-267c-4c36-b43a-ae6ad415de8e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: e4f2c653c00c21180b14bf67cc116d832bddd028
 
 ---
 
 
-# 定義附加帳戶{#define-additional-accounts}
+# 定義附加帳戶
 
 使用者必須擁有有效的帳戶，並在存取報表入口網站時提供帳戶名稱和密碼。
 
