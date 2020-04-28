@@ -4,7 +4,7 @@ product: analytics
 audience: end-user
 user-guide-title: 資料工作台說明
 translation-type: tm+mt
-source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
+source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
 
 ---
 
@@ -14,6 +14,7 @@ source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
 + [資料工作台說明](home/home.md)
 + 發行說明 {#release-notes}
    + [發行說明概觀](home/c-release-notes-insight/release-notes.md)
+   + [資料工作台6.74發行說明](home/c-release-notes-insight/dwb-6-74-release-notes.md)
    + [資料工作台6.73發行說明](home/c-release-notes-insight/dwb-6-73-release-notes.md)
    + [資料工作台6.72發行說明](home/c-release-notes-insight/dwb-6-72-release-notes.md)
    + [資料工作台6.7發行說明](home/c-release-notes-insight/dwb-6-7-release-notes.md)
@@ -30,7 +31,7 @@ source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
    + [資料工作台6.2發行說明](home/c-release-notes-insight/c-release-notes-insight-62/c-release-notes-insight-62.md)
    + [Data Workbench 6.11 更新](home/c-release-notes-insight/c-6-1-1.md)
    + [2014年4月MR的資料饋送更新](home/c-release-notes-insight/c-release-notes-insight-mr41714.md)
-   + [資料工作台6.1發行說明](home/c-release-notes-insight/c-release-notes-insight-61/c-release-notes-insight-61.md)
+   + [資料工作台6.2發行說明](home/c-release-notes-insight/c-release-notes-insight-61/c-release-notes-insight-61.md)
    + [資料工作台6.0和6.0.4發行說明](home/c-release-notes-insight/c-release-notes-previous/c-release-notes-insight-600.md)
 + 安裝 {#install}
    + [工作站需求](home/c-install-insight/c-data-workbench-client-install.md)
