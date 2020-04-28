@@ -2,9 +2,9 @@
 cloud: experience-cloud
 product: analytics
 audience: end-user
-user-guide-title: Data Workbench Help
+user-guide-title: 資料工作台說明
 translation-type: tm+mt
-source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
+source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
    + [Data Workbench 6.31 更新](home/c-release-notes-insight/c-6-3-1.md)
    + [資料工作台6.3發行說明](home/c-release-notes-insight/c-6-3/c-6-3.md)
    + [Data Workbench 6.21 更新](home/c-release-notes-insight/c-6-2-1.md)
-   + [資料工作台6.1發行說明](home/c-release-notes-insight/c-release-notes-insight-62/c-release-notes-insight-62.md)
+   + [資料工作台6.2發行說明](home/c-release-notes-insight/c-release-notes-insight-62/c-release-notes-insight-62.md)
    + [Data Workbench 6.11 更新](home/c-release-notes-insight/c-6-1-1.md)
    + [2014年4月MR的資料饋送更新](home/c-release-notes-insight/c-release-notes-insight-mr41714.md)
    + [資料工作台6.1發行說明](home/c-release-notes-insight/c-release-notes-insight-61/c-release-notes-insight-61.md)
@@ -160,7 +160,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
          + [儲存和載入篩選](home/c-get-started/c-analysis-vis/c-filter-editors/t-save-filters.md)
          + [手動編輯篩選器檔案](home/c-get-started/c-analysis-vis/c-filter-editors/c-edit-filter-files.md)
          + [將篩選套用至工作區](home/c-get-started/c-analysis-vis/c-filter-editors/c-app-filters-wksps.md)
-      + 漏斗視覺化 {#funnel-visualization}
+      + 漏斗視覺效果 {#funnel-visualization}
          + [漏斗視覺化概觀](home/c-get-started/c-analysis-vis/c-funnel-visualization/c-funnel-visualization.md)
          + [漏斗功能](home/c-get-started/c-analysis-vis/c-funnel-visualization/c-funnel-visualization-features.md)
          + [建立漏斗](home/c-get-started/c-analysis-vis/c-funnel-visualization/c-funnel-visualization-steps.md)
@@ -358,6 +358,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
 + Dataset configuration {#dataset}
    + [瞭解資料集建構](home/c-dataset-const-proc/c-dataset-constr.md)
    + [瞭解資料集設定](home/c-dataset-const-proc/c-dataset-config.md)
+   + [GDPR的資料工作台支援](home/c-dataset-const-proc/dwb-gdpr.md)
    + 日誌處理配置檔案 {#log-proc-config-file}
       + [關於日誌處理配置檔案](home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)
       + [編輯日誌處理配置檔案](home/c-dataset-const-proc/c-log-proc-config-file/t-edit-log-proc-config-file.md)
