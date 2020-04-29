@@ -2,7 +2,7 @@
 description: 資料工作台6.74的新功能。
 title: 資料工作台6.74發行說明
 translation-type: tm+mt
-source-git-commit: 9552a2f9fe4e450b1e212b38a09f77252a009419
+source-git-commit: 82d91013a9b225d5a0d4becb7e3ed3f42ec16aff
 
 ---
 
