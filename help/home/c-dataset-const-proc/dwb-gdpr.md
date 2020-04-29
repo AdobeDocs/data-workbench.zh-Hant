@@ -4,7 +4,7 @@ solution: Analytics
 title: GDPR的資料工作台支援
 topic: Data workbench
 translation-type: tm+mt
-source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
+source-git-commit: 4002d01c4c9aaa7d8833415aba3fa5105cb7ac1f
 
 ---
 
@@ -21,7 +21,7 @@ GDPR規則可識別負責GDPR實施的不同方的角色和義務(請參 [閱GDP
 * Adobe是資料處 **理者** ，根據您與Adobe的合約，提供實施GDPR要求的軟體和服務。
 * 資料工作台與GDPR服務整合後，根據GDPR標準，造訪網站(資料主體 ****)的訪客可以行使資料處理者Adobe「忘記的權利」。 若要完成遺忘權，您身為資料掌控者，可從UI或API將受挑戰的訪客ID上傳至Adobe。 如需詳細 [資訊，請參閱Adobe Analytics GDPR Workflow](https://docs.adobe.com/help/en/analytics/admin/data-governance/an-gdpr-workflow.html) (Adobe Analytics GDPR Workflow [)檔案，包](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html) 括提交存取和刪除請求。
 
->[!Note]
+>[!NOTE]
 >
 >對於其他資料來源，您的組織將負責清除其他記錄來源（例如CRM、POS、IVR和其他原始資料來源）中有問題的訪客ID。 自訂範圍的服務套件將可提供支援，以針對每個資 _料來源或其他自訂選項提供完整_ 、取代的檔案集。
 
