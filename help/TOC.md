@@ -4,7 +4,7 @@ product: analytics
 audience: end-user
 user-guide-title: 資料工作台說明
 translation-type: tm+mt
-source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
+source-git-commit: 6098c4fcb14d7fd2444832aaaf0f5b7cc1811dac
 
 ---
 
@@ -31,7 +31,7 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
    + [資料工作台6.2發行說明](home/c-release-notes-insight/c-release-notes-insight-62/c-release-notes-insight-62.md)
    + [Data Workbench 6.11 更新](home/c-release-notes-insight/c-6-1-1.md)
    + [2014年4月MR的資料饋送更新](home/c-release-notes-insight/c-release-notes-insight-mr41714.md)
-   + [資料工作台6.2發行說明](home/c-release-notes-insight/c-release-notes-insight-61/c-release-notes-insight-61.md)
+   + [資料工作台6.1發行說明](home/c-release-notes-insight/c-release-notes-insight-61/c-release-notes-insight-61.md)
    + [資料工作台6.0和6.0.4發行說明](home/c-release-notes-insight/c-release-notes-previous/c-release-notes-insight-600.md)
 + 安裝 {#install}
    + [工作站需求](home/c-install-insight/c-data-workbench-client-install.md)
@@ -49,8 +49,8 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
       + [升級資料工作台概觀](home/c-install-insight/c-upgrd-ins/c-upgrd-ins.md)
       + [將6.4升級至6.5](home/c-install-insight/c-upgrd-ins/c-6-4-to-6-5-upgrade.md)
       + [將6.3升級至6.4](home/c-install-insight/c-upgrd-ins/c-6-3-to-6-4-upgrade.md)
-      + [DWB伺服器升級：6.2至6.3](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
-      + [DWB伺服器升級：6.1至6.2](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-1-to-6-2-upgrade.md)
+      + [DWB伺服器升級： 6.2至6.3](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
+      + [DWB伺服器升級： 6.1至6.2](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-1-to-6-2-upgrade.md)
       + [資料工作台6.0至6.1升級](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-6-0-to-6-1-upgrade.md)
       + [資料工作台5.5至6.1升級](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md)
 + 客戶 {#client}
@@ -760,14 +760,14 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
       + [升級和解除安裝Adobe軟體](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-uninst-sftwr.md)
       + 升級Insight Server {#upgrade-insight-server}
          + [升級Insight Server](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-sftwr.md)
-         + [DWB伺服器升級：6.2至6.3](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
-         + [DWB伺服器升級：6.1至6.2](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-1-to-6-2-upgrade.md)
+         + [DWB伺服器升級： 6.2至6.3](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
+         + [DWB伺服器升級： 6.1至6.2](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-1-to-6-2-upgrade.md)
          + 資料工作台6.0至6.1升級 {#upgrade-6-0-to-6-1}
             + [資料工作台6.0至6.1升級](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-6-0-to-6-1-upgrade.md)
             + [安裝輸入法編輯器](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-localized-ime.md)
             + [DeviceAtlas散發](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md)
          + [資料工作台5.5至6.1升級](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md)
-         + [DWB伺服器升級：5.4至5.5](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/t-upgrd-to-5.5.md)
+         + [DWB伺服器升級： 5.4至5.5](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/t-upgrd-to-5.5.md)
          + [升級轉換](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/t-upgrd-trfm.md)
          + [升級中繼器](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-rptr.md)
       + [卸載軟體](home/c-inst-svr/c-upgrd-uninst-sftwr/c-uninstl-sftwr.md)
@@ -966,6 +966,6 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
       + [新架構的配置更改](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
       + [派生維設定](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
 + [查詢 API](https://www.adobe.io/)
-+ [資料工作台與Analytics資料饋送](https://marketing.adobe.com/resources/help/en_US/insight/insight_sc_implementation.pdf)
++ [資料工作台與Analytics資料饋送](home/assets/insight_sc_implementation.pdf)
 + [資料工作台與Adobe Target整合](home/dwb-adobe-target.md)
 + [資料工作台辭彙表](dwb-glossary.md)
