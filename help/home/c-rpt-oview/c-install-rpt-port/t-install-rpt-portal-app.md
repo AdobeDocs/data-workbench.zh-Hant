@@ -2,10 +2,9 @@
 description: 報表入口網站由一組應用程式伺服器頁面(ASP)和支援檔案組成。
 solution: Analytics
 title: 安裝報告入口應用程式檔案
-topic: Data workbench
 uuid: 483a7401-1bb4-4a71-b8c7-e70ff1b129e7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 7521fe7f5fabe8e1be26e140ffff577a42fce88b
 
 ---
 
