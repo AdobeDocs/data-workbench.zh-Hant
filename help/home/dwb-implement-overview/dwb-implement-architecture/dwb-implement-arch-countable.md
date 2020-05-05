@@ -3,7 +3,7 @@ description: 資料工作台(DWB)中用於設計和實施方案的可計數表�
 title: 架構設計可計數結構
 uuid: 2530980d-1c6b-4a96-b9c1-431fc75678bb
 translation-type: tm+mt
-source-git-commit: 6443bdf8856ba51252685fa0c1ed65f831142956
+source-git-commit: 8b0e9c8855a7c7228393dfab4bf78645f1953794
 
 ---
 
@@ -33,7 +33,7 @@ source-git-commit: 6443bdf8856ba51252685fa0c1ed65f831142956
   <tr> 
    <th colname="col1" class="entry"> 參數 </th> 
    <th colname="col2" class="entry"> 說明 </th> 
-   <th colname="col3" class="entry"> 預設值 </th> 
+   <th colname="col3" class="entry"> 預設 </th> 
   </tr>
  </thead>
  <tbody> 
@@ -66,7 +66,7 @@ source-git-commit: 6443bdf8856ba51252685fa0c1ed65f831142956
   </tr> 
   <tr> 
    <td colname="col1"> 父代 </td> 
-   <td colname="col2"> <p> 父維的名稱。 任何可計數的維度都可以是父項維度。 若要讓維度成為資料集結構中的頂層維度，請將參數設為"root"。 定義的維度會成為資料集的根可計數維度。 例如，如果您使用網站，「訪客」維度是您資料集的根可計數維度。 </p> <p>注意：雖然您的根可計數維度不必與資料中的追蹤ID相關聯，但Adobe建議您設定資料集的根可計數維度，以使用追蹤ID欄位(x-trackingid)作為其索引鍵。 因此，根可計數的每個元素都與x-trackingid的唯一值相關聯，而每個元素的所有資料都會分組在一起。 如果您想要以不同方式設定資料集，請聯絡Adobe。 </p> </td> 
+   <td colname="col2"> <p> 父維的名稱。 任何可計數的維度都可以是父項維度。 若要讓維度成為資料集結構中的頂層維度，請將參數設為"root"。 定義的維度會成為資料集的根可計數維度。 例如，如果您使用網站，「訪客」維度是您資料集的根可計數維度。 </p> <p>注意： 雖然您的根可計數維度不必與資料中的追蹤ID相關聯，但Adobe建議您設定資料集的根可計數維度，以使用追蹤ID欄位(x-trackingid)作為其索引鍵。 因此，根可計數的每個元素都與x-trackingid的唯一值相關聯，而每個元素的所有資料都會分組在一起。 如果您想要以不同方式設定資料集，請聯絡Adobe。 </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
@@ -91,4 +91,4 @@ source-git-commit: 6443bdf8856ba51252685fa0c1ed65f831142956
 
    如果「可計數」不是頂層1，則在父欄位中提供「父可計數」的名稱。 在以下範例中，會建立「參與計數」，此計數的父代為「客戶」。 ![](assets/dwb_impl_arch_5.png)
 
-如需有關架構設計、可計數結構及離線資料饋送設定的資料工作台架構詳細資訊，請參閱資料集架構介面 [](https://docs.adobe.com/content/help/en/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html) 與維度與度量參考 [](../../assets/insight_sc_implementation.pdf)。
+如需有關架構設計、可計數結構及離線資料饋送設定之資料工作台架構的詳細資訊，請參閱資 [料集架構介面](https://docs.adobe.com/content/help/en/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html)。
