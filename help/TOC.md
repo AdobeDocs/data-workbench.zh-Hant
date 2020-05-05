@@ -4,7 +4,7 @@ product: analytics
 audience: end-user
 user-guide-title: 資料工作台說明
 translation-type: tm+mt
-source-git-commit: b3fb1e355cc42f96b2daaee9e58c22fa20a5a005
+source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
 
 ---
 
@@ -966,6 +966,5 @@ source-git-commit: b3fb1e355cc42f96b2daaee9e58c22fa20a5a005
       + [新架構的配置更改](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
       + [派生維設定](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
 + [查詢 API](https://www.adobe.io/)
-+ [資料工作台與Analytics資料饋送](home/assets/dwb-analytics-implementation.pdf)
 + [資料工作台與Adobe Target整合](home/dwb-adobe-target.md)
 + [資料工作台辭彙表](dwb-glossary.md)
