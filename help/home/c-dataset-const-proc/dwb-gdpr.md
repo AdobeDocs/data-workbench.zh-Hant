@@ -4,7 +4,10 @@ solution: Analytics
 title: GDPR的資料工作台支援
 topic: Data workbench
 translation-type: tm+mt
-source-git-commit: 4002d01c4c9aaa7d8833415aba3fa5105cb7ac1f
+source-git-commit: 279e71f3da3f0ebc29091e88b87666a22a36a8d6
+workflow-type: tm+mt
+source-wordcount: '525'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +26,7 @@ GDPR規則可識別負責GDPR實施的不同方的角色和義務(請參 [閱GDP
 
 >[!NOTE]
 >
->對於其他資料來源，您的組織將負責清除其他記錄來源（例如CRM、POS、IVR和其他原始資料來源）中有問題的訪客ID。 自訂範圍的服務套件將可提供支援，以針對每個資 _料來源或其他自訂選項提供完整_ 、取代的檔案集。
+>對於其他資料來源，您的組織將負責清除其他記錄來源（例如CRM、POS、IVR和其他原始資料來源）中有問題的訪客ID。 自訂範圍的服務套件將可為組織提供支援， _為每個資料來源提供完整的檔案取代集_ ，而持續的服務保留者需要支援或維護這些檔案。
 
 ## 升級DWB以實作GDPR
 
@@ -31,7 +34,7 @@ Consulting將就適當的服務套件提供建議，以符合法規。 如需詳
 
 如果需要：
 
-* [升級至最新版](https://docs.adobe.com/content/help/en/data-workbench/using/release-notes/release-notes.html) 「資料工作台」。 DWB 6.7版中新增了GDPR整合所需的全新憑證和安全性功能，以提供最高的安全性。
+* [升級至最新版](https://docs.adobe.com/content/help/zh-Hant/data-workbench/using/release-notes/release-notes.translate.html) 「資料工作台」。 DWB 6.7版中新增了GDPR整合所需的全新憑證和安全性功能，以提供最高的安全性。
 * 如果使用舊版TSV Analytics事件記錄，請升級至 [Avro資料饋送](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/log-proc-config-file/c-log-sources.html#section-9a824b4c3d5549e7952a7111232035b2)。
 * 如果將舊式UCP（統一客戶流程）與轉換一起使用以更新現有日誌，請升級到當前流程。 更新的程式會直接產生主查閱檔案，以對應不同來源的訪客ID。
 * 標準化資料流程以配合GDPR服務。
