@@ -5,7 +5,10 @@ title: 工作站需求
 topic: Data workbench
 uuid: 3c4ba2e8-efbc-45fe-8ac1-923d070bc710
 translation-type: tm+mt
-source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
+source-git-commit: 2930bd3ae06e700e75144221fc993efdd6bd1e85
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +32,7 @@ source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
    * **[!DNL InsightServer64.exe]**
    * **[!DNL ReportServer.exe]**
    * **[!DNL ExportIntegration.exe]**
-   這將允許這些介面執行檔的「白名單」權限。
+   這將為這些介面執行檔啟用允許清單權限。
 
 * **安裝Microsoft Excel以匯出分析資料。** 若要將工作區中的資料匯出為Microsoft Excel( [!DNL .xls] 或 [!DNL .xlsx])檔案，您安裝資料工作台的電腦必須已安裝並註冊Excel。 如果Excel尚未註冊，而「資料工作台」嘗試首次存取，Excel會顯示註冊對話方塊。 如果您不確定復本是否已註冊，請手動啟動Excel，如果出現註冊對話方塊，請完成註冊程式。
 
@@ -57,28 +60,28 @@ source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
 
 **解析度**
 
-* 必要：1024 x 768(XGA)
-* 建議：1920 x 1200(WUXGA)
+* 必要： 1024 x 768(XGA)
+* 建議： 1920 x 1200(WUXGA)
 
 **圖形適配器**
 
-* 必要：支援OpenGL 3.2的OpenGL硬體加速
-* 建議：專用視頻適配器（如NVIDIA或ATI適配器）
+* 必要： 支援OpenGL 3.2的OpenGL硬體加速
+* 建議： 專用視頻適配器（如NVIDIA或ATI適配器）
 
 **處理器**
 
-* 必要：1.2 GHz或更高的Intel或AMD
-* 建議：ICore 2 Duo-Class
+* 必要： 1.2 GHz或更高的Intel或AMD
+* 建議： ICore 2 Duo-Class
 
 **RAM**
 
-* 必要：2 GB
-* 建議：4 GB
+* 必要： 2 GB
+* 建議： 4 GB
 
 **連接性**
 
-* 必要：DPU的512 Kbps連結
-* 建議：2Mbps或更快的DPU連結
+* 必要： DPU的512 Kbps連結
+* 建議： 2Mbps或更快的DPU連結
 
 **檔案系統**
 
