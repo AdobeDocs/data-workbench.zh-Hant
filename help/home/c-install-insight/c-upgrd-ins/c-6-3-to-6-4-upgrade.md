@@ -3,7 +3,10 @@ description: 請依照下列步驟升級至Data Workbench v6.4。
 title: 將6.3升級至6.4
 uuid: 2461c1ab-cf99-4fb5-b431-d7062df7a53d
 translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+source-git-commit: 2930bd3ae06e700e75144221fc993efdd6bd1e85
+workflow-type: tm+mt
+source-wordcount: '426'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
    * **[!DNL InsightServer64.exe]**
    * **[!DNL ReportServer.exe]**
    * **[!DNL ExportIntegration.exe]**
-   這將允許這些介面執行檔的「白名單」權限。
+   這將為這些介面執行檔啟用允許清單權限。
 
 * **在伺服器&#x200B;*上更新Trust_ca_cert.pem*憑證**。
 * **重組歸因設定檔**。
