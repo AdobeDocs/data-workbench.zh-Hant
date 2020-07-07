@@ -4,7 +4,10 @@ solution: Insight
 title: 關於Insight Server叢集
 uuid: d65e0fe5-f87d-4d8e-a208-9192e9d62fb5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 2c1b2adfe8bf479c2a8cbd150ed006be2336022c
+workflow-type: tm+mt
+source-wordcount: '320'
+ht-degree: 0%
 
 ---
 
@@ -25,19 +28,17 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->PAServer.cfg **檔案** 。 如果您想要將Predictive Analytics叢集工作提交至Insight Server，則需要設定檔案，以處理 [!DNL PAServer.cfg] 伺服器端叢集提交。 自訂描述檔應繼承 [!DNL PAServer.cfg] Predictive Analytics描述檔( [!DNL Server\Profiles\Predictive Analytics\Dataset])。 在此檔 *案中設定Master Server* ，並將它 [!DNL PAServer.cfg] 儲存至實作網站。>
+>PAServer.cfg **檔案** 。 如果您想要將Predictive Analytics叢集工作提交至Insight Server，則需要設定檔案，以處理 [!DNL PAServer.cfg] 伺服器端叢集提交。 自訂描述檔應繼承 [!DNL PAServer.cfg] 自Predictive Analytics描述檔([!DNL Server\Profiles\Predictive Analytics\Dataset])。 在此檔 *案中設定Master Server* ，並將它 [!DNL PAServer.cfg] 儲存至實作網站。
 >
-```>
+>
+```
 >PAServer = PAServerConfig: 
 >   Master Server = serverInfo: 
 >       Address = string: 
 >       Port = int: 80
 >       Use SSL = bool: false
->```>
-
-
+>```
 
 >[!IMPORTANT]
 >
 >本章中的說明不適用於建立由五(5) [!DNL Insight Server] 個以上的群集 [!DNL Insight Servers]。 請連絡Adobe，以取得超過5個叢集的系統需求和描述檔設定建議 [!DNL Insight Servers]。
-
