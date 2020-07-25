@@ -3,8 +3,12 @@ cloud: experience-cloud
 product: analytics
 audience: end-user
 user-guide-title: 資料工作台說明
+user-guide-description: Learn about the multi-channel capabilities of Data Workbench. Includes Data Workbench Client, Installation, Dataset Configuration guides, and more.
 translation-type: tm+mt
-source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
+source-git-commit: 53e6b7b96e7addd848a00691163878846b22b4c6
+workflow-type: tm+mt
+source-wordcount: '3518'
+ht-degree: 3%
 
 ---
 
@@ -217,7 +221,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
          + [啟動顏色連結](home/c-get-started/c-analysis-vis/c-proc-maps/c-act-color-lnks.md)
          + [顯示量度數量](home/c-get-started/c-analysis-vis/c-proc-maps/c-disp-metric-quantities.md)
          + [添加註解](home/c-get-started/c-analysis-vis/c-proc-maps/c-add-callouts.md)
-      + 傾向得分 {#visitor-propensity}
+      + 傾向分數 {#visitor-propensity}
          + [傾向得分概觀](home/c-get-started/c-analysis-vis/c-visitor-propensity/c-visitor-propensity.md)
          + [設定傾向得分](home/c-get-started/c-analysis-vis/c-visitor-propensity/t-propensity-steps.md)
          + [計算傾向得分](home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-confusion-matrix.md)
