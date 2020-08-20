@@ -1,29 +1,32 @@
 ---
 description: 資料工作台6.2版本注意事項包括新功能、升級需求、錯誤修正和已知問題。
-title: 資料工作台6.1發行說明
+title: Data Workbench 6.2 發行說明
 uuid: 8631c936-d53b-493d-9f58-72f541c3ddce
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+workflow-type: tm+mt
+source-wordcount: '1250'
+ht-degree: 5%
 
 ---
 
 
-# Data Workbench 6.2 Release Notes{#data-workbench-release-notes}
+# Data Workbench 6.2 發行說明{#data-workbench-release-notes}
 
 資料工作台6.2版本注意事項包括新功能、升級需求、錯誤修正和已知問題。
 
-## 新功能 {#section-1225066ea8f44cf68e42e019d0bca816}
+## 新特性 {#section-1225066ea8f44cf68e42e019d0bca816}
 
 Data Workbench 6.2包含下列新功能：
 
 | 功能 | 說明 |
 |--- |--- |
-| Decision Trees | 決策樹是預測性分析視覺化，用來評估訪客特性和關係。 決策樹建立工具可以根據指定的正面案例和一組想法產生決策樹視覺化效果。 |
+| 決策樹 | 決策樹是預測性分析視覺化，用來評估訪客特性和關係。 決策樹建立工具可以根據指定的正面案例和一組想法產生決策樹視覺化效果。 |
 | 關聯矩陣中二進位濾波器的更新 | 「二進位篩選」已更新為新功能，您必須使用舊版中建立的二進位篩選來重建任何關聯矩陣。 |
 | 密度圖 | 密度圖是視覺化，在方形圖中將元素顯示為陰影矩形。 |
 | 歸因設定檔 | 為快速分析歸因值（成功轉換或銷售的歸因責任事件），資料工作台提供以規則為基礎的歸因描述檔，其中包含建築師設定歸因報表和分析師執行報表的功能。 |
 | 分析報表 | 報表範本會為使用Adobe SC設定檔的資料工作台使用者標準化Adobe Analytics的報表。 這些報表與「行銷報告與分析」（舊稱SiteCatalyst）中採用的報表相同。 |
-| 3D散布圖 | 3D散布圖會在三維格線上繪製資料維度（例如天數或反向連結網站）的元素，其中x、y和z軸代表各種度量。 |
+| 3D 散佈圖 | 3D散布圖會在三維格線上繪製資料維度（例如天數或反向連結網站）的元素，其中x、y和z軸代表各種度量。 |
 
 
 ## 資料工作台用戶端UI更新{#data-workbench-client-ui-updates}
@@ -57,6 +60,7 @@ Data Workbench 6.2包含下列新功能：
 >
 >* 可儲存25個書籤。
 >* 如果您新增書籤，然後移動工作區的位置，書籤將無效，且必須從「書籤面板」中刪除並重設。
+
 >
 
 
@@ -121,7 +125,7 @@ Data Workbench 6.2包含下列新功能：
  <tbody> 
   <tr> 
    <td colname="col1"><b>全螢幕檢視</b>。 工作區會填滿螢幕並重新調整為新大小。 </td> 
-   <td colname="col2"><b>Ctrl +</b> <p>Ctrl +（在鍵盤上） </p> <p><i>或</i> </p> <p>Ctrl Shift +（在鍵盤上） </p> </td> 
+   <td colname="col2"><b>Ctrl +</b> <p>Ctrl +（在鍵盤上） </p> <p><i> 或 </i> </p> <p>Ctrl Shift +（在鍵盤上） </p> </td> 
    <td colname="col3"> 
     <ul id="ul_C7C731B894D946D9916F50806F015857"> 
      <li id="li_452B4C119B1A40038A408CFFC53653A9">「檔案&gt;頁面大小&gt;填滿螢幕」 <p><i>後跟</i> </p> </li> 
@@ -157,7 +161,7 @@ Data Workbench 6.2包含下列新功能：
 * 「歸因」描述檔是為已實作Adobe SC描述檔以採用Analytics(SC/Insight)資料饋送的使用者所設定。 依預設，行銷和轉換事件會作為在規則型模型中評估的預設互動。
 * 對於升級至Data Workbench 6.2的Adobe SC設定檔使用者，如果您未使用預設設定，請確認檔案中的 [!DNL x-bot_id][!DNL SC Fields.cfg] 值已正確解碼，以及 [!DNL x-bot_id] 欄位已正確列在 [!DNL Decoding Instructions.cfg] 和檔 [!DNL Exclude Hit.cfg] 案中。 只有在從預設配置中修改配置檔案時，才會出現此問題。
 
-* 如果您已刪除Adobe SC描述檔的 **[!UICONTROL Dataset]** > **[!UICONTROL記錄檔處理****[!DNL SC Fields.cfg]** >檔案中未使用的欄位，您將需要更新以容納用於Attribution描述檔的更新欄位值。
+* 如果您已刪除Adobe SC設定檔的 **[!UICONTROL Dataset]** > **[!UICONTROL Log Processing]** > **[!DNL SC Fields.cfg]** 檔案中未使用的欄位，您將需要更新以容納Attribution設定檔所使用的更新欄位值。
 
 ## 已知問題 {#section-dbb307639835493a83409f5f461932b8}
 
