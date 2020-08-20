@@ -5,7 +5,10 @@ title: 量度運算式的語法
 topic: Data workbench
 uuid: 801e265d-d7e4-4f0f-9698-d0b50dd00995
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+workflow-type: tm+mt
+source-wordcount: '851'
+ht-degree: 1%
 
 ---
 
@@ -19,10 +22,10 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 附註:
 
 1. 在運算式文字中應輸入帶底線的字詞。
-1. 表單{TEXT}? 代表選用文字。
-1. {TEXT}*表示可能發生零次或多次的文字。
-1. 表單{A| B| C|...}代表由指定選項（例如A或B或C...）所組成的文字。.
-1. 表單[A,B]表示數字範圍，從A到但不包括B。
+1. 表單代 `{TEXT}?` 表可選文字。
+1. 表單代 `{TEXT}*` 表可能發生零次或多次的文字。
+1. 表單 `{A | B | C |...}` 代表由指定選項（例如A、B或C...）組成的文字。.
+1. 表單 `[A,B)` 代表數字範圍，從A到但不包括B。
 
 <table id="table_A6CA9C9F396448209398AA2A369E63FA"> 
  <tbody> 
