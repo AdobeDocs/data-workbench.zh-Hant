@@ -1,30 +1,33 @@
 ---
 description: 維度運算式絕不會單獨使用，但可用於任何在度量或篩選運算式中呼叫維度的位置。
 solution: Analytics
-title: 維表達式的語法
+title: 維度運算式的語法
 topic: Data workbench
 uuid: c437cc52-4eb3-4202-a0b4-e23889f9c8a2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+workflow-type: tm+mt
+source-wordcount: '1855'
+ht-degree: 0%
 
 ---
 
 
-# 維表達式的語法{#syntax-for-dimension-expressions}
+# 維度運算式的語法{#syntax-for-dimension-expressions}
 
 維度運算式絕不會單獨使用，但可用於任何在度量或篩選運算式中呼叫維度的位置。
 
 1. 在運算式文字中應輸入帶底線的字詞。
-1. 表單{TEXT}? 代表選用文字。
-1. {TEXT}*表示可能發生零次或多次的文字。
-1. 表單{A| B| C|...}代表由指定選項（例如A或B或C...）所組成的文字。.
-1. 表單[A,B]表示數字範圍，從A到但不包括B。
+1. 表單代 `{TEXT}?` 表可選文字。
+1. 表單代 `{TEXT}*` 表可能發生零次或多次的文字。
+1. 表單 `{A | B | C |...}` 代表由指定選項（例如A、B或C...）組成的文字。.
+1. 表單 `[A,B)` 代表數字範圍，從A到但不包括B。
 
 <table id="table_2D9AE1E2397843C284E838330370A1EE"> 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>識別碼 </p> </td> 
-   <td colname="col2"> <p>標識符引用命名維。 如需法律識別碼的規則，請參閱識 <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> 別碼的語法 </a>。 </p> <p>範例：會話數[ Session_Number = "1" ]是會話數為"1"的會話數。會話編號是標識符引用的命名維。 </p> </td> 
+   <td colname="col2"> <p>標識符引用命名維。 如需法律識別碼的規則，請參閱識 <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> 別碼的語法 </a>。 </p> <p>範例：會話數[ Session_Number = "1" ]是會話數為"1"的會話數。 會話編號是標識符引用的命名維。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>(維度) </p> </td> 
@@ -48,7 +51,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> <p>bucket(Level, Metric, Count, Format {, Start {, Size}? }?) </p> </td> 
-   <td colname="col2"> <p>定義其元素是數字範圍（如[0-9]、[10-19]、...）的維。 「級別」元素與桶維的元素相關，其範圍包含該級別元素的「度量」值。 「格式」是用於格式化「量度」元素的printf格式字串。 </p> <p>範例：如果Page_Duration_Minutes是代表每頁逗留分鐘數的頁面檢視層級維度，則bucket(Session, sum(Page_Duration_Minutes, Page_View), 100, "%0.0f minutes", 0, 5)是表示每個作業中逗留分鐘數的作業層級維度；其元素是5分鐘間隔{[0-5)、[5-10)、...、[495-500)}。 </p> <p>開始是第一個間隔的開始值(預設值：0)，而大小是間隔的大小(預設值：1)。 </p> </td> 
+   <td colname="col2"> <p>定義其元素是數字範圍（如[0-9]、[10-19]、...）的維。 「級別」元素與桶維的元素相關，其範圍包含該級別元素的「度量」值。 「格式」是用於格式化「量度」元素的printf格式字串。 </p> <p>範例：如果Page_Duration_Minutes是代表每頁逗留分鐘數的頁面檢視層級維度，則bucket(Session, sum(Page_Duration_Minutes, Page_View), 100, "%0.0f minutes", 0, 5)是表示每個作業中逗留分鐘數的作業層級維度；其元素為5分鐘間隔 <code>{[0-5), [5-10),...,[495-500)}</code>。 </p> <p>開始是第一個間隔的開始值(預設值：0)，而大小是間隔的大小(預設值：1)。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>prefix(Level {,ElementName-&gt;(Prefix{,Prefix}*)}*) </p> </td> 
