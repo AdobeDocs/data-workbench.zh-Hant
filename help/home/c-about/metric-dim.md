@@ -1,24 +1,27 @@
 ---
 description: 使用逐步精靈建立由量度屬性（量度維度）定義的維度。 然後測試、預覽並儲存新的量度尺寸至維度清單。
-title: 度量維度精靈
+title: 量度維度精靈
 uuid: 411b2e28-0958-43bb-a853-7de7b3063818
 translation-type: tm+mt
-source-git-commit: d892186621e7acb9504254496b038efc3e9fd8ec
+source-git-commit: 35e6e9280ab36e8b39e89039b791199d1de54e03
+workflow-type: tm+mt
+source-wordcount: '489'
+ht-degree: 2%
 
 ---
 
 
-# 度量維度精靈{#metric-dim-wizard}
+# 量度維度精靈{#metric-dim-wizard}
 
 使用逐步精靈建立由量度屬性（量度維度）定義的維度。 然後測試、預覽並儲存新的量度尺寸至維度清單。
 
 量度維度會將量度轉換為新維度。 例如，根據頁面檢視量度和訪客層級的量度維度，會根據每位訪客的頁面檢視總數顯示維度元素。 它可讓您根據維度元素擴充目前定義的量度，以建立並儲存為新維度。
 
-## 步驟1:選擇維度和量度 {#section-58b6ea7bbba5487ba1a3c264aa3dcb95}
+## Step 1: Select Dimension and Metric {#section-58b6ea7bbba5487ba1a3c264aa3dcb95}
 
 1. 開啟量度維度精靈。
 
-   在工作區中，按一下右鍵並選擇「 **[UICONTROL工具]** > **[UICONTROL建立度量尺寸」]**。
+   在工作區中，以滑鼠右鍵按一下並選取 **[!UICONTROL Tools]** > **[!UICONTROL Create Metric Dim]**。
 
 1. 將量度命名為「尺寸」。
 
@@ -50,7 +53,7 @@ source-git-commit: d892186621e7acb9504254496b038efc3e9fd8ec
 
    您可以新增自己的量 [度運算式](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html) ，或從其他量度編輯器或視覺化剪下並貼上。 在精靈中會報告語法錯誤、公式錯誤、未定義的篩選器和其他錯誤。
 
-1. 按一下 **[!UICONTROL Next]**.
+1. 按一下 **[!UICONTROL Next]**。
 
 ## 步驟2:格式和設定儲存段 {#section-5bddf3cd306545d7806a501637f80f77}
 
@@ -79,7 +82,7 @@ source-git-commit: d892186621e7acb9504254496b038efc3e9fd8ec
 
 1. 按一 **[!UICONTROL Show in Dimension Menu]** 下，將新建立的維度新增至 **Finder中的「維度** 」索 **引標籤**。
 
-1. 按一下 **[!UICONTROL Next]**.
+1. 按一下 **[!UICONTROL Next]**。
 
 ## 步驟3:完成並儲存 {#section-d9043235b18a425f9de0db668d4b1683}
 
