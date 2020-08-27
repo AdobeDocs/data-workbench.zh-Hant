@@ -1,14 +1,17 @@
 ---
 description: Windows憑證存放區可讓您將用戶端的憑證和私密金鑰儲存在Windows憑證存放區中，以便與伺服器進行SSL通訊。
-title: Windows憑證商店
+title: Windows 憑證存放區
 uuid: a8021295-375a-460b-8686-acf3bc43cd17
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a766b64ef809e2223fed869d8d63b75f270a3d39
+workflow-type: tm+mt
+source-wordcount: '1000'
+ht-degree: 0%
 
 ---
 
 
-# Windows憑證商店{#windows-certificate-store}
+# Windows 憑證存放區{#windows-certificate-store}
 
 Windows憑證存放區可讓您將用戶端的憑證和私密金鑰儲存在Windows憑證存放區中，以便與伺服器進行SSL通訊。
 
@@ -40,7 +43,7 @@ Windows憑證存放區可讓您將用戶端的憑證和私密金鑰儲存在Wind
 </filepath>>\Certificates\
 ```
 
-憑證的名稱 `<Common Name>.pem` 為( [!DNL Analytics Server 1.pem]例如( [!DNL trust_ca_cert.pem] 非檔案)。
+憑證的名稱為 `<Common Name>.pem` (例如 [!DNL Analytics Server 1.pem] (非 [!DNL trust_ca_cert.pem] 檔案)。
 
 必須先從轉換憑證和私密金鑰，才能匯入。 [!DNL pem] 格式 [!DNL .pfx] 化，例如 [!DNL pkcs12.pfx] )。
 
@@ -109,7 +112,7 @@ Windows憑證存放區可讓您將用戶端的憑證和私密金鑰儲存在Wind
    >
    >「認證管理員」(certmgr.msc)中的「個人」名稱實際上是指名為 **My的認證商店。** 因此，如果您按建議將SSL通訊憑證和金鑰(.PFX)匯入 **Personal** certificate Store，則必須將 **SSL CryptoAPI Cert Store Name** String設為&quot;My&quot;。 將此參數設為「個人」將無法運作。 這是Windows憑證存放區的特性。
 
-   您可在此處獲得預定義系統儲存的完整清單： [https://msdn.microsoft.com/en-us/library/windows/desktop/aa388136(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/windows/desktop/aa388136%28v=vs.85%29.aspx)。 您的系統可能有其他憑證存放區。 如果您想使用「個人」以外的商店(例如 **My**)，則必須取得憑證商店的標準名稱，並在檔案中提供 [!DNL Insight.cfg] 該名稱。 (Windows文檔不一致地將系統儲存名稱「My」稱為「My」和「MY」。 參數似乎不區分大小寫。)
+   您可在此處獲得預定義系統儲存的完整清單： [https://msdn.microsoft.com/en-us/library/windows/desktop/aa388136(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/windows/desktop/aa388136%28v=vs.85%29.aspx). 您的系統可能有其他憑證存放區。 如果您想使用「個人」以外的商店(例如 **My**)，則必須取得憑證商店的標準名稱，並在檔案中提供 [!DNL Insight.cfg] 該名稱。 (Windows文檔不一致地將系統儲存名稱「My」稱為「My」和「MY」。 參數似乎不區分大小寫。)
 
 1. 添加這些參數並驗證這些值是否與Windows證書管理器中的清單匹配後，請保存文 [!DNL Insight.cfg] 件。
 
