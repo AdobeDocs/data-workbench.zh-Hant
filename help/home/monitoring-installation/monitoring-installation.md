@@ -67,7 +67,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 1. 確認VSL檔案會隨著螢幕記錄的累積而開始成長。 這需要一些時間，因為小型安裝中的流量會非常低（每10分鐘，代理程式就只會針對主機特定資料傳送一次點擊，加上每個處理設定檔一次點擊）。
 1. 解壓縮insight_monitor.zip\profiles\Insight Historic to a temporary location。
-1. 更新[! [!DNL profile.cfg]DNL [!DNL dataset\cluster.cfg]]和[!DNL [!DNL dataset\segment export.cfg]]中的主機名。
+1. 更新[!DNL profile.cfg]，[!DNL  [!DNL dataset\cluster.cfg]]和[!DNL [!DNL dataset\segment export.cfg]]中的主機名。
 
 1. 將檔案更新至資料工作台描述檔目錄。
 1. 將日誌伺服器和路 [!DNL dataset\log processing.cfg] 徑更新到感測器VSL的累積位置。
