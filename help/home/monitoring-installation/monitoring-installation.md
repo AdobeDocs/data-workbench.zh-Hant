@@ -1,16 +1,19 @@
 ---
 description: 安裝資料工作台監控描述檔的指示。
 solution: Analytics
-title: 安裝監視配置檔案
+title: 安裝監控設定檔
 topic: Data workbench
 uuid: e0d6fc61-d9b9-4c4b-94e1-2acfd0ff4de6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 300b4fb872e9a48cb90297c29a2f93e0db60e7c2
+workflow-type: tm+mt
+source-wordcount: '1052'
+ht-degree: 0%
 
 ---
 
 
-# 安裝監視配置檔案{#installing-the-monitoring-profile}
+# 安裝監控設定檔{#installing-the-monitoring-profile}
 
 安裝資料工作台監控描述檔的指示。
 
@@ -67,7 +70,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 1. 確認VSL檔案會隨著螢幕記錄的累積而開始成長。 這需要一些時間，因為小型安裝中的流量會非常低（每10分鐘，代理程式就只會針對主機特定資料傳送一次點擊，加上每個處理設定檔一次點擊）。
 1. 解壓縮insight_monitor.zip\profiles\Insight Historic to a temporary location。
-1. 更新[!DNL profile.cfg]，[!DNL  [!DNL dataset\cluster.cfg]]和[!DNL [!DNL dataset\segment export.cfg]]中的主機名。
+1. 在、和 [!DNL profile.cfg]中更 [!DNL dataset\cluster.cfg]新主機名 [!DNL dataset\segment export.cfg]。
 
 1. 將檔案更新至資料工作台描述檔目錄。
 1. 將日誌伺服器和路 [!DNL dataset\log processing.cfg] 徑更新到感測器VSL的累積位置。
