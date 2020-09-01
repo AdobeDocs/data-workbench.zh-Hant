@@ -32,6 +32,6 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    >
    >此示例 [!DNL Report.cfg] 中顯示的示例預設情況下只包含檔案中 [!DNL Report.cfg] 包含的參數。 如果您需要將其他參數新增至 [!DNL Report.cfg] 檔案，則必須使用文字編輯器。 如需執行此動作的步驟，請參 [閱編輯現有的Report.cfg檔案](../../../../../home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/c-edit-ex-rpt-files.md#concept-96fd57159f454defa09bd18655a12887)。
 
-1. 通過按一下右鍵檔案頂 **[!UICONTROL Report.cfg (modified)]** 部並按一下 **[!UICONCONTROL另存為報告\]***&lt;**[!UICONTROL ReportSetName]**>來保存檔案&#x200B;***[!UICONTROL \Report.cfg]**。
+1. 通過按一下右鍵檔案頂 **[!UICONTROL Report.cfg (modified)]** 部並按一下 **[!UICONTROL另存為報告\]***&lt;**[!UICONTROL ReportSetName]**>來保存檔案&#x200B;***[!UICONTROL \Report.cfg]**。
 1. 關閉檔案。
 1. 在中， [!DNL Profile Manager]按一下右鍵新檔案列中的復 [!DNL User] 選標籤，然 [!DNL Report.cfg] 後選擇 **[!UICONTROL Save to]***&lt; **[!UICONTROL profile name]**>*。
