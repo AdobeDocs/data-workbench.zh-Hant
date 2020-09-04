@@ -1,14 +1,17 @@
 ---
 description: 為區段匯出檔案建立自訂欄匯出標題，為匯出的區段新增容易理解的說明。 此匯出功能也可讓您輸出為TSV和CSV檔案。
-title: 使用自訂標題匯出區段
+title: 使用自訂標頭匯出區段
 uuid: 186e7868-13b2-42e1-b83f-5a752ee9b407
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '210'
+ht-degree: 4%
 
 ---
 
 
-# 使用自訂標題匯出區段{#segment-export-with-custom-headers}
+# 使用自訂標頭匯出區段{#segment-export-with-custom-headers}
 
 為區段匯出檔案建立自訂欄匯出標題，為匯出的區段新增容易理解的說明。 此匯出功能也可讓您輸出為TSV和CSV檔案。
 
@@ -39,11 +42,11 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    將會開啟一個導出窗口。
 
-1. 以滑鼠右鍵按一下匯出名稱，然後按一 **[!UICONTROL 下另存新檔<export filename>]**。
+1. 以滑鼠右鍵按一下匯出名稱，然後按一 **下另存新檔`<export filename>`**。
 
    ![](assets/segment_export_headers_7.png)
 
-1. 以滑鼠右鍵按 [!DNL Admin] 一下> [!DNL Profile Manager] > [!DNL Expand Export]。 尋找您剛建立的匯出檔案，並將它儲存至現有的描述檔。
+1. Right-click [!DNL Admin] > [!DNL Profile Manager] > [!DNL Expand Export]. 尋找您剛建立的匯出檔案，並將它儲存至現有的描述檔。
 
    ![](assets/segment_export_headers_8.png)
 
