@@ -3,7 +3,10 @@ description: 資料工作台6.2包含書籤面板的新使用者介面更新、�
 title: 資料工作台用戶端UI更新
 uuid: 1bc18c90-8b46-4c90-b7a7-2c6710e1e28c
 translation-type: tm+mt
-source-git-commit: 2cba66a160fec9154796f093d04a422a5b0da265
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '550'
+ht-degree: 1%
 
 ---
 
@@ -27,11 +30,11 @@ source-git-commit: 2cba66a160fec9154796f093d04a422a5b0da265
 
    ![](assets/bookmarks_panel_left.png)
 
-   將會開啟選定的工作區。 當您按一下其他書籤化工作區時，上一個工作區將會關閉，而新選取的工作區將會開啟，讓您可以快速導覽工作流程。
+   將會開啟選定的工作區。 當您按一下另一個書籤化工作區時，先前的工作區將會關閉，而新選取的工作區將會開啟，讓您可以快速導覽工作流程。
 
 **若要刪除書籤：**
 
-* 在「書籤」面板中，按一下滑鼠右鍵並選取「移除」 **[!UICONTROL 。<bookmark title>]**刪除選定的書籤，或選擇刪&#x200B;**[!UICONTROL Clear All Bookmarks]**除所有書籤。
+* 在「書籤」面板中，按一下滑鼠右鍵並選 **取「`<bookmark title>`** 移除」以刪除選取的書籤，或選 **[!UICONTROL Clear All Bookmarks]** 取以刪除所有書籤。
 
 * 您也可以在工作台的縮圖檢視中，以滑鼠右鍵按一下工作區，然後選取 **[!UICONTROL Clear Bookmark]**。
 
@@ -39,6 +42,7 @@ source-git-commit: 2cba66a160fec9154796f093d04a422a5b0da265
 >
 >* 可儲存25個書籤。
 >* 如果您新增書籤，然後移動工作區的位置，書籤將無效，且必須從「書籤面板」中刪除並重設。
+
 >
 
 
@@ -103,7 +107,7 @@ source-git-commit: 2cba66a160fec9154796f093d04a422a5b0da265
  <tbody> 
   <tr> 
    <td colname="col1"><b>全螢幕檢視</b>。 工作區會填滿螢幕並重新調整為新大小。 </td> 
-   <td colname="col2"><b>Ctrl +</b> <p>Ctrl +（在鍵盤上） </p> <p><i>或</i> </p> <p>Ctrl Shift +（在鍵盤上） </p> </td> 
+   <td colname="col2"><b>Ctrl +</b> <p>Ctrl +（在鍵盤上） </p> <p><i> 或 </i> </p> <p>Ctrl Shift +（在鍵盤上） </p> </td> 
    <td colname="col3"> 
     <ul id="ul_C7C731B894D946D9916F50806F015857"> 
      <li id="li_452B4C119B1A40038A408CFFC53653A9">「檔案&gt;頁面大小&gt;填滿螢幕」 <p><i>後跟</i> </p> </li> 
