@@ -1,15 +1,18 @@
 ---
 description: 設定Insight Server或中繼器通訊的指示。
 solution: Insight
-title: 通信配置設定
+title: 通訊組態設定
 uuid: 03297cf0-eb55-4db0-b692-eba24fcf947c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 2ed16fa0d447426c4de863e502792bfb292765cc
+workflow-type: tm+mt
+source-wordcount: '511'
+ht-degree: 5%
 
 ---
 
 
-# 通信配置設定{#communications-configuration-settings}
+# 通訊組態設定{#communications-configuration-settings}
 
 設定Insight Server或中繼器通訊的指示。
 
@@ -55,7 +58,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> SSL埠 </td> 
-   <td colname="col2"> <p>Insight Server或中繼器監聽的安全（透過SSL） <span class="keyword"> 端 </span> 口 <span class="wintitle"> 所 </span> 在。 預設連接埠為 443。輸入值0會禁用安全連接。 </p> <p>範例: <span class="filepath"></span> </p> <filepath></filepath> </td> 
+   <td colname="col2"> <p>Insight Server或中繼器監聽的安全（透過SSL） <span class="keyword"> 端 </span> 口 <span class="wintitle"> 所 </span> 在。 預設連接埠為 443。輸入值0將禁用安全連接。 </p> <p>範例：<span class="filepath"></span> </p> <filepath></filepath> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>n=</i>LoggingServer: </td> 
@@ -63,7 +66,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> 客戶名稱 </td> 
-   <td colname="col2"> <p>管理警報中「未指定」客戶的客戶名稱，如下例所示： </p> <p>"15中沒有從感測器XYZ接收客戶「未指定」的資料。" </p> <p>範例: <code> 1&nbsp;=&nbsp;LoggingServer:&nbsp; 
+   <td colname="col2"> <p>管理警報中「未指定」客戶的客戶名稱，如下例所示： </p> <p>"15中沒有從感測器XYZ接收客戶「未指定」的資料。" </p> <p>範例：<code> 1&nbsp;=&nbsp;LoggingServer:&nbsp; 
       &nbsp;&nbsp;Customer&nbsp;Name&nbsp;=&nbsp;string:&nbsp;CompanyAB </code> </p> <p>使用上述範例，「未指定」客戶的管理警報現在會如下所示： </p> <p>「15年內沒有從感測器XYZ為客戶『CompanyAB』收到資料。」 </p> </td> 
   </tr> 
   <tr> 
@@ -86,4 +89,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
  </tbody> 
 </table>
-
