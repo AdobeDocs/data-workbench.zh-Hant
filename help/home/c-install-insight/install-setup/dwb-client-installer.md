@@ -1,14 +1,17 @@
 ---
 description: 「資料工作台」提供安裝工作站（用戶端）應用程式的設定精靈。
-title: 工作站設定嚮導
+title: 工作站設定精靈
 uuid: e2bf6606-e7ba-439f-b50c-118706ab5b7d
 translation-type: tm+mt
-source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '563'
+ht-degree: 1%
 
 ---
 
 
-# 工作站設定嚮導{#workstation-setup-wizard}
+# 工作站設定精靈{#workstation-setup-wizard}
 
 「資料工作台」提供安裝工作站（用戶端）應用程式的設定精靈。
 
@@ -71,7 +74,7 @@ source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
 
    >[!NOTE]
    >
-   >工作站設定嚮導的預設日誌位置，位 **[!DNL 於C:\Users\<userName>`\AppData\Local\Temp.]**
+   >工作站設定嚮導的預設日誌位置為 `C:\Users\<userName>\AppData\Local\Temp`。
 
    選取「啟 **動應用程式** 」核取方塊，以在設定後開啟工作台。
 
