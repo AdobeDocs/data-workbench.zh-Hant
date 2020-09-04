@@ -3,7 +3,7 @@ description: 資料工作台6.2版本注意事項包括新功能、升級需求�
 title: Data Workbench 6.2 發行說明
 uuid: 8631c936-d53b-493d-9f58-72f541c3ddce
 translation-type: tm+mt
-source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 5%
@@ -48,11 +48,11 @@ Data Workbench 6.2包含下列新功能：
 
    ![](assets/bookmarks_panel_left.png)
 
-   將會開啟選定的工作區。 當您按一下其他書籤化工作區時，上一個工作區將會關閉，而新選取的工作區將會開啟，讓您可以快速導覽工作流程。
+   將會開啟選定的工作區。 當您按一下另一個書籤化工作區時，先前的工作區將會關閉，而新選取的工作區將會開啟，讓您可以快速導覽工作流程。
 
 **若要刪除書籤：**
 
-* 在「書籤」面板中，按一下滑鼠右鍵並選取「移除」 **[!UICONTROL 。<bookmark title>]**刪除選定的書籤，或選擇刪&#x200B;**[!UICONTROL Clear All Bookmarks]**除所有書籤。
+* 在「書籤」面板中，按一下滑鼠右鍵並選 **取「`<bookmark title>`** 移除」以刪除選取的書籤，或選 **[!UICONTROL Clear All Bookmarks]** 取以刪除所有書籤。
 
 * 您也可以在工作台的縮圖檢視中，以滑鼠右鍵按一下工作區，然後選取 **[!UICONTROL Clear Bookmark]**。
 
