@@ -1,16 +1,19 @@
 ---
 description: 有關「工作區檔案」(Workspace file)菜單中可用菜單選項的資訊。
 solution: Analytics
-title: 工作區檔案功能表
+title: 「工作區檔案」功能表
 topic: Data workbench
 uuid: abbdb2db-d918-4edf-977c-1daaf8a71721
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '518'
+ht-degree: 1%
 
 ---
 
 
-# 工作區檔案功能表{#workspace-file-menu}
+# 「工作區檔案」功能表{#workspace-file-menu}
 
 有關「工作區檔案」(Workspace file)菜單中可用菜單選項的資訊。
 
@@ -48,7 +51,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **在背景計算**
 
-（僅線上上工作時顯示。）在您繼續工作時，使所選工作區中的查詢在後台運行。 選中後，縮略圖將顯示以下資訊，這些資訊指示查詢的進度：
+（僅線上上工作時顯示。） 在您繼續工作時，使所選工作區中的查詢在後台運行。 選中後，縮略圖將顯示以下資訊，這些資訊指示查詢的進度：
 
 * 工作中： *n%* —— 表示查詢正在處理，且處理完成的百分比。
 * *n* MB查詢載入——查詢結果的總大小。 查詢負載與資料工作台伺服器的總記憶體負載成正比，但不直接產生關聯。 作為准則，10 MB或更高的查詢負載可能會使系統緊張。 列出的查詢負載不考慮群集。
@@ -66,7 +69,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 * 按一下工作區左上角的「資料工作台」標誌。
 * 如果您的滑鼠有導覽按鈕，請按一下滑鼠上的上一步按鈕。
 
-您也可以關閉工作區，而不需按 **[!UICONTROL `<Ctrl>`+儲存，以免變更<Backspace>]**.
+您也可以關閉工作區，而不依序按 **Ctrl+Backspace來儲存變更**。
 
 **從範本匯出至Excel**
 
