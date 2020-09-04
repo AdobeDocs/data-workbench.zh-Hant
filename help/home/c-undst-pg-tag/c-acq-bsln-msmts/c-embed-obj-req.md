@@ -1,16 +1,19 @@
 ---
 description: 在瀏覽器要求頁面的HTML後，瀏覽器會從網頁伺服器要求該頁面HTML中參考的內嵌物件，以填入瀏覽器所顯示的頁面。
 solution: Analytics
-title: 取得內嵌物件請求（頁面標籤）
+title: 取得內嵌物件要求 (頁面標記)
 topic: Data workbench
 uuid: 7fe561d1-aa5a-4ac9-82ba-aa27c7d208dd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '604'
+ht-degree: 4%
 
 ---
 
 
-# 取得內嵌物件請求（頁面標籤）{#acquiring-embedded-object-requests-page-tags}
+# 取得內嵌物件要求 (頁面標記){#acquiring-embedded-object-requests-page-tags}
 
 在瀏覽器要求頁面的HTML後，瀏覽器會從網頁伺服器要求該頁面HTML中參考的內嵌物件，以填入瀏覽器所顯示的頁面。
 
@@ -18,7 +21,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 例如，影像可能是廣告，您可能想知道廣告對訪客印象深刻。 JavaScript程式碼片段可用來測量特定瀏覽器具有特定特性，並傳回給擷取 [!DNL Sensor] 用途。 網站上的每個頁面可能有10或100個內嵌物件要求。 如果站點儲存了這些請求中每個請求的日誌資訊，則保持日誌資料可用於未來分析所需的資料儲存量乘以請求的每個頁的嵌入式對象請求數。 因此，您可 [!DNL Site] 以保留對分析很重要的請求，並丟棄其他請求，以免產生不必要的儲存成本。
 
-通過使用內容類型過濾功能中提供的覆蓋功能 [!DNL Sensor] （將「Log=1」附加到嵌入對象請求URL的查詢字串），可以獲取該特定嵌入對象請求和相關測量資料，而無需站點管理器儲存該類型的所有請求(例如， <image> 請求)。
+通過使用內容類型過濾功能中提供的覆蓋功能 [!DNL Sensor]`<image>` （將「Log=1」附加到嵌入對象請求URL的查詢字串），可以獲取該特定嵌入對象請求和相關測量資料，而無需站點管理器儲存該類型的所有請求（例如，所有請求）。
 
 [!DNL Sensor] 在下表中收集由Web伺服器所做的每個內嵌物件要求的測量資料，假設 [!DNL Sensor] 未設定篩選資料或篩選已覆寫。 收集到的資訊會透過x-trackingid或cs(cookie)記錄欄位項目與訪客和工作階段及後續工作階段相關。
 
