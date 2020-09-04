@@ -1,14 +1,17 @@
 ---
 description: 有關在Windows Server 2000或更高版本下運行的Sun Java System Application Server Standard Edition 7感測器的安裝和配置說明。
-title: Windows Server 2000或更高版本上的Sun Java Server
+title: Windows Server 2000 或更新版本上的 Sun Java Server
 uuid: 43f3eee0-2633-4bda-af6c-6c15433dd539
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '956'
+ht-degree: 2%
 
 ---
 
 
-# Windows Server 2000或更高版本上的Sun Java Server{#sun-java-server-on-windows-server-or-later}
+# Windows Server 2000 或更新版本上的 Sun Java Server{#sun-java-server-on-windows-server-or-later}
 
 有關在Windows Server 2000或更高版本下運行的Sun Java System Application Server Standard Edition 7感測器的安裝和配置說明。
 
@@ -66,7 +69,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 >
 >安裝套件包含名為TestEnperity.xls的試算表檔案。 這個試算表是建築師用來設定受控實驗的工具。 感測器本身不使用此檔案，因此無需在運行感測器的電腦上安裝該檔案（儘管可以選擇安裝）。 您可能會想要將檔案複製至建築師可存取的位置，或視需要從安裝套件擷取檔案。 如需受控實驗的詳細資訊，請參閱Insight Controlled Experies Guide。
 
-## 編輯感測器配置檔案 {#section-2e2f1875a5304cdfa2cbcd0680683cfd}
+## Edit the Sensor Configuration File {#section-2e2f1875a5304cdfa2cbcd0680683cfd}
 
 該文 [!DNL txlogd.conf] 件包含感測器的配置參數。
 
@@ -134,7 +137,7 @@ funcs="vys-cookie,vys-log,vys-init,vys-content-type"
 Init fn="vys-init" config-file="C:/VisualSciences/txlogd.conf"
 ```
 
-在obj.conf檔案(例如C:\Sun\AppServer7\domains\domain1\server1\config\ server1-obj.conf)中，將下列行直接新增至現有&quot;<Object name="default">&quot;行下方：
+在obj.conf檔案(例如C:\Sun\AppServer7\domains\domain1\server1\config\ server1-obj.conf)中，將下列行直接新增至現有行的下 `<Object name="default">` 方：
 
 ```
 NameTrans fn="vys-cookie" 
