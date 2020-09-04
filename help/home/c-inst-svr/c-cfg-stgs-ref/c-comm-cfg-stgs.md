@@ -4,9 +4,9 @@ solution: Insight
 title: 通訊組態設定
 uuid: 03297cf0-eb55-4db0-b692-eba24fcf947c
 translation-type: tm+mt
-source-git-commit: 2ed16fa0d447426c4de863e502792bfb292765cc
+source-git-commit: 638eca495223fc9d5326bf9462a9c289d6fe2d9e
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '508'
 ht-degree: 5%
 
 ---
@@ -34,11 +34,11 @@ ht-degree: 5%
  <tbody> 
   <tr> 
    <td colname="col1"> 訪問控制檔案 </td> 
-   <td colname="col2"> <p>Access Control.cfg檔 <span class="filepath"> 案的位 </span> 置。 預設位置是 <span class="filepath"> Insight Server或Repeater安裝目 </span> 錄內的「存取控 <span class="keyword"> 制」資料 </span><span class="wintitle"></span> 夾。 </p> <p>範例： <filepath></filepath> </p> </td> 
+   <td colname="col2"> <p>Access Control.cfg檔 <span class="filepath"> 案的位 </span> 置。 預設位置是 <span class="filepath"> Insight Server或Repeater安裝目 </span> 錄內的「存取控 <span class="keyword"> 制」資料 </span><span class="wintitle"></span> 夾。 </p> <p>範例：<code>Access Control File = Path: Access Control\\Access Control.cfg</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 訪問日誌目錄 </td> 
-   <td colname="col2"> <p>要將審計日誌映射到的資料夾。 </p> <p>範例： <filepath></filepath> </p> <p> <p>注意： 您可以將審計日誌映射到另一個本地驅動器(例如： <span class="filepath"> 字串：P:\\Audit\\ </span>)，但不將審核日誌映射到網路驅動器。 </p> </p> </td> 
+   <td colname="col2"> <p>要將審計日誌映射到的資料夾。 </p> <p>範例：<code>Access Log Directory = string: Audit\\</code> </p> <p> <p>注意： 您可以將審計日誌映射到另一個本地驅動器(例如： <span class="filepath"> 字串：P:\\Audit\\ </span>)，但不將審核日誌映射到網路驅動器。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 訪問日誌詳細 </td> 
@@ -46,19 +46,19 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> IP介面 </td> 
-   <td colname="col2"> <p>當兩個網卡可用於訪問兩個不同網路時使用的IP地址。 </p> <p>範例：I <filepath></filepath><i>&lt; <span class="filepath"> IP 位址 </span>&gt;</i> </p> </td> 
+   <td colname="col2"> <p>當兩個網卡可用於訪問兩個不同網路時使用的IP地址。 </p> <p>範例：<code>IP Interface = string: &lt; IP Address &gt;</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 連接埠 </td> 
-   <td colname="col2"> <p>Insight伺服器或中繼器監聽的非安 <span class="keyword"> 全(HTTP) </span><span class="wintitle"> 端 </span> 口。 預設連接埠為 80。輸入值0會禁用非安全連接。 </p> <p>範例： <filepath></filepath> </p> </td> 
+   <td colname="col2"> <p>Insight伺服器或中繼器監聽的非安 <span class="keyword"> 全(HTTP) </span><span class="wintitle"> 端 </span> 口。 預設連接埠為 80。輸入值0會禁用非安全連接。 </p> <p>範例：<code>Port = int: 80</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SSL密碼 </td> 
-   <td colname="col2"> 有些環境需要比其他環境更強的通訊安全性。 如果您想使用特定的SSL密碼套件，可以使用此參數來指定它。 <p>範例： <filepath></filepath> </p> </td> 
+   <td colname="col2"> 有些環境需要比其他環境更強的通訊安全性。 如果您想使用特定的SSL密碼套件，可以使用此參數來指定它。 <p>範例：<code>SSL Ciphers = string: AES256-SHA256</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SSL埠 </td> 
-   <td colname="col2"> <p>Insight Server或中繼器監聽的安全（透過SSL） <span class="keyword"> 端 </span> 口 <span class="wintitle"> 所 </span> 在。 預設連接埠為 443。輸入值0將禁用安全連接。 </p> <p>範例：<span class="filepath"></span> </p> <filepath></filepath> </td> 
+   <td colname="col2"> <p>Insight Server或中繼器監聽的安全（透過SSL） <span class="keyword"> 端 </span> 口 <span class="wintitle"> 所 </span> 在。 預設連接埠為 443。輸入值0將禁用安全連接。 </p> <p>範例：<span class="filepath"></span> </p> <code>SSL Port = int: 443</code> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>n=</i>LoggingServer: </td> 
