@@ -1,14 +1,17 @@
 ---
 description: 有關在RedHat Linux 7.x或更高版本、SUSE Linux 9.x或更高版本、Sun Solaris SPARC 2.6或更高版本、Sun Solaris x86 9或更高版本、FreeBSD 4或更高版本或Mac OS X PowerPC上安裝和配置Apache Server 1.3.x的詳細說明。
-title: Linux、Sun Solaris、FreeBSD或Mac OS X上的Apache Server 1.3.x
+title: Linux、Sun Solaris、FreeBSD 或 Mac OS X 上的 Apache Server 1.3.x
 uuid: bd46dd0f-fe36-4f8b-a87c-8ca7b64da609
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 98452ba81d71db65c75e3d07712eefa18c003f53
+workflow-type: tm+mt
+source-wordcount: '1345'
+ht-degree: 2%
 
 ---
 
 
-# Linux、Sun Solaris、FreeBSD或Mac OS X上的Apache Server 1.3.x{#apache-server-x-on-linux-sun-solaris-freebsd-or-mac-os-x}
+# Linux、Sun Solaris、FreeBSD 或 Mac OS X 上的 Apache Server 1.3.x{#apache-server-x-on-linux-sun-solaris-freebsd-or-mac-os-x}
 
 有關在RedHat Linux 7.x或更高版本、SUSE Linux 9.x或更高版本、Sun Solaris SPARC 2.6或更高版本、Sun Solaris x86 9或更高版本、FreeBSD 4或更高版本或Mac OS X PowerPC上安裝和配置Apache Server 1.3.x的詳細說明。
 
@@ -78,9 +81,9 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 對程式檔案的權限不正確會導致安裝感測器時遇到的大多數問題。
 
-請確定您設定的權限完全符合本節所述。
+請確定您所設定的權限完全符合本節所述。
 
-預設情況下，tar檔案中的程式檔案具有以下權限。 根據系統的配置方式，在提取檔案時，這些設定可能會更改（未被遮罩）。 若要將權限重設為建議的預設設定，請使用下方的chmod命令。 檢查您已安裝檔案的目錄是否至少允許此訪問級別。
+預設情況下，tar檔案中的程式檔案具有以下權限。 根據系統的配置方式，在提取檔案時，這些設定可能會更改（未被遮罩）。 若要將權限重設為建議的預設設定，請使用下方的chmod命令。 檢查您已安裝檔案的目錄是否至少允許此級別的訪問。
 
 | 檔案 | 預設權限 | chmod命令 |
 |---|---|---|
@@ -89,7 +92,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 | txlogd.conf | rw-rw-r— | chmod 664 |
 | trust_ca_cert.pem | rw-rw-r— | chmod 664 |
 
-## 編輯感測器配置檔案 {#section-3f22a1c91d7d43b6b4c30f1b7448b17f}
+## Edit the Sensor configuration file {#section-3f22a1c91d7d43b6b4c30f1b7448b17f}
 
 該文 [!DNL txlogd.conf] 件包含感測器的配置參數。
 
@@ -148,7 +151,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    >
    >這些行區分大小寫。 請依上方顯示的方式輸入。
 
-1. 重新啟動Web伺服器。 收集器已載入Web伺服器，並將開始收集事件資料並將其寫入磁碟隊列。
+1. 重新啟動Web伺服器。 收集器隨Web伺服器載入，並將開始收集事件資料並將其寫入磁碟隊列。
 
 ## 測試感測器 {#section-83d9f60b39a6474f9c76bee3e19b2575}
 
@@ -187,12 +190,12 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->某些Solaris用戶可能會遇到「無法獲取互斥鎖」錯誤。 要使感測器在這些系統上正常運行，需要在檔案/etc/system中添加或編輯以下行：>
+>某些Solaris用戶可能會遇到「無法獲取互斥鎖」錯誤。 要使感測器在這些系統上正常運行，需要在檔案/etc/system中添加或編輯以下行：
 >
-```>
+>
+```
 >semsys:seminfo_semmnu=1024
->```>
->The default Solaris setting is 60. Based on tests conducted with Sensor, which uses three semaphores for each instance, Adobe recommends that you use 1024 as your setting. This number is high enough for Sensor to function along with any other applications on the server that may require semaphores, but does not affect performance. To support this recommendation, please note that Adrian Cockcroft stated the following in his book Sun Performance and Tuning (Prentice Hall, October 1994): “Databases tend to use lots of shared memory and semaphore settings. These do not affect performance; as long as they are big enough, the programs will run.”
-
-
+>```
+>
+>預設的Solaris設定為60。 根據使用Sensor（每個例項使用三個信號）進行的測試，Adobe建議您使用1024做為設定。 此數量足夠高，感測器可以與伺服器上任何其他可能需要信號的應用程式一起運行，但不會影響效能。 為支援此建議，請注意，Adrian Cockcroft在其《Sun Performance and Tuning》一書（Prentice Hall,1994年10月）中指出：「資料庫通常會使用大量共用記憶體和訊號量設定。 這些不會影響效能；只要它們足夠大，程式就會運行。」
 
