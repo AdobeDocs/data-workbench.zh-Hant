@@ -1,16 +1,19 @@
 ---
 description: 信賴圖例可協助您判斷您看到的數字是偶然發生的可能性，並瞭解資料中可能的偏差。
 solution: Analytics
-title: 信賴圖例
+title: 信賴度圖例
 topic: Data workbench
 uuid: 2559ff7c-6060-4fee-b509-9ae0c3912016
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 98452ba81d71db65c75e3d07712eefa18c003f53
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 2%
 
 ---
 
 
-# 信賴圖例{#confidence-legends}
+# 信賴度圖例{#confidence-legends}
 
 信賴圖例可協助您判斷您看到的數字是偶然發生的可能性，並瞭解資料中可能的偏差。
 
@@ -51,9 +54,10 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->在分析任何計算結果時，必須考慮以下注意事項：>
+>在分析任何計算結果時，必須考慮以下注意事項：
 >* 這些數字是估算。 如果您使用不同的資料集重複相同的計算，則會得到不同的結果。 這稱為隨機變化。
 >* 對概率較高的推斷取決於對所有指標來說都不正確的正態假設。 因此，99%概率的值比90%概率的值更不可靠。
+
 >
 >
 如果您需要更精確的數字，請咨詢統計專家。
@@ -62,6 +66,6 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 * 在信賴圖例中，按一下欄位 **[!UICONTROL Metric or Formula]** 並輸入所要的量度或運算式。 如需運算式語法規則，請參 [閱查詢語言語法](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)。
 
-## 匯出至Microsoft Excel {#section-f36e2db7273740b7af278f8a2b79d564}
+## 匯出至 Microsoft Excel {#section-f36e2db7273740b7af278f8a2b79d564}
 
 有關導出窗口的資訊，請參 [閱導出窗口資料](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)。
