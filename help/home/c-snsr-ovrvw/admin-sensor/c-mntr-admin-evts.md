@@ -1,10 +1,13 @@
 ---
 description: 要盡快檢測感測器錯誤並在導致重大問題或中斷之前進行修復，您應定期監控事件日誌。
-solution: Insight
+solution: Analytics
 title: 監控管理事件
 uuid: c43d6509-6950-4436-8d6c-be7b00664f05
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '1092'
+ht-degree: 1%
 
 ---
 
