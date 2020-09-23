@@ -1,11 +1,14 @@
 ---
 description: 在您部署實驗後，您應驗證實驗是否正常運作。
-solution: Insight,Analytics
+solution: Analytics,Analytics
 title: 驗證實驗
 topic: Data workbench
 uuid: 59769f5b-4175-479e-ad7d-7226e9c666af
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 每次您要測試新群組時，請務必清除網站的Cookie。
 
-若要將自己放入特定實驗的特定群組，請以下列格式以查詢字串來要求測試頁面：
+若要將自己放入特定實驗的特定群組，請以下列格式以查詢字串要求測試頁面：
 
 [!DNL http://] *&lt;[!DNL sitename/?Experiment Name=Group Name]>*
 
