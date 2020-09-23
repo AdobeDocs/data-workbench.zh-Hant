@@ -1,15 +1,18 @@
 ---
 description: 安裝和設定Insight Server FSU以搭配Repeater使用的指示。
-solution: Insight
-title: 為中繼器設定Insight Server FSU
+solution: Analytics
+title: 為中繼器設定 Insight Server FSU
 uuid: c2bae862-37d3-4841-b31b-59593c1e4316
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 5%
 
 ---
 
 
-# 為中繼器設定Insight Server FSU{#configuring-an-insight-server-fsu-for-repeater}
+# 為中繼器設定 Insight Server FSU{#configuring-an-insight-server-fsu-for-repeater}
 
 安裝和設定Insight Server FSU以搭配Repeater使用的指示。
 
