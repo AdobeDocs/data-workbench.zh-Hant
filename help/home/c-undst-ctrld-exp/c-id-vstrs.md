@@ -1,16 +1,19 @@
 ---
 description: 網站的典型組態使用Cookie來唯一識別您網站的訪客，並追蹤其隨時間的行為。
-solution: Insight,Analytics
-title: 網站如何識別訪客？
+solution: Analytics,Analytics
+title: Site 如何識別訪客？
 topic: Data workbench
 uuid: e1e451b8-e827-4010-bda9-9147c3b09958
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 3%
 
 ---
 
 
-# 網站如何識別訪客？{#how-does-site-identify-visitors}
+# Site 如何識別訪客？{#how-does-site-identify-visitors}
 
 網站的典型組態使用Cookie來唯一識別您網站的訪客，並追蹤其隨時間的行為。
 
