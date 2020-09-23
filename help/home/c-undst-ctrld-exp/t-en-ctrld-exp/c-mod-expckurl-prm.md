@@ -1,16 +1,19 @@
 ---
 description: ExpCookieURL參數可用來測試您的受控實驗是否正常運作。
-solution: Insight,Analytics
-title: 修改ExpCookieURL參數（可選）
+solution: Analytics,Analytics
+title: 修改 ExpCookieURL 參數 (選用)
 topic: Data workbench
 uuid: 0c160c26-f9de-4e41-a05d-bf7bb32395bb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 6%
 
 ---
 
 
-# 修改ExpCookieURL參數（可選）{#modifying-the-expcookieurl-paramter-optional}
+# 修改 ExpCookieURL 參數 (選用){#modifying-the-expcookieurl-paramter-optional}
 
 ExpCookieURL參數可用來測試您的受控實驗是否正常運作。
 
