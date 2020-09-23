@@ -1,10 +1,13 @@
 ---
 description: Insight Server的用戶端(Report and Insight)使用通用名稱來參照Insight Server。
-solution: Insight
+solution: Analytics
 title: 定義伺服器的網路位置
 uuid: 9cf2f268-6fde-4427-b832-a238d126d697
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '233'
+ht-degree: 4%
 
 ---
 
