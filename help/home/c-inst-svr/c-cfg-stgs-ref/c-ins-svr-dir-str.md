@@ -1,19 +1,22 @@
 ---
 description: 隨Insight Server安裝的檔案清單，以及在註冊後出現的檔案，並首次執行。
-solution: Insight
-title: Insight Server目錄結構
+solution: Analytics
+title: Insight Server 目錄結構
 uuid: 8339b275-f118-4d5d-937e-4df9f8a56b50
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 5%
 
 ---
 
 
-# Insight Server目錄結構{#insight-server-directory-structure}
+# Insight Server 目錄結構{#insight-server-directory-structure}
 
 隨Insight Server安裝的檔案清單，以及在註冊後出現的檔案，並首次執行。
 
-## 安裝包中包含的檔案 {#section-daec17dab3e34c3c9e1ef65842cb91f1}
+## 安裝套件中包含的檔案 {#section-daec17dab3e34c3c9e1ef65842cb91f1}
 
 安裝軟體包中包含以下 [!DNL Insight Server] 目錄：
 
@@ -89,7 +92,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> 狀態 </td> 
+   <td colname="col1"> 州別 </td> 
    <td colname="col2"> 處理由 <span class="keyword"> Insight Server產生的資 </span>訊。 </td> 
   </tr> 
   <tr> 
