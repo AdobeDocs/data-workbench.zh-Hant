@@ -1,10 +1,13 @@
 ---
 description: Adobe建議您定期管理和監控安裝Adobe軟體產品之各伺服器的一般狀況。
-solution: Insight
+solution: Analytics
 title: 一般系統管理
 uuid: 36f87f65-3791-41fd-a4fb-b94f7fa32fac
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '101'
+ht-degree: 5%
 
 ---
 
