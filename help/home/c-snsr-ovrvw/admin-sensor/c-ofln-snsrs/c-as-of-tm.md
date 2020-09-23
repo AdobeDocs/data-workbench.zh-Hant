@@ -1,10 +1,13 @@
 ---
 description: 當資料工作台伺服器從該源接收資料時，它會感知到資料源，如感測器。
-solution: Insight
+solution: Analytics
 title: 瞭解「截止」時間
 uuid: a1853573-e77c-41f7-8b99-2843e38cc82d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 2%
 
 ---
 
