@@ -1,11 +1,14 @@
 ---
 description: 將新欄位新增至Log Processing.cfg並建立新的分割變形和延伸維度後，您就可以檢視在資料重新處理的快速輸入階段完成後建立的新延伸維度。
-solution: Insight,Analytics
+solution: Analytics,Analytics
 title: 檢視實驗結果
 topic: Data workbench
 uuid: c0468cad-fb8d-4ecf-8912-bf80b44b0a65
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '241'
+ht-degree: 4%
 
 ---
 
