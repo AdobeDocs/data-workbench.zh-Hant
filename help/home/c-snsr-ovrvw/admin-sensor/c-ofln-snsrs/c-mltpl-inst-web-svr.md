@@ -1,15 +1,18 @@
 ---
 description: 有關感測器在Web伺服器上運行一個Web伺服器實例時的一般配置的資訊。
-solution: Insight
-title: 使用Web伺服器的多個實例
+solution: Analytics
+title: 使用一個 Web 伺服器的多個執行個體
 uuid: 778ea95f-e0f2-4c2a-b7ed-7e323fea1e48
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '278'
+ht-degree: 5%
 
 ---
 
 
-# 使用Web伺服器的多個實例{#working-with-multiple-instances-of-a-web-server}
+# 使用一個 Web 伺服器的多個執行個體{#working-with-multiple-instances-of-a-web-server}
 
 有關感測器在Web伺服器上運行一個Web伺服器實例時的一般配置的資訊。
 
