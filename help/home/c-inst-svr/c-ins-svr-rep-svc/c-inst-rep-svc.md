@@ -1,15 +1,18 @@
 ---
 description: Insight ServerReplication Service可讓您將收集並儲存在一台Insight Server機器上的事件資料傳輸至另一台Insight Server機器。
-solution: Insight
-title: 安裝複製服務
+solution: Analytics
+title: 安裝複寫服務
 uuid: a6467d5f-ca1c-4368-ba83-0b6bcabbe511
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '184'
+ht-degree: 4%
 
 ---
 
 
-# 安裝複製服務{#installing-the-replication-service}
+# 安裝複寫服務{#installing-the-replication-service}
 
 Insight ServerReplication Service可讓您將收集並儲存在一台Insight Server機器上的事件資料傳輸至另一台Insight Server機器。
 
