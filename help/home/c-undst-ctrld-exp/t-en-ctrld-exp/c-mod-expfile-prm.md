@@ -1,16 +1,19 @@
 ---
 description: ExpFile參數指向實驗配置檔案的位置，該檔案定義了實驗。
-solution: Insight,Analytics
-title: 修改ExpFile參數
+solution: Analytics,Analytics
+title: 修改 ExpFile 參數
 topic: Data workbench
 uuid: bf146f46-f541-4969-8d90-af1a0c969344
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '220'
+ht-degree: 3%
 
 ---
 
 
-# 修改ExpFile參數{#modifying-the-expfile-parameter}
+# 修改 ExpFile 參數{#modifying-the-expfile-parameter}
 
 ExpFile參數指向實驗配置檔案的位置，該檔案定義了實驗。
 
