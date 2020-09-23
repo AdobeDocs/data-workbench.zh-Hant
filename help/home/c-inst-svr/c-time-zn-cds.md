@@ -1,10 +1,13 @@
 ---
 description: Insight Server中時間型參數的格式指示。
-solution: Insight
+solution: Analytics
 title: 時區代碼
 uuid: dcc8aa15-5846-4f24-8b82-e25ff89871ba
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 5%
 
 ---
 
