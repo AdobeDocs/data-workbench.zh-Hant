@@ -1,15 +1,18 @@
 ---
 description: 從Web伺服器收集事件資料時，Sensor會自動為每個包含小型隨機識別碼的訪客設定永久性Cookie，而不會擷取任何個人識別資訊。
-solution: Insight
-title: 感測器如何識別訪客和會話？
+solution: Analytics
+title: Sensor 如何識別訪客和工作階段？
 uuid: 3735ed2d-67c4-469b-8b3e-0fac90cc4c09
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '232'
+ht-degree: 6%
 
 ---
 
 
-# 感測器如何識別訪客和會話？{#how-does-sensor-identify-visitors-and-sessions}
+# Sensor 如何識別訪客和工作階段？{#how-does-sensor-identify-visitors-and-sessions}
 
 從Web伺服器收集事件資料時，Sensor會自動為每個包含小型隨機識別碼的訪客設定永久性Cookie，而不會擷取任何個人識別資訊。
 
