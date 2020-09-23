@@ -1,15 +1,18 @@
 ---
 description: 稽核記錄檔會追蹤所有嘗試連線至Insight Server和從Insight Server斷開的連線，每個連線都記錄在<YYYYMMDD>-access.txt檔案中，預設位於Insight Server安裝目錄的「稽核」資料夾中。
-solution: Insight
-title: 監視審計日誌
+solution: Analytics
+title: 監控稽核記錄
 uuid: 38af9328-3f72-48a4-a0de-bf7477fedc25
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '196'
+ht-degree: 4%
 
 ---
 
 
-# 監視審計日誌{#monitoring-audit-logs}
+# 監控稽核記錄{#monitoring-audit-logs}
 
 稽核記錄檔會追蹤所有嘗試連線至Insight Server和從Insight Server斷開的連線，每個連線都記錄在Insight Server安裝目錄中，預設位於「稽核」資料夾的檔案中。 `<YYYYMMDD>-access.txt`
 
