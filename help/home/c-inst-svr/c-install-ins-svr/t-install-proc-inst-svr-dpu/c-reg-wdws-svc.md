@@ -1,15 +1,18 @@
 ---
 description: 啟動Insight Server並同時將其註冊為Microsoft Windows服務的程式。
-solution: Insight
-title: 將Insight Server註冊為Windows服務
+solution: Analytics
+title: 將 Insight Server 註冊為 Windows 服務
 uuid: 1b3d53ca-d50f-4520-abf5-6d5c40493b88
 translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '582'
+ht-degree: 3%
 
 ---
 
 
-# 將Insight Server註冊為Windows服務{#registering-insight-server-as-a-windows-service}
+# 將 Insight Server 註冊為 Windows 服務{#registering-insight-server-as-a-windows-service}
 
 啟動Insight Server並同時將其註冊為Microsoft Windows服務的程式。
 
@@ -21,7 +24,7 @@ source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
 
 1. 開啟命令提示符，並導航到所安裝資料夾中的bin子目錄 [!DNL Insight Server]。
 
-   範例: [!DNL C:\Adobe\Server\bin]
+   範例：[!DNL C:\Adobe\Server\bin]
 
 1. 在命令提示符下，執行以下命令以啟動並同 [!DNL Insight Server] 時註冊它以作為Microsoft Windows下的服務運行：
 
@@ -44,7 +47,7 @@ source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
 
 1. 檢查完日誌後， [!DNL Applications] 關閉事件查看器。
 
-您已完成安裝 [!DNL Insight Server]。 [!DNL Insight Server] 設計為可持續運行。 如果重新啟動電腦，將自動 [!DNL Insight Server] 重新啟動。 如果您需要手動啟動和停 [!DNL Insight Server] 止，則可使用Windows中的「服務」控制面板執行此動作。 如以下章節所述，您可選擇將服務設 [!DNL Insight Server] 定為定期自動重新啟動。
+您已完成安裝 [!DNL Insight Server]。 [!DNL Insight Server] 設計為可持續運行。 如果重新啟動電腦，則會自 [!DNL Insight Server] 動重新啟動。 如果您需要手動啟動和停 [!DNL Insight Server] 止，則可使用Windows中的「服務」控制面板執行此動作。 如以下章節所述，您可選擇將服務設 [!DNL Insight Server] 定為定期自動重新啟動。
 
 ## 配置服務以自動重新啟動 {#section-f9bb91614513435f84ee55c0ec8edb13}
 
@@ -54,7 +57,7 @@ source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
 
 1. 導覽至您 [!DNL Components] 所安裝目錄中的資料夾 [!DNL Insight Server]。
 
-   範例: [!DNL C:\Adobe\Server\Components]
+   範例：[!DNL C:\Adobe\Server\Components]
 
 1. 使用文本編輯器（如記事本）建立名為的新檔案 [!DNL ScheduledRestart.cfg]。
 1. 在檔案中輸入以下文 [!DNL ScheduledRestart.cfg] 本：
