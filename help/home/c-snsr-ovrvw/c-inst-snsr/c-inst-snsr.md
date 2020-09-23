@@ -1,17 +1,20 @@
 ---
-description: 您將感測器安裝在要測量其活動的伺服器所在的電腦上。
-solution: Insight
-title: 安裝感測器
+description: 感測器安裝在要測量其活動的伺服器所在的電腦上。
+solution: Analytics
+title: 安裝 Sensor
 uuid: 8d500fd0-daa0-453b-8284-b3f112a358ce
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '200'
+ht-degree: 2%
 
 ---
 
 
-# 安裝感測器{#installing-sensor}
+# 安裝 Sensor{#installing-sensor}
 
-您將感測器安裝在要測量其活動的伺服器所在的電腦上。
+感測器安裝在要測量其活動的伺服器所在的電腦上。
 
 您要從中擷取事件資料的每個伺服器都必須執行 [!DNL Sensor]。
 
