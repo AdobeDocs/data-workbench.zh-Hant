@@ -1,11 +1,14 @@
 ---
 description: 要啟用受控實驗，具有Web或應用程式伺服器管理員訪問權限的人員必須修改安裝感測器的Web群集中每個Web或應用程式伺服器上感測器配置檔案（通常使用txlogd.conf命名）中的ExpFile參數。
-solution: Insight,Analytics
+solution: Analytics,Analytics
 title: 啟用受控實驗
 topic: Data workbench
 uuid: 27d68fad-ae2d-4a2e-b449-fbaf88286cfa
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '244'
+ht-degree: 2%
 
 ---
 
