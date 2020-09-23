@@ -1,15 +1,18 @@
 ---
 description: 有關評估和監控地址空間負載的資訊。
-solution: Insight
-title: 監視記憶體使用情況
+solution: Analytics
+title: 監控記憶體使用情況
 uuid: e7f1c51b-d874-43f4-a074-1c064b5f298a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '581'
+ht-degree: 2%
 
 ---
 
 
-# 監視記憶體使用情況{#monitoring-memory-usage}
+# 監控記憶體使用情況{#monitoring-memory-usage}
 
 有關評估和監控地址空間負載的資訊。
 
