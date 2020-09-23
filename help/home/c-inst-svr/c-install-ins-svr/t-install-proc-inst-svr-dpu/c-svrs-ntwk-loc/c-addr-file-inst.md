@@ -1,15 +1,18 @@
 ---
 description: 安裝在Insight Server上的位址檔案包含四個預先定義的網路位置。
-solution: Insight
-title: Insight Server上安裝的位址檔案
+solution: Analytics
+title: Insight Server 上安裝的位址檔案
 uuid: a58d36d8-e1a3-43e7-91c5-c57351e1be49
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 2%
 
 ---
 
 
-# Insight Server上安裝的位址檔案{#the-address-file-installed-on-insight-server}
+# Insight Server 上安裝的位址檔案{#the-address-file-installed-on-insight-server}
 
 安裝在Insight Server上的位址檔案包含四個預先定義的網路位置。
 
@@ -38,7 +41,7 @@ Locations = vector: 4 items
     Parent = string:
 ```
 
-* NetworkLocation 0是一個空的未命名網路位置，您可編輯該網路位置以將您的公共名稱與 [!DNL Insight Server] 其IP地址關聯。 如果伺服器有多個IP地址，則可以建立其他NetworkLocations。
+* NetworkLocation 0是一個空的未命名網路位置，您可以編輯該位置以將您的公共名稱與 [!DNL Insight Server] 其IP地址關聯。 如果伺服器有多個IP地址，則可以建立其他NetworkLocations。
 * NetworkLocation 1是網 [!DNL Insight] 絡位置。 如果未明確設定NetworkLocation參數，請通過 [!DNL Insight] 此網路位置解析公共名稱。
 
 * NetworkLocation 2是網 [!DNL Insight Server] 絡位置。 在群 [!DNL Insight Servers] 集中操作時，它們使用此網路位置來解析伺服器間通信的通用名稱。
@@ -105,7 +108,7 @@ Locations = vector: 4 items
    1. 更新NetworkLocation項目編號，以便NetworkLocations按順序編號（從0開始）。
    有關定義具有兩個IP地址的地址 [!DNL Insight Server] 檔案的示例，請參見本節中的示例。
 
-1. 在和服 [!DNL Insight] 務器網 [!DNL Report] 絡位置中，編輯如下所示的父參數，以指定NetworkLocation的名稱，並 [!DNL Insight] 將其用 [!DNL Report] 作預設網路位置。 （有關配置父參數時其外觀的示例，請參閱本節中的示例。）
+1. 在和服 [!DNL Insight] 務器網 [!DNL Report] 絡位置中，編輯如下所示的父參數，以指定NetworkLocation的名稱，並將 [!DNL Insight][!DNL Report] 其用作預設網路位置。 （有關配置父參數時其外觀的示例，請參閱本節中的示例。）
 
    ```
    1 = NetworkLocation:  
@@ -132,7 +135,7 @@ Locations = vector: 4 items
 
 以下示例顯示一個已完成的地址檔案。 此檔案定義了五個網路位置。
 
-* NetworkLocation項目0和1定義了名為&quot;MyCorporateIntranet&quot;和&quot;Internet&quot;的網路位置。這些網路位置為名為的伺服器定義了兩個不同的IP地址 [!DNL VS01.myCompany.com]。
+* NetworkLocation項目0和1定義了名為&quot;MyCorporateIntranet&quot;和&quot;Internet&quot;的網路位置。 這些網路位置為名為的伺服器定義了兩個不同的IP地址 [!DNL VS01.myCompany.com]。
 * NetworkLocation項目2是網路 [!DNL Insight] 位置。 這是使用的預設網路位置 [!DNL Insight]。 在此示例中，網 [!DNL Insight] 絡位置從&quot;Internet&quot; NetworkLocation繼承其AddressDefinitions。
 
 * NetworkLocation項目3是網路 [!DNL Insight Server] 位置。 這是與群集中的其 [!DNL Insight Server] 他伺服器通信時使用的預設網路位置。 在此示例中，網 [!DNL Insight Server] 絡位置從「MyCorporate Intranet」 NetworkLocation繼承其AddressDefinition。
