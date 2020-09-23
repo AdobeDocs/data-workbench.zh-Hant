@@ -1,15 +1,18 @@
 ---
 description: 處理Insight Server與主Insight Server相同，但其「元件」目錄的內容除外。
-solution: Insight
-title: 安裝和配置Processing Insight伺服器
+solution: Analytics
+title: 安裝和設定處理 Insight Server
 uuid: 186675f7-8b63-4675-89ec-51b0837a64d8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '303'
+ht-degree: 5%
 
 ---
 
 
-# 安裝和配置Processing Insight伺服器{#installing-and-configuring-the-processing-insight-servers}
+# 安裝和設定處理 Insight Server{#installing-and-configuring-the-processing-insight-servers}
 
 處理Insight Server與主Insight Server相同，但其「元件」目錄的內容除外。
 
