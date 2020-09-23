@@ -1,16 +1,19 @@
 ---
 description: 測試結果必須清晰且有意義，讓您有信心根據這些結果做出重大決策。
-solution: Insight,Analytics
-title: 我該測試什麼？
+solution: Analytics,Analytics
+title: 應測試哪些項目？
 topic: Data workbench
 uuid: 9dfe3685-885e-4098-ab1d-ac891ccc5199
 translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '431'
+ht-degree: 1%
 
 ---
 
 
-# 我該測試什麼？{#what-should-i-test}
+# 應測試哪些項目？{#what-should-i-test}
 
 測試結果必須清晰且有意義，讓您有信心根據這些結果做出重大決策。
 
