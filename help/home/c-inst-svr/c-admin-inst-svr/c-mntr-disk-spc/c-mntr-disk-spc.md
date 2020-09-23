@@ -1,15 +1,18 @@
 ---
 description: 您應定期監控可用磁碟空間，讓所有Insight Server電腦都能繼續以最高層級執行。
-solution: Insight
-title: 監視磁碟空間
+solution: Analytics
+title: 監控磁碟空間
 uuid: 13248e36-4e88-4212-816e-bcc12deefcb4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '124'
+ht-degree: 4%
 
 ---
 
 
-# 監視磁碟空間{#monitoring-disk-space}
+# 監控磁碟空間{#monitoring-disk-space}
 
 您應定期監控可用磁碟空間，讓所有Insight Server電腦都能繼續以最高層級執行。
 
