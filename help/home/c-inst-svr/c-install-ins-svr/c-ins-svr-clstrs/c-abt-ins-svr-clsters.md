@@ -1,18 +1,18 @@
 ---
 description: 當您要處理並讓Insight和Report的使用者存取的資料量超過單一Insight Server的容量時，就需要Insight Server叢集。
-solution: Insight
-title: 關於Insight Server叢集
+solution: Analytics
+title: 關於 Insight Server 叢集
 uuid: d65e0fe5-f87d-4d8e-a208-9192e9d62fb5
 translation-type: tm+mt
-source-git-commit: 2c1b2adfe8bf479c2a8cbd150ed006be2336022c
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
 workflow-type: tm+mt
 source-wordcount: '320'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# 關於Insight Server叢集{#about-insight-server-clusters}
+# 關於 Insight Server 叢集{#about-insight-server-clusters}
 
 當您要處理並讓Insight和Report的使用者存取的資料量超過單一Insight Server的容量時，就需要Insight Server叢集。
 
