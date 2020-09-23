@@ -1,15 +1,18 @@
 ---
 description: 您必須設定目標Insight伺服器，以便從儲存原始事件資料的中繼器擷取資料。
-solution: Insight
-title: 配置複製服務
+solution: Analytics
+title: 設定複寫服務
 uuid: 93931b1d-d1fd-4e98-aa88-f7962eea92a2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '1005'
+ht-degree: 1%
 
 ---
 
 
-# 配置複製服務{#configuring-the-replication-service}
+# 設定複寫服務{#configuring-the-replication-service}
 
 您必須設定目標Insight伺服器，以便從儲存原始事件資料的中繼器擷取資料。
 
@@ -37,7 +40,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <tbody> 
    <tr> 
       <td colname="col1"> 目錄 </td> 
-      <td colname="col2"> <p>要複製(復 <span class="wintitle"> 制</span> )到目標 <span class="keyword"> Insight Server的Repeater上的目錄</span>。 複製 <span class="wintitle"> 服務允許從單個重複器中複製多個目</span> 錄 <span class="wintitle"></span>。 </p> <p>要添加新目錄，請按一下右鍵「目錄 <span class="uicontrol"> 」</span> ，然後按一下「添加新 <span class="uicontrol"> 」&gt;「</span> 目錄 <span class="uicontrol"></span>」。 </p> </td> 
+      <td colname="col2"> <p>要複製(復 <span class="wintitle"> 制</span> )至目標 <span class="keyword"> Insight Server的Repeater上的目錄</span>。 複製 <span class="wintitle"> 服務允許從單個重複器中複製多個目</span> 錄 <span class="wintitle"></span>。 </p> <p>要添加新目錄，請按一下右鍵「目錄 <span class="uicontrol"> 」</span> ，然後按一下「添加新 <span class="uicontrol"> 」&gt;「</span> 目錄 <span class="uicontrol"></span>」。 </p> </td> 
    </tr> 
    <tr> 
       <td colname="col1"> 平面化路徑 </td> 
@@ -58,7 +61,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    </tr> 
    <tr> 
       <td colname="col1"> 遠程URI </td> 
-      <td colname="col2">URI（包括檔案遮色片）可存取 <span class="wintitle"> Repeater的檔案儲存</span> 。 Repeater <span class="filepath"> 上的</span><span class="wintitle"></span> Communications.cfg檔案應加以設定，以便使用此URI存取事件資料。 請參 <a href="../../../home/c-inst-svr/c-admin-inst-svr/c-mntr-disk-spc/t-mntr-evt-data-spc.md#task-a54d4bd16b96437f943cd09e5d848440"> 閱監視事件資料空間</a>。 </td> 
+      <td colname="col2">URI（包括檔案遮色片）可存取 <span class="wintitle"> Repeater的檔案儲存</span> 。 Repeater <span class="filepath"> 上的</span><span class="wintitle"></span> Communications.cfg檔案應加以設定，以便使用此URI存取事件資料。 See <a href="../../../home/c-inst-svr/c-admin-inst-svr/c-mntr-disk-spc/t-mntr-evt-data-spc.md#task-a54d4bd16b96437f943cd09e5d848440"> Monitoring Event Data Space</a>. </td> 
    </tr> 
    <tr> 
       <td colname="col1"> 伺服器 </td> 
@@ -108,7 +111,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 此示例說明如果「平面化路徑」和「遞歸」參數都設定為true，則如何複製檔案。
 
-假設遠程URI [!DNL /RemoteRoot/] 為，本地路徑為[!DNL E:\LocalRoot\]。 在遠程( [!DNL Repeater])電腦上，檔案的組織如下：
+假設遠程URI為， [!DNL /RemoteRoot/] 本地路徑為 [!DNL E:\LocalRoot\]。 在遠程( [!DNL Repeater])電腦上，檔案的組織如下：
 
 * [!DNL /RemoteRoot/fileA.txt]
 * [!DNL /RemoteRoot/Dir1/fileB.txt]
