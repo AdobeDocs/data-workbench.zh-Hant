@@ -1,15 +1,18 @@
 ---
 description: 如果客戶端可以透過多個網路（例如透過公司內部網路和網際網路）到達Insight Server，則位址檔案必須為伺服器的每個IP位址定義個別的網路位置。
-solution: Insight
-title: Insight Server的多個IP位址
+solution: Analytics
+title: Insight Server 的多個 IP 位址
 uuid: 6ed00b47-8ba3-4127-a5db-7e684e573d9c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 7%
 
 ---
 
 
-# Insight Server的多個IP位址{#multiple-ip-addresses-for-an-insight-server}
+# Insight Server 的多個 IP 位址{#multiple-ip-addresses-for-an-insight-server}
 
 如果客戶端可以透過多個網路（例如透過公司內部網路和網際網路）到達Insight Server，則位址檔案必須為伺服器的每個IP位址定義個別的網路位置。
 
