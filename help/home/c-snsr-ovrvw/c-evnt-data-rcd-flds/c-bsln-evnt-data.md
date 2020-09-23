@@ -1,10 +1,13 @@
 ---
 description: 有關感測器記錄的基線事件資料記錄欄位的資訊。
-solution: Insight
+solution: Analytics
 title: 基線事件資料記錄欄位
 uuid: aa36d332-089c-4ae2-98e2-a93d2fa023b7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '461'
+ht-degree: 3%
 
 ---
 
@@ -43,7 +46,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> cs-uri-query </td> 
-   <td colname="col2"> <p>URI的查詢字串部分（stem +查詢字串= URI） </p> <p>此前會加上問號(?)且可包含一或多個名稱值對，並以&amp;符號(&amp;)分隔。 </p> <p>範例：page=homepage </p> </td> 
+   <td colname="col2"> <p>URI的查詢字串部分（stem +查詢字串= URI） </p> <p>前面有問號(?) 且可包含一或多個名稱值對，並以&amp;符號(&amp;)分隔。 </p> <p>範例：page=homepage </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs-uri-stem </td> 
