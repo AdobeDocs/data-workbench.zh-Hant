@@ -1,15 +1,18 @@
 ---
 description: 通常，當您要處理並讓Insight和Report的使用者存取的資料量超過叢集目前組態的容量時，您會想將Insight Server DPU新增至現有叢集。
-solution: Insight
-title: 將Insight伺服器DPU新增至現有叢集
+solution: Analytics
+title: 將 Insight Server DPU 新增至現有叢集
 uuid: 1977a90e-bd51-4838-9498-f7692891109f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '373'
+ht-degree: 4%
 
 ---
 
 
-# 將Insight伺服器DPU新增至現有叢集{#adding-an-insight-server-dpu-to-an-existing-cluster}
+# 將 Insight Server DPU 新增至現有叢集{#adding-an-insight-server-dpu-to-an-existing-cluster}
 
 通常，當您要處理並讓Insight和Report的使用者存取的資料量超過叢集目前組態的容量時，您會想將Insight Server DPU新增至現有叢集。
 
