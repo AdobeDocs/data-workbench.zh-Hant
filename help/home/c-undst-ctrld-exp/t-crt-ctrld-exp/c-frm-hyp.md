@@ -1,16 +1,19 @@
 ---
 description: 假設是一個假設，就論據而言，這個假設是正確的，它提供了一種試探性的解釋，可以通過進一步的調查來檢驗。
-solution: Insight,Analytics
-title: 構成假設
+solution: Analytics,Analytics
+title: 形成假設
 topic: Data workbench
 uuid: 3973060a-f49e-44e1-aa49-25059cb33783
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '189'
+ht-degree: 3%
 
 ---
 
 
-# 構成假設{#forming-a-hypothesis}
+# 形成假設{#forming-a-hypothesis}
 
 假設是一個假設，就論據而言，這個假設是正確的，它提供了一種試探性的解釋，可以通過進一步的調查來檢驗。
 
