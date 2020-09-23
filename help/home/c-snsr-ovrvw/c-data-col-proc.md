@@ -1,19 +1,22 @@
 ---
 description: Sensor可免除傳統上從事資料收集的大量人力，讓您從網際網路通道自動取得資料。
-solution: Insight
-title: 資料收集程式如何運作？
+solution: Analytics
+title: 資料收集程序如何運作？
 uuid: d34e5938-217b-4a1e-b96e-55a02b1c3af0
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 4%
 
 ---
 
 
-# 資料收集程式如何運作？{#how-does-the-data-collection-process-work}
+# 資料收集程序如何運作？{#how-does-the-data-collection-process-work}
 
 Sensor可免除傳統上從事資料收集的大量人力，讓您從網際網路通道自動取得資料。
 
-在許多情況下，使用可 [!DNL Sensor] 以極大地簡化資料管理流程。
+在許多情況下，使用可 [!DNL Sensor] 以大大簡化您的資料管理流程。
 
 現今大型的網際網路、外部網路和內部網路網站，通常都可在一系列的Web伺服器上執行。 產生的記錄檔和資料可能會非常龐大，而且管理起來十分麻煩。 例如，若您的網站執行30部Web伺服器，通常您的某位員工（或外包服務供應商的員工）會提取並合併30部伺服器上的每個記錄檔，然後對其執行報表。 在每 [!DNL Sensor] 台Web伺服器上安裝會自動化整個程式，降低開支並即時提供資料。
 
