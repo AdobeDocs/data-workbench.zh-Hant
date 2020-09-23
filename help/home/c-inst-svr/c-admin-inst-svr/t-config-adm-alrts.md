@@ -1,15 +1,18 @@
 ---
 description: 管理警報會在Insight Server在正常作業過程中偵測到錯誤時，傳送電子郵件通知給指定的電子郵件地址。
-solution: Insight
-title: 配置管理警報
+solution: Analytics
+title: 設定管理警報
 uuid: 398e088b-ff83-46ae-a20c-ba0b50d85702
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 2%
 
 ---
 
 
-# 配置管理警報{#configuring-administrative-alerts}
+# 設定管理警報{#configuring-administrative-alerts}
 
 管理警報會在Insight Server在正常作業過程中偵測到錯誤時，傳送電子郵件通知給指定的電子郵件地址。
 
