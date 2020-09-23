@@ -1,16 +1,19 @@
 ---
 description: 您必須將x-experity欄位新增至Log Processing.cfg檔案，此檔案可用來建立擴充的維度。
-solution: Insight,Analytics
-title: 修改Log Processing.cfg
+solution: Analytics,Analytics
+title: 修改 Log Processing.cfg
 topic: Data workbench
 uuid: 9105b09b-e3d5-4922-a205-b459553a4bec
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 4%
 
 ---
 
 
-# 修改Log Processing.cfg{#modifying-log-processing-cfg}
+# 修改 Log Processing.cfg{#modifying-log-processing-cfg}
 
 您必須將x-experity欄位新增至Log Processing.cfg檔案，此檔案可用來建立擴充的維度。
 
