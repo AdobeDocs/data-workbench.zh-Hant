@@ -1,15 +1,18 @@
 ---
 description: 轉換功能可在Insight Server FSU機器上執行，以便匯出記錄來源資料供其他應用程式使用。
-solution: Insight
-title: 配置轉換
+solution: Analytics
+title: 設定轉換
 uuid: 0526704a-71b2-4094-9d3a-1ba84f4dc287
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '481'
+ht-degree: 1%
 
 ---
 
 
-# 配置轉換{#configuring-transform}
+# 設定轉換{#configuring-transform}
 
 轉換功能可在Insight Server FSU機器上執行，以便匯出記錄來源資料供其他應用程式使用。
 
