@@ -1,10 +1,13 @@
 ---
 description: 記錄檔(.vsl)檔案包含事件資料欄位，這些欄位由Sensors從伺服器收集，並由資料工作台伺服器在資料集建構程式中使用。
-solution: Insight
+solution: Analytics
 title: 事件資料記錄欄位
 uuid: ad9e773c-a128-4094-9e20-45a6de025c8f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '139'
+ht-degree: 5%
 
 ---
 
