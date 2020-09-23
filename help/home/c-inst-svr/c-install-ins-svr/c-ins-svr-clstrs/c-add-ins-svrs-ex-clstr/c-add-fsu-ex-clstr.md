@@ -1,15 +1,18 @@
 ---
 description: 如果您想要將來源資料儲存在其他檔案伺服器上，或想為主Insight伺服器設定備份，則可能想要將Insight Server FSU新增至現有叢集。
-solution: Insight
-title: 將Insight Server FSU添加到現有群集
+solution: Analytics
+title: 將 Insight Server FSU 新增至現有叢集
 uuid: 57d6ef52-eef9-4425-943a-331e4c9c4207
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '699'
+ht-degree: 2%
 
 ---
 
 
-# 將Insight Server FSU添加到現有群集{#adding-an-insight-server-fsu-to-an-existing-cluster}
+# 將 Insight Server FSU 新增至現有叢集{#adding-an-insight-server-fsu-to-an-existing-cluster}
 
 如果您想要將來源資料儲存在其他檔案伺服器上，或想為主Insight伺服器設定備份，則可能想要將Insight Server FSU新增至現有叢集。
 
@@ -23,7 +26,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 在 [!DNL Insight]中，為主 [!DNL Server Files Manager] 設備(通常為 [!DNL Insight Server][!DNL Insight Server] FSU)開啟，然後對要添加到群集的每個FSU執行以下操作：
 
-1. 編輯主版上的地址檔 [!DNL Insight Server] 案，以包含新FSU的名稱和位址，如將處理分析伺服器新 [增至位址檔中所述](../../../../../home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-config-mstr-ins-svr-clstr.md#section-2fe5298180164e8dbaa59ea6b6ff682d)。 將新FSU的名稱和位址新增至叢集目前所列的群 [!DNL Insight Servers] 組。
+1. 編輯主版上的地址檔 [!DNL Insight Server] 案，以包含新FSU的名稱和位址，如將處理分析伺服器新 [增至位址檔中所述](../../../../../home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-config-mstr-ins-svr-clstr.md#section-2fe5298180164e8dbaa59ea6b6ff682d)。 將新FSU的名稱和位址新增至叢集目前列出的群 [!DNL Insight Servers] 組。
 
 1. 編輯主版上的訪問控制文 [!DNL Insight Server] 件，以包括新FSU的IP地址，如更新群 [集的訪問控制檔案中所述](../../../../../home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-config-mstr-ins-svr-clstr.md#section-fce1367d92a445168c35e9ca506e7d6b)。
 
