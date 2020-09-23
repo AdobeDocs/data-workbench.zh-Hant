@@ -1,15 +1,18 @@
 ---
 description: 感測器在伺服器上使用時，可透過伺服器的API，從任何有效的HTTP要求或回應標題或變數收集事件資料欄位。
-solution: Insight
-title: 可擴充欄位
+solution: Analytics
+title: 可延伸欄位
 uuid: 91b9857e-44a4-497f-b157-51afd30306fe
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 1%
 
 ---
 
 
-# 可擴充欄位{#extensible-fields}
+# 可延伸欄位{#extensible-fields}
 
 感測器在伺服器上使用時，可透過伺服器的API，從任何有效的HTTP要求或回應標題或變數收集事件資料欄位。
 
