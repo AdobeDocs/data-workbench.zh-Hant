@@ -1,15 +1,18 @@
 ---
 description: 要更改感測器與之通信的資料工作台伺服器（目標伺服器），必須在安裝感測器的每個Web伺服器上編輯txlogd.conf檔案。
-solution: Insight
-title: 變更目標資料工作台伺服器
+solution: Analytics
+title: 變更目標 Data Workbench 伺服器
 uuid: 931d376d-8622-4858-8290-19ce91538570
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '280'
+ht-degree: 4%
 
 ---
 
 
-# 變更目標資料工作台伺服器{#changing-the-target-data-workbench-server}
+# 變更目標 Data Workbench 伺服器{#changing-the-target-data-workbench-server}
 
 要更改感測器與之通信的資料工作台伺服器（目標伺服器），必須在安裝感測器的每個Web伺服器上編輯txlogd.conf檔案。
 
