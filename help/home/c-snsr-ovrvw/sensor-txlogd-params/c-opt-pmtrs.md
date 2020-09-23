@@ -1,15 +1,18 @@
 ---
 description: 有關可選感測器txtlogd.conf檔案參數的資訊。
-solution: Insight
-title: 可選參數
+solution: Analytics
+title: 選用參數
 uuid: 8515a571-93ce-49cd-9ded-c9273259d0ee
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '1484'
+ht-degree: 1%
 
 ---
 
 
-# Optional Parameters{#optional-parameters}
+# 選用參數{#optional-parameters}
 
 有關可選感測器txtlogd.conf檔案參數的資訊。
 
@@ -23,7 +26,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
  <tbody> 
   <tr> 
    <td colname="col1"> AddressFilter </td> 
-   <td colname="col2"> <p>可讓您篩選指定的IP位址。 </p> <p>當您篩選特定位址時，不會記錄「封包」。 此功能在日誌處理之前消除了內部或受監控的代理，從而提高了日誌處理的速度並降低了資料儲存要求。 在指定地址時，可以使用通配符。 </p> <p>範例：地 <span class="filepath"> 址篩選器10.0.0.000</span> </p> </td> 
+   <td colname="col2"> <p>可讓您篩選指定的IP位址。 </p> <p>當您篩選特定位址時，不會記錄「封包」。 此功能在日誌處理之前消除了內部或受監控的代理，從而提高了日誌處理的速度並降低了資料儲存要求。 在指定地址時，可以使用通配符。 </p> <p>範例： <span class="filepath"> AddressFilter 10.0.0.000</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>ContentFilterInclude </p> <p>ContentFilterExclude </p> </td> 
@@ -61,7 +64,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> ExpFile </td> 
-   <td colname="col2"> <p>控制實驗配置檔案的路徑。 </p> <p>範例：ExpFile <span class="filepath"> C:\VisualSensor\experiment.txt</span> </p> </td> 
+   <td colname="col2"> <p>控制實驗配置檔案的路徑。 </p> <p>範例： <span class="filepath"> ExpFile C:\VisualSensor\experiment.txt</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> ExpCookieURL </td> 
@@ -69,11 +72,11 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> ExpPartialMatch </td> 
-   <td colname="col2"> <p>如果要啟用受控實驗將整個站點或站點的整個子目錄重新映射到另一個位置，請將此參數設定為「on」。預設值為「off」。 </p> <p>範例：關 <span class="filepath"> 閉ExpPartialMatch</span> </p> <p> <p>注意： 將此參數設為「on」時請務必小心。 </p> </p> </td> 
+   <td colname="col2"> <p>如果要啟用受控實驗將整個站點或站點的整個子目錄重新映射到另一個位置，請將此參數設定為「on」。 預設值為「off」。 </p> <p>範例： <span class="filepath"> ExpPartialMatch關閉</span> </p> <p> <p>注意： 將此參數設為「on」時請務必小心。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> LogAllNewUsers </td> 
-   <td colname="col2"> <p>即使使用者要求ContentFilterExclude參數篩選出的檔案類型，也可判斷是否記錄每位新使用者的首次點按。 </p> <p>預設值為"no"。 </p> <p>通常，影像檔案會由ContentFilterExclude參數篩選掉。 如果LogAllNewUsers設為"yes"，而新使用者從伺服器取得的第一個檔案就是影像，則會記錄該要求。 如果LogAllNewUsers參數設為"no"或完全未設定（並假設影像已由ContentFilterExclude參數篩選出），而新使用者從伺服器取得的第一份檔案就是影像，則不會記錄該要求。 </p> <p>範例： <span class="filepath"> LogAllNewUsers否</span> </p> </td> 
+   <td colname="col2"> <p>即使使用者要求ContentFilterExclude參數篩選出的檔案類型，也可判斷是否記錄每位新使用者的首次點按。 </p> <p>預設值為"no"。 </p> <p>通常，影像檔案會由ContentFilterExclude參數篩選掉。 如果LogAllNewUsers設為"yes"，而新使用者從伺服器取得的第一個檔案就是影像，則會記錄該要求。 如果LogAllNewUsers參數設為"no"或完全未設定（並假設影像已由ContentFilterExclude參數篩選出），而新使用者從伺服器取得的第一份檔案就是影像，則不會記錄該要求。 </p> <p>範例： <span class="filepath"> LogAllNewUsers no</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> MaxPageLoadTime </td> 
@@ -93,7 +96,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> TrackingCookie </td> 
-   <td colname="col2"> <p>訪客瀏覽器上設定的Cookie名稱。 </p> <p>預設值為"v1st"。 </p> <p>範例： <span class="filepath"> 追蹤Cookie v1st</span> </p> </td> 
+   <td colname="col2"> <p>訪客瀏覽器上設定的Cookie名稱。 </p> <p>預設值為"v1st"。 </p> <p>範例： <span class="filepath"> TrackingCookie v1st</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> VerifyCertName </td> 
@@ -135,7 +138,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
  <tbody> 
   <tr> 
    <td colname="col1"> ApacheUseAlternateHandler </td> 
-   <td colname="col2"> <p>僅在使用Adobe諮詢服務時才設定此參數。 </p> <p>告訴 <span class="wintitle"> Sensor</span> （感測器）應使用哪兩個可能的"hook"來設定v1st Cookie。 </p> <p>當Apache感測器未正確設 <span class="wintitle"> 定v1st Cookie時</span> ，請使用此參數。 如果預設的掛接未正確設定v1st Cookie，此參數會設為"yes"。 預設值為"no"。 </p> <p>範例： <span class="filepath"> ApacheUseAlternateHandler否</span> </p> </td> 
+   <td colname="col2"> <p>僅在使用Adobe諮詢服務時才設定此參數。 </p> <p>告訴 <span class="wintitle"> Sensor</span> （感測器）應使用哪兩個可能的"hook"來設定v1st Cookie。 </p> <p>當Apache感測器未正確設 <span class="wintitle"> 定v1st Cookie時</span> ，請使用此參數。 如果預設的掛接未正確設定v1st Cookie，此參數會設為"yes"。 預設值為"no"。 </p> <p>範例： <span class="filepath"> ApacheUseAlternateHandler no</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> ApacheUseBothHandlers </td> 
@@ -158,7 +161,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
  <tbody> 
   <tr> 
    <td colname="col1"> ApacheUseAlternateHandler </td> 
-   <td colname="col2"> <p>僅在使用Adobe諮詢服務時才設定此參數。 </p> <p>告訴 <span class="wintitle"> Sensor</span> （感測器）應使用哪兩個可能的"hook"來設定v1st Cookie。 </p> <p>當Apache感測器未正確設 <span class="wintitle"> 定v1st Cookie時</span> ，請使用此參數。 如果預設的掛接未正確設定v1st Cookie，此參數會設為"yes"。 預設值為"no"。 </p> <p>範例： <span class="filepath"> ApacheUseAlternateHandler否</span> </p> </td> 
+   <td colname="col2"> <p>僅在使用Adobe諮詢服務時才設定此參數。 </p> <p>告訴 <span class="wintitle"> Sensor</span> （感測器）應使用哪兩個可能的"hook"來設定v1st Cookie。 </p> <p>當Apache感測器未正確設 <span class="wintitle"> 定v1st Cookie時</span> ，請使用此參數。 如果預設的掛接未正確設定v1st Cookie，此參數會設為"yes"。 預設值為"no"。 </p> <p>範例： <span class="filepath"> ApacheUseAlternateHandler no</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> ApacheUseBothHandlers </td> 
