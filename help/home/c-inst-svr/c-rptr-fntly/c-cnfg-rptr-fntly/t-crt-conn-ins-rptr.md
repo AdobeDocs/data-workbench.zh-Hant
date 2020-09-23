@@ -1,15 +1,18 @@
 ---
 description: 如果網路防火牆無法阻止從Insight機器存取中繼器伺服器，您可以在中繼器伺服器與Insight之間建立連線，以便您使用Insight管理中繼器伺服器。
-solution: Insight
-title: 在Insight和Repeater之間建立連線
+solution: Analytics
+title: 在 Insight 和中繼器之間建立連線
 uuid: dccce83a-8708-4763-a19a-64d905a9f624
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '341'
+ht-degree: 4%
 
 ---
 
 
-# 在Insight和Repeater之間建立連線{#creating-a-connection-between-insight-and-repeater}
+# 在 Insight 和中繼器之間建立連線{#creating-a-connection-between-insight-and-repeater}
 
 如果網路防火牆無法阻止從Insight機器存取中繼器伺服器，您可以在中繼器伺服器與Insight之間建立連線，以便您使用Insight管理中繼器伺服器。
 
@@ -37,7 +40,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> SSL用戶端憑證 </td> 
-   <td colname="col2"> <p>選用，除非您有多個憑證。 包含此Insight副本之數位憑證的檔案名 <span class="keyword"> 稱</span>。 (這是您在安裝 <span class="keyword"> Insight時下載的檔案</span>。) </p> <p>範例：薩 <span class="filepath"> 曼莎·史密斯</span></p> <p>如果您將此參數留空， <span class="keyword"> Insight</span> 會使用任何憑證。 </p> </td> 
+   <td colname="col2"> <p>選用，除非您有多個憑證。 包含此Insight副本之數位憑證的檔案名 <span class="keyword"> 稱</span>。 (這是您在安裝 <span class="keyword"> Insight時下載的檔案</span>。) </p> <p>範例： <span class="filepath"> 薩曼莎·史密斯·佩姆</span></p> <p>如果您將此參數留空， <span class="keyword"> Insight</span> 會使用任何憑證。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>SSL伺服器 </p> <p>通用名稱 </p> </td> 
