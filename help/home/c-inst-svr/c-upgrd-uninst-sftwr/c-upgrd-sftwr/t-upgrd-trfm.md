@@ -1,10 +1,13 @@
 ---
 description: 升級轉換資料夾的步驟。
-solution: Insight
+solution: Analytics
 title: 升級轉換
 uuid: 26e567bc-7571-4317-b77c-2631a163a4b5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '73'
+ht-degree: 5%
 
 ---
 
