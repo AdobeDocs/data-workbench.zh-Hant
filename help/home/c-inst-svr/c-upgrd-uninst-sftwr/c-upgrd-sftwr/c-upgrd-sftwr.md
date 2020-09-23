@@ -1,15 +1,18 @@
 ---
 description: 升級Insight Server、Transform或Repeater軟體的指示。
-solution: Insight
-title: 升級Insight Server
+solution: Analytics
+title: 升級 Insight Server
 uuid: b83dd5fe-f91b-43e3-9f5e-68ea88ed2132
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '80'
+ht-degree: 7%
 
 ---
 
 
-# 升級Insight Server{#upgrading-insight-server}
+# 升級 Insight Server{#upgrading-insight-server}
 
 升級Insight Server、Transform或Repeater軟體的指示。
 
