@@ -1,15 +1,18 @@
 ---
 description: 針對感測器離線時的兩種情況進行規劃。
-solution: Insight
-title: 處理離線感測器
+solution: Analytics
+title: 處理離線 Sensor
 uuid: a8be847d-e506-4fbc-9d57-a28ff0cbeff2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '71'
+ht-degree: 11%
 
 ---
 
 
-# 處理離線感測器{#dealing-with-offline-sensors}
+# 處理離線 Sensor{#dealing-with-offline-sensors}
 
 針對感測器離線時的兩種情況進行規劃。
 
