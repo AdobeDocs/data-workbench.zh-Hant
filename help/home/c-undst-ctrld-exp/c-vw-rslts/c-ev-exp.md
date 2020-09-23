@@ -1,11 +1,14 @@
 ---
 description: 在執行實驗，直到所需的最少訪客數參與實驗後，您就可以確保有足夠的統計信賴來評估實驗結果。
-solution: Insight,Analytics
+solution: Analytics,Analytics
 title: 評估實驗
 topic: Data workbench
 uuid: 88fd81bc-b944-48ea-bd4d-8716979ec69e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 1%
 
 ---
 
