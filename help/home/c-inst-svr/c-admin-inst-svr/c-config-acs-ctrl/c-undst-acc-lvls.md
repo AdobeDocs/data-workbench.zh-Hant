@@ -1,15 +1,18 @@
 ---
 description: 訪問級別描述了允許一組用戶讀取或修改電腦上的哪些URI。
-solution: Insight
-title: 瞭解訪問級別
+solution: Analytics
+title: 瞭解存取層級
 uuid: e9091ae1-9a34-4e00-a928-20d04119ee9e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '665'
+ht-degree: 3%
 
 ---
 
 
-# 瞭解訪問級別{#understanding-access-levels}
+# 瞭解存取層級{#understanding-access-levels}
 
 訪問級別描述了允許一組用戶讀取或修改電腦上的哪些URI。
 
@@ -52,26 +55,26 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> <p>使用者 </p> </td> 
-   <td colname="col2"> <p>/Profiles/ </p> <p>/狀態/ </p> <p>/Software/ </p> <p>/地址/ </p> <p>/使用者/$ </p> </td> 
+   <td colname="col2"> <p>/設定檔/ </p> <p>/狀態/ </p> <p>/Software/ </p> <p>/地址/ </p> <p>/使用者/$ </p> </td> 
    <td colname="col3"> /Users/%CN%/ </td> 
    <td colname="col4"> <p>讀取和寫入與Insight使用者的SSL憑證公用名稱相符的使用者目錄 <span class="keyword"> 存取</span> 。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>超級用戶 </p> </td> 
-   <td colname="col2"> <p>/Profiles/$ </p> <p>/狀態/ </p> <p>/Software/ </p> <p>/地址/ </p> <p>/使用者/$ </p> </td> 
-   <td colname="col3"> <p>/Profiles/ </p> <p>/Users/%CN%/ </p> </td> 
+   <td colname="col2"> <p>/設定檔/$ </p> <p>/狀態/ </p> <p>/Software/ </p> <p>/地址/ </p> <p>/使用者/$ </p> </td> 
+   <td colname="col3"> <p>/設定檔/ </p> <p>/Users/%CN%/ </p> </td> 
    <td colname="col4"> <p>高級用戶可以與用戶具有相同的訪問權限，並可以添加寫入配置檔案目錄的能力。 這些使用者可以編輯設定檔，並讓變更自動更新給其他 <span class="keyword"> Insight</span> 使用者，例如在分發新定義的工作區時。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>群集伺服器 </p> </td> 
-   <td colname="col2"> <p>/Components for Processing Servers/ </p> <p>/地址/ </p> <p>/Profiles/ </p> <p>/Lookups/ </p> <p>/Access Control/ </p> <p>/Bin/ </p> <p>/記錄檔/ </p> </td> 
+   <td colname="col2"> <p>/Components for Processing Servers/ </p> <p>/地址/ </p> <p>/設定檔/ </p> <p>/Lookups/ </p> <p>/存取控制/ </p> <p>/Bin/ </p> <p>/記錄檔/ </p> </td> 
    <td colname="col3"> <p>/Cluster/ </p> </td> 
-   <td colname="col4"> <p>對群集目錄的讀和寫訪問。 </p> </td> 
+   <td colname="col4"> <p>對群集目錄的讀寫訪問。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>報表伺服器 </p> </td> 
-   <td colname="col2"> <p>/Profiles/$ </p> <p>/狀態/ </p> <p>/Software/ </p> <p>/地址/ </p> <p>/使用者/$ </p> </td> 
-   <td colname="col3"> <p>/Profiles/ </p> <p>/Users/%CN%/ </p> <p>/ReportStatus.vsp </p> </td> 
+   <td colname="col2"> <p>/設定檔/$ </p> <p>/狀態/ </p> <p>/Software/ </p> <p>/地址/ </p> <p>/使用者/$ </p> </td> 
+   <td colname="col3"> <p>/設定檔/ </p> <p>/Users/%CN%/ </p> <p>/ReportStatus.vsp </p> </td> 
    <td colname="col4"> <p>報告電腦可以與「超級用戶」具有相同的訪問權限，並可以對 <span class="filepath"> ReportStatus.vsp檔案進行寫入</span> 。 </p> </td> 
   </tr> 
  </tbody> 
@@ -79,7 +82,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **配置訪問控制**
 
-定義訪問控制組時，需要包括所有需要訪問此電腦的系統管理員、用戶、群集伺服器和報告伺服器用 [!DNL Insight Server] 戶。 您可以使用IP位址或SSL憑證資訊（例如公用名稱或組織）授與存取權。
+定義訪問控制組時，需要包括所有需要訪問此電腦的系統管理員、用戶、群集伺服器和報告伺服器用 [!DNL Insight Server] 戶。 您可以使用IP位址或SSL憑證資訊（例如公用名稱或組織）來授與存取權。
 
 >[!NOTE]
 >
