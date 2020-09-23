@@ -1,16 +1,19 @@
 ---
 description: 若要建立具有統計意義的實驗，您必須決定要執行實驗的時間，以包含足夠的訪客，以有效評估網站變更的結果。
-solution: Insight,Analytics
-title: 確定需要的訪客數量
+solution: Analytics,Analytics
+title: 決定需要的訪客數量
 topic: Data workbench
 uuid: 07fca0aa-031a-4335-bba4-fb00cb90e29d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '178'
+ht-degree: 6%
 
 ---
 
 
-# 確定需要的訪客數量{#determining-the-number-of-visitors-needed}
+# 決定需要的訪客數量{#determining-the-number-of-visitors-needed}
 
 若要建立具有統計意義的實驗，您必須決定要執行實驗的時間，以包含足夠的訪客，以有效評估網站變更的結果。
 
