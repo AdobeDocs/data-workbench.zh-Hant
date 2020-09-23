@@ -1,15 +1,18 @@
 ---
 description: 有關在AIX 5.1或更高版本上安裝和配置Sensor for WebSphere 5.x的詳細說明。
-solution: Insight
-title: AIX上的WebSphere
+solution: Analytics
+title: AIX 上的 WebSphere
 uuid: a5a3fd79-a7f0-4861-adca-8da3a185d0df
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '1645'
+ht-degree: 0%
 
 ---
 
 
-# AIX上的WebSphere{#websphere-on-aix}
+# AIX 上的 WebSphere{#websphere-on-aix}
 
 有關在AIX 5.1或更高版本上安裝和配置Sensor for WebSphere 5.x的詳細說明。
 
@@ -78,7 +81,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 對程式檔案的權限不正確會導致安裝感測器時遇到的大多數問題。
 
-請確定您設定的權限完全符合本節所述。
+請確定您所設定的權限完全符合本節所述。
 
 預設情況下，tar檔案中的程式檔案具有以下權限。 根據系統的配置方式，在提取檔案時，這些設定可能會更改（未被遮罩）。
 
@@ -98,7 +101,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 如果要使用除建議預設值之外的權限，請查看Sensor UNIX檔案權限中的資訊，以確保您瞭解這些檔案的使用方式。
 
-## 編輯感測器配置檔案 {#section-283c8a92fa8841c1b6034e5f834ef4e7}
+## Edit the Sensor Configuration file {#section-283c8a92fa8841c1b6034e5f834ef4e7}
 
 txlogd.conf檔案包含感測器的配置參數。
 
@@ -139,7 +142,7 @@ txlogd.conf檔案包含感測器的配置參數。
 
 ## 將收集器添加到Web應用程式 {#section-d17297b1193f4e3cb150fb41f754ef12}
 
-對於WebSphere伺服器，收集器在servlet容器中作為篩選器操作。
+對於WebSphere伺服器，收集器在servlet容器中作為過濾器操作。
 
 若要將收集器新增至Web應用程式，請將篩選器新增至Web應用程式的web.xml部署描述檔，然後重新啟動Web應用程式。
 
