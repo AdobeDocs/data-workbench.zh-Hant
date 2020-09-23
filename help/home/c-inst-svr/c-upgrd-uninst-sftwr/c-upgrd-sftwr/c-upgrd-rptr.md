@@ -1,10 +1,13 @@
 ---
 description: 使用Insight升級Repeater或複製檔案升級的指示。
-solution: Insight
+solution: Analytics
 title: 升級中繼器
 uuid: 2027ed9e-9dd9-40f5-b7e9-2709f8745b5c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +43,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 >
 >如果您需要上傳其他檔案以完成升 [!DNL Repeater] 級，Adobe會提供相關指示。
 
-將升級檔案上傳至電腦後， [!DNL Repeater] 會自動 [!DNL Repeater] 重新啟動並載入新版本。
+將升級檔案上傳至機器後， [!DNL Repeater] 會自動 [!DNL Repeater] 重新啟動並載入新版本。
 
 ## 複製檔案以升級重複項 {#section-202f2209f6604f19a15d96b517ea1bc1}
 
