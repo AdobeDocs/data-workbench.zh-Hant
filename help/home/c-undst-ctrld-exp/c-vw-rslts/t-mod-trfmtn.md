@@ -1,16 +1,19 @@
 ---
 description: 既然x實驗欄位已可用，您必須建立擴充維度以在資料集中包含x實驗欄位，以便在Insight中檢視結果。
-solution: Insight,Analytics
-title: 修改Transformation.cfg
+solution: Analytics,Analytics
+title: 修改 Transformation.cfg
 topic: Data workbench
 uuid: c17e48db-8fd9-4640-b621-6963bb8223d7
 translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 2%
 
 ---
 
 
-# 修改Transformation.cfg{#modifying-transformation-cfg}
+# 修改 Transformation.cfg{#modifying-transformation-cfg}
 
 既然x實驗欄位已可用，您必須建立擴充維度以在資料集中包含x實驗欄位，以便在Insight中檢視結果。
 
