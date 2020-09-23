@@ -1,22 +1,25 @@
 ---
 description: 檢查收集器是否使用不同的方法運行。
-solution: Insight
-title: 確認資料收集器正在運行
+solution: Analytics
+title: 確認資料收集器執行中
 uuid: e5b9b12a-b8a5-4c00-abe5-e824516d46b7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '455'
+ht-degree: 3%
 
 ---
 
 
-# 確認資料收集器正在運行{#confirming-that-the-data-collector-is-running}
+# 確認資料收集器執行中{#confirming-that-the-data-collector-is-running}
 
 檢查收集器是否使用不同的方法運行。
 
 **建議頻率：** 每5-10分鐘
 
 * [在發射器中使用「網站測試功能」。](../../../home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md#section-a5a697c3252e40f184c0b662926170f2)
-* [檢查[!DNL感測器]是否正在設定Cookie。](../../../home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md#section-365a0182474c4dc9a5372d3e984f53de)
+* [檢查 [!DNL Sensor] 是否設定Cookie。](../../../home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md#section-365a0182474c4dc9a5372d3e984f53de)
 
 ## 使用網站測試 {#section-a5a697c3252e40f184c0b662926170f2}
 
@@ -24,7 +27,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 如果網站測試收到來自網站伺服器的回應，它會在佇列檔案中尋找來自網站伺服器的封包。 如果資料包未出現（表示收集器未運行以捕獲事件）,Site Test會向syslog寫入錯誤消息，並向Adobe發送錯誤消息（也會寫入感測器日誌檔案）。
 
-在「網站測試」傳送至網站伺服器的請求中，「網站測試」會將「使用者代理」值設定為「 [!DNL Sensor] 測試」。如果您不希望這些請求出現在資料集中，請將「 [!DNL Sensor] Test」 User-Agent新增至檔案或資料夾 [!DNL Baseline Robots List.txt] 中的檔案 [!DNL Extended Robots List.txt][!DNL Lookups][!DNL data workbench server]。
+在「網站測試」傳送至網站伺服器的請求中，「網站測試」會將「使用者代理」值設定為「 [!DNL Sensor] 測試」。 如果您不希望這些請求出現在資料集中，請將「 [!DNL Sensor] Test」 User-Agent新增至檔案或資料夾 [!DNL Baseline Robots List.txt] 中的檔案 [!DNL Extended Robots List.txt][!DNL Lookups][!DNL data workbench server]。
 
 **在發射器中啟用站點測試**
 
