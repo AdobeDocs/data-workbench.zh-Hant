@@ -1,15 +1,18 @@
 ---
 description: 您必須確保安裝Adobe伺服器產品的電腦符合最低系統需求檔案中所定義的最低系統需求。
-solution: Insight
-title: 確認您的系統是否正常
+solution: Analytics
+title: 確認系統運作狀況良好
 uuid: 6d132865-36ab-40fc-be24-e031f356fce2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '169'
+ht-degree: 5%
 
 ---
 
 
-# 確認您的系統是否正常{#confirming-your-systems-are-healthy}
+# 確認系統運作狀況良好{#confirming-your-systems-are-healthy}
 
 您必須確保安裝Adobe伺服器產品的電腦符合最低系統需求檔案中所定義的最低系統需求。
 
