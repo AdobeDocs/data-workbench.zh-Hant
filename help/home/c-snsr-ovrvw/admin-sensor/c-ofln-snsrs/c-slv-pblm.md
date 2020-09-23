@@ -1,10 +1,13 @@
 ---
 description: 當Web伺服器因故障而離線時，解決方案很簡單，需要具有適當權限的資料工作台用戶才能開啟Log Processing Mode.cfg檔案，並將感測器ID（在我們的示例中，WEB2）添加到「離線源」部分。
-solution: Insight
+solution: Analytics
 title: 解決問題
 uuid: 19d47b06-be12-4adf-9eac-b16cf7131834
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 1%
 
 ---
 
