@@ -1,15 +1,18 @@
 ---
 description: 存取控制設定檔案Access Control.cfg定義存取控制群組，Insight Server會根據傳入連線憑證的屬性（OU、CN等）授予檔案權限。
-solution: Insight
-title: 配置訪問控制
+solution: Analytics
+title: 設定存取控制
 uuid: e0206b43-3c8c-48ec-b663-814f5b663b96
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 4%
 
 ---
 
 
-# 配置訪問控制{#configuring-access-control}
+# 設定存取控制{#configuring-access-control}
 
 存取控制設定檔案Access Control.cfg定義存取控制群組，Insight Server會根據傳入連線憑證的屬性（OU、CN等）授予檔案權限。
 
