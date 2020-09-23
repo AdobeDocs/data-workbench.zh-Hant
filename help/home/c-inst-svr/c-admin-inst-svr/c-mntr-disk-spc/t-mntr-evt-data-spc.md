@@ -1,15 +1,18 @@
 ---
 description: 有關監視事件資料空間和更改感測器資料日誌目錄的資訊。
-solution: Insight
-title: 監視事件資料空間
+solution: Analytics
+title: 監控事件資料空間
 uuid: e514e8fb-e735-4003-ab21-17470c73af37
 translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '582'
+ht-degree: 1%
 
 ---
 
 
-# 監視事件資料空間{#monitoring-event-data-space}
+# 監控事件資料空間{#monitoring-event-data-space}
 
 有關監視事件資料空間和更改感測器資料日誌目錄的資訊。
 
