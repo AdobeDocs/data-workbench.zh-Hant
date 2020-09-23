@@ -1,15 +1,18 @@
 ---
 description: 從5.4安裝升級Data Workbench 6.1的伺服器元件。
-solution: Insight
+solution: Analytics
 title: DWB Server 5.4至5.5升級版
 uuid: 9cf9f493-f098-4c6d-a8b5-786833496557
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '192'
+ht-degree: 2%
 
 ---
 
 
-# DWB伺服器升級：5.4至5.5{#dwb-server-upgrade-to}
+# DWB 伺服器升級：5.4 升級至 5.5{#dwb-server-upgrade-to}
 
 從5.4安裝升級Data Workbench 6.1的伺服器元件。
 
