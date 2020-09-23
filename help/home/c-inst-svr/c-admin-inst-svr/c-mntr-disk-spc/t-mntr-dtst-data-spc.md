@@ -1,15 +1,18 @@
 ---
 description: 資料集監控和新增資料集資料儲存位置的相關資訊。
-solution: Insight
-title: 監視資料集資料空間
+solution: Analytics
+title: 監控資料集資料空間
 uuid: 0b7b95e7-b1bb-49cf-b465-fdbdc4ee214e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '464'
+ht-degree: 2%
 
 ---
 
 
-# 監視資料集資料空間{#monitoring-dataset-data-space}
+# 監控資料集資料空間{#monitoring-dataset-data-space}
 
 資料集監控和新增資料集資料儲存位置的相關資訊。
 
