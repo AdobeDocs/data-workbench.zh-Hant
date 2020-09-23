@@ -1,15 +1,18 @@
 ---
 description: 有關在Master Insight Server上配置群集、更新群集訪問控制檔案等的資訊。
-solution: Insight
-title: 為群集配置Master Insight Server
+solution: Analytics
+title: 為叢集設定主 Insight Server
 uuid: c3ac38e3-79c5-4863-9156-194589a6bcbd
 translation-type: tm+mt
-source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '1244'
+ht-degree: 1%
 
 ---
 
 
-# 為群集配置Master Insight Server{#configuring-the-master-insight-server-for-clustering}
+# 為叢集設定主 Insight Server{#configuring-the-master-insight-server-for-clustering}
 
 有關在Master Insight Server上配置群集、更新群集訪問控制檔案等的資訊。
 
@@ -26,7 +29,7 @@ source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
 
 >[!NOTE]
 >
->本節所述的程式需要 [!DNL Insight]。 如果您尚未安裝， [!DNL Insight]請依照使用指南中的 **[!DNL Insight]指示&#x200B;**，再繼續。
+>本節所述的程式需要 [!DNL Insight]。 如果您尚未安裝， [!DNL Insight]請依照使用指南中的 **[!DNL Insight]指示** ，再繼續。
 
 ## 將Processing Insight Servers新增至位址檔案 {#section-2fe5298180164e8dbaa59ea6b6ff682d}
 
@@ -58,15 +61,15 @@ source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
    1. 在「名稱」參數中，指定處理公 [!DNL Insight Server’s] 用名稱。
    1. 在「位址」參數中，指定處理 [!DNL Insight Server’s] IP位址。
 
-      您可以在「地址」欄位中使用星號作為萬用字元，例如10.10.116。*，簡化叢集。 請參 [閱瞭解訪問級別](../../../../../../home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-undst-acc-lvls.md#concept-6b292edf79214750a8d0525097b8795a)。
+      您可以在「地址」欄位中使用星號作為萬用字元，例如10.10.116。*，簡化叢集。 See [Understanding Access Levels](../../../../../../home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-undst-acc-lvls.md#concept-6b292edf79214750a8d0525097b8795a).
 
       以下示例定義包含兩個群集 [!DNL Insight Servers]:
 
       ![](assets/cfg_cluster_AddressDefinition1IP.png)
 
-1. 如果伺服器連接到多個網路，請重複步驟6，將這些網路的 [!DNL Insight Servers] 處理添加到網路位置。
+1. 如果伺服器連接到多個網路，請重複步驟6，將這些網路的處 [!DNL Insight Servers] 理添加到網路位置。
 
-   以下示例顯示了一個四個連接到 [!DNL Insight Servers] 兩個網路（「公司內部網」和「Internet」）的群集。
+   下列範例顯示一個四個連 [!DNL Insight Servers] 接到兩個網路（「企業內部網路」和「網際網路」）的叢集。
 
    ![](assets/cfg_cluster_AddressDefinition2IP.png)
 
@@ -147,7 +150,7 @@ source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
 
    1. 在中， [!DNL Server Files Manager]按一下右鍵列中檔案的複選標籤，然 [!DNL Temp] 後按一下 **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*。
 
-## 配置資料集的位置(temp.db) {#section-5ec257a4b4c64fb58baec1f12119a822}
+## 設定資料集 (temp.db) 的位置{#section-5ec257a4b4c64fb58baec1f12119a822}
 
 如果希望處理過程在與預設位置不同的 [!DNL Insight Servers] 目 [!DNL temp.db] 錄或驅動器中維護（資料集），或者希望在多個驅動器之間分 [!DNL temp.db] 發，請執行以下過程。
 
