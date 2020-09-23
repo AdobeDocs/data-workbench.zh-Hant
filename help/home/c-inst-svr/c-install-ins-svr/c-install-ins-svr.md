@@ -1,15 +1,18 @@
 ---
 description: Insight Server是依伺服器電腦授權。
-solution: Insight
-title: 安裝資料工作台伺服器
+solution: Analytics
+title: 安裝 Data Workbench 伺服器
 uuid: d6a64a6e-a463-4980-b836-45017fab6e7e
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '75'
+ht-degree: 10%
 
 ---
 
 
-# 安裝資料工作台伺服器{#installing-data-workbench-servers}
+# 安裝 Data Workbench 伺服器{#installing-data-workbench-servers}
 
 Insight Server是依伺服器電腦授權。
 
