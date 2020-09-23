@@ -1,15 +1,18 @@
 ---
 description: 有5個預先建立的存取控制群組可供使用，但您可以視需要建立和管理其他群組。
-solution: Insight
-title: 瞭解訪問控制組
+solution: Analytics
+title: 瞭解存取控制群組
 uuid: ff783078-6d2f-4a64-ab11-8083e35d765f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 8%
 
 ---
 
 
-# 瞭解訪問控制組{#understanding-access-control-groups}
+# 瞭解存取控制群組{#understanding-access-control-groups}
 
 有5個預先建立的存取控制群組可供使用，但您可以視需要建立和管理其他群組。
 
@@ -38,7 +41,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 | CN | 通用名稱 |
 | L | 位置 |
 | ST | 州或省 |
-| C | 國家 |
+| C | 國家/地區 |
 | OU | 組織單位 |
-| 「電子郵件」 | 電子郵件地址 |
+| 電子郵件 | 電子郵件地址 |
 
