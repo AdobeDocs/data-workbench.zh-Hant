@@ -1,15 +1,18 @@
 ---
 description: DPU設定檔DPU.cfg會指定Insight Server的各種效能參數。
-solution: Insight
-title: 設定DPU.cfg
+solution: Analytics
+title: 設定 DPU.cfg
 uuid: c348622b-7d4b-4cfa-a8f8-a07d91e440d5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 1%
 
 ---
 
 
-# 設定DPU.cfg{#configuring-dpu-cfg}
+# 設定 DPU.cfg{#configuring-dpu-cfg}
 
 DPU設定檔DPU.cfg會指定Insight Server的各種效能參數。
 
