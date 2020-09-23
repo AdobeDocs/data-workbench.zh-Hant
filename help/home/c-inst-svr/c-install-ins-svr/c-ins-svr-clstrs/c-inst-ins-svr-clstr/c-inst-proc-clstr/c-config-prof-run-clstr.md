@@ -1,15 +1,18 @@
 ---
 description: 當您將資料集描述檔設定為在Insight Server叢集上執行時，叢集中的所有電腦都會共用該描述檔的所有資料集設定檔案。
-solution: Insight
-title: 配置要在群集上運行的配置檔案
+solution: Analytics
+title: 設定要在叢集上執行的設定檔
 uuid: e181d069-fb2f-4a71-a86f-bb9a48cfe059
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '796'
+ht-degree: 3%
 
 ---
 
 
-# 配置要在群集上運行的配置檔案{#configuring-a-profile-to-run-on-a-cluster}
+# 設定要在叢集上執行的設定檔{#configuring-a-profile-to-run-on-a-cluster}
 
 當您將資料集描述檔設定為在Insight Server叢集上執行時，叢集中的所有電腦都會共用該描述檔的所有資料集設定檔案。
 
@@ -62,7 +65,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 1. 按一下右鍵 **[!UICONTROL (modified)]** 窗口頂部，然後按一下 **[!UICONTROL Save]**。
 
-1. 按一下右鍵旁邊列中 [!DNL User] 的複選標籤 [!DNL profile.cfg]。 按一下 **[!UICONTROL Save to]** > *&lt;**[!UICONTROL dataset profile name]**>*.
+1. 按一下右鍵旁邊列中 [!DNL User] 的複選標籤 [!DNL profile.cfg]。 Click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL dataset profile name]**>*.
 
 ## 修改配置檔案的資料集配置檔案 {#section-99bf9248e4e5483cb518f453b0a2f278}
 
