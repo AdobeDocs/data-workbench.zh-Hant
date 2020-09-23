@@ -1,15 +1,18 @@
 ---
 description: 安裝Insight Server FSU及將其設定為管理用途的指示與安裝及設定Insight Server DPU的指示非常類似。
-solution: Insight
-title: Insight Server FSU的安裝程式
+solution: Analytics
+title: Insight Server FSU 的安裝程序
 uuid: ffed5095-f83c-4641-9ccc-4b94f51c3f95
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '163'
+ht-degree: 8%
 
 ---
 
 
-# Insight Server FSU的安裝程式{#installation-procedures-for-an-insight-server-fsu}
+# Insight Server FSU 的安裝程序{#installation-procedures-for-an-insight-server-fsu}
 
 安裝Insight Server FSU及將其設定為管理用途的指示與安裝及設定Insight Server DPU的指示非常類似。
 
