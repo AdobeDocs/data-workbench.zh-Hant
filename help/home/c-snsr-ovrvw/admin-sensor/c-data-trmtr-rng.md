@@ -1,15 +1,18 @@
 ---
 description: 通過設定警報、檢查感測器的系統狀態等來檢查發射器是否正在運行。
-solution: Insight
-title: 確認資料發射器正在運行
+solution: Analytics
+title: 確認資料傳送器執行中
 uuid: 8dd6307c-e7d2-4800-88c7-f93385b33ca5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '276'
+ht-degree: 5%
 
 ---
 
 
-# 確認資料發射器正在運行{#confirming-that-the-data-transmitter-is-running}
+# 確認資料傳送器執行中{#confirming-that-the-data-transmitter-is-running}
 
 通過設定警報、檢查感測器的系統狀態等來檢查發射器是否正在運行。
 
