@@ -1,10 +1,10 @@
 ---
 description: 運行Insight Server Replication Service的Target Insight Server電腦必須能夠讀取此重複項伺服器上的日誌檔案。
-solution: Insight
+solution: Analytics
 title: 為目標機器設定存取控制
 uuid: 35e032cf-6c1d-4348-88ce-4f4a6a30b16f
 translation-type: tm+mt
-source-git-commit: 0276701151d1403926ce184069526ebdf3e28e36
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 6%
