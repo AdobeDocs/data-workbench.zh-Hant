@@ -1,16 +1,19 @@
 ---
 description: 受控實驗是測試，可讓您比較實驗樣本組和標準對照組的結果。
-solution: Insight,Analytics
+solution: Analytics,Analytics
 title: 資料工作台控制實驗
 topic: Data workbench
 uuid: 5fce2d9e-4975-44e4-a7c0-11064d8d28b4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '182'
+ht-degree: 0%
 
 ---
 
 
-# 資料工作台控制實驗{#data-workbench-controlled-experiments}
+# Data Workbench Controlled Experiments{#data-workbench-controlled-experiments}
 
 受控實驗是測試，可讓您比較實驗樣本組和標準對照組的結果。
 
