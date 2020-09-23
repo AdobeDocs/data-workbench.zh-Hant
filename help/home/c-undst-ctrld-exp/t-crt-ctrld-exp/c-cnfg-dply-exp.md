@@ -1,11 +1,14 @@
 ---
 description: 定義目標、假設和實驗詳細資訊並建立測試內容後，必須將感測器配置為部署受控實驗。
-solution: Insight,Analytics
+solution: Analytics,Analytics
 title: 設定和部署實驗
 topic: Data workbench
 uuid: 460d3ea4-a6c8-4ac4-9a3f-eab71f65b096
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '1486'
+ht-degree: 1%
 
 ---
 
@@ -74,7 +77,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> 原始URL </td> 
-   <td colname="col2"> <p>要重新映射的內容的URI，後面是$。 此值區分大小寫。 </p> <p>格式：index.asp$ </p> <p>可以在URI結尾處使用美元符號($)指定原始URI，以表示需要完全符合檔案名稱。 例如，運算式 <span class="filepath"> /product/product_view.asp$ </span> 僅與該頁面相符，而 <span class="filepath"></span><span class="filepath"></span> /product則與/product目錄中的任何頁面相符，可用來重新映射整個子樹。 實驗會忽略未在檔案名稱結尾指定$字元的原始URL項目，除非ExpPartialMatch參數已設為"on"。有關此參數的詳細資訊，請參 <a href="../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expplmth-prm.md#concept-9c817c4c49b74287b0f70d6a1a37655e"> 閱修改ExpPartialMatch參數（可選） </a>。 </p> <p>受控實驗功能忽略附加到URI乾的任何查詢字串。 例如，頁面 </p> <p> <span class="filepath"> /product/product_view.asp?productid=53982 </span> 不是有效的URI，但頁 <span class="filepath"> 面/product/product_view.asp </span> 是有效的URI。 </p> </td> 
+   <td colname="col2"> <p>要重新映射的內容的URI，後面是$。 此值區分大小寫。 </p> <p>格式：index.asp$ </p> <p>可以在URI結尾處使用美元符號($)指定原始URI，以表示需要完全符合檔案名稱。 例如，運算式 <span class="filepath"> /product/product_view.asp$ </span> 僅與該頁面相符，而 <span class="filepath"></span><span class="filepath"></span> /product則與/product目錄中的任何頁面相符，可用來重新映射整個子樹。 實驗會忽略未在檔案名稱結尾指定$字元的原始URL項目，除非ExpPartialMatch參數已設為"on"。 有關此參數的詳細資訊，請參 <a href="../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expplmth-prm.md#concept-9c817c4c49b74287b0f70d6a1a37655e"> 閱修改ExpPartialMatch參數（可選） </a>。 </p> <p>受控實驗功能忽略附加到URI乾的任何查詢字串。 例如，頁面 </p> <p> <span class="filepath"> /product/product_view.asp?productid=53982 </span> 不是有效的URI，但頁 <span class="filepath"> 面/product/product_view.asp </span> 是有效的URI。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 重新映射的URL </td> 
@@ -98,7 +101,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 >儘管上述示例檔案已定義了明確的控制組，但不需要顯式定義控制組— 實驗會自動建立控制群組。 如果實驗中所有群組的百分比總和小於100%，則會將隱含控制群組指派給不屬於其中一個明確群組的使用者。
 
 1. 若要插入注釋以提供有關特定實驗的其他資訊，請在儲存格開頭加上數字元號(#)，然後依照您的注釋進行。 注釋可以插入檔案的任意位置。
-1. 在實驗配置試算表中完成變數後，請儲存變更，然後使用您在設定檔中的ExpFile參數中指定的名稱，以Tab分隔文字格式( [!DNL *.txt])儲存 [!DNL Sensor] 檔案。 請參 [閱修改ExpFile參數](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28)。
+1. 在實驗配置試算表中完成變數後，請儲存變更，然後使用您在設定檔中的ExpFile參數中指定的名稱，以Tab分隔文字格式( [!DNL *.txt])儲存 [!DNL Sensor] 檔案。 See [Modifying the ExpFile Parameter](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28).
 
    以下是實驗配置文本檔案的示例：
 
@@ -126,6 +129,6 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **若要部署您的實驗**
 
-* 在運行服務實驗中涉及頁的 [!DNL Sensor] 每個應用程式或Web伺服器上，將實驗配置文本檔案放置在配置檔案中ExpFile參數中指定的 [!DNL Sensor] 目錄中。 請參 [閱修改ExpFile參數](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28)。
+* 在運行服務實驗中涉及頁的 [!DNL Sensor] 每個應用程式或Web伺服器上，將實驗配置文本檔案放置在配置檔案中ExpFile參數中指定的 [!DNL Sensor] 目錄中。 See [Modifying the ExpFile Parameter](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28).
 
 [!DNL Sensor] 根據您在檔案中定義的百分比隨機選取每個群組的網站訪客，並視需要為其提供測試或控制群組內容。
