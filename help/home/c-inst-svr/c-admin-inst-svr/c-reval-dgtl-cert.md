@@ -1,10 +1,13 @@
 ---
 description: 在安裝後，Adobe核發的數位憑證會當成您執行Adobe產品的金鑰。
-solution: Insight
+solution: Analytics
 title: 重新驗證數位憑證
 uuid: 8cc6ec17-c565-4276-809a-a7c4fc9919f7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 5%
 
 ---
 
