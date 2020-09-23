@@ -1,15 +1,18 @@
 ---
 description: 設定Insight Server、Repeater或Transform管理警報的指示。
-solution: Insight
-title: 管理警報配置設定
+solution: Analytics
+title: 管理警報組態設定
 uuid: c2be2d1e-d81d-4d9f-ac94-4b642dad90b9
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '514'
+ht-degree: 4%
 
 ---
 
 
-# 管理警報配置設定{#administrative-alerts-configuration-settings}
+# 管理警報組態設定{#administrative-alerts-configuration-settings}
 
 設定Insight Server、Repeater或Transform管理警報的指示。
 
@@ -43,11 +46,11 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> 最小磁碟空間(MB) </td> 
-   <td colname="col2"> 當伺服器使用的任何目錄中的可用磁碟儲存降到此值以下時，伺服器會生成電子郵件警報。 預設值為 1000。 </td> 
+   <td colname="col2"> 當伺服器使用的任何目錄中的可用磁碟儲存降到低於此值時，伺服器會生成電子郵件警報。 預設值為 1000。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 感測器警報超時（分鐘） </td> 
-   <td colname="col2"> <p>伺服器在此時間窗口內未從已配置和先前連接的感測器接收到任何資料時，會生成 <span class="wintitle"> 電 </span> 子郵件警報。 預設值為 15。 </p> <p> <p>注意： 僅 <span class="wintitle"> 當與傳 </span> 感器的現有連接中斷時，感測器警報超 <span class="wintitle"> 時才 </span> 能工作。 如果伺服器服務停止並重新啟動，而感測器 <span class="wintitle"> 未 </span> 連接，則伺服器不會生成電子郵件警報。 </p> </p> </td> 
+   <td colname="col2"> <p>伺服器在此時間窗口內未從已配置和先前連接的感測器接收到任何資料時，會生成 <span class="wintitle"> 電 </span> 子郵件警報。 預設值為 15。 </p> <p> <p>注意： <span class="wintitle"> 感測 </span> 器警報超時僅在與感測器的現有連接中斷 <span class="wintitle"> 時 </span> 起作用。 如果伺服器服務停止並重新啟動，而感測器 <span class="wintitle"> 未 </span> 連接，則伺服器不會生成電子郵件警報。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 伺服器位址 </td> 
