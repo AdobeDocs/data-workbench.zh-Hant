@@ -1,10 +1,13 @@
 ---
 description: 您應定期監控事件記錄檔以追蹤Insight Server系統事件訊息，這些訊息會記錄在Insight Server安裝目錄內「事件」資料夾中預設的<YYYYMMDD>-event.txt檔案中。
-solution: Insight
+solution: Analytics
 title: 監控管理事件
 uuid: 92d71478-0857-4af8-909c-0cf800b081f4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '395'
+ht-degree: 2%
 
 ---
 
@@ -35,7 +38,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **若要透過Windows事件檢視器檢視事件**
 
-* 按一下 **[!UICONTROL Start]** > **[!UICONTROL Control Panel]** > **[!UICONTROL Administrative Tools]** > **[!UICONTROL Event Viewer]**.
+* Click **[!UICONTROL Start]** > **[!UICONTROL Control Panel]** > **[!UICONTROL Administrative Tools]** > **[!UICONTROL Event Viewer]**.
 
 **更改管理事件日誌目錄**
 
