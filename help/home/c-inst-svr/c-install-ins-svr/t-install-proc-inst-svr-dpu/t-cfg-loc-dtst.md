@@ -1,15 +1,18 @@
 ---
 description: 依預設，Insight Server會將其資料集(temp.db)寫入與Insight Server程式檔案相同的磁碟機。
-solution: Insight
-title: 配置資料集的位置(temp.db)
+solution: Analytics
+title: 設定資料集 (temp.db) 的位置
 uuid: a6884cad-70ed-4bc6-853c-700d301fb178
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '251'
+ht-degree: 5%
 
 ---
 
 
-# 配置資料集的位置(temp.db){#configuring-the-location-of-the-dataset-temp-db}
+# 設定資料集 (temp.db) 的位置{#configuring-the-location-of-the-dataset-temp-db}
 
 依預設，Insight Server會將其資料集(temp.db)寫入與Insight Server程式檔案相同的磁碟機。
 
@@ -21,7 +24,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 1. 導覽至您 [!DNL Components] 所安裝目錄中的資料夾 [!DNL Insight Server]。
 
-   範例: [!DNL C:\Adobe\Server\Components]
+   範例：[!DNL C:\Adobe\Server\Components]
 
 1. 在文本編 [!DNL Disk Files.cfg] 輯器（如記事本）中開啟檔案。
 
