@@ -1,15 +1,18 @@
 ---
 description: 若要使用叢集，您必須在叢集中指定一個Insight Server，以擔任主Insight Server。
-solution: Insight
-title: 安裝Master Insight Server
+solution: Analytics
+title: 安裝主 Insight Server
 uuid: a73214f3-b175-4e9e-8802-7a8451d86d3a
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 5%
 
 ---
 
 
-# 安裝Master Insight Server{#installing-the-master-insight-server}
+# 安裝主 Insight Server{#installing-the-master-insight-server}
 
 若要使用叢集，您必須在叢集中指定一個Insight Server，以擔任主Insight Server。
 
@@ -21,4 +24,4 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
 
 1. 確定哪台機器將充當主機 [!DNL Insight Server]。
 1. 如 [!DNL Insight Server] Insight Server [!DNL Insight Server] 所述，在 [此機器上安裝及設定（通常為FSU）](../../../../../../home/c-inst-svr/c-msr-server/c-msr-server.md)。
-1. 按照 [!DNL Insight] 使用手冊中的說明，安 [!DNL Insight Server] 裝並配置到主 *[!DNL Insight]版的連接&#x200B;*。
+1. 按照 [!DNL Insight] 使用手冊中的說明，安 [!DNL Insight Server] 裝並配置到主 *[!DNL Insight]版的連接*。
