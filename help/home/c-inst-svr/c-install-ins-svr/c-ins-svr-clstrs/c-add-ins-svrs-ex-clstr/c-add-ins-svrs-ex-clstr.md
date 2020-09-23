@@ -1,15 +1,18 @@
 ---
 description: 在某些情況下，您可能會發現必須將Insight Server機器新增至現有的Insight Server叢集。
-solution: Insight
-title: 將Insight Servers添加到現有群集
+solution: Analytics
+title: 將 Insight Server 新增至現有叢集
 uuid: 951bd6fe-14e4-4192-917c-342fde7b43ba
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '112'
+ht-degree: 12%
 
 ---
 
 
-# 將Insight Servers添加到現有群集{#adding-insight-servers-to-an-existing-cluster}
+# 將 Insight Server 新增至現有叢集{#adding-insight-servers-to-an-existing-cluster}
 
 在某些情況下，您可能會發現必須將Insight Server機器新增至現有的Insight Server叢集。
 
