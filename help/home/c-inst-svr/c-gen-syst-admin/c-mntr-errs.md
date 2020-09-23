@@ -1,15 +1,18 @@
 ---
 description: 要盡快檢測系統和應用程式錯誤，並在它們導致重大問題或中斷之前解決這些錯誤，您應定期監控事件日誌。
-solution: Insight
-title: 監視錯誤事件
+solution: Analytics
+title: 監控錯誤事件
 uuid: 09bb34db-e24d-4bc5-84d2-7fc37df60681
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '148'
+ht-degree: 5%
 
 ---
 
 
-# 監視錯誤事件{#monitoring-events-for-errors}
+# 監控錯誤事件{#monitoring-events-for-errors}
 
 要盡快檢測系統和應用程式錯誤，並在它們導致重大問題或中斷之前解決這些錯誤，您應定期監控事件日誌。
 
@@ -21,5 +24,5 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **若要開啟Windows事件檢視器**
 
-* 按一下 **[!UICONTROL Start]** > **[!UICONTROL Control Panel]** > **[!UICONTROL Administrative Tools]** > **[!UICONTROL Event Viewer]**.
+* Click **[!UICONTROL Start]** > **[!UICONTROL Control Panel]** > **[!UICONTROL Administrative Tools]** > **[!UICONTROL Event Viewer]**.
 
