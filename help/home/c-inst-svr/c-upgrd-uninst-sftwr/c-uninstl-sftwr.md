@@ -1,15 +1,18 @@
 ---
 description: 解除安裝Insight Server、Transform或Repeater的指示。
-solution: Insight
-title: 卸載軟體
+solution: Analytics
+title: 解除安裝軟體
 uuid: 79cf0db6-0f99-40fa-a7b0-38dd8d7246bd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 4%
 
 ---
 
 
-# 卸載軟體{#uninstalling-your-software}
+# 解除安裝軟體{#uninstalling-your-software}
 
 解除安裝Insight Server、Transform或Repeater的指示。
 
@@ -19,7 +22,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    1. 開啟命令提示符，並導航到所安裝資料夾中的bin子目錄 [!DNL Insight Server]。
 
-      範例: [!DNL C:\Adobe\Server\bin]
+      範例：[!DNL C:\Adobe\Server\bin]
 
    1. 在命令提示符下，執行以下命令以停止Microsoft Windows下的服務並將其註銷：
 
@@ -52,7 +55,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    1. 開啟命令提示符，並導航到所安裝資料夾中的bin子目錄 [!DNL Repeater]。
 
-      範例: [!DNL D:\Adobe\Repeater\bin]
+      範例：[!DNL D:\Adobe\Repeater\bin]
 
    1. 在命令提示符下，執行以下命令以停止Microsoft Windows下的服務並將其註銷：
 
