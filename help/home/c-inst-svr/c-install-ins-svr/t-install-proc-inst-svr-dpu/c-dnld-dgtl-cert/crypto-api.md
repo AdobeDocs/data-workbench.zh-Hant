@@ -1,40 +1,40 @@
 ---
-description: Windows憑證存放區可讓您將用戶端的憑證和私密金鑰儲存在Windows憑證存放區中，以便與伺服器進行SSL通訊。
+description: Windows 憑證存放區可讓您將用戶端的憑證和私密金鑰存放在 Windows 憑證存放區中，以便與伺服器進行 SSL 通訊。
 title: Windows 憑證存放區
 uuid: a8021295-375a-460b-8686-acf3bc43cd17
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a766b64ef809e2223fed869d8d63b75f270a3d39
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1000'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
 # Windows 憑證存放區{#windows-certificate-store}
 
-Windows憑證存放區可讓您將用戶端的憑證和私密金鑰儲存在Windows憑證存放區中，以便與伺服器進行SSL通訊。
+Windows 憑證存放區可讓您將用戶端的憑證和私密金鑰存放在 Windows 憑證存放區中，以便與伺服器進行 SSL 通訊。
 
-用戶端的Windows憑證存放區是一項新功能，可讓您將SSL通訊憑證和私密金鑰儲存在Windows憑證存放區中，而非儲存在檔 `Insight/Certificates/<CertName>.pem` 案中。 如果您將憑證存放區用於其他應用程式，並希望在單一位置進行憑證管理，或是想要使用Windows憑證存放區提供之額外Windows稽核記錄的使用者，則最好使用Windows憑證存放區。
+適用於用戶端的 Windows 憑證存放區是一項新功能，可讓您將 SSL 通訊憑證和私密金鑰存放在 Windows 憑證存放區，而非 `Insight/Certificates/<CertName>.pem` 檔案中。如果您將憑證存放區用於其他應用程式，並且要集中管理憑證，或是因使用者享有額外的 Windows 稽核記錄功能 (由 Windows 憑證存放區提供) 而使用憑證存放區，建議您使用 Windows 憑證存放區。
 
 >[!NOTE]
 >
->授權伺服器的授權仍會使用現有檔案來 `<Common Name>.pem` 維護，而且從憑證存放區取得的憑證將僅用於與您指定的伺服器通訊。
+>目前仍可使用現有的 `<Common Name>.pem` 檔案，維持透過授權伺服器進行授權的方式，且從憑證存放區取得的憑證只會用於與您指定的伺服器通訊。
 
 ## 必備條件 {#section-69b18600052145ff8e5299b7123e69c5}
 
-1. 您必須擁有檔案的存 [!DNL certmgr.msc] 取權，並能夠將憑證和金鑰匯入個人 **商店** 。 （對於大部分的Windows使用者，這個預設值應為true。）
+1. 您必須能存取 [!DNL certmgr.msc] 檔案，並能夠將憑證和金鑰匯入 **Personal** 存放區。(根據預設，大部分 Windows 使用者都符合條件。)
 
-1. 執行配置的用戶必須有 **OpenSSL** 命令行工具的副本。
-1. 伺服器和客戶端必須已配置為使用自定義SSL證書(如 [Using Custom Certificates](../../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/using-custom-certificates-dwb.md#concept-ee6a9b5015f84a0ba64a11428b0a72dd))中所述)，以指示將客戶端證書儲存在Windows證書儲存中，而不是儲存在 **** Certificates目錄中。
+1. 進行設定的使用者必須有 **OpenSSL** 命令列工具的副本。
+1. 伺服器和用戶端必須已設定為使用自訂 SSL 憑證，如[使用自訂憑證](../../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/using-custom-certificates-dwb.md#concept-ee6a9b5015f84a0ba64a11428b0a72dd)中所述，說明將用戶端憑證存放在 Windows 憑證存放區，而非存放在 **Certificates** 目錄中。
 
-## 配置Windows證書儲存 {#section-3629802122e947d4b4f63e8b732cfe27}
+## 設定 Windows 憑證存放區 {#section-3629802122e947d4b4f63e8b732cfe27}
 
-按照以下步驟啟用Windows客戶端證書儲存：
+按照下列步驟啟用適用於用戶端的 Windows 憑證存放區：
 
-**步驟1:將使用者的SSL憑證和私密金鑰匯入Windows憑證商店。**
+**步驟 1：將使用者的 SSL 憑證和私密金鑰匯入 Windows 憑證存放區。**
 
-使 [用自訂憑證](../../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/using-custom-certificates-dwb.md#concept-ee6a9b5015f84a0ba64a11428b0a72dd) 時，您會將SSL憑證和金鑰放在下列目錄中：
+[使用自訂憑證](../../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/using-custom-certificates-dwb.md#concept-ee6a9b5015f84a0ba64a11428b0a72dd)一文指示您將 SSL 憑證和金鑰放在以下目錄中：
 
 ```
 < 
@@ -43,61 +43,61 @@ Windows憑證存放區可讓您將用戶端的憑證和私密金鑰儲存在Wind
 </filepath>>\Certificates\
 ```
 
-憑證的名稱為 `<Common Name>.pem` (例如 [!DNL Analytics Server 1.pem] (非 [!DNL trust_ca_cert.pem] 檔案)。
+憑證的名稱為 `<Common Name>.pem` (例如 [!DNL Analytics Server 1.pem] [非 [!DNL trust_ca_cert.pem] 檔案]。)
 
-必須先從轉換憑證和私密金鑰，才能匯入。 [!DNL pem] 格式 [!DNL .pfx] 化，例如 [!DNL pkcs12.pfx] )。
+必須將憑證和私密金鑰先從[!DNL pem] 格式轉換為 [!DNL .pfx] 格式 (例如 [!DNL pkcs12.pfx]) 才能匯入。
 
-1. 開啟命令提示符或終端，然後導航到目錄：
+1. 開啟命令提示字元或終端機，然後導覽至目錄：
 
    ```
    <CommonName>.pem c: cd \<DWB Install folder \Certificates
    ```
 
-1. 使用 [!DNL openssl] 下列引數(使用實際的檔 [!DNL .pem] 案名稱)執行：
+1. 使用下列引數執行 [!DNL openssl] (含實際的 [!DNL .pem] 檔案名稱)：
 
    ```
    openssl pkcs12 -in "<Common Name>.pem" -export -out "<Common Name>.pfx"
    ```
 
-   如果出現提示，請按 **下Enter** 以略過輸入匯出密碼。
+   如果系統提示，請按 **Enter** 以略過輸入匯出密碼。
 
-1. 從運 [!DNL certmgr.msc] 行提示符、開始菜單或命令行運行。
-1. 開啟目 **前使用者** 的個人憑證存放區。
+1. 在執行提示、開始功能表或命令列執行 [!DNL certmgr.msc]。
+1. 開啟目前使用者的 **Personal** 憑證存放區。
 
    ![](assets/6_5_crypto_api_0.png)
 
-1. 按一下右鍵「證 **書** 」 ，然後單 **擊「所有任務** 」 **> 「**&#x200B;導入」。
+1. 以右鍵按一下 **Certificates**，然後按一下&#x200B;**「所有工作** > **匯入」**。
 
-   請確定已選 **取「目前使用者** 」選項，然後按一下「下 **一步」**。
+   確認選取&#x200B;**「目前使用者」**&#x200B;選項，然後按&#x200B;**「下一步」**。
 
    ![](assets/6_5_crypto_api_4.png)
 
-1. 按一 **下「瀏覽** 」，然後選 `<CommonName>.pfx` 取先前建立的檔案。 您必須將副檔名下拉式方塊從X.509憑證變更為 **Personal Information Exchange****或All Files** ，才能檢視它。
+1. 按一下&#x200B;**「瀏覽」**，然後選取先前建立的 `<CommonName>.pfx` 檔案。您必須將副檔名下拉方塊從「X.509 憑證」變更為 **「個人資訊交換」**&#x200B;或&#x200B;**「所有檔案」**，才能看到該檔案。
 
-   選取檔案，然後按一下「 **開啟**」，然後按「下 **一步」**。
+   選取該檔案，按一下&#x200B;**「開啟」**，然後按&#x200B;**「下一步」**。
 
-1. 請勿輸入密碼，並確保只選擇「將此鍵標籤為可導出 **」** 和「包含所有擴展屬性 **** 」選項。
+1. 請勿輸入密碼，並確認只選取&#x200B;**「將這個金鑰設成可匯出」**&#x200B;和&#x200B;**「包含所有延伸內容」**&#x200B;選項。
 
    ![](assets/6_5_crypto_api_3.png)
 
    按&#x200B;**「下一步」**。
 
-1. 請確定已選 **取「將所有憑證放入下列商店** 」，且所列的憑證商店為「 **個人」**。 （如果您是進階使用者，此時可以選取其他商店，但您稍後必須變更設定。）
+1. 確認已選取&#x200B;**「將所有憑證放入以下的存放區」**，且所列的憑證存放區為 **Personal**。(如果您為進階使用者，此時可選取其他存放區，但稍後必須變更設定。)
 
-1. 按一下「 **Next** (下一步 **)」 ，然後按一下「** Finish（完成）」。 您應該會看到一個對話方塊，告訴您匯入成功，並在商店的「憑證」資料夾中看到您的憑證。
+1. 按&#x200B;**「下一步」**，然後按一下&#x200B;**「完成」**。您應該會看到一個對話方塊，告訴您匯入成功，並在存放區的 Certificates 檔案夾中看到您的憑證。
 
    >[!NOTE]
    >
-   >請特別留意「發 **布方** 」 **及「發佈方** 」欄位。 下一步就需要這些。
+   >請特別注意&#x200B;**「核發對象」**&#x200B;和&#x200B;**「核發人員」**&#x200B;欄位。下一步需要這些資訊。
 
-**步驟2:編輯Insight.cfg檔案。**
+**步驟 2：編輯 Insight.cfg 檔案。**
 
-必 [!DNL Insight.cfg] 須編輯檔案，才能引導資料工作台使用Windows憑證商店功能。 此檔案中的每個伺服器條目必須指定一些其他參數。 如果省略這些參數，則工作站將預設使用現有證書配置。 如果指定了參數，但值不正確，則工作站將進入錯誤狀態，您必須參考日誌檔案以獲取錯誤資訊。
+必須編輯 [!DNL Insight.cfg] 檔案，才能指示 Data Workbench 使用 Windows 憑證存放區功能。此檔案的每個伺服器項目都必須指定一些其他參數。如果省略這些參數，工作站會預設為使用現有憑證設定。如果已指定參數但值不正確，工作站會進入錯誤狀態，而您必須參考記錄檔以取得錯誤資訊。
 
-1. 開啟 **Insight.cfg檔** (位於 **** Insight安裝目錄)。
+1. 開啟 **Insight.cfg** 檔案 (位於 **Insight** 安裝目錄)。
 
-1. 向下滾動到要配置的伺服器條目。 如果您想要針對每個伺服器使用Windows憑證存放區，則必須對物件向量中的每個項目進行這些修 [!DNL serverInfo] 改。
-1. 將這些參數新增至其 [!DNL Insight.cfg] 檔案。 您可以從工作站執行此操作，也可以通過向對象中添加以下參數來手動 [!DNL serverInfo] 執行。 (請務必使用空格來取代Tab字元，而且請勿在此檔案中出現其他印刷樣式或語法錯誤。)
+1. 向下捲動至要設定的伺服器項目。如果您想要將 Windows 憑證存放區用於每個伺服器，必須對 [!DNL serverInfo] 物件向量中的每個項目進行下列修改。
+1. 將下列參數新增至其 [!DNL Insight.cfg] 檔案。您可以在工作站執行此操作，或手動將下列參數新增至 [!DNL serverInfo] 物件。(請務必使用空格而非定位字元，並確認此檔案中沒有其他拼字或語法錯誤。)
 
    ```
    SSL Use CryptoAPI = bool: true  
@@ -106,21 +106,21 @@ Windows憑證存放區可讓您將用戶端的憑證和私密金鑰儲存在Wind
    SSL CryptoAPI Cert Store Name = string: My 
    ```
 
-   布林值會啟用或停用功能。 憑證名稱與憑證管 **理員中的** 「發行者至」相符。 憑證發行者名稱與「 **核發者**」相符，且 **「商店名稱** 」必須與憑證商店名稱相符。
+   布林值會啟用或停用此功能。憑證名稱與憑證管理員中的&#x200B;**「核發對象」**&#x200B;相符。憑證核發者名稱與&#x200B;**「核發人員」**&#x200B;相符，且&#x200B;**「存放區名稱」**&#x200B;必須與憑證存放區名稱相符。
 
    >[!NOTE]
    >
-   >「認證管理員」(certmgr.msc)中的「個人」名稱實際上是指名為 **My的認證商店。** 因此，如果您按建議將SSL通訊憑證和金鑰(.PFX)匯入 **Personal** certificate Store，則必須將 **SSL CryptoAPI Cert Store Name** String設為&quot;My&quot;。 將此參數設為「個人」將無法運作。 這是Windows憑證存放區的特性。
+   >憑證管理員 (certmgr.msc) 中的名稱「個人」實際上是指憑證存放區&#x200B;**「My」。**&#x200B;因此，如果您依建議將 SSL 通訊憑證和金鑰 (.PFX) 匯入 **Personal** 憑證存放區，必須將&#x200B;**「SSL CryptoAPI Cert Store Name」**&#x200B;字串設為「My」。將此參數設為「Personal」會無法執行，這是 Windows 憑證存放區的特性。
 
-   您可在此處獲得預定義系統儲存的完整清單： [https://msdn.microsoft.com/en-us/library/windows/desktop/aa388136(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/windows/desktop/aa388136%28v=vs.85%29.aspx). 您的系統可能有其他憑證存放區。 如果您想使用「個人」以外的商店(例如 **My**)，則必須取得憑證商店的標準名稱，並在檔案中提供 [!DNL Insight.cfg] 該名稱。 (Windows文檔不一致地將系統儲存名稱「My」稱為「My」和「MY」。 參數似乎不區分大小寫。)
+   您可在此取得預先定義的系統存放區完整清單：[https://msdn.microsoft.com/zh-tw/library/windows/desktop/aa388136(v=vs.85).aspx](https://msdn.microsoft.com/zh-tw/library/windows/desktop/aa388136%28v=vs.85%29.aspx)。您的系統可能有其他憑證存放區。如果您想使用「個人」(例如&#x200B;**「My」**) 以外的存放區，必須取得憑證存放區的正式名稱，並在 [!DNL Insight.cfg] 檔案中提供該名稱。(Windows 文件將系統存放區名稱「My」不一致地稱為「My」和「MY」。此參數似乎不區分大小寫。)
 
-1. 添加這些參數並驗證這些值是否與Windows證書管理器中的清單匹配後，請保存文 [!DNL Insight.cfg] 件。
+1. 新增這些參數，並確認值與 Windows 憑證管理員中的清單相符後，請儲存 [!DNL Insight.cfg] 檔案。
 
-您現在可以啟動工作站（或斷開／重新連接至伺服器）。 資料工作台應從憑證存放區載入憑證和金鑰，並正常連線。
+您現在可以啟動工作站 (或中斷伺服器連線/重新連線至伺服器)。Data Workbench 應會從憑證存放區載入憑證和金鑰，並正常連線。
 
-## 日誌輸出 {#section-a7ef8c9e90ef4bbabaa3cd51a2aca3ab}
+## 記錄輸出 {#section-a7ef8c9e90ef4bbabaa3cd51a2aca3ab}
 
-當找不到憑證或憑證無效時，此錯誤訊息會擲回 [!DNL HTTP.log] 檔案。
+找不到憑證或憑證無效時，系統會將此錯誤訊息擲回 [!DNL HTTP.log] 檔案。
 
 ```
 ERROR Fatal error: the cert could not be found!
@@ -128,4 +128,4 @@ ERROR Fatal error: the cert could not be found!
 
 >[!NOTE]
 >
->L4記錄架構可透過設定檔案來啟用(請 [!DNL L4.cfg] 洽詢您的帳戶管理員以設定)。
+>可設定 [!DNL L4.cfg] 檔案來啟用 L4 記錄架構 (請洽詢您的帳戶管理員以進行設定)。
