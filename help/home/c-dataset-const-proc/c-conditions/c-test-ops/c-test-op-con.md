@@ -5,7 +5,10 @@ title: 測試操作條件
 topic: Data workbench
 uuid: 6a117569-1372-4095-972b-76289a45f19e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+workflow-type: tm+mt
+source-wordcount: '1119'
+ht-degree: 6%
 
 ---
 
@@ -31,19 +34,19 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   <tr> 
    <th colname="col1" class="entry"> 參數 </th> 
    <th colname="col2" class="entry"> 說明 </th> 
-   <th colname="col3" class="entry"> 預設值 </th> 
+   <th colname="col3" class="entry"> 預設 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> 區分大小寫 </td> 
-   <td colname="col2">是非。 僅在「類型」為「詞法」時 <span class="wintitle"> 使用</span>。 如果設定為false，則大寫和小寫字母被視為相等。 </td> 
+   <td colname="col2">True 或 False. 僅在「類型」為「詞法」時 <span class="wintitle"> 使用</span>。 如果設定為false，則大寫和小寫字母被視為相等。 </td> 
    <td colname="col3"> true </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 意見 </td> 
+   <td colname="col1"> 註解 </td> 
    <td colname="col2"> 選填。條件注意事項。 </td> 
-   <td colname="col3"> 意見 </td> 
+   <td colname="col3"> 註解 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 輸入A </td> 
@@ -86,9 +89,9 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 下表說明 [!DNL Not Empty] 了該條件的參數：
 
-| 參數 | 說明 | 預設值 |
+| 參數 | 說明 | 預設 |
 |---|---|---|
-| 意見 | 選填。條件注意事項。 | 意見 |
+| 註解 | 選填。條件注意事項。 | 註解 |
 | 輸入 | 用於檢查內容的日誌條目中的欄位的名稱。 |  |
 
 此示例將作為其輸入x-some-field並測試該欄位是否為空。 如果填入欄位，則符合條件。
@@ -106,19 +109,19 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   <tr> 
    <th colname="col1" class="entry"> 參數 </th> 
    <th colname="col2" class="entry"> 說明 </th> 
-   <th colname="col3" class="entry"> 預設值 </th> 
+   <th colname="col3" class="entry"> 預設 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> 區分大小寫 </td> 
-   <td colname="col2">是非。 僅當「類型」為 <span class="wintitle"> LEXARICH</span><span class="wintitle"> 時使用</span>。 如果設定為false，則大寫和小寫字母被視為相等。 </td> 
+   <td colname="col2">True 或 False. 僅當「類型」為 <span class="wintitle"> LEXARICH</span><span class="wintitle"> 時使用</span>。 如果設定為false，則大寫和小寫字母被視為相等。 </td> 
    <td colname="col3"> true </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 意見 </td> 
+   <td colname="col1"> 註解 </td> 
    <td colname="col2"> 選填。條件注意事項。 </td> 
-   <td colname="col3"> 意見 </td> 
+   <td colname="col3"> 註解 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 輸入 </td> 
@@ -164,19 +167,19 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   <tr> 
    <th colname="col1" class="entry"> 參數 </th> 
    <th colname="col2" class="entry"> 說明 </th> 
-   <th colname="col3" class="entry"> 預設值 </th> 
+   <th colname="col3" class="entry"> 預設 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> 區分大小寫 </td> 
-   <td colname="col2"> 是非。 如果設定為false，則大寫和小寫字母被視為相等。 </td> 
+   <td colname="col2"> True 或 False. 如果設定為false，則大寫和小寫字母被視為相等。 </td> 
    <td colname="col3"> true </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 意見 </td> 
+   <td colname="col1"> 註解 </td> 
    <td colname="col2"> 選填。條件注意事項。 </td> 
-   <td colname="col3"> 意見 </td> 
+   <td colname="col3"> 註解 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 輸入 </td> 
@@ -196,7 +199,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
  </tbody> 
 </table>
 
-此範例說明如何使用條 [!DNL Regular Expression] 件來比對從網站流量收集到的資料欄位。 僅當cs(referrer-query)欄位包含與規則運算式促銷活動=C[1-9][0-9]{4}相符的字串時，條件才會傳回true。 此規則運算式與包含&quot;campaign=C12345&quot;的任何字串相符。 但是，模式不符合字串&quot;campaign=C0123&amp;&quot;，因為&quot;C&quot;後的第一個字元不在1-9範圍內。
+此範例說明如何使用條 [!DNL Regular Expression] 件來比對從網站流量收集到的資料欄位。 僅當cs(referrer-query)欄位包含與規則運算式相符的字串時，條件才會傳回true `campaign=C[1-9][0-9]{4}`。 此規則運算式與包含&quot;campaign=C12345&quot;的任何字串相符。 但是，模式不符合字串&quot;campaign=C0123&amp;&quot;，因為&quot;C&quot;後的第一個字元不在1-9範圍內。
 
 ![](assets/cfg_Condition_RegularExpression.png)
 
@@ -209,19 +212,19 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   <tr> 
    <th colname="col1" class="entry"> 參數 </th> 
    <th colname="col2" class="entry"> 說明 </th> 
-   <th colname="col3" class="entry"> 預設值 </th> 
+   <th colname="col3" class="entry"> 預設 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> 區分大小寫 </td> 
-   <td colname="col2"> 是非。 如果設定為false，則大寫和小寫字母被視為相等。 </td> 
+   <td colname="col2"> True 或 False. 如果設定為false，則大寫和小寫字母被視為相等。 </td> 
    <td colname="col3"> true </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 意見 </td> 
+   <td colname="col1"> 註解 </td> 
    <td colname="col2"> 選填。條件注意事項。 </td> 
-   <td colname="col3"> 意見 </td> 
+   <td colname="col3"> 註解 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 輸入 </td> 
