@@ -5,9 +5,9 @@ title: 測試操作條件
 topic: Data workbench
 uuid: 6a117569-1372-4095-972b-76289a45f19e
 translation-type: tm+mt
-source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+source-git-commit: 1630f34588e4984226b70c963618856496b42346
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1115'
 ht-degree: 6%
 
 ---
@@ -199,7 +199,7 @@ ht-degree: 6%
  </tbody> 
 </table>
 
-此範例說明如何使用條 [!DNL Regular Expression] 件來比對從網站流量收集到的資料欄位。 僅當cs(referrer-query)欄位包含與規則運算式相符的字串時，條件才會傳回true `campaign=C[1-9][0-9]{4}`。 此規則運算式與包含&quot;campaign=C12345&quot;的任何字串相符。 但是，模式不符合字串&quot;campaign=C0123&amp;&quot;，因為&quot;C&quot;後的第一個字元不在1-9範圍內。
+此範例說明如何使用條 [!DNL Regular Expression] 件來比對從網站流量收集到的資料欄位。 僅當cs(referrer-query)欄位包含與規則運算式相符的字串時，條件才會傳回true `campaign=C[1-9][0-9]{4}`。 此規則運算式與任何包含的字串相符 `campaign=C12345`。 但是，模式不符合字串， `campaign=C0123&` 因為&quot;C&quot;之後的第一個字元不在1-9範圍內。
 
 ![](assets/cfg_Condition_RegularExpression.png)
 
