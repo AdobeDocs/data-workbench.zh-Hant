@@ -5,7 +5,10 @@ title: 記錄來源
 topic: Data workbench
 uuid: ea21c3d7-9188-4ba8-bacd-052d678bd799
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+workflow-type: tm+mt
+source-wordcount: '3664'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 1. 在資料 [!DNL Log Processing.cfg] 工作台中開啟。
 1. 按一下滑鼠右 **[!UICONTROL Log Sources]**&#x200B;鍵，然後按一下 **[!UICONTROL Add New]**。
 
-1. 選取下列其中一項:
+1. 選取下列其中一項：
 
    * **[!UICONTROL Sensor]**
    * **[!UICONTROL Log File]**
@@ -37,7 +40,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    * [感測器檔案](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-b25f11c477b54032a15b6117b3bf9009)
    * [日誌檔案](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e)
    * [XML記錄檔來源](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-c7b154e93748447b986e97f6ef688887)
-   * [ODBC資料源](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md#concept-5f2cf635081d44beab826ef5ec8cf4e3)
+   * [ODBC 資料來源](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md#concept-5f2cf635081d44beab826ef5ec8cf4e3)
 
 1. 在檔案中定義記錄檔來源（並變更其他參數）後，請將檔案儲存在本機 [!DNL Log Processing.cfg] ，然後儲存到資料工作台伺服器上的資料集描述檔。
 
@@ -45,7 +48,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    >
    >資料工作台伺服 [!DNL File Server Unit] 器可接收和儲存檔 [!DNL Sensor] 案、記錄檔和XML檔案，並將它們提供給資料工作台伺服器，以建 [!DNL Data Processing Units] 立資料集。 請參 [閱設定Insight伺服器檔案伺服器裝置](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d)。
 
-   您可以從中開啟任何日誌源的配置 [!DNL Transformation Dependency Map]。 如需相關資訊， [!DNL Transformation Dependency Map]請參閱資 [料集設定工具](../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md#concept-6e058b7691834cf79dcfd1573f78d4f5)。
+   您可以從中開啟任何日誌源的配置 [!DNL Transformation Dependency Map]。 如需相關資訊， [!DNL Transformation Dependency Map]請參 [閱資料集設定工具](../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md#concept-6e058b7691834cf79dcfd1573f78d4f5)。
 
 <!--
 c_sensor_files.xml
@@ -77,11 +80,11 @@ YYYYMMDD-*SENSORID*.VSL
      <ul id="ul_AE144ED0FAB94FE8B32599A058659DE1"> 
       <li id="li_1E4E4CFD72C34B5EB71A3C59877950A9"> *符合任意數字元 </li> 
       <li id="li_4664400FC12E44B39B28438B85D20ED8"> ? 符合單一字元 </li> 
-     </ul> </p> <p> 例如，日誌路徑 <span class="filepath"> Logs\*.vsl</span> ，與Logs目錄中以。vsl結尾的任何檔案 <span class="filepath"> 匹配</span>。 日誌路徑 <span class="filepath"> Logs\*-SENSOR?.vsl</span> 與Logs目錄中的檔案匹配，其中包含任何日期(YYYYMMDD)和SENSOR後面的一個字元，如SENSOR1中所示。 </p> <p> 如果要搜索指定路徑的所有子目錄，必須將Recursive參數設定為true。 </p> <p> <p>注意：如果要從資料工作台伺服器的檔案伺服器單元讀取檔案 <span class="wintitle"></span>，則必須在「日誌路徑」參數中輸入相應的URI。 例如， <span class="filepath"> URI /Logs/*-*.vsl</span> ，與Logs目錄中的 <span class="filepath"> .vsl</span> 檔案匹配。 請參 <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> 閱設定Insight伺服器檔案伺服器裝置</a>。 </p> </p> </td> 
+     </ul> </p> <p> 例如，日誌路徑 <span class="filepath"> Logs\*.vsl</span> ，與Logs目錄中以。vsl結尾的任何檔案 <span class="filepath"> 匹配</span>。 日誌路徑 <span class="filepath"> Logs\*-SENSOR?.vsl</span> 與Logs目錄中的檔案匹配，其中包含任何日期(YYYYMMDD)和SENSOR後面的一個字元，如SENSOR1中所示。 </p> <p> 如果要搜索指定路徑的所有子目錄，必須將Recursive參數設定為true。 </p> <p> <p>注意：如果要從資料工作台伺服器的檔案伺服器單元讀取檔案 <span class="wintitle"></span>，則必須在「日誌路徑」參數中輸入相應的URI。 例如， <span class="filepath"> URI /Logs/*-*.vsl</span> ，與Logs目錄中的 <span class="filepath"> .vsl</span> 檔案匹配。 請參 <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> 閱設定Insight Server檔案伺服器單元</a>。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 日誌伺服器 </td> 
-   <td colname="col2">連接到檔案伺服器所需的資訊（地址、名稱、埠等）。 如果日誌伺服器參數中有條目，則日 <span class="wintitle"> 志路徑</span> 被解釋為URI。 否則，它們會被解釋為本地路徑。 請參 <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> 閱設定Insight伺服器檔案伺服器裝置</a>。 </td> 
+   <td colname="col2">連接到檔案伺服器所需的資訊（地址、名稱、埠等）。 如果日誌伺服器參數中有條目，則日 <span class="wintitle"> 志路徑</span> 被解釋為URI。 否則，它們會被解釋為本地路徑。 請參 <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> 閱設定Insight Server檔案伺服器單元</a>。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 日誌源ID </td> 
@@ -89,11 +92,11 @@ YYYYMMDD-*SENSORID*.VSL
   </tr> 
   <tr> 
    <td colname="col1"> 遞歸 </td> 
-   <td colname="col2"> 是非。 如果設定為true，則搜索「日誌路徑」中指定的每個路徑的所有子目錄 <span class="wintitle"></span> ，以查找與指定檔案名或通配符模式匹配的檔案。 預設值為 false。 </td> 
+   <td colname="col2"> True 或 False. 如果設定為true，則搜索「日誌路徑」中指定的每個路徑的所有子目錄 <span class="wintitle"></span> ，以查找與指定檔案名或通配符模式匹配的檔案。 預設值為 false。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 使用開始／結束時間 </td> 
-   <td colname="col2"> <p>是非。 如果設定為true並指定了「開始時間」或「結束時間」，則此日誌源的所有檔案都必須具有以ISO格式(YYYYMMDD)的日期開始的檔案名。 假設每個檔案包含一天（例如，從一天0000 GMT開始到第二天000 GMT結束的時間範圍）的資料。 如果記錄來源檔案包含的資料與GMT日期不對應，則此參數必須設為false，以避免產生錯誤結果。 </p> <p> <p>注意：預設情況下， <span class="filepath"> .vsl文 </span>件包含 <span class="wintitle"></span> Sensor收集的資料，自動滿足上述命名和時間範圍要求。 如果將此參數設為true，資料工作台伺服器一律會處理名稱包含ISO日期且落在指定「開始時間」和「結束時間」之間之檔案的資料。 如果您將此參數設為false，資料工作台伺服器會在記錄處理期間讀取所有 <span class="filepath"> .vsl</span> 檔案，以判斷哪些檔案包含「開始時間」和「結束時間」範圍內的資料。 </p> </p> <p> 如需「開始時間」和「結束時間」參數的詳細資訊，請參閱資 <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md#concept-41bd49bf6b64442d91c232ec67529a3d"> 料篩選</a>。 </p> </td> 
+   <td colname="col2"> <p>True 或 False. 如果設定為true並指定了「開始時間」或「結束時間」，則此日誌源的所有檔案都必須具有以ISO格式(YYYYMMDD)的日期開始的檔案名。 假設每個檔案包含一天（例如，從一天0000 GMT開始到第二天000 GMT結束的時間範圍）的資料。 如果記錄來源檔案包含的資料與GMT日期不對應，則此參數必須設為false，以避免產生錯誤結果。 </p> <p> <p>注意：預設情況下， <span class="filepath"> .vsl文 </span>件包含 <span class="wintitle"></span> Sensor收集的資料，自動滿足上述命名和時間範圍要求。 如果將此參數設為true，資料工作台伺服器一律會處理名稱包含ISO日期且落在指定「開始時間」和「結束時間」之間之檔案的資料。 如果您將此參數設為false，資料工作台伺服器會在記錄處理期間讀取所有 <span class="filepath"> .vsl</span> 檔案，以判斷哪些檔案包含「開始時間」和「結束時間」範圍內的資料。 </p> </p> <p> 如需「開始時間」和「結束時間」參數的詳細資訊，請參閱資 <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md#concept-41bd49bf6b64442d91c232ec67529a3d"> 料篩選</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -118,6 +121,7 @@ c_log_files.xml
 * 若要指定資料處理的開始和結束時間，每個檔案名稱必須採用下列格式：
 
    * [!DNL YYYYMMDD-SOURCE.log]
+
    其中 *YYYYMMDD* 是檔案中所有資料的格林威治標準時間(GMT)天， *SOURCE* 是識別檔案中資料來源的變數。
 
    >[!NOTE]
@@ -150,19 +154,19 @@ c_log_files.xml
      <ul id="ul_1F02D26A08D846E2A3114E5C33F60ECF"> 
       <li id="li_ECAE1C03A1C448A1B86AE00B3A955708"> *符合任意數目的字元。 </li> 
       <li id="li_24FDB500C5934CAAA4124C435DF4B290"> ? 匹配單個字元。 </li> 
-     </ul> </p> <p> 例如，日誌路徑 <span class="filepath"> Logs\*.log</span> 與Logs目錄中以。log結尾的任何檔案 <span class="filepath"> 匹配</span>。 </p> <p> 如果要搜索指定路徑的所有子目錄，則必須將Recursive參數設定為true。 </p> <p> 如果要從資料工作台伺服器的檔案伺服器單元讀取檔案 <span class="wintitle"></span>，則必須在「日誌路徑」參數中輸入相應的URI。 例如， <span class="filepath"> URI/Logs/*.log</span> 與Logs目錄中的 <span class="filepath"></span> .log檔案匹配。 請參 <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> 閱設定Insight伺服器檔案伺服器裝置</a>。 </p> </td> 
+     </ul> </p> <p> 例如，日誌路徑 <span class="filepath"> Logs\*.log</span> 與Logs目錄中以。log結尾的任何檔案 <span class="filepath"> 匹配</span>。 </p> <p> 如果要搜索指定路徑的所有子目錄，則必須將Recursive參數設定為true。 </p> <p> 如果要從資料工作台伺服器的檔案伺服器單元讀取檔案 <span class="wintitle"></span>，則必須在「日誌路徑」參數中輸入相應的URI。 例如， <span class="filepath"> URI/Logs/*.log</span> 與Logs目錄中的 <span class="filepath"></span> .log檔案匹配。 請參 <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> 閱設定Insight Server檔案伺服器單元</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 日誌伺服器 </td> 
-   <td colname="col2"> 連接到檔案伺服器所需的資訊（地址、名稱、埠等）。 如果日誌伺服器參數中有條目，則日 <span class="wintitle"> 志路徑</span> 被解釋為URI。 否則，它們會被解釋為本地路徑。 請參 <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> 閱設定Insight伺服器檔案伺服器裝置</a>。 </td> 
+   <td colname="col2"> 連接到檔案伺服器所需的資訊（地址、名稱、埠等）。 如果日誌伺服器參數中有條目，則日 <span class="wintitle"> 志路徑</span> 被解釋為URI。 否則，它們會被解釋為本地路徑。 請參 <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> 閱設定Insight Server檔案伺服器單元</a>。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 已壓縮 </td> 
-   <td colname="col2"> 是非。 如果要由資料工作台伺服器讀取的記錄檔是壓縮的gzip檔案，此值應設為true。 </td> 
+   <td colname="col1"> 壓縮 </td> 
+   <td colname="col2"> True 或 False. 如果要由資料工作台伺服器讀取的記錄檔是壓縮的gzip檔案，此值應設為true。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 解碼器群組 </td> 
-   <td colname="col2"> 要應用於日誌檔案日誌源的文本檔案解碼器組的名稱。 此名稱必須與「記錄處理資料集包含」檔案中指定之對應文字檔案解碼 <span class="wintitle"> 器群組的名稱完全相符</span> 。 請參閱 <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-text-file-dec-groups.md#concept-0db34988e17c41bfb1797f1d8e78aabd"> 文字檔案解碼器群組</a>。 </td> 
+   <td colname="col2"> 要應用於日誌檔案日誌源的文本檔案解碼器組的名稱。 此名稱必須與「記錄處理資料集包含」檔案中指定之對應文字檔案解碼 <span class="wintitle"> 器群組的名稱完全相符</span> 。 See <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-text-file-dec-groups.md#concept-0db34988e17c41bfb1797f1d8e78aabd"> Text File Decoder Groups</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 日誌源ID </td> 
@@ -170,11 +174,11 @@ c_log_files.xml
   </tr> 
   <tr> 
    <td colname="col1"> 遮色片圖樣 </td> 
-   <td colname="col2"> <p>具有單個捕獲子模式的規則運算式，它提取用於標識一系列日誌檔案源的一致名稱。 僅考慮檔案名。 規則運算式比對不會考慮路徑和擴充功能。 如果您未指定遮色片 <span class="wintitle"> 圖樣</span>，則會自動產生遮色片。 </p> <p> 對於檔案 <span class="filepath"> Logs\010105server1.log</span> 和 <span class="filepath"> Logs\010105server2.log</span>, <span class="wintitle"></span> 掩碼模式應為[0-9]{6}(。*). 此模式會從上述的檔案名稱中擷取字串"server1"或"server2"。 </p> <p> 請參閱 <a href="../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c"> 規則運算式</a>。 </p> </td> 
+   <td colname="col2"> <p>具有單個捕獲子模式的規則運算式，它提取用於標識一系列日誌檔案源的一致名稱。 僅考慮檔案名。 規則運算式比對不會考慮路徑和擴充功能。 如果您未指定遮色片 <span class="wintitle"> 圖樣</span>，則會自動產生遮色片。 </p> <p> 對於檔案 <span class="filepath"> Logs\010105server1.log</span> 和 <span class="filepath"> Logs\010105server2.log</span>, <span class="wintitle"> 掩碼模式為</span><code>[0-9]{6}(.*)</code>。 此模式會從上述的檔案名稱中擷取字串"server1"或"server2"。 </p> <p> 請參閱 <a href="../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c"> 規則運算式</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 遞歸 </td> 
-   <td colname="col2"> 是非。 如果此參數設定為true，則搜索「日誌路徑」中指定的每個路徑的所有子目錄，以查找與指定檔案名或通配符模式匹配的檔案。 <span class="wintitle"></span> 預設值為 false。 </td> 
+   <td colname="col2"> True 或 False. 如果此參數設定為true，則搜索「日誌路徑」中指定的每個路徑的所有子目錄，以查找與指定檔案名或通配符模式匹配的檔案。 <span class="wintitle"></span> 預設值為 false。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 拒絕檔案 </td> 
@@ -182,7 +186,7 @@ c_log_files.xml
   </tr> 
   <tr> 
    <td colname="col1"> 使用開始／結束時間 </td> 
-   <td colname="col2"> <p>是非。 如果此參數設為true且指定「開始時間」或「結束時間」，則此日誌源的所有檔案都必須具有以ISO格式(YYYYMMDD)的日期開始的檔案名。 假設每個檔案包含一天（例如，從一天0000 GMT開始到第二天000 GMT結束的時間範圍）的資料。 如果日誌源檔案名不以ISO日期開頭，或者如果檔案包含的資料與GMT日期不對應，則必須將此參數設定為false以避免錯誤結果。 </p> <p> <p>注意： 如果上述對日誌檔案的命名和時間範圍要求滿足，並且您將此參數設定為true，則指定的文本檔案解碼器組將讀取的檔案限制為那些名稱具有ISO日期且落在指定開始時間和結束時間之間的檔案。 如果您將此參數設為false，資料工作台伺服器會在記錄處理期間讀取所有記錄檔，以判斷哪些檔案包含「開始時間」和「結束時間」範圍內的資料。 </p> </p> <p> 如需「開始時間」和「結束時間」參數的詳細資訊，請參閱資 <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md#concept-41bd49bf6b64442d91c232ec67529a3d"> 料篩選</a>。 </p> </td> 
+   <td colname="col2"> <p>True 或 False. 如果此參數設為true且指定「開始時間」或「結束時間」，則此日誌源的所有檔案都必須具有以ISO格式(YYYYMMDD)的日期開始的檔案名。 假設每個檔案包含一天（例如，從一天0000 GMT開始到第二天000 GMT結束的時間範圍）的資料。 如果日誌源檔案名不以ISO日期開頭，或者如果檔案包含的資料與GMT日期不對應，則必須將此參數設定為false以避免錯誤結果。 </p> <p> <p>注意： 如果上述對日誌檔案的命名和時間範圍要求滿足，並且您將此參數設定為true，則指定的文本檔案解碼器組將讀取的檔案限制為那些名稱具有ISO日期且落在指定開始時間和結束時間之間的檔案。 如果您將此參數設為false，資料工作台伺服器會在記錄處理期間讀取所有記錄檔，以判斷哪些檔案包含「開始時間」和「結束時間」範圍內的資料。 </p> </p> <p> 如需「開始時間」和「結束時間」參數的詳細資訊，請參閱資 <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md#concept-41bd49bf6b64442d91c232ec67529a3d"> 料篩選</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -191,7 +195,7 @@ c_log_files.xml
 
 日誌源0指定由捕獲的事件資料生成的日誌檔案 [!DNL Sensor]。 此資料源指向一個名為「日誌」的目錄，以及該目錄中具有檔案副檔名的所有 [!DNL .vsl] 檔案。
 
-Log Source 1指向Logs目錄中具有副檔名的所有 [!DNL .txt] 檔案。 此記錄檔來源的解碼器群組稱為「文字記錄檔」。
+Log Source 1指向「Logs」（日誌）目錄中具有檔案副檔名的所有 [!DNL .txt] 檔案。 此記錄檔來源的解碼器群組稱為「文字記錄檔」。
 
 ![](assets/cfg_LogProcessing_LogSources.png)
 
@@ -248,19 +252,19 @@ c_xml_log_sources.xml
      <ul id="ul_0AE5D0ADE0F64CFAA856492A49239F58"> 
       <li id="li_4CBC0D1733F04258B3A55CC6FA714538 "> *符合任意數字元 </li> 
       <li id="li_81B597436A1241FF94E73C18A0ABBFA1"> ? 符合單一字元 </li> 
-     </ul> </p> <p>例如，日誌路徑 <span class="filepath"> Logs\*.xml</span> ，與Logs目錄中以。xml結尾的任何檔案 <span class="filepath"> 匹配</span>。 </p> <p> 如果要搜索指定路徑的所有子目錄，必須將「遞歸」( <span class="wintitle"> Recursive</span> )欄位設定為true。 </p> <p> <p>注意：如果要從資料工作台伺服器的檔案伺服器單元讀取檔案 <span class="wintitle"> ，則必須在「日誌路徑」(</span>Log Paths <span class="wintitle"></span> )欄位中輸入相應的URI。 例如， <span class="filepath"> URI/Logs/*.xml與Logs目錄中的</span><span class="filepath"></span> .xml檔案匹配。 請參 <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> 閱設定Insight伺服器檔案伺服器裝置</a>。 </p> </p> </td> 
+     </ul> </p> <p>例如，日誌路徑 <span class="filepath"> Logs\*.xml</span> ，與Logs目錄中以。xml結尾的任何檔案 <span class="filepath"> 匹配</span>。 </p> <p> 如果要搜索指定路徑的所有子目錄，必須將「遞歸」( <span class="wintitle"> Recursive</span> )欄位設定為true。 </p> <p> <p>注意：如果要從資料工作台伺服器的檔案伺服器單元讀取檔案 <span class="wintitle"> ，則必須在「日誌路徑」(</span>Log Paths <span class="wintitle"></span> )欄位中輸入相應的URI。 例如， <span class="filepath"> URI/Logs/*.xml與Logs目錄中的</span><span class="filepath"></span> .xml檔案匹配。 請參 <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> 閱設定Insight Server檔案伺服器單元</a>。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 日誌伺服器 </td> 
-   <td colname="col2"> 連接到檔案伺服器所需的資訊（地址、名稱、埠等）。 如果「日誌伺服器」字 <span class="wintitle"> 段中有條目</span> ，則「日誌路徑」 <span class="wintitle"></span> 將被解釋為URI。 否則，它們會被解釋為本地路徑。 請參 <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> 閱設定Insight伺服器檔案伺服器裝置</a>。 </td> 
+   <td colname="col2"> 連接到檔案伺服器所需的資訊（地址、名稱、埠等）。 如果「日誌伺服器」字 <span class="wintitle"> 段中有條目</span> ，則「日誌路徑」 <span class="wintitle"></span> 將被解釋為URI。 否則，它們會被解釋為本地路徑。 請參 <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> 閱設定Insight Server檔案伺服器單元</a>。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 已壓縮 </td> 
-   <td colname="col2"> 是非。 如果要由資料工作台伺服器讀取的XML記錄檔來源是壓縮的gzip檔案，此值應設為true。 </td> 
+   <td colname="col1"> 壓縮 </td> 
+   <td colname="col2"> True 或 False. 如果要由資料工作台伺服器讀取的XML記錄檔來源是壓縮的gzip檔案，此值應設為true。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 解碼器群組 </td> 
-   <td colname="col2"> 要套用至XML記錄檔來源的XML解碼器群組名稱。 此名稱必須與「記錄處理資料集包含」檔案中指定之對應XML解碼器 <span class="wintitle"> 群組的名稱完全相符</span> 。 請參閱 <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-xml-dec-grps.md#concept-5eda5ab253724674832f6951e2a0d1c3"> XML解碼器群組</a>。 </td> 
+   <td colname="col2"> 要套用至XML記錄檔來源的XML解碼器群組名稱。 此名稱必須與「記錄處理資料集包含」檔案中指定之對應XML解碼器 <span class="wintitle"> 群組的名稱完全相符</span> 。 See <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-xml-dec-grps.md#concept-5eda5ab253724674832f6951e2a0d1c3"> XML Decoder Groups</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 日誌源ID </td> 
@@ -268,11 +272,11 @@ c_xml_log_sources.xml
   </tr> 
   <tr> 
    <td colname="col1"> 遮色片圖樣 </td> 
-   <td colname="col2"> <p>具有單個捕獲子模式的規則運算式，它提取用於標識一系列日誌檔案源的一致名稱。 僅考慮檔案名。 規則運算式比對不會考慮路徑和擴充功能。 如果您未指定遮色片 <span class="wintitle"> 圖樣</span>，則會自動產生遮色片。 </p> <p> 對於檔案 <span class="filepath"> Logs\010105server1.xml</span> 和 <span class="filepath"> Logs\010105server2.xml</span>，掩碼模式應為[0-9]{6}(。*). 此模式會從上述的檔案名稱中擷取字串"server1"或"server2"。 </p> <p> 請參閱 <a href="../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c"> 規則運算式</a>。 </p> </td> 
+   <td colname="col2"> <p>具有單個捕獲子模式的規則運算式，它提取用於標識一系列日誌檔案源的一致名稱。 僅考慮檔案名。 規則運算式比對不會考慮路徑和擴充功能。 如果您未指定遮色片 <span class="wintitle"> 圖樣</span>，則會自動產生遮色片。 </p> <p> 對於檔案 <span class="filepath"> Logs\010105server1.xml</span> 和 <span class="filepath"> Logs\010105server2.xml</span>，掩碼模式為 <code>[0-9]{6}(.*)</code>。 此模式會從上述的檔案名稱中擷取字串"server1"或"server2"。 </p> <p> 請參閱 <a href="../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c"> 規則運算式</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 遞歸 </td> 
-   <td colname="col2"> 是非。 如果此參數設定為true，則搜索「日誌路徑」中指定的每個路徑的所有子目錄，以查找與指定檔案名或通配符模式匹配的檔案。 <span class="wintitle"></span> 預設值為 false。 </td> 
+   <td colname="col2"> True 或 False. 如果此參數設定為true，則搜索「日誌路徑」中指定的每個路徑的所有子目錄，以查找與指定檔案名或通配符模式匹配的檔案。 <span class="wintitle"></span> 預設值為 false。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 拒絕檔案 </td> 
@@ -280,7 +284,7 @@ c_xml_log_sources.xml
   </tr> 
   <tr> 
    <td colname="col1"> 使用開始／結束時間 </td> 
-   <td colname="col2"> <p>是非。 如果此參數設為true且指定「開始時間」或「結束時間」，則此日誌源的所有檔案都必須具有以ISO格式(YYYYMMDD)的日期開始的檔案名。 假設每個檔案包含一天（例如，從一天0000 GMT開始到第二天000 GMT結束的時間範圍）的資料。 如果日誌源檔案名不以ISO日期開頭，或者如果檔案包含的資料與GMT日期不對應，則必須將此參數設定為false以避免錯誤結果。 </p> <p> <p>注意： 如果上述XML檔案的命名和時間範圍需求已滿足，而您將此參數設為true，則指定的XML解碼器群組會限制讀取的檔案，其名稱的ISO日期會落在指定的開始時間和結束時間之間。 如果將此參數設為false，資料工作台伺服器會在記錄處理期間讀取所有XML檔案，以判斷哪些檔案包含「開始時間」和「結束時間」範圍內的資料。 </p> </p> <p> 如需「開始時間」和「結束時間」參數的詳細資訊，請參閱資 <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md#concept-41bd49bf6b64442d91c232ec67529a3d"> 料篩選</a>。 </p> </td> 
+   <td colname="col2"> <p>True 或 False. 如果此參數設為true且指定「開始時間」或「結束時間」，則此日誌源的所有檔案都必須具有以ISO格式(YYYYMMDD)的日期開始的檔案名。 假設每個檔案包含一天（例如，從一天0000 GMT開始到第二天000 GMT結束的時間範圍）的資料。 如果日誌源檔案名不以ISO日期開頭，或者如果檔案包含的資料與GMT日期不對應，則必須將此參數設定為false以避免錯誤結果。 </p> <p> <p>注意： 如果上述XML檔案的命名和時間範圍需求已滿足，而您將此參數設為true，則指定的XML解碼器群組會限制讀取的檔案，其名稱的ISO日期會落在指定的開始時間和結束時間之間。 如果將此參數設為false，資料工作台伺服器會在記錄處理期間讀取所有XML檔案，以判斷哪些檔案包含「開始時間」和「結束時間」範圍內的資料。 </p> </p> <p> 如需「開始時間」和「結束時間」參數的詳細資訊，請參閱資 <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md#concept-41bd49bf6b64442d91c232ec67529a3d"> 料篩選</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -321,11 +325,11 @@ Avro資料饋送會設定在個別檔案中：
 
 若要開啟，請在工作區中按一下滑鼠右鍵，然後選 **取「管理** >精靈 **>** Avro Decoder Wizard ****」。
 
-**步驟1:** 選 **擇Avro日誌檔案**。
+**步驟1:****選擇Avro日誌檔案**。
 
 在此步驟中，可以為Avro架構選擇源檔案。 可從日誌檔案(.log)或現有解碼器檔案(.avro)訪問模式。 可從任一檔案提取結構描述。
 
-| **Avro記錄檔** | 按一下以開啟記錄檔(.log)檔案，以檢視記錄檔上方的架構並產生解碼器檔案。 |
+| **Avro記錄檔** | 按一下以開啟記錄檔(.log)檔案，檢視記錄檔上方的架構並產生解碼器檔案。 |
 |---|---|
 | **Avro解碼器檔案** | 按一下以開啟並編輯現有解碼器(.avro)檔案的架構。 |
 
