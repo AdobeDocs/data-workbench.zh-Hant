@@ -1,11 +1,11 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 product: analytics
 audience: end-user
 user-guide-title: Data Workbench 說明
 user-guide-description: 了解 Data Workbench 的多通道功能。包含 Data Workbench 用戶端、安裝、資料集設定指南，以及更多功能。
 translation-type: tm+mt
-source-git-commit: 53e6b7b96e7addd848a00691163878846b22b4c6
+source-git-commit: cfa391f4238bac43fdf2539baa8e038a79110200
 workflow-type: tm+mt
 source-wordcount: '3536'
 ht-degree: 100%
