@@ -1,20 +1,21 @@
 ---
 description: 您可以放大或縮小圖形、球狀圖、流程地圖和散布圖中的資料。
-solution: Analytics
 title: 放大或縮小視覺效果
-topic: Data workbench
 uuid: bc28f759-c4d3-4340-8ec7-27cf6aaf21e6
+exl-id: 27072e6b-3102-40b2-a617-3cd26bf6e840
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '400'
+ht-degree: 3%
 
 ---
-
 
 # 放大或縮小視覺效果{#zoom-in-or-out-in-a-visualization}
 
 您可以放大或縮小圖形、球狀圖、流程地圖和散布圖中的資料。
 
-## 在流程映射和球體中放大對象 {#section-be293f50337f49ee8f0f1ee3e613e4a1}
+## 在進程映射和全局{#section-be293f50337f49ee8f0f1ee3e613e4a1}中放大對象
 
 **要放大某個區域**
 
@@ -24,15 +25,15 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 * 指向所需區域，按住兩個滑鼠按鈕，然後向後移動滑鼠（朝向您）。
 
-## 放大圖形和散布圖中的軸 {#section-1438a5d637e84d68b69e269062dd3d7a}
+## 放大圖形和散布圖中的軸{#section-1438a5d637e84d68b69e269062dd3d7a}
 
 圖形和散布圖都有可分別放大或縮小的軸（即，可以放大一個軸，然後縮小另一個軸）。
 
 >[!NOTE]
 >
->對於折線圖中的y軸和散布圖中的x或y軸，每次基礎資料變更時，縮放都會重設。 由於這線上上工作時經常發生，Adobe建議您在需要縮放這些軸時離線工作。 請參 [閱離線和線上工作](../../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54)。
+>對於折線圖中的y軸和散布圖中的x或y軸，每次基礎資料變更時，縮放都會重設。 由於這線上上工作時經常發生，因此，Adobe建議您在需要縮放這些軸時離線工作。 請參閱[離線工作和線上](../../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54)。
 
-**若要放大圖形的x或y軸** 。當垂直（沿y軸）縮放時，x軸保持固定，資料向上延伸。
+**若要放大圖形的x或y軸** 當垂直（沿y軸）放大時，x軸會保持固定，資料會向上延伸。
 
 1. 將滑鼠指標置於圖形的x或y軸量度或維度標籤區域。
 1. 按兩下滑鼠按鈕，將滑鼠向前移動（離您遠）。 軸上會出現箭頭，指出目前顯示的視覺化部分以外還有更多可用資料。
@@ -42,16 +43,16 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 1. 將滑鼠指標置於圖形的x或y軸量度或維度標籤區域。
 1. 按兩下滑鼠按鈕，然後向後（朝向您）移動滑鼠。
 
-**要放大圖形x或y軸上的所有資料** , [!DNL Zoom to All] 菜單命令返回選定軸上所有資料的顯示。
+**要放大圖形x或y軸上的所有資料，** 菜 [!DNL Zoom to All] 單命令將返回選定軸上所有資料的顯示。
 
-* 按一下右鍵x軸或y軸邊框區域（靠近資料標籤），然後按一下 **[!UICONTROL Zoom to All]**。
+* 按一下右鍵x軸或y軸邊框區域（靠近資料標籤），然後按一下&#x200B;**[!UICONTROL Zoom to All]**。
 
    ![](assets/vis_ZoomToAll.png)
 
 **若要放大圖形中選取的資料**
 
 1. 按一下並拖曳滑鼠指標至您要選取的資料範圍。
-1. 在維標籤區域中按一下右鍵，然後按一下 **[!UICONTROL Zoom to Selection]**。
+1. 在維標籤區域中按一下右鍵，然後按一下&#x200B;**[!UICONTROL Zoom to Selection]**。
 
 ![](assets/vis_ZoomToSelection.png)
 
