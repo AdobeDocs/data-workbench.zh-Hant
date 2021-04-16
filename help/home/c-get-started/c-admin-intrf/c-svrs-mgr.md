@@ -1,14 +1,15 @@
 ---
 description: 系統管理員使用的主要工具是「伺服器管理器」。
-solution: Analytics
 title: 伺服器管理員
-topic: Data workbench
 uuid: 96c8f060-ffd4-46b9-b039-b2ac024400b6
+exl-id: e8b22d9f-3f1b-4a97-942a-85786bd3c547
 translation-type: tm+mt
-source-git-commit: 948c6dd04819e939b45745db573a53c8be51ce37
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '649'
+ht-degree: 4%
 
 ---
-
 
 # 伺服器管理員{#servers-manager}
 
@@ -16,7 +17,7 @@ source-git-commit: 948c6dd04819e939b45745db573a53c8be51ce37
 
 它是確定系統整體狀態和執行系統配置、檔案管理和錯誤監控功能的主介面。
 
-「伺服器管理員」會針對系統中的每個資料工作台伺服器和安裝顯示一個彩色點（節點） [!DNL Sensor] ，並提供每個安裝的系統狀態一覽。 它也會顯示資料工作台安裝的節點。
+「伺服器管理器」顯示系統中每個Data Workbench伺服器和[!DNL Sensor]安裝的彩色點（節點），並提供每個安裝的系統狀態概覽。 它還顯示Data Workbench安裝的節點。
 
 綠色節點表示活動連接，紅色節點表示禁用或無法訪問的連接，灰色節點表示狀態未確定的連接。
 
@@ -24,7 +25,7 @@ source-git-commit: 948c6dd04819e939b45745db573a53c8be51ce37
 
 按一下右鍵節點可顯示有關連接元件的資訊，並提供對任何相關菜單的訪問。
 
-下表說明在您以滑鼠右鍵按一下「資料工作台」、「資料工作台」伺服器（包括集群中的主資料工作台伺服器）或時所提供的資訊 [!DNL Sensor]。
+下表說明了在Data Workbench、Data Workbench伺服器(包括集群中的主Data Workbench伺服器)或[!DNL Sensor]節點上按一下右鍵時提供的資訊。
 
 <table id="table_C459CAAB07D34144B5BFFCCC84C2BB37"> 
  <thead> 
@@ -36,59 +37,59 @@ source-git-commit: 948c6dd04819e939b45745db573a53c8be51ce37
  <tbody> 
   <tr> 
    <td colname="col1"> <p>產品 </p> </td> 
-   <td colname="col2"> <p>產品名稱、版本和組建編號。 </p> <p>範例：資料工作台5.3(0000001) </p> </td> 
+   <td colname="col2"> <p>產品名稱、版本和組建編號。 </p> <p>範例：Data Workbench5.3(0000001) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>地址 </p> </td> 
-   <td colname="col2"> <p>資料工作台電腦的IP位址。 </p> <p>例如: 100.0.0.1 </p> </td> 
+   <td colname="col2"> <p>Data Workbench電腦的IP地址。 </p> <p>例如: 100.0.0.1 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>設定 </p> </td> 
-   <td colname="col2"> <p>資料工作台 <span class="keyword"> 組態檔的 </span> 連結。 按一 <span class="uicontrol"> 下「設 </span> 定&gt; <span class="uicontrol"> Insight.cfg」以顯 </span> 示「資料工作台」設定視窗。 您在此視窗中所做的任何變更和儲存，都會反映在資料工作台安 <span class="filepath"> 裝目 </span> 錄的Insight.cfg檔案中。 </p> </td> 
+   <td colname="col2"> <p>指向<span class="keyword">Data Workbench</span>配置檔案的連結。 按一下「設定</span> &gt; <span class="uicontrol"> Insight.cfg </span>」以顯示Data Workbench設定視窗。 <span class="uicontrol">您在此視窗中所做的任何變更和儲存都會反映在您的Data Workbench安裝目錄的<span class="filepath"> Insight.cfg </span>檔案中。 </span></p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>產品 </p> </td> 
-   <td colname="col2"> <p>產品名稱、版本和組建編號。 </p> <p>範例：資料工作台伺服器5.3(0000001) </p> </td> 
+   <td colname="col2"> <p>產品名稱、版本和組建編號。 </p> <p>範例：Data Workbench伺服器5.3(0000001) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>CN </p> </td> 
-   <td colname="col2"> <p>資料工作台伺服器電腦的通用名稱。 </p> <p>範例： <span class="filepath"> myserver1.mycompany.com </span> </p> </td> 
+   <td colname="col2"> <p>Data Workbench伺服器電腦的公用名稱。 </p> <p>範例：<span class="filepath"> myserver1.mycompany.com </span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>地址 </p> </td> 
-   <td colname="col2"> <p>伺服器的IP位址或完全限定網域名稱(如電腦上的「位址」檔案和 <span class="filepath"> Insight.cfg檔案中的「網路位置」參數所 </span> 設定)。 </p> <p>例如: 100.0.0.1 </p> <p>有關地址檔案的資訊，請參 <i>閱伺服器產品安裝和管理指南</i>。 </p> </td> 
+   <td colname="col2"> <p>如電腦上的「地址」檔案和<span class="filepath"> Insight.cfg </span>檔案中的「網路位置」參數中配置的，伺服器的IP地址或完全限定域名。 </p> <p>例如: 100.0.0.1 </p> <p>有關地址檔案的資訊，請參閱<i>伺服器產品安裝和管理指南</i>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>狀態 </p> </td> 
-   <td colname="col2"> <p>資料工作台伺服器的目前狀態。 當資料工作台伺服器正常執行時，此欄位會顯示「確定」。 如果發生錯誤，而「資料工作台」伺服器節點為紅色，則欄位會顯示錯誤（例如「403 Forbidden」）。 </p> </td> 
+   <td colname="col2"> <p>Data Workbench伺服器的當前狀態。 當Data Workbench伺服器正常運行時，此欄位顯示「確定」。 如果發生錯誤，且Data Workbench伺服器節點為紅色，則欄位將顯示錯誤（例如，「403 Forbidden」）。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>詳細狀態 </p> </td> 
-   <td colname="col2"> <p>連結至「資料工作台 <span class="keyword"> 伺服器詳細 </span> 狀態」介面， <span class="wintitle"></span> 這對於疑難排解「資料工作台」伺服器的錯誤或其他問題非常有用。 </p> <p>如需詳細資訊，請參 <a href="../../../home/c-get-started/c-admin-intrf/c-det-stat-interf.md"> 閱詳細狀態介面</a>。 </p> </td> 
+   <td colname="col2"> <p>指向<span class="keyword">Data Workbench伺服器</span> <span class="wintitle">詳細狀態</span>介面的連結，該連結對於診斷Data Workbench伺服器的錯誤或其他問題非常有用。 </p> <p>有關詳細資訊，請參閱<a href="../../../home/c-get-started/c-admin-intrf/c-det-stat-interf.md">詳細狀態介面</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>遠程案頭 </p> </td> 
-   <td colname="col2"> <p>開啟與數 <span class="wintitle"> 據工作台服 </span> 務器電腦的遠程案頭會話。 </p> <p>有關詳細資訊，請參 <a href="../../../home/c-get-started/c-admin-intrf/t-rmt-dsktp-opt.md#task-dc0bdb4630474a17af67b931bc22d9ef"> 閱遠程案頭選項 </a>。 </p> </td> 
+   <td colname="col2"> <p>開啟與Data Workbench伺服器電腦的<span class="wintitle">遠程案頭</span>會話。 </p> <p>有關詳細資訊，請參閱<a href="../../../home/c-get-started/c-admin-intrf/t-rmt-dsktp-opt.md#task-dc0bdb4630474a17af67b931bc22d9ef">遠程案頭選項</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>伺服器檔案 </p> </td> 
-   <td colname="col2"> <p>「伺服器檔案管 <span class="wintitle"> 理器」的連結， </span>會在「資料工作台」伺服器安裝目錄中顯示目錄和檔案。 </p> <p>如需詳細資訊，請參 <a href="../../../home/c-get-started/c-admin-intrf/c-svr-files-mgr.md#concept-73a0808487c8424285ae7302f53bc5f4"> 閱伺服器檔案管理 </a>器。 </p> </td> 
+   <td colname="col2"> <p>指向<span class="wintitle">伺服器檔案管理器</span>的連結，該管理器顯示Data Workbench伺服器安裝目錄中的目錄和檔案。 </p> <p>有關詳細資訊，請參閱<a href="../../../home/c-get-started/c-admin-intrf/c-svr-files-mgr.md#concept-73a0808487c8424285ae7302f53bc5f4">伺服器檔案管理器</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>伺服器監視程式 </p> </td> 
-   <td colname="col2"> <p>伺服器監視程 <span class="wintitle"> 式介面的連 </span> 結，對疑難排解或追蹤效能參數非常有用。 </p> <p>如需詳細資訊，請參 <a href="../../../home/c-get-started/c-admin-intrf/c-svr-mtr-intfc.md#concept-3bea7441de20409585e63060d5489f45"> 閱伺服器監視器介面 </a>。 </p> </td> 
+   <td colname="col2"> <p>指向<span class="wintitle">伺服器監視器</span>介面的連結，該連結對於故障排除或跟蹤效能參數非常有用。 </p> <p>有關詳細資訊，請參閱<a href="../../../home/c-get-started/c-admin-intrf/c-svr-mtr-intfc.md#concept-3bea7441de20409585e63060d5489f45">伺服器監視器介面</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>相關伺服器 </p> </td> 
-   <td colname="col2"> <p>僅適用於資料工作台伺服器叢集。 </p> <p>列出主資料工作台伺服器*.address檔案中所列之電 <span class="filepath"> 腦之通用名稱的功 </span> 能表。 此清單通常包含叢集中所有處 <span class="keyword"> 理資料工作台 </span> 伺服器。 此功能表僅會在「資料工作台」有主資料工作台伺服器*.address檔 <span class="filepath"> 案的副本時 </span> 顯示。 </p> <p>按一下「相 <span class="uicontrol"> 關伺服器」 </span>後，您可以按一下下列任一項： 
+   <td colname="col2"> <p>僅用於Data Workbench伺服器群集。 </p> <p>列出主<span class="filepath">Data Workbench伺服器*.address </span>檔案中列出的電腦公共名稱的菜單。 此清單通常包含群集中的所有處理<span class="keyword">Data Workbench伺服器</span>。 只有當Data Workbench有主版<span class="filepath">Data Workbench伺服器的*.address </span>檔案的副本時，才會顯示此菜單。 </p> <p>按一下「<span class="uicontrol">相關伺服器</span>」時，可以按一下以下任一選項： 
      <ul id="ul_3B28B8579B1945FD80669EDFDFDA84A6"> 
-      <li id="li_90094B46CB304C179136BB75FF0D6DBD"> <span class="uicontrol"> 伺服器監 </span>視器清單，其中顯示 <span class="wintitle"> 伺服器監 </span> 視器介面列出所有相關伺服器的詳細資訊 </li> 
-      <li id="li_CD6FF5BB52874ABCB536C2DE2376587A">任何資料工作台伺服器的公用名稱，此伺服器會顯示內容功能表，讓您針對該特定伺服器開啟下列任一項： 
+      <li id="li_90094B46CB304C179136BB75FF0D6DBD"> <span class="uicontrol"> 伺服器監視 </span>器清單，其中顯示 <span class="wintitle"> 伺服器監 </span> 視器介面，列出所有相關伺服器的詳細資訊 </li> 
+      <li id="li_CD6FF5BB52874ABCB536C2DE2376587A">任何Data Workbench伺服器的公用名稱，它顯示上下文菜單，允許您為該特定伺服器開啟以下任何內容： 
        <ul id="ul_928510D1DE68471583F2EE7547AEB824"> 
-        <li id="li_8399338137354A59B9B4D24AF7EEE868"> <span class="uicontrol"> 詳細狀態 </span>。 請參 <a href="../../../home/c-get-started/c-admin-intrf/c-det-stat-interf.md"> 閱詳細的狀態介 </a>面。 </li> 
-        <li id="li_0FE569C56B3F4583BC1F3DF3B4F55765"> <span class="uicontrol"> 遠程案頭 </span>。 請參 <a href="../../../home/c-get-started/c-admin-intrf/t-rmt-dsktp-opt.md#task-dc0bdb4630474a17af67b931bc22d9ef"> 閱遠程案頭選項 </a>。 </li> 
-        <li id="li_2B6F8419CB5945C9B411F6A7C2C859FF"> <span class="uicontrol"> 伺服器檔案管 </span>理器。 請參 <a href="../../../home/c-get-started/c-admin-intrf/c-svr-files-mgr.md#concept-73a0808487c8424285ae7302f53bc5f4"> 閱伺服器檔案管理 </a>器。 </li> 
-        <li id="li_F22F974EB4DE4F0F93623AE98C7DCEBC"> <span class="uicontrol"> 伺服器監 </span>視器。 請參 <a href="../../../home/c-get-started/c-admin-intrf/c-svr-mtr-intfc.md#concept-3bea7441de20409585e63060d5489f45"> 閱伺服器監視器介 </a>面。 </li> 
+        <li id="li_8399338137354A59B9B4D24AF7EEE868"> <span class="uicontrol"> 詳細狀態 </span>。請參閱<a href="../../../home/c-get-started/c-admin-intrf/c-det-stat-interf.md">詳細狀態介面</a>。 </li> 
+        <li id="li_0FE569C56B3F4583BC1F3DF3B4F55765"> <span class="uicontrol"> 遠程案頭 </span>。請參閱<a href="../../../home/c-get-started/c-admin-intrf/t-rmt-dsktp-opt.md#task-dc0bdb4630474a17af67b931bc22d9ef">遠程案頭選項</a>。 </li> 
+        <li id="li_2B6F8419CB5945C9B411F6A7C2C859FF"> <span class="uicontrol"> 伺服器檔案管理員 </span>. 請參閱<a href="../../../home/c-get-started/c-admin-intrf/c-svr-files-mgr.md#concept-73a0808487c8424285ae7302f53bc5f4">伺服器檔案管理器</a>。 </li> 
+        <li id="li_F22F974EB4DE4F0F93623AE98C7DCEBC"> <span class="uicontrol"> 伺服器監 </span>視器。請參閱<a href="../../../home/c-get-started/c-admin-intrf/c-svr-mtr-intfc.md#concept-3bea7441de20409585e63060d5489f45">伺服器監視器介面</a>。 </li> 
        </ul> </li> 
      </ul> </p> </td> 
   </tr> 
@@ -109,11 +110,11 @@ source-git-commit: 948c6dd04819e939b45745db573a53c8be51ce37
   </tr> 
   <tr> 
    <td colname="col1"> <p>ID </p> </td> 
-   <td colname="col2"> 在此安 <span class="wintitle"> 裝的感測器配置文 </span> 件中指 <span class="wintitle"></span> 定的感測器ID。 </td> 
+   <td colname="col2"> 此安裝的<span class="wintitle">感測器</span>配置檔案中指定的<span class="wintitle">感測器</span> ID。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>IP </p> </td> 
-   <td colname="col2"> <p>安裝感測器的Web或應用程式伺服器 <span class="wintitle"> 的IP </span> 地址。 </p> <p>例如: 100.0.0.1 </p> </td> 
+   <td colname="col2"> <p>安裝<span class="wintitle">感測器</span>的Web或應用程式伺服器的IP地址。 </p> <p>例如: 100.0.0.1 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>PID </p> </td> 
@@ -121,11 +122,11 @@ source-git-commit: 948c6dd04819e939b45745db573a53c8be51ce37
   </tr> 
   <tr> 
    <td colname="col1"> <p>SSL </p> </td> 
-   <td colname="col2"> <p>感測器 <span class="wintitle"> 與數 </span> 據工作台伺服器是否使用SSL進行通信。 </p> </td> 
+   <td colname="col2"> <p><span class="wintitle">感測器</span>和Data Workbench伺服器是否使用SSL通信。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>時間 </p> </td> 
-   <td colname="col2"> <p>時間 (HH:MM:SS)，感測器上 <span class="wintitle"> 次 </span> 與資料工作台伺服器建立連接。 </p> </td> 
+   <td colname="col2"> <p>時間 (HH:MM:SS)<span class="wintitle">感測器</span>上次與Data Workbench伺服器建立連接。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
