@@ -1,16 +1,17 @@
 ---
 description: 如果您使用從網站流量收集到的資料，則可使用「作業化」轉換來決定如何定義作業。
-solution: Analytics
-title: 作業化
-topic: Data workbench
+title: Sessionize
 uuid: c6e2487a-80e5-4e00-b4d4-2ce013fac3ea
+exl-id: bb25cb4b-7185-4524-8ff5-740b672e1cd9
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '773'
+ht-degree: 1%
 
 ---
 
-
-# 作業化{#sessionize}
+# Sessionize{#sessionize}
 
 如果您使用從網站流量收集到的資料，則可使用「作業化」轉換來決定如何定義作業。
 
@@ -18,14 +19,14 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
 
 >[!NOTE]
 >
->若要運作，轉 [!DNL Sessionize] 換需要資料按時間排序，並依來源資料中的追蹤ID分組。 因此， [!DNL Sessionize] 只有在檔案或檔案中 [!DNL Transformation.cfg] 定義時才可 [!DNL Transformation Dataset Include] 用。
+>要運作，[!DNL Sessionize]轉換要求資料按時間排序，並依來源資料中的追蹤ID分組。 因此，[!DNL Sessionize]僅在[!DNL Transformation.cfg]檔案或[!DNL Transformation Dataset Include]檔案中定義時運作。
 
 <table id="table_34984DF9340149C0A5016F08EABAD158"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> 參數 </th> 
    <th colname="col2" class="entry"> 說明 </th> 
-   <th colname="col3" class="entry"> 預設值 </th> 
+   <th colname="col3" class="entry"> 預設 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -35,7 +36,7 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 意見 </td> 
+   <td colname="col1"> 註解 </td> 
    <td colname="col2"> 選填。關於轉變的附註。 </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -51,12 +52,12 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
   </tr> 
   <tr> 
    <td colname="col1"> 輸入追蹤ID </td> 
-   <td colname="col2"> <p>包含要使用的追蹤ID值的欄位。 值必須是64位（16位）或更小的十六進位數字，或16位或更小的十進位整數。 </p> <p> <p>注意：如果您想要使用x-trackingid以外的欄位作為追蹤ID，您必須先對欄位進行雜湊。 請參閱 <a href="../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-hash.md#concept-9c353923264941c3aea4428fed66d369"> 雜湊</a>。 </p> </p> </td> 
+   <td colname="col2"> <p>包含要使用的追蹤ID值的欄位。 值必須是64位（16位）或更小的十六進位數字，或16位或更小的十進位整數。 </p> <p> <p>注意：如果您想要使用x-trackingid以外的欄位作為追蹤ID，您必須先對欄位進行雜湊。 請參閱<a href="../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-hash.md#concept-9c353923264941c3aea4428fed66d369">雜湊</a>。 </p> </p> </td> 
    <td colname="col3"> x-trackingid </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>最大會話持續時間 </p> </td> 
-   <td colname="col2">啟動新會話前的會話最長長度。 （這可讓具有自動內容重新整理功能的網頁，不會建立任意長度的工作階段）。如果滿 <span class="wintitle"> 足「逾時條件</span> 」，且點按的反向連結設定為「內部網域」參數中的其中一個項目，則會使用「最大作業持續時間」來定義作業結束。 不論會話包含多少次點按，都不得超過指定的「最大會話持續時間」。 建議值為48小時。 如需「最大作業持續時間」和「內部網域」參數的詳細資訊，請參 <a href="../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519"> 閱「Web資料的組態設定」</a>。 </td> 
+   <td colname="col2">啟動新會話前的會話最長長度。 （這可讓具有自動內容重新整理功能的網頁，不會建立任意長度的工作階段）。 如果<span class="wintitle">逾時條件</span>已滿足，且點按的反向連結已設為「內部網域」參數中的其中一個項目，則使用「最大作業持續時間」來定義作業結束。 不論會話包含多少次點按，都不得超過指定的「最大會話持續時間」。 建議值為48小時。 有關「最大會話持續時間」和「內部域」參數的詳細資訊，請參閱<a href="../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519"> Configuration Settings for Web Data</a>。 </td> 
    <td colname="col3"> 48 小時 </td> 
   </tr> 
   <tr> 
@@ -66,7 +67,7 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
   </tr> 
   <tr> 
    <td colname="col1"> 工作階段逾時 </td> 
-   <td colname="col2"> <p>在指定訪客的記錄項目之間需要傳遞的時間量，以決定一個作業結束和新作業開始的時間（即用來定義使用者作業的典型逾時）。 此參數的建議值為30分鐘。 如果「逾時條件」未滿足，且點按的反向連結未設定為「內部網域」參數中的其中一個反向連結，則會使用「作業逾時」來定義作業。 </p> <p> 如果滿足「逾時條件」，且記錄項目的cs（反向連結網域）位於內部網域清單中，則「最大作業持續時間」會決定目前記錄項目是現有作業的一部分，還是新作業的開始。 </p> <p> 如需「作業逾時」參數的詳細資訊，請參閱「 <a href="../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519"> Web資料的組態設定」</a>。 </p> </td> 
+   <td colname="col2"> <p>在指定訪客的記錄項目之間需要傳遞的時間量，以決定一個作業結束和新作業開始的時間（即用來定義使用者作業的典型逾時）。 此參數的建議值為30分鐘。 如果「逾時條件」未滿足，且點按的反向連結未設定為「內部網域」參數中的其中一個反向連結，則會使用「作業逾時」來定義作業。 </p> <p> 如果滿足「逾時條件」，且記錄項目的cs（反向連結網域）位於內部網域清單中，則「最大作業持續時間」會決定目前記錄項目是現有作業的一部分，還是新作業的開始。 </p> <p> 如需「作業逾時」參數的詳細資訊，請參閱<a href="../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519">網站資料的組態設定</a>。 </p> </td> 
    <td colname="col3"> 30 分鐘 </td> 
   </tr> 
   <tr> 
@@ -85,11 +86,10 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
 
 >[!NOTE]
 >
->如果已將「最大會話持續時間」和「會話超時」定義為 [!DNL Session Parameters.cfg] 檔案中的參數，請不要在配置中為它們輸入值。 您可以輸入 *$（參數名稱）* ，如以下範例所示。 如需這些參數的詳細資訊，請參 [閱Web資料的組態設定](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519)。
+>如果您已在[!DNL Session Parameters.cfg]檔案中將「最大會話持續時間」和「會話超時」定義為參數，請勿在配置中為它們輸入值。 您可以輸入&#x200B;*$（參數名稱）*&#x200B;來參考參數，如以下範例所示。 有關這些參數的詳細資訊，請參閱[ Configuration Settings for Web Data](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519)。
 
-此 [!DNL Sessionize] 示例中的轉換將作為其輸入x-timestamp和x-trackingid欄位，並在x-session-key欄位中記錄每個日誌條目的會話編號。 這種轉變 [!DNL Timeout Condition] 基於一個條 [!DNL Neither] 件：如果記錄項目的cs(referrer-domain)欄位符合「內部網域」參數的成員，則條件會評估為false。 請注意對「內部網域」和「作業逾時」參數的參考。
+此示例中的[!DNL Sessionize]轉換作為其輸入x-timestamp和x-trackingid欄位，並在x-session-key欄位中記錄每個日誌條目的會話編號。 轉換的[!DNL Timeout Condition]基於[!DNL Neither]條件：如果記錄項目的cs(referrer-domain)欄位符合「內部網域」參數的成員，則條件會評估為false。 請注意對「內部網域」和「作業逾時」參數的參考。
 
-有關的資訊，請 [!DNL NeitherCondition]參閱 [條件](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)。 如需內部網域和作業逾時參數的詳細資訊，請參 [閱Web資料的組態設定](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519)。
+有關[!DNL NeitherCondition]的資訊，請參閱[條件](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)。 有關「內部網域」和「作業逾時」參數的資訊，請參閱[Web資料的組態設定](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519)。
 
 ![](assets/cfg_TransformationType_Sessionize.png)
-
