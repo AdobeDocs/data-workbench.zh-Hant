@@ -1,14 +1,15 @@
 ---
 description: 您可以從圖形、表格或流程圖建立路徑瀏覽器。
-solution: Analytics
 title: 建立路徑瀏覽器
-topic: Data workbench
 uuid: 84a5e587-fb02-461b-aec8-1b6ad473ebc3
+exl-id: 9fa11b84-da73-447a-8b10-7eab381e3f66
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '380'
+ht-degree: 2%
 
 ---
-
 
 # 建立路徑瀏覽器{#creating-path-browsers}
 
@@ -22,18 +23,17 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->將元素拖曳至路徑瀏覽器可能會變更與路徑瀏覽器關聯的基本維度，但不會變更層級維度、群組維度或量度。 因此，在與路徑瀏覽器的層級維度、群組維度和量度搭配使用時，您必須謹慎選擇有意義的基本維度。 若要變更層級維度、群組維度或量度，您必須在記事本等文字編輯器中 [!DNL *.vw] 編輯路徑瀏覽器的檔案。 請參 [閱設定路徑瀏覽器](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3)。
+>將元素拖曳至路徑瀏覽器可能會變更與路徑瀏覽器關聯的基本維度，但不會變更層級維度、群組維度或量度。 因此，在與路徑瀏覽器的層級維度、群組維度和量度搭配使用時，您必須謹慎選擇有意義的基本維度。 若要變更層級維度、群組維度或量度，您必須在記事本等文字編輯器中編輯路徑瀏覽器的[!DNL *.vw]檔案。 請參閱[設定路徑瀏覽器](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3)。
 
-**從流程圖建立路徑瀏覽器**
+**從進程映射建立路徑瀏覽器**
 
 >[!NOTE]
 >
 >從流程圖建立的路徑瀏覽器僅顯示流程圖上顯示的元素。 不顯示基本尺寸的其它元素。
 
-1. 建立流程圖。 請參 [閱建立流程圖](../../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-create-proc-maps.md#concept-daf5b14dae7a442191611b1b9c1122bf)。
+1. 建立程序圖. 請參閱[建立流程圖](../../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-create-proc-maps.md#concept-daf5b14dae7a442191611b1b9c1122bf)。
 1. 將所需元素從流程映射拖曳至路徑瀏覽器。 元素會成為路徑瀏覽器的根。
 
 >[!NOTE]
 >
 >從流程圖建立路徑瀏覽器時，路徑瀏覽器會忽略級別維的元素，而沒有關聯的基本維元素。 當您將節點從流程圖拖曳至路徑瀏覽器時，路徑瀏覽器的基本維度（名為「地圖」）由流程圖定義，其元素會限制為流程圖上的元素。 因此，路徑瀏覽器的層級維度中的某些元素沒有關聯的基本維度元素，也無法在路徑瀏覽器中呈現。
-
