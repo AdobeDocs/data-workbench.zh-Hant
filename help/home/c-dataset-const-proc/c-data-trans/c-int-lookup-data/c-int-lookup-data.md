@@ -1,14 +1,15 @@
 ---
 description: 資料工作台提供一組轉換，讓資料工作台伺服器將查閱資料併入資料集。
-solution: Analytics
 title: 整合查閱資料
-topic: Data workbench
 uuid: 35fd48f7-c0c4-4a83-919d-c15902f27495
+exl-id: 150d3aae-4431-488f-8f19-b522637ee935
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 2%
 
 ---
-
 
 # 整合查閱資料{#integrating-lookup-data}
 
@@ -22,7 +23,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **若要將查閱資料整合至資料集**
 
-1. 產生您的查閱檔案。 請參 [閱填入查閱表格](../../../../home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-pop-lookup-table.md#concept-dd761338731a40e0997c33dfdabdcdf8)。
+1. 產生您的查閱檔案。 請參閱[填入查閱表格](../../../../home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-pop-lookup-table.md#concept-dd761338731a40e0997c33dfdabdcdf8)。
 1. 在適當的資料集配置檔案的「轉換」參數中定義下列轉換類型之一：
 
    * [!DNL Categorize]
@@ -31,5 +32,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->請注意，轉 [!DNL ODBCLookup] 換僅在檔案或檔案中定 [!DNL Transformation.cfg] 義時才可 [!DNL Transformation Dataset Include] 用。
-
+>請注意，[!DNL ODBCLookup]轉換僅在[!DNL Transformation.cfg]檔案或[!DNL Transformation Dataset Include]檔案中定義時才起作用。
