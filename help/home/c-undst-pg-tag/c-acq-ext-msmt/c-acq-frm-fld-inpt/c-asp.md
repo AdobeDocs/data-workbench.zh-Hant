@@ -1,16 +1,17 @@
 ---
 description: 網頁通常採用ASP(Active Server Pages)寫程式語言結構。
-solution: Analytics
-title: ASP特定資訊
-topic: Data workbench
+title: ASP 專屬資訊
 uuid: 552288cb-b775-4121-8869-322f2a26932b
+exl-id: f73235e1-d44a-4056-b1f4-a86879c19483
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 1%
 
 ---
 
-
-# ASP特定資訊{#asp-specific-information}
+# ASP 專屬資訊{#asp-specific-information}
 
 網頁通常採用ASP(Active Server Pages)寫程式語言結構。
 
@@ -32,7 +33,7 @@ Response.AppendToLog("&v_3=" +  sState);
 Response.AppendToLog("&v_4=" +  sZip);
 ```
 
-此程式會將定義的表單值附加至頁面的請求資 [!DNL Form Processing] 料。 在記錄檔資料中，附加的值可當成頁面的查詢字串， [!DNL Form Processing] 如下所示。 例如，v_1、v_2、v_3和v_4現在將是查詢字串，包含輸入到適當表單欄位中的資料。 上述範例中所述的語法可針對您想要擷取的任何其他表單欄位和值進行複製。
+此程式會將定義的表單值附加至[!DNL Form Processing]頁面的請求資料。 在日誌資料中，附加的值可作為[!DNL Form Processing]頁的查詢字串使用，如下所示。 例如，v_1、v_2、v_3和v_4現在將是查詢字串，包含輸入到適當表單欄位中的資料。 上述範例中所述的語法可針對您想要擷取的任何其他表單欄位和值進行複製。
 
 ```
 http://www.myserver.com/path/to/formprocessingpage.asp?v_1=John+Smith&v_2=Los+Angeles&v_3=California&v_4=90210
@@ -45,7 +46,7 @@ var formvalues = Response.Form;
 Response.AppendToLog(formvalues); 
 ```
 
-此範例會取用HTML中顯示的所有表單欄位及其個別值，並將其附加為查詢字串至頁面的記錄 [!DNL Form Processing] 項目。 請注意，這將包含表單中顯示的任何隱藏欄位。
+此示例將採用HTML中顯示的所有表單欄位及其各自的值，並將它們作為查詢字串附加到[!DNL Form Processing]頁的日誌條目中。 請注意，這將包含表單中顯示的任何隱藏欄位。
 
 日誌資料將被增加，如下表中所詳述：
 
@@ -55,4 +56,3 @@ Response.AppendToLog(formvalues);
 | v_2 | 與CITY查詢字串關聯的值 | v_2=洛杉磯 |
 | v_3 | 與STATE查詢字串關聯的值 | v_3=加州 |
 | v_4 | 與ZIP查詢字串關聯的值 | v_4=90210 |
-
