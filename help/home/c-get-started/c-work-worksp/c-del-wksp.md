@@ -1,14 +1,15 @@
 ---
 description: 有關從「工作台」刪除工作區的資訊。
-solution: Analytics
 title: 刪除工作區
-topic: Data workbench
 uuid: 85fd84d6-0602-4ff4-a55a-44077f3f3151
+exl-id: 17ea8b7b-9ecb-44a5-844c-f7daec52dc8e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '118'
+ht-degree: 5%
 
 ---
-
 
 # 刪除工作區{#deleting-a-workspaces}
 
@@ -18,7 +19,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **若要從[!DNL Worktop]**
 
-按一下右鍵要刪除的工作區，然後按一下 **[!UICONTROL Revert to server version]** > **[!UICONTROL Yes]**。 本機版本會刪除，但伺服器版本仍會保留。
+按一下右鍵要刪除的工作區，然後按一下&#x200B;**[!UICONTROL Revert to server version]** > **[!UICONTROL Yes]**。 本機版本會刪除，但伺服器版本仍會保留。
 
 ![](assets/client-del.png)
 
@@ -28,7 +29,6 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **若要從[!DNL Worktop]**
 
-按一下右鍵要刪除的工作區，然後按一下 **[!UICONTROL Delete]**。
+按一下右鍵要刪除的工作區，然後按一下&#x200B;**[!UICONTROL Delete]**。
 
 ![](assets/mnu_workspaceManager_Deletewksp.png)
-
