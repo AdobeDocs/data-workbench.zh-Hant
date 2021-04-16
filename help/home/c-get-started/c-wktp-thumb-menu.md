@@ -1,16 +1,17 @@
 ---
 description: 如何從工作台匯出、複製和建立書籤。
-solution: Analytics
-title: 使用「工作台」縮圖選單
-topic: Data workbench
+title: 使用「操作台」縮圖功能表
 uuid: bada2260-3ae7-4fb6-938a-40b7acb1ffa7
+exl-id: 2220051d-5c53-48ed-8e13-62883819f22a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '490'
+ht-degree: 3%
 
 ---
 
-
-# 使用「工作台」縮圖選單{#using-the-worktop-thumbnail-menu}
+# 使用「操作台」縮圖功能表{#using-the-worktop-thumbnail-menu}
 
 如何從工作台匯出、複製和建立書籤。
 
@@ -18,23 +19,23 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 ![](assets/thumbnail_menu.png)
 
-## 介面說明 {#section-fd027dd94b7d4cb6b933d70c08ccd3e2}
+## 介面說明{#section-fd027dd94b7d4cb6b933d70c08ccd3e2}
 
-縮圖選單提供下列 [!DNL Worktop] 元素：
+[!DNL Worktop]縮圖選單提供下列元素：
 
-**伺服器工作區：** 名 *稱*
+**伺服器工作區：** *名稱*
 
-僅對未編輯的伺服器工作區顯示。 將指定的工作區標識為與儲存在伺服器上的工作區相同。
+僅對未編輯的伺服器工作區顯示。 將命名工作區識別為與儲存在伺服器上的工作區相同。
 
-**日期：** 日 *期與時間*
+**日期：** *日期和時間*
 
 上次開啟工作區的日期和時間。
 
-**本機版本：** 名 *稱*
+**本地版本：** *name*
 
 僅對伺服器工作區的本地版本顯示。 將命名工作區識別為儲存在伺服器上之工作區的編輯本機版本。
 
-**使用者工作區：** 名 *稱*
+**用戶工作區：** *名稱*
 
 僅對用戶工作區顯示。 將命名工作區識別為僅存在於本機機器上的工作區。
 
@@ -42,8 +43,8 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 僅線上上工作時顯示。 在您繼續工作時，使所選工作區中的查詢在後台運行。 選中後，縮略圖將顯示以下資訊，這些資訊指示查詢的進度：
 
-* 工作中： *n%* —— 表示查詢正在處理，且處理完成的百分比。
-* *n* MB查詢載入——查詢結果的總大小。 查詢負載與資料工作台伺服器的總記憶體負載成正比，但不直接產生關聯。 作為准則，10 MB或更高的查詢負載可能會使系統緊張。 列出的查詢負載不考慮群集。
+* 工作中：*n%* —— 表示查詢正在處理，且處理完成的百分比。
+* ** nMB查詢載入——查詢結果的總大小。查詢負載與Data Workbench伺服器的總記憶體負載成比例，但不直接相關。 作為准則，10 MB或更高的查詢負載可能會使系統緊張。 列出的查詢負載不考慮群集。
 
    >[!NOTE]
    >
@@ -51,15 +52,15 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **匯出至 Excel**
 
-將工作區資料匯出至Microsoft Excel（.xls和。xslx檔案）中的表格。 將工作區匯出至Excel時，資料工作台會從特定視覺化、維度和值圖例以及文字註解匯出資料至新的Excel活頁簿，每個工作表只有一個視覺化。
+將工作區資料匯出至Microsoft Excel（.xls和。xslx檔案）中的表格。 將工作區匯出至Excel時，Data Workbench會從特定視覺化、維度和值圖例以及文字附註匯出資料至每個工作表有一個視覺化的新Excel活頁簿。
 
 **匯出至Excel範本**
 
 匯出至Excel範本(.xltx)。
 
-**複製**
+**Copy**
 
-複製工作區。 有關貼上已複製工作區的詳細資訊，請參 [閱複製和貼上現有工作區](../../home/c-get-started/c-work-worksp/c-create-worksp.md#section-f91ae89b845640c9a4a52820a6110e65)。
+複製工作區。 有關貼上已複製工作區的詳細資訊，請參閱[複製和貼上現有工作區](../../home/c-get-started/c-work-worksp/c-create-worksp.md#section-f91ae89b845640c9a4a52820a6110e65)。
 
 **還原為伺服器版本**
 
@@ -67,15 +68,14 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **刪除**
 
-僅對用戶工作區顯示。 刪除僅存在於本地電腦上的用戶工作區。 有關從連接的資料工作台伺服器刪除工作區的資訊，請參 [閱從工作配置檔案刪除檔案](../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-del-files-wkg-prof.md#task-1e29c25e6c824cc9b51cb651e835856b)。
+僅對用戶工作區顯示。 刪除僅存在於本地電腦上的用戶工作區。 有關從連接的Data Workbench伺服器刪除工作區的資訊，請參閱[從工作配置檔案中刪除檔案](../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-del-files-wkg-prof.md#task-1e29c25e6c824cc9b51cb651e835856b)。
 
 **儲存至伺服器**
 
-僅針對伺服器工作區和使用者工作區的本機版本顯示，且僅適用於具有適當權限的使用者。 將工作區的本地副本保存到伺服器。 依預設，工作區會儲存至適當的工作資 `<profile name>\Workspaces\<tab name>` 料夾。
+僅針對伺服器工作區和使用者工作區的本機版本顯示，且僅適用於具有適當權限的使用者。 將工作區的本地副本保存到伺服器。 依預設，工作區會儲存至適當的工作中`<profile name>\Workspaces\<tab name>`檔案夾。
 
 **書籤**
 
 將工作區加入書籤，以便稍後快速擷取。
 
-書籤圖示 ![](assets/bookmark_icon.png) 將出現在工作台上的工作區上方，而工作區的名稱將出現在書籤面板中。 ![](assets/bookmark_worktop.png)
-
+書籤圖示![](assets/bookmark_icon.png)將出現在工作台上的工作區上方，而工作區的名稱將出現在「書籤」面板中。![](assets/bookmark_worktop.png)
