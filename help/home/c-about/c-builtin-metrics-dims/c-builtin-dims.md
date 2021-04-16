@@ -1,16 +1,17 @@
 ---
 description: 資料工作台包含內建維度。
-solution: Analytics
-title: 內建尺寸
-topic: Data workbench
+title: 內建維度
 uuid: 0aabbc52-266d-46c1-a4b3-dd575c0f2c72
+exl-id: c08a487d-60b8-4db7-8776-7ae1b9f1f27c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '100'
+ht-degree: 14%
 
 ---
 
-
-# 內建尺寸{#built-in-dimensions}
+# 內建維度{#built-in-dimensions}
 
 資料工作台包含內建維度。
 
@@ -30,14 +31,13 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col1"> 無 </td> 
    <td colname="col2"> 衍生 </td> 
    <td colname="col3"> 不適用 </td> 
-   <td colname="col4">具有與所有維度的所有元素相關的單一元素""。 將量度評估為「無」，就像是在無維度上評估量度。 <p>篩 <span class="filepath"> 選器[None=""]</span> 等 <span class="filepath"> 同於[True]</span>。 </p></td> 
+   <td colname="col4">具有與所有維度的所有元素相關的單一元素""。 將量度評估為「無」，就像是在無維度上評估量度。 <p><span class="filepath">篩選器[None=""]</span>等效於<span class="filepath"> [True]</span>。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> 一個（隱藏） </td> 
    <td colname="col2"> 數值 </td> 
    <td colname="col3"> 不適用 </td> 
-   <td colname="col4">元素"1"也具有序數值= 1 <span class="filepath"></span>，它與所有維的所有元素相關。 One dimension通常用於使用下列語法來建構計數： <p><span class="filepath"> sum(one,Countable_Dimension)</span></p></td> 
+   <td colname="col4">元素"1"也具有序數值<span class="filepath"> = 1</span>，與所有維度的所有元素相關。 One dimension通常用於使用下列語法來建構計數： <p><span class="filepath"> sum(one,Countable_Dimension)</span></p></td> 
   </tr> 
  </tbody> 
 </table>
-
