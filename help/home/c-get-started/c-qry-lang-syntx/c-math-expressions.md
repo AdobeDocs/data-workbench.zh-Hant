@@ -1,14 +1,15 @@
 ---
 description: 資料工作台可讓您運用其他數學計算。
-solution: Analytics
 title: 數學運算式的語法
-topic: Data workbench
 uuid: 63eee559-edfc-4efc-a6c8-66689d156701
+exl-id: a1433258-d3e8-4515-a1ae-00f9108e98c0
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 8%
 
 ---
-
 
 # 數學運算式的語法{#syntax-for-math-expressions}
 
@@ -87,4 +88,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
  </tbody> 
 </table>
-
