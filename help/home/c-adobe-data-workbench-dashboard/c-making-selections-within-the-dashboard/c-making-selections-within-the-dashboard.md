@@ -1,16 +1,17 @@
 ---
 description: 使用選取範圍，可輕鬆劃分和探索控制面板中的資料。
-solution: Analytics
-title: 在儀表板中進行選擇
-topic: Data workbench
+title: 在控制面板中進行選取
 uuid: b28bcc11-8fd3-4431-98ba-8adbd42a73d5
+exl-id: 18475e5c-97f4-42fd-883a-f822432b5301
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '289'
+ht-degree: 3%
 
 ---
 
-
-# 在儀表板中進行選擇{#making-selections-within-the-dashboard}
+# 在控制面板中進行選取{#making-selections-within-the-dashboard}
 
 使用選取範圍，可輕鬆劃分和探索控制面板中的資料。
 
@@ -29,4 +30,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 >[!NOTE]
 >
 >視覺化資料不會在每次選取時自動更新。 您必須在完成所需的選擇後，開始更新，才能區隔資料並更新視覺化。
-
