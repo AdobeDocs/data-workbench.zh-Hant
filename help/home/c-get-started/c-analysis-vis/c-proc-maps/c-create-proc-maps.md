@@ -1,20 +1,21 @@
 ---
 description: 您可以將條形圖、表格和階層檢視中的元素拖放至空白地圖，以建立2D和3D處理地圖。
-solution: Analytics
-title: 建立流程圖
-topic: Data workbench
+title: 建立程序圖
 uuid: dbcde637-0411-4296-99ca-5510e0285e4b
+exl-id: 2e417a8e-5b1c-4dce-9e4e-ac7ed044564c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '469'
+ht-degree: 1%
 
 ---
 
-
-# 建立流程圖{#create-a-process-map}
+# 建立程序圖{#create-a-process-map}
 
 您可以將條形圖、表格和階層檢視中的元素拖放至空白地圖，以建立2D和3D處理地圖。
 
-您可以新增的元素必須是流程圖基本維度的元素。 您也可以將節點從一個流程映射拖放到另一個流程映射，只要這些映射使用相同的基本維。 此外，可縮放或移動整個地圖，以集中在特定節點上，或可變更為其他視覺化類型。 請參 [閱放大視覺化](../../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530)。
+您可以新增的元素必須是流程圖基本維度的元素。 您也可以將節點從一個流程映射拖放到另一個流程映射，只要這些映射使用相同的基本維。 此外，可縮放或移動整個地圖，以集中在特定節點上，或可變更為其他視覺化類型。 請參閱[放大視覺效果](../../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530)。
 
 **要使用表或條形圖向工藝圖添加元素**
 
@@ -30,18 +31,18 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->Adobe建議您從所分析階層的最高層級新增節點。
+>Adobe建議您從正在分析的階層的最高層級新增節點。
 
-1. 在與流程圖具有相同基本尺寸的任何表或條形圖中，按一下右鍵元素或基本尺寸的標籤，然後按一下 **[!UICONTROL Hierarchy View]**。
+1. 在與流程圖具有相同基本尺寸的任何表或條形圖中，按一下右鍵元素或基本尺寸的標籤，然後按一下&#x200B;**[!UICONTROL Hierarchy View]**。
 1. 按一下並將元素拖動到工藝圖時，按Ctrl+Alt。 在滑鼠到達地圖之前，滑鼠游標將顯示&quot;No&quot;字。
 
    >[!NOTE]
    >
    >您可以新增的元素必須是流程圖基本維度的元素。
 
-   將單個元素拖動到進程映射中將僅建立該元素的映射節點，但如果選擇多個元素（組）或包含多個元素的資料夾，則從層次中拖動將為該組或資料夾建立單個節點。 例如，如果您使用網站資料，將名為的資料夾拖曳至地圖會產生一個名為的節點 [!DNL site.com/cgi-bin][!DNL site.com/cgi-bin/*]，此節點代表該資料夾之子系的所有頁面和目錄。
+   將單個元素拖動到進程映射中將僅建立該元素的映射節點，但如果選擇多個元素（組）或包含多個元素的資料夾，則從層次中拖動將為該組或資料夾建立單個節點。 例如，如果您使用網站資料，將名為[!DNL site.com/cgi-bin]的資料夾拖曳至地圖上，會建立名為[!DNL site.com/cgi-bin/*]的節點，此節點代表該資料夾之子系的所有頁面和目錄。
 
-如需頁面階層檢視的詳細資訊，請參閱套 [用階層檢視](../../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff)。
+如需頁面階層檢視的詳細資訊，請參閱[套用階層檢視](../../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff)。
 
 **從另一個進程映射向進程映射添加節點**
 
@@ -53,4 +54,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    * 要複製單個節點，請按一下每個節點並將其拖動到第二個進程映射。
    * 要複製多個節點，請按住Ctrl鍵並拖動以在要複製的節點周圍建立一個框，然後按一下並拖動突出顯示的節點到第二個進程映射。 所有突出顯示的節點都被複製到第二個進程映射。
-
