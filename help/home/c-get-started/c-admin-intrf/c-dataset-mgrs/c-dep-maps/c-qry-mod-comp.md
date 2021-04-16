@@ -1,20 +1,21 @@
 ---
 description: 關於查詢模型元件的概念性資訊。
-solution: Analytics
 title: 查詢模型元件
-topic: Data workbench
 uuid: 708fab0b-dc10-4306-b410-49268069ac3b
+exl-id: 1f5d0a3a-6647-4762-ab20-9d80e467d48f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 3%
 
 ---
-
 
 # 查詢模型元件{#query-model-components}
 
 關於查詢模型元件的概念性資訊。
 
-下圖顯示相依關係圖，其節點代表查詢模型的量度、衍生維度和篩選器，這些量度和篩選器在描述檔中的「維度」、「量度」和「篩選器」資料夾中定義，以及資料集中以某種方式定義的延伸維度。
+下圖顯示相依關係圖，其節點代表查詢模型的量度、衍生維度和篩選器，這些量度和篩選器定義於描述檔中的Dimension、量度和篩選器資料夾，以及資料集中定義的延伸維度（以某種方式與它們相關）。
 
 ![](assets/vis_DependencyMap_QueryModel.png)
 
@@ -26,5 +27,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->由於相關性映射的設計是為了適應非循環相關性，因此循環相關性中涉及的節點可能無法在映射上正確顯示。 通過在文本框中鍵入「循環相關性」，可以搜索循環相 [!DNL Search] 關性。 如需功能的詳細資 [!DNL Search] 訊，請參 [閱「在地圖內搜尋」](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/t-srch-map.md#task-a1e7065a538d46c78a7d28676d880dfb)。
-
+>由於相關性映射的設計是為了適應非循環相關性，因此循環相關性中涉及的節點可能無法在映射上正確顯示。 通過在[!DNL Search]文本框中鍵入&quot;circular dependency&quot;，可以搜索循環依賴項。 有關[!DNL Search]功能的詳細資訊，請參閱[在映射中搜索](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/t-srch-map.md#task-a1e7065a538d46c78a7d28676d880dfb)。
