@@ -1,20 +1,21 @@
 ---
 description: 「資料集結構」介面會顯示任何「轉換資料集設定」檔案中定義的擴充維度（可計數、簡單、多對多、數值、非正規和時間維度），以及這些維度之間的關係。
-solution: Analytics
-title: 資料集架構
-topic: Data workbench
+title: 資料集結構
 uuid: 4ef5f14b-dc19-4118-a2f2-d680ded8092c
+exl-id: b80e6e8e-9147-46ec-8602-2d7e5d33f077
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '380'
+ht-degree: 3%
 
 ---
 
-
-# 資料集架構{#dataset-schema}
+# 資料集結構{#dataset-schema}
 
 「資料集結構」介面會顯示任何「轉換資料集設定」檔案中定義的擴充維度（可計數、簡單、多對多、數值、非正規和時間維度），以及這些維度之間的關係。
 
-此外，該界 [!DNL Dataset Schema] 面還顯示您定義的任何派生維，以及配置為隱藏的任何擴展維。
+此外，[!DNL Dataset Schema]介面還顯示您定義的任何派生維，以及配置為隱藏的任何擴展維。
 
 ![](assets/vis_DatasetSchema_Example.png)
 
@@ -24,16 +25,16 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 * [顯示維度的預設視覺化](../../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dataset-schema.md#section-1bbb73a5cbb34ffb844eb1932db85318)
 * [顯示維度的特定視覺化](../../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dataset-schema.md#section-d46626df90bc4c44ae60c4b71eaeac7f)
 
-## 要使用資料集模式介面解釋維類型 {#section-16a0a12b11334c07bec558c0b7d260b1}
+## 使用資料集模式介面{#section-16a0a12b11334c07bec558c0b7d260b1}解譯Dimension類型
 
-下表列出了尺寸類型及其名稱在介面中顯示的 [!DNL Dataset Schema] 顏色。 另外，也會記下範例尺寸的父項（來自上述範例）。
+下表列出了尺寸類型及其名稱在[!DNL Dataset Schema]介面中顯示的顏色。 另外，也會記下範例尺寸的父項（來自上述範例）。
 
 <table id="table_20D1A9EAAED247338476C475C63255F5"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 維類型 </th> 
+   <th colname="col1" class="entry"> Dimension類型 </th> 
    <th colname="col2" class="entry"> 色彩 </th> 
-   <th colname="col3" class="entry"> 範例維度和父項 </th> 
+   <th colname="col3" class="entry"> 範例Dimension與父項 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -80,15 +81,14 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
  </tbody> 
 </table>
 
-## 顯示維度的預設視覺化 {#section-1bbb73a5cbb34ffb844eb1932db85318}
+## 顯示Dimension{#section-1bbb73a5cbb34ffb844eb1932db85318}的預設可視化
 
-* 在介面 [!DNL Dataset Schema] 中，按一下所要的維度。 顯示預設視覺化。 例如，如果預設視覺化是顯示「作業」和選取維度的表格，而您按一下URI維度，資料工作台會依「作業」顯示具有URI的表格。
+* 在[!DNL Dataset Schema]介面中，按一下所需的維度。 顯示預設視覺化。 例如，如果預設視覺化是顯示「作業」和選取維度的表格，而您按一下URI維度，資料工作台會依「作業」顯示具有URI的表格。
 
 >[!NOTE]
 >
->如果您想要變更顯示的預設視覺化，請參閱資料工作台使用指南中的「設定介面與分 *析功能」一章*。
+>如果要更改顯示的預設可視化，請參閱&#x200B;*Data Workbench使用手冊*&#x200B;中的「配置介面和分析功能」一章。
 
-## 顯示維度的特定視覺化 {#section-d46626df90bc4c44ae60c4b71eaeac7f}
+## 顯示Dimension{#section-d46626df90bc4c44ae60c4b71eaeac7f}的特定視覺化
 
-* 在介面 [!DNL Dataset Schema] 中，以滑鼠右鍵按一下所要的維度，然後按 **[!UICONTROL Add Visualization]** > *&lt;**[!UICONTROL visualization type]**>*。
-
+* 在[!DNL Dataset Schema]介面中，以滑鼠右鍵按一下所要的維度，然後按一下&#x200B;**[!UICONTROL Add Visualization]** > ***[!UICONTROL visualization type]**>*。
