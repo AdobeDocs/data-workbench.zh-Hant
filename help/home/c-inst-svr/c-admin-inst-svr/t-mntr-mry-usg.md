@@ -1,16 +1,15 @@
 ---
 description: 有關評估和監控地址空間負載的資訊。
-solution: Analytics
 title: 監控記憶體使用情況
 uuid: e7f1c51b-d874-43f4-a074-1c064b5f298a
+exl-id: b8c0b33b-dbec-4947-911b-11c8a83bbc9c
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 2%
 
 ---
-
 
 # 監控記憶體使用情況{#monitoring-memory-usage}
 
@@ -18,17 +17,17 @@ ht-degree: 2%
 
 **監視地址空間負載**
 
-**建議頻率：** 每日
+**建議頻率：每** 日
 
-「地址空間」負載是指正確配置使用的最大地址空間的分 [!DNL Insight Server] 數。 即使配置參數被更改以減少記憶體使用，在服務重新啟動之前，配置參數通 [!DNL Insight Server] 常也不會減少。
+「地址空間」負載是指正確配置[!DNL Insight Server]所使用的最大地址空間的分數。 即使配置參數被更改以減少記憶體使用量，通常在[!DNL Insight Server]服務重新啟動之前不會減少。
 
-「地址空間」負載最大值中內置了安全裕量，以考慮「地址空間」利用率的意外增加。 你絕不應該故意切入這個安全範圍。 它適用於緊急情況，而非支援Adobe應用程式中新增的功能。
+「地址空間」負載最大值中內置了安全裕量，以考慮「地址空間」利用率的意外增加。 你絕不應該故意切入這個安全範圍。 它適用於緊急情況，而不適用於對您的Adobe應用程式新增功能的支援。
 
 >[!NOTE]
 >
 >要使更多地址空間可用並避免記憶體耗盡錯誤，請確保您的作業系統已啟用/3GB交換機，並且低碎片堆正在運行。
 
-記錄到事件數 [!DNL Insight Server] 據日誌的錯誤可以提示，在載入地址空間時出現問題：
+記錄到[!DNL Insight Server]事件資料記錄中的錯誤可以提示，在載入地址空間時出現問題：
 
 * 「請求的X位元組區塊太大」錯誤表示某些項目可能對「位址空間」負載、效能和網路頻寬造成過大影響。 如此大的區塊可大幅增加地址空間的使用量，不論是使用大量記憶體，還是需要大量相鄰的位址空間區塊。
 
@@ -41,13 +40,13 @@ ht-degree: 2%
 
 **要評估地址空間負載**
 
-為準確評估系統的「位址空間」載入，Adobe建議重新處理資料集、執行一些正常查詢而不需隨後重新啟動 [!DNL Insight Server]，然後依照下列步驟檢視測量的「位址空間」載入。
+為準確評估系統的「地址空間」負載，Adobe建議重新處理資料集，執行一些常規查詢，而不隨後重新啟動[!DNL Insight Server]，然後按照以下步驟查看測量的「地址空間」負載。
 
-如果自上 [!DNL Insight Server] 次重新啟動以來尚未重新處理和查詢，則不應從「地址空間」載入中得出結論。
+如果[!DNL Insight Server]自上次重新啟動以來未經過重新處理和查詢，則不應從「地址空間」載入中得出結論。
 
-1. 在「 [!DNL Insight]>」標籤 [!DNL Admin] 中， [!DNL Dataset and Profile] 按一下縮圖以開 **[!UICONTROL Servers Manager]** 啟「伺服器管理員」工作區。
-1. 按一下右鍵要配置的 [!DNL Insight Server] 表徵圖，然後按一下 **[!UICONTROL Detailed Status]**。
-1. 在「詳細狀態」介面中，按一下 **[!UICONTROL Memory Status]** 以檢視其內容。 在「地址空間載入」參數中，您可以看到「地址空間」載入以百分比表示，並看到帶有括弧的說明指示狀態。
+1. 在[!DNL Insight]的[!DNL Admin] > [!DNL Dataset and Profile]標籤上，按一下&#x200B;**[!UICONTROL Servers Manager]**&#x200B;縮圖以開啟「伺服器管理器」工作區。
+1. 按一下右鍵要配置的[!DNL Insight Server]表徵圖，然後按一下&#x200B;**[!UICONTROL Detailed Status]**。
+1. 在「Detailed Status（詳細狀態）」介面中，按一下&#x200B;**[!UICONTROL Memory Status]**&#x200B;查看其內容。 在「地址空間載入」參數中，您可以看到「地址空間」載入以百分比表示，並看到帶有括弧的說明指示狀態。
 
    下表顯示「地址空間」載入的範圍和狀態。 會列出每個範圍的建議動作。
 
@@ -61,4 +60,3 @@ ht-degree: 2%
    | 125或更新版本 | 故障迫在眉睫 | 調整資料集設定，以減少「位址空間」負載。 在故障發生之前，您可能看不到故障即將發生的狀態。 |
 
    如果您看到「地址空間」載入超過100%，您應盡快變更設定，以降低「地址空間」的使用量。
-
