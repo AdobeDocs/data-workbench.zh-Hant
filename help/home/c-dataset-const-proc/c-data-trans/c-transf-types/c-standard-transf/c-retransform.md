@@ -1,31 +1,32 @@
 ---
 description: RETransform（規則運算式）轉換是一種模式匹配轉換，它使用規則運算式指定模式以在輸入中查找和捕獲，並將捕獲的字串儲存在指定的輸出欄位中。
-solution: Analytics
 title: RETransform
-topic: Data workbench
 uuid: 60b5b60e-678a-416d-b5c3-57b1bbefce7d
+exl-id: 2595f782-0efb-4a2a-84bd-fdb04baf0852
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '430'
+ht-degree: 3%
 
 ---
-
 
 # RETransform{#retransform}
 
 RETransform（規則運算式）轉換是一種模式匹配轉換，它使用規則運算式指定模式以在輸入中查找和捕獲，並將捕獲的字串儲存在指定的輸出欄位中。
 
-規則運算式會根據整個輸入字串進行計算。 如果輸入與規則運算式中指定的模式不符，則不會擷取任何資料。 如需使用規則運算式的簡要指南，請參閱規 [則運算式](../../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c)。
+規則運算式會根據整個輸入字串進行計算。 如果輸入與規則運算式中指定的模式不符，則不會擷取任何資料。 有關使用規則運算式的簡要指南，請參見[規則運算式](../../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c)。
 
 >[!NOTE]
 >
->轉換 [!DNL RETransform] 的運作方式類似於 [!DNL REMatch] 轉換(請參見 [REMatch](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-rematch.md#concept-7f0b1caad1df46aabef4448f88261a8e))，它為規則運算式中的每個捕獲子模式構建輸出欄位。 您可以將之 [!DNL RETransform] 想成是一種結合 [!DNL REMatch] 與轉 [!DNL Format] 變。 如果Action參數（請參閱下表中的Action）設為&quot;RESULTS&quot;，則操 [!DNL RETransform] 作方式與轉換 [!DNL REMatch] 組 [!DNL Union] 合。
+>[!DNL RETransform]轉換的運作類似於[!DNL REMatch]轉換（請參見[REMatch](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-rematch.md#concept-7f0b1caad1df46aabef4448f88261a8e)），它為規則運算式中的每個捕獲子模式構建一個輸出欄位。 您可以將[!DNL RETransform]看作[!DNL REMatch]和[!DNL Format]轉換的組合。 如果Action參數（請參閱下表中的Action）設為&quot;RESULTS&quot;，則[!DNL RETransform]的運作方式就像[!DNL REMatch]和[!DNL Union]轉換的組合。
 
 <table id="table_51B7342E6A5E4E31913BD0F6A6ACC424"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> 參數 </th> 
    <th colname="col2" class="entry"> 說明 </th> 
-   <th colname="col3" class="entry"> 預設值 </th> 
+   <th colname="col3" class="entry"> 預設 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -35,7 +36,7 @@ RETransform（規則運算式）轉換是一種模式匹配轉換，它使用規
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 意見 </td> 
+   <td colname="col1"> 註解 </td> 
    <td colname="col2"> 選填。關於轉變的附註。 </td> 
    <td colname="col3"></td> 
   </tr> 
@@ -45,7 +46,7 @@ RETransform（規則運算式）轉換是一種模式匹配轉換，它使用規
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 預設值 </td> 
+   <td colname="col1"> 預設 </td> 
    <td colname="col2"> 如果條件符合且輸入值不可用或規則運算式不符合輸入值，則使用的預設值。 </td> 
    <td colname="col3"></td> 
   </tr> 
