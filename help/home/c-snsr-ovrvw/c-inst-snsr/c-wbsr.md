@@ -1,28 +1,27 @@
 ---
 description: 有關在AIX 5.1或更高版本上安裝和配置Sensor for WebSphere 5.x的詳細說明。
-solution: Analytics
 title: AIX 上的 WebSphere
 uuid: a5a3fd79-a7f0-4861-adca-8da3a185d0df
+exl-id: e560d265-dc84-4ff2-ac86-7a2ac5261451
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1645'
 ht-degree: 0%
 
 ---
 
-
 # AIX 上的 WebSphere{#websphere-on-aix}
 
 有關在AIX 5.1或更高版本上安裝和配置Sensor for WebSphere 5.x的詳細說明。
 
-您可從Adobe下 [!DNL Sensor] 載網站取得的安裝檔案中，封裝您的程式檔。 如果您尚未擁有特定網頁伺服 [!DNL Sensor] 器的安裝檔案，請先下載（或從您的Adobe代表取得），然後再開始進行下列程式。
+[!DNL Sensor]的程式檔案將打包在您從Adobe下載站點獲得的安裝檔案中。 如果您尚未擁有特定Web伺服器的[!DNL Sensor]安裝檔案，請在開始執行以下過程之前先下載它(或從Adobe代表處獲取它)。
 
 >[!NOTE]
 >
->WebSphere [!DNL Sensor] 伺服器不支援受控實驗。 如需有關受控實驗的詳細資訊，請參 *閱資料工作台受控實驗指南。*
+>適用於WebSphere伺服器的[!DNL Sensor]不支援受控實驗。 有關受控實驗的資訊，請參閱&#x200B;*Data Workbench受控實驗指南。*
 
-## 安裝程式檔案 {#section-86f69127278c41bc90b97b68bb40bc6e}
+## 安裝程式檔案{#section-86f69127278c41bc90b97b68bb40bc6e}
 
 將Sensor程式檔案解壓並安裝到伺服器電腦的過程。
 
@@ -101,7 +100,7 @@ ht-degree: 0%
 
 如果要使用除建議預設值之外的權限，請查看Sensor UNIX檔案權限中的資訊，以確保您瞭解這些檔案的使用方式。
 
-## Edit the Sensor Configuration file {#section-283c8a92fa8841c1b6034e5f834ef4e7}
+## 編輯感測器配置檔案{#section-283c8a92fa8841c1b6034e5f834ef4e7}
 
 txlogd.conf檔案包含感測器的配置參數。
 
@@ -117,7 +116,7 @@ txlogd.conf檔案包含感測器的配置參數。
 1. 在文字編輯器中開啟/etc/txlogd.conf檔案，並設定所需參數以及任何所需的可選參數。
 1. 儲存並關閉檔案。
 
-## 啟動發射器並建立磁碟隊列 {#section-63285a2328604f20a2cb31b3d5cb80e6}
+## 啟動發射器並建立磁碟隊列{#section-63285a2328604f20a2cb31b3d5cb80e6}
 
 配置txlogd.conf檔案後建立磁碟隊列的過程。
 
@@ -137,17 +136,17 @@ txlogd.conf檔案包含感測器的配置參數。
 1. 如果未正確建立隊列，請鍵入Ctrl+C以終止發射器，然後執行以下操作：
 
    1. 檢查txtlogd.conf檔案並驗證QueueFile和QueueSize參數設定正確。
-   1. 檢查分配了磁碟隊列的設備是否工作，並且有足夠的空間容納QueueSize參數中指定的大小的檔案。
+   1. 檢查分配磁碟隊列的設備是否工作，並有足夠的可用空間以容納QueueSize參數中指定的大小檔案。
    1. 進行任何必要的更正並重複此步驟。
 
-## 將收集器添加到Web應用程式 {#section-d17297b1193f4e3cb150fb41f754ef12}
+## 將收集器添加到Web應用程式{#section-d17297b1193f4e3cb150fb41f754ef12}
 
 對於WebSphere伺服器，收集器在servlet容器中作為過濾器操作。
 
 若要將收集器新增至Web應用程式，請將篩選器新增至Web應用程式的web.xml部署描述檔，然後重新啟動Web應用程式。
 
 1. 使用文本編輯器，開啟Sensor捕獲事件的Web伺服器的web.xml檔案。
-1. 將下列元素 `<filter>` 和元 `<filter-mapping>` 素添加到描述符檔案中。 如果您未在/etc目錄中安裝txlogd.conf，則需要在元素中輸入此檔案的正確路 `<param-value>` 徑。
+1. 將以下`<filter>`和`<filter-mapping>`元素添加到描述符檔案中。 如果您未在/etc目錄中安裝txlogd.conf，則需要在`<param-value>`元素中輸入此檔案的正確路徑。
 
    ```
    <filter>
@@ -175,7 +174,7 @@ txlogd.conf檔案包含感測器的配置參數。
 
 1. 重新啟動Web應用程式。 收集器已載入應用程式，並將開始收集事件資料並將其寫入磁碟隊列。
 
-## 聲明收集器和共用對象檔案的位置 {#section-e641f08999d34a648aaee2111b69ca25}
+## 聲明收集器和共用對象檔案的位置{#section-e641f08999d34a648aaee2111b69ca25}
 
 編輯Websphere啟動指令碼以聲明J2EECollector.jar和libvisual_sciences.so檔案位置的過程。
 
@@ -192,9 +191,9 @@ txlogd.conf檔案包含感測器的配置參數。
    WAS_LIBPATH="$WAS_LIBPATH":/usr/local/visual_sciences
    ```
 
-1. Save the [!DNL setupCmdLine.sh] file.
+1. 保存[!DNL setupCmdLine.sh]檔案。
 
-## 測試感測器 {#section-07f2da5c4caa46bf9dd1cb4ae4b61af5}
+## 測試感測器{#section-07f2da5c4caa46bf9dd1cb4ae4b61af5}
 
 啟動傳送器並驗證它是否可成功連接至Insight Server並傳送事件資料至它的程式。
 
@@ -216,7 +215,7 @@ txlogd.conf檔案包含感測器的配置參數。
    * 在txtlogd.conf中可以正確設定ServerAddress和ServerPort參數。 如果您使用伺服器名稱指定ServerAddress，請改用其數值IP位址。
    * CertName參數的值與目標Insight Server的數位憑證上顯示的公用名稱完全相符。
 
-## 將發射器添加到系統啟動指令碼 {#section-23bb905100d04f018af93873dd4d5f68}
+## 將發射器添加到系統啟動指令碼{#section-23bb905100d04f018af93873dd4d5f68}
 
 確保發射器在Web伺服器電腦重新啟動時自動載入的資訊。
 
@@ -228,7 +227,7 @@ txlogd.conf檔案包含感測器的配置參數。
 
 此命令將發射器作為守護程式啟動。 發射器生成的操作消息和錯誤消息將寫入syslog。
 
-## 擷取其他資料 {#section-d5ccf8ee50914a87938e0c17480757e6}
+## 擷取其他資料{#section-d5ccf8ee50914a87938e0c17480757e6}
 
 所有平台的感測器都可以收集HTTP請求和回應標頭中可用的任何資料。
 
@@ -242,7 +241,7 @@ J2EE平台的Sensors提供了收集其他平台無法使用的資料的機制。
 
 當J2EE平台的感測器收到請求時，它會叫用匯入appendToLog函式的收集器類別。 appendToLog函式會附加至初始請求中appendToLog函式中指定的查詢字串參數。 這會導致初始請求的URI包含與所擷取資料的名稱和值相對應的其他查詢字串名稱——值配對。 例如，當特定廣告位置或點進連結的值為20美分時，CPC=20會附加至初始請求。 Insight Server會將這些值處理至資料集以進行分析。 此收集方法的另一個好處是，它允許收集其他資料，而不會建立額外的記錄項目，就像使用頁面標籤方法所建立的一樣。
 
-如需有關處理的詳細資訊，請參閱資 *料集設定指南*。
+如需處理的詳細資訊，請參閱&#x200B;*資料集設定指南*。
 
 1. 將下列程式碼新增至您要擷取資料的。jsp頁面頂端：
 
@@ -268,4 +267,3 @@ J2EE平台的Sensors提供了收集其他平台無法使用的資料的機制。
    產生的請求URI為/index.jsp?A=1&amp;B=2。
 
 1. 對要從中捕獲其他資料的每個。jsp頁重複此過程。
-
