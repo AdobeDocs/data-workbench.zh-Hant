@@ -1,17 +1,16 @@
 ---
-description: 'null'
-solution: Analytics
+description: Data Workbench檔案
 title: Data Workbench 說明
-topic: Reports and analytics
+topic: 報表和分析
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
-translation-type: ht
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
-workflow-type: ht
-source-wordcount: '268'
-ht-degree: 100%
+exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
+translation-type: tm+mt
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 98%
 
 ---
-
 
 # Data Workbench 說明{#data-workbench-help}
 
@@ -37,7 +36,7 @@ Data Workbench 包含下列預測性分析功能、資料視覺化和報表：
 
 ## 更多 Analytics 使用手冊
 
-[Analytics 使用手冊](https://docs.adobe.com/content/help/zh-Hant/analytics/landing/home.html)
+[Analytics 使用手冊](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
 
 ## Data Workbench 發行說明和新功能
 
