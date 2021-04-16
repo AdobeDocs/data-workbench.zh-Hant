@@ -1,26 +1,27 @@
 ---
 description: 與其他轉換一樣，CrossRows轉換也會應用於日誌源中的資料行（日誌條目）。
-solution: Analytics
 title: CrossRows
-topic: Data workbench
 uuid: 5910c150-6bec-4d98-b116-9b382fd54d3c
+exl-id: 321f986e-44a9-454c-9311-0ae37a11a088
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '1137'
+ht-degree: 1%
 
 ---
-
 
 # CrossRows{#crossrows}
 
 與其他轉換一樣，CrossRows轉換也會應用於日誌源中的資料行（日誌條目）。
 
-對於每一行資料，轉換將採用指定輸入欄位的值，執行一組處理步驟，並在您指定的輸出欄位中記錄結果。 不過，當 [!DNL CrossRows] 轉換適用於一列資料（此列稱為輸出列）時，會考慮該列加上與相同追蹤ID相關聯的一列或多列其他資料（這些列稱為輸入列）。 因此，對於給定的跟蹤ID，每個輸出行的輸出欄位的值基於一個或多個輸入行的輸入欄位的值。
+對於每一行資料，轉換將採用指定輸入欄位的值，執行一組處理步驟，並在您指定的輸出欄位中記錄結果。 但是，當[!DNL CrossRows]轉換對一列資料（此列稱為輸出列）運作時，它會考慮該列加上與相同追蹤ID關聯的一列或多列其他資料（這些列稱為輸入列）。 因此，對於給定的跟蹤ID，每個輸出行的輸出欄位的值基於一個或多個輸入行的輸入欄位的值。
 
-轉換提供了多個條件和約束條件，使您能夠限制轉換的輸入行。 您可以根據資料工作台伺服器的條件(請參閱 [Conditions](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md))、輸入列相對於輸出列的範圍，或輸出列時間的範圍來表示這些限制。 對於滿足轉換條件和約束的輸入行，可以應用確定輸出欄位值的操作（如SUM）。
+轉換提供了多個條件和約束條件，使您能夠限制轉換的輸入行。 您可以根據資料工作台伺服器的條件（請參閱[條件](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)）、相對於輸出列的輸入列範圍或相對於輸出列時間的時間範圍來表示這些限制。 對於滿足轉換條件和約束的輸入行，可以應用確定輸出欄位值的操作（如SUM）。
 
 >[!NOTE]
 >
->若要運作，轉 [!DNL CrossRows] 換需要資料按時間排序，並依來源資料中的追蹤ID分組。 因此， [!DNL CrossRows] 只有在檔案或檔案中 [!DNL Transformation.cfg] 定義時才可 [!DNL Transformation Dataset Include] 用。
+>要運作，[!DNL CrossRows]轉換要求資料按時間排序，並依來源資料中的追蹤ID分組。 因此，[!DNL CrossRows]僅在[!DNL Transformation.cfg]檔案或[!DNL Transformation Dataset Include]檔案中定義時運作。
 
 在查看下表中參數的說明時，請記住以下內容：
 
@@ -32,7 +33,7 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
   <tr> 
    <th colname="col1" class="entry"> 參數 </th> 
    <th colname="col2" class="entry"> 說明 </th> 
-   <th colname="col3" class="entry"> 預設值 </th> 
+   <th colname="col3" class="entry"> 預設 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -42,7 +43,7 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 意見 </td> 
+   <td colname="col1"> 註解 </td> 
    <td colname="col2"> 選填。關於轉變的附註。 </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -63,7 +64,7 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
   </tr> 
   <tr> 
    <td colname="col1"> 金鑰 </td> 
-   <td colname="col2"> <p>選填。用作鍵的欄位的名稱。 </p> <p> 如果指定了鍵，則給定輸出行的輸入行被限制為與輸出行具有相同鍵值的相鄰行塊。 除了CrossRows轉換的其他參數對輸入行施加的所有其他限制外，此限 <span class="wintitle"> 制還包括</span> 。 </p> <p> 例如，如果您使用Web資料，並將欄位x-session-key（每個會話都有唯一值）設定為鍵，則轉換的輸入行將限制為與輸出行具有相同x-session-key值的行。 因此，您只考慮那些表示頁面檢視的輸入列，這些頁面檢視發生在與輸出列相同的作業階段中。 </p> </td> 
+   <td colname="col2"> <p>選填。用作鍵的欄位的名稱。 </p> <p> 如果指定了鍵，則給定輸出行的輸入行被限制為與輸出行具有相同鍵值的相鄰行塊。 此限制是<span class="wintitle"> CrossRows</span>轉換中其他參數對輸入行施加的所有其他限制的附加限制。 </p> <p> 例如，如果您使用Web資料，並將欄位x-session-key（每個會話都有唯一值）設定為鍵，則轉換的輸入行將限制為與輸出行具有相同x-session-key值的行。 因此，您只考慮那些表示頁面檢視的輸入列，這些頁面檢視發生在與輸出列相同的作業階段中。 </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -103,10 +104,10 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
  </tbody> 
 </table>
 
-此 [!DNL CrossRows] 範例中的轉換會套用至Web資料列，以尋找每個頁面檢視的下一頁檢視時間。 由於我們知 [!DNL CrossRows] 道只有在資料集建構程式的轉換階段才會套用資料列，因此資料列會依訪客（每位訪客都有唯一的追蹤ID）和時間排序。
+此範例中的[!DNL CrossRows]轉換會套用至Web資料列，以尋找每個頁面檢視的下一頁檢視時間。 由於我們知道[!DNL CrossRows]僅在資料集建構程式的轉換階段才會套用，因此資料列會依訪客（每位訪客都有唯一的追蹤ID）和時間排序。
 
-輸入欄位x-timestamp僅會被視為填入x-is-page-view欄位的輸入列（指出資料列代表頁面檢視）。 會為Key參數指定x-session-key欄位（對每個作業都有唯一值）。 因此，轉換的輸入行（日誌條目）被限制為具有與輸出行相同x-session-key值的連續行塊。 換言之，要考慮轉換，輸入行必須表示在與輸出行中的頁面視圖相同會話期間發生的頁面視圖。 第一行操作從滿足 [!DNL Input] Condition且與輸出行具有相同x-session-key值的第一輸入行獲取輸出欄位的值。
+輸入欄位x-timestamp僅會被視為填入x-is-page-view欄位的輸入列（指出資料列代表頁面檢視）。 會為Key參數指定x-session-key欄位（對每個作業都有唯一值）。 因此，轉換的輸入行（日誌條目）被限制為具有與輸出行相同x-session-key值的連續行塊。 換言之，要考慮轉換，輸入行必須表示在與輸出行中的頁面視圖相同會話期間發生的頁面視圖。 第一行操作從滿足[!DNL Input]條件且與輸出行具有相同x-session-key值的第一輸入行獲取輸出欄位的值。
 
 ![](assets/cfg_TransformationType_CrossRows.png)
 
-[!DNL CrossRows] 以與輸入大小及輸出大小成比例的時間量執行。 這表示對於SUM、FIRST ROW和LAST ROW等操作，其效率不亞於其他轉換。 對於ALL，情況更複雜，因為可以配置為每個資料行（日誌條目）輸出與給定跟蹤ID的行總數（日誌條目）成比例的資料量。 [!DNL CrossRows]
+[!DNL CrossRows] 以與輸入大小及輸出大小成比例的時間量執行。這表示對於SUM、FIRST ROW和LAST ROW等操作，其效率不亞於其他轉換。 對於ALL，情況更複雜，因為可以配置[!DNL CrossRows]來輸出每行資料（日誌條目）的資料量，該資料量與給定跟蹤ID的行總數（日誌條目）成比例。
