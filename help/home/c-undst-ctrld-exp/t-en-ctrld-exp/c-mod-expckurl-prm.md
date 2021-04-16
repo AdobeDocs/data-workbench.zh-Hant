@@ -2,16 +2,15 @@
 description: ExpCookieURL參數可用來測試您的受控實驗是否正常運作。
 solution: Analytics,Analytics
 title: 修改 ExpCookieURL 參數 (選用)
-topic: Data workbench
 uuid: 0c160c26-f9de-4e41-a05d-bf7bb32395bb
+exl-id: fe3dadab-890d-4426-b6f5-8ffd1cd38c69
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 6%
 
 ---
-
 
 # 修改 ExpCookieURL 參數 (選用){#modifying-the-expcookieurl-paramter-optional}
 
@@ -19,7 +18,7 @@ ExpCookieURL參數可用來測試您的受控實驗是否正常運作。
 
 此參數會定義虛擬頁面的URL，當要求時將您放入指定的實驗和群組，然後將您重新導向至網站的根目錄。 從那個點到實驗結束，您都是指定實驗和群組的一部分。
 
-此參數的預設頁面為 [!DNL setcookie.htm]，但您可以使用任何有效的虛擬URL。
+此參數的預設頁面為[!DNL setcookie.htm]，但您可以使用任何有效的虛擬URL。
 
 >[!NOTE]
 >
