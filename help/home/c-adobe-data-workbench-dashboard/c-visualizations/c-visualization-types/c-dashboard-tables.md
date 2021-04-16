@@ -1,14 +1,15 @@
 ---
-description: 'null'
-solution: Analytics
+description: 表格
 title: 表格
-topic: Data workbench
 uuid: 3bfb5be4-5510-456b-8b3d-6e57cb93949e
+exl-id: 215ad990-92af-4c36-9946-89dbe36bbb8c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 1%
 
 ---
-
 
 # 表格{#tables}
 
@@ -16,7 +17,6 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 您可以按一下並拖曳一個欄標題至欄標題區域中的其他位置，重新排列欄順序。 您可以隨時按一下適當的欄標題來執行排序。 再按一下欄標題會反轉排序順序。
 
-可通過按一下特定行在表中進行選擇。 按住鍵將保 **[!UICONTROL Control]** 留選取範圍，同時按一下其他項目。 按一下時按住 **[!UICONTROL Control]** 鍵也將切換選取範圍的值。 這對於從一組已選取的項目中僅移除一個選取範圍非常有用。 可以先按一下某列以選取該列，然後按一下最後一列 **[!UICONTROL Shift]** 的鍵來選取列範圍。
+可通過按一下特定行在表中進行選擇。 按住&#x200B;**[!UICONTROL Control]**&#x200B;鍵將保留在按一下其他項目時的選擇。 按一下時按住&#x200B;**[!UICONTROL Control]**&#x200B;鍵也將切換選取範圍的值。 這對於從一組已選取的項目中僅移除一個選取範圍非常有用。 可以先按一下某列以選取該列，然後按&#x200B;**[!UICONTROL Shift]**&#x200B;鍵並按一下最後一列，以選取某列。
 
 ![](assets/table.png)
-
