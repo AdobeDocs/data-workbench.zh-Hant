@@ -1,16 +1,17 @@
 ---
 description: 以下維可用於資料工作台的「伺服器狀態」配置檔案。
-solution: Analytics
-title: 資料工作台伺服器狀態配置檔案中的維
-topic: Data workbench
+title: Data Workbench 伺服器狀態設定檔中的維度
 uuid: 4cfe882a-2797-4af9-bd6d-75bc31ee909c
+exl-id: 002f6b95-f151-41d9-ae28-9c01c1f621ee
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '1366'
+ht-degree: 1%
 
 ---
 
-
-# 資料工作台伺服器狀態配置檔案中的維{#dimensions-in-the-data-workbench-server-status-profile}
+# Data Workbench 伺服器狀態設定檔中的維度{#dimensions-in-the-data-workbench-server-status-profile}
 
 以下維可用於資料工作台的「伺服器狀態」配置檔案。
 
@@ -22,27 +23,27 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> <b>代理版本</b> </td> 
-   <td colname="col2"> cs-uri-query(af)值用於此簡單維度。 這是伺服器的「最後一個非空值」。 這將顯示運行的監視代理版本的構建日期和時間。 </td> 
+   <td colname="col2"> cs-uri-query(af)值用於此簡單Dimension。 這是伺服器的「最後一個非空值」。 這將顯示運行的監視代理版本的構建日期和時間。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>任何描述檔重新處理</b> </td> 
-   <td colname="col2"> cs-uri-query(aa)欄位用於此數值維度，它是指定伺服器的「最後一列」值，條件是cs-uri-query(k)不是空的。 此維用於指示是否正在重新處理任何配置檔案。 </td> 
+   <td colname="col2"> cs-uri-query(aa)欄位用於此數值Dimension，它是指定伺服器的「最後一列」值，條件是cs-uri-query(k)不是空的。 此維用於指示是否正在重新處理任何配置檔案。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>能力行百分比</b> </td> 
-   <td colname="col2"> cs-uri-query(r)欄位用於此數值維度，它是指定伺服器的「最後一列」值，條件是cs-uri-query(k)不為空。 </td> 
+   <td colname="col2"> cs-uri-query(r)欄位用於此數值Dimension，它是指定伺服器的「最後一列」的值，條件是cs-uri-query(k)不為空。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>容量大小百分比</b> </td> 
-   <td colname="col2"> cs-uri-query(n)欄位用於此數值維度，它是指定伺服器的「最後一列」值，條件是cs-uri-query(k)不為空。 </td> 
+   <td colname="col2"> cs-uri-query(n)欄位用於此數值Dimension，它是指定伺服器的「最後一列」值，條件是cs-uri-query(k)不是空的。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>通用名稱</b> </td> 
-   <td colname="col2"> sc-ur-query(am)欄位用於此簡單維度，它是指定伺服器的「最後一個非空白」值的值。 它顯示所監視伺服器的「通用名稱」。 </td> 
+   <td colname="col2"> sc-ur-query(am)欄位用於此簡單Dimension，它是給定伺服器的「最後一個非空白」值的值。 它顯示所監視伺服器的「通用名稱」。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>元件檢查成功</b> </td> 
-   <td colname="col2"> cs-uri-query(v)欄位用於此簡單維度，它是指定伺服器的最後一列值。 此維度會檢查伺服器的元件，以確認它們是否正常運作。 </td> 
+   <td colname="col2"> cs-uri-query(v)欄位用於此簡單Dimension，它是指定伺服器的最後一列值。 此維度會檢查伺服器的元件，以確認它們是否正常運作。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>發生錯誤的元件</b> </td> 
@@ -50,14 +51,14 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> <b>環境</b> </td> 
-   <td colname="col2">cs-uri-query(c)值用於環境ID。 塊的最後一行用作維的值。 此簡單維將顯示運行伺服器的環境（如果配置正確）。 <p><p>注意： 此維度是在insight_monitor_agent.cfg中設定。 </p></p></td> 
+   <td colname="col2">cs-uri-query(c)值用於環境ID。 塊的最後一行用作維的值。 此簡單Dimension將顯示伺服器正在運行的環境（如果配置正確）。 <p><p>注意： 此維度是在insight_monitor_agent.cfg中設定。 </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>估計掃描秒數</b> </td> 
-   <td colname="col2"> x-estimated-sweep-dekassences欄位用於此數值維。 這是估計的伺服器掃描時間除以10（降低掃描測量的解析度，以使尺寸更合理地調整）。 <p><p>注意： 此維度會隱藏，因為只有在平均成為度量時，它才有用。 </p></p></td> 
+   <td colname="col2"> x-estimated-sweep-dekassends欄位用於此數值Dimension。 這是估計的伺服器掃描時間除以10（降低掃描測量的解析度，以使尺寸更合理地調整）。 <p><p>注意： 此維度會隱藏，因為只有在平均成為度量時，它才有用。 </p></p></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <b>Host</b> </td> 
+   <td colname="col1"> <b>主機</b> </td> 
    <td colname="col2"> cs-uri-query(b)值用於此維度。 「簡單」維的值是塊的最後一行。 </td> 
   </tr> 
   <tr> 
@@ -98,11 +99,11 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> <b>臨時資料庫空間百分比</b> </td> 
-   <td colname="col2"> cs-uri-query(an)值的最後一行會複製到x-temp-db-space-percentage欄位。 這是數值維，用於計算給定伺服器上已用臨時資料庫空間的百分比。 <p>注意： 此維度會隱藏，因為只有在平均成為度量時，它才有用。 </p></td> 
+   <td colname="col2"> cs-uri-query(an)值的最後一行會複製到x-temp-db-space-percentage欄位。 此為數值Dimension，用於計算給定伺服器上已用臨時資料庫空間的百分比。 <p>注意： 此維度會隱藏，因為只有在平均成為度量時，它才有用。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Insight版本</b> </td> 
-   <td colname="col2"> cs-uri-query(ab)值用於此簡單維度。 這是伺服器的「最後一個非空值」。 這會顯示每個伺服器上執行的資料工作台伺服器版本。 </td> 
+   <td colname="col2"> cs-uri-query(ab)值用於此簡單Dimension。 這是伺服器的「最後一個非空值」。 這會顯示每個伺服器上執行的資料工作台伺服器版本。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>群組</b> </td> 
@@ -130,7 +131,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> <b>磁碟"x"</b> </td> 
-   <td colname="col2"> 「磁碟」度量的計算方式是取每個伺服器的「磁碟使用百分比」除以「伺服器」度量。 </td> 
+   <td colname="col2"> 「磁碟」度量的計算方式是取每個伺服器的「磁碟使用百分比」除以「伺服器」度量的總和。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>估計掃描分鐘數</b> </td> 
@@ -178,4 +179,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
  </tbody> 
 </table>
-
