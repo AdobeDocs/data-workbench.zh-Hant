@@ -1,14 +1,15 @@
 ---
 description: 從「漏斗」視覺化中，您可以開啟「路徑瀏覽器」，以識別其他詳細的訪客流失並逐步瀏覽路徑。
-solution: Analytics
 title: 新增路徑瀏覽器
-topic: Data workbench
 uuid: 6b6879bf-81e5-4c6f-a4a6-eecac1ab0a29
+exl-id: d9ecb982-3b9d-497f-9cae-5c4220a5204f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 3%
 
 ---
-
 
 # 新增路徑瀏覽器{#adding-a-path-browser}
 
@@ -22,14 +23,13 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    ![](assets/funnel_path_browser_1.png)
 
-   從「路徑瀏覽器」中，您可以看到訪客在點擊漏斗中的選定元素之前所前往的位置（在左側），以及訪客離開頁面後導覽至的位置（在右側）。
+   從「路徑瀏覽器」中，您可以看到訪客在點擊漏斗中的選定元素之前所前往的位置（在左側），以及訪客離開頁面後瀏覽的位置（在右側）。
 
    ![](assets/funnel_path_browser_2.png)
 
    在「路徑瀏覽器」視覺化中，進出選定維度的線條寬度會識別流量。 例如，在點擊「男性」頁面之前，有幾位訪客透過其他路由進入，但大部分訪客是透過「首頁」進入。 離開時，大部分人都去了「男人衝浪」頁面。
 
 1. 為「落體」訪客開啟路徑瀏覽器。 在漏斗中按一下滑鼠右鍵，以識別漏斗中跌過或移至下一步的訪客的路徑。
-1. 按一下「 **路徑** 」瀏覽器視覺化底部的「更多」按鈕，以開啟表格，表格會列出先前和目前瀏覽的所有瀏覽。
+1. 按一下「路徑瀏覽器」視覺化底部的&#x200B;**更多**&#x200B;按鈕，以開啟表格式檢視中列出的表格，顯示先前和目前瀏覽的所有瀏覽。
 
    ![](assets/path_browser_more.png)
-
