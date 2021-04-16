@@ -1,14 +1,15 @@
 ---
 description: 分割轉換會根據指定的分隔字元，將字串分割為子字串的向量。
-solution: Analytics
-title: 分割
-topic: Data workbench
+title: Split
 uuid: 116e8465-8fb1-41eb-9a28-412cee54ab87
+exl-id: ea85b095-1306-4938-906d-35d421db6c98
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 3%
 
 ---
-
 
 # Split{#split}
 
@@ -21,7 +22,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   <tr> 
    <th colname="col1" class="entry"> 參數 </th> 
    <th colname="col2" class="entry"> 說明 </th> 
-   <th colname="col3" class="entry"> 預設值 </th> 
+   <th colname="col3" class="entry"> 預設 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -31,7 +32,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 意見 </td> 
+   <td colname="col1"> 註解 </td> 
    <td colname="col2"> 選填。關於轉變的附註。 </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -62,7 +63,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 * /checkout/confirmed.asp?prod_selected=B57481,C46355,Z97123
 
-cs-uri-stem欄位可用來判斷記錄項目所要求的頁面是否為確認頁面。 客戶所購買產品的代碼會列為cs-uri-query中prod_selected名稱的逗號分隔值。 如 [!DNL Split] 果cs-uri-stem的值符合條件中指定的值，則轉換可用來將產品代碼拆分為逗號，以擷取此 [!DNL String Match] 資訊。 請參閱 [字串符合](../../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f)。 以下轉換將詳細說明此問題的解決方案。
+cs-uri-stem欄位可用來判斷記錄項目所要求的頁面是否為確認頁面。 客戶所購買產品的代碼會列為cs-uri-query中prod_selected名稱的逗號分隔值。 如果cs-uri-stem的值與[!DNL String Match]條件中指定的值相符，則[!DNL Split]轉換可用來將產品代碼拆分為逗號，以擷取此資訊。 請參閱[字串符合](../../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f)。 以下轉換將詳細說明此問題的解決方案。
 
 ![](assets/cfg_TransformationType_Split.png)
 
