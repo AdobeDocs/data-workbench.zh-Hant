@@ -1,14 +1,15 @@
 ---
 description: 視覺化是新增至控制面板畫布的元素，並設定為顯示各種度量和維度型資料。
-solution: Analytics
 title: 視覺效果
-topic: Data workbench
 uuid: 1e15de30-7761-422a-a836-7a1b49b58daf
+exl-id: 7e8b23cd-5e95-4cd5-b07e-3aa53f26fac7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '326'
+ht-degree: 3%
 
 ---
-
 
 # 視覺效果{#visualizations}
 
@@ -22,8 +23,8 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 可用的8種視覺化類型包括：
 
-* 柱圖
-* 長條圖
+* 直條圖
+* 橫條圖
 * 折線圖
 * 表格
 * 量度圖例
@@ -31,7 +32,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 * 散布圖
 * Rich Text
 
-## 視覺化使用者介面 {#section-54a73865f00742268340cf9123d6c590}
+## 視覺化使用者介面{#section-54a73865f00742268340cf9123d6c590}
 
 視覺化的標題部分包含視覺化標題和視覺化工具，視視覺化的類型和狀態而定。 視覺化的內文包含內容，並取決於所顯示視覺化的類型和設定。 視覺化工具只有在滑鼠進入視覺化視窗時才會出現。 否則它們就會隱藏。
 
@@ -42,4 +43,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 * 示例指示符。 顯示資料可視化為範例，而非100%完整查詢結果。
 * 視覺化工具。 對視覺化執行特定操作。 可用的工具取決於視覺化類型、狀態和目前的使用者權限。
 * 視覺化內文。 顯示視覺化資料的設定。 此區域是互動式的，並視顯示的視覺化類型而定。
-
