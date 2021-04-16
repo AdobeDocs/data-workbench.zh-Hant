@@ -1,14 +1,15 @@
 ---
 description: 查詢字串變數可新增至JavaScript請求，以在提出請求時收集其他測量值。
-solution: Analytics
 title: 取得其他資訊
-topic: Data workbench
 uuid: 0a8075e9-4986-42c4-b505-3985b433cf8e
+exl-id: ad4f5e08-b7b7-4de3-b0c2-71440facb2d1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 4%
 
 ---
-
 
 # 取得其他資訊{#acquiring-additional-information}
 
@@ -43,4 +44,3 @@ v["_2"] = "visa";
 | v_pn= | 與v_pn查詢字串變數相關聯的值 | v_pn=應用程式表單 |
 | v_1= | 與v_1查詢字串變數相關聯的值 | v_1=99.99 |
 | v_2= | 與v_2查詢字串變數相關聯的值 | v_2=visa |
-
