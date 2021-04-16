@@ -1,18 +1,19 @@
 ---
-description: 'null'
-solution: Analytics
-title: 添加配置檔案連接
-topic: Data workbench
+description: 新增設定檔連線
+title: 新增設定檔連線
 uuid: 0a168236-8c15-456b-9ac8-ca572baa916a
+exl-id: c8dd2286-df88-4b23-a7de-cd90bfe76289
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '172'
+ht-degree: 6%
 
 ---
 
+# 新增設定檔連線{#adding-a-profile-connection}
 
-# 添加配置檔案連接{#adding-a-profile-connection}
-
-1. 單 **[!UICONTROL Add Profile Connection]** 擊開啟窗 **[!UICONTROL New Profile Connection]** 口。
+1. 按一下&#x200B;**[!UICONTROL Add Profile Connection]**&#x200B;開啟&#x200B;**[!UICONTROL New Profile Connection]**&#x200B;窗口。
 1. 使用下清單格，填寫必要欄位：
 
    ![](assets/new_profile_connection.png)
@@ -26,6 +27,6 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    * **[!UICONTROL Name]**:輸入描述檔應該出現在控制面板中的名稱。
 
 
-1. 在正確配置表單後，按一下 **[!UICONTROL Create Connection]** 將配置檔案連接添加到系統。
+1. 正確配置表單後，按一下&#x200B;**[!UICONTROL Create Connection]**&#x200B;將配置檔案連接添加到系統。
 
    如果操作成功，您將看到提示，指出已建立配置檔案連接。
