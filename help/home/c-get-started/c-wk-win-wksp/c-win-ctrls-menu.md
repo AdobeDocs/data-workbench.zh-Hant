@@ -1,16 +1,17 @@
 ---
 description: 「窗口控制項」(Window Controls)菜單允許您控制單個窗口。
-solution: Analytics
-title: 視窗控制項功能表
-topic: Data workbench
+title: 「視窗控制項」功能表
 uuid: 9a7c24a7-c591-4d73-94f5-bba79b2aa848
+exl-id: abbd6545-0b80-45a2-88d7-f0687249583d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '418'
+ht-degree: 3%
 
 ---
 
-
-# 視窗控制項功能表{#window-controls-menu}
+# 「視窗控制項」功能表{#window-controls-menu}
 
 「窗口控制項」(Window Controls)菜單允許您控制單個窗口。
 
@@ -34,19 +35,19 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> 儲存 </td> 
-   <td colname="col2">將視覺化(另存為 <span class="filepath"> .vw檔案</span> )儲存為目前狀態。 顯示的對話方塊可讓您使用不同的名稱或位置儲存視覺化。 預設位置是「資料工作台」安<i>裝目錄中的</i>「用戶」配置檔案名稱「工作」資料夾。 </td> 
+   <td colname="col2">將視覺化（另存為<span class="filepath"> .vw</span>檔案）儲存為目前狀態。 顯示的對話方塊可讓您使用不同的名稱或位置儲存視覺化。 預設位置是Data Workbench安裝目錄中的User\<i>profile name</i>\Work資料夾。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 顯示為 </td> 
-   <td colname="col2">（僅適用於表格。）在表格中同時顯示數字、長條或兩者的資料。 請參 <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-chg-tbl-disp.md#concept-c515caeefce9495f88873a10dc112770"> 閱更改表格顯示</a>。 </td> 
+   <td colname="col2">（僅適用於表格。） 在表格中同時顯示數字、長條或兩者的資料。 請參閱<a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-chg-tbl-disp.md#concept-c515caeefce9495f88873a10dc112770">變更表格顯示</a>。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 顯示 </td> 
-   <td colname="col2">（僅適用於圖形。）將圖形中的資料顯示為線條。 請參 <a href="../../../home/c-get-started/c-analysis-vis/c-graphs/c-chg-graph-disp.md#concept-eaba669d90f64cfa872f1397205fe2f7"> 閱變更圖形顯示</a>。 </td> 
+   <td colname="col2">（僅適用於圖形。） 將圖形中的資料顯示為線條。 請參閱<a href="../../../home/c-get-started/c-analysis-vis/c-graphs/c-chg-graph-disp.md#concept-eaba669d90f64cfa872f1397205fe2f7">變更圖形顯示</a>。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 適合視窗大小 </td> 
-   <td colname="col2">允許每次調整窗口大小時，窗口的內容都自動展開或縮小以適應窗口。 請參 <a href="../../../home/c-get-started/c-analysis-vis/c-annots/c-image-annots.md#concept-02081ed7d91c4fdcb8fc863f2a51c962"> 閱使用影像注釋</a><a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-fit-data-win.md#concept-b812b1171fc240d9a4cf6d6d57f621a6"> 和窗口的管接頭資料</a>。 </td> 
+   <td colname="col2">允許每次調整窗口大小時，窗口的內容都自動展開或縮小以適應窗口。 請參閱<a href="../../../home/c-get-started/c-analysis-vis/c-annots/c-image-annots.md#concept-02081ed7d91c4fdcb8fc863f2a51c962">使用影像註解</a>和<a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-fit-data-win.md#concept-b812b1171fc240d9a4cf6d6d57f621a6">將資料擬合至視窗</a>。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 訂購 </td> 
@@ -59,7 +60,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> 複製 </td> 
-   <td colname="col2">將個別視窗複製至剪貼簿，以用於協力廠商應用程式。 將視窗複製到剪貼簿後，它就可以貼到常用的辦公室應用程式中，包括Microsoft Word、Microsoft PowerPoint或Microsoft Outlook電子郵件訊息。 要複製窗口，請按一下右鍵其頂部邊框，按一下「復 <span class="uicontrol"> 制</span>」，然後按一下相應的選項： 
+   <td colname="col2">將個別視窗複製至剪貼簿，以用於協力廠商應用程式。 將視窗複製到剪貼簿後，它就可以貼到常用的辦公室應用程式中，包括Microsoft Word、Microsoft PowerPoint或Microsoft Outlook電子郵件訊息。 要複製窗口，請按一下右鍵其頂部邊框，按一下「<span class="uicontrol">複製</span>」，然後按一下相應的選項： 
     <ul id="ul_ECCD6A70729E40998C64714E01504995"> 
      <li id="li_21D375DAE7BC4F449C8A3225296A6D26">黑色背景會複製顯示的工作區。 </li> 
      <li id="li_1B08C688678F42948E0952EEE0BF2B30">白色背景會以彩色複製工作區的元素，並在白色背景上顯示這些元素。 </li> 
