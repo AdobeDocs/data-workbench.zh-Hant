@@ -1,16 +1,17 @@
 ---
 description: 通過按一下某個節點來選擇該節點會削弱其它節點，以便您更輕鬆地查看與突出顯示節點之間的箭頭。
-solution: Analytics
-title: 選擇節點
-topic: Data workbench
+title: 選取節點
 uuid: d63b39f6-edec-4b4c-b36b-f6e6881d3419
+exl-id: a483547f-e338-4d13-8a0b-6cb7971b7790
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '149'
+ht-degree: 4%
 
 ---
 
-
-# 選擇節點{#select-a-node}
+# 選取節點{#select-a-node}
 
 通過按一下某個節點來選擇該節點會削弱其它節點，以便您更輕鬆地查看與突出顯示節點之間的箭頭。
 
@@ -33,4 +34,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 **從選擇中刪除節點或節點組**
 
 * 按住Shift鍵並按一下某個節點，或按住Shift鍵並拖動多個節點。
-
