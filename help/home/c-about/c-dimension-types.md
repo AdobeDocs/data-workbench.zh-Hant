@@ -1,16 +1,17 @@
 ---
 description: 資料工作台伺服器中提供數種類型的維度。 因此，在使用維度建立量度、篩選或衍生維度時，務必瞭解維度類型。
-solution: Analytics
-title: 維類型
-topic: Data workbench
+title: 維度類型
 uuid: 07659373-8d9b-473d-8daa-ca8e7ac4afe8
+exl-id: cbc25504-2c1c-4622-adc1-c9bbac8e12fb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '754'
+ht-degree: 66%
 
 ---
 
-
-# 維類型{#dimension-types}
+# 維度類型{#dimension-types}
 
 資料工作台伺服器中提供數種類型的維度。 因此，在使用維度建立量度、篩選或衍生維度時，務必瞭解維度類型。
 
@@ -19,7 +20,7 @@ Insight Server可建立並維護下列類型的維度：
 <table id="table_1A79B6C57ED145B6AA3BB05DD37AAD1B"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 維類型 </th> 
+   <th colname="col1" class="entry"> 維度類型 </th> 
    <th colname="col2" class="entry"> 說明 </th> 
   </tr> 
  </thead>
@@ -34,7 +35,7 @@ Insight Server可建立並維護下列類型的維度：
   </tr> 
   <tr> 
    <td colname="col1"> 數值 </td> 
-   <td colname="col2">具有順序、數值以及與父可計數維度一對多關係的維。 您可以將數值維度設想成其父項維度之元素的數值屬性。數值維度常用來定義「總和」度量。 <p>範例: 數值維度「工作階段收入」可用元為單位定義每個「工作階段」的收入。每個「工作階段」都只有單一收入金額，但多個「工作階段」可能會有相同的收入，因此「工作階段收入」與「工作階段」之間是「一對多」的關係。A metric “Revenue” might be defined as <span class="filepath"> sum(Session_Revenue, Session)</span>, giving the total amount of revenue for the selected Sessions. </p></td> 
+   <td colname="col2">具有順序、數值以及與父可計數維度一對多關係的維。 您可以將數值維度設想成其父項維度之元素的數值屬性。數值維度常用來定義「總和」量度。 <p>範例: 數值維度「工作階段收入」可用元為單位定義每個「工作階段」的收入。每個「工作階段」都只有單一收入金額，但多個「工作階段」可能會有相同的收入，因此「工作階段收入」與「工作階段」之間是「一對多」的關係。量度「收入」可定義為<span class="filepath"> sum(Session_Revenue, Session)</span>，提供所選工作階段的總收入。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> 多對多 </td> 
@@ -54,4 +55,3 @@ Insight Server可建立並維護下列類型的維度：
   </tr> 
  </tbody> 
 </table>
-
