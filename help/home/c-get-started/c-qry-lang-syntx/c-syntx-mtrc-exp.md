@@ -1,37 +1,35 @@
 ---
 description: 量度可使用量度編輯器編輯，並儲存在描述檔的量度目錄中。
-solution: Analytics
 title: 量度運算式的語法
-topic: Data workbench
 uuid: 801e265d-d7e4-4f0f-9698-d0b50dd00995
+exl-id: 27d86fea-6500-4608-aadb-f39058fd3a6e
 translation-type: tm+mt
-source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 1%
 
 ---
 
-
 # 量度運算式的語法{#syntax-for-metric-expressions}
 
 量度可使用量度編輯器編輯，並儲存在描述檔的量度目錄中。
 
-如需詳細資訊，請參 [閱建立和編輯衍生量度](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40)。 量度運算式也可用於工作表中。 For more information, see [Worksheets](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581). 以下語法用於定義量度運算式。
+如需詳細資訊，請參閱[建立和編輯衍生量度](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40)。 量度運算式也可用於工作表中。 如需詳細資訊，請參閱[工作表](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581)。 以下語法用於定義量度運算式。
 
 附註:
 
 1. 在運算式文字中應輸入帶底線的字詞。
-1. 表單代 `{TEXT}?` 表可選文字。
-1. 表單代 `{TEXT}*` 表可能發生零次或多次的文字。
-1. 表單 `{A | B | C |...}` 代表由指定選項（例如A、B或C...）組成的文字。.
-1. 表單 `[A,B)` 代表數字範圍，從A到但不包括B。
+1. `{TEXT}?`表示可選文本。
+1. `{TEXT}*`表示可能發生零次或多次的文字。
+1. `{A | B | C |...}`表示由給定選項（如A或B或C）中的一個完全組成的文本。.
+1. 表單`[A,B)`表示數字範圍，從A到但不包括B。
 
 <table id="table_A6CA9C9F396448209398AA2A369E63FA"> 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>識別碼 </p> </td> 
-   <td colname="col2"> <p>識別碼會參照命名的量度。 如需法律識別碼的規則，請參閱識 <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> 別碼的語法 </a>。 </p> <p>範例：收入= Total_Price </p> </td> 
+   <td colname="col2"> <p>識別碼會參照命名的量度。 有關管理法律標識符的規則，請參見<a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8">標識符的語法</a>。 </p> <p>範例：收入= Total_Price </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>(量度) </p> </td> 
@@ -78,7 +76,7 @@ ht-degree: 1%
    <td colname="col2"> <p>"篩選的量度":由指定篩選器篩選的新度量。 </p> <p>範例：Jan_Sessions =會話[ Month="Jan" ] </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>依維度的量度 </p> </td> 
+   <td colname="col1"> <p>量度(依Dimension) </p> </td> 
    <td colname="col2"> <p>在維度的「層級」評估的量度。 (M by X)[F]（使用篩選器"F"評估的量度"M by X"的結果）的結果是M[F by X]（使用篩選器"F by X"評估的量度"M"的結果）的結果。 </p> <p>範例：AB_Visitors = </p> <p>（依工作階段的訪客）[Page="A"和Page="B"] = </p> <p>依工作階段的訪客[（Page="A"和Page="B"）] = </p> <p>在相同作業中瀏覽頁面A和頁面B的訪客數。 </p> </td> 
   </tr> 
   <tr> 
@@ -119,4 +117,3 @@ ht-degree: 1%
   </tr> 
  </tbody> 
 </table>
-
