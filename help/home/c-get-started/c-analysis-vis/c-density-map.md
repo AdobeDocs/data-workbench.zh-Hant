@@ -1,14 +1,15 @@
 ---
 description: 密度圖視覺化會將元素顯示為方形圖中的陰影矩形。
-solution: Analytics
 title: 密度圖
-topic: Data workbench
 uuid: c13cecee-f322-4757-aa90-12039173ff9f
+exl-id: da37d954-cadb-42a6-a44b-9b38c0354a5d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '610'
+ht-degree: 1%
 
 ---
-
 
 # 密度圖{#density-map}
 
@@ -22,33 +23,33 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 1. 開啟新工作區。
 
-   在開啟新工作區後，您可能需要按一下「新增 **>暫** 時解除鎖定 ****」。
+   在開啟新工作區後，您可能需要按一下「暫時解除鎖定」。********
 1. 按一下 **[!UICONTROL Visualization]** > **[!UICONTROL Density Map]**.
 
-1. Select a **[!UICONTROL Dimension]** from the menu.
+1. 從菜單中選擇&#x200B;**[!UICONTROL Dimension]**。
 
-   例如，選取 **[!UICONTROL Time]** > **[!UICONTROL Days]**。
+   例如，選擇&#x200B;**[!UICONTROL Time]** > **[!UICONTROL Days]**。
 
-   相反地，選取 **[!UICONTROL Time]** >可 **[!UICONTROL Hours]** 為您提供更多值較小的元素，顯示為較小的矩形。
+   相反地，選擇&#x200B;**[!UICONTROL Time]** > **[!UICONTROL Hours]**&#x200B;會提供更多值較小的元素，顯示為較小的矩形。
 
    >[!NOTE]
    >
    >您會想要根據需求選擇包含多個元素的維度。 每個維度的目前限制為200個最大元素。
 
-1. 您可以開啟>並從表格中選 **[!UICONTROL Visualization]** 取要 **[!UICONTROL Table]** 顯示在地圖中的元素，以變更維度檢視。
+1. 您可以開啟&#x200B;**[!UICONTROL Visualization]** > **[!UICONTROL Table]**&#x200B;並從表格中選取要顯示在地圖中的元素，以變更維度檢視。
 
    ![](assets/density_map_day_selections.png)
 
    地圖會回應表格中的選取項目。
 
 1. 將滑鼠暫留在小元素上時，會在滑鼠游標附近出現的文字中顯示其名稱和值。
-1. 以滑鼠右鍵按一下並選取，然 **[!UICONTROL Mask]**&#x200B;後選擇選項來遮色元素。
+1. 以滑鼠右鍵按一下並選取&#x200B;**[!UICONTROL Mask]**&#x200B;來遮色元素，然後選擇選項。
 
    ![](assets/density_map_day_mask.png)
 
-   要顯示所有被遮罩的節點，請選擇 **[!UICONTROL Unhide All]**。
+   要顯示所有被遮罩的節點，請選擇&#x200B;**[!UICONTROL Unhide All]**。
 
-1. 以滑鼠右鍵按一下並選取精選元素 **[!UICONTROL Spotlight]**，然後選擇選項。 精選功能可讓您反白標示和調暗範圍中的元素。
+1. 以滑鼠右鍵按一下並選取&#x200B;**[!UICONTROL Spotlight]**，然後選擇選項，即可精選元素。 精選功能可讓您反白標示和調暗範圍中的元素。
 1. 新增顏色圖例至工作區。 您可以使用顏色圖例來識別地圖中的值。
 
    您可以將顏色圖例添加到工作區，節點將根據其他資料維更改顏色。
@@ -56,7 +57,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    ![](assets/density_map_change_dim.png)
 
-1. 以滑鼠右鍵按一下儲存格並選取，即可新增註解 **[!UICONTROL Add Callout]**。 您可以從功能表中選取不同類型或視覺化。
+1. 在儲存格上按一下滑鼠右鍵並選取&#x200B;**[!UICONTROL Add Callout]**，以新增註解。 您可以從功能表中選取不同類型或視覺化。
 
    ![](assets/density_map_callout.png)
 
@@ -69,7 +70,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 * 左鍵按一下以選擇元素。
 * 按住Ctrl鍵並按一下以選取多個元素。
 * 按住Shift鍵並按一下可取消選取元素。
-* 在選取的元素內按一下滑鼠右鍵，以開啟選單。 然後選擇 **[!UICONTROL Deselect]** 或清 **[!UICONTROL Deselect All]** 除選定的元素。
+* 在選取的元素內按一下滑鼠右鍵，以開啟選單。 然後選擇&#x200B;**[!UICONTROL Deselect]**&#x200B;或&#x200B;**[!UICONTROL Deselect All]**&#x200B;以清除選取的元素。
 
 ## 其他選項 {#section-d77defb012424de4a7ced8e5c93115bc}
 
@@ -101,4 +102,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
  </tbody> 
 </table>
-
