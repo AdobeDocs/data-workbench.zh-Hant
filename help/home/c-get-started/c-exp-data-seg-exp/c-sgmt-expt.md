@@ -1,46 +1,47 @@
 ---
-description: 您可以從「資料工作台用戶端」的「明細表」視覺化中輕鬆建立「區段匯出」定義。
-solution: Analytics
+description: 您可以從「Data Workbench用戶端」的「明細表」視覺化中輕鬆建立「區段匯出」定義。
 title: 區段匯出
-topic: Data workbench
 uuid: 85c8aa72-23fe-424b-9580-6759dc8f8681
+exl-id: 49998b46-f3a6-43a3-a76e-468894b27ee4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '498'
+ht-degree: 0%
 
 ---
 
-
 # 區段匯出{#segment-export}
 
-您可以從「資料工作台用戶端」的「明細表」視覺化中輕鬆建立「區段匯出」定義。
+您可以從「Data Workbench用戶端」的「明細表」視覺化中輕鬆建立「區段匯出」定義。
 
-此外，自 [!DNL Segment Exports] 動將結果合併至單一伺服器，而不是在每個DPU上產生部分結果，您必須使用外部程式來合併。 您可以建立區段匯出檔案、儲存至 [!DNL Profile Manager]，並將輸出檔案上傳至您選擇的伺服器。
+此外，[!DNL Segment Exports]會自動將其結果結合至單一伺服器，而不是在每個DPU上產生部分結果，而您必須使用外部程式來結合。 您可以建立區段匯出檔案，將它儲存至[!DNL Profile Manager]，然後將輸出檔案上傳至您選擇的伺服器。
 
 **若要設定區段匯出伺服器**
 
-此功 [!DNL Segment Export] 能會在區段匯出伺服器上建立單一輸出檔案，而非在每個DPU上建立個別的輸出檔案。 區段匯出伺服器通常設定為在FSU上執行。
+[!DNL Segment Export]功能會在區段匯出伺服器上建立單一輸出檔案，而不是在每個DPU上建立個別的輸出檔案。 區段匯出伺服器通常設定為在FSU上執行。
 
-在的「資料集」目錄 [!DNL Profile Manager]中，開啟 [!DNL Segment Export.cfg] 「工作站」，並指定伺服器位址。 （您的地址可以是IP或完全限定的域名。）:
+在[!DNL Profile Manager]的「資料集」目錄中，開啟「工作站」中的[!DNL Segment Export.cfg]，並指定您伺服器的位址。 （您的地址可以是IP或完全限定的域名。）:
 
 ![](assets/segment_export_cfg.png)
 
-這是接收區段匯出結果之資料工作台伺服器的IP。 這是一次性設定。 如果不 [!DNL Segment Export.cfg] 存在，則不運行導出。
+這是接收段導出結果的Data Workbench伺服器的IP。 這是一次性設定。 如果[!DNL Segment Export.cfg]不存在，則不會運行導出。
 
 **要配置導出目錄**
 
 為安全起見，在區段匯出後執行的可執行檔或批次檔案必須位於區段匯出伺服器的可設定Scripts\目錄中。
 
-最終 [!DNL .part] 輸出必須駐留在可配置的導出目錄中。 要運行的命令存在於命令和命令參數中。 命令參數中%file%的實例將替換為輸出檔案的路徑。
+[!DNL .part]和最終輸出必須駐留在可配置的導出目錄中。 要運行的命令存在於命令和命令參數中。 命令參數中%file%的實例將替換為輸出檔案的路徑。
 
 >[!NOTE]
 >
->「資料工作台5.4」新增的\Exports檔案夾會自動建立。 在5.4版之前設定的先前導出目錄要求在每個段導出的檔案名前加上導出\前置詞。 現在新增此首碼是多餘的。
+>對於Data Workbench5.4,\Exports資料夾將自動建立。 在5.4版之前設定的先前導出目錄要求在每個段導出的檔案名前加上導出\前置詞。 現在新增此首碼是多餘的。
 
-1. 在 [!DNL Communications.cfg] 的目標伺服器上， [!DNL Segment Exports]將SegmentExportServer添加到伺服器清單中。 （以紅色顯示的範例）。
+1. 在[!DNL Segment Exports]的目標伺服器上的[!DNL Communications.cfg]中，將SegmentExportServer添加到伺服器清單中。 （以紅色顯示的範例）。
 
    ![](assets/communications_cfg_example.png)
 
-   導出目錄：指定放置和輸 [!DNL .part] 出檔案的位置。 此目錄可以是共用目錄。
+   導出目錄：指定放置[!DNL .part]和輸出檔案的位置。 此目錄可以是共用目錄。
 
    指令碼目錄：指定從中運行所有執行檔或批處理檔案的目錄。
 
@@ -48,11 +49,11 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    ![](assets/accesscontrol_cfg_example.png)
 
-1. 變更檔 [!DNL .export] 案：
+1. 更改[!DNL .export]檔案：
 
    ![](assets/segment_export_query_example.png)
 
-1. 對於每個描述檔， [!DNL Segment Export.cfg] 該描述檔位於Dataset\目錄中，並包含以下內容：
+1. 對於每個配置檔案，[!DNL Segment Export.cfg]位於Dataset\目錄中，包含以下內容：
 
    ```
    Segment Export = SegmentExport:
@@ -72,13 +73,12 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    ![](assets/create_segment_export_file.png)
 
-1. 在「明細表」標題中，按一下右鍵並選擇 **[!UICONTROL Create Segment Export File]**。
-1. 在 [!DNL Save as]中，鍵入檔案名 [!DNL .export] 稱。
-1. 在檔案 [!DNL .export] 上，根據需要配置參數。
+1. 在「明細表」標題中，按一下右鍵並選擇&#x200B;**[!UICONTROL Create Segment Export File]**。
+1. 在[!DNL Save as]中，鍵入[!DNL .export]檔案的名稱。
+1. 在[!DNL .export]檔案中，視需要設定參數。
 
    工作區中的任何選擇或篩選器都會合併到導出檔案中。
 
-1. Save the [!DNL .export] file.
+1. 保存[!DNL .export]檔案。
 
-   儲存的檔案會顯示在中， [!DNL Profile Manager] 供您儲存至伺服器。 將檔案保存到伺服器時，導出開始。
-
+   儲存的檔案會顯示在[!DNL Profile Manager]中，供您儲存至伺服器。 將檔案保存到伺服器時，導出開始。
