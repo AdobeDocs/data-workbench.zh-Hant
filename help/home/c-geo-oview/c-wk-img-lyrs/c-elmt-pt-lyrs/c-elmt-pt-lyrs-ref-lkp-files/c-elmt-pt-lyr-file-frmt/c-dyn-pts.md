@@ -1,14 +1,15 @@
 ---
 description: 使用動態點建立元素點層時，緯度和經度資料會內嵌在維度的每個元素中。
-solution: Analytics
 title: 使用動態點定義元素點層
-topic: Data workbench
 uuid: 5f1b4638-fe45-40be-b963-18dcd5d09afa
+exl-id: ad849fe7-b909-40ef-835f-f1764e008de9
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '457'
+ht-degree: 7%
 
 ---
-
 
 # 使用動態點定義元素點層{#defining-element-point-layers-using-dynamic-points}
 
@@ -16,17 +17,17 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 要使用動態點定義元素點層，必須建立或已具備以下功能：
 
-* **在檔案**&#x200B;或轉換資料集中定義的維度 [!DNL Transformation.cfg] ，包含檔案，其中每個元素都包含字串「經緯度」或「經緯度名稱」。
+* **在檔案**&#x200B;或轉換資料集 [!DNL Transformation.cfg] 中定義的維度包含檔案，其中每個元素都包含字串&quot;latitude,logitude,lognitude,name&quot;。
 
-   如需建立維度的步驟，請參閱資料集 *設定指南*。
+   有關建立維的步驟，請參閱&#x200B;*資料集配置指南*。
 
-* **指定相關尺寸的層檔案** 。
+* **指定相** 關維的層檔案。
 
-   有關層檔案所需格式的詳細資訊，請參 [閱元素點層檔案格式](../../../../../../home/c-geo-oview/c-wk-img-lyrs/c-elmt-pt-lyrs/c-elmt-pt-lyrs-ref-lkp-files/c-elmt-pt-lyr-file-frmt/c-elmt-pt-lyr-file-frmt.md#concept-678a95cb69644105a7af1b86ad5a5981)。
+   有關層檔案所需格式的詳細資訊，請參閱[元素點層檔案格式](../../../../../../home/c-geo-oview/c-wk-img-lyrs/c-elmt-pt-lyrs/c-elmt-pt-lyrs-ref-lkp-files/c-elmt-pt-lyr-file-frmt/c-elmt-pt-lyr-file-frmt.md#concept-678a95cb69644105a7af1b86ad5a5981)。
 
 >[!NOTE]
 >
->使用時 [!DNL Dynamic Points]，必須確保層檔案中指定的尺寸的基數是合理的。 如果資料集的每一列都有不同的經緯度，維度會快速填滿，而大部分的列會落入「小元素」元素中。 由於「小元素」元素沒有經緯度，因此不會出現在地球上。
+>使用[!DNL Dynamic Points]時，必須確保層檔案中指定的尺寸的基數是合理的。 如果資料集的每一列都有不同的經緯度，維度會快速填滿，而大部分的列會落入「小元素」元素中。 由於「小元素」元素沒有經緯度，因此不會出現在地球上。
 
 ## 元素點層檔案格式 {#section-bbcc2baa2f754dba81eba93339a97cbd}
 
@@ -60,7 +61,7 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> 量度 </td> 
-   <td colname="col2"> 在「維度」參數中指定的維度上評估的度量名稱。 </td> 
+   <td colname="col2"> 在Dimension參數中指定的維度上評估的度量名稱。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 動態點 </td> 
@@ -86,7 +87,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-檔案 [!DNL IP Coordinates.layer] 的格式如下：
+[!DNL IP Coordinates.layer]檔案的格式如下：
 
 ```
 Layer = ElementPointLayer:
@@ -94,4 +95,3 @@ Layer = ElementPointLayer:
   Metric = ref: wdata/model/metric/Visitors
   Dynamic Points = bool: true
 ```
-
