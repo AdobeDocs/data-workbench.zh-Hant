@@ -1,16 +1,17 @@
 ---
 description: 當您將滑鼠移至地圖上時，任何與指標位置的地理位置對應的可用資料都會顯示在視覺化的右上角。
-solution: Analytics
-title: 使用globes
-topic: Data workbench
+title: 使用地球
 uuid: 8aa3ad86-8129-47f6-8af9-d645ff9c566b
+exl-id: 2dc410fd-e452-4d03-88b9-fe1027b54e9c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '227'
+ht-degree: 2%
 
 ---
 
-
-# 使用globes{#working-with-globes}
+# 使用地球{#working-with-globes}
 
 當您將滑鼠移至地圖上時，任何與指標位置的地理位置對應的可用資料都會顯示在視覺化的右上角。
 
@@ -36,7 +37,6 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **在球體中切換光源**
 
-您可以根據給定一天中的太陽位置開啟或關閉地球中的照明。 時間由資料工作台伺服器設定。
+您可以根據給定一天中的太陽位置開啟或關閉地球中的照明。 時間由Data Workbench伺服器設定。
 
-* 在視覺化中按一下滑鼠右鍵，然後按一下 **[!UICONTROL Toggle Lighting]**。 功能表項目左側的X表示已啟用光源。
-
+* 在視覺化中按一下滑鼠右鍵，然後按一下&#x200B;**[!UICONTROL Toggle Lighting]**。 功能表項目左側的X表示已啟用光源。
