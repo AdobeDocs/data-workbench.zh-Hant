@@ -1,16 +1,17 @@
 ---
 description: 二維(2D)圖形會跨兩個維度顯示量度。
-solution: Analytics
-title: 2D圖形
-topic: Data workbench
+title: 2D 圖
 uuid: f8860fff-4614-4b1a-b217-760bf4d48f20
+exl-id: 9767124b-8507-4b25-842b-8e2729e57461
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 5%
 
 ---
 
-
-# 2D圖形{#d-graphs}
+# 2D 圖{#d-graphs}
 
 二維(2D)圖形會跨兩個維度顯示量度。
 
@@ -31,4 +32,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 1. 將滑鼠移至垂直軸上方，以反白標示圖形的平面。
 1. 在加亮平面時，按一下並向上或向下拖動滑鼠以縮放圖形的垂直軸。
 
-請參 [閱放大視覺化](../../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530)。
+請參閱[放大視覺效果](../../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530)。
