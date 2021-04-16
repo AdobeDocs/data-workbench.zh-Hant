@@ -1,16 +1,17 @@
 ---
 description: 顯示維資訊或選項的步驟。
-solution: Analytics
-title: 顯示「尺寸」(Dimension)菜單
-topic: Data workbench
+title: 顯示「維度」功能表
 uuid: e2c4fa8d-3559-45bd-8ec5-d064c763b20b
+exl-id: 55b2cb3a-d82e-4e42-b1b6-079ca3667be8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '89'
+ht-degree: 11%
 
 ---
 
-
-# 顯示「尺寸」(Dimension)菜單{#display-the-dimension-menu}
+# 顯示「維度」功能表{#display-the-dimension-menu}
 
 顯示維資訊或選項的步驟。
 
@@ -28,4 +29,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    * **[!UICONTROL Add]** 來添加另一個維。
    * **[!UICONTROL Remove]** 來刪除選定的維。
    * **[!UICONTROL Add Visualization]** 新增選取維度的視覺化。
-
