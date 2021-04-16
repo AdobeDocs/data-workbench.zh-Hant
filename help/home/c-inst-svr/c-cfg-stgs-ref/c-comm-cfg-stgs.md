@@ -1,16 +1,15 @@
 ---
 description: 設定Insight Server或中繼器通訊的指示。
-solution: Analytics
 title: 通訊組態設定
 uuid: 03297cf0-eb55-4db0-b692-eba24fcf947c
+exl-id: a35788d1-de36-4350-a107-eee392e44503
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 5%
 
 ---
-
 
 # 通訊組態設定{#communications-configuration-settings}
 
@@ -22,7 +21,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->在修改未列於本表格中的任何參數之前，請聯絡Adobe。
+>在修改本表中未列出的任何參數之前，請與Adobe聯繫。
 
 <table id="table_C87F1150E53548F484A8C0CFE91F1079"> 
  <thead> 
@@ -34,11 +33,11 @@ ht-degree: 5%
  <tbody> 
   <tr> 
    <td colname="col1"> 訪問控制檔案 </td> 
-   <td colname="col2"> <p>Access Control.cfg檔 <span class="filepath"> 案的位 </span> 置。 預設位置是 <span class="filepath"> Insight Server或Repeater安裝目 </span> 錄內的「存取控 <span class="keyword"> 制」資料 </span><span class="wintitle"></span> 夾。 </p> <p>範例：<code>Access Control File = Path: Access Control\\Access Control.cfg</code> </p> </td> 
+   <td colname="col2"> <p><span class="filepath"> Access Control.cfg </span>檔案的位置。 預設位置是<span class="keyword"> Insight Server </span>或<span class="wintitle"> Repeater </span>安裝目錄內的<span class="filepath"> Access Control </span>資料夾。 </p> <p>範例：<code>Access Control File = Path: Access Control\\Access Control.cfg</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 訪問日誌目錄 </td> 
-   <td colname="col2"> <p>要將審計日誌映射到的資料夾。 </p> <p>範例：<code>Access Log Directory = string: Audit\\</code> </p> <p> <p>注意： 您可以將審計日誌映射到另一個本地驅動器(例如： <span class="filepath"> 字串：P:\\Audit\\ </span>)，但不將審核日誌映射到網路驅動器。 </p> </p> </td> 
+   <td colname="col2"> <p>要將審計日誌映射到的資料夾。 </p> <p>範例：<code>Access Log Directory = string: Audit\\</code> </p> <p> <p>注意： 您可以將審計日誌映射到另一個本地驅動器(例如：<span class="filepath">字串：P:\\Audit\\ </span>)，但不將審計日誌映射到網路驅動器。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 訪問日誌詳細 </td> 
@@ -50,7 +49,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> 連接埠 </td> 
-   <td colname="col2"> <p>Insight伺服器或中繼器監聽的非安 <span class="keyword"> 全(HTTP) </span><span class="wintitle"> 端 </span> 口。 預設連接埠為 80。輸入值0會禁用非安全連接。 </p> <p>範例：<code>Port = int: 80</code> </p> </td> 
+   <td colname="col2"> <p><span class="keyword"> Insight Server </span>或<span class="wintitle"> Repeater </span>監聽的非安全(HTTP)埠。 預設連接埠為 80。輸入值0會禁用非安全連接。 </p> <p>範例：<code>Port = int: 80</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SSL密碼 </td> 
@@ -58,7 +57,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td colname="col1"> SSL埠 </td> 
-   <td colname="col2"> <p>Insight Server或中繼器監聽的安全（透過SSL） <span class="keyword"> 端 </span> 口 <span class="wintitle"> 所 </span> 在。 預設連接埠為 443。輸入值0將禁用安全連接。 </p> <p>範例：<span class="filepath"></span> </p> <code>SSL Port = int: 443</code> </td> 
+   <td colname="col2"> <p><span class="keyword"> Insight Server </span>或<span class="wintitle"> Repeater </span>監聽的安全（透過SSL）埠。 預設連接埠為 443。輸入值0將禁用安全連接。 </p> <p>範例：<span class="filepath"></span> </p> <code>SSL Port = int: 443</code> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>n=</i>LoggingServer: </td> 
@@ -72,20 +71,20 @@ ht-degree: 5%
   <tr> 
    <td colname="col1"> <p> <i>n=</i>FileServer: </p> <p> 本機路徑=字串：記錄\\ </p> </td> 
    <td colname="col2"> <p>要儲存日誌檔案的資料夾。 </p> <p>範例： </p> <code> 9&nbsp;=&nbsp;FileServer:&nbsp; 
-     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Logs\\ </code> <p>若要能夠從「伺服器檔案管理員」存取此檔案夾 <span class="wintitle"> ，此參數中指定的位置必須符合您在 </span>Log Processing.cfg檔案中「記錄路徑」參數中指定的 <span class="filepath"></span> 位置。 如需有關在 <span class="filepath"> Log Processing.cfg檔案中修改Logs目錄的詳細資訊 </span> ，請參閱資料集設定指南的「記錄處理設定檔 <i>案」一章</i>。 </p> </td> 
+     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Logs\\ </code> <p>要能夠從<span class="wintitle">伺服器檔案管理器</span>訪問此資料夾，此參數中指定的位置必須與<span class="filepath">日誌處理。cfg </span>檔案中「日誌路徑」參數中指定的位置相匹配。 有關在<span class="filepath"> Log Processing.cfg </span>檔案中修改Logs目錄的詳細資訊，請參閱<i>資料集配置指南</i>中的Log Processing Configuration File一章。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <i>n=</i>FileServer: </p> <p> 本機路徑=字串：審核\\ </p> </td> 
    <td colname="col2"> <p>要將審計日誌映射到的資料夾。 </p> <p>範例： </p> <code> 5&nbsp;=&nbsp;FileServer:&nbsp; 
-     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Audit\\ </code> <p>注意:  <p>您可以將審計日誌映射到另一個本地驅動器(例如： <span class="filepath"> 字串：P:\\Audit\\ </span>)，但不將審核日誌映射到網路驅動器。 </p> <p>要能夠從「伺服器檔案管理器」( <span class="wintitle"> Server Files Manager)訪問此資料夾 </span>，此參數中指定的位置必須與此檔案中「訪問日誌目錄」參數中的位置相匹配。 </p> </p> </td> 
+     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Audit\\ </code> <p>注意:  <p>您可以將審計日誌映射到另一個本地驅動器(例如：<span class="filepath">字串：P:\\Audit\\ </span>)，但不將審計日誌映射到網路驅動器。 </p> <p>要能夠從<span class="wintitle">伺服器檔案管理器</span>訪問此資料夾，此參數中指定的位置必須與此檔案中「訪問日誌目錄」參數中的位置匹配。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>n=</i>NormalizeServer: </td> 
-   <td colname="col2"> <p>此參數僅適用於 <span class="keyword"> Insight Server </span>。 </p> <p>如需為 <span class="keyword"> Insight Server叢集指定集中式標準化伺服器的詳細資訊，請參閱資料集設定指南的「記錄處理設定檔」一 </span> 章 <i></i>。 </p> </td> 
+   <td colname="col2"> <p>此參數僅適用於<span class="keyword"> Insight Server </span>。 </p> <p>有關為<span class="keyword"> Insight Server </span>群集指定集中式標準化伺服器的詳細資訊，請參閱<i>資料集配置指南</i>中的「日誌處理配置檔案」一章。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <i>n=</i>ReportStatusServer: </p> <p> URI =字串：/ReportStatus.vsp </p> </td> 
-   <td colname="col2"> <p>此參數僅適用於 <span class="keyword"> Insight Server </span>。 </p> <p>可讓您在Insight <span class="keyword"> Server的「詳 </span> 細狀態」介面中檢視報表 <span class="keyword"> 狀態 </span>。 </p> </td> 
+   <td colname="col2"> <p>此參數僅適用於<span class="keyword"> Insight Server </span>。 </p> <p>可讓您在<span class="keyword"> Insight Server </span>的「詳細狀態」介面中檢視<span class="keyword">報表的</span>狀態。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
