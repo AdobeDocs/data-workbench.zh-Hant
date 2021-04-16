@@ -1,18 +1,16 @@
 ---
 description: 有關安裝和配置Insight Server複製服務的資訊。
-solution: Analytics
 title: Insight Server 複寫服務
 uuid: 7de135af-8a16-463e-91fa-c2a831c5909c
+exl-id: 4ae90bd8-a7b4-4978-9901-a79e31618637
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '28'
 ht-degree: 28%
 
 ---
 
-
 # Insight Server 複寫服務{#insight-server-replication-service}
 
 有關安裝和配置Insight Server複製服務的資訊。
-
