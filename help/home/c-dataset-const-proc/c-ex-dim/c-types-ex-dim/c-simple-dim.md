@@ -1,16 +1,17 @@
 ---
 description: 簡單維度與其父項可計數維度有一對多關係。
-solution: Analytics
-title: 簡單尺寸
-topic: Data workbench
+title: 簡單維度
 uuid: 3bca2354-02c4-4739-a7da-acccdb0efdfd
+exl-id: 2acad750-7c48-40f1-8130-ab056ac8bf0d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '834'
+ht-degree: 1%
 
 ---
 
-
-# 簡單尺寸{#simple-dimensions}
+# 簡單維度{#simple-dimensions}
 
 簡單維度與其父項可計數維度有一對多關係。
 
@@ -23,7 +24,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   <tr> 
    <th colname="col1" class="entry"> 參數 </th> 
    <th colname="col2" class="entry"> 說明 </th> 
-   <th colname="col3" class="entry"> 預設值 </th> 
+   <th colname="col3" class="entry"> 預設 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -33,7 +34,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 意見 </td> 
+   <td colname="col1"> 註解 </td> 
    <td colname="col2"> 選填。關於擴展維的注釋。 </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -82,9 +83,9 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 此範例說明使用從網站流量收集的事件資料和載入檔案來定義簡單維度。
 
-以網站訪客最愛的Girl Scout Cookie民調問答為例。 網頁會擷取此投票，並將其傳回名稱——值配對favoritecookie中的網頁伺服器。 每個訪客只會計算一次投票，但訪客可以改變主意，並視需要再次投票。 這是一對多的關係：一位訪客可以有多張投票，但每張投票僅與一位訪客關聯。 因此，維度的父代是訪客（每位訪客僅投一票），而操作是「最後一列」（如此，他們就可以改變想法並再次投票）。
+以網站訪客最愛的GirlScoutCookie民調問答為例。 網頁會擷取此投票，並將其傳回名稱——值配對favoritecookie中的網頁伺服器。 每個訪客只會計算一次投票，但訪客可以改變主意，並視需要再次投票。 這是一對多的關係：一位訪客可以有多張投票，但每張投票僅與一位訪客關聯。 因此，維度的父代是訪客（每位訪客僅投一票），而操作是「最後一列」（如此，他們就可以改變想法並再次投票）。
 
-所有類型的Cookie都必須有預留位置，如此才能在資料工作台中顯示沒有投票的Cookie類型。 基於這些原因，已定義包含可選Cookie類型清單的載入檔案。 此檔案的內容保存在名為的檔案中， [!DNL cookietypes.txt]如下所示：
+所有類型的Cookie都必須有預留位置，如此才能在資料工作台中顯示沒有投票的Cookie類型。 基於這些原因，已定義包含可選Cookie類型清單的載入檔案。 此檔案的內容保存在名為[!DNL cookietypes.txt]的檔案中，如下所示：
 
 動物珍寶
 
@@ -101,4 +102,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 最終尺寸定義如下：
 
 ![](assets/cfg_Transformation_Dim_Simple.png)
-
