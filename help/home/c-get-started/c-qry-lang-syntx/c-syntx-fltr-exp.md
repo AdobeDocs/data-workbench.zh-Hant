@@ -1,24 +1,25 @@
 ---
 description: 篩選器是定義資料集中資料子集的運算式。
-solution: Analytics
-title: 篩選運算式的語法
-topic: Data workbench
+title: 篩選器運算式的語法
 uuid: faeb6847-3295-48ab-9d1c-db00f57647ba
+exl-id: 515c1645-69c8-4990-a913-d2d505c6fe51
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '789'
+ht-degree: 1%
 
 ---
 
-
-# 篩選運算式的語法{#syntax-for-filter-expressions}
+# 篩選器運算式的語法{#syntax-for-filter-expressions}
 
 篩選器是定義資料集中資料子集的運算式。
 
 篩選器會根據維度間的關係，接納或拒絕每個維度的每個元素。
 
-您可使用編輯篩選器 [!DNL Filter Editor]。 請參閱 [篩選編輯器](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3)。
+可使用[!DNL Filter Editor]編輯篩選器。 請參閱[篩選編輯器](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3)。
 
-在下表中，每個語法說明都包含使用該篩選的量度運算式範例。 例如，[SessionsTrue] 是使用「True」篩選器定義的量度。 SessionsTrue[] 量度與「工作階段」量度相同，因為「真」篩選器會接納「工作階段」維度的每個元素。
+在下表中，每個語法說明都包含使用該篩選的量度運算式範例。 例如，Sessions[True]是使用「True」篩選器定義的量度。 Sessions[True]量度與Sessions量度相同，因為True篩選器可容納Session維度的每個元素。
 
 <table id="table_5D66E6C11B384460BAAA7A6130214594"> 
  <tbody> 
@@ -63,12 +64,12 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col2"> <p>用給定的序數值承認維Dim的元素。 </p> <p>範例：Sessions[ Month=#0 ]是資料集第一個月中的Sessions數。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Dim &lt;&gt; #Ordinal </p> <p>昏！= #Ordinal </p> </td> 
+   <td colname="col1"> <p>Dim &lt;&gt; #Ordinal </p> <p>昏！= #序數 </p> </td> 
    <td colname="col2"> <p>承認維度Dim的所有其他元素。 </p> <p>範例：會話數[ Session_Value &lt;&gt; #0 ]是具有非零會話值的會話數。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Dim與"Expr"相符 </p> </td> 
-   <td colname="col2"> <p>允許維度Dim的元素與給定的規則表達式匹配。 Dim不能是非正規或可計數的維度。 </p> <p>範例：會話[ URI與''匹配。*/產品/.*" ]是瀏覽產品目錄中任何頁面的會話數。 </p> </td> 
+   <td colname="col2"> <p>允許維度Dim的元素與給定的規則表達式匹配。 Dim不能是非正規或可計數的維度。 </p> <p>範例：會話[ URI與''匹配。*/product/.*" ]是瀏覽產品目錄中任何頁面的會話數。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Dim notmatches "Expr" </p> </td> 
@@ -76,19 +77,19 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> <p>尺寸&lt; "值" </p> </td> 
-   <td colname="col2"> <p>包含維Dim的元素，其序數值小於元素"Value"的序數值。如果"Value"不是維的元素，則假定它大於維的任何當前元素。 </p> <p>範例：會話數[月&lt; "04年7月" ]是2004年7月之前發生的會話數。 </p> </td> 
+   <td colname="col2"> <p>包含維Dim的元素，其序數值小於元素"Value"的序數值。 如果"Value"不是維的元素，則假定它大於維的任何當前元素。 </p> <p>範例：會話數[月&lt; "04年7月" ]是2004年7月之前發生的會話數。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>「尺寸&gt;值」 </p> </td> 
-   <td colname="col2"> <p>包含維Dim的元素，其序數值大於元素"Value"的序數值。如果"Value"不是維的元素，則假定它大於維的任何當前元素。 </p> <p>範例：會話數[月&gt; "2004年7月" ]是2004年7月之後發生的會話數。 </p> </td> 
+   <td colname="col2"> <p>包含維Dim的元素，其序數值大於元素"Value"的序數值。 如果"Value"不是維的元素，則假定它大於維的任何當前元素。 </p> <p>範例：會話數[月&gt; "2004年7月" ]是2004年7月之後發生的會話數。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>尺寸&lt;= "值" </p> </td> 
-   <td colname="col2"> <p>允許維Dim的元素，其序數值小於或等於元素"Value"的序數值。如果"Value"不是維的元素，則假定它大於維的任何當前元素。 </p> <p>範例：Sessions[ Session_Number &lt;= "2" ]是作為訪客第一個或第二個會話的會話數。 </p> </td> 
+   <td colname="col2"> <p>允許維Dim的元素，其序數值小於或等於元素"Value"的序數值。 如果"Value"不是維的元素，則假定它大於維的任何當前元素。 </p> <p>範例：Sessions[ Session_Number &lt;= "2" ]是作為訪客第一個或第二個會話的會話數。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 尺寸&gt;= "值" </td> 
-   <td colname="col2"> <p>包含維Dim的元素，其序數值大於或等於元素"Value"的序數值。如果"Value"不是維的元素，則假定它大於維的任何當前元素。 </p> <p>範例：Sessions[ Session_Number &gt;= "5" ]是訪客的第五個或更多作業的作業數。 </p> </td> 
+   <td colname="col2"> <p>包含維Dim的元素，其序數值大於或等於元素"Value"的序數值。 如果"Value"不是維的元素，則假定它大於維的任何當前元素。 </p> <p>範例：Sessions[ Session_Number &gt;= "5" ]是訪客的第五個或更多作業的作業數。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>任何尺寸 </p> </td> 
@@ -104,4 +105,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
  </tbody> 
 </table>
-
