@@ -1,16 +1,17 @@
 ---
 description: 色彩圖例色彩程式碼視覺化，由「轉換」和「保留」等量度呈現，幾乎可用於每個工作區。
-solution: Analytics
-title: 顏色圖例
-topic: Data workbench
+title: 色彩圖例
 uuid: 4f5ad93e-9128-464c-b5b7-9db454fa71a6
+exl-id: 0ecf5237-8d64-46a6-b73b-e59de69e5988
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 2%
 
 ---
 
-
-# 顏色圖例{#color-legends}
+# 色彩圖例{#color-legends}
 
 色彩圖例色彩程式碼視覺化，由「轉換」和「保留」等量度呈現，幾乎可用於每個工作區。
 
@@ -20,9 +21,8 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 >
 >如果您未在顏色圖例中選取量度，所有視覺化都會顯示為藍色。
 
-## 啟用或變更量度 {#section-694234fc79fd44c2a2ea2f677f74b3dc}
+## 啟用或變更量度{#section-694234fc79fd44c2a2ea2f677f74b3dc}
 
 * 以滑鼠右鍵按一下量度名稱，然後按一下所要的量度。
 
    ![](assets/lgd_ColorLegend.png)
-
