@@ -1,16 +1,17 @@
 ---
 description: 要成功識別伺服器運行狀況和效能，您可以使用標準資料工作台配置檔案從已安裝的代理使用當前資料監視伺服器，或者使用歷史資料集配置檔案查看效能隨時間變化的影響。
-solution: Analytics
-title: 監控資料工作台伺服器的工作區
-topic: Data workbench
+title: 用於監控 Data Workbench 伺服器的工作區
 uuid: 07bd0749-1d3b-46ef-9c85-5e694a306db1
+exl-id: 9deee1a2-e102-4aaa-a68a-a31543aed07e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '133'
+ht-degree: 10%
 
 ---
 
-
-# 監控資料工作台伺服器的工作區{#workspaces-for-monitoring-the-data-workbench-server}
+# 用於監控 Data Workbench 伺服器的工作區{#workspaces-for-monitoring-the-data-workbench-server}
 
 要成功識別伺服器運行狀況和效能，您可以使用標準資料工作台配置檔案從已安裝的代理使用當前資料監視伺服器，或者使用歷史資料集配置檔案查看效能隨時間變化的影響。
 
@@ -23,4 +24,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 要選擇配置檔案，請從資料工作台「客戶端」介面的左上角開啟下拉菜單。
 
 ![](assets/profile_switch.png)
-
