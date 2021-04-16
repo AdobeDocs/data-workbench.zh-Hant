@@ -1,14 +1,15 @@
 ---
 description: 資料工作台包含內建量度。
-solution: Analytics
 title: 內建量度
-topic: Data workbench
 uuid: 1e4d91dc-0130-4296-8395-fd2ddb03f6ef
+exl-id: a8a2a8dd-dc13-4eb3-92ce-09f02252ecf0
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '310'
+ht-degree: 1%
 
 ---
-
 
 # 內建量度{#built-in-metrics}
 
@@ -25,7 +26,6 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 | 解碼日誌條目總數 | 在Insight Server資料處理的記錄處理階段中成功解碼的記錄檔項目數。 |
 | 篩選記錄項目總數 | 在解碼後，自動機過濾器和作為Insight Server資料處理日誌處理階段的一部分應用的日誌條目條件及其他篩選器接受日誌檔案中的條目數。 |
 | 日誌條目總數 | Insight Server資料處理的記錄處理階段目前已處理的記錄檔項目數。 |
-| 已處理日誌條目總數 | 已併入Adobe資料集的篩選記錄項目數。 |
+| 已處理日誌條目總數 | 已併入Adobe資料集的篩選日誌條目數。 |
 | 轉換進度 | Insight Server資料處理轉換階段的完成百分比。 |
 | 未壓縮日誌位元組讀取 | 在日誌處理階段期間，目前已處理的未壓縮資料總量（以位元組為單位）。 |
-
