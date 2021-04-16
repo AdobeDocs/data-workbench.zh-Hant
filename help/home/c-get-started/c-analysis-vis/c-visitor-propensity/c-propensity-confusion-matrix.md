@@ -1,22 +1,23 @@
 ---
 description: 定義「傾向評分」的統計計算。
-solution: Analytics
-title: 計算傾向得分
-topic: Data workbench
+title: 計算傾向分數
 uuid: 67270864-0468-4cc9-b48b-0e880f813555
+exl-id: 679e1363-fd10-4a44-a85a-ef0daefaf303
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '320'
+ht-degree: 1%
 
 ---
 
-
-# 計算傾向得分{#calculating-propensity-scoring}
+# 計算傾向分數{#calculating-propensity-scoring}
 
 定義「傾向評分」的統計計算。
 
 從概念上講，為每個訪客計算的分數是指定事件（由目標篩選器定義）可能發生的估計概率，導致分數值範圍從0到100%。 該評分過程利用現有樣本作為訓練資料，尋找事件概率與所選獨立興趣變數之間的關係。
 
-在數學上，這些關係反映在每個獨立變數的關聯的每個量化值中。 這些值稱為模型系數。 ScoreDim目前使用迭代重加權最小二乘(IRLS)算法來估計模型系數。 IRLS多次通過樣本，直到電流通過和前一次通過的系數差小於1.0e-6，此時稱為收斂 ****。 但是，IRLS可能無法達到收斂的目的。
+在數學上，這些關係反映在每個獨立變數的關聯的每個量化值中。 這些值稱為模型系數。 ScoreDim目前使用迭代重加權最小二乘(IRLS)算法來估計模型系數。 IRLS多次通過樣本，直到電流通過和前一次通過之間的系數差小於1.0e-6，此時稱為&#x200B;**congreged**。 但是，IRLS可能無法達到收斂的目的。
 
 在這種情況下，模型訓練迭代將在
 
