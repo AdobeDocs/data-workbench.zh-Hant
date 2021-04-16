@@ -1,16 +1,17 @@
 ---
 description: 折疊／展開目前的視覺化。
-solution: Analytics
-title: 收合和展開視覺化
-topic: Data workbench
+title: 收合和展開視覺效果
 uuid: 16ee5479-e457-4abc-8a40-ed75612318fa
+exl-id: b005fd1e-1704-476f-b220-44ac591b8d15
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '94'
+ht-degree: 8%
 
 ---
 
-
-# 收合和展開視覺化{#collapsing-and-expanding-visualizations}
+# 收合和展開視覺效果{#collapsing-and-expanding-visualizations}
 
 折疊／展開目前的視覺化。
 
