@@ -1,19 +1,18 @@
 ---
 description: 受控實驗是測試，可讓您比較實驗樣本組和標準對照組的結果。
 solution: Analytics,Analytics
-title: 資料工作台控制實驗
-topic: Data workbench
+title: Data Workbench控制實驗
 uuid: 5fce2d9e-4975-44e4-a7c0-11064d8d28b4
+exl-id: 40bcf6a4-c722-427c-81ac-45dec1eae0b5
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 0%
 
 ---
 
-
-# Data Workbench Controlled Experiments{#data-workbench-controlled-experiments}
+# Data Workbench控制實驗{#data-workbench-controlled-experiments}
 
 受控實驗是測試，可讓您比較實驗樣本組和標準對照組的結果。
 
@@ -21,6 +20,6 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->網站實驗只能在資料集中分析，其中唯一使用的訪客識別方法是設定永 [!DNL Sensor] 久性Cookie方法。 在J2EE伺服器（JBoss、Tomcat、WebLogic和WebSphere）上執行的感測器不支援控制實驗。 如需詳細資訊，請參閱下節。
+>網站實驗只能在使用中唯一訪客識別方法為[!DNL Sensor]設定永久性Cookie方法的資料集中進行分析。 在J2EE伺服器（JBoss、Tomcat、WebLogic和WebSphere）上執行的感測器不支援控制實驗。 如需詳細資訊，請參閱下節。
 
 使用網站，您可以實作A/B、A/B/A和多變數控制實驗，以收集足夠的測試資料，提供統計上精確的資料，以詳細評估您的假設，而不會影響目前的網站效能。
