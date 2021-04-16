@@ -1,14 +1,15 @@
 ---
 description: 您可以指定顯示的元素為根，或新增新元素至視覺化，以變更路徑瀏覽器的根。
-solution: Analytics
 title: 變更路徑瀏覽器的根目錄
-topic: Data workbench
 uuid: 0bb9b004-9736-411b-bd22-cac04f4733a6
+exl-id: 09842b93-af26-42b9-9395-a02b86978b21
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '347'
+ht-degree: 2%
 
 ---
-
 
 # 變更路徑瀏覽器的根目錄{#change-the-path-browser-s-root}
 
@@ -20,7 +21,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **設定路徑瀏覽器的根目錄**
 
-* 以滑鼠右鍵按一下所要的元素，然後按一下 **[!UICONTROL Set as root]**。
+* 按一下右鍵所需元素，然後按一下&#x200B;**[!UICONTROL Set as root]**。
 
 **若要新增元素至路徑瀏覽器**
 
@@ -38,5 +39,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    >[!NOTE]
    >
-   >將元素拖曳至路徑瀏覽器可能會變更與路徑瀏覽器關聯的基本維度，但不會變更層級維度、群組維度或量度。 因此，在與路徑瀏覽器的層級維度、群組維度和量度搭配使用時，您必須謹慎選擇有意義的基本維度。 若要變更層級維度、群組維度或量度，您必須在記事本等文字編輯器中 [!DNL *.vw] 編輯路徑瀏覽器的檔案。 請參 [閱設定路徑瀏覽器](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3)。
-
+   >將元素拖曳至路徑瀏覽器可能會變更與路徑瀏覽器關聯的基本維度，但不會變更層級維度、群組維度或量度。 因此，在與路徑瀏覽器的層級維度、群組維度和量度搭配使用時，您必須謹慎選擇有意義的基本維度。 若要變更層級維度、群組維度或量度，您必須在記事本等文字編輯器中編輯路徑瀏覽器的[!DNL *.vw]檔案。 請參閱[設定路徑瀏覽器](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3)。
