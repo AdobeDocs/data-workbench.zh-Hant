@@ -1,16 +1,16 @@
 ---
-description: 安裝Report Server程式檔後，您必須下載並安裝Adobe提供給您的數位憑證。
-solution: Analytics
+description: 安裝Report Server程式檔案後，您必須下載並安裝由Adobe提供給您的數位憑證。
 title: 下載和安裝數位憑證
-topic: Data workbench
 uuid: 6104d39f-9a8a-444d-82ea-f0f6996a8122
+exl-id: b87f3450-12bf-4f29-b1ef-c1bdc6b01b85
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '56'
+ht-degree: 21%
 
 ---
 
-
 # 下載和安裝數位憑證{#downloading-and-installing-the-digital-certificate}
 
-安裝Report Server程式檔後，您必須下載並安裝Adobe提供給您的數位憑證。
-
+安裝Report Server程式檔案後，您必須下載並安裝由Adobe提供給您的數位憑證。
