@@ -1,30 +1,31 @@
 ---
 description: 資料工作台控制面板包含具有功能選單的「側欄」和「工具列」，以及可顯示資料視覺化的「控制面板畫布」。
-solution: Analytics
-title: 儀表板用戶介面
-topic: Data workbench
+title: 控制面板使用者介面
 uuid: cfa6c553-e223-4b0e-8b4a-255afa85c999
+exl-id: f80da6c7-02cb-4916-b139-617703cf27b6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '276'
+ht-degree: 6%
 
 ---
 
-
-# 儀表板用戶介面{#dashboard-user-interface}
+# 控制面板使用者介面{#dashboard-user-interface}
 
 資料工作台控制面板包含具有功能選單的「側欄」和「工具列」，以及可顯示資料視覺化的「控制面板畫布」。
 
 ![](assets/dashboard_ui.png)
 
-## 控制面板畫布 {#section-39c9352f5e8d407e8d76c7f2e6267b3d}
+## 控制面板畫布{#section-39c9352f5e8d407e8d76c7f2e6267b3d}
 
 「控制面板畫布」是用來建立視覺化並與之互動的介面區域。
 
-| 術語 | 定義 |
+| 詞語 | 定義 |
 |---|---|
 | 視覺效果 | 根據一組已配置標準以圖形方式定義的呈現資料。 多個視覺化組成控制面板。 |
 
-## 側欄 {#section-12e155c782e74851b0dbaa00c40deb8c}
+## 側欄{#section-12e155c782e74851b0dbaa00c40deb8c}
 
 左側邊欄提供定義功能表的快速存取和可見性：
 
@@ -43,7 +44,6 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 | 控制面板功能表 | 開啟、建立、儲存和匯出控制面板的下拉式功能表。 |
 | 新增視覺化功能表 | 下拉式選單，可新增視覺化至控制面板。 |
 | 控制面板標題 | 顯示目前控制面板的標題。 |
-| 更新功能表 | 按一下指 **[!UICONTROL Update]** 示器會更新目前的控制面板，並考慮到任何新的選取範圍和／或設定變更。 此功能表提供調整參數的 **[!UICONTROL Query-to]** 功能，以及管理員的一些進階功能。 |
+| 更新功能表 | 按一下&#x200B;**[!UICONTROL Update]**&#x200B;指示符將更新當前儀表板，同時考慮到任何新選擇和／或配置更改。 此功能表提供調整&#x200B;**[!UICONTROL Query-to]**&#x200B;參數的功能，以及管理員的一些進階功能。 |
 | 說明功能表 | 此下拉式功能表可用來存取應用程式的「使用指南」、「常見問答」和「關於」區段。 |
 | 用戶菜單 | 用於登出、存取帳戶設定和存取管理區的下拉式選單（僅限管理員）。 |
-
