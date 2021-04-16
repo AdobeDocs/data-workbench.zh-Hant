@@ -1,22 +1,20 @@
 ---
 description: 複製控制面板的步驟。
-solution: Analytics
 title: 製作控制面板副本
-topic: Data workbench
 uuid: ba47ded4-8676-48a7-853f-6321ea6eb601
+exl-id: e922a9db-81f7-4ef9-a0af-a7ece15bd7a1
 translation-type: tm+mt
-source-git-commit: 99971eae6cf9c65a7a4a972b21a2b8ed4502c007
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '59'
 ht-degree: 20%
 
 ---
 
-
 # 製作控制面板副本{#making-a-copy-of-a-dashboard}
 
 複製控制面板的步驟。
 
 1. 載入您要複製的控制面板。
-1. 從控 **[!UICONTROL Save As…]** 制面板介面頂端的控制面板選單中選取。
-1. 出現窗 **[!UICONTROL Save Dashboard As…]** 口時，輸入控制面板副本的新名稱。
+1. 從控制面板介面頂部的控制面板菜單中選擇&#x200B;**[!UICONTROL Save As…]**。
+1. 出現&#x200B;**[!UICONTROL Save Dashboard As…]**&#x200B;窗口時，請為控制面板副本輸入新名稱。
