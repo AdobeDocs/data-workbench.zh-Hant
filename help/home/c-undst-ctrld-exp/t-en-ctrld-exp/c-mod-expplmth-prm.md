@@ -1,21 +1,19 @@
 ---
-description: 'null'
-solution: Analytics,Analytics
+description: 修改 ExpPartialMatch 參數 (選用)
 title: 修改 ExpPartialMatch 參數 (選用)
-topic: Data workbench
 uuid: 15ed33cc-5ec8-45b2-a4eb-d1941962ca9d
+exl-id: 8ad45368-85a4-4865-b66b-52c29c28799c
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 14%
+source-wordcount: '82'
+ht-degree: 18%
 
 ---
 
-
 # 修改 ExpPartialMatch 參數 (選用){#modifying-the-exppartialmatch-parameter-optional}
 
-如果要啟用受控實驗將整個網站或網站的整個子目錄重新映射到另一個位置，可以將檔案中的ExpPartialMatch參數 [!DNL txlogd.conf] 設定為「on」。 預設值為「off」。
+如果要啟用受控實驗將整個網站或網站的整個子目錄重新映射到另一個位置，可以將[!DNL txlogd.conf]檔案中的ExpPartialMatch參數設定為「on」。 預設值為「off」。
 
 以下是ExpPartialMatch參數的範例：
 
