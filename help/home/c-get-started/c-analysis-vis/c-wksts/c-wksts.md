@@ -1,23 +1,24 @@
 ---
-description: 「資料工作台」提供建立目前視覺化臨機篩選器和度量的工作表。
-solution: Analytics
+description: Data Workbench提供建立目前視覺化臨機篩選和度量的工作表。
 title: 工作表
-topic: Data workbench
 uuid: 4e498150-3e44-4a19-8d8a-8be0d32693a6
+exl-id: 73f3e400-648c-4659-8e55-d3bd27ccceb6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '90'
+ht-degree: 2%
 
 ---
 
-
 # 工作表{#worksheets}
 
-「資料工作台」提供建立目前視覺化臨機篩選器和度量的工作表。
+Data Workbench提供建立目前視覺化臨機篩選和度量的工作表。
 
 工作表類似於一般的試算表，但與試算表不同，每個包含公式的儲存格都可以定義量度。
 
 ![](assets/vis_Worksheet_TextAndFormula.png)
 
-與使用建立的量度不 [!DNL Metric Editor]同，使用工作表定義的量度不會顯示在量度功能表中，但可以儲存並包含在您的任何工作區中。
+與使用[!DNL Metric Editor]建立的量度不同，使用工作表定義的量度不會出現在量度功能表中，但可以儲存並包含在您的任何工作區中。
 
-如需相關資訊，請 [!DNL Metric Editor]參閱建 [立和編輯衍生量度](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40)。
+有關[!DNL Metric Editor]的資訊，請參閱[建立和編輯衍生量度](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40)。
