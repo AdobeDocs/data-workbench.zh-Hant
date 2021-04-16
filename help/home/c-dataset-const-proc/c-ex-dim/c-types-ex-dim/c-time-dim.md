@@ -1,14 +1,15 @@
 ---
 description: 時間維度可讓您根據您為「輸入時間」（1970年）參數所指定的任何時間戳記欄位，建立一組定期或絕對的本機時間維度（例如日、周中的某天、一天中的某小時、保留時間等）。
-solution: Analytics
 title: 時間維度
-topic: Data workbench
 uuid: b633cf4f-0db4-4378-9e59-43b6ad8f772d
+exl-id: f9534b24-3a16-4220-bac2-bc541e121005
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 11%
 
 ---
-
 
 # 時間維度{#time-dimensions}
 
@@ -23,7 +24,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   <tr> 
    <th colname="col1" class="entry"> 參數 </th> 
    <th colname="col2" class="entry"> 說明 </th> 
-   <th colname="col3" class="entry"> 預設值 </th> 
+   <th colname="col3" class="entry"> 預設 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -33,7 +34,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 意見 </td> 
+   <td colname="col1"> 註解 </td> 
    <td colname="col2"> 選填。關於擴展維的注釋。 </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -76,4 +77,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 此範例會根據使用者定義的輸入欄位x-time-1970建立一組時間維度。 時間維度集名為「作業時間」。 由於每個維的父代是「會話」維，因此時間維的每個元素都對應於會話開始的時間。 「周開始日」參數指定「周」維度的每週從星期一開始。
 
 ![](assets/cfg_Transformation_Dim_TimeDim.png)
-
