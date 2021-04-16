@@ -1,18 +1,19 @@
 ---
-description: 使用「資料工作台的報表伺服器」，您可以排程並自動產生報表集並分發給其他人。
-solution: Analytics
-title: 資料工作台報表伺服器
-topic: Data workbench
+description: 使用報表伺服器進行Data Workbench，您可以排程並自動產生報表集，並分發給其他人。
+title: Data Workbench報表伺服器
 uuid: eac678de-58bf-46d2-aa09-592696c01fb2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 0%
 
 ---
 
 
-# 資料工作台報表伺服器{#data-workbench-report-server}
+# Data Workbench報表伺服器{#data-workbench-report-server}
 
-使用「資料工作台的報表伺服器」，您可以排程並自動產生報表集並分發給其他人。
+使用報表伺服器進行Data Workbench，您可以排程並自動產生報表集，並分發給其他人。
 
 例如，您可以建立狀態報表，其中包含上層管理人員有興趣查看的特定視覺化，然後將產生的報表分發給適當的主管。
 
