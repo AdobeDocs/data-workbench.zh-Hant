@@ -1,42 +1,42 @@
 ---
-description: 「伺服器檔案管理員」會顯示「資料工作台」伺服器安裝目錄中的所有目錄，包括設定和查閱檔案。
-solution: Analytics
-title: 建立伺服器檔案管理器
-topic: Data workbench
+description: 「伺服器檔案管理器」顯示Data Workbench伺服器安裝目錄中的所有目錄，包括配置和查找檔案。
+title: 建立伺服器檔案管理員
 uuid: 9fb2163d-3756-40d2-9817-4a89bd8a38c9
+exl-id: 9e0c8144-0f52-4e46-85d8-c2dcd60ddcb8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '312'
+ht-degree: 3%
 
 ---
 
+# 建立伺服器檔案管理員{#create-a-server-files-manager}
 
-# 建立伺服器檔案管理器{#create-a-server-files-manager}
+「伺服器檔案管理器」顯示Data Workbench伺服器安裝目錄中的所有目錄，包括配置和查找檔案。
 
-「伺服器檔案管理員」會顯示「資料工作台」伺服器安裝目錄中的所有目錄，包括設定和查閱檔案。
+您可能希望訪問[!DNL Server Files Manager]的一部分，而無需瀏覽其整個目錄結構或只顯示幾個子目錄以滿足特定需求。 例如，您可能想要建立個別的[!DNL Server Files Manager]，僅顯示「訪問控制」和「用戶」子目錄，以便管理用戶及其訪問。
 
-您可能需要訪問該部分，而 [!DNL Server Files Manager] 不需要導航其整個目錄結構，或只顯示幾個子目錄以滿足特定需要。 例如，您可能想要建立個別，只顯 [!DNL Server Files Manager] 示「存取控制」和「使用者」子目錄，讓您管理使用者及其存取權。
+您建立的每個管理器都必須有一個[!DNL .vw]檔案。 您可以將[!DNL Server Files.vw]檔案當做範本使用。
 
-您建立的每個管理員都必須有 [!DNL .vw] 檔案。 您可以將檔 [!DNL Server Files.vw] 案當做範本使用。
-
-有關的詳細資訊 [!DNL Server Files Manager]，請參 [閱伺服器檔案管理器](../../../../home/c-get-started/c-admin-intrf/c-svr-files-mgr.md#concept-73a0808487c8424285ae7302f53bc5f4)。
+有關[!DNL Server Files Manager]的詳細資訊，請參閱[伺服器檔案管理器](../../../../home/c-get-started/c-admin-intrf/c-svr-files-mgr.md#concept-73a0808487c8424285ae7302f53bc5f4)。
 
 **建立伺服器檔案管理器**
 
-1. 在中， [!DNL Profile Manager]按一下目 **[!UICONTROL Menu]** 錄，然後按一下目 **[!UICONTROL Admin]** 錄。 文 [!DNL Server Files.vw] 件位於此處。
-1. 在描述 *檔名稱欄* ，以滑鼠右鍵按一下檔案的核取 [!DNL Server Files.vw] 標籤，然後按一下 **[!UICONTROL Make Local]**。 該檔案的複選標籤將出現在該 [!DNL User] 列中。
-1. 按一下右鍵列中檔案的復 [!DNL Server Files.vw] 選標籤， [!DNL User] 然後按一下 **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**。 檔案 [!DNL Server Files.vw] 隨即開啟。
-1. 要刪除目錄，請按一下右鍵目錄的頂部邊框， [!DNL Server Files Manager] 然後按一下 **[!UICONTROL Server Directories]** > **[!UICONTROL Remove]** > *&lt;**[!UICONTROL directory name]**>*。
-1. 若要新增目錄，請以滑鼠右鍵按一下目錄的上 [!DNL Server Files Manager]邊框， **[!UICONTROL Server Directories]** 按一 **[!UICONTROL Add]** 下> **[!UICONTROL Directory]**。
+1. 在[!DNL Profile Manager]中，按一下&#x200B;**[!UICONTROL Menu]**&#x200B;目錄，然後按一下&#x200B;**[!UICONTROL Admin]**&#x200B;目錄。 [!DNL Server Files.vw]檔案位於此處。
+1. 在&#x200B;*描述檔名稱*&#x200B;欄中，以滑鼠右鍵按一下[!DNL Server Files.vw]檔案的核取標籤，然後按一下&#x200B;**[!UICONTROL Make Local]**。 檔案的複選標籤會出現在[!DNL User]列中。
+1. 按一下右鍵[!DNL User]列中[!DNL Server Files.vw]檔案的複選標籤，然後按一下&#x200B;**[!UICONTROL Open]** > **[!UICONTROL from the workbench]**。 將開啟[!DNL Server Files.vw]檔案。
+1. 要刪除目錄，請按一下右鍵[!DNL Server Files Manager]的頂部邊框，然後按一下&#x200B;**[!UICONTROL Server Directories]** > **[!UICONTROL Remove]** > ***[!UICONTROL directory name]**>*。
+1. 要添加目錄，請按一下右鍵[!DNL Server Files Manager]的頂部邊框，按一下&#x200B;**[!UICONTROL Server Directories]** > **[!UICONTROL Add]** > **[!UICONTROL Directory]**。
 
-   在URI欄位中輸入目錄的URI，然後按一下 **[!UICONTROL OK]**。
+   在URI欄位中輸入目錄的URI，然後按一下&#x200B;**[!UICONTROL OK]**。
 
    >[!NOTE]
    >
-   >可以在URI欄位中指定多個目錄。 例如，如果鍵入[!DNL Profiles\Marketing\]，則伺服器檔案管理器包含Marketing子目錄，但Profiles目錄中沒有其他子目錄。
+   >可以在URI欄位中指定多個目錄。 例如，如果您鍵入 [!DNL Profiles\Marketing\]，則伺服器檔案管理器包含Marketing子目錄，但Profiles目錄中沒有其他子目錄。
 
-1. 按一下右鍵頂部邊框的頂部，然 [!DNL Server Files Manager] 後按一下 **[!UICONTROL Save]**。
-1. 要建立新管理器，請更改欄位中的檔案名， [!DNL File Name] 然後按一下 **[!UICONTROL Save]**。 若要覆寫現有的管理員，請按一下 **[!UICONTROL Save]**。
-1. （可選）要使更改可供工作配置檔案的所有用戶使用，請按一下右鍵列中文 [!DNL .vw] 件的複選 [!DNL User] 標籤。
+1. 按一下右鍵[!DNL Server Files Manager]頂部邊框的頂部，然後按一下&#x200B;**[!UICONTROL Save]**。
+1. 要建立新管理器，請更改[!DNL File Name]欄位中的檔案名，然後按一下&#x200B;**[!UICONTROL Save]**。 要覆蓋現有的管理器，請按一下&#x200B;**[!UICONTROL Save]**。
+1. （可選）要使所有工作配置檔案用戶都能使用這些更改，請按一下右鍵[!DNL User]列中[!DNL .vw]檔案的複選標籤。
 
    然後，按一下 **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
-
