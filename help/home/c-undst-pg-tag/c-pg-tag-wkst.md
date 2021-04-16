@@ -1,20 +1,21 @@
 ---
 description: 包含常數和自訂變數清單的表格。
-solution: Analytics
-title: 頁面標籤變數對應工作表
-topic: Data workbench
+title: 頁面標記變數對應工作表
 uuid: 1ecef047-5a04-401d-b3d5-f31fddb134e1
+exl-id: 647c6a14-58b4-4f87-bccf-fa7ac24811a5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 13%
 
 ---
 
-
-# 頁面標籤變數對應工作表{#page-tag-variable-mapping-worksheet}
+# 頁面標記變數對應工作表{#page-tag-variable-mapping-worksheet}
 
 包含常數和自訂變數清單的表格。
 
-## 常數變數 {#section-d28c9bc798314c25b4f9c9a64534b317}
+## 常數變數{#section-d28c9bc798314c25b4f9c9a64534b317}
 
 | 變數名稱 | 變數簡短說明 | 其他資訊 |
 |---|---|---|
@@ -51,4 +52,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 | v_1 | 自訂變數1 |  |
 | v_2 | 自訂變數2 |  |
 | v_3 | 自訂變數3 |  |
-
