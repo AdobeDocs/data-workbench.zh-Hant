@@ -1,20 +1,21 @@
 ---
 description: 有關元素點圖層檔案的格式資訊。
-solution: Analytics
 title: 元素點層檔案格式
-topic: Data workbench
 uuid: a8b3d2f4-0ed2-480d-a2a6-75d43025a579
+exl-id: 125796f6-a447-4f12-bcf2-3e669783cf1e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '418'
+ht-degree: 5%
 
 ---
-
 
 # 元素點層檔案格式{#element-point-layer-file-format}
 
 有關元素點圖層檔案的格式資訊。
 
-參照查閱檔案 [!DNL .layer] 的每個元素點層檔案都必須使用下列範本格式化：
+引用查找檔案的每個元素點層[!DNL .layer]檔案必須使用以下模板進行格式化：
 
 ```
 Layer = ElementPointLayer:
@@ -57,15 +58,15 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> 鍵列 </td> 
-   <td colname="col2"> <p>查閱檔案中包含常用索引鍵資料的欄名稱，可讓資料工作台伺服器將查閱檔案中的資料整合至資料集。 這必須是查閱檔案中的第一欄。 </p> <p>此列中的每一行都是維的元素。 此維必須在 <span class="filepath"></span> Transformation.cfg檔案中定義，或在此檔案的Dimension參數中指定的轉換資料集包含檔案。 有關轉換配置檔案的詳細資訊，請參 <i>閱Dataset Configuration Guide</i>。 </p> </td> 
+   <td colname="col2"> <p>查閱檔案中包含常用索引鍵資料的欄名稱，可讓資料工作台伺服器將查閱檔案中的資料整合至資料集。 這必須是查閱檔案中的第一欄。 </p> <p>此列中的每一行都是維的元素。 此維度必須定義在<span class="filepath"> Transformation.cfg</span>檔案中，或轉換資料集包含檔案，並在此檔案的Dimension參數中指定。 有關轉換配置檔案的詳細資訊，請參閱<i>資料集配置指南</i>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 維度 </td> 
-   <td colname="col2">維的名稱（在轉換配置檔案中定義），包含與「鍵」列中的資料行對應的 <span class="wintitle"> 元素</span> 。 </td> 
+   <td colname="col2">維的名稱（定義在轉換配置檔案中），包含與<span class="wintitle">鍵</span>列中的資料行對應的元素。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 量度 </td> 
-   <td colname="col2"> 在「維度」參數中指定的維度上評估的度量名稱。 </td> 
+   <td colname="col2"> 在Dimension參數中指定的維度上評估的度量名稱。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 規模 </td> 
@@ -87,7 +88,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-檔案 [!DNL Zip Points.layer] 的格式如下：
+[!DNL Zip Points.layer]檔案的格式如下：
 
 ```
 Layer = ElementPointLayer:
@@ -100,4 +101,3 @@ Layer = ElementPointLayer:
   Dimension = ref: wdata/model/dim/Zipcode
   Metric = ref: wdata/model/metric/Sessions
 ```
-
