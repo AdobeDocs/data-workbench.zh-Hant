@@ -1,14 +1,15 @@
 ---
 description: Sensor可讓您進行受控網站實驗，讓您針對訪客人口的隨機子集進行受控實驗，將對您進行中作業的中斷降至最低。
-solution: Analytics
 title: 執行受控實驗
-topic: Data workbench
 uuid: 2fe16713-21c8-497a-a765-8cea011d419b
+exl-id: 8cbe9a10-72d8-4964-bd0b-0a262fd7ede2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '112'
+ht-degree: 5%
 
 ---
-
 
 # 執行受控實驗{#performing-controlled-experiments}
 
