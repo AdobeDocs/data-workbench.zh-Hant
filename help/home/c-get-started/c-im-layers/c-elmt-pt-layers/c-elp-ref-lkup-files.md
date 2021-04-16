@@ -1,48 +1,49 @@
 ---
 description: 當建立參照查閱檔案以取得經緯度資料的元素點層時，從查閱檔案擷取每個元素及其相關的經緯度資料，以取得點的位置。
-solution: Analytics
-title: 定義參照查閱檔案的元素點圖層
-topic: Data workbench
+title: 定義參考查閱檔案的元素點層
 uuid: 32c8de7a-4316-4f91-9810-7f584bc7fb0b
+exl-id: 2275fa8e-82fe-49e4-ab3e-91ec6ecb6233
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 3%
 
 ---
 
-
-# 定義參照查閱檔案的元素點圖層{#define-element-point-layers-referencing-lookup-files}
+# 定義參考查閱檔案的元素點層{#define-element-point-layers-referencing-lookup-files}
 
 當建立參照查閱檔案以取得經緯度資料的元素點層時，從查閱檔案擷取每個元素及其相關的經緯度資料，以取得點的位置。
 
 >[!NOTE]
 >
->您可以使用「動態點」功能，而不是使用查閱檔案，此功能會將位置的經緯度內嵌在維度的每個元素名稱中。 請參 [閱使用動態點定義元素點層](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elmt-pt-dyn-pts.md#concept-51adc5e1df8a48e7bd7a582967e4c512)。
+>您可以使用「動態點」功能，而不是使用查閱檔案，此功能會將位置的經緯度內嵌在維度的每個元素名稱中。 請參閱[使用動態點定義元素點層](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elmt-pt-dyn-pts.md#concept-51adc5e1df8a48e7bd7a582967e4c512)。
 
 要定義參照查閱檔案的元素點層，必須建立或已具備以下功能：
 
-* **在或檔案中定義的維**[!DNL Transformation.cfg file][!DNL transformation dataset include] 。 有關轉換配置檔案的資訊，請參 *閱Dataset Configuration Guide*。
+* **在或** 檔案中定 [!DNL Transformation.cfg file] 義的 [!DNL transformation dataset include] 維。有關轉換配置檔案的資訊，請參見&#x200B;*資料集配置指南*。
 
-* **一個查閱檔案** ，包含用於繪製每個資料點的資料。 此檔案必須至少包含每個資料點的三欄資料：鑰匙，經度和緯度。 如需查閱檔案所需格式的詳細資訊，請參閱「元素點 [層檔案格式」](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2)。
+* **包含用** 於繪製每個資料點的資料的查閱檔案。此檔案必須至少包含每個資料點的三欄資料：鑰匙，經度和緯度。 如需查閱檔案所需格式的詳細資訊，請參閱[元素點層檔案格式](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2)。
 
-* **層檔案** ，它指定查找檔案的位置，並標識查找檔案中的相關維度和度量以及索引鍵、經度和緯度列名。 有關層檔案所需格式的詳細資訊，請參 [閱元素點層檔案格式](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2)。
+* **圖層檔** 案，指定查閱檔案的位置，並識別查閱檔案中的相關維度和量度，以及索引鍵、經度和緯度欄名稱。有關層檔案所需格式的詳細資訊，請參閱[元素點層檔案格式](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2)。
 
    >[!NOTE]
    >
-   >隨配 [!DNL Zip Points.layer] 置檔案提供的檔案是一個元素點層，它標識 [!DNL Geography] 檔案、檔案、 [!DNL Zipcode.dim][!DNL Sessions.metric][!DNL Zip Points.txt] 查閱檔案，以及查閱檔案中鍵、經度、緯度和名稱列的名稱。
+   >[!DNL Zip Points.layer]檔案隨[!DNL Geography]描述檔提供，是識別[!DNL Zipcode.dim]檔案、[!DNL Sessions.metric]檔案、[!DNL Zip Points.txt]查閱檔案，以及查閱檔案中索引鍵、經度、緯度和名稱欄名稱的元素點層。
 
-## 元素點查閱檔案格式 {#section-0bc8c652c1bd40eb84078f2af71a5c06}
+## 元素點查找檔案格式{#section-0bc8c652c1bd40eb84078f2af71a5c06}
 
 元素點層查閱檔案至少必須包含下列三欄：
 
-* **[!DNL Key]欄：**此欄應包含常用的金鑰資料，這可讓「資料工作台」伺服器將查閱檔案中的資料連接至資料集中的資料。 該[!DNL key]欄必須是查閱檔案中的第一欄。 此列中的每一行都標識維的元素。
+* **[!DNL Key]column:** 此列應包含公用索引鍵資料，這可讓Data Workbench伺服器將查閱檔案中的資料連接至資料集中的資料。[!DNL key]欄必須是查閱檔案中的第一欄。 此列中的每一行都標識維的元素。
 
-* **[!DNL Longitude]欄：**此欄應包含欄中每個資料點的經[!DNL Key]度。
+* **[!DNL Longitude]column:** 此欄應包含欄中每個資料點的經 [!DNL Key] 度。
 
-* **[!DNL Latitude]欄：**此列應包含列中每個資料點的[!DNL Key]緯度。
+* **[!DNL Latitude]column:** 此列應包含列中每個資料點的 [!DNL Key] 緯度。
 
-* **[!DNL Name]column(Optional):**如果您想要指定每個資料點在地圖上顯示的名稱，您可以在查閱檔案中[!DNL Name]包含一欄。
+* **[!DNL Name]column(Optional):** 如果您想要指定每個資料點在地圖上顯示的名稱，您可以在查閱檔案 [!DNL Name] 中包含一欄。
 
-查閱檔案中 [!DNL Zip Points.txt] 的每一列都包含第一欄中的「郵遞區號」，後面接著經度、緯度和相關的城市名稱。
+[!DNL Zip Points.txt]查閱檔案中的每一列都包含第一欄中的「郵遞區號」，後面接著是經度、緯度和相關的城市名稱。
 
 ```
 tude, and associated city name.
@@ -52,9 +53,9 @@ ZIP_CODE LATITUDE LONGITUDE NAME
 ...
 ```
 
-## 元素點層檔案格式 {#section-52d7e92be8354d979af9e7a2210b76f2}
+## 元素點層檔案格式{#section-52d7e92be8354d979af9e7a2210b76f2}
 
-參照查閱檔案 [!DNL .layer] 的每個元素點層檔案都必須使用下列範本格式化：
+引用查找檔案的每個元素點層[!DNL .layer]檔案必須使用以下模板進行格式化：
 
 ```
 Layer = ElementPointLayer:
@@ -97,15 +98,15 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> 鍵列 </td> 
-   <td colname="col2"> <p>查閱檔案中包含常用索引鍵資料的欄名稱，可讓資料工作台伺服器將查閱檔案中的資料整合至資料集。 這必須是查閱檔案中的第一欄。 </p> <p>此列中的每一行都是維的元素。 此維必須在 <span class="filepath"> Transformation.cfg檔案中定義，或在</span><span class="wintitle"></span> Transformation Dataset中包含檔案並在此檔案的Dimension參數中指定。 有關轉換配置檔案的詳細資訊，請參 <i>閱Dataset Configuration Guide</i>。 </p> </td> 
+   <td colname="col2"> <p>查閱檔案中包含常用索引鍵資料的欄名稱，可讓Data Workbench伺服器將查閱檔案中的資料整合至資料集。 這必須是查閱檔案中的第一欄。 </p> <p>此列中的每一行都是維的元素。 此維度必須定義在<span class="filepath"> Transformation.cfg</span>檔案中，或<span class="wintitle">轉換資料集包含</span>檔案，並在此檔案的Dimension參數中指定。 有關轉換配置檔案的詳細資訊，請參閱<i>資料集配置指南</i>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 維度 </td> 
-   <td colname="col2">維的名稱（在轉換配置檔案中定義），包含與「鍵」列中的資料行對應的 <span class="wintitle"> 元素</span> 。 </td> 
+   <td colname="col2">維的名稱（定義在轉換配置檔案中），包含與<span class="wintitle">鍵</span>列中的資料行對應的元素。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 量度 </td> 
-   <td colname="col2"> 在「維度」參數中指定的維度上評估的度量名稱。 </td> 
+   <td colname="col2"> 在Dimension參數中指定的維度上評估的度量名稱。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 規模 </td> 
@@ -127,7 +128,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-檔案 [!DNL Zip Points.layer] 的格式如下：
+[!DNL Zip Points.layer]檔案的格式如下：
 
 ```
 Layer = ElementPointLayer:
@@ -140,4 +141,3 @@ Layer = ElementPointLayer:
   Dimension = ref: wdata/model/dim/Zipcode
   Metric = ref: wdata/model/metric/Sessions
 ```
-
