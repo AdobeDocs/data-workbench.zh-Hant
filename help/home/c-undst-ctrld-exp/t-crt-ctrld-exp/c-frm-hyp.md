@@ -2,16 +2,15 @@
 description: 假設是一個假設，就論據而言，這個假設是正確的，它提供了一種試探性的解釋，可以通過進一步的調查來檢驗。
 solution: Analytics,Analytics
 title: 形成假設
-topic: Data workbench
 uuid: 3973060a-f49e-44e1-aa49-25059cb33783
+exl-id: d7e77d85-4655-49c5-adeb-15402e48dd7b
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 3%
 
 ---
-
 
 # 形成假設{#forming-a-hypothesis}
 
@@ -30,4 +29,3 @@ ht-degree: 3%
 ![](assets/ControlPage.png)
 
 ![](assets/TestPage.png)
-
