@@ -1,14 +1,15 @@
 ---
 description: 新增量度或變更量度的步驟。
-solution: Analytics
 title: 新增和變更量度
-topic: Data workbench
 uuid: c0763e0e-081a-4f00-b655-359f5b790ead
+exl-id: b40ad2bc-410d-4c80-b9f3-bc7e7cc42407
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '127'
+ht-degree: 7%
 
 ---
-
 
 # 新增和變更量度{#add-and-change-a-metrics}
 
@@ -20,9 +21,8 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **若要新增量度**
 
-* 以滑鼠右鍵按一下元素或量度標籤，然後按一 **[!UICONTROL Add Metric]** 下> *&lt;**[!UICONTROL metric name]**>*。 量度會新增至您原本選取的量度下方。
+* 按一下右鍵某個元素或度量的標籤，然後按一下&#x200B;**[!UICONTROL Add Metric]** > ***[!UICONTROL metric name]**>*。 量度會新增至您原本選取的量度下方。
 
 **若要變更量度**
 
-* 以滑鼠右鍵按一下您要變更之量度的元素或標籤，然後按一下 **[!UICONTROL Change Metric]** > *&lt;**[!UICONTROL metric name]**>*。 新量度會取代原始量度。
-
+* 按一下右鍵要更改的度量的元素或標籤，然後按一下&#x200B;**[!UICONTROL Change Metric]** > ***[!UICONTROL metric name]***。 新量度會取代原始量度。
