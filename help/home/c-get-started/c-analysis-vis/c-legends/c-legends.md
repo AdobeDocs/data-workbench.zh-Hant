@@ -1,14 +1,15 @@
 ---
 description: 圖例提供有關工作區中顯示之視覺化的說明性詳細資訊，讓您更完整地探索視覺化中呈現的資料。
-solution: Analytics
 title: 圖例
-topic: Data workbench
 uuid: c2e7c43f-2e9d-41ac-bb18-08d00776e8b2
+exl-id: e1cb5cdc-27df-4f29-a840-0e2e5ca34a44
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '92'
+ht-degree: 2%
 
 ---
-
 
 # 圖例{#legends}
 
