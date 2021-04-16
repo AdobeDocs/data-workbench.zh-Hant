@@ -1,27 +1,28 @@
 ---
 description: 路徑瀏覽器可設定為搭配任何基本維度、群組維度、層級維度和量度的組合使用，這對您的應用程式和資料集而言都有意義。
-solution: Analytics
 title: 設定路徑瀏覽器
-topic: Data workbench
 uuid: 1ba3fb6e-b76f-428f-b6ec-077669c3b305
+exl-id: be6a68f7-e3e3-4207-a112-3a4fdd5c5f57
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 2%
 
 ---
-
 
 # 設定路徑瀏覽器{#configure-a-path-browser}
 
 路徑瀏覽器可設定為搭配任何基本維度、群組維度、層級維度和量度的組合使用，這對您的應用程式和資料集而言都有意義。
 
-在您設定路徑瀏覽器後，會在選單中與其他路徑瀏覽器一起 [!DNL Add Visualization] 列出。
+配置路徑瀏覽器後，它會與[!DNL Add Visualization]菜單中的其他路徑瀏覽器一起列出。
 
-1. 在中， [!DNL Profile Manager]按一下 **[!UICONTROL Menu]**，然後按一下 **[!UICONTROL Add Visualization]** 並 **[!UICONTROL Path Browser]**。
+1. 在[!DNL Profile Manager]中，按一下&#x200B;**[!UICONTROL Menu]** ，然後按一下&#x200B;**[!UICONTROL Add Visualization]**&#x200B;和&#x200B;**[!UICONTROL Path Browser]**。
 
-   至少有一 [!DNL *.vw] 個檔案駐留在路徑瀏覽器目錄中。
+   路徑瀏覽器目錄中至少存在一個[!DNL *.vw]檔案。
 
-1. 按一下右鍵所需檔案的複選標籤，然後按一下 **[!UICONTROL Make Local]**。
-1. 按一下右鍵列中檔案的複選標籤， [!DNL User] 然後按一下 **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**。
+1. 按一下右鍵所需檔案的複選標籤，然後按一下&#x200B;**[!UICONTROL Make Local]**。
+1. 按一下右鍵[!DNL User]列中檔案的複選標籤，然後按一下&#x200B;**[!UICONTROL Open]** > **[!UICONTROL in Notepad]**。
 1. 使用下列範例檔案和表格作為參考線編輯檔案的參數：
 
    ```
@@ -67,14 +68,14 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->如需路徑瀏覽器的基本維度、群組維度、層級維度和量度的詳細資訊，請參閱路徑瀏 [覽器](../../../home/c-get-started/c-analysis-vis/c-path-browsers/c-path-browsers.md#concept-f2e9fdafed6e49c2bd111ab425cd6e2b)。
+>如需路徑瀏覽器的基本維度、群組維度、層級維度和度量的詳細資訊，請參閱[路徑瀏覽器](../../../home/c-get-started/c-analysis-vis/c-path-browsers/c-path-browsers.md#concept-f2e9fdafed6e49c2bd111ab425cd6e2b)。
 
-1. 在記事本中，按 **[!UICONTROL File]** > **[!UICONTROL Save As]** 以根據群組維度(即群組維度名稱 **.vw)，以新名稱儲存檔案。
+1. 在記事本中，按一下&#x200B;**[!UICONTROL File]** > **[!UICONTROL Save As]**&#x200B;以基於組維的新名稱保存檔案，即&#x200B;*組維名*.vw。
 
    請務必將檔案儲存至「路徑瀏覽器」目錄。
 
    >[!NOTE]
    >
-   >要確保路徑瀏覽器保存為檔案，請在窗口 [!DNL *.vw] 中將「另存為類型」 [!DNL Save As] 設定為「所有檔案」。
+   >要確保路徑瀏覽器保存為[!DNL *.vw]檔案，請在[!DNL Save As]窗口中將「另存為類型」設定為「所有檔案」。
 
-1. （可選）要使更改可供工作配置檔案的所有用戶使用，請在列中按一下右鍵該檔案的複選標籤，然後按一下 [!DNL Profile Manager]> [!DNL User] &lt; **[!UICONTROL Save to]** > ***[!UICONTROL working profile name]***。
+1. （可選）要使工作配置檔案的所有用戶都能使用這些更改，請在[!DNL Profile Manager]中按一下右鍵[!DNL User]列中檔案的複選標籤，然後按一下&#x200B;**[!UICONTROL Save to]** > ***[!UICONTROL working profile name]***。
