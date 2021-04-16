@@ -1,24 +1,25 @@
 ---
 description: 「報表入口網站」提供搜尋功能，以根據資料夾的樹狀檢視、報表日期的樹狀檢視以及臨機搜尋來尋找報表。
-solution: Analytics
-title: 報表入口網站中的進階搜尋
-topic: Data workbench
+title: Report Portal 中的進階搜尋
 uuid: 3b5262fb-ea42-449f-8ef9-897806a310a8
+exl-id: 891d51ad-8477-4a1a-9fe5-97e1210f11d5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '314'
+ht-degree: 5%
 
 ---
 
-
-# 報表入口網站中的進階搜尋{#advanced-search-in-the-report-portal}
+# Report Portal 中的進階搜尋{#advanced-search-in-the-report-portal}
 
 「報表入口網站」提供搜尋功能，以根據資料夾的樹狀檢視、報表日期的樹狀檢視以及臨機搜尋來尋找報表。
 
-1. 按一下 **[!UICONTROL Search]** 報表入口網站左窗格中的標籤。
+1. 按一下報表入口網站左窗格中的&#x200B;**[!UICONTROL Search]**&#x200B;標籤。
 
    ![](assets/report_portal_search_button.png)
 
-   將會開啟新網頁，顯示 **[!UICONTROL Search]** 以選項為預 **[!UICONTROL Folder Tree]** 設檢視的頁面。
+   將會開啟一個新網頁，顯示&#x200B;**[!UICONTROL Search]**&#x200B;頁面，其中&#x200B;**[!UICONTROL Folder Tree]**&#x200B;選項為預設檢視。
 
    ![](assets/report_portal_search_headers.png)
 
@@ -34,7 +35,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
  <tbody> 
   <tr> 
    <td colname="col1"> <p>資料夾樹 </p> </td> 
-   <td colname="col2"> <p>根據報表資料夾的自訂階層來選取報表。 這些資料夾已定義並組織為報 <a href="../../home/c-rpt-oview/c-work-rpt-sets/c-work-rpt-sets.md#concept-a5f078668e1245e684cb2a778c8803d5"> 表集</a>。 </p> </td> 
+   <td colname="col2"> <p>根據報表資料夾的自訂階層來選取報表。 這些資料夾已定義並組織為<a href="../../home/c-rpt-oview/c-work-rpt-sets/c-work-rpt-sets.md#concept-a5f078668e1245e684cb2a778c8803d5">報表集</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>日期樹 </p> </td> 
@@ -54,8 +55,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> <p>顯示選定項 </p> </td> 
-   <td colname="col2">按一下以顯示在資料夾樹或日期樹視圖中選擇的任何報告。 報表入口網站將會在新視窗中開啟，並將每個報表顯示為。png檔案。 如果選取了多個報表，則可從頁面頂端的標籤中選取每個個別報表。 <p>按一下此 <span class="uicontrol"> 頁面上的</span> 「列印」按鈕，以列印選取的報表，或按一下「下載 <span class="uicontrol"></span> 」以本機儲存。 </p> </td> 
+   <td colname="col2">按一下以顯示在資料夾樹或日期樹視圖中選擇的任何報告。 報表入口網站將會在新視窗中開啟，並將每個報表顯示為。png檔案。 如果選取了多個報表，則可從頁面頂端的標籤中選取每個個別報表。 <p>按一下此頁面上的<span class="uicontrol">列印</span>按鈕，列印選取的報表，或按一下<span class="uicontrol">下載</span>本機儲存。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
