@@ -1,22 +1,23 @@
 ---
 description: 以滑鼠右鍵按一下視覺化中的量度或維度區域所存取的功能表，可讓您存取與該視覺化中的量度或維度相關的動作。
-solution: Analytics
-title: 度量和維度功能表
-topic: Data workbench
+title: 量度和維度功能表
 uuid: 0dfae2bd-6c33-4496-83ea-f7f6de960259
+exl-id: 59bed6c1-74b2-49e2-ac68-f22c8bed668a
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '554'
+ht-degree: 3%
 
 ---
 
-
-# 度量和維度功能表{#metric-and-dimension-menus}
+# 量度和維度功能表{#metric-and-dimension-menus}
 
 以滑鼠右鍵按一下視覺化中的量度或維度區域所存取的功能表，可讓您存取與該視覺化中的量度或維度相關的動作。
 
-如需將這些功能表選項與特定視覺化類型搭配使用的詳細資訊，請參閱分析視覺化中的適當 [視覺化區段](../../../home/c-get-started/c-analysis-vis/c-analysis-vis.md)。
+如需將這些功能表選項與特定視覺化類型搭配使用的詳細資訊，請參閱[分析視覺化](../../../home/c-get-started/c-analysis-vis/c-analysis-vis.md)中的適當視覺化區段。
 
-## 量度功能表 {#section-115db63a26f04b57ac954a69972c6291}
+## 量度功能表{#section-115db63a26f04b57ac954a69972c6291}
 
 您可以在視覺化中以滑鼠右鍵按一下任何與度量相關的區域，以存取度量功能表。
 
@@ -38,15 +39,15 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
   </tr> 
   <tr> 
    <td colname="col1"> <p>縮放至全部 </p> </td> 
-   <td colname="col2"> <p>返回圖形中所有資料的顯示。 請參 <a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530"> 閱放大視覺化</a>。 </p> </td> 
+   <td colname="col2"> <p>返回圖形中所有資料的顯示。 請參閱<a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530">放大視覺效果</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>縮放至選取範圍 </p> </td> 
-   <td colname="col2"> <p>放大折線圖中選取的資料子集。 請參 <a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530"> 閱放大視覺化</a>。 如需選取項目的詳細資訊，請參閱「在視覺 <a href="../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746"> 化中選取項目」</a>。 </p> </td> 
+   <td colname="col2"> <p>放大折線圖中選取的資料子集。 請參閱<a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530">放大視覺效果</a>。 有關選擇的詳細資訊，請參閱<a href="../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746">在視覺化中選擇</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>量度編輯器 </p> </td> 
-   <td colname="col2"> <p>可讓您編輯量度名稱欄位所識別之量度的定義。 請參閱 <a href="../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#section-db6d924cf4e14bcc8d57cfe1059fc797"> 編輯現有衍生量度</a>。 </p> </td> 
+   <td colname="col2"> <p>可讓您編輯量度名稱欄位所識別之量度的定義。 請參閱<a href="../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#section-db6d924cf4e14bcc8d57cfe1059fc797">編輯現有衍生量度</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>量度 </p> </td> 
@@ -65,11 +66,11 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
    <td colname="col2"> <p>從視覺化中移除選取的量度。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>配置 </p> </td> 
+   <td colname="col1"> <p>版面配置 </p> </td> 
    <td colname="col2"> <p>下列版面相關功能表選項的標題。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>新增維度 </p> </td> 
+   <td colname="col1"> <p>新增Dimension </p> </td> 
    <td colname="col2"> <p>新增另一個維度至視覺化。 </p> </td> 
   </tr> 
   <tr> 
@@ -79,7 +80,7 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
  </tbody> 
 </table>
 
-## 使用尺寸菜單 {#section-e09de0aa6b74459a957b627ff7d07979}
+## 使用維菜單{#section-e09de0aa6b74459a957b627ff7d07979}
 
 在視覺化中以滑鼠右鍵按一下任何與維度相關的區域，即可存取維度選單。
 
@@ -97,11 +98,11 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
  <tbody> 
   <tr> 
    <td colname="col1"> <p>新增 圖說 </p> </td> 
-   <td colname="col2"> <p>為選定元素添加註解，該註解將引起該元素的注意。 請參 <a href="../../../home/c-get-started/c-vis/c-call-wkspc.md#concept-212b09e763044d938987b4a9c658adc0"> 閱將註解新增至工作區</a>。 </p> </td> 
+   <td colname="col2"> <p>為選定元素添加註解，該註解將引起該元素的注意。 請參閱<a href="../../../home/c-get-started/c-vis/c-call-wkspc.md#concept-212b09e763044d938987b4a9c658adc0">將註解新增至工作區</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>重新命名元素 </p> </td> 
-   <td colname="col2"> <p>重新命名元素。 按一 <span class="uicontrol"> 下「回復</span> 」以返回原始名稱。 </p> </td> 
+   <td colname="col2"> <p>重新命名元素。 按一下<span class="uicontrol"> Revert</span>返回原始名稱。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><i>維名稱</i> </p> </td> 
@@ -129,26 +130,26 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
   </tr> 
   <tr> 
    <td colname="col1"> <p>系列圖例 </p> </td> 
-   <td colname="col2"> <p>顏色——將選定維中的元素編碼為系列。 請參 <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-srs-leg.md#concept-c48042a705524bc4b63cd6f24874cc12"> 閱使用系列圖例</a>。 </p> </td> 
+   <td colname="col2"> <p>顏色——將選定維中的元素編碼為系列。 請參閱<a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-srs-leg.md#concept-c48042a705524bc4b63cd6f24874cc12">使用系列圖例</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>新增視覺化 </p> </td> 
    <td colname="col2"> <p>新增使用所選維度的視覺化。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>保存維 </p> </td> 
+   <td colname="col1"> <p>儲存Dimension </p> </td> 
    <td colname="col2"> <p>從視覺化中儲存選取的維度。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>階層檢視 </p> </td> 
-   <td colname="col2"> <p>將目前的頁面視覺化變更為頁面階層視覺化，可依檔案名稱以階層方式組織網站中的頁面，並依字母順序排序。 請參 <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff"> 閱套用階層檢視</a>。 </p> </td> 
+   <td colname="col2"> <p>將目前的頁面視覺化變更為頁面階層視覺化，可依檔案名稱以階層方式組織網站中的頁面，並依字母順序排序。 請參閱<a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff">套用階層檢視</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>配置 </p> </td> 
+   <td colname="col1"> <p>版面配置 </p> </td> 
    <td colname="col2"> <p>下列版面相關功能表選項的標題。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>新增維度 </p> </td> 
+   <td colname="col1"> <p>新增Dimension </p> </td> 
    <td colname="col2"> <p>新增另一個維度至視覺化。 </p> </td> 
   </tr> 
   <tr> 
@@ -156,13 +157,12 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
    <td colname="col2"> <p>變更視覺化中的維度。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>移動維 </p> </td> 
+   <td colname="col1"> <p>移動Dimension </p> </td> 
    <td colname="col2"> <p>將選取的維度移至視覺化中的另一個軸。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>刪除維 </p> </td> 
+   <td colname="col1"> <p>移除Dimension </p> </td> 
    <td colname="col2"> <p>從視覺化中移除選取的維度。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
