@@ -1,14 +1,15 @@
 ---
 description: 鎖定／解除鎖定目前的視覺效果。
-solution: Analytics
 title: 鎖定和解鎖視覺效果
-topic: Data workbench
 uuid: 968f1a1d-8de7-4738-9a8d-db9179192478
+exl-id: bce8fc1e-9a9d-4fb2-ab43-08d2cf77e70f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 3%
 
 ---
-
 
 # 鎖定和解鎖視覺效果{#locking-and-unlocking-visualizations}
 
