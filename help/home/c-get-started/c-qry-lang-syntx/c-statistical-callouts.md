@@ -1,16 +1,17 @@
 ---
 description: 統計圖說會測量有意義的關係，以識別隱藏的機會和興趣變數，以便在受眾叢集和訪客回應評分中提供更進階的資料挖掘功能。
-solution: Analytics
-title: 統計圖說
-topic: Data workbench
+title: 統計圖說文字
 uuid: 04911ac4-bc3f-4813-800b-087d9668a782
+exl-id: d4ed540e-f837-4db9-a81e-b8a30c15f270
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 23%
 
 ---
 
-
-# 統計圖說{#statistical-callouts}
+# 統計圖說文字{#statistical-callouts}
 
 統計圖說會測量有意義的關係，以識別隱藏的機會和興趣變數，以便在受眾叢集和訪客回應評分中提供更進階的資料挖掘功能。
 
@@ -19,7 +20,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 若要新增統計圖說：
 
 1. 在表格中，以滑鼠右鍵按一下量度標題。
-1. 選 **[!UICONTROL Statistics]** 取，然後選取或清除每個必要設定的勾號。 「顯示註解」(Display Callout)中的所有內容都被選為預設設定。
+1. 選擇&#x200B;**[!UICONTROL Statistics]**，然後選擇或清除每個必需設定的複選標籤。 「顯示註解」(Display Callout)中的所有內容都被選為預設設定。
 
    ![](assets/statistical_callouts.png)
 
@@ -47,7 +48,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr>
   <tr>
    <td colname="col1"> 平均值 </td>
-   <td colname="col2"><p> 平均值是維度中元素量度值的算術平均值，以總和除以計數（總和／計數）計算。 </p></td>
+   <td colname="col2"><p> 平均值是Dimension中元素量度值的算術平均值，以總和除以計數（總和／計數）計算。 </p></td>
   </tr>
   <tr>
    <td colname="col1"> 標準差 </td>
@@ -63,4 +64,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr>
  </tbody>
 </table>
-
