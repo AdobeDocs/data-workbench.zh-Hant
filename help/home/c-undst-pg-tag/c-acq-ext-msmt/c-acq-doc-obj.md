@@ -1,16 +1,17 @@
 ---
 description: 使用JavaScript檔案物件模型，可使用其他指令碼方法來增加zig.js檔案的要求。
-solution: Analytics
-title: 獲取文檔對象
-topic: Data workbench
+title: 取得文件物件
 uuid: 7681c337-b147-4937-9d9c-0ff48d9bdd00
+exl-id: eae6609c-be86-44cf-a1a1-69ffb43231fa
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 5%
 
 ---
 
-
-# 獲取文檔對象{#acquiring-document-objects}
+# 取得文件物件{#acquiring-document-objects}
 
 使用JavaScript檔案物件模型，可使用其他指令碼方法來增加zig.js檔案的要求。
 
@@ -37,6 +38,6 @@ v["_1"] = metacontent;
 
 | 收集的資料 | 解釋 | 範例 |
 |---|---|---|
-| v_1= | 與METAVALUE查詢字串變數相關聯的值。 此值表示HTML文檔的META元素中的資料。 | v_1=本頁提供與感謝頁面順序相關的內容。 |
+| v_1= | 與METAVALUE查詢字串變數關聯的值。 此值表示HTML文檔的META元素中的資料。 | v_1=本頁提供與感謝頁面順序相關的內容。 |
 
 收集資料後，您可以設定資料工作台伺服器，以處理此測量資料，以便進行分析和報告。
