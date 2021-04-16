@@ -1,17 +1,15 @@
 ---
 description: 信賴圖例可協助您判斷您看到的數字是偶然發生的可能性，並瞭解資料中可能的偏差。
-solution: Analytics
 title: 信賴度圖例
-topic: Data workbench
 uuid: 2559ff7c-6060-4fee-b509-9ae0c3912016
+exl-id: 9aab169a-98b8-4e71-b74d-28e385c5c424
 translation-type: tm+mt
-source-git-commit: 98452ba81d71db65c75e3d07712eefa18c003f53
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 2%
 
 ---
-
 
 # 信賴度圖例{#confidence-legends}
 
@@ -35,7 +33,7 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>量度或公式 </p> </td> 
-   <td colname="col2"> <p>您要檢視信賴資訊的量度名稱或量度運算式。 您在工作區中所做的任何選擇都會反映在圖例中。 此範例顯示「轉換」度量的詳細資訊。 </p> <p>有關輸入表達式的語法規則的資訊，請參 <a href="../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f"> 閱查詢語法</a>。 </p> </td> 
+   <td colname="col2"> <p>您要檢視信賴資訊的量度名稱或量度運算式。 您在工作區中所做的任何選擇都會反映在圖例中。 此範例顯示「轉換」度量的詳細資訊。 </p> <p>有關輸入表達式的語法規則的資訊，請參見<a href="../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f">查詢語言語法</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>測量值 </p> </td> 
@@ -62,10 +60,10 @@ ht-degree: 2%
 >
 如果您需要更精確的數字，請咨詢統計專家。
 
-## 變更量度或公式 {#section-7f09ff84c3514f26b78d29294e1f03d9}
+## 變更量度或公式{#section-7f09ff84c3514f26b78d29294e1f03d9}
 
-* 在信賴圖例中，按一下欄位 **[!UICONTROL Metric or Formula]** 並輸入所要的量度或運算式。 如需運算式語法規則，請參 [閱查詢語言語法](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)。
+* 在信賴圖例中，按一下&#x200B;**[!UICONTROL Metric or Formula]**&#x200B;欄位，然後輸入所要的量度或運算式。 如需運算式語法規則，請參閱[查詢語言語法](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)。
 
 ## 匯出至 Microsoft Excel {#section-f36e2db7273740b7af278f8a2b79d564}
 
-有關導出窗口的資訊，請參 [閱導出窗口資料](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)。
+有關導出窗口的資訊，請參見[導出窗口資料](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)。
