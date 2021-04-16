@@ -1,24 +1,25 @@
 ---
 description: 使用「參考頁面標籤」以方便收集「連結點按」的步驟。
-solution: Analytics
 title: 追蹤連結點按次數
-topic: Data workbench
 uuid: e4c492d2-9c90-4ed7-b997-6c50bdf98f93
+exl-id: 0cb743e6-5c6e-4f80-bc77-83d1e706c92b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 3%
 
 ---
-
 
 # 追蹤連結點按次數{#tracking-link-clicks}
 
 使用「參考頁面標籤」以方便收集「連結點按」的步驟。
 
-透過部署，您可 [!DNL Reference Page Tag]以收集表示訪客瀏覽特定頁面時點按之連結（或href值）的測量資料。 通常，此系列不會涉及在HTML頁面中實施其他連結識別碼。
+透過[!DNL Reference Page Tag]的部署，可收集表示訪客瀏覽特定頁面時點按之連結（或href值）的測量資料。 通常，此系列不會涉及在HTML頁面中實施其他連結識別碼。
 
-若要透過使用來協助收集「連結點按」 [!DNL Reference Page Tag]，請完成下列步驟：
+若要透過使用[!DNL Reference Page Tag]來協助收集「連結點按次數」，請完成下列步驟：
 
-1. 將下列程式碼複製至名為的現有檔案 [!DNL zig.js]:
+1. 將下列程式碼複製至名為[!DNL zig.js]的現有檔案：
 
    ```
    //REFERENCE LINK AND FORM CLICK PAGE TAG 
@@ -77,12 +78,12 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    //END FORM CLICK CAPTURE PAGE TAG
    ```
 
-1. 建立或置入名為1像素乘1像素的影像檔， [!DNL zag2.gif] 並放入Web伺服器上的目錄。
-1. 修改變 [!DNL lc.src] 數，以參考您參考檔案所在之網站 [!DNL zag2.gif]的適當網域。
+1. 將名為[!DNL zag2.gif]的1像素乘1像素影像檔案建立或置入網頁伺服器上的目錄。
+1. 修改[!DNL lc.src]變數，以參考參考[!DNL zag2.gif]檔案所參考之網站的適當網域。
 
-1. 確保為和檔案建立適當的快取控 [!DNL zag.gif] 制標 [!DNL zig.js] 頭。
+1. 確保為[!DNL zag.gif]和[!DNL zig.js]檔案建立適當的快取控制標頭。
 
-1. 在您要收集連結點按值的HTML檔案中，必 [!DNL Reference Page Tag Execution Call] 須修改該檔案，以通知 [!DNL Page Tag Execution Script] 擷取該頁面的連結點按。 若要這麼做，請將vlc變數值變更為&quot;1&quot;，如下列程式碼範例中反白顯示：
+1. 在您要收集連結點按值的HTML檔案中，必須修改[!DNL Reference Page Tag Execution Call]，以通知[!DNL Page Tag Execution Script]擷取該頁面的連結點按。 若要這麼做，請將vlc變數值變更為&quot;1&quot;，如下列程式碼範例中反白顯示：
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG--> 
@@ -104,4 +105,3 @@ var v = {};
 | 收集的資料 | 解釋 | 範例 |
 |---|---|---|
 | v_ln= | 指示印象促銷活動的值 | v_ln=&quot;About%20Us&quot; |
-
