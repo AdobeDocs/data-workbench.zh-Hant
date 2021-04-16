@@ -1,16 +1,17 @@
 ---
 description: 數學轉換允許對日誌條目中的欄位使用算術運算。
-solution: Analytics
-title: 數學
-topic: Data workbench
+title: Math
 uuid: 9e1a5950-8fb2-48e9-b9a1-82c5165fba10
+exl-id: d8b9cacd-67d1-447c-94dd-7028aa371dfa
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '256'
+ht-degree: 6%
 
 ---
 
-
-# 數學{#math}
+# Math{#math}
 
 數學轉換允許對日誌條目中的欄位使用算術運算。
 
@@ -21,7 +22,7 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
   <tr> 
    <th colname="col1" class="entry"> 欄位 </th> 
    <th colname="col2" class="entry"> 說明 </th> 
-   <th colname="col3" class="entry"> 預設值 </th> 
+   <th colname="col3" class="entry"> 預設 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -31,7 +32,7 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 意見 </td> 
+   <td colname="col1"> 註解 </td> 
    <td colname="col2"> 選填。關於轉變的附註。 </td> 
    <td colname="col3"></td> 
   </tr> 
@@ -42,7 +43,7 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
   </tr> 
   <tr> 
    <td colname="col1"> 運算式 </td> 
-   <td colname="col2"> <p>描述要執行的計算的算術表達式。 </p> <p> 您可以使用下列任何操作和函式，也可以在表達式中合併欄位名： </p> <p> 操作 
+   <td colname="col2"> <p>描述要執行的計算的算術表達式。 </p> <p> 您可以使用下列任何操作和函式，也可以在表達式中合併欄位名： </p> <p> 運作 
      <ul id="ul_DB5915FADA0A41A3B11F1F48615F40A9">
       <li id="li_CA9EA97243F04760A81313C17EE057B3"> 加法 (+) </li>
       <li id="li_908A272EBA2340098C20F22AA8D9ED26"> 減法 (-) </li>
@@ -74,4 +75,4 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
 
 ![](assets/cfg_TransformationType_Math.png)
 
-有關該條件的信 [!DNL Not Empty] 息，請參 [閱條件](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)。
+有關[!DNL Not Empty]條件的資訊，請參見[條件](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)。
