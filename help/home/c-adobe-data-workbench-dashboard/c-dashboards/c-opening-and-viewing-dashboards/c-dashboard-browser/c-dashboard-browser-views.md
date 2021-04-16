@@ -1,14 +1,15 @@
 ---
 description: 說明「縮圖檢視」和「清單檢視」。
-solution: Analytics
 title: 控制面板瀏覽器檢視
-topic: Data workbench
 uuid: 8e5ef06a-6c5a-4792-a732-fe7574aed8ab
+exl-id: 94da6ee1-30ab-426f-9be3-fd56f172aadb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '419'
+ht-degree: 1%
 
 ---
-
 
 # 控制面板瀏覽器檢視{#dashboard-browser-views}
 
@@ -16,7 +17,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 在「控制面板瀏覽器」中，有兩個檢視可用來導覽控制面板：縮圖檢視和清單檢視。 「縮圖檢視」可在您瀏覽時提供控制面板的縮圖，而「清單檢視」則是可用控制面板的更詳細的表格式檢視。
 
-## 縮圖檢視 {#section-b522ce5e6e184ef9a0e1b9a42f7a9ae0}
+## 縮圖檢視{#section-b522ce5e6e184ef9a0e1b9a42f7a9ae0}
 
 「縮圖檢視」提供縮圖收藏館，其與您可存取的控制面板對應。 如果縮圖顯示預設圖示，請連絡您的管理員，以建立該控制面板的縮圖。 搜尋列左側的圖示可讓您在「縮圖」和「清單檢視」之間切換。
 
