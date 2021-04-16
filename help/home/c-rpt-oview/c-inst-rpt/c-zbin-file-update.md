@@ -1,16 +1,17 @@
 ---
 description: 對於所有語言，Report Server 6.0和更新版本都需要複製到「報表伺服器」根資料夾的「insight.zbin」檔案。
-solution: Analytics
-title: 使用語言檔案（.zbin檔案）更新報表伺服器
-topic: Data workbench
+title: 使用語言檔案 (.zbin 檔案) 更新報表伺服器
 uuid: 2ecf2afc-bb5f-4fc7-8fb8-a904fb7ed407
+exl-id: a76b7c01-83f0-4cf2-97a9-07d51cc75b3c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 9%
 
 ---
 
-
-# 使用語言檔案（.zbin檔案）更新報表伺服器{#update-report-server-with-a-language-file-zbin-file}
+# 使用語言檔案 (.zbin 檔案) 更新報表伺服器{#update-report-server-with-a-language-file-zbin-file}
 
 對於所有語言，Report Server 6.0和更新版本都需要複製到「報表伺服器」根資料夾的「insight.zbin」檔案。
 
@@ -44,16 +45,16 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    1. 導覽至ReportServer安裝資料夾。
    1. 鍵入以下命令以啟動服務：
 
-      * 英文版： [!DNL ReportServer.exe -RegServer -Locale -en-us]
-      * 中文： [!DNL ReportServer.exe -RegServer -Locale -zh-cn]
+      * 英文版：[!DNL ReportServer.exe -RegServer -Locale -en-us]
+      * 中文：[!DNL ReportServer.exe -RegServer -Locale -zh-cn]
 
 1. 要驗證ReportServer是否使用正確的參數運行：
 
    1. 開啟Windows Service Manager。
-   1. 按一下滑鼠右鍵 [!DNL Adobe Insight Report Server - Properties]。
+   1. 按一下右鍵[!DNL Adobe Insight Report Server - Properties]。
+
    執行檔的路徑將包含以下參數：
 
    ```
    ReportServer.exe -Service ReportServer -Locale -en-us
    ```
-
