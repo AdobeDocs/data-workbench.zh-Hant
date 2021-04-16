@@ -1,16 +1,17 @@
 ---
 description: 資源監視器向量包含記憶體預算監視器和查詢數監視器。
-solution: Analytics
-title: 查詢隊列資源監視器
-topic: Data workbench
+title: 查詢佇列資源監視器
 uuid: 6b516bed-7f9a-4821-869e-19e720f20313
+exl-id: 6d445a4d-a415-41ce-9d45-1bdd0e726edd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '399'
+ht-degree: 2%
 
 ---
 
-
-# 查詢隊列資源監視器{#query-queue-resource-monitors}
+# 查詢佇列資源監視器{#query-queue-resource-monitors}
 
 資源監視器向量包含記憶體預算監視器和查詢數監視器。
 
@@ -38,7 +39,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   <tr> 
    <td colname="col1"> <p>低閾值 </p> </td> 
    <td colname="col2"> <p>雙倍 </p> </td> 
-   <td colname="col3"> <p>記憶體使用的低臨界值（位元組）。 如果 <span class="wintitle"> 記憶體預算監視器值低於此值</span> ，則允許安排新的串流，並允許安排的串流增長。 例如，當使用者將視覺化新增至工作區時，叢集會增加。 </p> </td> 
+   <td colname="col3"> <p>記憶體使用的低臨界值（位元組）。 如果<span class="wintitle">記憶體預算監視器</span>值低於此值，則允許安排新的串流，並允許安排的串流增長。 例如，當使用者將視覺化新增至工作區時，叢集會增加。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>反應時間 </p> </td> 
@@ -58,8 +59,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   <tr> 
    <td colname="col1"> <p>低閾值 </p> </td> 
    <td colname="col2"> </td> 
-   <td colname="col3"> <p>記憶體使用的低臨界值（位元組）。 如果 <span class="wintitle"> 記憶體預算監視器</span> (Memory Budget Monitor)值低於此值，則可以計畫新的串流，並可以增加已計畫的串流。 </p> </td> 
+   <td colname="col3"> <p>記憶體使用的低臨界值（位元組）。 如果<span class="wintitle">記憶體預算監視器</span>值低於此值，則可以計畫新的串流，並且計畫的串流可以增長。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
