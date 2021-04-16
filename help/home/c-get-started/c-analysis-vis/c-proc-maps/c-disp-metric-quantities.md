@@ -1,14 +1,15 @@
 ---
 description: 2D處理地圖可顯示代表在地圖上節點之間或節點之間活動量的量度量。
-solution: Analytics
 title: 顯示量度數量
-topic: Data workbench
 uuid: ec336af1-ff5b-4c0a-86a5-8186d76cdf07
+exl-id: fbe40dfa-0597-4d78-8673-4e9b63581c47
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '161'
+ht-degree: 4%
 
 ---
-
 
 # 顯示量度數量{#display-a-metric-quantity}
 
@@ -26,8 +27,8 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **要選擇數量的顯示方式**
 
-1. 按一下右鍵節點，然後按一下 **[!UICONTROL Options]** > **[!UICONTROL Quantify Links]**。
-1. Click **[!UICONTROL Percentage]**, **[!UICONTROL Absolute Value]**, or **[!UICONTROL Off]**.
+1. 按一下右鍵節點，然後按一下&#x200B;**[!UICONTROL Options]** > **[!UICONTROL Quantify Links]**。
+1. 按一下&#x200B;**[!UICONTROL Percentage]**、**[!UICONTROL Absolute Value]**&#x200B;或&#x200B;**[!UICONTROL Off]**。
 
    ![](assets/mnu_2DProcessMap_quantifyLinks.png)
 
@@ -36,4 +37,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 ![](assets/vis_2DProcessMap_DisplayMetricQuantities_Movies.png)
 
 ![](assets/client-met.png)
-
