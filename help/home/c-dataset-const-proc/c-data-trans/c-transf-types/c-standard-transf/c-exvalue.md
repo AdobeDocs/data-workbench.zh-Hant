@@ -1,14 +1,15 @@
 ---
 description: 如果您使用Web資料，可使用ExtractValue轉換從網站資料的查詢字串、Cookie或類似編碼欄位擷取值。
-solution: Analytics
 title: ExtractValue
-topic: Data workbench
 uuid: 305827a2-04e6-421f-82cb-923d62b02e70
+exl-id: 5bafe64f-081a-49ec-997e-68e8f6915a71
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 3%
 
 ---
-
 
 # ExtractValue{#extractvalue}
 
@@ -21,7 +22,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   <tr> 
    <th colname="col1" class="entry"> 參數 </th> 
    <th colname="col2" class="entry"> 說明 </th> 
-   <th colname="col3" class="entry"> 預設值 </th> 
+   <th colname="col3" class="entry"> 預設 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -31,7 +32,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 意見 </td> 
+   <td colname="col1"> 註解 </td> 
    <td colname="col2"> 選填。關於轉變的附註。 </td> 
    <td colname="col3"></td> 
   </tr> 
@@ -58,9 +59,8 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
  </tbody> 
 </table>
 
-如果您想擷取搜尋片語，可以擷取整個片語，並視需要使用轉換將片語分割為搜尋 [!DNL Tokenize] 詞。 有關轉換的信 [!DNL Tokenize] 息，請參 [閱Tokenize](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-tokenize.md#concept-f460aa5df3a7476e971af29cf5d9b32c)。
+如果您想擷取搜尋片語，可以擷取整個片語，並視需要使用[!DNL Tokenize]轉換將片語分割為搜尋詞。 有關[!DNL Tokenize]轉換的資訊，請參見[ Tokenize](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-tokenize.md#concept-f460aa5df3a7476e971af29cf5d9b32c)。
 
-此範例會設 [!DNL ExtractValue] 定轉換，從cs(referrer-query)擷取x-v-search-querynames欄位的值，並將它們儲存在x-search-phrase欄位中。
+此範例會設定[!DNL ExtractValue]轉換，從cs(referrer-query)擷取x-v-search-querynames欄位的值，並將它們儲存在x-search-phrase欄位中。
 
 ![](assets/cfg_TransformationType_ExtractValue.png)
-
