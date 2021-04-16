@@ -1,14 +1,15 @@
 ---
 description: 感測器可讓您獲取Web請求資料（事件或日誌資料）以及擴展的測量資料。
-solution: Analytics
 title: 我可以取得哪些資料？
-topic: Data workbench
 uuid: 5ac864b8-4017-4d80-b491-7a5976225eb2
+exl-id: 97d87084-cac3-4a94-89e0-f01a66e20324
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '656'
+ht-degree: 2%
 
 ---
-
 
 # 我可以取得哪些資料？{#what-kind-of-data-can-i-acquire}
 
@@ -18,11 +19,11 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 說明下列主題：
 
-## Web請求資料 {#section-a28217e8a8c047eb9b1c0ca1f67c832f}
+## Web請求資料{#section-a28217e8a8c047eb9b1c0ca1f67c832f}
 
-[!DNL Sensor] 使Web請求資料（事件或日誌資料）能夠被自動獲取並傳輸到中央位置以便儲存和處理以供分析。 除非您特別選擇篩選某些類型的請求，而不收集這些請求類型的相關資料，否則 [!DNL Sensor] ，請擷取有關安裝該請求的Web伺服器的所有GET請求。
+[!DNL Sensor] 使Web請求資料（事件或日誌資料）能夠被自動獲取並傳輸到中央位置以便儲存和處理以供分析。除非您特別選擇篩選某些類型的請求而不收集這些請求類型的相關資料，否則[!DNL Sensor]會擷取有關安裝該請求的Web伺服器所提出之所有GET請求的資料。
 
-[!DNL Sensor] 將此資料獲取流程自動化，以處理伺服器上發出的所有GET請求，與其他獲取網站請求資料的方法相比，它具有顯著的業務和技術優勢。 這些優點包括：
+[!DNL Sensor] 針對伺服器上提出的所有GET要求自動執行此資料擷取程式，與其他擷取網站要求資料的方法相比，具有重大的商業和技術優勢。這些優點包括：
 
 * 分析和報告中不需要的要求，可以先過濾掉，然後您才會為其購買、運輸、儲存和處理產生成本。
 * 網站管理員不需要手動或透過指令碼批次旋轉記錄檔。
@@ -35,11 +36,11 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 * [!DNL Sensor] 時間戳記以100ns為單位記錄項目，允許新類型的分析功能。
 * [!DNL Sensor] 允許網站擁有者在初始實施後將資料（度量）新增至記錄項目，以供分析和報告時考慮。
 
-如需有關取得延伸測量資料的詳細資訊，請參 [閱取得基線測量](../../home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-bsln-msmts.md#concept-ed9b4b21693a4bafac75d60708b9b6fe)。
+有關獲取擴展測量資料的詳細資訊，請參閱[獲取基線測量](../../home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-bsln-msmts.md#concept-ed9b4b21693a4bafac75d60708b9b6fe)。
 
-## 延伸測量資料 {#section-b7f0285de49e432b9db8fda85fa735ba}
+## 延伸測量資料{#section-b7f0285de49e432b9db8fda85fa735ba}
 
-[!DNL Sensor] 也支援使用頁面標籤（或內嵌物件請求）來擷取您的網站伺服器在正常作業中無法使用的測量資料。 頁面標籤常用於測量：
+[!DNL Sensor] 也支援使用頁面標籤（或內嵌物件請求）來擷取您的網站伺服器在正常作業中無法使用的測量資料。頁面標籤常用於測量：
 
 * 動態網站中邏輯頁面的檢視。
 * 在協力廠商控制的網站上檢視內容或廣告。
@@ -47,8 +48,8 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 * 訪客瀏覽器的詳細資訊，包括度量，例如頁面載入時間、螢幕解析度、訪客填入的表單欄位等。
 * 瀏覽器未傳送至您網頁伺服器的其他資料。
 
-[!DNL Sensor] 收集在對正在運行的Web伺服器發出的任何GET請求中放置的任何資訊 [!DNL Sensor]此類請求可能來自任何類型的內嵌物件請求，其目的為僅測量某個瀏覽器在特定時間提出的請求，或將其他測量資料傳入資料收集串流中，以便處理該請求以供分析和報告之用。
+[!DNL Sensor] 收集在對執行中的Web伺服器提出的任何GET要求中所放置的任何資訊 [!DNL Sensor]此類請求可能來自任何類型的內嵌物件請求，其目的為僅測量某個瀏覽器在特定時間提出的請求，或將其他測量資料傳入資料收集串流中，以便處理該請求以供分析和報告之用。
 
-[!DNL Sensor] 提供用戶端與伺服器端資料擷取世界的最佳功能——它會取得您的伺服器端網站記錄資料，並收集內嵌物件要求所做的用戶端、協力廠商網站或快取破壞度量。 換言之，您 [!DNL Sensor] 可取得網站伺服器通常已知的要求資料（伺服器端測量），以及您透過使用頁面標籤（用戶端測量）收集的任何其他測量資料（用戶端測量），這些標籤會將其資料傳送至任何執行中的網站伺服器 [!DNL Sensor]。 此類Web伺服器可專用於收集用戶端測量，但不需要。
+[!DNL Sensor] 提供用戶端與伺服器端資料擷取世界的最佳功能——它會取得您的伺服器端網站記錄資料，並收集內嵌物件要求所做的用戶端、協力廠商網站或快取破壞度量。換言之，[!DNL Sensor]會取得您網站伺服器通常已知的請求資料（伺服器端測量），以及您透過使用頁面標籤（用戶端測量）收集的任何其他測量資料，這些標籤會將其資料傳送至執行[!DNL Sensor]的任何網站伺服器。 此類Web伺服器可專用於收集用戶端測量，但不需要。
 
-如需有關取得延伸測量資料的詳細資訊，請參 [閱取得延伸測量](../../home/c-undst-pg-tag/c-acq-ext-msmt/c-acq-ext-msmt.md#concept-d171a6d2bde843cdb65bcfe69c6a4944)。
+有關獲取擴展測量資料的詳細資訊，請參閱[獲取擴展測量](../../home/c-undst-pg-tag/c-acq-ext-msmt/c-acq-ext-msmt.md#concept-d171a6d2bde843cdb65bcfe69c6a4944)。
