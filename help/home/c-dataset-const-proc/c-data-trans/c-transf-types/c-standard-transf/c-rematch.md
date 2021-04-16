@@ -1,33 +1,34 @@
 ---
-description: REMatch轉換是一種模式匹配轉換，它使用規則運算式指定要在輸入中查找和捕獲的一個或多個模式。
-solution: Analytics
+description: REMatch轉換是一種模式匹配轉換，它使用規則運算式指定一個或多個模式以在輸入中查找和捕獲。
 title: REMatch
-topic: Data workbench
 uuid: 8ef80bfa-aea2-45a1-a7d9-38ad33043886
+exl-id: 571e6f1c-f557-49c3-9e7c-c31f06132ec7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 4%
 
 ---
-
 
 # REMatch{#rematch}
 
 REMatch轉換是一種模式匹配轉換，它使用規則運算式指定要在輸入中查找和捕獲的一個或多個模式。
 
-該轉換為規則運算式中每個捕獲子模式構造輸出欄位。 如果規則運算式與輸入欄位不匹配，則輸出為空，如果輸出欄位已存在，則值由空值替換。 如需使用規則運算式的簡要指南，請參閱規 [則運算式](../../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c)。
+該轉換為規則運算式中每個捕獲子模式構造輸出欄位。 如果規則運算式與輸入欄位不匹配，則輸出為空，如果輸出欄位已存在，則值由空值替換。 有關使用規則運算式的簡要指南，請參見[規則運算式](../../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c)。
 
 >[!NOTE]
 >
->轉換 [!DNL REMatch] 的運作方式類似於轉換( [!DNL RETransform] 請參閱 [RETransform](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-retransform.md#concept-23f80aa0bc204565b337e5c4931f6a74))，它使用規則運算式來擷取字串並將該字串儲存在單一輸出欄位中。
+>[!DNL REMatch]轉換的運作類似於[!DNL RETransform]轉換（請參閱[RETransform](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-retransform.md#concept-23f80aa0bc204565b337e5c4931f6a74)），它使用規則運算式來擷取字串並將該字串儲存在單一輸出欄位中。
 
-[!DNL REMatch] 解析字串比多個轉換或 [!DNL RETransform] 單一轉換後接 [!DNL RETransform] 著轉換更有效 [!DNL Flatten] 率。 請參閱 [平面化](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-flatten.md#concept-7acd351a6d2444bd960ca412ae3333ce)。
+[!DNL REMatch] 解析字串比多個轉換或 [!DNL RETransform] 單個轉換後 [!DNL RETransform] 再進行轉換更 [!DNL Flatten] 有效。請參閱[平面化](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-flatten.md#concept-7acd351a6d2444bd960ca412ae3333ce)。
 
 <table id="table_7077578512B249E986BC79AE770CBD9A"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> 參數 </th> 
    <th colname="col2" class="entry"> 說明 </th> 
-   <th colname="col3" class="entry"> 預設值 </th> 
+   <th colname="col3" class="entry"> 預設 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -38,11 +39,11 @@ REMatch轉換是一種模式匹配轉換，它使用規則運算式指定要在�
   </tr> 
   <tr> 
    <td colname="col1"> 區分大小寫 </td> 
-   <td colname="col2"> 是非。 指定匹配是否區分大小寫。 </td> 
+   <td colname="col2"> True 或 False. 指定匹配是否區分大小寫。 </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 意見 </td> 
+   <td colname="col1"> 註解 </td> 
    <td colname="col2"> 選填。關於轉變的附註。 </td> 
    <td colname="col3"></td> 
   </tr> 
@@ -73,7 +74,6 @@ REMatch轉換是一種模式匹配轉換，它使用規則運算式指定要在�
 >
 >[!DNL REMatch] 轉換可能非常緩慢，而且可能佔據大部分資料處理時間。
 
-在此範例中， [!DNL REMatch] 轉換會將YYYY-MM-DD格式的日期剖析為x-year、x-month和x-day欄位。 在2007-01-02日，x年、x月和x日的值分別為2007、01和02。
+在此範例中，[!DNL REMatch]轉換會將YYYY-MM-DD格式的日期剖析為x-year、x-month和x-day欄位。 在2007-01-02日，x年、x月和x日的值分別為2007、01和02。
 
 ![](assets/cfg_TransformationType_REMatch.png)
-
