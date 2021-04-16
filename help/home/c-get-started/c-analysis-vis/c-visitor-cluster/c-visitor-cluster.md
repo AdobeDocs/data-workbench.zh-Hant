@@ -1,14 +1,15 @@
 ---
 description: 訪客叢集可讓您運用客戶特性來動態分類訪客，並根據選取的資料輸入產生叢集，從而識別具有類似興趣和行為的群組，以用於客戶分析和定位。
-solution: Analytics
 title: 訪客叢集
-topic: Data workbench
 uuid: 0c16aaa0-1d86-43a6-a7e2-b43b3ea80dc5
+exl-id: 68c1845d-9c49-4ad9-adf3-c123d08cf758
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '495'
+ht-degree: 2%
 
 ---
-
 
 # 訪客叢集{#visitor-clustering}
 
@@ -16,7 +17,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **叢集程式**
 
-叢集程式需要您識別要用作輸入的量度和維度元素，並允許您選擇特定的目標群體來套用這些元素來建立指定的叢集。 當您執行叢集程式時，系統會使用度量和維度輸入來決定指定叢集數目的適當初始中心。 然後，這些中心被用作應用K-Means算法的起點。
+叢集程式需要您識別要用作輸入的量度和維度元素，並允許您選擇特定的目標群體來套用這些元素以建立指定的叢集。 當您執行叢集程式時，系統會使用度量和維度輸入來決定指定叢集數目的適當初始中心。 然後，這些中心被用作應用K-Means算法的起點。
 
 ![](assets/K_algorithm.png)
 
@@ -25,13 +26,13 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 * 每個K簇的平均值成為新的中心。
 * 算法在步驟2和3中重複，直到收斂。 這可能需要多次通過。
 
-功能 **[!UICONTROL Maximum Iterations]** 表中 **[!UICONTROL Options]** 的分析人員可指定由叢集演算法執行的最大迭代次數。 設定此選項可導致基於最大迭代上限的群集過程更快完成，而犧牲群集中心的精確收斂。
+**[!UICONTROL Options]**&#x200B;功能表中的&#x200B;**[!UICONTROL Maximum Iterations]**&#x200B;可讓分析人員指定叢集演算法要執行的最大迭代次數。 設定此選項可導致基於最大迭代上限的群集過程更快完成，而犧牲群集中心的精確收斂。
 
 >[!NOTE]
 >
->定義群集後，可以保存群集維，以便像其他維一樣使用。 它還可以載入到群集資源管理器中，以檢查群集中心的分離情況。
+>定義群集後，可以保存群集Dimension，以便像其他任何維一樣使用。 它還可以載入到群集資源管理器中，以檢查群集中心的分離情況。
 
-在「叢集產生器」中，您可以選取 **[!UICONTROL Options]** >以 **[!UICONTROL Algorithm]** 在定義叢集時選取演算法。 目前，有3種支援的演算法：
+在「群集生成器」中，可以選擇&#x200B;**[!UICONTROL Options]** > **[!UICONTROL Algorithm]**&#x200B;以在定義群集時選擇算法。 目前，有3種支援的演算法：
 
 * KMeans
 * Kmeans`++`
@@ -39,8 +40,8 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 執行叢集程式有2種方式：
 
-* 方法1 —— 在群集 **[!UICONTROL Go]** 視覺化視窗中按一下。
-* 方法2 —— 在群集 **[!UICONTROL Submit]** 可視化窗口中按一下，該窗口將群集作業直接發送到伺服器。 您可以透過「查詢的詳細狀態」選項來追蹤進度。
+* 方法1 —— 在群集可視化窗口中按一下&#x200B;**[!UICONTROL Go]**。
+* 方法2 —— 在群集可視化窗口中按一下&#x200B;**[!UICONTROL Submit]** ，該窗口將群集作業直接發送到伺服器。 您可以透過「查詢的詳細狀態」選項來追蹤進度。
 
 ![](assets/dwb_visitorclustering.png)
 
@@ -51,7 +52,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->在檔 [!DNL DPU.cfg] 案中，「查詢，記憶體限制」的值預設為500 MB。 運行多個群集作業時，必須增加此值。 例如，如果您並行運行5個群集作業，請將此值增加為1 GB。 如果不重新啟動伺服器，就無法取消群集作業。
+>在[!DNL DPU.cfg]檔案中，「查詢，記憶體限制」的值預設為500 MB。 運行多個群集作業時，必須增加此值。 例如，如果您並行運行5個群集作業，請將此值增加為1 GB。 如果不重新啟動伺服器，就無法取消群集作業。
 
 **Recommendations**
 
@@ -59,6 +60,6 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 | 叢集數 | 演算法 | 迭代 | 收斂閾值 | 標準化 |
 |---|---|---|---|---|
-| 6 | Kmeans | 25,50 | 1e-3 | 最小——最大 |
-| 6 | Kmeans | 25,50 | 1e-6 | 最小——最大 |
+| 6 | Kmeans | 2.55萬 | 1e-3 | 最小——最大 |
+| 6 | Kmeans | 2.55萬 | 1e-6 | 最小——最大 |
 | 6 | Kmeans++ | 50 | 1e-6 | 最小——最大 |
