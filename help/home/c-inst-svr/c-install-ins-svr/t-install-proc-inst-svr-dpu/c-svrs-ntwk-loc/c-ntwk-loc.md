@@ -1,16 +1,15 @@
 ---
 description: 從概念上講，地址檔案與聯網電腦上的ETC&bsol;HOSTS檔案有相同的用途。
-solution: Analytics
 title: 網路位置
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
+exl-id: 938217da-8935-4f2a-b5f8-9afc1dd489f3
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 2%
 
 ---
-
 
 # 網路位置{#network-locations}
 
@@ -20,7 +19,7 @@ ht-degree: 2%
 
 網路位置是地址定義的命名集合。 集合中的每個地址定義都將公用名稱與IP地址關聯。
 
-在地址檔案中，網路位置定義在稱為NetworkLocation的結構中。 以下示例中的NetworkLocation定義了名為&quot;MyCorporate Intranet&quot;的網路位置。 它包含將公用名稱映射 [!DNL VS01.myCompany.com] 到IP地址&quot;10.2.1.70&quot;的地址定義。
+在地址檔案中，網路位置定義在稱為NetworkLocation的結構中。 以下示例中的NetworkLocation定義了名為&quot;MyCorporate Intranet&quot;的網路位置。 它包含將公用名稱[!DNL VS01.myCompany.com]映射到IP地址&quot;10.2.1.70&quot;的地址定義。
 
 ```
 0 = NetworkLocation: 
