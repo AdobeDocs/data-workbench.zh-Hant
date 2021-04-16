@@ -1,27 +1,28 @@
 ---
 description: 流程地圖可設定為搭配任何對您的應用程式和資料集有意義的基本維度、群組維度、層級維度和量度組合使用。
-solution: Analytics
-title: 配置進程映射
-topic: Data workbench
+title: 設定程序圖
 uuid: e629191e-48b9-4b58-b6aa-3705ff7b387e
+exl-id: 0b37e942-4596-45cc-bc31-db147626f4eb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 2%
 
 ---
 
-
-# 配置進程映射{#configure-a-process-map}
+# 設定程序圖{#configure-a-process-map}
 
 流程地圖可設定為搭配任何對您的應用程式和資料集有意義的基本維度、群組維度、層級維度和量度組合使用。
 
-配置進程映射後，它將與中的其他進程映射一起列出 [!DNL Add Visualization menu]。
+配置進程映射後，它將與[!DNL Add Visualization menu]中的其他進程映射一起列出。
 
-1. 在中， [!DNL Profile Manager]按一下 **[!UICONTROL Menu]**，單 **[!UICONTROL Add Visualization]**&#x200B;擊，然後按一下要配置的流程映射類型（2D度量映射、2D流程映射或3D流程映射）。
+1. 在[!DNL Profile Manager]中，按一下&#x200B;**[!UICONTROL Menu]** ，按一下&#x200B;**[!UICONTROL Add Visualization]** ，然後按一下要配置的進程映射類型（2D度量映射、2D進程映射或3D進程映射）。
 
-   目錄中至 [!DNL *.vw] 少有一個檔案。
+   目錄中至少存在一個[!DNL *.vw]檔案。
 
-1. 按一下右鍵所需檔案的複選標籤，然後按一下 **[!UICONTROL Make Local]**。
-1. 按一下右鍵列中檔案的複選標籤， [!DNL User] 然後按一下 **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**。
+1. 按一下右鍵所需檔案的複選標籤，然後按一下&#x200B;**[!UICONTROL Make Local]**。
+1. 按一下右鍵[!DNL User]列中檔案的複選標籤，然後按一下&#x200B;**[!UICONTROL Open]** > **[!UICONTROL in Notepad]**。
 1. 使用下列範例檔案和表格作為參考線編輯檔案的參數：
 
    ```
@@ -80,14 +81,14 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->有關流程映射的基本維、組維、級別維和度量的詳細資訊，請參閱流程 [映射](../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md#concept-880aee224404429785b733a4e80d275e)。
+>有關流程映射的基本維、組維、級別維和度量的詳細資訊，請參閱[流程映射](../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md#concept-880aee224404429785b733a4e80d275e)。
 
-1. 在記事本中，按 **[!UICONTROL File]** > **[!UICONTROL Save As]** 以根據基本維度(即基本維度名稱 **.vw)，以新名稱儲存檔案。
+1. 在記事本中，按一下&#x200B;**[!UICONTROL File]** > **[!UICONTROL Save As]**&#x200B;以基於基本維的新名稱保存檔案，即&#x200B;*基本維名*.vw。
 
-   (如果您要設定2D量度地圖，則應根據量度地圖的量度名稱(即量度map **.vw的量度名稱)，以名稱儲存檔案。)請確保將檔案保存到相應的進程映射目錄。
+   (如果您要設定2D量度對應，應根據量度對應的量度名稱（即量度對應的&#x200B;*量度名稱*.vw），以名稱儲存檔案。) 請確保將檔案保存到相應的進程映射目錄。
 
    >[!NOTE]
    >
-   >要確保將流程映射保存為檔案，請在窗 [!DNL *.vw] 口中將「另存為類 [!DNL Save As] 型」設定為「所有檔案」。
+   >要確保將進程映射保存為[!DNL *.vw]檔案，請在[!DNL Save As]窗口中將「另存為類型」設定為「所有檔案」。
 
-1. （可選）要使更改可供工作配置檔案的所有用戶使用，請在列中按一下右鍵該檔案的複選標籤，然後按一下 [!DNL Profile Manager]> [!DNL User] &lt; **[!UICONTROL Save to]** > ***[!UICONTROL working profile name]***。
+1. （可選）要使工作配置檔案的所有用戶都能使用這些更改，請在[!DNL Profile Manager]中按一下右鍵[!DNL User]列中檔案的複選標籤，然後按一下&#x200B;**[!UICONTROL Save to]** > ***[!UICONTROL working profile name]***。
