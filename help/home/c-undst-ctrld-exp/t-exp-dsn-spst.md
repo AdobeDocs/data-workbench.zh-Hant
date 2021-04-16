@@ -2,28 +2,27 @@
 description: 此檔案不僅可當成工作表，還可當成您對實驗決策的記錄。
 solution: Analytics,Analytics
 title: 實驗設計試算表
-topic: Data workbench
 uuid: bcb11e39-9cbd-400c-af30-4b1c85e7f218
+exl-id: 554790ab-1182-4481-87b0-e768ea769ddf
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
 
 ---
 
-
 # 實驗設計試算表{#experiment-design-spreadsheet}
 
 此檔案不僅可當成工作表，還可當成您對實驗決策的記錄。
 
-如果您需要設計實驗的協助，可以使用Adobe提供的實驗設計試算表（預設命名為VS Controlled Experity Design.xls）。
+如果您需要設計實驗的協助，可以使用Adobe提供的實驗設計試算表（預設名為VS Controlled Experity Design.xls）。
 
 實驗設計試算表只有當相關量度定義為符合某些條件的訪客百分比時，才能提供有用的統計推理。 也就是說，只有在測試訪客型度量假設時，它才有用。
 
 **若要使用實驗設計檔案來設計您的實驗**
 
-1. 如果您擁有Web或應用程式伺服器的管理員存取權，請導覽至Web叢 [!DNL Sensor] 集中任何機器 [!DNL Sensor] 上的安裝資料夾。 如果您沒有管理員存取權，請連絡您的Adobe客戶經理以請求檔案。
+1. 如果您對Web或應用程式伺服器具有管理員訪問權限，請導航到Web群集中任何[!DNL Sensor]電腦上的[!DNL Sensor]安裝資料夾。 如果您沒有管理員存取權，請連絡您的Adobe帳戶管理員以請求檔案。
 1. 開啟VS Controlled Experite Design.xls檔案。 （您可視需要重新命名此檔案。）
 
    下頁的試算表範例，說明您在準備測試本指南中使用的範例假設時，要如何完成試算表。
@@ -58,7 +57,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td colname="col1"> 量度定義 </td> 
-   <td colname="col2"> <p>實驗所依據的量度定義。 </p> <p>格式：訪客[X]/訪客 </p> <p>範例： <span class="filepath"> 訪客[URI='conversionpage.asp']/訪客</span></p> </td> 
+   <td colname="col2"> <p>實驗所依據的量度定義。 </p> <p>格式：訪客[X]/訪客 </p> <p>範例：<span class="filepath">訪客[URI='conversionpage.asp']/訪客</span></p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 預期的開始時間 </td> 
@@ -136,11 +135,11 @@ ht-degree: 0%
 | 欄位 | 說明 |
 |---|---|
 | 應用程式選擇的預期量度 | 您預期網站的量度值標題。 |
-| 每個時段的預期訪客 | 此欄位通常由試算表自動計算。 這要視網站在大多數日子裡接收的新訪客比回訪訪客多的假設而定。 若非如此，則此儲存格的計算應覆寫為實驗期間預期的實際訪客數。 |
+| 每個時段的預期訪客 | 此欄位通常由試算表自動計算。 這要視網站在大多數日子裡接收的新訪客比回訪訪客多的假設而定。 若非如此，則此儲存格的計算應以實驗期間預期的實際訪客數來覆寫。 |
 | I類錯誤的計算Z分數 | 假陽性結果的Z分數。 這是一種中間統計計算。 |
 | 計算II類型錯誤的Z分數 | 假負結果的Z分數。 這是一種中間統計計算。 |
 | 需要的最低訪客數（測試+控制群組） | 符合您指定信賴等級、功率等級和Z分數的實驗所需最小訪客數，以「每時段預期訪客」欄位中值的百分比表示。 |
-| 需要的最低訪客數（測試+控制群組） | 符合您指定信賴等級、功率等級和Z分數之實驗所需的最少訪客數。 此值必須小於或等於「訪客」區段中「總計」（通常為100%）欄位中的值。 |
+| 需要的最低訪客數（測試+控制群組） | 符合您指定信賴等級、功率等級和Z分數之實驗所需的最小訪客數。 此值必須小於或等於「訪客」區段中「總計」（通常為100%）欄位中的值。 |
 | 最小實驗時間（天） | 執行實驗所需的最少天數，以符合您指定的信賴等級、功率等級和Z分數。 此計算量度所受的問題與「每個時段的預期訪客」欄位中討論的問題相同。 若網站有許多舊訪客，「最小實驗時間（天數）」欄位是「需要最少訪客」欄位中的值，所需的預期天數。 |
 | 訪客 | 訪客值的標題。 |
 | 測試群組 | 測試群組中所需的訪客數。 |
@@ -156,7 +155,7 @@ ht-degree: 0%
 
 ![](assets/Experiment_Design_Min_Visitors.png)
 
-並將它與欄中「總計」欄位中的值進行 [!DNL Visitors] 比較。
+並將它與[!DNL Visitors]欄的「總計」欄位中的值進行比較。
 
 ![](assets/Experiment_Design_Total_Visitors.png)
 
@@ -166,4 +165,4 @@ ht-degree: 0%
 
 如果您將天數維持不變，則只要訪客總數持續滿足或超過所需的最小值，您就可以提高信賴等級。
 
-1. 儲存記錄的檔案，然後使用檔案中的資訊，使用實驗設定試算表來設定實驗。 如需此試算表的詳細資訊，請參 [閱設定和部署實驗](../../home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-cnfg-dply-exp.md#concept-50f1de0242904698937bb72b3ea1b429)。
+1. 儲存記錄的檔案，然後使用檔案中的資訊，使用實驗設定試算表來設定實驗。 如需此試算表的詳細資訊，請參閱[設定和部署實驗](../../home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-cnfg-dply-exp.md#concept-50f1de0242904698937bb72b3ea1b429)。
