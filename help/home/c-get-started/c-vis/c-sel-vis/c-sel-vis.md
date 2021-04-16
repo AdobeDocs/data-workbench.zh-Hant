@@ -1,26 +1,27 @@
 ---
 description: 選取視覺化中的元素會動態篩選資料集。
-solution: Analytics
-title: 在視覺化中進行選擇
-topic: Data workbench
+title: 在視覺效果中進行選取
 uuid: 3900354f-826b-41e8-9bc2-e4856928bad5
+exl-id: bb1dd7e4-a9f8-48b5-a12d-433c601b455b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '279'
+ht-degree: 3%
 
 ---
 
-
-# 在視覺化中進行選擇{#make-selections-in-visualizations}
+# 在視覺效果中進行選取{#make-selections-in-visualizations}
 
 選取視覺化中的元素會動態篩選資料集。
 
 在視覺化中進行選取時，工作區中所有其他視覺化都會自動更新，以反映僅與您選取之元素相關聯的資料。
 
-以下工作區顯示選取影片「雞尾酒」的 *影片* 表格。 在工作區中，「分數」表格和量度圖例會自動篩選其針對所選元素的顯示(即，其顯示反映影片「雞尾酒」的 *資料*)。
+以下工作區顯示選取影片&#x200B;*Cocktail*&#x200B;的影片表格。 在工作區中，「分數」表格和量度圖例會自動篩選其針對所選元素的顯示（亦即，其顯示會反映影片&#x200B;*Cocktail*&#x200B;的資料）。
 
 ![](assets/wsp_selection_Basic.png)
 
-如上例所示，在進行選取時，視覺化周圍會出現光暈，而該視覺化暗淡的未選取元素會出現。 為方便與完整資料集比較，在長條圖中會出現稱為基準的窄白線，以標籤原始未篩選資料的形狀。 如需基準的詳細資訊，請參閱了 [解基準](../../../../home/c-get-started/c-vis/c-ustd-benchmks.md#concept-c7b0f4102e92458096f8c4765cbe2914)。
+如上例所示，在進行選取時，視覺化周圍會出現光暈，而該視覺化暗淡的未選取元素會出現。 為方便與完整資料集比較，在長條圖中會出現稱為基準的窄白線，以標籤原始未篩選資料的形狀。 有關基準的詳細資訊，請參閱[瞭解基準](../../../../home/c-get-started/c-vis/c-ustd-benchmks.md#concept-c7b0f4102e92458096f8c4765cbe2914)。
 
 **要進行選擇**
 
@@ -44,4 +45,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 |---|---|
 | 清除單一選取範圍 | Shift+按一下 |
 | 清除所有選取範圍（即重新選取所有元素） | 以滑鼠右鍵按一下視覺化中的任何值 |
-
