@@ -1,16 +1,17 @@
 ---
 description: 郵件XSL樣式表的代碼示例。
-solution: Analytics
-title: 範例郵件XSL樣式表
-topic: Data workbench
+title: 郵件 XSL 樣式表範例
 uuid: 846ddf22-e6da-4d37-ba50-d75f850b9a3f
+exl-id: 4b868da4-1a3b-454c-940c-8ffd9644c92a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '24'
+ht-degree: 41%
 
 ---
 
-
-# 範例郵件XSL樣式表{#sample-mail-xsl-style-sheet}
+# 郵件 XSL 樣式表範例{#sample-mail-xsl-style-sheet}
 
 郵件XSL樣式表的代碼示例。
 
@@ -29,4 +30,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 </xsl:template>
 </xsl:stylesheet>
 ```
-
