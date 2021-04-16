@@ -1,14 +1,15 @@
 ---
 description: 使用動態點建立元素點層時，緯度和經度資料會內嵌在維度的每個元素中。
-solution: Analytics
 title: 使用動態點定義元素點層
-topic: Data workbench
 uuid: f4b41969-329a-4c33-a8db-8d85597fa577
+exl-id: 5f6e264c-5804-47fa-a3ca-8608a3f7e9d3
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 5%
 
 ---
-
 
 # 使用動態點定義元素點層{#define-element-point-layers-using-dynamic-points}
 
@@ -16,19 +17,19 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 要使用動態點定義元素點層，必須建立或已具備以下功能：
 
-* 在檔案或檔案中定 [!DNL Transformation.cfg] 義的維 [!DNL transformation dataset include] 度，其中每個元素都包含字串「經緯度」或「經緯度名稱」。
+* 在[!DNL Transformation.cfg]檔案或[!DNL transformation dataset include]檔案中定義的維度，其中每個元素都包含字串&quot;latitude,lognitude,name&quot;。
 
-   如需建立維度的步驟，請參閱資料集 *設定指南*。
+   有關建立維的步驟，請參閱&#x200B;*資料集配置指南*。
 
 * 指定相關尺寸的層檔案。
 
-有關層檔案所需格式的詳細資訊，請參 [閱元素點層檔案格式](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elmt-pt-dyn-pts.md#section-0645fbc761c14bb986f3d6f02df407a0)。
+有關層檔案所需格式的詳細資訊，請參閱[元素點層檔案格式](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elmt-pt-dyn-pts.md#section-0645fbc761c14bb986f3d6f02df407a0)。
 
 >[!NOTE]
 >
->使用時 [!DNL Dynamic Points]，必須確保層檔案中指定的尺寸的基數是合理的。 如果資料集的每一列都有不同的經緯度，維度會快速填滿，而大部分的列會落入「小元素」元素中。 由於「小元素」元素沒有經緯度，因此不會出現在地球上。
+>使用[!DNL Dynamic Points]時，必須確保層檔案中指定的尺寸的基數是合理的。 如果資料集的每一列都有不同的經緯度，維度會快速填滿，而大部分的列會落入「小元素」元素中。 由於「小元素」元素沒有經緯度，因此不會出現在地球上。
 
-## 元素點層檔案格式 {#section-0645fbc761c14bb986f3d6f02df407a0}
+## 元素點層檔案格式{#section-0645fbc761c14bb986f3d6f02df407a0}
 
 每個使用動態點的元素點層檔案必須使用以下模板進行格式化：
 
@@ -60,7 +61,7 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> 量度 </td> 
-   <td colname="col2"> 在「維度」參數中指定的維度上評估的度量名稱。 </td> 
+   <td colname="col2"> 在Dimension參數中指定的維度上評估的度量名稱。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 動態點 </td> 
@@ -86,7 +87,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-檔案 [!DNL IP Coordinates.layer] 的格式如下：
+[!DNL IP Coordinates.layer]檔案的格式如下：
 
 ```
 Layer = ElementPointLayer:
@@ -94,4 +95,3 @@ Layer = ElementPointLayer:
   Metric = ref: wdata/model/metric/Visitors
   Dynamic Points = bool: true
 ```
-
