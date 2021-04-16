@@ -1,16 +1,15 @@
 ---
 description: 有關感測器記錄的基線事件資料記錄欄位的資訊。
-solution: Analytics
 title: 基線事件資料記錄欄位
 uuid: aa36d332-089c-4ae2-98e2-a93d2fa023b7
+exl-id: ad3d8806-863a-4871-a35b-6680163f00ac
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 3%
 
 ---
-
 
 # 基線事件資料記錄欄位{#baseline-event-data-record-fields}
 
@@ -42,7 +41,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> cs-method </td> 
-   <td colname="col2"> <p>HTTP請求的方法類型 </p> <p>範例：取得 </p> <p>參考：http://www.w3.org/TR/2000/NOTE-shoplogfileformat-20001115/#field_method </p> </td> 
+   <td colname="col2"> <p>HTTP請求的方法類型 </p> <p>範例：GET </p> <p>參考：http://www.w3.org/TR/2000/NOTE-shoplogfileformat-20001115/#field_method </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs-uri-query </td> 
@@ -78,9 +77,9 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> x-trackingid </td> 
-   <td colname="col2"> <p>由感測器設定、由用戶端向伺服器提供之永久性Cookie中所找到之唯一瀏覽器識別碼的64位元 <span class="wintitle"></span> 十六進位值。 </p> <p>範例：42FDF66DE610CF36 </p> </td> 
+   <td colname="col2"> <p>唯一瀏覽器標識符的64位十六進位值，該標識符在持久Cookie中由<span class="wintitle">感測器</span>設定，由客戶端向伺服器提供。 </p> <p>範例：42FDF66DE610CF36 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-可 [!DNL data workbench server] 從基準事件資料記錄欄位衍生許多變數。 For more information, see the *Dataset Configuration Guide*.
+[!DNL data workbench server]可從基準事件資料記錄欄位衍生出許多變數。 如需詳細資訊，請參閱&#x200B;*資料集設定指南*。
