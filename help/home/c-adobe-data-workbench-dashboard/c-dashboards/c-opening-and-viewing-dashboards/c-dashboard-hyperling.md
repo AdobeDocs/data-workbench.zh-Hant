@@ -1,14 +1,15 @@
 ---
 description: 控制面板的第三個開啟方式是使用控制面板的超連結。
-solution: Analytics
 title: 控制面板超連結
-topic: Data workbench
 uuid: da27204f-64be-4ea1-8bf9-ce907e334d86
+exl-id: 05890f46-bcb6-476a-9d3b-4bfeb95b20d4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '135'
+ht-degree: 2%
 
 ---
-
 
 # 控制面板超連結{#dashboard-hyperlink}
 
@@ -25,4 +26,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 >如果控制面板已不存在或您沒有存取控制面板的適當權限，系統會提示您訊息。
 
 ![](assets/db_hyperlink2.png)
-
