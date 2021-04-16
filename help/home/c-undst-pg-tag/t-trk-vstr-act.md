@@ -1,24 +1,25 @@
 ---
-description: 使用Flash架構的網站需要特別注意在多媒體內容中擷取訪客動作。
-solution: Analytics
-title: 追蹤Flash豐富式媒體內容中的訪客活動
-topic: Data workbench
+description: 使用Flash架構的網站需要特別注意在多媒體內容中執行的訪客動作的擷取。
+title: 追蹤 Flash 多媒體內容中的訪客活動
 uuid: fe2e75eb-0897-4f63-b582-b4f1fdce02a1
+exl-id: f51c7034-a7fd-4575-80e1-18fc6513ca2b
 translation-type: tm+mt
-source-git-commit: 48892b1b4fc9e9fdeacee8ca318025f43f2d0064
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '713'
+ht-degree: 5%
 
 ---
 
+# 追蹤 Flash 多媒體內容中的訪客活動{#tracking-visitor-activity-within-flash-rich-media-content}
 
-# 追蹤Flash豐富式媒體內容中的訪客活動{#tracking-visitor-activity-within-flash-rich-media-content}
+使用Flash架構的網站需要特別注意在多媒體內容中執行的訪客動作的擷取。
 
-使用Flash架構的網站需要特別注意在多媒體內容中擷取訪客動作。
+使用[!DNL Flash]ActionScript，您可以對現有的[!DNL Flash]影片進行簡單變更，以便追蹤所有訪客與影片的互動，例如按鈕點按或滑鼠動作。
 
-使用 [!DNL Flash] ActionScript，您可以對現有影片進行簡單變更， [!DNL Flash] 以便追蹤所有訪客與影片的互動，例如按鈕點按或滑鼠動作。
+若要協助[!DNL Flash]影片中的訪客活動追蹤，請遵循下列步驟：
 
-若要促進影片中的訪客活動 [!DNL Flash] 追蹤，請遵循下列步驟：
-
-1. 將下列ActionScript程式碼新增至影片。 此程式碼代表您要追蹤之影片中事件可 [!DNL Flash] 呼叫的函式。
+1. 將下列ActionScript程式碼新增至影片。 此程式碼代表您要追蹤之[!DNL Flash]影片中的事件可呼叫的函式。
 
    ```
    // FLASH TAG CODE BEGIN 
@@ -29,8 +30,8 @@ source-git-commit: 48892b1b4fc9e9fdeacee8ca318025f43f2d0064
    // FLASH TAG CODE END
    ```
 
-1. 建立名為的空白檔 [!DNL flashtag.txt] 案，並將檔案置於您的網頁伺服器上。
-1. 在步驟1的函式中，以檔案位置的完全限定或相對路徑取代\[[!DNL PATH_TO_WEB_SERVER]\]預留位置 [!DNL flashtag.txt] 。 例如：
+1. 建立名為[!DNL flashtag.txt]的空白檔案，並將該檔案置於您的Web伺服器上。
+1. 在步驟1中的函式中，將\[[!DNL PATH_TO_WEB_SERVER]\]預留位置取代為[!DNL flashtag.txt]檔案位置的完全限定或相對路徑。 例如：
 
    ```
    var FLASHTAGURI = http://www.mysite.com/flashtag/flashtag.txt”;
@@ -44,15 +45,15 @@ source-git-commit: 48892b1b4fc9e9fdeacee8ca318025f43f2d0064
 
    此範例說明on(release)事件的使用；但是，標籤()函式可能會透過您想要追蹤的任何事件來參考，例如on(press)、on(rollover)、on(roullop)或on(keypress)事件。
 
-   應以字串取代\[[!DNL PUT_PAGE_NAME_HERE]\]預留位置，該字串代表您所追蹤之頁面或事件的名稱。 您可以手動修改\[[!DNL PUT_PAGE_NAME_HERE]\]變數，或透過變數參考來表示應用程式中頁面或事件的唯一名 [!DNL Flash] 稱。 取代\[[!DNL PUT_PAGE_NAME_HERE]\]預留位置的值可能由簡單名稱組成，或可能結構化為表示與完整URI類似的階層結構。 例如：
+   應以字串取代\[[!DNL PUT_PAGE_NAME_HERE]\]預留位置，該字串代表您所追蹤之頁面或事件的名稱。 可以手動修改\[[!DNL PUT_PAGE_NAME_HERE]\]變數，也可以通過變數引用來表示[!DNL Flash]應用程式中頁面或事件的唯一名稱。 取代\[[!DNL PUT_PAGE_NAME_HERE]\]預留位置的值可能由簡單名稱組成，或可能被構造為表示與完整URI類似的分層結構。 例如：
 
    ```
    on(release) {tag(“/about_us/index.swf","[PUT_ADDITIONAL_VAR_HERE]");}
    ```
 
-   Adobe建議您在程式碼部署之前，先編譯頁面名稱和事件名稱的書面規格，以便協調業務需求和開發工作，並降低額外開發週期的可能性。
+   Adobe建議您在部署程式碼之前，先編譯頁面名稱和事件名稱的書面規格，以便協調業務需求和開發工作，並降低額外開發週期的可能性。
 
-1. 視需要，可收集其他變數，並與影片中的頁面或事件建立關 [!DNL Flash] 聯。 若要這麼做，請將\[[!DNL PUT_ADDITIONAL_VAR_HERE]\]預留位置取代為一組名稱=值配對，並以&amp;符號(&amp;)分隔。 例如：
+1. 視需要，可收集其他變數，並與[!DNL Flash]影片中的頁面或事件相關聯。 若要這麼做，請以一組名稱=值配對取代\[[!DNL PUT_ADDITIONAL_VAR_HERE]\]預留位置，並以&amp;符號(&amp;)分隔。 例如：
 
    ```
    on(release) {tag(“/about_us/index.swf"," var1=value1&var2=value2");}
@@ -60,20 +61,20 @@ source-git-commit: 48892b1b4fc9e9fdeacee8ca318025f43f2d0064
 
    可手動或透過變數參考修改變數，以表示要收集的其他屬性以及與頁面或事件相關聯。 如果沒有可收集的其他變數，請移除\[[!DNL PUT_ADDITIONAL_VAR_HERE]\]。
 
-   您在豐富式媒體內容中的訪 [!DNL Flash] 客追蹤設定現已完成。 調用事件時，將調用標 [!DNL (PAGENAME,VARIABLES)] 記函式，導致對以下檔案發出HTTP請求。 除了可能觸發的其他函式（如影片中所定義）外，還會呼叫此函 [!DNL Flash] 數：
+   您在[!DNL Flash]豐富式媒體內容中的訪客追蹤設定現在已完成。 調用事件時，將調用標籤[!DNL (PAGENAME,VARIABLES)]函式，導致對以下檔案發出HTTP請求。 除了可觸發的其他函式（如[!DNL Flash]影片中所定義）外，還將呼叫此函式：
 
    ```
    http://www.mysite.com/flashtag/flashtag.txt?PAGENAME=/about_us/index.swf&var1=value1&var2=value2
    ```
 
-由標籤ActionScript函式產生的 [!DNL Flash] HTTP要求會針對影片中的每個事件收集下列資 [!DNL Flash] 訊。 表格中的最後一列(W3C Name cs-uri-query)代表您函式呼叫中指定之其他變數所收集到的資訊。
+由[!DNL Flash]標籤ActionScript函式產生的HTTP請求會針對[!DNL Flash]影片中的每個事件收集下列資訊。 表格中的最後一列(W3C Name cs-uri-query)代表您函式呼叫中指定之其他變數所收集到的資訊。
 
 <table id="table_A7ED9D38F36B4405947B2F48EA94D3C4"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> W3C名稱 </th> 
    <th colname="col2" class="entry"> 收集的資料 </th> 
-   <th colname="col3" class="entry"> 說明 </th> 
+   <th colname="col3" class="entry"> 解釋 </th> 
    <th colname="col4" class="entry"> 範例 </th> 
   </tr> 
  </thead>
@@ -81,7 +82,7 @@ source-git-commit: 48892b1b4fc9e9fdeacee8ca318025f43f2d0064
   <tr> 
    <td colname="col1"> x-trackingid </td> 
    <td colname="col2"> 追蹤識別碼（獨特訪客） </td> 
-   <td colname="col3"> 訪客初次要求時的感測器從使用者瀏覽器中 <span class="wintitle"> Cookie </span> 讀取的識別碼 </td> 
+   <td colname="col3"> 訪客初次要求時，<span class="wintitle">感測器</span>從使用者瀏覽器中放置的Cookie讀取的識別碼 </td> 
    <td colname="col4"> v1st=3C94007B4E01F9C2 </td> 
   </tr> 
   <tr> 
@@ -122,7 +123,7 @@ source-git-commit: 48892b1b4fc9e9fdeacee8ca318025f43f2d0064
   </tr> 
   <tr> 
    <td colname="col1"> cs(referrer) </td> 
-   <td colname="col2"> 反向連結URL </td> 
+   <td colname="col2"> 反向連結 URL </td> 
    <td colname="col3"> 用戶端傳送的HTTP反向連結欄位內容 </td> 
    <td colname="col4"></td> 
   </tr> 
@@ -136,7 +137,7 @@ source-git-commit: 48892b1b4fc9e9fdeacee8ca318025f43f2d0064
    <td colname="col1"> cs(cookie) </td> 
    <td colname="col2"> 來自網域的用戶端Cookie </td> 
    <td colname="col3"> 網站所有使用者Cookie的內容 </td> 
-   <td colname="col4"> <p>KL_TC1 1038058778312 </p> <p>KL972x1038058778312282052 </p> <p>KL_PVKL972 0 </p> </td> 
+   <td colname="col4"> <p>KL_TC1 1038058778312 </p> <p>KL972x103805878312282052 </p> <p>KL_PVKL972 0 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs-uri-query </td> 
@@ -146,4 +147,3 @@ source-git-commit: 48892b1b4fc9e9fdeacee8ca318025f43f2d0064
   </tr> 
  </tbody> 
 </table>
-
