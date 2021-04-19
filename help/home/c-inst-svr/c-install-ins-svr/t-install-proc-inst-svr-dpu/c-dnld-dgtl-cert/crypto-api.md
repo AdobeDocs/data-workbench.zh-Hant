@@ -2,14 +2,14 @@
 description: Windows 憑證存放區可讓您將用戶端的憑證和私密金鑰存放在 Windows 憑證存放區中，以便與伺服器進行 SSL 通訊。
 title: Windows 憑證存放區
 uuid: a8021295-375a-460b-8686-acf3bc43cd17
+exl-id: 8613a941-6213-4bfa-9c35-dccc2acb6c17
 translation-type: ht
-source-git-commit: a766b64ef809e2223fed869d8d63b75f270a3d39
+source-git-commit: 233b04c65a45d3f92b8670bc244b907dc198b51d
 workflow-type: ht
 source-wordcount: '1000'
 ht-degree: 100%
 
 ---
-
 
 # Windows 憑證存放區{#windows-certificate-store}
 
