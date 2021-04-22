@@ -3,9 +3,9 @@ description: 數位憑證的一般資訊，以及下載和安裝數位憑證的�
 title: 下載和安裝數位憑證
 uuid: ac484e96-21dc-4643-ae74-01ac957e30ee
 exl-id: 8aae9b63-7df0-4725-9833-711246bbe746
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '916'
 ht-degree: 100%
 
