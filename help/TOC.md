@@ -6,9 +6,9 @@ feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Data Workbench 說明
 user-guide-description: 了解 Data Workbench 的多通道功能。包含 Data Workbench 用戶端、安裝、資料集設定指南和更多內容。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3495'
 ht-degree: 100%
 
