@@ -1,14 +1,14 @@
 ---
-description: Data Workbench檔案
+description: Data Workbench 文件
 title: Data Workbench 說明
-feature: Reports & Analytics Basics
+feature: Reports and analytics 基本需知
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
 exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
 translation-type: tm+mt
 source-git-commit: 3223733866e82b4ce439ee55fe96fed89a02c5c4
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
