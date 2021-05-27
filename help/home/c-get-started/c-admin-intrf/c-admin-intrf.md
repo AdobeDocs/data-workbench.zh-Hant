@@ -1,9 +1,8 @@
 ---
-description: 有關管理介面的資訊，可用來管理和監控您的Data Workbench實作。 另外，還提供了有關開啟管理介面的資訊，以及有關其他幾個介面的資訊。
+description: 管理和監控Data Workbench實作的可用管理介面的相關資訊。 還有關於開啟管理介面的資訊，以及關於其他幾個介面的資訊。
 title: 管理介面
 uuid: bd587f01-7edc-44e8-b4d4-f74f94f5d60f
 exl-id: 109e30da-9ccb-4349-865a-dff9c05fe37a
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '90'
@@ -13,7 +12,7 @@ ht-degree: 23%
 
 # 管理介面{#administrative-interfaces}
 
-有關管理介面的資訊，可用來管理和監控您的Data Workbench實作。 另外，還提供了有關開啟管理介面的資訊，以及有關其他幾個介面的資訊。
+管理和監控Data Workbench實作的可用管理介面的相關資訊。 還有關於開啟管理介面的資訊，以及關於其他幾個介面的資訊。
 
 * [資料集結構介面](c-dtst-sch-intrf.md)
 * [查詢狀態圖例](c-query-stat-lgnd.md)
