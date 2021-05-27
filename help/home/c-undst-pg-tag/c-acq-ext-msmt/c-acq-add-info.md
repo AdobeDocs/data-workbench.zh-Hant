@@ -1,9 +1,8 @@
 ---
-description: 查詢字串變數可新增至JavaScript請求，以在提出請求時收集其他測量值。
+description: 查詢字串變數可新增至JavaScript要求，以在提出要求時收集其他測量。
 title: 取得其他資訊
 uuid: 0a8075e9-4986-42c4-b505-3985b433cf8e
 exl-id: ad4f5e08-b7b7-4de3-b0c2-71440facb2d1
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '173'
@@ -13,11 +12,11 @@ ht-degree: 4%
 
 # 取得其他資訊{#acquiring-additional-information}
 
-查詢字串變數可新增至JavaScript請求，以在提出請求時收集其他測量值。
+查詢字串變數可新增至JavaScript要求，以在提出要求時收集其他測量。
 
-這些變數可以手動新增，或是透過頁面本身的指令碼新增。
+這些變數可以手動新增，或由頁面本身的指令碼新增。
 
-例如，可通過指令碼將可從頁面獲取的附加資訊添加到嵌入式對象中：
+可通過指令碼將可以從頁面獲取的附加資訊添加到嵌入對象，例如使用以下代碼：
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG--> 
@@ -37,7 +36,7 @@ v["_2"] = "visa";
 <!-- END REFERENCE PAGE TAG-->
 ```
 
-在此範例中，v_1和v_2的指令碼變數可從網頁內的其他函式衍生。 變數已插入為範例。 除了每次請求所取得的基準測量值外，以下延伸測量值也會隨上述URL請求而取得：
+在此範例中，v_1和v_2的指令碼變數可從網頁內的其他函式衍生。 變數已插入為範例。 除了每次請求獲得的基線測量資料外，還將根據上述URL的請求獲得以下擴展測量資料：
 
 | 收集的資料 | 解釋 | 範例 |
 |---|---|---|
