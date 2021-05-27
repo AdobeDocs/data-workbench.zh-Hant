@@ -1,9 +1,8 @@
 ---
-description: XSL樣式表的代碼示例。
+description: XSL樣式表的程式碼範例。
 title: XSL 樣式表範例
 uuid: cac5c5ad-b0ec-45d8-901d-e39ce1f6d61a
 exl-id: 688b0ce5-999b-4cfc-9228-146450132aee
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '20'
@@ -13,7 +12,7 @@ ht-degree: 40%
 
 # XSL 樣式表範例{#sample-xsl-style-sheet}
 
-XSL樣式表的代碼示例。
+XSL樣式表的程式碼範例。
 
 ```
 <?xml version="1.0" encoding="ISO-8859-1"?>
