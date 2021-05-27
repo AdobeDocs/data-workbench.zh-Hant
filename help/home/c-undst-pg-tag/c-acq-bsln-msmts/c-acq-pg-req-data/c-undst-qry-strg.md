@@ -1,9 +1,8 @@
 ---
-description: 由於HTTP的無狀態性質，網站應用程式和網站開發人員通常會使用查詢字串(cs-uri-query)來將資訊從頁面傳遞至頁面。
+description: 由於HTTP的無狀態性，網站應用程式和網站開發人員通常會使用查詢字串(cs-uri-query)來傳遞頁面間的資訊。
 title: 瞭解查詢字串
 uuid: 7403277d-fbce-4e98-bd42-894142e38d0d
 exl-id: b5281e5f-3eb7-4d6a-a7b3-9958cb430621
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '341'
@@ -13,24 +12,24 @@ ht-degree: 2%
 
 # 瞭解查詢字串{#understanding-the-query-string}
 
-由於HTTP的無狀態性質，網站應用程式和網站開發人員通常會使用查詢字串(cs-uri-query)來將資訊從頁面傳遞至頁面。
+由於HTTP的無狀態性，網站應用程式和網站開發人員通常會使用查詢字串(cs-uri-query)來傳遞頁面間的資訊。
 
-在許多情況下，當查詢字串由Web伺服器上的[!DNL Sensor]取得時，可以在查詢字串中傳遞資訊。 [!DNL Site]可使用此類資訊來說明網站的真實結構、訪客的瀏覽路徑，以及其他資訊。
+在許多情況下，當資訊由Web伺服器上的[!DNL Sensor]獲取時，資訊可能傳遞到查詢字串中。 [!DNL Site]可使用此類資訊來說明網站的真正結構、訪客通過此結構的路徑，以及其他資訊。
 
-在某些動態網站中，查詢字串中的name=value配對（變數）對於判斷訪客要求的實際頁面很重要。 在這種情況下，URL的結構可能是：
+在某些動態網站中，查詢字串中的名稱=值配對（變數）對於判斷訪客所請求的實際頁面非常重要。 在這種情況下，URL可以以下列或類似的方式結構：
 
 ```
 http://www.myserver.com/pageserved.asp?PAGENAME=HOME
 ```
 
-在此範例中，PAGENAME實際上是指示該URL的請求者將提供哪個頁面。 許多網站記錄檔分析工具和服務會限制網站營運商根據網站URL的查詢字串中出現的查詢字串變數，定義其網站中頁面的能力。 資料工作台伺服器和資料工作台可以配置為使用這樣的查詢名稱來定義唯一頁面。 這很重要，因為許多系統會將下列URL解譯為相同的頁面，但[!DNL Site]則否。
+在此範例中，PAGENAME實際上是向此URL的請求者提供哪個頁面的指標。 許多網站記錄檔分析工具和服務會限制網站運算子根據網站URL的查詢字串中發生的查詢字串變數，定義其網站中頁面的能力。 Data Workbench伺服器與Data Workbench可設定為使用此類查詢名稱來定義唯一頁面。 這很重要，因為許多系統會將下列URL解譯為相同的頁面，但[!DNL Site]則否。
 
 ```
 http://www.myserver.com/pageserved.asp?PAGENAME=HOME
 http://www.myserver.com/pageserved.asp?PAGENAME=HOME2
 ```
 
-同樣地，網站開發人員和應用程式通常會在網站的URL中新增許多查詢字串變數，這些變數與識別所請求的實際頁面無關。 範例如下：
+同樣地，網站開發人員和應用程式通常會在網站的URL中新增許多查詢字串變數，這些變數與識別要求的實際頁面無關。 範例如下所示：
 
 ```
 http://www.myserver.com/pageserved.asp?PAGENAME=HOME&CAMPAIGN=10001
@@ -38,7 +37,7 @@ http://www.myserver.com/pageserved.asp?PAGENAME=HOME&CAMPAIGN=10002
 http://www.myserver.com/pageserved.asp?PAGENAME=HOME&CAMPAIGN=10003
 ```
 
-在此範例中，查詢字串變數CAMPAIGN=已新增至URL。 此CAMPAIGN變數可用來指出哪個行銷促銷活動導致訪客選取此URL。 [!DNL Site] 可設定為使用此CAMPAIGN資訊，但將其與訪客檢視之頁面的定義分開，如此，在您的頁面清單中，您只會看到下列內容：
+在此範例中，查詢字串變數CAMPAIGN=已新增至URL。 此促銷活動變數用來指出哪個促銷活動導致訪客選取此URL。 [!DNL Site] 可設定為使用此CAMPAIGN資訊，但可將其與訪客檢視之頁面的定義分開，這樣您就能在頁面清單中看到下列內容，以便用於報告和分析用途：
 
 ```
 http://www.myserver.com/pageserved.asp?PAGENAME=HOME
