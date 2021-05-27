@@ -1,9 +1,8 @@
 ---
-description: 使用JavaScript檔案物件模型，可使用其他指令碼方法來增加zig.js檔案的要求。
+description: 使用JavaScript檔案物件模型時，可使用其他指令碼方法來增加zig.js檔案的要求。
 title: 取得文件物件
 uuid: 7681c337-b147-4937-9d9c-0ff48d9bdd00
 exl-id: eae6609c-be86-44cf-a1a1-69ffb43231fa
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '160'
@@ -13,9 +12,9 @@ ht-degree: 5%
 
 # 取得文件物件{#acquiring-document-objects}
 
-使用JavaScript檔案物件模型，可使用其他指令碼方法來增加zig.js檔案的要求。
+使用JavaScript檔案物件模型時，可使用其他指令碼方法來增加zig.js檔案的要求。
 
-例如META標籤值、DIV標籤的ID值等資訊，可由名稱參考，並收集為變數以用於分析。 例如，若要動態擷取HTML檔案的META元素中包含的資訊，您可使用下列JavaScript語法：
+諸如META標籤的值、DIV標籤的ID值等資訊可由名稱參照，並收集為變數以用於分析。 例如，若要動態擷取HTML檔案的META元素內包含的資訊，您可以使用下列JavaScript語法：
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG--> 
@@ -38,6 +37,6 @@ v["_1"] = metacontent;
 
 | 收集的資料 | 解釋 | 範例 |
 |---|---|---|
-| v_1= | 與METAVALUE查詢字串變數關聯的值。 此值表示HTML文檔的META元素中的資料。 | v_1=本頁提供與感謝頁面順序相關的內容。 |
+| v_1= | 與METAVALUE查詢字串變數關聯的值。 此值表示HTML文檔的META元素內的資料。 | v_1=此頁面提供與感謝訂購頁面相關的內容。 |
 
-收集資料後，您可以設定資料工作台伺服器，以處理此測量資料，以便進行分析和報告。
+收集資料後，您可以設定Data Workbench伺服器以處理此測量資料，以便進行分析和製作報表。
