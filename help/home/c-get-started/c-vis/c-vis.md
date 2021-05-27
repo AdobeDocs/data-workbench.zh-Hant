@@ -1,9 +1,8 @@
 ---
-description: 概述使用視覺化時需要瞭解的概念和功能。
+description: 使用視覺效果時，您需要了解的概念和功能概述。
 title: 視覺效果
 uuid: 34ddc55f-a037-45ec-b636-d05b1806442f
 exl-id: 2d600c4b-2923-4a85-8a8b-02771b7dc067
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '180'
@@ -13,17 +12,17 @@ ht-degree: 1%
 
 # 視覺效果{#visualizations}
 
-概述使用視覺化時需要瞭解的概念和功能。
+使用視覺效果時，您需要了解的概念和功能概述。
 
 [開啟](https://docs.adobe.com/content/help/en/data-workbench/using/client/visualizations/c-open-vis.html)
-[視覺化](https://docs.adobe.com/content/help/en/data-workbench/using/client/visualizations/c-qk-ref.html)
-[快速參考](https://docs.adobe.com/content/help/en/data-workbench/using/client/visualizations/make-selections/c-sel-vis.html)
+[視覺效果](https://docs.adobe.com/content/help/en/data-workbench/using/client/visualizations/c-qk-ref.html)
+[快速參考進行選](https://docs.adobe.com/content/help/en/data-workbench/using/client/visualizations/make-selections/c-sel-vis.html)
 [](https://docs.adobe.com/content/help/en/data-workbench/using/client/visualizations/c-ustd-benchmks.html)
-[Make ](https://docs.adobe.com/content/help/en/data-workbench/using/client/visualizations/c-met-dim-menus.html)
+[取基準量度和維度功能表](https://docs.adobe.com/content/help/en/data-workbench/using/client/visualizations/c-met-dim-menus.html)
 [](https://docs.adobe.com/content/help/en/data-workbench/using/client/visualizations/subsets/c-wk-subsets.html)
-[BenchmarksMetric維選單Zoom在視覺化中放大或縮小將註解加入](https://docs.adobe.com/content/help/en/data-workbench/using/client/visualizations/c-zoom-vis.html)
-[Annoting視覺化](https://docs.adobe.com/content/help/en/data-workbench/using/client/visualizations/c-call-wkspc.html)
-[](https://docs.adobe.com/content/help/en/data-workbench/using/client/visualizations/c-present-layer.html)
-[](https://docs.adobe.com/content/help/en/data-workbench/using/client/visualizations/c-bookmark-about.html)
+[子集放大或縮小視覺效果新增圖說文字至](https://docs.adobe.com/content/help/en/data-workbench/using/client/visualizations/c-zoom-vis.html)
+[工作區注](https://docs.adobe.com/content/help/en/data-workbench/using/client/visualizations/c-call-wkspc.html)
+[解視覺效果新增](https://docs.adobe.com/content/help/en/data-workbench/using/client/visualizations/c-present-layer.html)
+[書籤量度維度](https://docs.adobe.com/content/help/en/data-workbench/using/client/visualizations/c-bookmark-about.html)
 [](https://docs.adobe.com/content/help/en/data-workbench/using/client/visualizations/dwb-create-metricdim.html)
-中新增書籤Metric DimDim精靈選擇Demin Metric Metric和The Metric Selections工作區
+精靈編輯量度維度
