@@ -6,9 +6,8 @@ feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Data Workbench 說明
 user-guide-description: 了解 Data Workbench 的多通道功能。包含 Data Workbench 用戶端、安裝、資料集設定指南和更多內容。
-translation-type: ht
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3495'
 ht-degree: 100%
 
@@ -408,11 +407,11 @@ ht-degree: 100%
          + 標準轉換 {#standard-transformations}
             + [標準轉換](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-standard-transf.md)
             + [ChangeCase](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-chgcase.md)
-            + [Copy](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-copy.md)
+            + [複製](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-copy.md)
             + [CrossRows](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-crossrows.md)
             + [ExtractValue](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-exvalue.md)
             + [Flatten](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-flatten.md)
-            + [Format](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-format.md)
+            + [格式](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-format.md)
             + [Hash](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-hash.md)
             + [Haversine](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-haversine.md)
             + [IPLookup](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-iplookup.md)
@@ -518,7 +517,7 @@ ht-degree: 100%
       + [安裝報表程式檔案](home/c-rpt-oview/c-inst-rpt/t-install-rpt-prg-files.md)
       + 數位憑證 {#digital-certs}
          + [下載和安裝數位憑證](home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/c-install-dig-cert.md)
-         + [瞭解數位憑證](home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/c-underst-dig-cert.md)
+         + [了解數位憑證](home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/c-underst-dig-cert.md)
          + [數位憑證安裝程序](home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/t-dig-cert-install-proc.md)
       + [設定與 Insight Server 的連線](home/c-rpt-oview/c-inst-rpt/t-config-conn-ins-svr.md)
       + [使用語言檔案 (.zbin 檔案) 更新報表伺服器](home/c-rpt-oview/c-inst-rpt/c-zbin-file-update.md)
