@@ -1,9 +1,8 @@
 ---
-description: 流程地圖可設定為搭配任何對您的應用程式和資料集有意義的基本維度、群組維度、層級維度和量度組合使用。
+description: 程式圖可經過設定，以搭配任何對您的應用程式和資料集有意義的基本維度、群組維度、層級維度和量度組合使用。
 title: 設定程序圖
 uuid: e629191e-48b9-4b58-b6aa-3705ff7b387e
 exl-id: 0b37e942-4596-45cc-bc31-db147626f4eb
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '449'
@@ -13,17 +12,17 @@ ht-degree: 2%
 
 # 設定程序圖{#configure-a-process-map}
 
-流程地圖可設定為搭配任何對您的應用程式和資料集有意義的基本維度、群組維度、層級維度和量度組合使用。
+程式圖可經過設定，以搭配任何對您的應用程式和資料集有意義的基本維度、群組維度、層級維度和量度組合使用。
 
-配置進程映射後，它將與[!DNL Add Visualization menu]中的其他進程映射一起列出。
+配置進程映射後，該進程映射將與[!DNL Add Visualization menu]中的其他進程映射一起列出。
 
-1. 在[!DNL Profile Manager]中，按一下&#x200B;**[!UICONTROL Menu]** ，按一下&#x200B;**[!UICONTROL Add Visualization]** ，然後按一下要配置的進程映射類型（2D度量映射、2D進程映射或3D進程映射）。
+1. 在[!DNL Profile Manager]中，按一下&#x200B;**[!UICONTROL Menu]**，按一下&#x200B;**[!UICONTROL Add Visualization]**，然後按一下要配置的進程映射類型（2D度量映射、2D進程映射或3D進程映射）。
 
-   目錄中至少存在一個[!DNL *.vw]檔案。
+   目錄中至少有一個[!DNL *.vw]檔案。
 
 1. 按一下右鍵所需檔案的複選標籤，然後按一下&#x200B;**[!UICONTROL Make Local]**。
 1. 按一下右鍵[!DNL User]列中檔案的複選標籤，然後按一下&#x200B;**[!UICONTROL Open]** > **[!UICONTROL in Notepad]**。
-1. 使用下列範例檔案和表格作為參考線編輯檔案的參數：
+1. 使用以下示例檔案和表作為參考線編輯檔案的參數：
 
    ```
    window = simpleBorderWindow: 
@@ -61,34 +60,34 @@ ht-degree: 2%
    <td colname="col2"> <p>指定節點的值與節點大小成比例的度量名稱。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><i>基本維名</i> </p> </td> 
-   <td colname="col2"> <p>其元素在進程映射中顯示為節點的維的名稱。 </p> </td> 
+   <td colname="col1"> <p><i>基本維名稱</i> </p> </td> 
+   <td colname="col2"> <p>其元素在進程圖中顯示為節點的維的名稱。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><i>級別維名稱</i> </p> </td> 
-   <td colname="col2"> <p>基本維的級別（父級）的名稱，您將其元素拖動到流程映射。 </p> </td> 
+   <td colname="col2"> <p>基礎維的級別（父級）名稱，您將其元素拖動到流程圖。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><i>群組維度名稱</i> </p> </td> 
-   <td colname="col2"> <p>確定級別維元素如何分組以在節點之間形成連接的維的名稱。 兩個節點之間的連接不能跨組維的多個元素。 當根據進程映射中的節點進行選擇時，將選擇與該節點相關的組維的所有元素。 </p> </td> 
+   <td colname="col1"> <p><i>組維名稱</i> </p> </td> 
+   <td colname="col2"> <p>決定如何對級別維的元素進行分組以在節點之間建立連接的維的名稱。 兩個節點之間的連接不能跨越組維的多個元素。 當您根據進程映射中的節點進行選擇時，將選擇與該節點相關的組維的所有元素。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><i>量度映射的量度名稱</i> </p> </td> 
-   <td colname="col2"> <p>此參數僅適用於2D量度對應。 </p> <p>量度的名稱，其值會決定節點在地圖上的水準位置。 </p> </td> 
+   <td colname="col2"> <p>此參數僅適用於2D量度對應。 </p> <p>量度的名稱，其值會決定地圖上節點的水準位置。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->有關流程映射的基本維、組維、級別維和度量的詳細資訊，請參閱[流程映射](../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md#concept-880aee224404429785b733a4e80d275e)。
+>有關流程圖的基本維、組維、級別維和度量的詳細資訊，請參閱[流程圖](../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md#concept-880aee224404429785b733a4e80d275e)。
 
-1. 在記事本中，按一下&#x200B;**[!UICONTROL File]** > **[!UICONTROL Save As]**&#x200B;以基於基本維的新名稱保存檔案，即&#x200B;*基本維名*.vw。
+1. 在記事本中，按一下&#x200B;**[!UICONTROL File]** > **[!UICONTROL Save As]**&#x200B;以基於基本維的新名稱保存檔案，即&#x200B;*基本維名稱*.vw。
 
-   (如果您要設定2D量度對應，應根據量度對應的量度名稱（即量度對應的&#x200B;*量度名稱*.vw），以名稱儲存檔案。) 請確保將檔案保存到相應的進程映射目錄。
+   (如果您要設定2D量度對應，則應根據量度對應的量度名稱（即量度對應的&#x200B;*量度名稱*.vw），以名稱儲存檔案。) 請務必將檔案儲存至適當的程式圖目錄。
 
    >[!NOTE]
    >
-   >要確保將進程映射保存為[!DNL *.vw]檔案，請在[!DNL Save As]窗口中將「另存為類型」設定為「所有檔案」。
+   >要確保將進程映射保存為[!DNL *.vw]檔案，請在[!DNL Save As]窗口中，將「另存為」類型設定為「所有檔案」。
 
-1. （可選）要使工作配置檔案的所有用戶都能使用這些更改，請在[!DNL Profile Manager]中按一下右鍵[!DNL User]列中檔案的複選標籤，然後按一下&#x200B;**[!UICONTROL Save to]** > ***[!UICONTROL working profile name]***。
+1. （可選）要使工作配置檔案的所有用戶都能使用更改，請在[!DNL Profile Manager]中按一下右鍵[!DNL User]列中的檔案複選標籤，然後按一下&#x200B;**[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]***。
