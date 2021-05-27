@@ -1,9 +1,8 @@
 ---
-description: 依預設，Insight Server會監聽埠80（針對HTTP）和443（針對HTTPS）。
+description: 依預設，Insight Server會偵聽連接埠80（適用於HTTP）和443（適用於HTTPS）。
 title: 檢查連接埠設定
 uuid: 1adad226-5891-4498-80b6-1bb4d67f5bbb
 exl-id: 924860e3-5afa-4c0f-bb7a-d38d5c1355b7
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '114'
@@ -13,13 +12,13 @@ ht-degree: 7%
 
 # 檢查連接埠設定{#checking-the-port-settings}
 
-依預設，Insight Server會監聽埠80（針對HTTP）和443（針對HTTPS）。
+依預設，Insight Server會偵聽連接埠80（適用於HTTP）和443（適用於HTTPS）。
 
-如果這些埠已經由安裝[!DNL Insight Server]的電腦上的其他進程分配，請使用以下過程更改[!DNL Insight Server’s]埠分配。
+如果這些埠已由安裝了[!DNL Insight Server]的電腦上的其他進程分配，請使用以下過程更改[!DNL Insight Server’s]埠分配。
 
-**要更改埠分配，請執行以下操作：**
+**更改埠分配**
 
-1. 導覽至安裝[!DNL Insight Server]之目錄的[!DNL Components]資料夾。
+1. 導覽至[!DNL Insight Server]安裝目錄中的[!DNL Components]資料夾。
 
    範例：[!DNL C:\Adobe\Server\Components]
 
@@ -40,4 +39,4 @@ ht-degree: 7%
      . . .
    ```
 
-1. 如果這些埠不是您希望[!DNL Insight Server]使用的埠，請更改埠分配，然後保存並關閉檔案。
+1. 如果這些埠不是您希望[!DNL Insight Server]使用的埠，請更改埠分配，然後保存並關閉該檔案。
