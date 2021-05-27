@@ -3,7 +3,6 @@ description: 分割轉換會根據指定的分隔字元，將字串分割為子�
 title: Split
 uuid: 116e8465-8fb1-41eb-9a28-412cee54ab87
 exl-id: ea85b095-1306-4938-906d-35d421db6c98
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '319'
@@ -11,11 +10,11 @@ ht-degree: 3%
 
 ---
 
-# Split{#split}
+# 分割{#split}
 
 分割轉換會根據指定的分隔字元，將字串分割為子字串的向量。
 
-[!DNL Split] 對於從與單個URI查詢名稱值相關聯的值集合中提取單個值特別有用。
+[!DNL Split] 對於從與單個URI查詢名稱值關聯的值集合中提取單個值特別有用。
 
 <table id="table_C97DA4E45DA844FAB8D61AABA22FF809"> 
  <thead> 
@@ -33,22 +32,22 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> 註解 </td> 
-   <td colname="col2"> 選填。關於轉變的附註。 </td> 
+   <td colname="col2"> 選填。轉換的相關附註。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 條件 </td> 
-   <td colname="col2"> 應用此轉換的條件。 </td> 
+   <td colname="col2"> 套用此轉換的條件。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 分隔字元 </td> 
-   <td colname="col2"> <p>用於將輸入字串分隔為子字串的字串。 長度必須為單一字元。 </p> <p> 如果按住Ctrl鍵並在分隔字元參數內按一下滑鼠右鍵，則會出現「插入」功能表。 此功能表包含常用作分隔字元的特殊字元清單。 </p> </td> 
+   <td colname="col2"> <p>用來將輸入字串分隔為子字串的字串。 長度必須為單一字元。 </p> <p> 如果按住Ctrl鍵並在「分隔字元」參數內按一下滑鼠右鍵，則會出現「插入」功能表。 此菜單包含通常用作分隔符的特殊字元的清單。 </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 輸入 </td> 
-   <td colname="col2"> 值被分割以建立輸出字串向量的欄位名稱。 </td> 
+   <td colname="col2"> 值被拆分以建立輸出字串向量的欄位的名稱。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -59,12 +58,12 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-請考慮在網站中，當存取與成功購買相關的確認頁面時，客戶購買的產品會列為cs-uri查詢值的一部分。 以下是此類字串的範例：
+請考慮在哪個網站中，當存取與成功購買相關聯的確認頁面時，客戶購買的產品會列為cs-uri查詢值的一部分。 以下是此類字串的範例：
 
 * /checkout/confirmed.asp?prod_selected=B57481,C46355,Z97123
 
-cs-uri-stem欄位可用來判斷記錄項目所要求的頁面是否為確認頁面。 客戶所購買產品的代碼會列為cs-uri-query中prod_selected名稱的逗號分隔值。 如果cs-uri-stem的值與[!DNL String Match]條件中指定的值相符，則[!DNL Split]轉換可用來將產品代碼拆分為逗號，以擷取此資訊。 請參閱[字串符合](../../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f)。 以下轉換將詳細說明此問題的解決方案。
+cs-uri-stem欄位用於判斷記錄項目所請求的頁面是否為確認頁面。 客戶購買的產品代碼在cs-uri-query中以逗號分隔的prod_selected名稱值列出。 如果cs-uri-stem的值與[!DNL String Match]條件中指定的值相符，則[!DNL Split]轉換可用於透過以逗號分隔產品代碼來擷取此資訊。 請參閱[字串符合](../../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f)。 以下轉換詳細說明了此問題的解決方案。
 
 ![](assets/cfg_TransformationType_Split.png)
 
-在這裡，輸出欄位是x-products，可用來建立所需的延伸維度，將購買的產品對應至進行購買的工作階段。
+在此，輸出欄位是x-products，可用來建立所需的延伸維度，將購買的產品對應至進行購買的工作階段。
