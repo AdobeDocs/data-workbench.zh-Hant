@@ -1,9 +1,8 @@
 ---
-description: 維度中的元素可以以線形圖中的系列進行色彩編碼，以便更輕鬆地在工作區中跨其他視覺化追蹤每個元素。
+description: 維度內的元素可以以線圖內的系列進行色彩編碼，以便在工作區中的其他視覺效果中更輕鬆追蹤每個元素。
 title: 變更序列
 uuid: 4e9630c6-a663-486d-ae82-f6d25f74a41c
 exl-id: 7a639a7f-e526-4916-a957-b005277bdd2d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '156'
@@ -13,18 +12,18 @@ ht-degree: 3%
 
 # 變更序列{#change-a-series}
 
-維度中的元素可以以線形圖中的系列進行色彩編碼，以便更輕鬆地在工作區中跨其他視覺化追蹤每個元素。
+維度內的元素可以以線圖內的系列進行色彩編碼，以便在工作區中的其他視覺效果中更輕鬆追蹤每個元素。
 
-系列特徵僅在折線圖顯示為折線圖（而非條形圖）時適用於圖形。
+只有線圖顯示為線而非條時，系列特徵才適用於圖形。
 
-當系列處於活動狀態時，尺寸中不同元素的資料以交替顏色顯示。 在顯示相同維度的工作區中添加表格，為所選維度提供系列圖例非常有用。 請參閱[使用系列圖例](../../../../home/c-get-started/c-analysis-vis/c-tables/c-srs-leg.md#concept-c48042a705524bc4b63cd6f24874cc12)。
+當序列處於活動狀態時，維度中不同元素的資料會以交替的顏色顯示。 將表格新增至顯示相同維度的工作區，以便為選取的維度提供序列圖例，這很實用。 請參閱[使用序列圖例](../../../../home/c-get-started/c-analysis-vis/c-tables/c-srs-leg.md#concept-c48042a705524bc4b63cd6f24874cc12)。
 
 ![](assets/vis_LineGraph_Series.png)
 
-**若要啟用系列**
+**啟用序列**
 
-* 按一下右鍵某個元素或維的標籤，然後按一下&#x200B;**[!UICONTROL Change Series]** > ***[!UICONTROL dimension name]**>*。
+* 以滑鼠右鍵按一下維度的元素或標籤，然後按一下&#x200B;**[!UICONTROL Change Series]** > *&lt;**[!UICONTROL dimension name]**>*。
 
-**要禁用系列**
+**要禁用序列**
 
-* 按一下右鍵某個元素或維的標籤，然後按一下&#x200B;**[!UICONTROL Change Series]** > **[!UICONTROL None]**。
+* 以滑鼠右鍵按一下維度的元素或標籤，然後按一下&#x200B;**[!UICONTROL Change Series]** > **[!UICONTROL None]**。
