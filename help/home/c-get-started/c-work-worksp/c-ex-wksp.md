@@ -1,9 +1,8 @@
 ---
-description: 您可以將工作區匯出為。png影像檔案，或將資料從特定視窗匯出至Excel（.xls或。xlsx）檔案。
+description: 您可以將工作區匯出為.png影像檔案，或將資料從特定視窗匯出至Excel(.xls或.xlsx)檔案。
 title: 匯出工作區
 uuid: 59ea6e46-d2e9-41f9-9c8f-e3071eb65424
 exl-id: 87416ddf-2ac0-4f95-ae8e-71051061c757
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '774'
@@ -13,87 +12,87 @@ ht-degree: 1%
 
 # 匯出工作區{#export-a-workspace}
 
-您可以將工作區匯出為。png影像檔案，或將資料從特定視窗匯出至Excel（.xls或。xlsx）檔案。
+您可以將工作區匯出為.png影像檔案，或將資料從特定視窗匯出至Excel(.xls或.xlsx)檔案。
 
-## 將工作區匯出為PNG檔案{#section-f9fbe0f0a1c341e2b063cce106cac35e}
+## 將工作區導出為PNG檔案{#section-f9fbe0f0a1c341e2b063cce106cac35e}
 
-可以以可移植網路圖形格式（`.png`檔案）保存工作區的快照。 將工作區另存為`.png`檔案時，可使用下列顏色選項：
+可以以「可移植網路圖形」格式（`.png`檔案）保存工作區的快照。 將工作區儲存為`.png`檔案時，可使用下列顏色選項：
 
 * **黑色** 背景會複製顯示的工作區。
-* **白色** 背景會以彩色複製工作區的元素，並在白色背景上顯示這些元素。
-* **白色背景(B&amp;W)** 以灰階方式複製工作區的元素，並在白色背景上顯示這些元素。
+* **白** 色背景會以顏色複製工作區的元素，並在白色背景中顯示這些元素。
+* **白色背景(B&amp;W)** 會以灰階方式複製工作區的元素，並在白色背景中顯示這些元素。
 
-**若要將工作區匯出為。png檔案**
+**將工作區匯出為.png檔案**
 
-在工作區的標題欄菜單中，按一下&#x200B;**[!UICONTROL Export]** > **[!UICONTROL Export PNG]** > ***[!UICONTROL color option]**>*。
+在工作區的標題欄功能表中，按一下「**[!UICONTROL Export]** > **[!UICONTROL Export PNG]** > *&lt;**[!UICONTROL color option]**>*」。
 
-出現[!UICONTROL Save Image As]對話框。
+將出現[!UICONTROL Save Image As]對話框。
 
-導覽至您要儲存檔案的目錄，視需要變更檔案名稱，然後按一下&#x200B;**[!UICONTROL Save]**。
+導航至要保存檔案的目錄，根據需要更改檔案的名稱，然後按一下&#x200B;**[!UICONTROL Save]**。
 
 ## 將工作區資料匯出至Microsoft Excel {#section-fe214e3dbc364d2eba3834d62d295acb}
 
-將工作區匯出至Excel時，Data Workbench會從特定視覺化、維度和值圖例以及文字附註匯出資料至每個工作表有一個視覺化的新Excel活頁簿。
+將工作區匯出至Excel時，Data Workbench會將特定視覺效果、維度和值圖例、文字註解的資料匯出至新的Excel活頁簿，每個工作表只需一個視覺效果。
 
-若要將工作區和個別視窗匯出至Microsoft Excel，必須符合下列需求：
+若要將工作區和個別視窗匯出至Microsoft Excel，必須符合下列要求：
 
-* Microsoft Excel必須安裝在與Data Workbench相同的機器上。
-* 執行Data Workbench程式的使用者帳戶必須擁有存取Microsoft Excel的權限。
+* Microsoft Excel必須安裝在與Data Workbench相同的電腦上。
+* 運行Data Workbench進程的用戶帳戶必須具有訪問Microsoft Excel的權限。
 
 >[!NOTE]
 >
->* 將資料匯出為Excel檔案時，您會開啟新的Excel例項。 有關此過程的詳細資訊，請參見[http://support.microsoft.com/kb/257757](http://support.microsoft.com/kb/257757)。
->* 雖然Data Workbench支援超過256欄和65,536列的資料，但8.0之前的Microsoft Excel版本則否。
+>* 將資料匯出為Excel檔案時，會開啟新的Excel例項。 有關此過程的詳細資訊，請參閱[http://support.microsoft.com/kb/257757](http://support.microsoft.com/kb/257757)。
+>* 雖然Data Workbench支援超過256列和65,536列資料，但8.0之前的Microsoft Excel版本則否。
 >
 
 
 
-如果符合這些要求，Data Workbench會自動啟動Microsoft Excel，並將資料匯出至新的Excel活頁簿。 資料不會從下列視覺化匯出：圖形、路徑瀏覽器、流程地圖、散布圖和報表。
+如果滿足這些要求，Data Workbench會自動啟動Microsoft Excel並將資料匯出至新的Excel活頁簿。 資料不會從下列視覺效果匯出：圖表、路徑瀏覽器、程式圖、散布圖和地球圖。
 
-## 套用自訂標題{#section-a332e157554546cb8e88922a8d7a4fa2}
+## 應用自定義標題{#section-a332e157554546cb8e88922a8d7a4fa2}
 
-除非您已在[!UICONTROL Export]功能表中為視窗指定「自訂標題」，否則會使用列出的[!UICONTROL Export title]（例如，城市表格）作為工作表名稱。
+除非您已在[!UICONTROL Export]菜單上為窗口指定了「自定義標題」，否則將使用列出的[!UICONTROL Export title]（例如，城市表）作為工作表名稱。
 
-1. 按一下右鍵窗口的頂部邊框，然後按一下&#x200B;**[!UICONTROL Custom title]**&#x200B;欄位。
-1. 鍵入要應用於窗口的標題。
+1. 按一下右鍵窗口的上邊框，然後按一下&#x200B;**[!UICONTROL Custom title]**&#x200B;欄位。
+1. 輸入要應用於窗口的標題。
 
    ![](assets/mnu_window_TitleBar_Export.png)
 
 >[!NOTE]
 >
->如果您在[!UICONTROL Custom title]欄位中輸入連字型大小(-)，此視覺化不會與工作區一起匯出。
+>如果您在[!UICONTROL Custom title]欄位中輸入連字型大小(-)，此視覺效果不會與工作區一併匯出。
 
-將工作區匯出至Excel時，包含此視窗資料的工作表會使用您指定的標題來命名，而非在[!UICONTROL Export title]欄位中的標題。
+將工作區導出為Excel時，包含此窗口資料的工作表將使用您指定的標題命名，而不是[!UICONTROL Export title]欄位中的標題。
 
 ## 將工作區或側欄匯出至Excel {#section-360438b66d5f4734826ab463b4a01a75}
 
-**要將工作區資料導出到新 [!DNL .xls] 檔案 [!DNL .xlsx] 中**
+**將工作區資料匯出至新或 [!DNL .xls] 檔 [!DNL .xlsx] 案**
 
 1. 在工作區的標題列中，按一下「**[!UICONTROL Export]** > **[!UICONTROL Export]**」。
 1. 指定要匯出工作區、側欄還是兩者。
 
 ## 匯出至範本Excel檔案{#section-814772929ca64cf6b92b89d3fdd02302}
 
-您可以將工作區中的資料匯出至範本Excel檔案（`.xls`或`.xlsx`）。 使用範本檔案可以減少每次匯出工作區時，您花在格式化資料上的時間。
+您可以將工作區中的資料匯出至範本Excel檔案（`.xls`或`.xlsx`）。 使用範本檔案可縮短每次匯出工作區時，您花在格式化資料上的時間。
 
 >[!NOTE]
 >
->此範本檔案必須是`.xls`或`.xlsx`檔案，而非`.xlt`檔案。
+>此模板檔案必須是`.xls`或`.xlsx`檔案，而不是`.xlt`檔案。
 
-匯出資料時，範本中現有的標籤式工作表（每個代表一個視覺化）會重新填入工作區的最新資料，而任何未以標籤式工作表形式出現在範本中的新視窗則會被忽略。 模板檔案中的任何其他頁籤式工作表都保持不變。
+導出資料時，模板中的現有頁簽工作表（每個頁簽工作表都表示一個視覺效果）將重新填入工作區中的最新資料，而模板中沒有作為頁簽工作表顯示的任何新窗口將被忽略。 模板檔案中的任何其他頁簽頁都保持不變。
 
-此外，如果您在範本Excel檔案中定義了要在產生報表時自動執行的巨集，請將巨集命名為&quot;VSExport&quot;。
+此外，如果您在範本Excel檔案中定義了要在產生報表時自動執行的巨集，請將巨集命名為「VSExport」。
 
-假設您想要使用Excel檔案中另一個標籤式工作表上圓形圖中表格視覺化的匯出促銷活動資料，並想每週更新此資訊。 您可以使用範本，以便不必在每次要更新資料時，從表格的標籤表單重新建立參照至圓形圖的標籤表單。 表格資料會在匯出時更新，如此會自動更新圓形圖。
+假設您想要使用從圓形圖的表格視覺效果匯出的促銷活動資料（位於Excel檔案的其他標籤工作表上），並且想每週更新此資訊。 您可以使用模板，這樣在每次要更新資料時，就不必從表的頁簽工作表重新建立參照，即可從餅圖的頁簽工作表重新建立參照。 表格資料會在匯出時更新，而會自動更新圓形圖。
 
-**要將工作區資料導出到模板或 [!DNL .xls] 文 [!DNL .xlsx] 件**
+**將工作區資料導出到模板或 [!DNL .xls] 檔 [!DNL .xlsx] 案**
 
-1. 按一下右鍵工作區的標題欄，然後按一下&#x200B;**[!UICONTROL Export]** > **[!UICONTROL Export to Excel from Template]**。
+1. 以滑鼠右鍵按一下工作區的標題列，然後按一下&#x200B;**[!UICONTROL Export]** > **[!UICONTROL Export to Excel from Template]**。
 1. 指定要匯出工作區、側欄還是兩者。
 
-   [!UICONTROL Select a template worksheet]對話方塊隨即開啟。
+   [!UICONTROL Select a template worksheet]對話框開啟。
 
-1. 視需要完成下列步驟之一：
+1. 視需要完成下列其中一個步驟：
 
    * 如果您使用`.xls`範本檔案：
 
@@ -101,8 +100,8 @@ ht-degree: 1%
       1. 按一下 **[!UICONTROL Open]**。
    * 如果您使用`.xlsx`範本檔案：
 
-      1. 瀏覽至範本檔案的位置。 不顯示`.xlsx`檔案名。
-      1. 在[!UICONTROL File name]欄位中，鍵入`.xlsx`並按一下&#x200B;**[!UICONTROL Open]**。 所有`.xlsx`檔案名稱都會顯示在檔案清單中。
+      1. 瀏覽至範本檔案的位置。 未顯示`.xlsx`檔案名。
+      1. 在[!UICONTROL File name]欄位中，鍵入`.xlsx`並按一下&#x200B;**[!UICONTROL Open]**。 所有`.xlsx`檔案名都顯示在檔案清單中。
 
       1. 選擇模板`.xlsx`檔案。
       1. 按一下 **[!UICONTROL Open]**。
