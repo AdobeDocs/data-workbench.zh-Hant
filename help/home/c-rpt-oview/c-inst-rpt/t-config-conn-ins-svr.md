@@ -1,9 +1,8 @@
 ---
-description: 您必須先設定報表伺服器，以指定Insight伺服器的位址，並識別您要報告的描述檔，才能產生報表和警報。
+description: 您必須設定報表伺服器以指定Insight Server的位址，並識別您要其報告的設定檔，才能產生報表和警報。
 title: 設定與 Insight Server 的連線
 uuid: 2018b67e-90a6-41d7-b628-4b463869df6e
 exl-id: a398a665-fe09-448a-977c-b0f9de4add09
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '195'
@@ -13,18 +12,18 @@ ht-degree: 7%
 
 # 設定與 Insight Server 的連線{#configuring-the-connection-to-the-insight-server}
 
-您必須先設定報表伺服器，以指定Insight伺服器的位址，並識別您要報告的描述檔，才能產生報表和警報。
+您必須設定報表伺服器以指定Insight Server的位址，並識別您要其報告的設定檔，才能產生報表和警報。
 
 >[!NOTE]
 >
->在您依下列說明設定報表伺服器之前，您無法成功執行報表伺服器。 如果您嘗試使用隨程式安裝的未設定檔案來執行報表伺服器，報表伺服器會產生錯誤串流。
+>在您依下列說明設定報表伺服器之前，您無法成功執行報表伺服器。 如果您嘗試使用程式中安裝的未配置檔案來運行報表伺服器，則報表伺服器會生成錯誤流。
 
-**若要設定報表伺服器**
+**設定報表伺服器**
 
-1. 使用Windows檔案總管，導覽至您安裝報表伺服器的目錄。
+1. 使用Windows資源管理器，導航至安裝Report Server的目錄。
 1. 在記事本中開啟[!DNL ReportServer.cfg]檔案，並視需要修改檔案。
 
-   以下範例[!DNL Report Server.cfg]僅包含預設包含在[!DNL Report Server.cfg]檔案中的參數（並反白顯示所需的參數設定）。 如果您透過代理伺服器與Adobe授權伺服器聯絡，則需新增授權向量及其參數。 如需詳細說明，請參閱[報表伺服器。cfg參數](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06)。
+   下列範例[!DNL Report Server.cfg]依預設僅包含[!DNL Report Server.cfg]檔案中包含的參數（並反白顯示所需的參數設定）。 如果您透過代理伺服器與Adobe授權伺服器連絡，則需要新增授權向量及其參數。 如需詳細說明，請參閱[Report Server.cfg參數](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06) 。
 
    ```
    Fonts = vector: 0 items
