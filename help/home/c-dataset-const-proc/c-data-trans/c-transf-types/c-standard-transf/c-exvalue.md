@@ -1,9 +1,8 @@
 ---
-description: 如果您使用Web資料，可使用ExtractValue轉換從網站資料的查詢字串、Cookie或類似編碼欄位擷取值。
+description: 若您使用的是網站資料，則可使用ExtractValue轉換，從網站資料中的查詢字串、Cookie或類似編碼欄位擷取值。
 title: ExtractValue
 uuid: 305827a2-04e6-421f-82cb-923d62b02e70
 exl-id: 5bafe64f-081a-49ec-997e-68e8f6915a71
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '235'
@@ -13,9 +12,9 @@ ht-degree: 3%
 
 # ExtractValue{#extractvalue}
 
-如果您使用Web資料，可使用ExtractValue轉換從網站資料的查詢字串、Cookie或類似編碼欄位擷取值。
+若您使用的是網站資料，則可使用ExtractValue轉換，從網站資料中的查詢字串、Cookie或類似編碼欄位擷取值。
 
-請注意，與要提取的值對應的名稱在每個日誌條目中可能不同。
+請注意，與要擷取的值對應的名稱在每個記錄項目中可能不同。
 
 <table id="table_D16A39BE035043628A4D6F7452952304"> 
  <thead> 
@@ -33,34 +32,34 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> 註解 </td> 
-   <td colname="col2"> 選填。關於轉變的附註。 </td> 
+   <td colname="col2"> 選填。轉換的相關附註。 </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
    <td colname="col1"> 條件 </td> 
-   <td colname="col2"> 應用此轉換的條件。 </td> 
+   <td colname="col2"> 套用此轉換的條件。 </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
    <td colname="col1"> 輸入名稱 </td> 
-   <td colname="col2"> <p>要從「輸入查詢」中提取的欄位的名稱。 </p> <p> <p>注意： 如果「輸入名稱」是向量（即存在多個名稱），則只提取一個值。 </p> </p> </td> 
+   <td colname="col2"> <p>要從輸入查詢中提取的欄位名稱。 </p> <p> <p>注意： 如果「輸入名稱」是向量（即存在多個名稱），則只會擷取一個值。 </p> </p> </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
    <td colname="col1"> 輸入查詢 </td> 
-   <td colname="col2"> 要從中擷取值的編碼對應（查詢字串、Cookie等）。 </td> 
+   <td colname="col2"> 要擷取值的編碼對應（查詢字串、Cookie等）。 </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
    <td colname="col1"> 輸出值 </td> 
-   <td colname="col2"> 用於擷取擷取解碼值的欄位名稱。 </td> 
+   <td colname="col2"> 用於捕獲提取的解碼值的欄位的名稱。 </td> 
    <td colname="col3"></td> 
   </tr> 
  </tbody> 
 </table>
 
-如果您想擷取搜尋片語，可以擷取整個片語，並視需要使用[!DNL Tokenize]轉換將片語分割為搜尋詞。 有關[!DNL Tokenize]轉換的資訊，請參見[ Tokenize](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-tokenize.md#concept-f460aa5df3a7476e971af29cf5d9b32c)。
+如果要提取搜索片語，可以提取整個片語，如果需要，可以使用[!DNL Tokenize]轉換將片語拆分為搜索詞。 有關[!DNL Tokenize]轉換的資訊，請參見[Tokenize](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-tokenize.md#concept-f460aa5df3a7476e971af29cf5d9b32c)。
 
-此範例會設定[!DNL ExtractValue]轉換，從cs(referrer-query)擷取x-v-search-querynames欄位的值，並將它們儲存在x-search-phrase欄位中。
+此範例會設定[!DNL ExtractValue]轉換，從cs(referrer-query)擷取x-v-search-querynames欄位的值，並將其儲存在x-search-phrase欄位中。
 
 ![](assets/cfg_TransformationType_ExtractValue.png)
