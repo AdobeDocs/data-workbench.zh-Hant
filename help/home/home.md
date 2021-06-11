@@ -5,7 +5,7 @@ feature: Reports and analytics 基本需知
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
 exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
 source-git-commit: 3223733866e82b4ce439ee55fe96fed89a02c5c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '273'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Data Workbench 包含下列預測性分析功能、資料視覺化和報表：
 
 ## 更多 Analytics 使用手冊
 
-[Analytics 使用手冊](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
+[Analytics 使用手冊](https://docs.adobe.com/content/help/zh-Hant/analytics/landing/home.html)
 
 ## Data Workbench 發行說明和新功能
 
