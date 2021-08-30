@@ -3,9 +3,9 @@ description: 有關Report Server.cfg參數的資訊。
 title: Report Server.cfg 參數
 uuid: 506f30f7-c8c6-4580-8423-7da8d00b0d57
 exl-id: 339e4219-ff4d-4df6-b45a-7144927a843b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1683'
 ht-degree: 2%
 
 ---
@@ -166,7 +166,7 @@ Proxy User Name = string: ProxyUserName
   </tr> 
   <tr> 
    <td colname="col1"> 狀態間隔 </td> 
-   <td colname="col2"> <p><span class="wintitle">報表伺服器</span>產生狀態資訊並傳送至Data Workbench伺服器以顯示在<span class="wintitle">詳細狀態</span>中的頻率（秒）。 </p> <p>預設值為120秒。 不建議將此值設為小值（例如2分鐘），因為報表佇列可能需要數小時的時間才能執行。 在此情況下，您可以考慮將600秒到1200秒的設定。 </p> <p>如需<span class="wintitle">詳細狀態</span>的詳細資訊，請參閱<a href="https://docs.adobe.com/content/help/en/data-workbench/using/client/admin-ui/c-admin-intrf.html" format="http" scope="external"> Insight使用手冊</a>的「管理介面」一章。 </p> </td> 
+   <td colname="col2"> <p><span class="wintitle">報表伺服器</span>產生狀態資訊並傳送至Data Workbench伺服器以顯示在<span class="wintitle">詳細狀態</span>中的頻率（秒）。 </p> <p>預設值為120秒。 不建議將此值設為小值（例如2分鐘），因為報表佇列可能需要數小時的時間才能執行。 在此情況下，您可以考慮將600秒到1200秒的設定。 </p> <p>如需<span class="wintitle">詳細狀態</span>的詳細資訊，請參閱<a href="https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-admin-intrf.html" format="http" scope="external"> Insight使用手冊</a>的「管理介面」一章。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 更新間隔 </td> 

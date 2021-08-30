@@ -3,9 +3,9 @@ description: 請依照下列步驟，從您的data workbench v6.0x安裝更新�
 title: Data Workbench 6.0 升級至 6.1
 uuid: 4671c2bf-06ab-49c4-8dd1-24115facd83b
 exl-id: 559e1942-561c-4270-9670-550177730cdb,2a337d2e-c70e-4f35-a6c2-c3a7f50a0800
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '751'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 >
 >伺服器、報表伺服器和用戶端元件已升級，可在64位元Windows作業系統上執行。
 
-## 伺服器升級{#section-7845393f76214aa7ad53ac4b2cca9e5b}
+## 伺服器升級 {#section-7845393f76214aa7ad53ac4b2cca9e5b}
 
 請依照下列步驟更新&#x200B;**[!UICONTROL Server v6.1]**&#x200B;元件：
 
@@ -52,7 +52,7 @@ ht-degree: 1%
    1. 更換[!DNL Server\Software]資料夾以更新[!DNL Insight.exe]和[!DNL ReportServer.exe]
    1. 更新[!DNL Server\Scripts]資料夾以更新[!DNL TnTSend.exe]。
 
-1. 若您採用&#x200B;**[!UICONTROL DeviceAtlas]**，則需要[更新[!DNL Server\Lookups]資料夾中的套件](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html)。
+1. 若您採用&#x200B;**[!UICONTROL DeviceAtlas]**，則需要[更新[!DNL Server\Lookups]資料夾中的套件](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html)。
 
 1. 設定[!DNL Profile.cfg]檔案，確保向量已更新，以反映每個設定檔的項目數。
 
@@ -98,7 +98,7 @@ ht-degree: 1%
 
 伺服器安裝現已完成。
 
-## 報表伺服器升級{#section-afd9560a446242e9b06490e5f98aaaec}
+## 報表伺服器升級 {#section-afd9560a446242e9b06490e5f98aaaec}
 
 >[!IMPORTANT]
 >
@@ -145,7 +145,7 @@ ht-degree: 1%
 
 報表伺服器安裝現已完成。
 
-## 客戶端升級{#section-c896e57ecd2847afb18f4d8ef7cc0e06}
+## 客戶端升級 {#section-c896e57ecd2847afb18f4d8ef7cc0e06}
 
 >[!IMPORTANT]
 >

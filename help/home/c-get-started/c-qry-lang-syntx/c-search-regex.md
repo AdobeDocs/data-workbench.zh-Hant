@@ -3,10 +3,10 @@ description: Data Workbench運用規則運算式(regex)來進行搜尋和排序�
 title: 規則運算式
 uuid: dc8c1e88-4d95-4011-8a38-70fae0c5cf6d
 exl-id: bb1be6d8-3b7a-47e4-bb29-4a65de99666b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 2%
+source-wordcount: '132'
+ht-degree: 3%
 
 ---
 
@@ -45,4 +45,4 @@ Data Workbench運用規則運算式(regex)來進行搜尋和排序作業。
 
 其他常用規則運算式也可用來建立更複雜的搜尋字串。 規則運算式用於所有Data Workbench搜尋欄位，包括查詢實體面板。
 
-請參閱[規則運算式](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions)的深入資訊。
+請參閱[規則運算式](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions)的深入資訊。

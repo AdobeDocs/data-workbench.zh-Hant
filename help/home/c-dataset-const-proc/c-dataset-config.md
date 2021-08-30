@@ -3,9 +3,9 @@ description: 資料集組態是指編輯組態檔的程式，其參數可提供�
 title: 瞭解資料集組態
 uuid: 813933d1-f52d-4584-8edd-ce9cd4aed74a
 exl-id: 1358d08e-d81c-453d-a3a3-c1f279f38192
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '914'
 ht-degree: 7%
 
 ---
@@ -50,7 +50,7 @@ c_addl_config_files.xml
 
 * **Server.cfg:** 此檔 [!DNL Server.cfg] 案會指定連線至Data Workbench伺服器之Data Workbench電腦的預設資料快取大小（以位元組為單位）。請參閱[其他配置檔案](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004)。
 
-* **Transform.cfg和Transform Mode.cfg:** 只有在您已授權資料轉換功能以便與Adobe應用程式搭配使用時，才能使用這些檔案。[!DNL Transform.cfg]檔案包含定義轉換功能的日誌源和資料轉換的參數。 您定義的轉換操作源資料並將其輸出為您指定的格式。 [!DNL Insight Transform Mode.cfg]檔案可讓您暫停將資料處理至資料集、指定離線來源，或指定Insight Server執行轉換功能儲存其狀態檔案的頻率。 請參閱[轉換功能](https://docs.adobe.com/content/help/en/data-workbench/using/server-admin-install/transform/t-config-tfm.html)。
+* **Transform.cfg和Transform Mode.cfg:** 只有在您已授權資料轉換功能以便與Adobe應用程式搭配使用時，才能使用這些檔案。[!DNL Transform.cfg]檔案包含定義轉換功能的日誌源和資料轉換的參數。 您定義的轉換操作源資料並將其輸出為您指定的格式。 [!DNL Insight Transform Mode.cfg]檔案可讓您暫停將資料處理至資料集、指定離線來源，或指定Insight Server執行轉換功能儲存其狀態檔案的頻率。 請參閱[轉換功能](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/transform/t-config-tfm.html)。
 
 <!--
 c_next_steps.xml

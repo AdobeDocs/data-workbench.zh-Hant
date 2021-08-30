@@ -3,9 +3,9 @@ description: 為了讓報表伺服器的某些功能發揮作用，您必須先�
 title: 開始之前
 uuid: cb464fb6-3109-4eff-9c95-f0cf1f8a8c66
 exl-id: 5c8bb4c3-fe76-4b4e-960d-113a9927ad59
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '326'
 ht-degree: 1%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 1%
 
 為了讓報表伺服器的某些功能發揮作用，您必須先提供並配置硬體或軟體，然後才能安裝。
 
-## 基本報表伺服器需求{#section-e891eaee79fe4fa98e658426dc3b2777}
+## 基本報表伺服器需求 {#section-e891eaee79fe4fa98e658426dc3b2777}
 
-輸出的報表可以是.PNG影像或檔案系統中放置的.XLS電子錶格的形式，也可以是電子郵件形式。 硬體要求與[data workbench用戶端](https://docs.adobe.com/content/help/en/data-workbench/using/install/c-data-workbench-client-install.html#Data_Workbench_Client_Minimum_System_Requirements)相同。
+輸出的報表可以是.PNG影像或檔案系統中放置的.XLS電子錶格的形式，也可以是電子郵件形式。 硬體要求與[data workbench用戶端](https://experienceleague.adobe.com/docs/data-workbench/using/install/c-data-workbench-client-install.html#Data_Workbench_Client_Minimum_System_Requirements)相同。
 
 報表伺服器有下列需求：
 
@@ -24,7 +24,7 @@ ht-degree: 1%
 * 訪問配置的SMTP伺服器。
 * [!DNL Report]伺服器上安裝的Microsoft Excel 2010 64位元或更高版本。 如需詳細資訊，請參閱[伺服器端Office自動化考量事項](http://support.microsoft.com/kb/257757) 。
 
-## 其他要求{#section-f53d4388656a4dfc90aefe29dfabef89}
+## 其他需求 {#section-f53d4388656a4dfc90aefe29dfabef89}
 
 * **安裝適當的圖形適配器。** 要正確呈現報告，安裝伺服器的電 [!DNL Report] 腦必須安裝相應的圖形適配器。
 

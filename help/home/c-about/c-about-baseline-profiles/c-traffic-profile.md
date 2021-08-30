@@ -3,9 +3,9 @@ description: 流量設定檔包含下列量度以識別訪客流量。
 title: 流量設定檔量度
 uuid: 7dfa18ef-d2cd-44ae-8c56-a0630a9d5cf2
 exl-id: 38f191e5-5b30-4fe0-a680-bcb33fe52eca
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '709'
 ht-degree: 2%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 2%
    <td colname="col3"> 具有頁面檢視之每個工作階段中的平均頁面檢視次數。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 頁面檢視 </td> 
+   <td colname="col1"> 頁面瀏覽數 </td> 
    <td colname="col2">公式：<span class="filepath"> sum(One, Page_View)</span><p>級別：頁面檢視 </p></td> 
    <td colname="col3"> 頁面檢視次數。 頁面檢視是對已定義頁面的要求（不會計入影像存取權和其他類型的篩選內容）。 </td> 
   </tr> 
@@ -96,7 +96,7 @@ ht-degree: 2%
   <tr> 
    <td colname="col1"> 工作階段期間 </td> 
    <td colname="col2"> <p>公式：<span class="filepath">(sum(Exact_Page_Duration, Session)*.1/Sessions)[Session_ Duration &lt;= '01:00:00']</span></p> <p>級別：工作階段 </p> </td> 
-   <td colname="col3">訪客在工作階段中逗留的平均時間(MM:SS)。 <p><p>注意：您可以將此量度與<a href="https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html#Segment_Export" format="http" scope="external">區段匯出</a>功能搭配使用。 </p></p></td> 
+   <td colname="col3">訪客在工作階段中逗留的平均時間(MM:SS)。 <p><p>注意：您可以將此量度與<a href="https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Segment_Export" format="http" scope="external">區段匯出</a>功能搭配使用。 </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> 依頁面檢視的工作階段 </td> 

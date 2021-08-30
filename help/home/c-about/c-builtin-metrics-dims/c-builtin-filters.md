@@ -3,9 +3,9 @@ description: 設定檔篩選器會限制資料集中可用資料的範圍。
 title: 內建設定檔篩選器
 uuid: d6854d2c-4643-476e-8a44-f188e18cb115
 exl-id: bb167487-415d-44a8-9a0a-9a76d90ba5c0
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '484'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 >
 >您可以建立其他篩選器，並透過其是否存在於設定檔的「篩選器」目錄來套用。
 
-## 資料子設定{#section-0defb44315d94254ab6e629ec3d6f420}
+## 資料子設定 {#section-0defb44315d94254ab6e629ec3d6f420}
 
 資料子集可作為資料篩選器，只讓您選取您感興趣的資料維度元素。
 
@@ -37,7 +37,7 @@ ht-degree: 1%
 >
 >您可以建立多個資料子集，並可以切換它們以查看資料的不同部分。 要檢視所有資料時，請記得關閉「資料子設定」 。 否則，您的量度值將不會代表資料集中的所有資料。
 
-## 中斷的會話篩選器{#section-1608e97da6464b11aea27cbb7f3160e4}
+## 中斷的工作階段篩選 {#section-1608e97da6464b11aea27cbb7f3160e4}
 
 「中斷工作階段篩選」是量度公式，可輕鬆修改以符合任何篩選需求。 在預設的網站設定檔中，「中斷工作階段篩選」設定為包含所有訪客，這些訪客的訪客標幟皆已設為1。 值1表示該訪客是否有追蹤Cookie。
 
@@ -51,4 +51,4 @@ entity = derived_filter:
 
 依預設，工作區將「中斷工作階段」篩選器套用至其選取範圍及其基準，而且您可以在工作區中按一下滑鼠右鍵，然後按一下「資料>中斷工作階段篩選器」來切換。
 
-在篩選器運算式中，即使未為目前工作區啟用「中斷工作階段篩選器」，也可將「中斷工作階段篩選器」引用為「中斷工作階段篩選器」。 如需詳細資訊，請參閱[篩選運算式](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers) 。
+在篩選器運算式中，即使未為目前工作區啟用「中斷工作階段篩選器」，也可將「中斷工作階段篩選器」引用為「中斷工作階段篩選器」。 如需詳細資訊，請參閱[篩選運算式](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers) 。

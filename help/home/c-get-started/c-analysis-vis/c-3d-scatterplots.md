@@ -3,9 +3,9 @@ description: 3D散布圖會在三維格線上繪製資料維度的元素（例�
 title: 3D 散佈圖
 uuid: 5e23547c-dbb4-490c-94bc-0731deee612e
 exl-id: 18f18cab-a31b-4ffe-89c5-412a5645af2e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '500'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 3D散布圖會在三維格線上繪製資料維度的元素（例如天數或反向連結網站），其中x、y和z軸代表各種量度。
 
-與[散布圖2D](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html#Scatter_Plots)一樣，此視覺效果在嘗試了解使用不同量度的大量不同項目之間的關係時非常有用。
+與[散布圖2D](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Scatter_Plots)一樣，此視覺效果在嘗試了解使用不同量度的大量不同項目之間的關係時非常有用。
 
 **若要採用3D散布圖視覺效果：**
 

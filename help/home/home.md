@@ -1,12 +1,12 @@
 ---
 description: Data Workbench 文件
 title: Data Workbench 說明
-feature: Reports and analytics 基本需知
+feature: Reports & Analytics Basics
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
 exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
-source-git-commit: 3223733866e82b4ce439ee55fe96fed89a02c5c4
-workflow-type: ht
-source-wordcount: '273'
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '266'
 ht-degree: 100%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 [Data Workbench](http://www.adobe.com/tw/solutions/digital-analytics/data-workbench.html) 是 [Adobe Analytics](http://www.adobe.com/tw/solutions/digital-analytics.html) 的一部分，提供高度彈性、強大又多元的功能，專門收集、處理、分析和視覺化線上與離線客戶的互動資料，適用範圍涵蓋所有類型的網頁、CRM、POS 與其他資料類型。Data Workbench 中的互動式報表可讓您分析及回應相關統計資訊，以監控活動與預測客戶趨勢。
 
-* ![Analytics 圖示](assets/analytics-icon-24.png) [Analytics 文件](https://docs.adobe.com/content/help/zh-Hant/analytics/landing/home.html)
+* ![Analytics 圖示](assets/analytics-icon-24.png) [Analytics 文件](https://experienceleague.adobe.com/docs/analytics/landing/home.html?lang=zh-Hant)
 * ![PDF 圖示](assets/pdf_icon.png) [將所有 Data Workbench 文件下載為 PDF](/help/home/assets/data-workbench.pdf)
 
 ## 關鍵主題
@@ -35,7 +35,7 @@ Data Workbench 包含下列預測性分析功能、資料視覺化和報表：
 
 ## 更多 Analytics 使用手冊
 
-[Analytics 使用手冊](https://docs.adobe.com/content/help/zh-Hant/analytics/landing/home.html)
+[Analytics 使用手冊](https://experienceleague.adobe.com/docs/analytics/landing/home.html)
 
 ## Data Workbench 發行說明和新功能
 

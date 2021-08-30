@@ -3,9 +3,9 @@ description: Report.cfg參數的相關資訊。
 title: Report.cfg 參數
 uuid: 7a20f4f6-99e6-401a-ba3c-c508881c0f0d
 exl-id: 31e4de5f-f7e8-4a35-b5c6-6ad8ef79a259
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '2350'
+source-wordcount: '2348'
 ht-degree: 2%
 
 ---
@@ -92,7 +92,7 @@ Report.cfg參數的相關資訊。
   </tr> 
   <tr> 
    <td colname="col1"> 篩選公式 </td> 
-   <td colname="col2"> <p><i>可選</i>. 套用至報表集中每個工作區的篩選。 </p> <p>如需詳細資訊，請參閱建立篩選器</a>的<a href="https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html#Syntax_for_Filter_Expressions" format="http" scope="external">語法。 </a></p> </td> 
+   <td colname="col2"> <p><i>可選</i>. 套用至報表集中每個工作區的篩選。 </p> <p>如需詳細資訊，請參閱建立篩選器</a>的<a href="https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Syntax_for_Filter_Expressions" format="http" scope="external">語法。 </a></p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Gamma校正 </td> 

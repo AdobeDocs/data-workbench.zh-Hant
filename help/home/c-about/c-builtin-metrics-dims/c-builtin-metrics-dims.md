@@ -3,9 +3,9 @@ description: 本節提供Data Workbench中內建量度、維度和篩選器的�
 title: 關於內建量度、維度和篩選器
 uuid: 05676254-f6f5-4cb1-a664-da96d5b965db
 exl-id: d581a029-fd59-47c5-b832-64407102ace7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '144'
 ht-degree: 8%
 
 ---
@@ -18,4 +18,4 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->記錄處理階段並不表示所有事件資料都來自記錄檔。 雖然有時會這麼做，但事件資料可能來自其他來源，例如ODBC資料來源。 如需資料來源的詳細資訊，請參閱[資料集組態指南](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-dataset-constr.html)。
+>記錄處理階段並不表示所有事件資料都來自記錄檔。 雖然有時會這麼做，但事件資料可能來自其他來源，例如ODBC資料來源。 如需資料來源的詳細資訊，請參閱[資料集組態指南](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html)。

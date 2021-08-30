@@ -3,9 +3,9 @@ description: 報表集是Report Server根據Report.cfg設定檔案中指定的�
 title: 瞭解報表集
 uuid: 421055d7-0cf0-4664-b944-327a254a97a4
 exl-id: 95609a1a-e70c-41e2-ace3-0cb09f77705a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '146'
 ht-degree: 4%
 
 ---
@@ -18,6 +18,6 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->在Data Workbench的[!DNL Profile Manager]中，報表集在[!DNL Reports]資料夾中顯示為子資料夾。 有關[!DNL Profile Manager]的詳細資訊，請參閱[Data Workbench使用手冊](https://docs.adobe.com/content/help/en/data-workbench/using/home.html#Data_Workbench_Help)。
+>在Data Workbench的[!DNL Profile Manager]中，報表集在[!DNL Reports]資料夾中顯示為子資料夾。 有關[!DNL Profile Manager]的詳細資訊，請參閱[Data Workbench使用手冊](https://experienceleague.adobe.com/docs/data-workbench/using/home.html#Data_Workbench_Help)。
 
 通過為[!DNL Report.cfg]檔案中的報表集定義特定配置設定，可以安排建立和分發報表的時間，包括接收哪些報表的人員以及以何種格式進行分發。

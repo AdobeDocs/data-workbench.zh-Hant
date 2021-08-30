@@ -3,9 +3,9 @@ description: 配置檔案管理器顯示與工作配置檔案關聯的所有目�
 title: 建立設定檔管理員
 uuid: e16741e2-740b-4f57-861d-e2f57d30abbc
 exl-id: 43b95473-ab3e-4a80-9b91-7c221e74b096
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '390'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 您可能希望訪問[!DNL Profile Manager]的子目錄，而不需要瀏覽其整個目錄結構。 例如，工作區窗口菜單的[!DNL Manage]菜單上可用的[!DNL Metrics]和[!DNL Workspaces]菜單選項允許您分別開啟「配置檔案管理器」(Profile Manager)「度量」(Metrics)和「工作區」(Workspaces)資料夾。
 
-有關[!DNL Profile Manager]的詳細資訊，請參閱[設定檔管理員](https://docs.adobe.com/content/help/en/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html)。
+有關[!DNL Profile Manager]的詳細資訊，請參閱[設定檔管理員](https://experienceleague.adobe.com/docs/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html)。
 
 依預設，您可以存取下列管理員：
 

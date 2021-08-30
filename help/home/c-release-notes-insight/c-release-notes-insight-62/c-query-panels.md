@@ -2,9 +2,9 @@
 description: 在Data Workbench中使用搜尋器面板來選取量度、維度和篩選器。 這些面板提供搜尋支援、排序選項及拖放功能。
 title: 搜尋器
 uuid: 7a4144f5-133f-48ed-9613-1e42b1313120
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '638'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 1%
     <ul id="ul_0F6F377E9906472E99008EBE7483F689"> 
      <li id="li_75857895EDB045C8B2960393854B257D"> <p>模式比對（簡單全域搜尋）。 開始在「搜尋」欄位中輸入所需維度、量度或篩選實體的名稱，而名稱中任何位置所包含的相符字串才會經過篩選並顯示在「尋找器」窗格中。 </p> <p>例如，輸入： </p> <code><b>Search:</b>click</code> <p>您可以在「Dimension尋找器」中取得下列結果： </p> <p><img placement="break" id="image_7CBAAABA92BB47658B7F9F5C0263CF20" src="assets/finders_glob_search.png" /> </p> <p>標準模式比對可讓您使用萬用字元，例如。 （圓點），「？」 ，和"*"（星號）。 </p> </li> 
      <li id="li_044F9EC1399B44CD81E1852F85137704"> <p>規則運算式. 新增的搜尋功能也支援更複雜的規則運算式。 在搜尋詞（無空格）前面加上前置詞"re:"，以解譯為規則運算式。 </p> <p>例如，輸入： </p> <code><b>Search:</b>re.*ip</code> <p>您可以在「Dimension尋找器」中取得下列結果： </p> <p><img placement="break" id="image_F47DB90B36504997AA1C509855B89A47" src="assets/finders_regex_search.png" /> </p> </li> 
-    </ul> <p>如需深入搜尋資訊，請參閱<a href="https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-reg-exp.html" format="http" scope="external">規則運算式</a>。 </p> </td> 
+    </ul> <p>如需深入搜尋資訊，請參閱<a href="https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-reg-exp.html" format="http" scope="external">規則運算式</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><b>Dimension類型</b> </td> 

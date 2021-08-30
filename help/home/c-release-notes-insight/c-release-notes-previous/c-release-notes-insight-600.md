@@ -3,10 +3,10 @@ description: Data Workbench6.0.4推出的新功能，包括錯誤修正和已知
 title: Data Workbench 6.0 發行說明
 uuid: b348425e-3304-4db7-a280-479a34452bdb
 exl-id: be69b3be-24e7-4a8c-9dc8-1360a9b6fb3a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '1679'
-ht-degree: 2%
+source-wordcount: '1677'
+ht-degree: 1%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 Data Workbench6.0.4推出的新功能，包括錯誤修正和已知問題。
 
-## 新特性 {#section-1225066ea8f44cf68e42e019d0bca816}
+## 新功能 {#section-1225066ea8f44cf68e42e019d0bca816}
 
 Data Workbench(Insight 6.0)包含這些新功能和視覺效果，以新增報表功能和預測分析工具。
 
@@ -25,7 +25,7 @@ Data Workbench(Insight 6.0)包含這些新功能和視覺效果，以新增報�
 | [關聯分析](../../../home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-analysis.md#concept-a7c8766b40be43aaa4084612689b630c) | 關聯分析可讓您快速識別相關資料關係，以擴充和增強您的分析。 |
 | [更新DeviceAtlas發佈](../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md#concept-28b7bd5c0d854e73834261c431bed1e0) | DeviceAtlas JSON檔案現在將以.bundle檔案（重新命名為.tar.gz）及DeviceAtlas.dll和DeviceAtlas64.dll分發。 |
 
-## 客戶端升級要求{#section-f316103b48374b6eac77e8feb5c47ecf}
+## 客戶端升級要求 {#section-f316103b48374b6eac77e8feb5c47ecf}
 
 完成Data Workbench(Insight 6.0)用戶端功能的下列升級工作：
 
@@ -78,7 +78,7 @@ Data Workbench現在支援輸入法編輯器(IME)作為次要文字輸入程式�
 
    若要修正問題，請刪除Insight.exe並將最新版Insight.exe.old重新命名為Insight.exe，然後從上述步驟1重新開始。
 
-## 伺服器升級要求{#section-d6edba8b36234957ba8d06b555667a5a}
+## 伺服器升級需求 {#section-d6edba8b36234957ba8d06b555667a5a}
 
 完成Insight 6.0伺服器功能的以下升級工作：
 
@@ -250,7 +250,7 @@ YYYYMMDD-RSID_HH0000.tsv.gz
 
    如果已實施更名指令碼，則已定義日誌源以讀取此新檔案名格式。
 
-## 修正項目 {#section-203f917dd6224114a1f801309c4c2cee}
+## 修正 {#section-203f917dd6224114a1f801309c4c2cee}
 
 * 現在，離開工作區而不儲存變更的關鍵組合已更新為&#x200B;**[!UICONTROL `<Ctrl>`+`<Backspace>`]**。 以前，您可以按`<Ctrl>` + `<Delete>`取消變更並關閉工作區。
 
@@ -258,9 +258,9 @@ YYYYMMDD-RSID_HH0000.tsv.gz
 
 Data Workbench6.0.4推出的新功能，包括錯誤修正和已知問題。
 
-若要檢視每個過去版本的先前功能和修正，請參閱[發行說明封存檔](https://docs.adobe.com/content/help/zh-Hant/data-workbench/using/release-notes/release-notes.translate.html)。
+若要檢視每個過去版本的先前功能和修正，請參閱[發行說明封存檔](https://experienceleague.adobe.com/docs/data-workbench/using/release-notes/release-notes.html)。
 
-## 新特性 {#section-2-1225066ea8f44cf68e42e019d0bca816}
+## 新功能 {#section-2-1225066ea8f44cf68e42e019d0bca816}
 
 Data Workbench6.0.4包含這些新功能和視覺效果，可讓您新增報表功能和預測分析工具。
 
