@@ -3,9 +3,9 @@ description: Data Workbench6.7的新功能、修正和已知問題。
 title: Data Workbench 6.7 發行說明
 uuid: b84f5f2b-4f1c-490c-982b-6bd8d3a63e25
 exl-id: e5ec3224-66d1-47a6-9bf3-8be9f6568b8d
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '649'
 ht-degree: 34%
 
 ---
@@ -44,7 +44,7 @@ Data Workbench Workstation 現在支援透過使用者名稱和密碼進行使�
 
 [!DNL User List.cfg]中的電子郵件支援
 
-在[!DNL User List.cfg]中新增對電子郵件屬性的支援。 如需詳細資訊，請參閱[群組成員的使用者管理](https://docs.adobe.com/help/en/data-workbench/using/server-admin-install/admin-dwb-server/access-control/dwb-self-admin-member-access.html)。
+在[!DNL User List.cfg]中新增對電子郵件屬性的支援。 如需詳細資訊，請參閱[群組成員的使用者管理](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/admin-dwb-server/access-control/dwb-self-admin-member-access.html?lang=en)。
 
 **說明功能表**
 

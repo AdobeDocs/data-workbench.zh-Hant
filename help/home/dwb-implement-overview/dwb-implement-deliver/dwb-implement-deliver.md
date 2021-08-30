@@ -3,9 +3,9 @@ description: 設定DWB後，您便可實作這些功能。
 title: Data Workbench 功能實施
 uuid: f7eec017-f27c-4ae0-bc23-45195fc08d81
 exl-id: 4b2625a6-cc44-4281-b532-fc29e8c06105
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '284'
 ht-degree: 3%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 3%
 
 * 若要實作&#x200B;**全球視覺效果**，請參閱[地球](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/globes/c-globes.html)。
 
-* 若要實作歸因的&#x200B;**工作區**，請參閱[規則型歸因](https://docs.adobe.com/help/en/data-workbench/using/client/attribution-reports/c-rules-attrib.html)和[最適化歸因](https://docs.adobe.com/help/en/data-workbench/using/client/attribution-reports/c-attrib-algorithmic.html)。
+* 若要實作歸因的&#x200B;**工作區**，請參閱[規則型歸因](https://experienceleague.adobe.com/docs/data-workbench/using/client/attribution-reports/c-rules-attrib.html?lang=en)和[最適化歸因](https://experienceleague.adobe.com/docs/data-workbench/using/client/attribution-reports/c-attrib-algorithmic.html?lang=en)。
 
 * 若要實作&#x200B;**預測性分析**&#x200B;工作區，請參閱[視覺效果](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-vis.html)及下方列出的視覺效果。
 
-* 若要實作「具有叢集視覺效果的預測智慧」**，請參閱[Clustering](https://docs.adobe.com/help/en/data-workbench/using/client/analysis-visualizations/visitor-cluster/c-visitor-cluster.html)。**
+* 若要實作「具有叢集視覺效果的預測智慧」**，請參閱[Clustering](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/visitor-cluster/c-visitor-cluster.html?lang=en)。**
 
 * 若要實作「具有傾向分數的預測智慧」**，請參閱[傾向分數](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/visitor-propensity/c-visitor-propensity.html)。**
 

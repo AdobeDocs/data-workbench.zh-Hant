@@ -2,9 +2,9 @@
 description: AdobeData Workbench提供工具和程式，讓您的資料符合一般資料保護規範(GDPR)。
 title: GDPR 的 Data Workbench 支援
 exl-id: fdc43567-0c57-4851-9073-e295258a8074
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '518'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ GDPR規則識別負責GDPR啟用之不同方面的角色和義務（請參閱[GD
 
 * 貴組織擔任&#x200B;**資料控制方**，根據您的需求和限制決定個人資料的內容和保留。 Adobe接著代表您處理和儲存這些資料。
 * Adobe充當&#x200B;**資料處理者** ，根據您與Adobe的合約，提供實施GDPR要求的軟體和服務。
-* 將Data Workbench與GDPR服務整合後，並根據GDPR標準，網站的訪客（**資料主體**）可行使其「被資料處理者遺忘的權利」(Adobe)。 您做為資料控管單位，可以從UI或API將有問題的訪客ID上傳至Adobe，以完成被遺忘的權利。 如需詳細資訊，請參閱[Adobe Analytics GDPR工作流程](https://docs.adobe.com/help/en/analytics/admin/data-governance/an-gdpr-workflow.html)檔案，包括[提交存取和刪除請求](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html)區段。
+* 將Data Workbench與GDPR服務整合後，並根據GDPR標準，網站的訪客（**資料主體**）可行使其「被資料處理者遺忘的權利」(Adobe)。 您做為資料控管單位，可以從UI或API將有問題的訪客ID上傳至Adobe，以完成被遺忘的權利。 如需詳細資訊，請參閱[Adobe Analytics GDPR工作流程](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=en)檔案，包括[提交存取和刪除請求](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html)區段。
 
 >[!NOTE]
 >

@@ -3,9 +3,9 @@ description: 以下是以Data Workbench安裝工作站（用戶端）的需求�
 title: 工作站需求
 uuid: 3c4ba2e8-efbc-45fe-8ac1-923d070bc710
 exl-id: 35e259e3-3d6d-45c8-a923-2f8de117489d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '525'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 以下是以Data Workbench安裝工作站（用戶端）的需求和建議。
 
-有關其他Data Workbench系統要求，請參閱[伺服器系統要求](https://docs.adobe.com/help/en/data-workbench/using/server-admin-install/c-msr-server.html)。
+有關其他Data Workbench系統要求，請參閱[伺服器系統要求](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/c-msr-server.html?lang=en)。
 
 >[!IMPORTANT]
 >
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 **開始之前**
 
-安裝Data Workbench工作站（客戶端）之前，請確定您已完成這些任務：
+安裝Data Workbench工作站（客戶端）之前，請確定您已完成以下任務：
 
 * **** ***Windows 2012*** 伺服 *器中MS System Center端點保護的AddExcludedProcesss，適用* 於下列執行檔：
 
