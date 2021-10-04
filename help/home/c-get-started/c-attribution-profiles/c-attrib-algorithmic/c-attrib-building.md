@@ -3,9 +3,9 @@ description: 從Premium功能表開啟「最適化歸因」 ，然後依照下�
 title: 建立最適化歸因模型
 uuid: d1fd0340-1917-41bc-9a08-e78a79d084e7
 exl-id: e0a42374-2500-46a3-a72a-708ab2d228db
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b21da6d12175fa8570b1b366049baa9c8e8ea862
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '860'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >最適化歸因是Adobe Analytics Premium的一項功能，需要您在設定檔中啟用Premium。 您必須更新憑證，並將Premium設定檔新增至profile.cfg檔案。 請參閱[DWB伺服器升級：DWB 6.3為6.2至6.3](https://experienceleague.adobe.com/docs/data-workbench/using/install/upgrade-dwb/c-6-2-to-6-3-upgrade.html)。
+   >最適化歸因是Adobe Analytics Premium的一項功能，需要您在設定檔中啟用Premium。 您必須更新憑證，並將Premium設定檔新增至profile.cfg檔案。 請參閱[DWB伺服器升級：DWB 6.3為6.2至6.3](/help/home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)。
 
 1. 設定&#x200B;**[!UICONTROL Success]**&#x200B;量度。
 
@@ -108,54 +108,54 @@ ht-degree: 1%
 
 **Options**&#x200B;功能表提供進階功能，可設定及顯示最適化歸因分析。
 
-<table id="table_8F6F517B7DBF4259814BEC6D07A72EAC"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 選項功能表 </th> 
-   <th colname="col2" class="entry"> 說明 </th> 
+<table id="table_8F6F517B7DBF4259814BEC6D07A72EAC">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> 選項功能表 </th>
+   <th colname="col2" class="entry"> 說明 </th>
   </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> 設定培訓篩選器  </span> </td> 
-   <td colname="col2"> 「訓練篩選」會與「成功視窗」搭配使用，以在建立歸因模型時篩選母體。 這將提供一個資料子集，僅包含您要分析的訪客。 <p>注意：經驗豐富的使用者也可以運用篩選器的彈性，將焦點放在成功和觸控式視窗的時間線以外。 例如，除了選取時間範圍外，您還可以選取一組<i>反向連結網域</i>，以僅檢查這些網域使用者的歸因。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> 顯示複雜篩選器說明  </span> </td> 
-   <td colname="col2"> 顯示「培訓篩選」、「成功視窗」和「觸控視窗」的篩選代碼。 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> 保存模型  </span> </td> 
-   <td colname="col2"> 儲存目前的歸因模型以供日後使用。 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> 載荷模型  </span> </td> 
-   <td colname="col2"> 開啟先前儲存的歸因模型。 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> 演示視圖  </span> </td> 
-   <td colname="col2"> 隱藏頂部菜單欄以進行演示。 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>「選項」</b> &gt;「高級」包括設定訓練集大小的功能，以及指定在類別不均衡時採取的方法。 </p> </td> 
-   <td colname="col2"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> 高級&gt;培訓集大小  </span> </td> 
-   <td colname="col2"> <p>設定培訓集大小。 </p> <p>注意： 250,000位訪客的預設訓練大小為「大」。 </p> 
-    <ul id="ul_5F17C60227C34A85A2C476A32F2B5DCD"> 
-     <li id="li_A076FC2AD0214ADDBFCFD82AEA5F0880">小= 50,000 </li> 
-     <li id="li_17E77E01D5374068BEBC80B3AD4CCD41">小= 75,000 </li> 
-     <li id="li_7F6B4834742A4BFCBC3DB214425B88C3">一般= 100,000 </li> 
-     <li id="li_0BB7F791603745028CFC661EBC94D8B4">大= 250,000 </li> 
-     <li id="li_34B60233C84F48F1BCB8040C5195411A">大= 50萬 </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><b>高級&gt;分類餘額  </b> </td> 
-   <td colname="col2"> <p>根據資料集大小識別並定義要針對類別不平衡問題產生的輸入記錄數。 </p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> 設定培訓篩選器  </span> </td>
+   <td colname="col2"> 「訓練篩選」會與「成功視窗」搭配使用，以在建立歸因模型時篩選母體。 這將提供一個資料子集，僅包含您要分析的訪客。 <p>注意：經驗豐富的使用者也可以運用篩選器的彈性，將焦點放在成功和觸控式視窗的時間線以外。 例如，除了選取時間範圍外，您還可以選取一組<i>反向連結網域</i>，以僅檢查這些網域使用者的歸因。 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> 顯示複雜篩選器說明  </span> </td>
+   <td colname="col2"> 顯示「培訓篩選」、「成功視窗」和「觸控視窗」的篩選代碼。 </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> 保存模型  </span> </td>
+   <td colname="col2"> 儲存目前的歸因模型以供日後使用。 </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> 載荷模型  </span> </td>
+   <td colname="col2"> 開啟先前儲存的歸因模型。 </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> 演示視圖  </span> </td>
+   <td colname="col2"> 隱藏頂部菜單欄以進行演示。 </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p><b>「選項」</b> &gt;「高級」包括設定訓練集大小的功能，以及指定在類別不均衡時採取的方法。 </p> </td>
+   <td colname="col2"> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> 高級&gt;培訓集大小  </span> </td>
+   <td colname="col2"> <p>設定培訓集大小。 </p> <p>注意： 250,000位訪客的預設訓練大小為「大」。 </p>
+    <ul id="ul_5F17C60227C34A85A2C476A32F2B5DCD">
+     <li id="li_A076FC2AD0214ADDBFCFD82AEA5F0880">小= 50,000 </li>
+     <li id="li_17E77E01D5374068BEBC80B3AD4CCD41">小= 75,000 </li>
+     <li id="li_7F6B4834742A4BFCBC3DB214425B88C3">一般= 100,000 </li>
+     <li id="li_0BB7F791603745028CFC661EBC94D8B4">大= 250,000 </li>
+     <li id="li_34B60233C84F48F1BCB8040C5195411A">大= 50萬 </li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><b>高級&gt;分類餘額  </b> </td>
+   <td colname="col2"> <p>根據資料集大小識別並定義要針對類別不平衡問題產生的輸入記錄數。 </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 | 重設和移除選項 | 說明 |

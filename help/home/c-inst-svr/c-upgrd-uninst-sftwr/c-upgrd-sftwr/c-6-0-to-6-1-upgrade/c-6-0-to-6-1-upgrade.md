@@ -3,9 +3,9 @@ description: 請依照下列步驟，從您的data workbench v6.0x安裝更新�
 title: Data Workbench 6.0 升級至 6.1
 uuid: 4671c2bf-06ab-49c4-8dd1-24115facd83b
 exl-id: 559e1942-561c-4270-9670-550177730cdb,2a337d2e-c70e-4f35-a6c2-c3a7f50a0800
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b21da6d12175fa8570b1b366049baa9c8e8ea862
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '743'
 ht-degree: 1%
 
 ---
@@ -52,18 +52,18 @@ ht-degree: 1%
    1. 更換[!DNL Server\Software]資料夾以更新[!DNL Insight.exe]和[!DNL ReportServer.exe]
    1. 更新[!DNL Server\Scripts]資料夾以更新[!DNL TnTSend.exe]。
 
-1. 若您採用&#x200B;**[!UICONTROL DeviceAtlas]**，則需要[更新[!DNL Server\Lookups]資料夾中的套件](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html)。
+1. 若您採用&#x200B;**[!UICONTROL DeviceAtlas]**，則需要[更新[!DNL Server\Lookups]資料夾中的套件](/help/home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md)。
 
 1. 設定[!DNL Profile.cfg]檔案，確保向量已更新，以反映每個設定檔的項目數。
 
    例如，要啟用&#x200B;**[!UICONTROL Predictive Analytics]**&#x200B;配置檔案，您需要更新此設定。
 
    ```
-   Directories = vector: 5 items 
-       0 = string: Base\\ 
-       1 = string: Geography\\ 
-       2 = string: Predictive Analytics\\ 
-       3 = string: Adobe SC\\ 
+   Directories = vector: 5 items
+       0 = string: Base\\
+       1 = string: Geography\\
+       2 = string: Predictive Analytics\\
+       3 = string: Adobe SC\\
        4 = string: Profile Name\\
    ```
 
@@ -85,7 +85,7 @@ ht-degree: 1%
    如果您未定義記錄來源ID，則會出現下列錯誤：
 
    ```
-   Missing Log Source ID in log processing.cfg.  
+   Missing Log Source ID in log processing.cfg.
    Log Source ID must be defined for all log sources.
    ```
 
@@ -115,10 +115,10 @@ ht-degree: 1%
 1. （選用）Data Workbench目前支援英文(-en-us)和中文(-zh-cn)。 您需要設定字型以支援單位元組和雙位元組字元：
 
    ```
-   Report Server.cfg - Add Fonts 
-      Fonts = vector: 2 items  
-      0 = string: SimSun  
-      1 = string: Arial 
+   Report Server.cfg - Add Fonts
+      Fonts = vector: 2 items
+      0 = string: SimSun
+      1 = string: Arial
    ```
 
    Windows作業系統還必須安裝列出的字型。
@@ -137,7 +137,7 @@ ht-degree: 1%
    1. 根據語言設定啟動服務：
 
       ```
-      ReportServer.exe -RegServer -Locale -en-us (English)  
+      ReportServer.exe -RegServer -Locale -en-us (English)
       ReportServer.exe -RegServer -Locale -zh-cn (Simplified Chinese)
       ```
 
@@ -185,9 +185,9 @@ ht-degree: 1%
    Data Workbench目前支援英文和簡體中文。 您可以選取字型以支援以下兩種語言：
 
    ```
-   Fonts = vector: 2 items 
-   0 = string: SimSun 
-   1 = string: Arial 
+   Fonts = vector: 2 items
+   0 = string: SimSun
+   1 = string: Arial
    ```
 
    Windows作業系統還必須安裝所請求的字型。
