@@ -3,7 +3,7 @@ description: 以Excel檔案產生報表的資訊。
 title: 以 Microsoft Excel 檔案產生報表
 uuid: 0717a916-93d6-4b8e-a2ff-e9179ba4a66e
 exl-id: 4e644867-db5e-4ca9-a2bf-1193e031f2bf
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 4%
@@ -17,18 +17,18 @@ ht-degree: 4%
 必須符合下列要求：
 
 * Microsoft Excel必須安裝在與[!DNL Report Server]相同的電腦上。
-* 運行[!DNL Report Server]進程的用戶帳戶必須具有訪問Microsoft Excel的權限。
+* 執行[!DNL Report Server]程式的使用者帳戶必須擁有存取Microsoft Excel的權限。
 
    >[!NOTE]
    >
    >
-   >    
-   >    
-   >    * 以Excel檔案產生報表時，會開啟新的Excel例項。 有關此過程的詳細資訊，請參閱[http://support.microsoft.com/kb/257757](http://support.microsoft.com/kb/257757)。
-   >    * 雖然Data Workbench支援超過256列和65,536列的資料，但Microsoft Excel不支援。
+   >
+   >
+   >    * 以Excel檔案產生報表時，會開啟新的Excel例項。 有關此過程的詳細資訊，請參閱[https://support.microsoft.com/kb/257757](https://support.microsoft.com/kb/257757)。
+   >    * 雖然Data Workbench支援超過256欄和65,536列的資料，但Microsoft Excel不支援。
 
 
-如果符合這些要求，[!DNL Report Server]會自動啟動Microsoft Excel，並將特定視覺效果、維度和值圖例、文字註解的資料輸出至新的Excel活頁簿，每個工作表各顯示一個視覺效果。
+如果符合這些要求，[!DNL Report Server]會自動啟動Microsoft Excel，並將特定視覺效果、維度和值圖例、文字註解的資料輸出至新Excel活頁簿，每個工作表各顯示一個視覺效果。
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ ht-degree: 4%
 
 除非您已為視覺效果指定[!DNL Custom Title]，否則會使用視窗類型（例如，電影表格）作為工作表名稱。
 
-有關為視覺效果指定[!DNL Custom Titles]的詳細資訊，請參閱[Data Workbench用戶端指南](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html?lang=zh-Hant)。
+有關為視覺效果指定[!DNL Custom Titles]的詳細資訊，請參閱[Data Workbench用戶端指南](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html)。
 
 ## 使用範本檔案 {#section-40ab11916f464b1a88214ab969da6751}
 

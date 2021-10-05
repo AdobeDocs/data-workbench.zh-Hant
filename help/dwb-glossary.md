@@ -3,8 +3,8 @@ description: Data Workbench 字彙表
 title: Data Workbench 字彙表
 uuid: 1000c43d-383c-442d-bd09-de4f286ded31
 exl-id: 29d6560a-0394-4031-8152-20f7ea0de00b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
-workflow-type: ht
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+workflow-type: tm+mt
 source-wordcount: '4201'
 ht-degree: 100%
 
@@ -62,11 +62,11 @@ Data Workbench 中的圖例，顯示所選量度的色彩漸層。色彩圖例�
 
 **信賴區間**
 
-一個值範圍，具有包含比率或趨勢的指定機率。最常使用的區間是 80% (p 值 = .20)、95% (p 值 = .05) 和 99% (p 值 = .01) 信賴區間。(來源：`http://www.nci.nih.gov/statistics/glossary`)
+一個值範圍，具有包含比率或趨勢的指定機率。最常使用的區間是 80% (p 值 = .20)、95% (p 值 = .05) 和 99% (p 值 = .01) 信賴區間。(來源：`https://www.nci.nih.gov/statistics/glossary`)
 
 **信賴水準**
 
-調查結果中的取樣誤差落在指定範圍的機率，通常以標準誤差表示 (例如，1 標準誤差等於 68% 的機率，2 標準誤差等於 95.4% 的機率)。(來源：`http://www.magazine.org/research/3410.cfm`)
+調查結果中的取樣誤差落在指定範圍的機率，通常以標準誤差表示 (例如，1 標準誤差等於 68% 的機率，2 標準誤差等於 95.4% 的機率)。(來源：`https://www.magazine.org/research/3410.cfm`)
 
 **轉換圖**
 
@@ -238,7 +238,7 @@ Adobe Platform 中具有已排序的數值，且與上層可數維度間具有�
 
 **序數**
 
-指稱或表示序列中的數值順序。(來源：`http://wordnet.princeton.edu/perl/webwn?s=ordinal`) 如果維度在 Data Workbench 中按順序排序，則維度的元素將會按照其內部表示的順序顯示。
+指稱或表示序列中的數值順序。(來源：`https://wordnet.princeton.edu/perl/webwn?s=ordinal`) 如果維度在 Data Workbench 中按順序排序，則維度的元素將會按照其內部表示的順序顯示。
 
 **離群值**
 

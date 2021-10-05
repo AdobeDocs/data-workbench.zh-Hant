@@ -3,7 +3,7 @@ description: 開啟Report Portal並確保您能成功檢視設定檔報表的步
 title: 測試 Report Portal
 uuid: eee0df5e-78e0-49b2-853c-40f1b332328b
 exl-id: 197ff815-9234-4dce-b30f-b9cacf259634
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 6%
@@ -20,9 +20,9 @@ ht-degree: 6%
 
 1. 從Web瀏覽器中，使用以下URI格式開啟[!DNL Report Portal]:
 
-   http://*ServerAddress*/*PortalName*
+   https://*ServerAddress*/*PortalName*
 
-   範例：[!DNL http://localhost/VisualReportPortal]
+   範例：[!DNL https://localhost/VisualReportPortal]
 
 1. 如果[!DNL Report Portal]提示您輸入登錄憑據，請輸入帳戶名和密碼（例如，預設帳戶的帳戶為「test」，預設帳戶為「user」）。
 1. 出現[!DNL Report Portal]時，請驗證：

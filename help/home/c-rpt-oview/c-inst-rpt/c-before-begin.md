@@ -3,7 +3,7 @@ description: 為了讓報表伺服器的某些功能發揮作用，您必須先�
 title: 開始之前
 uuid: cb464fb6-3109-4eff-9c95-f0cf1f8a8c66
 exl-id: 5c8bb4c3-fe76-4b4e-960d-113a9927ad59
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 * 訪問檔案系統以輸出資料（網路共用或本地驅動器）。
 * 訪問配置的SMTP伺服器。
-* [!DNL Report]伺服器上安裝的Microsoft Excel 2010 64位元或更高版本。 如需詳細資訊，請參閱[伺服器端Office自動化考量事項](http://support.microsoft.com/kb/257757) 。
+* Microsoft Excel 2010 64位元或更高版本，安裝在[!DNL Report]伺服器上。 如需詳細資訊，請參閱[伺服器端Office自動化考量事項](https://support.microsoft.com/kb/257757) 。
 
 ## 其他需求 {#section-f53d4388656a4dfc90aefe29dfabef89}
 
@@ -32,6 +32,6 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >以Excel檔案產生報表時，會開啟新的Excel例項。 有關此過程的詳細資訊，請參閱[http://support.microsoft.com/kb/257757](http://support.microsoft.com/kb/257757)。
+   >以Excel檔案產生報表時，會開啟新的Excel例項。 有關此過程的詳細資訊，請參閱[https://support.microsoft.com/kb/257757](https://support.microsoft.com/kb/257757)。
 
 * **提供對SMTP伺服器的訪問，以通過電子郵件分發報告。** 如果要在電子郵件中分發報表，報表伺服器必須能夠連接到SMTP伺服器，並且必須開啟指向電子郵件轉發服務的適當埠。

@@ -3,7 +3,7 @@ description: 您可以將工作區匯出為.png影像檔案，或將資料從特
 title: 匯出工作區
 uuid: 59ea6e46-d2e9-41f9-9c8f-e3071eb65424
 exl-id: 87416ddf-2ac0-4f95-ae8e-71051061c757
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 您可以將工作區匯出為.png影像檔案，或將資料從特定視窗匯出至Excel(.xls或.xlsx)檔案。
 
-## 將工作區導出為PNG檔案{#section-f9fbe0f0a1c341e2b063cce106cac35e}
+## 將工作區匯出為PNG檔案 {#section-f9fbe0f0a1c341e2b063cce106cac35e}
 
 可以以「可移植網路圖形」格式（`.png`檔案）保存工作區的快照。 將工作區儲存為`.png`檔案時，可使用下列顏色選項：
 
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 在工作區的標題欄功能表中，按一下「**[!UICONTROL Export]** > **[!UICONTROL Export PNG]** > *&lt;**[!UICONTROL color option]**>*」。
 
-將出現[!UICONTROL Save Image As]對話框。
+隨即顯示「[!UICONTROL Save Image As]」對話框。
 
 導航至要保存檔案的目錄，根據需要更改檔案的名稱，然後按一下&#x200B;**[!UICONTROL Save]**。
 
@@ -37,19 +37,18 @@ ht-degree: 1%
 若要將工作區和個別視窗匯出至Microsoft Excel，必須符合下列要求：
 
 * Microsoft Excel必須安裝在與Data Workbench相同的電腦上。
-* 運行Data Workbench進程的用戶帳戶必須具有訪問Microsoft Excel的權限。
+* 執行Data Workbench程式的使用者帳戶必須擁有存取Microsoft Excel的權限。
 
 >[!NOTE]
 >
->* 將資料匯出為Excel檔案時，會開啟新的Excel例項。 有關此過程的詳細資訊，請參閱[http://support.microsoft.com/kb/257757](http://support.microsoft.com/kb/257757)。
+>* 將資料匯出為Excel檔案時，會開啟新的Excel例項。 有關此過程的詳細資訊，請參閱[https://support.microsoft.com/kb/257757](https://support.microsoft.com/kb/257757)。
 >* 雖然Data Workbench支援超過256列和65,536列資料，但8.0之前的Microsoft Excel版本則否。
 >
 
 
+如果符合這些要求，Data Workbench會自動啟動Microsoft Excel並將資料匯出至新的Excel活頁簿。 資料不會從下列視覺效果匯出：圖表、路徑瀏覽器、程式圖、散布圖和地球圖。
 
-如果滿足這些要求，Data Workbench會自動啟動Microsoft Excel並將資料匯出至新的Excel活頁簿。 資料不會從下列視覺效果匯出：圖表、路徑瀏覽器、程式圖、散布圖和地球圖。
-
-## 應用自定義標題{#section-a332e157554546cb8e88922a8d7a4fa2}
+## 套用自訂標題 {#section-a332e157554546cb8e88922a8d7a4fa2}
 
 除非您已在[!UICONTROL Export]菜單上為窗口指定了「自定義標題」，否則將使用列出的[!UICONTROL Export title]（例如，城市表）作為工作表名稱。
 
@@ -71,7 +70,7 @@ ht-degree: 1%
 1. 在工作區的標題列中，按一下「**[!UICONTROL Export]** > **[!UICONTROL Export]**」。
 1. 指定要匯出工作區、側欄還是兩者。
 
-## 匯出至範本Excel檔案{#section-814772929ca64cf6b92b89d3fdd02302}
+## 匯出至範本Excel檔案 {#section-814772929ca64cf6b92b89d3fdd02302}
 
 您可以將工作區中的資料匯出至範本Excel檔案（`.xls`或`.xlsx`）。 使用範本檔案可縮短每次匯出工作區時，您花在格式化資料上的時間。
 

@@ -3,7 +3,7 @@ description: 擷取第三方網站連結上的活動以啟用退出目標分析�
 title: 追蹤退出至外部連結次數
 uuid: 523f5b4c-4600-4d44-82e7-4a8b2db2d266
 exl-id: fd7434e9-cd66-408e-baa9-6a0df4039786
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 6%
@@ -17,37 +17,37 @@ ht-degree: 6%
 網頁可包含連結至協力廠商網站，且可擷取這些連結上的活動以啟用退出目標分析，尤其是在第三方網站在收到這類反向連結時負責支付反向連結費用的情況下。 由於點擊事件預設會寫入協力廠商系統的記錄檔，因此必須對連結進行修改，才能在本機擷取點擊事件。 您網站中出現的第三方連結必須修改如下：
 
 ```
-<A HREF=”http://www.myserver.com/PageExit.htm?v_eurl=http://www.othersite.com”>
+<A HREF=”https://www.myserver.com/PageExit.htm?v_eurl=https://www.othersite.com”>
 ```
 
 必須建立引用的[!DNL PageExit.htm]檔案，並且應該進行結構化以包含以下指令碼：
 
 ```
-<html> 
-<head> 
- 
-<script> 
-function getExitURLQuery(variable) 
-{ 
- 
-var query = window.location.search.substring(1); 
-var vars = query.split("&"); 
-for (var i=0; i<vars.length; i++) 
-{ 
-var pair = vars[i].split("="); 
-if (pair[0] == variable) 
-{ 
-return pair[1]; 
-} 
- }  
-} 
-</script> 
- 
-<script> 
-location.replace(getExitURLQuery("v_eurl")); 
-</script>  
- 
-</head> 
+<html>
+<head>
+
+<script>
+function getExitURLQuery(variable)
+{
+
+var query = window.location.search.substring(1);
+var vars = query.split("&");
+for (var i=0; i<vars.length; i++)
+{
+var pair = vars[i].split("=");
+if (pair[0] == variable)
+{
+return pair[1];
+}
+ }
+}
+</script>
+
+<script>
+location.replace(getExitURLQuery("v_eurl"));
+</script>
+
+</head>
 </html>
 ```
 

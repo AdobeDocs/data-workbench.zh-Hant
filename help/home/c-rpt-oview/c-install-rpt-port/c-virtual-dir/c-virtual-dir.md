@@ -3,7 +3,7 @@ description: 若要設定Report Portal，您必須將其應用程式檔案對應
 title: 將 Report Portal 頁面對應至虛擬目錄
 uuid: 75ca85d5-d526-48f9-b2c4-ca77c903c6af
 exl-id: 13e457d4-7039-491a-a65d-f23ad7e9fe77
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 18%
@@ -18,7 +18,7 @@ ht-degree: 18%
 
 您指派給[!DNL Report Portal]的虛擬目錄名稱必須與上一節步驟3中用於VSVirtualPortalName資料夾的名稱相符。 例如，如果要使用&quot;Portal&quot;作為[!DNL Report Portal]的名稱，必須將入口的檔案映射到名為&quot;Portal&quot;的虛擬目錄。 以下示例顯示客戶端用於訪問在名為myWebServer的伺服器上分配給虛擬目錄[!DNL VisualReportPortal]的[!DNL Report Portal]的URI:
 
-[!DNL http://myWebServer/VisualReportPortal]
+[!DNL https://myWebServer/VisualReportPortal]
 
 以下過程說明如何將[!DNL Report Portal]映射到IIS 5.0、6.0和7.0或更高版本上的虛擬目錄。
 

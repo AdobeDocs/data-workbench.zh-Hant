@@ -4,7 +4,7 @@ solution: Analytics,Analytics
 title: 應測試哪些項目？
 uuid: 9dfe3685-885e-4098-ab1d-ac891ccc5199
 exl-id: 0f06ff0f-b385-4614-8007-afdb85191a85
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 * **了解要進行的正確變更。** 這需要對網站運作方式以及前端網站基礎的業務流程進行一些研究。您想要進行的變更能提供最大的影響，且可輕鬆測試。
 * **小的變化可能產生重大影響。** 您測試的所有變更並非都需要大幅變更，才能對您的業務產生重大影響。總是開放做些小的，但非常重要的改變。
 
-## 支援的方法{#section-1071adaf54c64ba9bc5ef228c4a23635}
+## 支援的方法 {#section-1071adaf54c64ba9bc5ef228c4a23635}
 
 有許多類型的實驗具有許多不同的目標，可使用Site來執行。 下列清單提供一些範例：
 
@@ -42,6 +42,6 @@ ht-degree: 1%
 >
 >受控實驗是以URI取代為基礎，而非以查詢字串取代為基礎。 以下範例會強調顯示特定URL中的URI:
 >
->`http://www.omniture.com/index.asp?id=1`
+>`https://www.omniture.com/index.asp?id=1`
 >
 >例如，在受控實驗中，您可以指定控制組URI [!DNL index.asp]替換為測試組URI [!DNL index2.asp]以確定哪個頁面設計會產生更多值。

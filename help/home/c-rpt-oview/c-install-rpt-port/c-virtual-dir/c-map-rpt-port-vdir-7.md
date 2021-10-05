@@ -3,7 +3,7 @@ description: 將Report Portal對應到虛擬目錄（IIS 7.0或更新版本）�
 title: 將 Report Portal 對應到虛擬目錄 (IIS 7.0 或更新版本)
 uuid: 9d18fb85-f9d7-48b6-a19b-1e7b68a5adca
 exl-id: 2fa3439a-1fe5-4a20-83db-d233ae8b5263
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 5%
@@ -23,7 +23,7 @@ ht-degree: 5%
 
 * 請確定正用於運行[!DNL Application Pools]的任何用戶帳戶也具有[!DNL Modify]對[!DNL E:\Portal\data\users.mdb]和 [!DNL C:\Windows\Temp\] 資料夾的訪問權。
 
-## 安裝步驟{#section-2a6476a221fa43dfa91866c0d41f82e5}
+## 安裝步驟 {#section-2a6476a221fa43dfa91866c0d41f82e5}
 
 1. 在安裝[!DNL Report Portal]的電腦上，啟動[!DNL IIS Manager]:
 
@@ -54,11 +54,11 @@ ht-degree: 5%
 1. 按一下&#x200B;**[!UICONTROL Advanced Settings]**，然後為「啟用32位應用程式」選擇「True」。
 1. 若要讓[!DNL Portal]運作，您需要將它轉換為應用程式。 設定虛擬目錄後，按一下右鍵Portal虛擬目錄，然後選擇&#x200B;**[!UICONTROL Convert to Application]**。
 
-## 其他提示與秘訣{#section-ff84ab3f66c94620a6a11f0e60471d44}
+## 其他提示與秘訣 {#section-ff84ab3f66c94620a6a11f0e60471d44}
 
 * 您可以從「**[!UICONTROL Softdocs]** > **[!UICONTROL Report Portal]**」下的軟體檔案下載[!DNL Portal]。 您只需下載[!DNL ReportPortal-Release-1-0-0-7.zip]即可。
 
 * 您不再需要[!DNL ReportPortalSetup.xml]，因此可以刪除它。
 * 為了標準化，請將此zip檔案的內容放入[!DNL E:\Portal]中。
 * 要確定SMTP伺服器對於托管服務客戶端，可以查看這裡。
-* 請使用NetOps將報表伺服器的IIS中的網域名稱項目放入更友好的請求中，例如[!DNL reports.clientname.insight.omniture.com]，這樣您的整體入口URL就是[!DNL http://reports.clientname.insight.omniture.com/Portal]。 完成此更改後，配置您的[!DNL email.asa]檔案。
+* 請使用NetOps將報表伺服器的IIS中的網域名稱項目放入更友好的請求中，例如[!DNL reports.clientname.insight.omniture.com]，這樣您的整體入口URL就是[!DNL https://reports.clientname.insight.omniture.com/Portal]。 完成此更改後，配置[!DNL email.asa]檔案。

@@ -3,7 +3,7 @@ description: 若要開始使用AdobeData Workbench控制面板，請遵循下列
 title: 快速入門
 uuid: 9e2ed5fd-29d7-4e06-ad55-c4a35a9043c8
 exl-id: acaa7563-d462-4838-b2b5-3c010382da34
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 2%
@@ -20,10 +20,10 @@ ht-degree: 2%
 
    雖然許多瀏覽器可能有效，但僅正式支援下列網頁瀏覽器：
 
-   * Google Chrome 15及更新版本(可於[https://www.google.com/chrome/](https://www.google.com/chrome/)取得)
-   * Microsoft Internet Explorer 9及更高版本(位於[http://www.microsoft.com/windows/ie/](http://www.microsoft.com/windows/ie/))
-   * Mozilla Firefox 3.6及更高版本(位於[http://www.mozilla.org/en-US/firefox/all-older.html](http://www.mozilla.org/en-US/firefox/all-older.html))
-   * Safari 5.1及更新版本(可於[http://www.apple.com/safari](http://www.apple.com/safari)取得)
+   * Google Chrome 15及更新版本(位於[https://www.google.com/chrome/](https://www.google.com/chrome/))
+   * Microsoft Internet Explorer 9及更高版本(位於[https://www.microsoft.com/windows/ie/](https://www.microsoft.com/windows/ie/))
+   * Mozilla Firefox 3.6及更高版本(位於[https://www.mozilla.org/en-US/firefox/all-older.html](https://www.mozilla.org/en-US/firefox/all-older.html))
+   * Safari 5.1及更新版本(可於[https://www.apple.com/safari](https://www.apple.com/safari)取得)
 
    除了相容的Web瀏覽器，使用控制面板時不需要下載其他軟體。 1.要求帳戶。
 

@@ -3,7 +3,7 @@ description: 最後一步是首次執行控制面板，以允許其初始化。
 title: 初始化控制面板
 uuid: 847ba63e-29d8-4950-aa74-22d825388e2b
 exl-id: 47098d73-d8c4-4d14-964f-108a731d3733
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 4%
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 最後一步是首次執行控制面板，以允許其初始化。
 
-1. 開啟網頁瀏覽器，然後輸入新部署網站的URL(例如http://localhost/dashboard)。
+1. 開啟網頁瀏覽器，然後輸入新部署網站的URL(例如https://localhost/dashboard)。
 1. 首次連接將設定資料庫表，因此可能會遇到一些延遲。
 1. 初始登錄憑據為：
 

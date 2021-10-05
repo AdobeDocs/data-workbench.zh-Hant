@@ -3,7 +3,7 @@ description: AppendURI轉換提供了一種方法，可將資訊添加到預設�
 title: AppendURI
 uuid: 8334d4f9-2bf6-4bd0-af65-8f2b0959652d
 exl-id: 0d5901c0-bd13-4499-8e26-44839aeb7413
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 1%
@@ -29,7 +29,7 @@ AppendURI轉換提供了一種方法，可將資訊添加到預設值中，該�
 
 考慮使用傳統模型 — 視圖 — 控制器方法構建的網站。 在這類系統中，通常使用單個網頁作為系統的訪問點。 對於這類網站，系統中的流量模式視覺化將非常無趣，不會提供訪客使用率和流量的深入分析。 例如，假設有一個網站，可透過下列格式的URI匯集所有Web請求：
 
-* [!DNL http://www.examplesite.com/modelview.asp?id=login&name=bob]
+* [!DNL https://www.examplesite.com/modelview.asp?id=login&name=bob]
 
 模型檢視ASP頁面會接收所有流量，並根據查詢中id欄位的值來決定其動作。 預設情況下，URI維將包含單個條目：
 

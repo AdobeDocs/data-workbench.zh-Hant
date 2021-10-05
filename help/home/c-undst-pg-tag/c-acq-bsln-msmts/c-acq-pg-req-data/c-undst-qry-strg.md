@@ -3,7 +3,7 @@ description: 由於HTTP的無狀態性，網站應用程式和網站開發人員
 title: 瞭解查詢字串
 uuid: 7403277d-fbce-4e98-bd42-894142e38d0d
 exl-id: b5281e5f-3eb7-4d6a-a7b3-9958cb430621
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 2%
@@ -19,26 +19,26 @@ ht-degree: 2%
 在某些動態網站中，查詢字串中的名稱=值配對（變數）對於判斷訪客所請求的實際頁面非常重要。 在這種情況下，URL可以以下列或類似的方式結構：
 
 ```
-http://www.myserver.com/pageserved.asp?PAGENAME=HOME
+https://www.myserver.com/pageserved.asp?PAGENAME=HOME
 ```
 
 在此範例中，PAGENAME實際上是向此URL的請求者提供哪個頁面的指標。 許多網站記錄檔分析工具和服務會限制網站運算子根據網站URL的查詢字串中發生的查詢字串變數，定義其網站中頁面的能力。 Data Workbench伺服器與Data Workbench可設定為使用此類查詢名稱來定義唯一頁面。 這很重要，因為許多系統會將下列URL解譯為相同的頁面，但[!DNL Site]則否。
 
 ```
-http://www.myserver.com/pageserved.asp?PAGENAME=HOME
-http://www.myserver.com/pageserved.asp?PAGENAME=HOME2
+https://www.myserver.com/pageserved.asp?PAGENAME=HOME
+https://www.myserver.com/pageserved.asp?PAGENAME=HOME2
 ```
 
 同樣地，網站開發人員和應用程式通常會在網站的URL中新增許多查詢字串變數，這些變數與識別要求的實際頁面無關。 範例如下所示：
 
 ```
-http://www.myserver.com/pageserved.asp?PAGENAME=HOME&CAMPAIGN=10001
-http://www.myserver.com/pageserved.asp?PAGENAME=HOME&CAMPAIGN=10002
-http://www.myserver.com/pageserved.asp?PAGENAME=HOME&CAMPAIGN=10003
+https://www.myserver.com/pageserved.asp?PAGENAME=HOME&CAMPAIGN=10001
+https://www.myserver.com/pageserved.asp?PAGENAME=HOME&CAMPAIGN=10002
+https://www.myserver.com/pageserved.asp?PAGENAME=HOME&CAMPAIGN=10003
 ```
 
 在此範例中，查詢字串變數CAMPAIGN=已新增至URL。 此促銷活動變數用來指出哪個促銷活動導致訪客選取此URL。 [!DNL Site] 可設定為使用此CAMPAIGN資訊，但可將其與訪客檢視之頁面的定義分開，這樣您就能在頁面清單中看到下列內容，以便用於報告和分析用途：
 
 ```
-http://www.myserver.com/pageserved.asp?PAGENAME=HOME
+https://www.myserver.com/pageserved.asp?PAGENAME=HOME
 ```

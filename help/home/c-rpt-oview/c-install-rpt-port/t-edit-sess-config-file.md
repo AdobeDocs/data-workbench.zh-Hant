@@ -3,7 +3,7 @@ description: Report Portal會使用全域.asa設定檔案中的資訊來初始�
 title: 編輯工作階段組態檔
 uuid: c1bcd4d2-9bf5-425a-bda2-7f805983cdc6
 exl-id: 98cf2e11-afb8-4530-aaa4-ea3c913effc1
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 6%
@@ -30,8 +30,8 @@ Report Portal會使用全域.asa設定檔案中的資訊來初始化使用者工
 1. 儲存檔案。
 1. 要驗證[!DNL Report Portal]檔案是否已正確安裝，並且可通過其指定的虛擬目錄訪問，請在瀏覽器中開啟以下頁：
 
-   http://*YourServerAddress*/*YourPortalName*
+   https://*YourServerAddress*/*YourPortalName*
 
-   範例：[!DNL http://localhost/VisualReportPortal]
+   範例：[!DNL https://localhost/VisualReportPortal]
 
    如果[!DNL Report Portal] ASP已正確安裝，您應該會看到入口登錄頁。 如果沒有看到此頁，請驗證IIS上是否啟用了ASP，並仔細檢查虛擬目錄映射。

@@ -3,7 +3,7 @@ description: Sensor會取得對安裝了Web伺服器的頁面請求(GET請求)�
 title: 取得頁面要求資料
 uuid: 06cf2b14-8d2c-483e-8a75-ce772798978f
 exl-id: e42566a3-d5b4-4f1a-b8cd-1ea646041101
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 4%
@@ -22,81 +22,81 @@ Sensor會取得對安裝了Web伺服器的頁面請求(GET請求)中所附的所
 
 下表包含[!DNL Sensor]為未根據[!DNL Sensor’s]配置檔案篩選出的每個GET請求所獲取的日誌資訊欄位：
 
-<table id="table_5F65474150EC41648B35D0B031FB9B15"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> W3C名稱 </th> 
-   <th colname="col2" class="entry"> 收集的資料 </th> 
-   <th colname="col3" class="entry"> 解釋 </th> 
-   <th colname="col4" class="entry"> 解釋 </th> 
-  </tr> 
+<table id="table_5F65474150EC41648B35D0B031FB9B15">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> W3C名稱 </th>
+   <th colname="col2" class="entry"> 收集的資料 </th>
+   <th colname="col3" class="entry"> 解釋 </th>
+   <th colname="col4" class="entry"> 解釋 </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> x-trackingid </td> 
-   <td colname="col2"> 追蹤識別碼（不重複訪客） </td> 
-   <td colname="col3"> 訪客初始請求時， <span class="wintitle">感測器</span>從使用者瀏覽器中放置的Cookie讀取的識別碼 </td> 
-   <td colname="col4"> V1st=3C94007B4E01F9C2 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>日期 </p> <p>時間 </p> </td> 
-   <td colname="col2"> 時間戳記 </td> 
-   <td colname="col3"> 伺服器處理請求的時間(精度為100ns;正確性取決於伺服器環境和NTP) </td> 
-   <td colname="col4"> 2002-11-21 17:21:45.123 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> sc(content-type) </td> 
-   <td colname="col2"> 內容類型 </td> 
-   <td colname="col3"> 從伺服器返回的對象類型 </td> 
-   <td colname="col4"> 文字/html </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> sc-status </td> 
-   <td colname="col2"> HTTP回應狀態代碼 </td> 
-   <td colname="col3"> 由伺服器產生的數值代碼，用於記錄HTTP伺服器回應的狀態 </td> 
-   <td colname="col4"> 404 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> cs-uri-stem </td> 
-   <td colname="col2"> URI主體 </td> 
-   <td colname="col3"> 客戶端請求的URI的幹部 </td> 
-   <td colname="col4"> <span class="filepath"> pagedir/page.asp  </span> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> c-ip </td> 
-   <td colname="col2"> 客戶端IP </td> 
-   <td colname="col3"> 請求客戶端的IP地址 </td> 
-   <td colname="col4"> 127.0.0.1 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> s-dns </td> 
-   <td colname="col2"> 伺服器域名 </td> 
-   <td colname="col3"> 處理請求的Web伺服器的域名 </td> 
-   <td colname="col4"> <span class="filepath"> www.domain.com  </span> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> cs(referrer) </td> 
-   <td colname="col2"> 反向連結 URL </td> 
-   <td colname="col3"> 用戶端傳送的HTTP反向連結欄位內容 </td> 
-   <td colname="col4"> <span class="filepath"> http://www.referringsite.com  </span> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> cs(user-agent) </td> 
-   <td colname="col2"> 使用者代理 </td> 
-   <td colname="col3"> 用於向HTTP伺服器發出請求的設備 </td> 
-   <td colname="col4"> Mozilla/4.0+(相容；+MSIE+6.0;+Windows+NT+5.1) </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> cs(cookie) </td> 
-   <td colname="col2"> 來自網域的用戶端Cookie </td> 
-   <td colname="col3"> 網站上所有使用者Cookie的內容 </td> 
-   <td colname="col4"> <p>KL_TC1 1038058778312 </p> <p>KL972x1038058778312282052 </p> <p>KL_PVKL972 0 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> cs-uri-query </td> 
-   <td colname="col2"> 查詢字串 </td> 
-   <td colname="col3"> 客戶端請求的URI的查詢字串部分（如果有） </td> 
-   <td colname="col4"> PAGENAME=dynamic1&amp;link=3001 </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> x-trackingid </td>
+   <td colname="col2"> 追蹤識別碼（不重複訪客） </td>
+   <td colname="col3"> 訪客初始請求時， <span class="wintitle">感測器</span>從使用者瀏覽器中放置的Cookie讀取的識別碼 </td>
+   <td colname="col4"> V1st=3C94007B4E01F9C2 </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p>日期 </p> <p>時間 </p> </td>
+   <td colname="col2"> 時間戳記 </td>
+   <td colname="col3"> 伺服器處理請求的時間(精度為100ns;正確性取決於伺服器環境和NTP) </td>
+   <td colname="col4"> 2002-11-21 17:21:45.123 </td>
+  </tr>
+  <tr>
+   <td colname="col1"> sc(content-type) </td>
+   <td colname="col2"> 內容類型 </td>
+   <td colname="col3"> 從伺服器返回的對象類型 </td>
+   <td colname="col4"> 文字/html </td>
+  </tr>
+  <tr>
+   <td colname="col1"> sc-status </td>
+   <td colname="col2"> HTTP回應狀態代碼 </td>
+   <td colname="col3"> 由伺服器產生的數值代碼，用於記錄HTTP伺服器回應的狀態 </td>
+   <td colname="col4"> 404 </td>
+  </tr>
+  <tr>
+   <td colname="col1"> cs-uri-stem </td>
+   <td colname="col2"> URI主體 </td>
+   <td colname="col3"> 客戶端請求的URI的幹部 </td>
+   <td colname="col4"> <span class="filepath"> pagedir/page.asp  </span> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> c-ip </td>
+   <td colname="col2"> 客戶端IP </td>
+   <td colname="col3"> 請求客戶端的IP地址 </td>
+   <td colname="col4"> 127.0.0.1 </td>
+  </tr>
+  <tr>
+   <td colname="col1"> s-dns </td>
+   <td colname="col2"> 伺服器域名 </td>
+   <td colname="col3"> 處理請求的Web伺服器的域名 </td>
+   <td colname="col4"> <span class="filepath"> www.domain.com  </span> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> cs(referrer) </td>
+   <td colname="col2"> 反向連結 URL </td>
+   <td colname="col3"> 用戶端傳送的HTTP反向連結欄位內容 </td>
+   <td colname="col4"> <span class="filepath"> https://www.referringsite.com  </span> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> cs(user-agent) </td>
+   <td colname="col2"> 使用者代理 </td>
+   <td colname="col3"> 用於向HTTP伺服器發出請求的設備 </td>
+   <td colname="col4"> Mozilla/4.0+(相容；+MSIE+6.0;+Windows+NT+5.1) </td>
+  </tr>
+  <tr>
+   <td colname="col1"> cs(cookie) </td>
+   <td colname="col2"> 來自網域的用戶端Cookie </td>
+   <td colname="col3"> 網站上所有使用者Cookie的內容 </td>
+   <td colname="col4"> <p>KL_TC1 1038058778312 </p> <p>KL972x1038058778312282052 </p> <p>KL_PVKL972 0 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> cs-uri-query </td>
+   <td colname="col2"> 查詢字串 </td>
+   <td colname="col3"> 客戶端請求的URI的查詢字串部分（如果有） </td>
+   <td colname="col4"> PAGENAME=dynamic1&amp;link=3001 </td>
+  </tr>
+ </tbody>
 </table>
