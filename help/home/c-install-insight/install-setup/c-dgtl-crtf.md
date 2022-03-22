@@ -1,22 +1,22 @@
 ---
-description: 安裝Insight程式檔案後，您必須下載並安裝由Adobe提供給您的數位憑證。
-title: 下載和安裝數位憑證
+description: 安裝Insight程式檔案後，必須下載並安裝通過Adobe提供給您的數字證書。
+title: 下載和安裝數字證書(Insight)
 uuid: 93ab2222-a977-4279-9e1e-71038b1d1cfa
 exl-id: 0dff95ae-880b-45d5-96df-4eb6bea58891
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '2743'
+source-wordcount: '2744'
 ht-degree: 74%
 
 ---
 
 # 下載和安裝數位憑證{#downloading-and-installing-the-digital-certificate}
 
-安裝Insight程式檔案後，您必須下載並安裝由Adobe提供給您的數位憑證。
+安裝Insight程式檔案後，必須下載並安裝通過Adobe提供給您的數字證書。
 
 ## 下載和安裝數位憑證 {#topic-fed3b44e472c4e4ca6dd5852af14cdb9}
 
-安裝Insight程式檔案後，您必須下載並安裝由Adobe提供給您的數位憑證。
+安裝Insight程式檔案後，必須下載並安裝通過Adobe提供給您的數字證書。
 
 ## 了解數位憑證 {#concept-9eed01c8d95440cda6ce29d68e65098c}
 
@@ -26,39 +26,39 @@ Adobe 使用 X.509 數位憑證來識別和驗證實作的用戶端和伺服器�
 c_undst_dgtl_crtf.xml
 -->
 
-安裝Insight時，您必須安裝數位憑證，授權指名的個人（例如Jane Smith）使用已安裝的用戶端應用程式。
+安裝Insight時，必須安裝數字證書，該證書授權已命名的個人（例如，Jane Smith）使用已安裝的客戶端應用程式。
 
 >[!NOTE]
 >
->如果您需要將Insight移轉至其他電腦或其他指名使用者，必須向Adobe取得新憑證。 若要取得新憑證，請連絡 Adobe 客戶服務。
+>如果需要將Insight遷移到其他電腦或其他指定用戶，則必須從Adobe獲取新證書。 若要取得新憑證，請連絡 Adobe 客戶服務。
 
-Insight提供此數位憑證，以存取伺服器元件。 伺服器元件的管理員可以根據使用者憑證中顯示的通用名稱或組織單位值，限制對伺服器資源的存取。
+Insight顯示此數字證書以訪問伺服器元件。 伺服器元件的管理員可以根據用戶證書中顯示的公用名稱或組織單位值限制對伺服器資源的訪問。
 
 與 Adobe 應用程式一併安裝的 X.509 數位憑證也可讓其用戶端和伺服器元件透過安全通訊端層 (SSL) 交換資訊。SSL 使用公開和私密金鑰加密系統，透過 HTTP 保護傳輸安全。Adobe 的 SSL 實作支援 1024 位元 RSA 金鑰，並使用 128 位元 RC4 加密演算法。
 
-除了安全性，您安裝的數位憑證也可作為授權金鑰，讓您執行Insight。 若要正常運作，數位憑證必須是節點鎖定且最新的，否則應用程式將不會啟動。
+除了安全性外，您安裝的數字證書還用作許可證密鑰，使您能夠運行Insight。 若要正常運行，數字證書必須是節點鎖定且是當前的，否則應用程式將不會啟動。
 
 ## 節點鎖定憑證 {#section-984aa8f2f5a1448cadc4afea978aedc9}
 
-節點鎖定憑證是已註冊至安裝該憑證之電腦的數位憑證。 節點鎖定會將憑證與特定節點識別碼（可唯一識別特定電腦的值）建立永久關聯。 要節點鎖定證書，您的電腦必須具有對Adobe許可證伺服器或具有許可證伺服器訪問權限的代理伺服器的Internet訪問權限。
+節點鎖定證書是已註冊到其上安裝該證書的電腦的數字證書。 節點鎖定將證書與特定節點標識符（唯一標識特定電腦的值）永久關聯。 要鎖定您的證書的節點，您的電腦必須具有對Adobe許可證伺服器或對許可證伺服器具有訪問權限的代理伺服器的Internet訪問權限。
 
-如果要在無法訪問Internet的電腦上進行安裝，必須如[在無Internet訪問的電腦上使用數字證書](../../../home/c-install-insight/install-setup/c-dgtl-crtf.md#section-d3c060131d7f45cda27f68848b704fa1)中所述，獲得並安裝特殊的預鎖定證書。
+如果安裝在無法訪問Internet的電腦上，則必須獲取並安裝特殊的預鎖定證書，如中所述 [在無Internet訪問的電腦上使用數字證書](../../../home/c-install-insight/install-setup/c-dgtl-crtf.md#section-d3c060131d7f45cda27f68848b704fa1)。
 
-如果您要在可存取網際網路的電腦上進行安裝，您的數位憑證會在您第一次啟動Insight時自動與節點鎖定。 節點鎖定後，該憑證就無法用於任何其他電腦。 如果您需要將Insight移轉至其他電腦，必須從Adobe取得新的解除鎖定憑證。
+如果安裝在可以訪問Internet的電腦上，則您的數字證書將在您首次啟動Insight時自動被節點鎖定。 在節點鎖定後，證書不能用於任何其他電腦。 如果需要將Insight遷移到另一台電腦，則必須從Adobe中獲取新的未鎖定證書。
 
 ## 最新憑證 {#section-0816b031df3e415ab3f0205b720c723e}
 
-除了節點鎖定外，您的數位憑證必須為最新。 若要保持最新狀態，您的憑證必須定期重新驗證 (通常每 30 天一次，但可視您與 Adobe 的合約而定)。如果您的電腦可以訪問網際網路，則重新驗證過程完全透明。 Insight會自動連線至授權伺服器，並在必要時重新驗證憑證。 如果您的電腦無法訪問Internet，則必須按以下部分所述手動安裝更新的證書。
+除了節點鎖定外，您的數字證書必須是最新的。 若要保持最新狀態，您的憑證必須定期重新驗證 (通常每 30 天一次，但可視您與 Adobe 的合約而定)。如果電腦具有Internet訪問權限，則重新驗證過程完全透明。 Insight自動連接到許可證伺服器，並在需要時重新驗證證書。 如果電腦沒有Internet訪問權限，則必須手動安裝更新的證書，如下節所述。
 
-## 在無法存取網際網路的電腦上使用數位憑證 {#section-d3c060131d7f45cda27f68848b704fa1}
+## 在無Internet訪問的電腦上使用數字證書 {#section-d3c060131d7f45cda27f68848b704fa1}
 
-如果您要在無法存取網際網路的電腦上進行安裝，必須索取預先鎖定憑證，才能安裝Insight。 預先鎖定憑證是數位憑證，可Adobe手動鎖定至電腦的節點識別碼。
+如果安裝在無法訪問Internet的電腦上，則必須為安裝Insight請求預鎖定的證書。 預鎖定證書是Adobe手動鎖定到電腦的節點標識符的數字證書。
 
-若要要求預先鎖定憑證，您必須傳送節點識別碼和憑證號碼給Adobe客戶服務。 若要取得您電腦的節點識別碼，請聯絡Adobe客戶服務以要求Adobe[!DNL Node Identifier]公用程式。 您也可以從Insight在嘗試連線至License Server且無法連線時發出的警報中取得節點識別碼。 收到預先鎖定憑證時，請依照[安裝數位憑證](../../../home/c-install-insight/install-setup/c-dgtl-crtf.md#task-1dad1e1d86d04100a7bcf87f26303c38)的最後兩個步驟所述進行安裝。
+要請求預鎖定的證書，您必須將節點標識符和證書編號發送到Adobe客戶服務。 要獲取電腦的節點標識符，請與Adobe客戶服務部門聯繫以請求Adobe [!DNL Node Identifier] 的子菜單。 您還可以從警報中獲取節點標識符，當Insight嘗試連接到許可證伺服器時，它會發出該警報，但無法。 收到預鎖定的證書時，請按照 [安裝數字證書](../../../home/c-install-insight/install-setup/c-dgtl-crtf.md#task-1dad1e1d86d04100a7bcf87f26303c38)。
 
-需要重新驗證憑證時，您必須從授權伺服器下載經過驗證的新憑證，然後在電腦上重新安裝(除非您同意Adobe狀態)。
+當需要重新驗證證書時，您必須從許可證伺服器下載新的已驗證證書，然後在電腦上重新安裝它(除非您與Adobe狀態達成協定)。
 
-## 安裝數位憑證 {#task-1dad1e1d86d04100a7bcf87f26303c38}
+## 安裝數字證書 {#task-1dad1e1d86d04100a7bcf87f26303c38}
 
 <!--
 t_install_dgtl_crtf.xml
@@ -66,18 +66,18 @@ t_install_dgtl_crtf.xml
 
 **若要下載及安裝數位憑證**
 
-1. 開啟Web瀏覽器至[!DNL https:\\license.visualsciences.com]。
+1. 開啟Web瀏覽器 [!DNL https:\\license.visualsciences.com]。
 
    >[!NOTE]
    >
-   >您的瀏覽器可能會在這時提示您提供數位憑證。如果出現提示，請按一下&#x200B;**[!UICONTROL Cancel]**&#x200B;關閉對話框。
+   >您的瀏覽器可能會在這時提示您提供數位憑證。如果確實如此，請按一下 **[!UICONTROL Cancel]** 對話框。
 
 1. 在登入畫面中，輸入 Adobe 提供的「[!DNL Account Name]」和「[!DNL Password]」，然後按一下「**[!UICONTROL login]**」。
-1. 找出已針對您的Insight例項（*您的名稱*.pem）核發的憑證，然後按一下與該憑證相關聯的![](assets/btn_save_certificatedownload.PNG)圖示。
+1. 找到為Insight實例頒發的證書( *您的姓名*.pem)，然後按一下 ![](assets/btn_save_certificatedownload.PNG) 表徵圖。
 1. 提示儲存憑證時，請按一下「**[!UICONTROL Save]**」。
-1. 將檔案下載至[!DNL Certificates]資料夾，位於您安裝Insight的目錄中。
+1. 將檔案下載到 [!DNL Certificates] 資料夾。
 
-   此資料夾包含名為[!DNL trust_ca_cert.pem]的證書檔案。 Insight必須一律存在兩個憑證檔案，才能運作。
+   此資料夾包含名為的證書檔案 [!DNL trust_ca_cert.pem]。 兩個證書檔案必須始終存在，Insight才能運行。
 
 ## Windows 憑證存放區 {#concept-4acb13b7de9340ea8cde8ad84b93358d}
 
@@ -98,7 +98,7 @@ crypto-api.xml
 1. 您必須能存取 [!DNL certmgr.msc] 檔案，並能夠將憑證和金鑰匯入 **Personal** 存放區。(根據預設，大部分 Windows 使用者都符合條件。)
 
 1. 進行設定的使用者必須有 **OpenSSL** 命令列工具的副本。
-1. 伺服器和客戶端必須已配置為使用自定義SSL證書，以說明將客戶端證書儲存在Windows證書儲存中，而不是儲存在&#x200B;**Certificates**&#x200B;目錄中。
+1. 伺服器和客戶端必須已配置為使用自定義SSL證書，這將提供將客戶端證書儲存在Windows證書儲存中而不是儲存在 **證書** 的子菜單。
 
 ## 設定 Windows 憑證存放區 {#section-3629802122e947d4b4f63e8b732cfe27}
 
@@ -106,7 +106,7 @@ crypto-api.xml
 
 **步驟 1：將使用者的 SSL 憑證和私密金鑰匯入 Windows 憑證存放區。**
 
-在[使用Data Workbench](../../../home/c-install-insight/install-setup/c-dgtl-crtf.md#concept-ee6a9b5015f84a0ba64a11428b0a72dd)中的自訂憑證時，系統會引導您將SSL憑證和金鑰放入下列目錄：
+在 [在Data Workbench中使用自定義證書](../../../home/c-install-insight/install-setup/c-dgtl-crtf.md#concept-ee6a9b5015f84a0ba64a11428b0a72dd) 您將被指示將SSL證書和密鑰放入以下目錄：
 
 ```
 <
@@ -115,7 +115,7 @@ crypto-api.xml
 </filepath>>\Certificates\
 ```
 
-憑證的名稱為`<Common Name>.pem`，例如Analytics Server 1.pem（不是trust_ca_cert.pem檔案）。
+證書的名稱為 `<Common Name>.pem` 例如Analytics Server 1.pem（不是trust_ca_cert.pem檔案。）
 
 必須將憑證和私密金鑰先從[!DNL pem] 格式轉換為 [!DNL .pfx] 格式 (例如 [!DNL pkcs12.pfx]) 才能匯入。
 

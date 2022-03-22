@@ -1,24 +1,24 @@
 ---
-description: 只有在您想要讓新的地形影像層顯示在全球視覺效果時，才安裝Terrain Images.cfg檔案。
-title: 安裝 Terrain Images.cfg 檔案
+description: 僅當要使新的地形影像層在全球可視化中顯示時，才安裝Terrain Images.cfg檔案。
+title: 安裝Terrain Images.cfg檔案(Globes)
 uuid: eba5eb17-2161-43a9-8df2-74058b9b636b
 exl-id: e73490ff-583a-4d50-9c3f-a289f1e7b209
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 8%
+source-wordcount: '115'
+ht-degree: 4%
 
 ---
 
 # 安裝 Terrain Images.cfg 檔案{#installing-the-terrain-images-cfg-file}
 
-只有在您想要讓新的地形影像層顯示在全球視覺效果時，才安裝Terrain Images.cfg檔案。
+僅當要使新的地形影像層在全球可視化中顯示時，才安裝Terrain Images.cfg檔案。
 
-請參閱[地球](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/globes/c-globes.html)。
+請參閱 [金球獎](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/globes/c-globes.html)。
 
-**在Insight Server上安裝Terrain Images.cfg檔案的方式**
+**在Insight Server上安裝Terrain Images.cfg檔案**
 
-1. 從Adobe提供給您的[!DNL .zip]檔案複製[!DNL Terrain Images.cfg]檔案。
-1. 將檔案貼入Insight Server安裝目錄的[!DNL Components]資料夾中。
+1. 複製 [!DNL Terrain Images.cfg] 檔案 [!DNL .zip] 檔案。Adobe。
+1. 將檔案貼上到 [!DNL Components] 資料夾。
 
-   有關配置[!DNL Terrain Images.cfg]的資訊，請參閱[地形影像層](https://experienceleague.adobe.com/docs/data-workbench/using/geography/imagery-layers/terrain-image-layers/c-trn-img-lyrs.html)。
+   有關配置的資訊 [!DNL Terrain Images.cfg]，請參閱 [地形影像層](https://experienceleague.adobe.com/docs/data-workbench/using/geography/imagery-layers/terrain-image-layers/c-trn-img-lyrs.html)。
