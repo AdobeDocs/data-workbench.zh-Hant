@@ -4,7 +4,7 @@ title: Data Workbench 說明
 feature: Reports & Analytics Basics
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
 exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
-source-git-commit: 3a446ecb2ad7f16d840dbd2bfde44e3298bc588f
+source-git-commit: 541751e1b8966a0816b7a42e117f4c69db1ed002
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 96%
@@ -14,6 +14,8 @@ ht-degree: 96%
 # Data Workbench 說明{#data-workbench-help}
 
 ![橫幅](/help/home/assets/doc_banner_workbench.png)
+
+{{eol}}
 
 [Data Workbench](https://www.adobe.com/solutions/digital-analytics/data-workbench.html) 是 [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html) 的一部分，提供高度彈性、強大又多元的功能，專門收集、處理、分析和視覺化線上與離線客戶的互動資料，適用範圍涵蓋所有類型的網頁、CRM、POS 與其他資料類型。Data Workbench 中的互動式報表可讓您分析及回應相關統計資訊，以監控活動與預測客戶趨勢。
 

@@ -3,7 +3,7 @@ description: 流量設定檔包含下列維度，以協助識別訪客動作。
 title: 流量設定檔維度
 uuid: 9c0dabfc-67c9-4772-99ac-4c503c06ea78
 exl-id: 1e7d2904-aa5d-4848-a398-5d4669953be9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 4ab43bfbad96096fb2cebd77a8be8fa6d49fa7dc
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 8%
@@ -12,22 +12,24 @@ ht-degree: 8%
 
 # 流量設定檔維度{#traffic-profile-dimensions}
 
+{{eol}}
+
 流量設定檔包含下列維度，以協助識別訪客動作。
 
-下表中的維度是在Traffic\Dataset\Transformation directory的轉換資料集包含檔案中定義。
+下表中的維定義在轉換資料集的Traffic\Dataset\Transformation目錄中包含檔案。
 
 | 名稱 | 類型 | 層級 | 說明 |
 |---|---|---|---|
 | 日 | 簡單 | 工作階段 | 工作階段第一個記錄項目的日期。 |
 | 星期 | 簡單 | 工作階段 | 工作階段第一個記錄項目的一週中的某天。 |
-| 確切的頁面持續時間（隱藏） | 數值 | 頁面檢視 | 頁面檢視的持續時間（以毫秒為單位），從該頁面檢視的時間減去下一個頁面檢視的時間。 工作階段中最後一個頁面檢視的確切持續時間一律為0。 |
+| 確切的頁面持續時間（隱藏） | 數值 | 頁面瀏覽數 | 頁面檢視的持續時間（以毫秒為單位），從該頁面檢視的時間減去下一個頁面檢視的時間。 工作階段中最後一個頁面檢視的確切持續時間一律為0。 |
 | 小時 | 簡單 | 工作階段 | 工作階段第一個記錄項目的小時。 |
 | 小時 | 簡單 | 工作階段 | 工作階段第一個記錄項目的一小時。 |
 | 月 | 簡單 | 工作階段 | 工作階段第一個記錄項目的月份。 |
-| 頁面檢視 | 可數 | 工作階段 | 滿足頁面檢視條件的記錄項目或「事件資料記錄」。 |
+| 頁面瀏覽數 | 可數 | 工作階段 | 滿足頁面檢視條件的記錄項目或「事件資料記錄」。 |
 | 反向連結 | 簡單 | 工作階段 | 工作階段第一個記錄項目之反向連結的第二層級網域（若為內部反向連結網域，則為無）。 |
-| 工作階段 | 可數 | 訪客 | 訪客相關連續活動的時段。 其分隔方式為閒置30分鐘、外部反向連結網域或最長48小時的工作階段期間。 可在[!DNL Transformation.cfg]檔案中設定這些逾時和被視為內部的網域集。 |
-| URI | 簡單 | 頁面檢視 | 頁面檢視的URI主體。 可使用ReplaceURI、PrependURI和AppendURI轉換來重定義URI維。 |
+| 工作階段 | 可數 | 訪客 | 訪客相關連續活動的時段。 其分隔方式為閒置30分鐘、外部反向連結網域或最長48小時的工作階段期間。 可在 [!DNL Transformation.cfg] 檔案。 |
+| URI | 簡單 | 頁面瀏覽數 | 頁面檢視的URI主體。 可使用ReplaceURI、PrependURI和AppendURI轉換來重定義URI維。 |
 | 訪客 | 可數 | 不適用 | x-trackingid的唯一值。 若使用永久性Cookie，則通常對應至不重複瀏覽器。 x-trackingid則可以以IP號碼或某些其他唯一識別碼（例如x.509公用名稱）為基礎。 |
 | 週 | 簡單 | 工作階段 | 工作階段第一個記錄項目的周。 |
 
@@ -64,7 +66,7 @@ ht-degree: 8%
   <tr> 
    <td colname="col1"> 下一個URI </td> 
    <td colname="col2"> 派生（基於URI維的ShiftDim） </td> 
-   <td colname="col03"> 頁面檢視 </td> 
+   <td colname="col03"> 頁面瀏覽數 </td> 
    <td colname="col3"> 當前選定URI之後的下一個URI的URI。 此衍生維度用於分析訪客在任何指定URI後接做什麼。 </td> 
   </tr> 
   <tr> 
@@ -76,7 +78,7 @@ ht-degree: 8%
   <tr> 
    <td colname="col1"> 頁面 </td> 
    <td colname="col2"> 派生（基於URI維的RenameDim） </td> 
-   <td colname="col03"> 頁面檢視 </td> 
+   <td colname="col03"> 頁面瀏覽數 </td> 
    <td colname="col3"> 工作階段期間造訪的每個頁面的名稱。 最初，每個頁的名稱與URI相同，但可以更改以便更輕鬆地解釋。 </td> 
   </tr> 
   <tr> 
@@ -136,7 +138,7 @@ ht-degree: 8%
   <tr> 
    <td colname="col1"> URI </td> 
    <td colname="col2"> 繼承自內置DimensionURI </td> 
-   <td colname="col03"> 頁面檢視 </td> 
+   <td colname="col03"> 頁面瀏覽數 </td> 
    <td colname="col3"> 已檢視之每個頁面的URI。 </td> 
   </tr> 
   <tr> 
