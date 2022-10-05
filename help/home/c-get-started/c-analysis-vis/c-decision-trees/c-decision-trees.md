@@ -3,7 +3,7 @@ description: 決策樹是預測性分析視覺效果，可用來評估訪客特�
 title: 決策樹產生器
 uuid: 1f7e91ea-e5d9-4d8e-9fcf-cae4de42dfdd
 exl-id: d93e6a34-be59-4af5-84c3-c13deb98b57b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 23%
@@ -11,6 +11,8 @@ ht-degree: 23%
 ---
 
 # 決策樹產生器{#decision-tree-builder}
+
+{{eol}}
 
 決策樹是預測性分析視覺效果，可用來評估訪客特徵和關係。 決策樹建立工具可以根據指定的正面案例和一組想法產生決策樹視覺化效果。
 
@@ -32,7 +34,7 @@ ht-degree: 23%
 <table id="table_FCC5D63EF8A843D79B2338BD951025EA"> 
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><b>工具欄和菜單</b> </p> <p>工具欄包括決策樹的按鈕和菜單命令，包括設定正案例和添加輸入清單的功能。 </p> <p>與其他視覺效果一樣，<span class="uicontrol">元素</span>方塊可讓您拖放Dimension和元素，不過您也可以直接從搜尋器窗格拖曳。 </p> <p>有關詳細資訊，請參閱<a href="../../../../home/c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees-menu.md#concept-bfc4e80651a243d3966cc770b205606c">決策樹選項</a>。 </p> </td> 
+   <td colname="col1"> <p><b>工具欄和菜單</b> </p> <p>工具欄包括決策樹的按鈕和菜單命令，包括設定正案例和添加輸入清單的功能。 </p> <p>如同其他視覺效果， <span class="uicontrol"> 元素</span> 方塊可讓您拖放Dimension和元素，不過您也可以直接從「尋找器」窗格拖曳。 </p> <p>如需詳細資訊，請參閱 <a href="../../../../home/c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees-menu.md#concept-bfc4e80651a243d3966cc770b205606c"> 決策樹選項</a>. </p> </td> 
    <td colname="col2"> <p><b>輸入清單</b> </p> <p>此區域顯示樹模型的輸入。 它們會以色碼編碼，以匹配樹狀顯示區域中的節點。 </p> <p>按一下右鍵輸入可從模型中刪除輸入並重置。 </p> <p>如果將滑鼠移到樹狀結點上，樹狀結點會沿著該節點的分支顯示分割條件，並以其信賴值在該節點顯示預測。 </p> </td> 
    <td colname="col3"> <p><b>樹顯示</b> </p> <p>此區域顯示樹模型，其中葉節點根據其預測進行顏色編碼：綠色代表正面案例的真實預測，紅色代表虛假預測。 </p> <p>分割節點被顏色編碼為與其選擇條件匹配的輸入。 將滑鼠游標暫留在節點上會顯示分割的相關資訊，並展開輸入清單以顯示分支上的分割點和訓練集的分佈。 </p> <p>預設不會顯示低於臨界值的節點。 按一下可擴展節點（以+符號表示）以瀏覽分支。 按一下根節點以返回完整樹顯示。 </p> </td> 
   </tr> 

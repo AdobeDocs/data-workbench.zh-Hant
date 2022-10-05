@@ -3,7 +3,7 @@ description: 文字或運算式可輸入至工作表的任何儲存格。
 title: 在工作表中處理資料
 uuid: c2331fa5-aa07-4622-8f44-5124c22dffcb
 exl-id: 40d9211b-8f5c-4051-8f93-638ffacf45bd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 3%
@@ -12,11 +12,13 @@ ht-degree: 3%
 
 # 在工作表中處理資料{#work-with-data-in-worksheets}
 
+{{eol}}
+
 文字或運算式可輸入至工作表的任何儲存格。
 
-除非使用[!DNL eval( )]，否則工作表中的所有運算式前面都會加上等號(=)，這會將參考儲存格中的文字視為運算式。
+除非使用 [!DNL eval( )]，會將參考儲存格中的文字視為運算式。
 
-如需量度、維度和篩選語法規則的完整清單，請參閱[查詢語言語法](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)。
+如需量度、維度和篩選語法規則的完整清單，請參閱 [查詢語言語法](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
 
 **要將資料鍵入工作表**
 
@@ -25,34 +27,34 @@ ht-degree: 3%
 
 **若要從一個儲存格複製並貼到另一個儲存格**
 
-1. 以滑鼠右鍵按一下包含您要複製之資料的儲存格，然後按一下&#x200B;**[!UICONTROL Copy]**。
-1. 以滑鼠右鍵按一下要將複製資料貼入的儲存格，然後按一下&#x200B;**[!UICONTROL Paste]**。
+1. 以滑鼠右鍵按一下包含您要複製之資料的儲存格，然後按一下 **[!UICONTROL Copy]**.
+1. 以滑鼠右鍵按一下您要將複製資料貼入的儲存格，然後按一下 **[!UICONTROL Paste]**.
 
 Data Workbench會自動更新新儲存格中的參考，以參考適當的欄和列。
 
 **若要從一組儲存格複製並貼到另一個儲存格**
 
 1. 選取包含您要複製之資料的儲存格。
-1. 按一下右鍵包含要複製的資料的單元格，然後按一下&#x200B;**[!UICONTROL Copy]**。
-1. 以滑鼠右鍵按一下您要開始貼上複製資料的第一個儲存格，然後按一下&#x200B;**[!UICONTROL Paste]**。 資料會貼入第一個儲存格，並在其下方。
+1. 以滑鼠右鍵按一下包含您要複製之資料的儲存格，然後按一下 **[!UICONTROL Copy]**.
+1. 以滑鼠右鍵按一下您要開始貼上複製資料的第一個儲存格，然後按一下 **[!UICONTROL Paste]**. 資料會貼入第一個儲存格，並在其下方。
 
 Data Workbench會自動更新新儲存格中的參考，以參考適當的欄和列。
 
 **插入列**
 
-* 按一下右鍵某列，然後按一下&#x200B;**[!UICONTROL Insert Column]**。 新列將插入到選定列的左側。
+* 以滑鼠右鍵按一下欄，然後按一下 **[!UICONTROL Insert Column]**. 新列將插入到選定列的左側。
 
 **刪除列**
 
-* 按一下右鍵要刪除的列，然後按一下&#x200B;**[!UICONTROL Delete Column]**。 欄即會移除。
+* 按一下右鍵要刪除的列，然後按一下 **[!UICONTROL Delete Column]**. 欄即會移除。
 
 **要插入行**
 
-* 以滑鼠右鍵按一下某一行，然後按一下&#x200B;**[!UICONTROL Insert Row]**。 新行將插入到選定行的上方。
+* 以滑鼠右鍵按一列，然後按一下 **[!UICONTROL Insert Row]**. 新行將插入到選定行的上方。
 
 **刪除行**
 
-* 按一下右鍵要刪除的行，然後按一下&#x200B;**[!UICONTROL Delete Row]**。 該行被刪除。
+* 以滑鼠右鍵按一下您要刪除的列，然後按一下 **[!UICONTROL Delete Row]**. 該行被刪除。
 
 **調整列大小**
 
@@ -61,7 +63,7 @@ Data Workbench會自動更新新儲存格中的參考，以參考適當的欄和
 
 **設定儲存格格式**
 
-1. 按一下右鍵單元格，然後按一下&#x200B;**[!UICONTROL Format]**。
+1. 以滑鼠右鍵按一下儲存格，然後按一下 **[!UICONTROL Format]**.
 
    ![](assets/mnu_Worksheet_Format.png)
 
@@ -77,30 +79,30 @@ Data Workbench會自動更新新儲存格中的參考，以參考適當的欄和
  <tbody> 
   <tr> 
    <td colname="col1"> <p>數字 </p> </td> 
-   <td colname="col2"> <p>將選取的數值格式套用至您的資料，例如時間、日期、百分比或小數。 </p> <p>按一下「<span class="uicontrol">預設</span>」以刪除選定的格式。 </p> </td> 
+   <td colname="col2"> <p>將選取的數值格式套用至您的資料，例如時間、日期、百分比或小數。 </p> <p>按一下 <span class="uicontrol"> 預設</span> ，移除所選格式。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>正文 </p> </td> 
-   <td colname="col2"> <p>將儲存格內的資料靠左、靠中或靠右對齊。 保留預設對齊。 </p> <p>按一下「<span class="uicontrol">預設</span>」以刪除選定的格式。 </p> </td> 
+   <td colname="col2"> <p>將儲存格內的資料靠左、靠中或靠右對齊。 保留預設對齊。 </p> <p>按一下 <span class="uicontrol"> 預設</span> ，移除所選格式。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>色彩 </p> </td> 
-   <td colname="col2"> <p>將所選字型顏色應用於單元格內的資料。 預設字型顏色為白色。 </p> <p>按一下「<span class="uicontrol">預設</span>」以刪除選定的格式。 </p> </td> 
+   <td colname="col2"> <p>將所選字型顏色應用於單元格內的資料。 預設字型顏色為白色。 </p> <p>按一下 <span class="uicontrol"> 預設</span> ，移除所選格式。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>指標 </p> </td> 
-   <td colname="col2"> <p>使用此儲存格建立量度指標。 如需詳細資訊，請參閱<a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-metric-ind.md#concept-f0e911b23b2c4e8da3e1ea7b9ae04183">建立量度指標</a>。 </p> <p>按一下「<span class="uicontrol">預設</span>」以刪除選定的格式。 </p> </td> 
+   <td colname="col2"> <p>使用此儲存格建立量度指標。 如需詳細資訊，請參閱 <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-metric-ind.md#concept-f0e911b23b2c4e8da3e1ea7b9ae04183"> 建立量度指標</a>. </p> <p>按一下 <span class="uicontrol"> 預設</span> ，移除所選格式。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>輸入儲存格 </p> </td> 
-   <td colname="col2"> <p>將所選儲存格設為輸入儲存格。 如需詳細資訊，請參閱<a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-input-cells.md#concept-08cd2c05a28a43dd9f7698b37e23e590">建立輸入儲存格</a>。 </p> <p>按一下「<span class="uicontrol">預設</span>」以刪除選定的格式。 </p> </td> 
+   <td colname="col2"> <p>將所選儲存格設為輸入儲存格。 如需詳細資訊，請參閱 <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-input-cells.md#concept-08cd2c05a28a43dd9f7698b37e23e590"> 建立輸入儲存格</a>. </p> <p>按一下 <span class="uicontrol"> 預設</span> ，移除所選格式。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 鍵盤快速鍵 {#section-05301f4d2c60418e86902635a7aeee20}
 
-在工作表中，您可以使用許多基本編輯鍵盤快速鍵，這些鍵盤快速鍵可用於任何文本編輯器，如記事本或Microsoft Word。
+在工作表中，您可以使用許多基本的編輯鍵盤快速鍵，這些鍵盤快速鍵可用於任何文本編輯器，如記事本或Microsoft Word。
 
 下表列出了在將資料輸入工作表時可以使用的基本鍵盤快捷鍵。
 
@@ -121,11 +123,11 @@ Data Workbench會自動更新新儲存格中的參考，以參考適當的欄和
    <td colname="col2"> <p>將游標放在您選取的儲存格中，即可編輯儲存格。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Enter </p> </td> 
+   <td colname="col1"> <p>Enter 鍵 </p> </td> 
    <td colname="col2"> <p>完成對所選儲存格的編輯。 游標從單元格中刪除，單元格內容反映您的編輯。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Esc </p> </td> 
+   <td colname="col1"> <p>Esc 鍵 </p> </td> 
    <td colname="col2"> <p>取消編輯您選取的儲存格。 游標從單元格中刪除，單元格內容將恢復到開始編輯之前的狀態。 </p> </td> 
   </tr> 
   <tr> 

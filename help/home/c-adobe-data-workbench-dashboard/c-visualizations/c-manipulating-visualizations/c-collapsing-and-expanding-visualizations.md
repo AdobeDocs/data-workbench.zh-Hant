@@ -3,7 +3,7 @@ description: 折疊/展開目前的視覺效果。
 title: 收合和展開視覺效果
 uuid: 16ee5479-e457-4abc-8a40-ed75612318fa
 exl-id: b005fd1e-1704-476f-b220-44ac591b8d15
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 8%
@@ -11,6 +11,8 @@ ht-degree: 8%
 ---
 
 # 收合和展開視覺效果{#collapsing-and-expanding-visualizations}
+
+{{eol}}
 
 折疊/展開目前的視覺效果。
 

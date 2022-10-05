@@ -3,7 +3,7 @@ description: 信賴圖例可協助您判斷您看到的數字是偶然發生的�
 title: 信賴度圖例
 uuid: 2559ff7c-6060-4fee-b509-9ae0c3912016
 exl-id: 9aab169a-98b8-4e71-b74d-28e385c5c424
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # 信賴度圖例{#confidence-legends}
+
+{{eol}}
 
 信賴圖例可協助您判斷您看到的數字是偶然發生的機率，並了解資料中可能的偏差。
 
@@ -32,7 +34,7 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>量度或公式 </p> </td> 
-   <td colname="col2"> <p>您要檢視信賴資訊的量度名稱或量度運算式。 您在工作區中所做的任何選取都會反映在圖例中。 此範例顯示轉換量度的詳細資訊。 </p> <p>有關輸入表達式的語法規則的資訊，請參閱<a href="../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f">查詢語言語法</a>。 </p> </td> 
+   <td colname="col2"> <p>您要檢視信賴資訊的量度名稱或量度運算式。 您在工作區中所做的任何選取都會反映在圖例中。 此範例顯示轉換量度的詳細資訊。 </p> <p>如需輸入運算式的語法規則相關資訊，請參閱 <a href="../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f"> 查詢語言語法</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>測量值 </p> </td> 
@@ -54,15 +56,13 @@ ht-degree: 2%
 >分析任何計算結果時，您必須考慮下列警告：
 >* 數字是估計值。 如果您對不同的資料集重複相同的計算，得到的結果會不同。 這稱為隨機變異。
 >* 對高概率的外推取決於對所有指標來說都不正確的常態假設。 因此，99%概率的值比90%概率的值不可靠。
-
 >
->
-如果您需要更準確的數字，應咨詢統計專家。
+>如果您需要更準確的數字，應咨詢統計專家。
 
-## 更改度量或公式{#section-7f09ff84c3514f26b78d29294e1f03d9}
+## 變更量度或公式 {#section-7f09ff84c3514f26b78d29294e1f03d9}
 
-* 在信賴圖例中，按一下&#x200B;**[!UICONTROL Metric or Formula]**&#x200B;欄位，然後輸入所需的量度或運算式。 有關表達式語法規則，請參閱[查詢語言語法](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)。
+* 在信賴圖例中，按一下 **[!UICONTROL Metric or Formula]** 欄位並輸入所需的量度或運算式。 如需運算式語法規則，請參閱 [查詢語言語法](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
 
 ## 匯出至 Microsoft Excel {#section-f36e2db7273740b7af278f8a2b79d564}
 
-有關導出窗口的資訊，請參閱[導出窗口資料](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)。
+有關導出窗口的資訊，請參見 [導出窗口資料](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).

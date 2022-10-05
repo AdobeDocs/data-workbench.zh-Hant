@@ -3,14 +3,16 @@ description: 時間維度可讓您根據您為「輸入時間」（1970年）參
 title: 時間維度
 uuid: b633cf4f-0db4-4378-9e59-43b6ad8f772d
 exl-id: f9534b24-3a16-4220-bac2-bc541e121005
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 11%
+ht-degree: 10%
 
 ---
 
 # 時間維度{#time-dimensions}
+
+{{eol}}
 
 時間維度可讓您根據您為「輸入時間」（1970年）參數指定的任何時間戳記欄位，建立一組定期或絕對的當地時間維度（例如日、星期、小時、保留時間等）。
 
@@ -57,7 +59,7 @@ ht-degree: 11%
   </tr> 
   <tr> 
    <td colname="col1"> 輸入時間（1970年） </td> 
-   <td colname="col2"> <p>要作為輸入的時間戳記欄位的名稱。 </p> <p> <p>注意： 欄位的值必須代表自1970年1月1日(00:00:01)起的秒數。 如果輸入時間不是有效時間（1970到2037年），轉換程式將會失敗，而Data Workbench伺服器會產生錯誤。 </p> </p> </td> 
+   <td colname="col2"> <p>要作為輸入的時間戳記欄位的名稱。 </p> <p> <p>注意：欄位的值必須代表自1970年1月1日起的秒數(00):00:01. 如果輸入時間不是有效時間（1970到2037年），轉換程式將會失敗，而Data Workbench伺服器會產生錯誤。 </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 

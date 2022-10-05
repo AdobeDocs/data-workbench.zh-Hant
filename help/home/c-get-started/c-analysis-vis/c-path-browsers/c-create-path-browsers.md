@@ -3,7 +3,7 @@ description: 您可以從圖表、表格或程式圖建立路徑瀏覽器。
 title: 建立路徑瀏覽器
 uuid: 84a5e587-fb02-461b-aec8-1b6ad473ebc3
 exl-id: 9fa11b84-da73-447a-8b10-7eab381e3f66
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # 建立路徑瀏覽器{#creating-path-browsers}
+
+{{eol}}
 
 您可以從圖表、表格或程式圖建立路徑瀏覽器。
 
@@ -22,7 +24,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->將元素拖曳至路徑瀏覽器可能會變更與路徑瀏覽器相關聯的基本維度，但不會變更層級維度、群組維度或量度。 因此，在選擇與路徑瀏覽器的層級維度、群組維度和量度搭配使用時，您必須小心選擇有意義的基本維度。 要更改級別維、組維或度量，必須在文本編輯器（如記事本）中編輯路徑瀏覽器的[!DNL *.vw]檔案。 請參閱[設定路徑瀏覽器](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3)。
+>將元素拖曳至路徑瀏覽器可能會變更與路徑瀏覽器相關聯的基本維度，但不會變更層級維度、群組維度或量度。 因此，在選擇與路徑瀏覽器的層級維度、群組維度和量度搭配使用時，您必須小心選擇有意義的基本維度。 若要變更層級維度、群組維度或量度，您必須編輯路徑瀏覽器的 [!DNL *.vw] 檔案（如記事本）。 請參閱 [配置路徑瀏覽器](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).
 
 **從程式圖建立路徑瀏覽器**
 
@@ -30,7 +32,7 @@ ht-degree: 2%
 >
 >從程式圖建立的路徑瀏覽器只會顯示程式圖上顯示的元素。 不顯示基本維的其他元素。
 
-1. 建立程序圖. 請參閱[建立流程圖](../../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-create-proc-maps.md#concept-daf5b14dae7a442191611b1b9c1122bf)。
+1. 建立程序圖. 請參閱 [建立程式圖](../../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-create-proc-maps.md#concept-daf5b14dae7a442191611b1b9c1122bf).
 1. 將所需的元素從程式圖拖曳至路徑瀏覽器。 元素會成為路徑瀏覽器的根。
 
 >[!NOTE]

@@ -1,24 +1,28 @@
 ---
-description: 您現在可以使用FTP和SFTP通訊協定，將區段檔案從用戶端（工作站）匯出至伺服器，使用CSV、TSV、區段匯出和區段匯出（含標題）。
-title: 使用S/FTP傳送匯出區段
+description: 您現在可以使用CSV、TSV、區段匯出和帶標題的區段匯出，透過FTP和SFTP通訊協定，將區段檔案從用戶端（工作站）匯出至伺服器。
+title: 使用 S/FTP 傳輸方式匯出區段
 uuid: 4d654368-cbf7-4e7f-8ab9-82f4e0261ac6
-translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+exl-id: 0f1dc0a1-f376-47fb-887c-612a654ed0f0
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '543'
+ht-degree: 4%
 
 ---
 
+# 使用 S/FTP 傳輸方式匯出區段{#export-a-segment-using-s-ftp-delivery}
 
-# 使用S/FTP傳送匯出區段{#export-a-segment-using-s-ftp-delivery}
+{{eol}}
 
-您現在可以使用FTP和SFTP通訊協定，將區段檔案從用戶端（工作站）匯出至伺服器，使用CSV、TSV、區段匯出和區段匯出（含標題）。
+您現在可以使用CSV、TSV、區段匯出和帶標題的區段匯出，透過FTP和SFTP通訊協定，將區段檔案從用戶端（工作站）匯出至伺服器。
 
-**設定S/FTP匯出設定檔案**
+**設定S/FTP匯出組態檔**
 
-要設定導出配置，添加了兩個新的導出配置檔案以設定FTP或SFTP連接，允許從 *FTPServerInfo.cfg檔案中選擇伺服器詳細資訊，並從*** FTPUserCredentials資料夾中選擇憑據（與命令參數中提供的伺服器名稱相對應）。
+若要設定匯出設定，已新增兩個新的匯出設定檔來設定FTP或SFTP連線，以便從 *FTPServerInfo.cfg* 檔案和憑證將從 *FTPUserCredentials* 資料夾（與命令參數中提供的伺服器名稱相對應）。
 
-* 設定 **FTPServerInfo.cfg檔** 。
+* 設定 **FTPServerInfo.cfg** 檔案。
 
-   輸入FTP伺服器資訊並設定允許從工作站進行的連接重試。 從工作站或位於[!DNL Server\Addresses\Export\]檔案的伺服器進行編 **[!DNL FTPServerInfo.cfg]** 輯。
+   輸入FTP伺服器資訊，並設定工作站允許的連線重試次數。 在工作站或伺服器編輯&#x200B; [!DNL Server\Addresses\Export\] **[!DNL FTPServerInfo.cfg]**檔案。
 
    ```
    FTP Servers = vector: 1 items 
@@ -32,9 +36,9 @@ source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
        Server Name = string:
    ```
 
-* 設定 **FTPUserCredentials.cfg檔案** 。
+* 設定 **FTPUserCredentials.cfg** 檔案。
 
-   輸入用戶憑據以使用[!DNL Server\Admin\Export\]檔案連接到服 **[!DNL FTPUserCredentials.cfg]** 務器。 此檔案包含連接到伺服器所需的用戶憑據，只能從伺服器編輯，不能從工作站（客戶端）編輯。
+   輸入用戶憑據以使用&#x200B; [!DNL Server\Admin\Export\] **[!DNL FTPUserCredentials.cfg]**檔案。 此檔案包含連接到伺服器所需的用戶憑據，只能從伺服器編輯，不能從工作站（客戶端）編輯。
 
    ```
    FTP User Credentials = vector: 1 items 
@@ -49,26 +53,28 @@ source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
 
    >[!NOTE]
    >
-   >確保為驗證生成的SSH密鑰的格式與使用SSH Keygen命令時生成的密鑰的格式相同。
+   >請確定您為驗證而產生的SSH金鑰的格式與使用SSH金鑰命令時產生的相同。
    >
-   >使用keygen生成SSH密鑰的示例：
+   >使用密鑰生成SSH密鑰的示例：
    >
-   >```
+   >
+   ```
    >ssh-keygen -t rsa -b 4096 -C "<label>"
    >```
 
-   FTPUserCredentials.cfg檔案中有6個參 **數是各種FTP或SFTP傳輸所需的** 。
+   中有6個參數 **FTPUserCredentials.cfg** 各種FTP或SFTP傳輸所需的檔案。
 
    1. *使用者名稱*
-   1. *使用者密碼*
+   1. *用戶密碼*
    1. *伺服器名稱*
-   1. *公共密鑰路徑*
+   1. *公鑰路徑*
    1. *私密金鑰路徑*
    1. *密碼短語*
+
    <table id="table_4EB416DC770D4D1AA4FAD9676C0D680C"> 
     <thead> 
       <tr> 
-      <th colname="col1" class="entry"> 通訊協定 </th> 
+      <th colname="col1" class="entry"> Protocol </th> 
       <th colname="col2" class="entry"> 參數 </th> 
       </tr> 
     </thead>
@@ -79,28 +85,28 @@ source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
       </tr> 
       <tr> 
       <td colname="col1"> <p>使用密碼驗證的SFTP </p> </td> 
-      <td colname="col2"> <p>在傳輸使用口令驗證（命令參數中的-p）時設定參數1、2、3。 </p> </td> 
+      <td colname="col2"> <p>當傳輸使用密碼驗證時（命令參數中為 — p），請設定參數1、2、3。 </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>使用密鑰驗證的SFTP </p> </td> 
-      <td colname="col2"> <p>當傳輸使用密鑰驗證（命令參數中的-k）時，請設定參數1、2、3、4、5、6。 </p> </td> 
+      <td colname="col1"> <p>使用金鑰驗證的SFTP </p> </td> 
+      <td colname="col2"> <p>當傳輸使用密鑰身份驗證時（命令參數中為 — k），請設定參數1、2、3、4、5、6。 </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
-**設定FTP和SFTP匯出指令**
+**設定FTP和SFTP匯出命令**
 
 1. 開啟匯出表格。
 
-   在工作站中，按一下右鍵「詳 *細資訊表* 」並選擇其中一種導出類型：CSV、TSV、段導出或帶標題的段導出。 或從命令 [!DNL .export] 提示符開啟檔案並進行編輯(請參 [閱設定匯出區段](../../../home/c-get-started/c-exp-data-seg-exp/t-config-sgts-expt.md#task-8857f221fa66463990ec9b60db6db372))。
+   在工作站中，以滑鼠右鍵按一下 *詳細資料表格* 並選擇其中一種導出類型 — CSV 、 TSV 、 「段導出」或「帶標題的段導出」。 或開啟 [!DNL .export] 檔案(請參閱 [設定要匯出的區段](../../../home/c-get-started/c-exp-data-seg-exp/t-config-sgts-expt.md#task-8857f221fa66463990ec9b60db6db372))。
 
-1. 在「命 *令* 」(Command)欄位中，將其設定為指嚮導出執行檔：
+1. 在 *命令* 欄位，將其設定為指嚮導出執行檔：
 
    ```
    ExportIntegration.exe
    ```
 
-1. 為所需 *的協定和驗證設定* 「命令參數」欄位，如下所示：
+1. 設定 *命令參數* 下列是通訊協定和必要驗證的欄位：
 
    **FTP**
 
@@ -118,7 +124,7 @@ source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
    <sftp "%file%" ServerName ServerDestinationPath -p>
    ```
 
-   **SFTP** （如果使用金鑰進行驗證）
+   **SFTP** （若使用金鑰進行驗證）
 
    ```
    <Command Arguments> set to  
@@ -129,20 +135,20 @@ source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
 
 所有命令參數都是必需的，需要按如所示輸入。
 
-## 使用私用／公用金鑰進行S/FTP匯出 {#section-0534424d79a54a47b82594cfa7b3c17f}
+## 使用私密/公開金鑰匯出S/FTP {#section-0534424d79a54a47b82594cfa7b3c17f}
 
-若要使用私密金鑰和公用金鑰實作FTP和SFTP匯出，請將設定檔案置於下列資料夾中：
+若要使用私密金鑰和公開金鑰實作FTP和SFTP匯出，請將設定檔案放置在這些資料夾中：
 
-* 將 **FTPServerInfo.cfg** 置於資料 [!DNL Server/Addresses/Export/] 夾中。
-* 將 **FTPUserCredentials.cfg** 置於資料 [!DNL Server/Admin/Export/] 夾中。
+* 位置 **FTPServerInfo.cfg** 在 [!DNL Server/Addresses/Export/] 檔案夾。
+* 位置 **FTPUserCredentials.cfg** 在 [!DNL Server/Admin/Export/] 檔案夾。
 
-FTPServerInfo.cfg檔案中包 **含6個參數** :
+中包含6個參數 **FTPServerInfo.cfg** 檔案：
 
 1. *使用者名稱*
-1. *使用者密碼*
+1. *用戶密碼*
 1. *伺服器名稱*
-1. *公共密鑰路徑*
-1. *私密密鑰路徑* —將私密密鑰路徑放置在配置檔案中，不帶副檔名，例如：
+1. *公鑰路徑*
+1. *私鑰路徑 —* 將私密金鑰路徑放入設定檔案中，而不使用副檔名，例如：
 
 [!DNL Private Key Path = string: E:\\Server\\campaign\\campaignprivatekey]
 
@@ -150,9 +156,9 @@ FTPServerInfo.cfg檔案中包 **含6個參數** :
 
 FTP使用參數1、2和3。
 
-當傳輸使用密碼驗證時，SFTP使用參數1、2和3。
+當傳輸使用密碼驗證時，SFTP會使用參數1、2和3。
 
-當使用金鑰驗證完成傳輸時，SFTP會使用所有6個參數。 例如，如果您使用金鑰進行驗證：
+使用金鑰驗證完成傳輸時，SFTP會使用所有6個參數。 例如，如果您使用金鑰進行驗證：
 
 [!DNL 'Command Arguments' = sftp "%file%" ServerName ServerDestinationPath -k]
 
@@ -160,4 +166,4 @@ FTP使用參數1、2和3。
 
 >[!NOTE]
 >
->公共密鑰需要指向 **.pem檔案** ，而不是指向資料夾位置。 您可以使用SSH密鑰生成功能從Cygwin等應用程式建立密鑰。 （Putty會以。ppk格式產生不支援的金鑰。）
+>公開密鑰需要指向 **.pem** 檔案，而非資料夾位置。 您可以使用Cygwin等應用程式的SSH金鑰產生功能來建立金鑰。 （Putty會以不支援的.ppk格式產生金鑰。）

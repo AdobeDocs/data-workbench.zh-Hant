@@ -3,7 +3,7 @@ description: 控制面板的第三種開啟方式是使用控制面板的超連�
 title: 控制面板超連結
 uuid: da27204f-64be-4ea1-8bf9-ce907e334d86
 exl-id: 05890f46-bcb6-476a-9d3b-4bfeb95b20d4
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # 控制面板超連結{#dashboard-hyperlink}
+
+{{eol}}
 
 控制面板的第三種開啟方式是使用控制面板的超連結。
 

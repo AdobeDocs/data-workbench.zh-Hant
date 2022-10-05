@@ -3,7 +3,7 @@ description: 模型檢視器可讓您使用「傾向分數」功能產生Logisti
 title: 模型檢視器
 uuid: 7ee8ff29-21c2-4721-804a-c7a5d101b50b
 exl-id: e0e4acd4-76a2-436a-993b-2bb7ca91ae1a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # 模型檢視器{#model-viewer}
+
+{{eol}}
 
 模型檢視器可讓您使用「傾向分數」功能產生Logistic回歸模型。
 

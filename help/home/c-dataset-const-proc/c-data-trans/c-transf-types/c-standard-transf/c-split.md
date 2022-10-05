@@ -3,7 +3,7 @@ description: 分割轉換會根據指定的分隔字元，將字串分割為子�
 title: Split
 uuid: 116e8465-8fb1-41eb-9a28-412cee54ab87
 exl-id: ea85b095-1306-4938-906d-35d421db6c98
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # 分割{#split}
+
+{{eol}}
 
 分割轉換會根據指定的分隔字元，將字串分割為子字串的向量。
 
@@ -62,7 +64,7 @@ ht-degree: 3%
 
 * /checkout/confirmed.asp?prod_selected=B57481,C46355,Z97123
 
-cs-uri-stem欄位用於判斷記錄項目所請求的頁面是否為確認頁面。 客戶購買的產品代碼在cs-uri-query中以逗號分隔的prod_selected名稱值列出。 如果cs-uri-stem的值與[!DNL String Match]條件中指定的值相符，則[!DNL Split]轉換可用於透過以逗號分隔產品代碼來擷取此資訊。 請參閱[字串符合](../../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f)。 以下轉換詳細說明了此問題的解決方案。
+cs-uri-stem欄位用於判斷記錄項目所請求的頁面是否為確認頁面。 客戶購買的產品代碼在cs-uri-query中以逗號分隔的prod_selected名稱值列出。 此 [!DNL Split] 如果cs-uri-stem的值符合中指定的值，則可使用轉換來分割產品代碼，以逗號擷取此資訊 [!DNL String Match] 條件。 請參閱 [字串符合](../../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f). 以下轉換詳細說明了此問題的解決方案。
 
 ![](assets/cfg_TransformationType_Split.png)
 

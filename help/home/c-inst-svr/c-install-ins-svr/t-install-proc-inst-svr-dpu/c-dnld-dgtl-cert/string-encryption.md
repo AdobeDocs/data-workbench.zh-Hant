@@ -3,15 +3,16 @@ description: 在用戶端和伺服器之間通訊時加密密碼和其他字串�
 title: 字串加密
 uuid: b2ec6a10-136c-4694-a425-04dbb41d43d1
 exl-id: 43696ff1-3153-4d85-b9a9-c2752dd2c29a
-translation-type: ht
-source-git-commit: 233b04c65a45d3f92b8670bc244b907dc198b51d
-workflow-type: ht
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 100%
 
 ---
 
 # 字串加密{#string-encryption}
+
+{{eol}}
 
 在用戶端和伺服器之間通訊時加密密碼和其他字串。
 

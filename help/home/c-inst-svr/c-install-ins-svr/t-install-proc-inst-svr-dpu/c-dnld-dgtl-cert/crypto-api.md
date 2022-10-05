@@ -3,15 +3,16 @@ description: Windows 憑證存放區可讓您將用戶端的憑證和私密金�
 title: Windows 憑證存放區
 uuid: a8021295-375a-460b-8686-acf3bc43cd17
 exl-id: 8613a941-6213-4bfa-9c35-dccc2acb6c17
-translation-type: ht
-source-git-commit: 233b04c65a45d3f92b8670bc244b907dc198b51d
-workflow-type: ht
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 100%
 
 ---
 
 # Windows 憑證存放區{#windows-certificate-store}
+
+{{eol}}
 
 Windows 憑證存放區可讓您將用戶端的憑證和私密金鑰存放在 Windows 憑證存放區中，以便與伺服器進行 SSL 通訊。
 
@@ -21,7 +22,7 @@ Windows 憑證存放區可讓您將用戶端的憑證和私密金鑰存放在 Wi
 >
 >目前仍可使用現有的 `<Common Name>.pem` 檔案，維持透過授權伺服器進行授權的方式，且從憑證存放區取得的憑證只會用於與您指定的伺服器通訊。
 
-## 必備條件 {#section-69b18600052145ff8e5299b7123e69c5}
+## 先決條件 {#section-69b18600052145ff8e5299b7123e69c5}
 
 1. 您必須能存取 [!DNL certmgr.msc] 檔案，並能夠將憑證和金鑰匯入 **Personal** 存放區。(根據預設，大部分 Windows 使用者都符合條件。)
 

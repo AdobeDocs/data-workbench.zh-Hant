@@ -3,7 +3,7 @@ description: 量度可使用量度編輯器來編輯，並儲存在設定檔的�
 title: 量度運算式的語法
 uuid: 801e265d-d7e4-4f0f-9698-d0b50dd00995
 exl-id: 27d86fea-6500-4608-aadb-f39058fd3a6e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 1%
@@ -12,23 +12,25 @@ ht-degree: 1%
 
 # 量度運算式的語法{#syntax-for-metric-expressions}
 
+{{eol}}
+
 量度可使用量度編輯器來編輯，並儲存在設定檔的量度目錄中。
 
-如需詳細資訊，請參閱[建立和編輯衍生量度](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40)。 量度運算式也可用於工作表中。 有關詳細資訊，請參閱[工作表](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581)。 下列語法可用來定義量度運算式。
+如需詳細資訊，請參閱 [建立和編輯衍生量度](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40). 量度運算式也可用於工作表中。 如需詳細資訊，請參閱 [工作表](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581). 下列語法可用來定義量度運算式。
 
 附註:
 
 1. 文字上應輸入帶底線的字詞。
-1. 表單`{TEXT}?`代表選用文字。
-1. 表單`{TEXT}*`表示可能發生零次或多次的文本。
-1. 表單`{A | B | C |...}`表示只包含一個給定選項（如A、B或C...）的文本。.
-1. 表單`[A,B)`表示從A到但不包括B的數字範圍。
+1. 表單 `{TEXT}?` 代表選填文字。
+1. 表單 `{TEXT}*` 表示可能發生零次或多次的文字。
+1. 表單 `{A | B | C |...}` 代表只包含其中一個指定選項的文字，例如A、B或C....
+1. 表單 `[A,B)` 代表數字的範圍，從A到但不包括B。
 
 <table id="table_A6CA9C9F396448209398AA2A369E63FA"> 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>識別碼 </p> </td> 
-   <td colname="col2"> <p>識別碼會參考已命名的量度。 有關法律標識符的規則，請參見<a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8">標識符的語法</a>。 </p> <p>範例：收入= Total_Price </p> </td> 
+   <td colname="col2"> <p>識別碼會參考已命名的量度。 如需法律識別碼的規則，請參閱 <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> 識別碼的語法 </a>. </p> <p>範例：收入= Total_Price </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>(量度) </p> </td> 
@@ -56,7 +58,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <p>信賴度（量度） </p> </td> 
-   <td colname="col2"> <p>量度標準差的預估值。 這是使用稱為折刀的取樣技術來計算。 </p> <p>此量度耗用大量記憶體，不應用於大型表。 </p> <p>若要使用此語法，您必須具有具有適當屬性的長刀尺寸（名為「長刀」）。 如需詳細資訊，請連絡Adobe諮詢服務。 </p> <p>範例：consity(Average_Score) </p> <p> <p>注意： 信賴度量類型(包括信賴度（量度）和信賴度（量度、jacknife），在使用Adobe的受控實驗功能時特別有用。 如果受控實驗期間量度從12%跳至16%，您可以使用信賴圖說來計算該跳至因隨機變異而產生的機率。 這可以幫助你避免從有限的證據中得出錯誤的結論，反之，還可以保證有問題的變化實際上是真實的。 </p> </p> </td> 
+   <td colname="col2"> <p>量度標準差的預估值。 這是使用稱為折刀的取樣技術來計算。 </p> <p>此量度耗用大量記憶體，不應用於大型表。 </p> <p>若要使用此語法，您必須具有具有適當屬性的長刀尺寸（名為「長刀」）。 如需詳細資訊，請連絡Adobe諮詢服務。 </p> <p>範例：consity(Average_Score) </p> <p> <p>注意：信賴度量類型(包括信賴度（量度）和信賴度（量度、jacknife），在使用Adobe的受控實驗功能時特別有用。 如果受控實驗期間，量度從12%跳至16%，您可以使用信賴圖說來計算該跳至因隨機變異而產生的機率。 這可以幫助你避免從有限的證據中得出錯誤的結論，反之，還可以保證有問題的變化實際上是真實的。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>信賴度（量度，刺刀） </p> </td> 

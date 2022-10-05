@@ -3,7 +3,7 @@ description: 從概念上講，地址檔案的用途與聯網電腦上的ETC&bso
 title: 網路位置
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
 exl-id: 938217da-8935-4f2a-b5f8-9afc1dd489f3
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 2%
@@ -12,13 +12,15 @@ ht-degree: 2%
 
 # 網路位置{#network-locations}
 
+{{eol}}
+
 從概念上講，地址檔案的用途與聯網電腦上的ETC&amp;bsol;HOSTS檔案相同。
 
 但是，與描述單個名稱集合的HOSTS檔案不同，地址檔案包含多個名稱集合，稱為網路位置。
 
 網路位置是地址定義的命名集合。 集合中的每個地址定義都會將通用名稱與IP地址關聯。
 
-在地址檔案中，網路位置被定義在稱為NetworkLocation的結構中。 以下示例中的NetworkLocation定義了名為「MyCorporate Intranet」的網路位置。 它包含將通用名稱[!DNL VS01.myCompany.com]映射到IP地址&quot;10.2.1.70&quot;的地址定義。
+在地址檔案中，網路位置被定義在稱為NetworkLocation的結構中。 以下示例中的NetworkLocation定義了名為「MyCorporate Intranet」的網路位置。 它包含映射公用名稱的地址定義 [!DNL VS01.myCompany.com] 至IP位址「10.2.1.70」。
 
 ```
 0 = NetworkLocation: 

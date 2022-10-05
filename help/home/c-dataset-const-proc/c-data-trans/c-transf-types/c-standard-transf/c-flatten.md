@@ -3,7 +3,7 @@ description: 平面化轉換會取用字串向量，並將每個值對應至其�
 title: Flatten
 uuid: 00b06a5c-506b-45fe-9773-44d65b8ec233
 exl-id: 63f3e4bc-238f-4e15-8ae5-2f805bd080d3
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Flatten{#flatten}
+
+{{eol}}
 
 平面化轉換會取用字串向量，並將每個值對應至其自己的欄位。
 
@@ -23,12 +25,12 @@ ht-degree: 4%
 | 輸入 | 要映射到輸出欄位名稱的字串值的向量。 |  |
 | 輸出 | 一組輸出欄位名稱。 |  |
 
-[!DNL Flatten]的考量事項
+的考量事項 [!DNL Flatten]
 
 * 如果輸入向量包含的值多於定義的輸出欄位，則只會捨棄額外的輸入值。
 * 如果輸入向量包含的值少於定義的輸出欄位，則額外的輸出欄位將指定預設值（如果已定義），如果未定義預設值，則為空字串。
 
-在此，[!DNL Flatten]轉換用於取用產品向量(x-products)，並將它們分隔為四個欄位(x-product1, ..., x-product4)。
+這裡， [!DNL Flatten] 轉換用於取用產品向量(x-products)，並將它們分割為四個欄位(x-product1、...、x-product4)。
 
 ![](assets/cfg_TransformationType_Flatten.png)
 

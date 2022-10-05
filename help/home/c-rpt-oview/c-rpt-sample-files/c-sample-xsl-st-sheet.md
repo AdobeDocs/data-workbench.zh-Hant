@@ -3,7 +3,7 @@ description: XSL樣式表的程式碼範例。
 title: XSL 樣式表範例
 uuid: cac5c5ad-b0ec-45d8-901d-e39ce1f6d61a
 exl-id: 688b0ce5-999b-4cfc-9228-146450132aee
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '20'
 ht-degree: 40%
@@ -11,6 +11,8 @@ ht-degree: 40%
 ---
 
 # XSL 樣式表範例{#sample-xsl-style-sheet}
+
+{{eol}}
 
 XSL樣式表的程式碼範例。
 

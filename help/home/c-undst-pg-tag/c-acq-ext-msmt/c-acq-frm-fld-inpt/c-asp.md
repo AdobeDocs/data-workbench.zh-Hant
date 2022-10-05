@@ -3,7 +3,7 @@ description: 網頁通常使用ASP(Active Server Pages)寫程式語言進行結�
 title: ASP 專屬資訊
 uuid: 552288cb-b775-4121-8869-322f2a26932b
 exl-id: f73235e1-d44a-4056-b1f4-a86879c19483
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # ASP 專屬資訊{#asp-specific-information}
+
+{{eol}}
 
 網頁通常使用ASP(Active Server Pages)寫程式語言進行結構化。
 
@@ -32,7 +34,7 @@ Response.AppendToLog("&v_3=" +  sState);
 Response.AppendToLog("&v_4=" +  sZip);
 ```
 
-此程式會將定義的表單值附加至[!DNL Form Processing]頁面的請求資料。 在記錄檔資料中，附加的值將可作為[!DNL Form Processing]頁面的查詢字串使用，如下圖所示。 例如， v_1、v_2、v_3和v_4現在將是查詢字串，其中包含輸入到相應表單欄位中的資料。 您可以針對您要擷取的任何其他表單欄位和值複製上述範例中所述的語法。
+此程式會將定義的表單值附加至 [!DNL Form Processing] 頁面。 在記錄資料中，附加的值將可作為 [!DNL Form Processing] 頁面，如下圖所示。 例如， v_1、v_2、v_3和v_4現在將是查詢字串，其中包含輸入到相應表單欄位中的資料。 您可以針對您要擷取的任何其他表單欄位和值複製上述範例中所述的語法。
 
 ```
 https://www.myserver.com/path/to/formprocessingpage.asp?v_1=John+Smith&v_2=Los+Angeles&v_3=California&v_4=90210
@@ -45,7 +47,7 @@ var formvalues = Response.Form;
 Response.AppendToLog(formvalues);
 ```
 
-此範例會取用HTML內顯示的所有表單欄位及其各自的值，並將它們附加為[!DNL Form Processing]頁面的記錄項目中的查詢字串。 請注意，這會包含表單中出現的任何隱藏欄位。
+此範例會取用HTML內顯示的所有表單欄位及其各自的值，並將它們附加為的記錄項目中的查詢字串 [!DNL Form Processing] 頁面。 請注意，這會包含表單中出現的任何隱藏欄位。
 
 日誌資料將如下表詳述：
 

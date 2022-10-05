@@ -3,7 +3,7 @@ description: Dimension運算式絕不能單獨使用，但可在量度或篩選�
 title: 維度運算式的語法
 uuid: c437cc52-4eb3-4202-a0b4-e23889f9c8a2
 exl-id: 58609e31-8ad8-418b-9a9f-40462d6443f7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1855'
 ht-degree: 0%
@@ -12,19 +12,21 @@ ht-degree: 0%
 
 # 維度運算式的語法{#syntax-for-dimension-expressions}
 
+{{eol}}
+
 Dimension運算式絕不能單獨使用，但可在量度或篩選器運算式中呼叫維度的任何位置使用。
 
 1. 文字上應輸入帶底線的字詞。
-1. 表單`{TEXT}?`代表選用文字。
-1. 表單`{TEXT}*`表示可能發生零次或多次的文本。
-1. 表單`{A | B | C |...}`表示只包含一個給定選項（如A、B或C...）的文本。.
-1. 表單`[A,B)`表示從A到但不包括B的數字範圍。
+1. 表單 `{TEXT}?` 代表選填文字。
+1. 表單 `{TEXT}*` 表示可能發生零次或多次的文字。
+1. 表單 `{A | B | C |...}` 代表只包含其中一個指定選項的文字，例如A、B或C....
+1. 表單 `[A,B)` 代表數字的範圍，從A到但不包括B。
 
 <table id="table_2D9AE1E2397843C284E838330370A1EE"> 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>識別碼 </p> </td> 
-   <td colname="col2"> <p>標識符引用命名的維。 有關法律標識符的規則，請參見<a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8">標識符的語法</a>。 </p> <p>範例：Sessions[ Session_Number = "1" ]是會話數為"1"的會話數。 工作階段編號是識別碼參考的命名維度。 </p> </td> 
+   <td colname="col2"> <p>標識符引用命名的維。 如需法律識別碼的規則，請參閱 <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> 識別碼的語法 </a>. </p> <p>範例：Sessions[ Session_Number = "1" ]是會話數為"1"的會話數。 工作階段編號是識別碼參考的命名維度。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>(維度) </p> </td> 
@@ -48,7 +50,7 @@ Dimension運算式絕不能單獨使用，但可在量度或篩選器運算式�
   </tr> 
   <tr> 
    <td colname="col1"> <p>貯體(層級，量度，計數，格式{，開始{，大小}? }) </p> </td> 
-   <td colname="col2"> <p>定義一個維，其元素是數字的範圍（例如[0-9]、[10-19]、...）。 「層級」元素與貯體維度的元素相關，其範圍包含該層級元素的「量度」值。 Format是用於格式化量度元素的printf格式字串。 </p> <p>範例：如果Page_Duration_Minutes是表示每頁所花費分鐘數的頁面檢視層級維度，則bucket(Session, sum(Page_Duration_Minutes, Page_View), 100, "%0.0f minutes", 0, 5)是表示每個工作階段所花費分鐘數的工作階段層級維度；其元素為5分鐘間隔<code>{[0-5), [5-10),...,[495-500)}</code>。 </p> <p>Start是第一個間隔的起始值(預設值：0)，而大小是間隔的大小(預設值：1)。 </p> </td> 
+   <td colname="col2"> <p>定義一個維，其元素是數字的範圍（例如[0-9]、[10-19]、...）。 「層級」元素與貯體維度的元素相關，其範圍包含該層級元素的「量度」值。 Format是用於格式化量度元素的printf格式字串。 </p> <p>範例：如果Page_Duration_Minutes是表示每頁所花費分鐘數的頁面檢視層級維度，則bucket(Session, sum(Page_Duration_Minutes, Page_View), 100, "%0.0f minutes", 0, 5)是表示每個工作階段所花費分鐘數的工作階段層級維度；其元素為5分鐘間隔 <code>{[0-5), [5-10),...,[495-500)}</code>. </p> <p>Start是第一個間隔的起始值(預設值：0)，而大小是間隔的大小(預設值：1)。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>前置詞(Level {,ElementName-&gt;(Prefix{,Prefix}*)}*) </p> </td> 
@@ -56,7 +58,7 @@ Dimension運算式絕不能單獨使用，但可在量度或篩選器運算式�
   </tr> 
   <tr> 
    <td colname="col1"> <p>延遲（級別，剪輯，維度，篩選， MaxBefore, MaxAfter, FormatString） </p> </td> 
-   <td colname="col2"> <p>請參閱<a href="../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/t-create-ltncy-dims.md#task-6d46ea8c89a047318d9c71bf105ef64a">建立延遲Dimension</a>。 </p> </td> 
+   <td colname="col2"> <p>請參閱 <a href="../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/t-create-ltncy-dims.md#task-6d46ea8c89a047318d9c71bf105ef64a"> 建立延遲Dimension </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>cartesian_product（分隔符{,Dim}*） </p> </td> 

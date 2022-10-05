@@ -3,7 +3,7 @@ description: 擷取第三方網站連結上的活動以啟用退出目標分析�
 title: 追蹤退出至外部連結次數
 uuid: 523f5b4c-4600-4d44-82e7-4a8b2db2d266
 exl-id: fd7434e9-cd66-408e-baa9-6a0df4039786
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 6%
@@ -11,6 +11,8 @@ ht-degree: 6%
 ---
 
 # 追蹤退出至外部連結次數{#tracking-exits-to-external-links}
+
+{{eol}}
 
 擷取第三方網站連結上的活動以啟用退出目標分析。
 
@@ -20,7 +22,7 @@ ht-degree: 6%
 <A HREF=”https://www.myserver.com/PageExit.htm?v_eurl=https://www.othersite.com”>
 ```
 
-必須建立引用的[!DNL PageExit.htm]檔案，並且應該進行結構化以包含以下指令碼：
+引用的 [!DNL PageExit.htm] 檔案必須建立，且應建構以包含下列指令碼：
 
 ```
 <html>
@@ -51,7 +53,7 @@ location.replace(getExitURLQuery("v_eurl"));
 </html>
 ```
 
-借由對[!DNL PageExit.htm]檔案提出要求，便會收集v_eurl值以用於分析。 此外，載入[!DNL PageExit.htm]時，會立即重新導向至指定的v_eurl目標位置。
+透過向 [!DNL PageExit.htm] 檔案中，系統會收集v_eurl值以用於分析。 此外，當 [!DNL PageExit.htm] 已載入，會立即重新導向至指定的v_eurl目標位置。
 
 | 收集的資料 | 解釋 | 範例 |
 |---|---|---|

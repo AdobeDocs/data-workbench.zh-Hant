@@ -3,7 +3,7 @@ description: LookupRows轉換會查看具有相同追蹤ID的其他記錄項目�
 title: LookupRows
 uuid: 4cff7cf1-00c8-4ab1-8adc-3805518226d3
 exl-id: caa9a311-b056-4fe8-bb11-1605cc690375
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '946'
 ht-degree: 0%
@@ -12,11 +12,13 @@ ht-degree: 0%
 
 # LookupRows{#lookuprows}
 
+{{eol}}
+
 LookupRows轉換會查看具有相同追蹤ID的其他記錄項目，並將輸出欄位的值設定為輸入列中指定欄位的值。
 
-由於[!DNL LookupRows]轉換會對記錄項目執行其查閱，而非查閱檔案，因此與[!DNL CrossRows]轉換非常類似。 請參閱[CrossRows](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-crossrows.md#concept-fcace08804f54db397ed631cc13ff4f2)。
+因為 [!DNL LookupRows] 轉換會對記錄項目（而非查閱檔案）執行查閱，其類似於 [!DNL CrossRows] 轉換。 請參閱 [CrossRows](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-crossrows.md#concept-fcace08804f54db397ed631cc13ff4f2).
 
-若要運作，[!DNL LookupRows]轉換需要及時排序資料，並依來源資料中的追蹤ID分組。 因此，[!DNL LookupRows]僅在[!DNL Transformation.cfg]檔案或[!DNL Transformation Dataset Include]檔案中定義時有效。
+若要運作， [!DNL LookupRows] 轉換需要資料按時間排序，並依來源資料中的追蹤ID分組。 因此， [!DNL LookupRows] 只有在 [!DNL Transformation.cfg] 檔案或 [!DNL Transformation Dataset Include] 檔案。
 
 查看下表中參數的說明時，請記住以下幾點：
 
@@ -49,7 +51,7 @@ LookupRows轉換會查看具有相同追蹤ID的其他記錄項目，並將輸�
   </tr> 
   <tr> 
    <td colname="col1"> 輸入條件 </td> 
-   <td colname="col2">僅從某些輸入行接受轉換的輸入。 如果特定輸入行的<span class="wintitle">輸入</span>條件不滿足，則忽略該行的輸入欄位，而不會影響其他輸出行。 不過，該列的輸出欄位仍會根據指定的條件進行修改。 </td> 
+   <td colname="col2">僅從某些輸入行接受轉換的輸入。 若 <span class="wintitle"> 輸入</span> 特定輸入行的條件不滿足，該行的輸入欄位將被忽略，並且不會影響其他輸出行。 不過，該列的輸出欄位仍會根據指定的條件進行修改。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -64,7 +66,7 @@ LookupRows轉換會查看具有相同追蹤ID的其他記錄項目，並將輸�
   </tr> 
   <tr> 
    <td colname="col1"> 操作 </td> 
-   <td colname="col2"> <p>對於每個輸出行，對滿足由<span class="wintitle">輸入</span>條件和輸入行鍵輸入參數定義的所有條件的所有輸入行應用以生成輸出的操作： 
+   <td colname="col2"> <p>對於每個輸出行，對滿足由 <span class="wintitle"> 輸入</span> 條件和輸入行鍵輸入參數以生成輸出： 
      <ul id="ul_16FB152CB558497794DDED72A2F05CDD"> 
       <li id="li_22DA9F814E4E42D0B21E90B63A2A7A0E"> FIRST從資料中的第一個匹配輸入行（而不是輸出行後的第一個匹配行）輸出「輸入行值輸入」參數中欄位的值。 </li> 
       <li id="li_45E00C3DE0494A1CB5C09B942088F161"> LAST從資料的最後一個輸入行（而不是輸出行之前的最後一個匹配行）輸出「輸入行值輸入」參數中的欄位值。 </li> 
@@ -78,7 +80,7 @@ LookupRows轉換會查看具有相同追蹤ID的其他記錄項目，並將輸�
   </tr> 
   <tr> 
    <td colname="col1"> 輸出行值輸出 </td> 
-   <td colname="col2">如果滿足所有條件，則輸出行中的欄位名稱，其值是從輸入行值輸入參數中的欄位複製而來。 所有具有相同x-trackingid和<span class="wintitle">輸出行鍵輸入</span>值的輸出行都具有相同的<span class="wintitle">輸出行值輸出</span>值。 </td> 
+   <td colname="col2">如果滿足所有條件，則輸出行中的欄位名稱，其值是從輸入行值輸入參數中的欄位複製而來。 具有相同x-trackingid和 <span class="wintitle"> 輸出行鍵輸入 </span>值具有相同 <span class="wintitle"> 輸出行值輸出</span> 值。 </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
@@ -98,15 +100,15 @@ LookupRows轉換會查看具有相同追蹤ID的其他記錄項目，並將輸�
 
 * 並將輸出行的輸出行值輸出設定為輸入行的輸入行值輸入。
 
-[!DNL LookupRows]的考量事項
+的考量事項 [!DNL LookupRows]
 
-* 空白鍵值永遠不會與任何項目相符。 即使輸入行包含空白鍵和非空白值，這些值與[!DNL Input Condition]匹配，「」的[!DNL Output Row Key Input]將始終生成「」的[!DNL Output Row Value Output]。
+* 空白鍵值永遠不會與任何項目相符。 即使有輸入行包含空白鍵值和非空白值，且符合 [!DNL Input Condition], [!DNL Output Row Key Input] 的 [!DNL Output Row Value Output] 「」。
 
-* 如果[!DNL Input Condition]未禁止，如果行的[!DNL Input Row Key Input]和[!DNL Output Row Key Input]值相同，則行可能自查。
+* 若未被 [!DNL Input Condition]，如果其 [!DNL Input Row Key Input] 和 [!DNL Output Row Key Input] 值相同。
 
-如果您有多個鍵值，則可以在套用[!DNL LookupRows]轉換之前，使用[!DNL Format]轉換（請參閱[Format](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-format.md#concept-3de04869181e4694ab072b092186684b)）來組合它們。
+如果您有多個索引鍵值，可以使用 [!DNL Format] 轉換(請參閱 [格式](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-format.md#concept-3de04869181e4694ab072b092186684b))，然後套用 [!DNL LookupRows] 轉換。
 
-假設您有一個網站，該網站有一個寵物註冊頁面，輸入了寵物名稱和品種，而後一個「購買玩具」頁面只使用寵物名稱。 您希望能夠將寵物名稱與在註冊頁面上輸入的寵物品種連結起來。 若要這麼做，您可以建立下列[!DNL LookupRows]轉換：
+假設您有一個網站，該網站有一個寵物註冊頁面，輸入了寵物名稱和品種，而後一個「購買玩具」頁面只使用寵物名稱。 您希望能夠將寵物名稱與在註冊頁面上輸入的寵物品種連結起來。 若要這麼做，您可以建立下列項目 [!DNL LookupRows] 轉換：
 
 ![](assets/cfg_TransformationType_LookupRows.png)
 
@@ -122,4 +124,4 @@ LookupRows轉換會查看具有相同追蹤ID的其他記錄項目，並將輸�
 
 * 並將輸出行x-pet-breed的值設定為輸入行cs-uri-query(petbreed)的值。
 
-[!DNL LookupRows]轉換使用寵物名稱（索引鍵）來確保寵物品種與寵物註冊和購買玩具頁面都相連結，以便您能夠分析每種寵物所購買的玩具，即使是有多隻寵物的訪客。
+此 [!DNL LookupRows] transformation使用寵物名稱（密鑰）來確保寵物品種與寵物註冊和購買玩具頁面都相連，這樣，即使有多隻寵物的訪客，您也可以分析為每種寵物購買的玩具。

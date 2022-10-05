@@ -3,7 +3,7 @@ description: 處理工作區並將其指定為報表，借此產生報表。
 title: 產生報表
 uuid: 90bc42b3-d7f2-46f2-8c68-5c682d163f3c
 exl-id: 8e5765e8-71b6-4716-96fe-5c7f69407295
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 9%
@@ -12,19 +12,21 @@ ht-degree: 9%
 
 # 產生報表{#generating-reports}
 
+{{eol}}
+
 處理工作區並將其指定為報表，借此產生報表。
 
-[!DNL Report] 會根據檔案中參數所設 [!DNL Every] 定的間隔( [!DNL Report.cfg] 例如， [!DNL "day]」每日處理報表)，並根據其他檔案設 [!DNL Report.cfg] 定產生報表。
+[!DNL Report] 會以 [!DNL Every] 參數 [!DNL Report.cfg] 檔案(例如 [!DNL "day]，」每日處理報表)，並以其他 [!DNL Report.cfg] 檔案設定。
 
-產生報表時，完成百分比會顯示在該特定報表縮圖的[!DNL Reports]標籤下。 如果[!DNL Report]在報表產生期間遇到問題，最新的錯誤訊息會顯示在報表集資料夾的[!DNL Reports]標籤上。 如果[!DNL Report]遇到特定報表的錯誤，則會繼續處理該集中的其他報表。
+產生報表時，完成百分比會顯示在 [!DNL Reports] 標籤。 若 [!DNL Report] 在產生報表時遇到問題，最新的錯誤訊息會顯示在 [!DNL Reports] 標籤。 若 [!DNL Report] 遇到特定報表的錯誤時，會繼續處理該集中的其他報表。
 
-您可以使用[!DNL Report.cfg]檔案中的[!DNL Report Types]參數，以下列任何或所有格式在報表集中生成報表：
+您可以使用 [!DNL Report Types] 參數 [!DNL Report.cfg] 檔案：
 
-* Microsoft Excel檔案（[!DNL .xls]或[!DNL .xlsx]）
-* 可移植網路圖形檔案([!DNL .png])
-* 縮圖([!DNL .jpg])
+* Microsoft Excel檔案( [!DNL .xls] 或 [!DNL .xlsx])
+* 可移植網路圖形檔案( [!DNL .png])
+* 縮圖( [!DNL .jpg])
 
-[!DNL Report]會建立與報表同名的[!DNL .xml]檔案，並指定輸出類型。 此&#x200B;*`<report name>`*.xml檔案包含報表縮圖下方[!DNL Reports]標籤上Data Workbench顯示之報表的說明。 這可讓您在透過報表入口網站發佈報表時使用說明。 有關[!DNL Report Portal]的資訊，請參閱[使用Report Portal](../../home/c-rpt-oview/c-rpt-portal/c-rpt-portal.md#concept-f692210cad494c00865dbf325eb5ed35)。
+連同指定的輸出類型， [!DNL Report] 建立 [!DNL .xml] 檔案的名稱與報表相同。 此 *`<report name>`*.xml檔案包含Data Workbench上顯示的報表說明 [!DNL Reports] 標籤。 這可讓您在透過報表入口網站發佈報表時使用說明。 如需 [!DNL Report Portal]，請參閱 [使用Report Portal](../../home/c-rpt-oview/c-rpt-portal/c-rpt-portal.md#concept-f692210cad494c00865dbf325eb5ed35).
 
 >[!NOTE]
 >

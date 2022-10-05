@@ -3,18 +3,20 @@ description: 「比較」條件和「範圍」條件要求您指定要對條件�
 title: 測試操作的測試類型
 uuid: dc0433dd-a35e-472e-8975-f58347512c11
 exl-id: 8abed46e-e76d-47c0-bbe9-cf98cf2d61e8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '423'
 ht-degree: 2%
 
 ---
 
 # 測試操作的測試類型{#test-types-for-test-operations}
 
+{{eol}}
+
 「比較」條件和「範圍」條件要求您指定要對條件進行比較的類型。
 
-下表說明可用類型（[!DNL LEXICAL]、[!DNL NUMERIC]和[!DNL DATETIME]）。
+下表說明可用類型( [!DNL LEXICAL], [!DNL NUMERIC]，和 [!DNL DATETIME])。
 
 <table id="table_1B3AD8BDF0414D0AB8EE0E6D1B53E2CE"> 
  <thead> 
@@ -33,7 +35,7 @@ ht-degree: 2%
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> DATETIME</span> </p> </td> 
    <td colname="col2"> <p>首先將輸入欄位轉換為日期。 如果輸入欄位無法轉換為有效日期，條件測試會傳回false。 如果欄位可轉換為日期，則只有在輸入日期落在指定的最小日期之後，以及指定的最大日期之前，測試才會傳回true。 </p> </td> 
-   <td colname="col3"> <p>如果最小和最大日期無效，則不會建構資料集。 </p> <p> 如果未提供最小日期或最大日期，則系統會適當替換最小日期（1600年1月1日）或最大日期（24世紀的某個時間）。 </p> <p> Adobe建議對<span class="wintitle"> DATETIME</span>使用以下格式之一： </p> 
+   <td colname="col3"> <p>如果最小和最大日期無效，則不會建構資料集。 </p> <p> 如果未提供最小日期或最大日期，則系統會適當替換最小日期（1600年1月1日）或最大日期（24世紀的某個時間）。 </p> <p> Adobe建議對 <span class="wintitle"> DATETIME</span>: </p> 
     <ul id="ul_44F469CC5D974382AF70D7B1975CF077"> 
      <li id="li_DB5FD4AFD6B34436ACD7C13282F64956"> 2013年1月1日HH:MM:SS EDT </li> 
      <li id="li_307580C3F97D495BB16F1212DB38CE37"> 2013年1月1日HH:MM:SS GMT </li> 

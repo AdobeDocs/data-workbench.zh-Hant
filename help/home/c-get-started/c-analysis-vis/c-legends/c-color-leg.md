@@ -3,7 +3,7 @@ description: 依「轉換」和「保留」等量度顯示的色彩圖例顏色�
 title: 色彩圖例
 uuid: 4f5ad93e-9128-464c-b5b7-9db454fa71a6
 exl-id: 0ecf5237-8d64-46a6-b73b-e59de69e5988
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # 色彩圖例{#color-legends}
+
+{{eol}}
 
 依「轉換」和「保留」等量度顯示的色彩圖例顏色代碼視覺效果，幾乎可用於所有工作區。
 
@@ -20,7 +22,7 @@ ht-degree: 2%
 >
 >如果您未在色彩圖例中選取量度，所有視覺效果都會顯示為藍色。
 
-## 啟用或變更量度{#section-694234fc79fd44c2a2ea2f677f74b3dc}
+## 啟動或變更量度 {#section-694234fc79fd44c2a2ea2f677f74b3dc}
 
 * 以滑鼠右鍵按一下量度名稱，然後按一下所需的量度。
 

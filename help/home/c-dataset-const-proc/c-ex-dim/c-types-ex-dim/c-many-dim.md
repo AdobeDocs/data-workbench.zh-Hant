@@ -3,7 +3,7 @@ description: 多對多維度與其父項可數維度有多對多關係。
 title: 多對多維度
 uuid: 42c909e8-1228-4210-9406-ffc0d92372fa
 exl-id: 02d1a21c-a5b4-4b58-8089-9b9c68a7b1d1
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # 多對多維度{#many-to-many-dimensions}
+
+{{eol}}
 
 多對多維度與其父項可數維度有多對多關係。
 
@@ -49,7 +51,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> 輸入 </td> 
-   <td colname="col2"> <p>與父維（父）相關的值。 如果此欄位是字串的向量，則向量的每個元素都與父項有各自的關係。 </p> <p> <p>注意： 如果父維的某個元素的每個日誌條目的輸入值為空，則多對多維度的任何元素都不會與父維的該元素相關。 </p> </p> </td> 
+   <td colname="col2"> <p>與父維（父）相關的值。 如果此欄位是字串的向量，則向量的每個元素都與父項有各自的關係。 </p> <p> <p>注意：如果父維的某個元素的每個日誌條目的輸入值為空，則多對多維度的任何元素都不會與父維的該元素相關。 </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -60,7 +62,7 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-此範例說明使用從網站流量收集的事件資料來定義多對多維度。 此多對多維度（名為「選取的產品」）會與訪客在該工作階段期間購買的產品相關。 x-products欄位包含值向量，每個值都與頁面檢視相關聯，而頁面檢視又與工作階段相關聯。
+此範例說明使用從網站流量收集的事件資料來定義多對多維度。 此多對多維度（名為「選取的產品」）會將工作階段與訪客在該工作階段期間購買的產品相關。 x-products欄位包含值向量，每個值都與頁面檢視相關聯，而頁面檢視又與工作階段相關聯。
 
 ![](assets/cfg_Transformation_Dim_ManytoMany.png)
 

@@ -3,7 +3,7 @@ description: 有關如何安裝和配置在Microsoft Windows Server 2000或更�
 title: Windows Server 2000 或更新版本上的 Microsoft IIS
 uuid: 26da0638-82c8-424f-9f00-aab3a940e5a9
 exl-id: e4b5ac44-b0ac-43be-9b9c-180a64354081
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1718'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Windows Server 2000 或更新版本上的 Microsoft IIS{#microsoft-iis-on-windows-server-or-later}
+
+{{eol}}
 
 有關如何安裝和配置在Microsoft Windows Server 2000或更新版本下運行的Sensor for Internet Information Services(IIS)5.x或6.x的說明。
 
@@ -79,12 +81,12 @@ txlogd.conf檔案包含Sensor的配置參數。
 
 您必須編輯檔案，以指定磁碟佇列的大小、Insight Server的位址，以及將附加至此感測器產生之資料的ID。 設定檔案包含必要參數和選用參數。
 
-* **必** 需參數是安裝Sensor時必須指定的設定。沒有這些設定，Sensor將無法成功運行。
-* **可** 選參數是預設為預定義值（您可以修改）或啟用可選功能的設定。
+* **必要參數** 是安裝Sensor時必須指定的設定。 沒有這些設定，Sensor將無法成功運行。
+* **選用參數** 是預設為預先定義值（您可以修改）或啟用可選功能的設定。
 
 **編輯Sensor配置檔案**
 
-1. 在文字編輯器中開啟`<SensorDirectory>/txlogd.conf`檔案，並設定所需的參數以及任何所需的選用參數。
+1. 開啟 `<SensorDirectory>/txlogd.conf` 檔案，並設定所需的參數以及任何所需的選用參數。
 
    有關txlogd.conf參數的說明，請參閱Sensor Txlogd.conf檔案參數。
 

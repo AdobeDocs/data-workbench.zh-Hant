@@ -3,7 +3,7 @@ description: 工作區是特定分析和視覺化任務的容器。
 title: 顯示工作區
 uuid: 848035e5-7b7f-4e33-b61d-3759335e459b
 exl-id: 18db0cd4-6cb0-4514-9056-1c1e82b2092e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 1%
@@ -12,11 +12,13 @@ ht-degree: 1%
 
 # 顯示工作區{#display-workspaces}
 
+{{eol}}
+
 工作區是特定分析和視覺化任務的容器。
 
 工作區可包含多個視覺效果，所有視覺效果都可對一組通用資料執行（亦即工作區中的所有視覺效果都會呈現同一組查詢結果）。 在一個視覺效果中執行篩選操作時，選取的子集會反映在整個工作區中。
 
-以下是[!DNL Worktop]上數個工作區縮圖的範例。
+以下是 [!DNL Worktop].
 
 ![](assets/client-wksp.png)
 
@@ -24,8 +26,8 @@ ht-degree: 1%
 >
 >由於您的Data Workbench實作可以完全自訂（亦即，您實作中顯示的索引標籤、工作區和功能表項目可能與本指南中記錄的項目不同），因此請務必注意，只要在幾乎任何地方按一下滑鼠右鍵，您就可以檢視與工作區或視覺效果相關的選項清單。
 
-您可以結合工作區中不同的視覺效果類型，以分析資料。 您可以從這些視覺效果中顯示的資料進行選取，以建立強大的查詢，結果會以視覺化方式呈現於工作區中所有視覺效果中。 您可以使用工作區來控制每個查詢的範圍：在視覺效果中進行的每個選取項目都會變更目前的查詢，並影響工作區中其他視覺效果中的查詢。 請參閱在視覺效果中進行選取[](../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746)。
+您可以結合工作區中不同的視覺效果類型，以分析資料。 您可以從這些視覺效果中顯示的資料進行選取，以建立強大的查詢，結果會以視覺化方式呈現於工作區中所有視覺效果中。 您可以使用工作區來控制每個查詢的範圍：在視覺效果中進行的每個選取項目都會變更目前的查詢，並影響工作區中其他視覺效果中的查詢。 請參閱 [在視覺效果中進行選取](../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746).
 
 >[!NOTE]
 >
->開啟新工作區後，您可能需要按一下「**[!UICONTROL Add]** > **[!UICONTROL Temporarily Unlock]**」才能解除鎖定畫面。
+>開啟新工作區後，您可能需要按一下 **[!UICONTROL Add]** > **[!UICONTROL Temporarily Unlock]** 來解鎖螢幕。

@@ -3,20 +3,22 @@ description: 查看Data Workbench客戶端用戶介面操作和快捷鍵的清�
 title: 快速參考
 uuid: d4563f21-4a0c-4ba5-844a-700b03a7f56e
 exl-id: 59ac0cc7-e7c7-4ce1-889a-9a65a0faa853
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
 # 快速參考{#quick-reference}
 
+{{eol}}
+
 查看Data Workbench客戶端用戶介面操作和快捷鍵的清單。
 
-另請參閱[鍵盤快速鍵](../../../home/c-get-started/c-vis/c-qk-ref.md#section-0597bf92e1af4bcf9f1c8ceffe52649a)。
+另請參閱 [鍵盤快速鍵](../../../home/c-get-started/c-vis/c-qk-ref.md#section-0597bf92e1af4bcf9f1c8ceffe52649a).
 
-## Data Workbench客戶端{#section-dfea35452c2e4f0b92229a4974bc24fa}的操作
+## Data Workbench客戶端的操作 {#section-dfea35452c2e4f0b92229a4974bc24fa}
 
 在客戶端用戶介面內執行任務時，請使用這些操作。
 
@@ -65,7 +67,7 @@ ht-degree: 6%
 | Ctrl + select | 將文本添加到選擇 |
 | Shift + select | 從選取項目移除文字 |
 
-## Data Workbench客戶端{#section-0597bf92e1af4bcf9f1c8ceffe52649a}的鍵盤快捷鍵
+## Data Workbench客戶端的鍵盤快捷鍵 {#section-0597bf92e1af4bcf9f1c8ceffe52649a}
 
 對工作區和配置檔案使用這些快捷鍵。
 
@@ -105,7 +107,7 @@ ht-degree: 6%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"><b>全螢幕檢視</b>。工作區會填滿螢幕並重新調整為新大小。 </td> 
+   <td colname="col1"><b>全螢幕檢視</b>. 工作區會填滿螢幕並重新調整為新大小。 </td> 
    <td colname="col2"><b>Ctrl加號</b> <p>Ctrl +（在鍵盤上） </p> <p><i> 或 </i> </p> <p>Ctrl Shift +（鍵盤上） </p> </td> 
    <td colname="col3"> 
     <ul id="ul_C7C731B894D946D9916F50806F015857"> 
@@ -114,7 +116,7 @@ ht-degree: 6%
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b>視窗檢視</b>。工作區顯示在標準視窗檢視中，並反推至新大小。 </td> 
+   <td colname="col1"><b>視窗檢視</b>. 工作區顯示在標準視窗檢視中，並反推至新大小。 </td> 
    <td colname="col2"><b>Ctrl減號</b> <p>Ctrl - </p> </td> 
    <td colname="col3"> 
     <ul id="ul_3474B9EFD69343C09BC84E485D896C28"> 
@@ -132,7 +134,7 @@ ht-degree: 6%
 | Ctrl + S | 儲存工作區。 |
 | Ctrl + O | 開啟視覺效果檔案。 它與從工作區功能表選取「新增>開啟」相同。 |
 | Ctrl + E | 開啟設定（預設為）或其他檔案。 它與從工作區功能表選取「新增>編輯」相同。 選擇「全部」以開啟其他檔案。 |
-| 常用的檔案菜單 | 按一下工作區中的「**添加>開啟**」以開啟最近開啟的檔案（保存最近10個）或您「固定」到新菜單的檔案。 從功能表中，按一下清單中的釘圖示以儲存視覺效果。 |
+| 常用的檔案菜單 | 按一下 **新增>開啟** 從工作區開啟最近開啟的檔案（儲存最近10個）或您「釘選」到新功能表的檔案。 從功能表中，按一下清單中的釘圖示以儲存視覺效果。 |
 
 <table id="table_99414A5999F94A2EAB2BBBA27EE487F5"> 
  <thead> 
@@ -143,12 +145,12 @@ ht-degree: 6%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>按一下右鍵節點，然後按一下<span class="uicontrol">貼上</span> </p> </td> 
-   <td colname="col2"> <p>將節點貼入<span class="filepath"> .cfg</span>檔案中 </p> </td> 
+   <td colname="col1"> <p>以滑鼠右鍵按一下節點，然後按一下 <span class="uicontrol"> 貼上</span> </p> </td> 
+   <td colname="col2"> <p>將節點貼入 <span class="filepath"> .cfg</span> 檔案 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1">按一下右鍵向量，然後按一下<span class="uicontrol"> 「貼上為子項」</span> </td> 
-   <td colname="col2">將向量貼入<span class="filepath"> .cfg</span>檔案中的向量層級 </td> 
+   <td colname="col1">以滑鼠右鍵按一下向量圖，然後按一下 <span class="uicontrol"> 貼上為子項</span> </td> 
+   <td colname="col2">將向量貼入 <span class="filepath"> .cfg</span> 向量級檔案 </td> 
   </tr> 
  </tbody> 
 </table>

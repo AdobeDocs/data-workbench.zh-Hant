@@ -3,7 +3,7 @@ description: 下列維度可用於Data Workbench的「設定檔狀態」設定�
 title: Data Workbench 設定檔狀態設定檔中的維度
 uuid: bd84a3e5-d1ea-4768-9dac-62f5dfbad49a
 exl-id: 57b3ff16-26db-4292-819b-f6cd8e024c2a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Data Workbench 設定檔狀態設定檔中的維度{#dimensions-in-the-data-workbench-profile-status-profile}
+
+{{eol}}
 
 下列維度可用於Data Workbench的「設定檔狀態」設定檔。
 
@@ -30,15 +32,15 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <b>每分鐘快速輸入MegaBytes</b> </td> 
-   <td colname="col2"> cs-uri-query(bj)值用於此維度。 區塊的最後一列會作為維度的值。 如果資料集為「快速輸入」，此數值Dimension的值將顯示系統輸入資料時的每分鐘MB。 <p>注意： 此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
+   <td colname="col2"> cs-uri-query(bj)值用於此維度。 區塊的最後一列會作為維度的值。 如果資料集為「快速輸入」，此數值Dimension的值將顯示系統輸入資料時的每分鐘MB。 <p>注意：此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>每分鐘快速合併MegaBytes</b> </td> 
-   <td colname="col2">cs-uri-query(bk)值用於此維度。 區塊的最後一列會作為維度的值。 如果資料集處於快速合併中此數值Dimension的值將顯示系統每分鐘合併的MB。 <p>注意： 此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
+   <td colname="col2">cs-uri-query(bk)值用於此維度。 區塊的最後一列會作為維度的值。 如果資料集處於快速合併中此數值Dimension的值將顯示系統每分鐘合併的MB。 <p>注意：此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>欄位GigaBytes</b> </td> 
-   <td colname="col2"> cs-uri-query(bg)值用於此維度。 此值除以1000，並四捨五入至最接近的整數。 此數值Dimension的值會顯示資料集中欄位所使用的空間量。 <p>注意： 此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
+   <td colname="col2"> cs-uri-query(bg)值用於此維度。 此值除以1000，並四捨五入至最接近的整數。 此數值Dimension的值會顯示資料集中欄位所使用的空間量。 <p>注意：此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>主機</b> </td> 
@@ -46,19 +48,19 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <b>上次Ping</b> </td> 
-   <td colname="col2">x-last-ping是x-unixtime除以10（以符合數值維度大小限制）。 Last Ping是指定塊的最後一行，它代表監視代理上次記錄系統運行狀況的時間。 <p>注意： 此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
+   <td colname="col2">x-last-ping是x-unixtime除以10（以符合數值維度大小限制）。 Last Ping是指定塊的最後一行，它代表監視代理上次記錄系統運行狀況的時間。 <p>注意：此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>日誌讀取百分比</b> </td> 
-   <td colname="col2">cs-uri-query(be)值用於此數值維度。 這是指定區塊的最後一列。 此維度用於計算讀取的記錄檔百分比。 <p>注意： 此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
+   <td colname="col2">cs-uri-query(be)值用於此數值維度。 這是指定區塊的最後一列。 此維度用於計算讀取的記錄檔百分比。 <p>注意：此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>處理模式ID</b> </td> 
-   <td colname="col2"> cs-uri-query(bb)值用於此簡單Dimension。 這是指定區塊的最後一列。 處理模式ID允許您查看系統處於何種處理模式（快速輸入、快速合併、即時）。 <p>注意： 此維度會隱藏，然後在用戶端維度處理模式中以好記的值重新公開。 </p></td> 
+   <td colname="col2"> cs-uri-query(bb)值用於此簡單Dimension。 這是指定區塊的最後一列。 處理模式ID允許您查看系統處於何種處理模式（快速輸入、快速合併、即時）。 <p>注意：此維度會隱藏，然後在用戶端維度處理模式中以好記的值重新公開。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>處理已中止</b> </td> 
-   <td colname="col2"> 已x處理中止欄位會透過各種條件建立，以指出設定檔目前是否執行中。 這是一個簡單的維度。 <p>注意： 當有大量輸入記錄要公平分佈在DPU中時，此維度的效用最佳。 舉例來說，如果每天只載入一個大型檔案，則Data Workbench可能會「停頓」一小時或更久，導致此維度的誤判。 </p></td> 
+   <td colname="col2"> 已x處理中止欄位會透過各種條件建立，以指出設定檔目前是否執行中。 這是一個簡單的維度。 <p>注意：當有大量輸入記錄要公平分佈在DPU中時，此維度的效用最佳。 舉例來說，如果每天只載入一個大型檔案，則Data Workbench可能會「停頓」一小時或更久，導致此維度的誤判。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>設定檔</b> </td> 
@@ -70,7 +72,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <b>轉換百分比</b> </td> 
-   <td colname="col2"> cs-uri-query(bf)值用於此數值維度。 這是指定區塊的最後一列。 此維度用於計算完成資料轉換的百分比。 <p>注意： 此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
+   <td colname="col2"> cs-uri-query(bf)值用於此數值維度。 這是指定區塊的最後一列。 此維度用於計算完成資料轉換的百分比。 <p>注意：此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>時間維度</b> </td> 
@@ -102,7 +104,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <b>每分鐘快速合併MB</b> </td> 
-   <td colname="col2"> 每個塊的「快速合併兆位元組數」除以每分鐘的「快速合併兆位元組數」大於零時的塊數。 </td> 
+   <td colname="col2"> 每個塊的「快速合併MegaBytes/Minute」的總和除以每分鐘的「快速合併MegaBytes」大於零時的塊數。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>欄位GigaBytes</b> </td> 

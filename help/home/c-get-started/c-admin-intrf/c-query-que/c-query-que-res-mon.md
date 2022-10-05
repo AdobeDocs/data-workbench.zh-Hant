@@ -3,7 +3,7 @@ description: 資源監視器向量包含記憶體預算監視器和查詢數監�
 title: 查詢佇列資源監視器
 uuid: 6b516bed-7f9a-4821-869e-19e720f20313
 exl-id: 6d445a4d-a415-41ce-9d45-1bdd0e726edd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # 查詢佇列資源監視器{#query-queue-resource-monitors}
+
+{{eol}}
 
 資源監視器向量包含記憶體預算監視器和查詢數監視器。
 
@@ -38,7 +40,7 @@ ht-degree: 2%
   <tr> 
    <td colname="col1"> <p>低臨界值 </p> </td> 
    <td colname="col2"> <p>兩次 </p> </td> 
-   <td colname="col3"> <p>記憶體使用率的低臨界值（位元組）。 如果<span class="wintitle">記憶體預算監視器</span>值低於此值，則允許計畫新串，並允許計畫串增長。 例如，當使用者將視覺效果新增至工作區時，叢集會增加。 </p> </td> 
+   <td colname="col3"> <p>記憶體使用率的低臨界值（位元組）。 若 <span class="wintitle"> 記憶體預算監視器</span> 值低於此值，允許排程新串，並允許排程串增長。 例如，當使用者將視覺效果新增至工作區時，叢集會增加。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>反應時間 </p> </td> 
@@ -58,7 +60,7 @@ ht-degree: 2%
   <tr> 
    <td colname="col1"> <p>低臨界值 </p> </td> 
    <td colname="col2"> </td> 
-   <td colname="col3"> <p>記憶體使用率的低臨界值（位元組）。 如果<span class="wintitle">記憶體預算監視器</span>值低於此值，則可以計畫新的串，並且計畫的串可以增長。 </p> </td> 
+   <td colname="col3"> <p>記憶體使用率的低臨界值（位元組）。 若 <span class="wintitle"> 記憶體預算監視器</span> 值低於此值，可以計畫新的束團，而計畫的束團可以增長。 </p> </td> 
   </tr> 
  </tbody> 
 </table>

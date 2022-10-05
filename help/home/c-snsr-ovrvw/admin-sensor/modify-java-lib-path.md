@@ -1,21 +1,25 @@
 ---
-description: 有關將visual_sciences.dll添加到Tomcat Java庫路徑的說明。
-title: 修改Java庫路徑
+description: 將visual_sciences.dll添加到Tomcat java庫路徑的說明。
+title: 修改 Java 程式庫路徑
 uuid: 1e1a2704-045a-4b35-aa43-1b5bae91dc32
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: bd853d95-3f44-4860-9965-c3210ec4adcf
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '78'
+ht-degree: 12%
 
 ---
 
+# 修改 Java 程式庫路徑{#modify-the-java-library-path}
 
-# 修改Java庫路徑{#modify-the-java-library-path}
+{{eol}}
 
-有關將visual_sciences.dll添加到Tomcat Java庫路徑的說明。
+將visual_sciences.dll添加到Tomcat java庫路徑的說明。
 
-1. 在您的Windows伺服器上，導覽至Tomcat安裝目錄。 (Tomcat > bin)
-1. 在bin資料夾下，運行Tomcat9w.exe（常用守護程式服務管理器）。
+1. 在Windows伺服器上，導覽至Tomcat安裝目錄。 (Tomcat > bin)
+1. 在bin資料夾下，運行Tomcat9w.exe（通用守護程式服務管理器）。
 
-在「Java」頁籤的「Java選項」下，添加新行：
+在Java頁簽的Java選項下，添加新行：
 
 ```
 -Djava.library.path=C:\Sensor directory

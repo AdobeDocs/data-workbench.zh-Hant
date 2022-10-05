@@ -3,7 +3,7 @@ description: 操作台可讓您輕鬆判斷每個特定工作區的儲存位置�
 title: 檔案版本設定
 uuid: 5e7430f3-1425-41d2-828b-bc8f5786bf3b
 exl-id: 82a70d51-a95c-4ddd-8d3c-cd0364940693
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 2%
@@ -12,9 +12,11 @@ ht-degree: 2%
 
 # 檔案版本設定{#file-versioning}
 
+{{eol}}
+
 操作台可讓您輕鬆判斷每個特定工作區的儲存位置，無論是位於Data Workbench伺服器、本機電腦，還是兩者皆可。
 
-## 識別檔案版本{#section-d555c96b016344f19b356c12213dd2a9}
+## 識別檔案版本 {#section-d555c96b016344f19b356c12213dd2a9}
 
 **伺服器**
 
@@ -30,11 +32,11 @@ ht-degree: 2%
 
 ![](assets/wsp_thumb_local.png)
 
-本機工作區預設會儲存在Data Workbench（或Insight）安裝目錄內的[!DNL User\working profile name\Workspaces\tab]名稱資料夾中。
+本機工作區預設會儲存在 [!DNL User\working profile name\Workspaces\tab] Data Workbench（或Insight）安裝目錄中的名稱資料夾。
 
 >[!NOTE]
 >
->當伺服器工作區的本地版本時，必須先恢復到伺服器版本，然後才能下載更新的伺服器工作區版本。 若要回復到伺服器版本而不進行本機變更，請以滑鼠右鍵按一下本機工作區的縮圖，然後按一下&#x200B;**[!UICONTROL Revert to server version]**。
+>當伺服器工作區的本地版本時，必須先恢復到伺服器版本，然後才能下載更新的伺服器工作區版本。 若要回復到伺服器版本而不進行本機變更，請以滑鼠右鍵按一下本機工作區的縮圖，然後按一下 **[!UICONTROL Revert to server version]**.
 
 **使用者**
 
@@ -42,4 +44,4 @@ ht-degree: 2%
 
 ![](assets/wsp_thumb_user.png)
 
-依預設，使用者工作區會儲存在Insight安裝目錄的User\*working profile name*\Workspaces\*tab name*資料夾中。
+預設情況下，用戶工作區儲存在Insight安裝目錄的User\*working profile name*\Workspaces\*tab name*資料夾中。

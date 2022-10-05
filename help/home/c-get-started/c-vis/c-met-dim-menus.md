@@ -3,7 +3,7 @@ description: 以滑鼠右鍵按一下視覺效果中的量度或維度區域所�
 title: 量度和維度功能表
 uuid: 0dfae2bd-6c33-4496-83ea-f7f6de960259
 exl-id: 59bed6c1-74b2-49e2-ac68-f22c8bed668a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 3%
@@ -12,11 +12,13 @@ ht-degree: 3%
 
 # 量度和維度功能表{#metric-and-dimension-menus}
 
+{{eol}}
+
 以滑鼠右鍵按一下視覺效果中的量度或維度區域所存取的功能表，可讓您存取與該視覺效果中的量度或維度相關的動作。
 
-如需如何將這些功能表選項搭配特定視覺效果類型使用的詳細資訊，請參閱[分析視覺效果](../../../home/c-get-started/c-analysis-vis/c-analysis-vis.md)中適當的視覺效果區段。
+如需如何將這些功能表選項搭配特定視覺效果類型使用的詳細資訊，請參閱 [分析視覺效果](../../../home/c-get-started/c-analysis-vis/c-analysis-vis.md).
 
-## 量度功能表{#section-115db63a26f04b57ac954a69972c6291}
+## 量度功能表 {#section-115db63a26f04b57ac954a69972c6291}
 
 若要存取量度功能表，請以滑鼠右鍵按一下視覺效果中任何與量度相關的區域。
 
@@ -38,15 +40,15 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> <p>縮放至全部 </p> </td> 
-   <td colname="col2"> <p>返回圖表內所有資料的顯示。 請參閱<a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530">放大視覺效果</a>。 </p> </td> 
+   <td colname="col2"> <p>返回圖表內所有資料的顯示。 請參閱 <a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530"> 放大視覺效果</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>縮放至選取範圍 </p> </td> 
-   <td colname="col2"> <p>放大折線圖中選取的資料子集。 請參閱<a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530">放大視覺效果</a>。 有關選擇的詳細資訊，請參閱<a href="../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746">在視覺效果中進行選擇</a>。 </p> </td> 
+   <td colname="col2"> <p>放大折線圖中選取的資料子集。 請參閱 <a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530"> 放大視覺效果</a>. 如需選取項目的詳細資訊，請參閱 <a href="../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746"> 在視覺效果中進行選取</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>量度編輯器 </p> </td> 
-   <td colname="col2"> <p>可讓您編輯由量度名稱欄位所識別之量度的定義。 請參閱編輯現有的衍生量度</a> 。<a href="../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#section-db6d924cf4e14bcc8d57cfe1059fc797"> </a></p> </td> 
+   <td colname="col2"> <p>可讓您編輯由量度名稱欄位所識別之量度的定義。 請參閱 <a href="../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#section-db6d924cf4e14bcc8d57cfe1059fc797"> 編輯現有的衍生量度</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>量度 </p> </td> 
@@ -79,7 +81,7 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-## 使用維菜單{#section-e09de0aa6b74459a957b627ff7d07979}
+## 使用維菜單 {#section-e09de0aa6b74459a957b627ff7d07979}
 
 以滑鼠右鍵按一下視覺效果中任何與維度相關的區域，即可存取維度功能表。
 
@@ -97,11 +99,11 @@ ht-degree: 3%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>新增 註解 </p> </td> 
-   <td colname="col2"> <p>為所選元素添加註解，以吸引該元素的注意。 請參閱<a href="../../../home/c-get-started/c-vis/c-call-wkspc.md#concept-212b09e763044d938987b4a9c658adc0">將圖說文字新增至工作區</a>。 </p> </td> 
+   <td colname="col2"> <p>為所選元素添加註解，以吸引該元素的注意。 請參閱 <a href="../../../home/c-get-started/c-vis/c-call-wkspc.md#concept-212b09e763044d938987b4a9c658adc0"> 將圖說文字新增至工作區</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>重新命名元素 </p> </td> 
-   <td colname="col2"> <p>重新命名元素。 按一下「還原」<span class="uicontrol">以返回原始名稱。</span> </p> </td> 
+   <td colname="col2"> <p>重新命名元素。 按一下 <span class="uicontrol"> 還原</span> 返回原始名稱。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><i>維度名稱</i> </p> </td> 
@@ -129,7 +131,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> <p>系列圖例 </p> </td> 
-   <td colname="col2"> <p>將所選維度內的元素按系列進行顏色編碼。 請參閱<a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-srs-leg.md#concept-c48042a705524bc4b63cd6f24874cc12">使用系列圖例</a>。 </p> </td> 
+   <td colname="col2"> <p>將所選維度內的元素按系列進行顏色編碼。 請參閱 <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-srs-leg.md#concept-c48042a705524bc4b63cd6f24874cc12"> 使用序列圖例</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>新增視覺效果 </p> </td> 
@@ -141,7 +143,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> <p>階層檢視 </p> </td> 
-   <td colname="col2"> <p>將目前的頁面視覺效果變更為頁面階層視覺效果，以顯示網站中依檔案名稱依階層組織並依字母排序的頁面。 請參閱<a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff">套用階層檢視</a>。 </p> </td> 
+   <td colname="col2"> <p>將目前的頁面視覺效果變更為頁面階層視覺效果，以顯示網站中依檔案名稱依階層組織並依字母排序的頁面。 請參閱 <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff"> 套用階層檢視</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>版面配置 </p> </td> 

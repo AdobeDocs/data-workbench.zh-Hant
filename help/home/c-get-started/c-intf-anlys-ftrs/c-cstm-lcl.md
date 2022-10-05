@@ -3,7 +3,7 @@ description: Data Workbench在可自訂的方式上極具彈性。
 title: 在本機自訂 Data Workbench
 uuid: 9d04ebbf-fa48-4594-9b59-8b7e4c85fe6a
 exl-id: 07ad2744-2dd3-4db0-92ab-05346f74a076
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 7%
@@ -11,6 +11,8 @@ ht-degree: 7%
 ---
 
 # 在本機自訂 Data Workbench{#customize-data-workbench-locally}
+
+{{eol}}
 
 Data Workbench在可自訂的方式上極具彈性。
 

@@ -3,7 +3,7 @@ description: 篩選器是定義資料集中資料子集的運算式。
 title: 篩選器運算式的語法
 uuid: faeb6847-3295-48ab-9d1c-db00f57647ba
 exl-id: 515c1645-69c8-4990-a913-d2d505c6fe51
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 1%
@@ -12,13 +12,15 @@ ht-degree: 1%
 
 # 篩選器運算式的語法{#syntax-for-filter-expressions}
 
+{{eol}}
+
 篩選器是定義資料集中資料子集的運算式。
 
 篩選器會根據維度間的關係，承認或拒絕每個維度的每個元素。
 
-可使用[!DNL Filter Editor]編輯篩選器。 請參閱[篩選器編輯器](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3)。
+您可以使用 [!DNL Filter Editor]. 請參閱 [篩選器編輯器](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3).
 
-在下表中，每個語法說明都包含使用該篩選器的量度運算式範例。 例如，Sessions[True]是使用「True」篩選器定義的量度。 「工作階段」[「True]量度與「工作階段」量度相同，因為「True」篩選器會容納「工作階段」維度的每個元素。
+在下表中，每個語法說明都包含使用該篩選器的量度運算式範例。 例如工作階段[True] 是使用「True」篩選器定義的量度。 會議[True] 量度與「工作階段」量度相同，因為「真」篩選器會接納「工作階段」維度的每個元素。
 
 <table id="table_5D66E6C11B384460BAAA7A6130214594"> 
  <tbody> 
@@ -76,7 +78,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <p>尺寸&lt; "值" </p> </td> 
-   <td colname="col2"> <p>允許序數值小於元素「Value」的序數值的維Dim的元素。 如果「值」不是維度的元素，則會假設其大於維度的任何目前元素。 </p> <p>範例：Sessions[ Month &lt; "04" ]是2004年7月之前發生的會話數。 </p> </td> 
+   <td colname="col2"> <p>允許序數值小於元素「Value」的序數值的維Dim的元素。 如果「值」不是維度的元素，則會假設其大於維度的任何目前元素。 </p> <p>範例：Sessions[ Month &lt; "04" ]是2004年7月之前發生的Sessions數。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>「維」&gt;「值」 </p> </td> 

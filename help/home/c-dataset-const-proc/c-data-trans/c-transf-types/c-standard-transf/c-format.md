@@ -3,7 +3,7 @@ description: 格式轉換採用一組輸入，並對其進行格式化，以建�
 title: 格式
 uuid: c596902e-21bc-4ce6-9ca4-7ca86dfc0a6c
 exl-id: 842b502e-cd16-45b3-ada8-6f2d899f1d54
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # 格式{#format}
+
+{{eol}}
 
 格式轉換採用一組輸入，並對其進行格式化，以建立與給定結構匹配的輸出。
 
@@ -47,7 +49,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td colname="col1"> 輸入 </td> 
-   <td colname="col2"> <p>包含簡單字串或字串向量的欄位。 在字串向量作為輸入的情況下，輸出也將是字串向量，該字串向量由將<span class="wintitle"> Format</span>參數應用於每組輸入值而產生。 </p> <p> <p>注意： 輸入的編號從0開始，但格式替代值的編號從%1%開始。 </p> </p> </td> 
+   <td colname="col2"> <p>包含簡單字串或字串向量的欄位。 在字串向量作為輸入的情況下，輸出也將是由應用 <span class="wintitle"> 格式</span> 參數。 </p> <p> <p>注意：輸入的編號從0開始，但格式替代值的編號從%1%開始。 </p> </p> </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 

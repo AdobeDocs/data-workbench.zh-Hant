@@ -3,7 +3,7 @@ description: RETransform（規則運算式）轉換是一種模式匹配轉換�
 title: RETransform
 uuid: 60b5b60e-678a-416d-b5c3-57b1bbefce7d
 exl-id: 2595f782-0efb-4a2a-84bd-fdb04baf0852
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 3%
@@ -12,13 +12,15 @@ ht-degree: 3%
 
 # RETransform{#retransform}
 
+{{eol}}
+
 RETransform（規則運算式）轉換是一種模式匹配轉換，它使用規則運算式指定要在輸入中查找和捕獲的模式，並將捕獲的字串儲存在指定的輸出欄位中。
 
-對整個輸入字串計算規則運算式。 如果輸入與規則運算式中指定的模式不符，則不會擷取任何資料。 如需使用規則運算式的簡短指南，請參閱[規則運算式](../../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c)。
+對整個輸入字串計算規則運算式。 如果輸入與規則運算式中指定的模式不符，則不會擷取任何資料。 如需使用規則運算式的簡短指南，請參閱 [規則運算式](../../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c).
 
 >[!NOTE]
 >
->[!DNL RETransform]轉換的操作與[!DNL REMatch]轉換類似（請參見[REMatch](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-rematch.md#concept-7f0b1caad1df46aabef4448f88261a8e)），它為規則表達式中的每個捕獲子模式構建一個輸出欄位。 您可以將[!DNL RETransform]想像為[!DNL REMatch]和[!DNL Format]轉換的組合。 如果Action參數（請參閱下表中的Action）設定為&quot;RESULTS&quot;，則[!DNL RETransform]的操作方式與[!DNL REMatch]和[!DNL Union]轉換的組合相同。
+>此 [!DNL RETransform] 轉換的運作方式與 [!DNL REMatch] 轉換(請參閱 [REMatch](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-rematch.md#concept-7f0b1caad1df46aabef4448f88261a8e))，為規則運算式中每個擷取子模式建構一個輸出欄位。 你可以想想 [!DNL RETransform] 作為 [!DNL REMatch] 和 [!DNL Format] 轉換。 如果Action參數（請參閱下表中的Action）設為&quot;RESULTS&quot;，則 [!DNL RETransform] 像 [!DNL REMatch] 和 [!DNL Union] 轉換。
 
 <table id="table_51B7342E6A5E4E31913BD0F6A6ACC424"> 
  <thead> 

@@ -3,7 +3,7 @@ description: 說明縮圖檢視和清單檢視。
 title: 控制面板瀏覽器檢視
 uuid: 8e5ef06a-6c5a-4792-a732-fe7574aed8ab
 exl-id: 94da6ee1-30ab-426f-9be3-fd56f172aadb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 1%
@@ -12,11 +12,13 @@ ht-degree: 1%
 
 # 控制面板瀏覽器檢視{#dashboard-browser-views}
 
+{{eol}}
+
 說明縮圖檢視和清單檢視。
 
 有兩個檢視可用來導覽控制面板瀏覽器中的控制面板：縮略圖視圖和清單視圖。 「縮圖檢視」會在您瀏覽時提供控制面板的縮圖，而「清單檢視」則是可用控制面板更詳細且以表格為基礎的檢視。
 
-## 縮圖檢視{#section-b522ce5e6e184ef9a0e1b9a42f7a9ae0}
+## 縮圖檢視 {#section-b522ce5e6e184ef9a0e1b9a42f7a9ae0}
 
 「縮圖檢視」提供縮圖庫，該縮圖庫與您有權存取的控制面板相對應。 如果縮圖顯示預設圖示，請聯絡管理員以建立該控制面板的縮圖。 搜尋列左側的圖示可讓您在縮圖和清單檢視之間切換。
 

@@ -3,7 +3,7 @@ description: 下列維度可在Data Workbench的「伺服器狀態」設定檔�
 title: Data Workbench 伺服器狀態設定檔中的維度
 uuid: 4cfe882a-2797-4af9-bd6d-75bc31ee909c
 exl-id: 002f6b95-f151-41d9-ae28-9c01c1f621ee
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1366'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Data Workbench 伺服器狀態設定檔中的維度{#dimensions-in-the-data-workbench-server-status-profile}
+
+{{eol}}
 
 下列維度可在Data Workbench的「伺服器狀態」設定檔中使用。
 
@@ -50,11 +52,11 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <b>環境</b> </td> 
-   <td colname="col2">cs-uri-query(c)值用於環境ID。 區塊的最後一列會作為維度的值。 此「簡單」Dimension將顯示您的伺服器正在運行的環境（如果配置正確）。 <p><p>注意： 此維度設定在insight_monitor_agent.cfg中。 </p></p></td> 
+   <td colname="col2">cs-uri-query(c)值用於環境ID。 區塊的最後一列會作為維度的值。 此「簡單」Dimension將顯示您的伺服器正在運行的環境（如果配置正確）。 <p><p>注意：此維度設定在insight_monitor_agent.cfg中。 </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>估計掃描秒數</b> </td> 
-   <td colname="col2"> 此「數值」Dimension中使用x-estimated-sweep-dekasseconds欄位。 這是伺服器的估計掃描時間除以10（減小掃描測量的解析度以使尺寸更合理）。 <p><p>注意： 此維度會隱藏，因為它只有在平均到量度時才有用。 </p></p></td> 
+   <td colname="col2"> 此「數值」Dimension中使用x-estimated-sweep-dekasseconds欄位。 這是伺服器的估計掃描時間除以10（減小掃描測量的解析度以使尺寸更合理）。 <p><p>注意：此維度會隱藏，因為它只有在平均到量度時才有用。 </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>主機</b> </td> 
@@ -66,31 +68,31 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <b>載入平均</b> </td> 
-   <td colname="col2"> 這是使用給定伺服器cs-uri-query(i)值的最後一行的數值維。 條件是cs-uri-query(k)不為空。 此維度用於計算所監視系統中伺服器的平均負載。 <p>注意： 此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
+   <td colname="col2"> 這是使用給定伺服器cs-uri-query(i)值的最後一行的數值維。 條件是cs-uri-query(k)不為空。 此維度用於計算所監視系統中伺服器的平均負載。 <p>注意：此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>記憶體頁檔案百分比</b> </td> 
-   <td colname="col2"> 這是使用給定伺服器cs-uri-query(o)值的最後一行的數值維。 條件是cs-uri-query(k)不為空。 此維度用於計算頁面檔案記憶體使用量的百分比。 <p>注意： 此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
+   <td colname="col2"> 這是使用給定伺服器cs-uri-query(o)值的最後一行的數值維。 條件是cs-uri-query(k)不為空。 此維度用於計算頁面檔案記憶體使用量的百分比。 <p>注意：此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>記憶體物理兆位元組總數</b> </td> 
-   <td colname="col2"> 這是使用給定伺服器cs-uri-query(ag)值的最後一行的數值維。 條件是cs-uri-query(k)不為空。 <p>注意： 此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
+   <td colname="col2"> 這是使用給定伺服器cs-uri-query(ag)值的最後一行的數值維。 條件是cs-uri-query(k)不為空。 <p>注意：此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>記憶體物理百分比</b> </td> 
-   <td colname="col2"> 這是使用給定伺服器cs-uri-query(ag)值的最後一行的數值維。 條件是cs-uri-query(k)不為空。 此維度用於計算每個伺服器的物理記憶體使用率百分比。 <p>注意： 此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
+   <td colname="col2"> 這是使用給定伺服器cs-uri-query(ag)值的最後一行的數值維。 條件是cs-uri-query(k)不為空。 此維度用於計算每個伺服器的物理記憶體使用率百分比。 <p>注意：此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>記憶體查詢百分比</b> </td> 
-   <td colname="col2"> 這是使用給定伺服器cs-uri-query值的最後一行的數值維。 條件是cs-uri-query(k)不為空。 此維度用於計算每個伺服器的查詢記憶體使用率百分比。 <p>注意： 此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
+   <td colname="col2"> 這是使用給定伺服器cs-uri-query值的最後一行的數值維。 條件是cs-uri-query(k)不為空。 此維度用於計算每個伺服器的查詢記憶體使用率百分比。 <p>注意：此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>網路連接</b> </td> 
-   <td colname="col2"> 這是使用給定伺服器cs-uri-query(q)值的最後一行的數值維。 條件是cs-uri-query(k)不為空。 這用於顯示指定伺服器的網路連接數。 <p>注意： 此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
+   <td colname="col2"> 這是使用給定伺服器cs-uri-query(q)值的最後一行的數值維。 條件是cs-uri-query(k)不為空。 這用於顯示指定伺服器的網路連接數。 <p>注意：此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>輪詢延遲（秒）</b> </td> 
-   <td colname="col2"> 此維度用於計算民調問答延遲。 cs-uri-query(m)值除以10以縮小維度大小，並複製到x-poll-latency-centiseconds欄位中。 這是數值維度，會取用指定伺服器的最後一列。 <p>注意： 此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
+   <td colname="col2"> 此維度用於計算民調問答延遲。 cs-uri-query(m)值除以10以縮小維度大小，並複製到x-poll-latency-centiseconds欄位中。 這是數值維度，會取用指定伺服器的最後一列。 <p>注意：此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>快速檢查成功</b> </td> 
@@ -98,7 +100,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <b>臨時DB空間百分比</b> </td> 
-   <td colname="col2"> cs-uri-query(an)值的最後一行被複製到x-temp-db-space-percentage欄位中。 這是數值Dimension，用於計算指定伺服器上已用臨時資料庫空間的百分比。 <p>注意： 此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
+   <td colname="col2"> cs-uri-query(an)值的最後一行被複製到x-temp-db-space-percentage欄位中。 這是數值Dimension，用於計算指定伺服器上已用臨時資料庫空間的百分比。 <p>注意：此維度會隱藏，因為它只有在平均到量度時才有用。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>分析版本</b> </td> 
@@ -106,7 +108,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> <b>群組</b> </td> 
-   <td colname="col2"> 將字詞分組，可讓您透過其他方式篩選產生的資料集。 <p>注意： 此維度設定在insight_monitor_agent.cfg中。 </p></td> 
+   <td colname="col2"> 將字詞分組，可讓您透過其他方式篩選產生的資料集。 <p>注意：此維度設定在insight_monitor_agent.cfg中。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>量度</b> </td> 

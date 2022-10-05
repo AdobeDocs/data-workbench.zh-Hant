@@ -3,14 +3,16 @@ description: 量度、維度和篩選器提供框架，可計算處理至 Data W
 title: Data Workbench 量度、維度和篩選器
 uuid: 3c0300a0-ae19-4817-aab8-7294e0eabdd9
 exl-id: 687d9695-e70c-49ff-ac11-1537e6309e16
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
-workflow-type: ht
-source-wordcount: '827'
-ht-degree: 100%
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '796'
+ht-degree: 87%
 
 ---
 
 # Data Workbench 量度、維度和篩選器{#data-workbench-metrics-dimensions-and-filters}
+
+{{eol}}
 
 量度、維度和篩選器提供框架，可計算處理至 Data Workbench 資料集的資料。
 
@@ -38,17 +40,17 @@ ht-degree: 100%
 Swedish_Average_Age=Average_Age[country = ‘Sweden’]
 ```
 
-## 量度、維度和篩選器的關聯性{#section-28622596124140b280e6b993b174ef84}
+## 量度、維度和篩選器的關聯性 {#section-28622596124140b280e6b993b174ef84}
 
 一般而言，如果依維度評估量度，會導致系統以每個維度元素 (或元素) 去評估該量度。在上述範例中，「國家/地區」維度包含世界上各「國家/地區」的元素。依「國家/地區」評估「平均年齡」將會產生每個元素 (即國家) 的平均年齡，其中包括元素「瑞典」。
 
 請務必注意，當您依維度評估量度時，無論您是評估整個維度的量度，還是以篩選器定義相對應的特定維度元素，都會得出特定維度元素的相同數字結果。根據上一個範例，在尋找瑞典人口平均年齡時，以下任一種方法都會產生相同的結果：
 
 * 依「國家/地區」維度評估「平均年齡」量度，然後查看維度元素「瑞典」的數字。
-* 篩選「瑞典人」(以 [!DNL Average_Age[Country=&#39;Sweden&#39;]] 表達) 並評估「平均年齡」量度。
+* 篩選「瑞典人」(以 [!DNL Average_Age[Country='Sweden']])。
 
 篩選器是參考一或多個維度和維度元素的語法運算式。如上述範例所示，使用 [!DNL [dimension=element]] 表達是一種能指定篩選器的簡單方式。
 
-也可以使用如 [!DNL New_Metric=Metric[Filter]] 的運算式定義新量度並套用至篩選器，同樣相當容易。此類的篩選器可用根據特定維度元素來定義新度量。若要運用上述範例，使用 [!DNL Average_Age[Country=&#39;Sweden&#39;]] 即可指定瑞典人口平均年齡的量度。如果為此量度指定名稱，例如「Swedich_Average_Age」，我們就可以在其他計算中使用此量度。例如，評估 [!DNL Swedish_Average_Age/Average_Age] 會得出單一數字：瑞典人口平均年齡與世界其他區域人口平均年齡的比例。
+使用下列運算式定義新量度也同樣容易套用此篩選 [!DNL New_Metric=Metric[Filter]]. 此類的篩選器可用根據特定維度元素來定義新度量。若要使用上述範例， [!DNL Average_Age[Country='Sweden']]指定瑞典人口平均年齡的量度。 如果為此量度指定名稱，例如「Swedich_Average_Age」，我們就可以在其他計算中使用此量度。例如，評估 [!DNL Swedish_Average_Age/Average_Age] 會得出單一數字：瑞典人口平均年齡與世界其他區域人口平均年齡的比例。
 
-如果包含世界上所有人口資訊的資料集也包含「眼睛顏色」的維度，則使用 [!DNL Swedich_Average_Age[Eye_Color=&#39;green&#39;]] 運算式，即可得出綠色眼睛瑞典人的平均年齡。即使不使用較為進階的量度定義，您也可以在套用不同篩選器的情況下取得相同的結果，例如：[!DNL Average_Age[Country=&#39;Sweden&#39; AND Eye_Color=&#39;green&#39;]]。在此案例中，[!DNL AND]運算子會使用其他兩種基本篩選運算式來指定篩選運算式。
+如果包含世界上所有人口資訊的資料集也包含「眼睛顏色」維度，則此運算式會 [!DNL Swedish_Average_Age[Eye_Color='green']] 會導致瑞典人的平均年齡。 您也可能不使用中間量度定義，透過套用不同的篩選器，就能取得相同的結果： [!DNL Average_Age[Country='Sweden' AND Eye_Color='green']]. 在此案例中，[!DNL AND]運算子會使用其他兩種基本篩選運算式來指定篩選運算式。

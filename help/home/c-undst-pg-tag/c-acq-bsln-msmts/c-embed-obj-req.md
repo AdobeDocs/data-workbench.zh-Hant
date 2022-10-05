@@ -3,7 +3,7 @@ description: 瀏覽器請求HTML頁面後，瀏覽器從網頁伺服器請求該
 title: 取得內嵌物件要求 (頁面標記)
 uuid: 7fe561d1-aa5a-4ac9-82ba-aa27c7d208dd
 exl-id: 593e49bc-9619-4e85-8ce3-2e9d23d175c9
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 4%
@@ -12,15 +12,17 @@ ht-degree: 4%
 
 # 取得內嵌物件要求 (頁面標記){#acquiring-embedded-object-requests-page-tags}
 
+{{eol}}
+
 瀏覽器請求HTML頁面後，瀏覽器從網頁伺服器請求該頁面HTML中引用的嵌入對象以填充瀏覽器顯示的頁面。
 
 此類嵌入對象請求最常是對影像檔案或JavaScript檔案的請求，儘管當今網際網路上使用的嵌入式對象類型有數百種或可能數千種。 這些嵌入式對象請求中的許多在分析或報告網際網路站點的業務活動時通常沒有用；因此，許多此類請求在收購時並不可取，除非它們具有特定的商業目的，例如展示廣告或對網站活動進行另一種測量。
 
-例如，影像可能是廣告，而您可能想知道廣告是否對訪客留下了深刻印象。 JavaScript程式碼片段可用於測量特定瀏覽器具有特定特性，並傳回至[!DNL Sensor]進行贏取。 網站上的每個頁面可能有10或100個內嵌物件要求。 如果站點儲存這些請求中的每個的日誌資訊，則保持日誌資料可用以供將來分析所需的資料儲存量乘以每個請求頁的嵌入式對象請求數。 因此，[!DNL Site]可讓您保留對分析來說很重要的請求，並在您發生不必要的儲存成本之前放棄其他請求。
+例如，影像可能是廣告，而您可能想知道廣告是否對訪客留下了深刻印象。 JavaScript程式碼片段可用來進行特定瀏覽器具有特定特性的測量，並傳回至 [!DNL Sensor] 收購。 網站上的每個頁面可能有10或100個內嵌物件要求。 如果站點儲存這些請求中的每個的日誌資訊，則保持日誌資料可用以供將來分析所需的資料儲存量乘以每個請求頁的嵌入式對象請求數。 因此， [!DNL Site] 可讓您保留對分析而言重要的請求，並在產生不必要的儲存成本之前將其他請求捨棄。
 
-通過使用[!DNL Sensor]的內容類型篩選功能中提供的覆蓋功能（將&quot;Log=1&quot;附加到嵌入對象請求URL的查詢字串），可以獲取該特定嵌入對象請求和相關測量資料，而不需要站點管理器儲存該類型的所有請求（例如所有`<image>`請求）。
+使用的內容類型篩選功能中提供的覆寫功能 [!DNL Sensor] （將&quot;Log=1&quot;附加至內嵌物件要求URL的查詢字串），即可取得該特定內嵌物件要求與相關測量資料，而不需要網站管理員儲存該類型的所有要求(例如，所有 `<image>` 要求)。
 
-[!DNL Sensor] 假設未設定篩選器，或篩選器已覆寫，則會針對由web伺服器提出的每個內嵌物 [!DNL Sensor] 件請求，在下表中收集測量資料。收集的資訊會透過x-trackingid或cs(cookie)記錄欄位項目與訪客和工作階段以及後續工作階段相關。
+[!DNL Sensor] 會針對由web伺服器提出的每個內嵌物件要求，收集下表中的測量資料，假設 [!DNL Sensor] 未設定為將其篩選掉，或篩選已覆寫。 收集的資訊會透過x-trackingid或cs(cookie)記錄欄位項目與訪客和工作階段以及後續工作階段相關。
 
 <table id="table_11BE08A798E743EC8E76F738F0CE5884">
  <thead>
@@ -35,7 +37,7 @@ ht-degree: 4%
   <tr>
    <td colname="col1"> x-trackingid </td>
    <td colname="col2"> 追蹤識別碼（不重複訪客） </td>
-   <td colname="col3"> 初始請求時， <span class="wintitle">感測器</span>從使用者瀏覽器中放置的Cookie讀取的識別碼 </td>
+   <td colname="col3"> 從使用者瀏覽器中置入之Cookie讀取的識別碼，由 <span class="wintitle"> 感測器 </span> 初始要求 </td>
    <td colname="col4"> V1st=3C94007B4E01F9C2 </td>
   </tr>
   <tr>
@@ -72,13 +74,13 @@ ht-degree: 4%
    <td colname="col1"> s-dns </td>
    <td colname="col2"> 伺服器域名 </td>
    <td colname="col3"> 處理請求的Web伺服器的域名 </td>
-   <td colname="col4"> <span class="filepath"> www.domain.com  </span> </td>
+   <td colname="col4"> <span class="filepath"> www.domain.com </span> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(referrer) </td>
    <td colname="col2"> 反向連結 URL </td>
    <td colname="col3"> 用戶端傳送的HTTP反向連結欄位內容 </td>
-   <td colname="col4"> <span class="filepath"> https://www.referringsite.com  </span> </td>
+   <td colname="col4"> <span class="filepath"> https://www.referringsite.com </span> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(user-agent) </td>

@@ -3,7 +3,7 @@ description: AppendURI轉換提供了一種方法，可將資訊添加到預設�
 title: AppendURI
 uuid: 8334d4f9-2bf6-4bd0-af65-8f2b0959652d
 exl-id: 0d5901c0-bd13-4499-8e26-44839aeb7413
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 1%
@@ -12,11 +12,13 @@ ht-degree: 1%
 
 # AppendURI{#appenduri}
 
+{{eol}}
+
 AppendURI轉換提供了一種方法，可將資訊添加到預設值中，該預設值來自用於構建資料集的日誌條目。
 
-轉換會將名稱值對放置在用於建立URI維的內部欄位的末尾。 名稱值組是使用查詢字串鍵參數作為名稱構建的，而標識的輸入參數的值作為對的值。 [!DNL AppendURI]命令添加任何適當的？ 和必要的&amp;符號，用於將名稱值對從[!DNL URI]莖區和可能已應用到URI的任何先前[!DNL AppendURI]操作中分離出來。
+轉換會將名稱值對放置在用於建立URI維的內部欄位的末尾。 名稱值組是使用查詢字串鍵參數作為名稱構建的，而標識的輸入參數的值作為對的值。 此 [!DNL AppendURI] 命令添加任何適當的？ 和必要的符號，將名稱值配對與 [!DNL URI] 從任何以前 [!DNL AppendURI] 可能已應用於URI的操作。
 
-[!DNL AppendURI]轉換只有在[!DNL Transformation.cfg]檔案或[!DNL Transformation Dataset Include]檔案中定義時才有效。
+此 [!DNL AppendURI] 轉換只有在 [!DNL Transformation.cfg] 檔案或 [!DNL Transformation Dataset Include] 檔案。
 
 | 參數 | 說明 | 預設 |
 |---|---|---|
@@ -35,8 +37,8 @@ AppendURI轉換提供了一種方法，可將資訊添加到預設值中，該�
 
 * [!DNL modelview.asp]
 
-這會導致對整個網站的流量進行相當無趣的對應，因為所有流量都會透過單一URI輸送。 要解決此特定情況，並為網站的基礎架構提供更豐富的視圖，[!DNL AppendURI]可用來將一些唯一名稱值對從cs-uri-query欄位移到用於視覺效果的URI維。 以下所示的轉換提供此類轉換的詳細資訊：
+這會導致對整個網站的流量進行相當無趣的對應，因為所有流量都會透過單一URI輸送。 為了解決這一特定情況，並為網站的基礎架構提供更詳盡的視圖， [!DNL AppendURI] 可用來將某些唯一名稱值配對從cs-uri-query欄位移至視覺效果使用的URI維度。 以下所示的轉換提供此類轉換的詳細資訊：
 
 ![](assets/cfg_TransformationType_AppendURI.png)
 
-在此範例中，系統使用兩個頁面來處理所有請求：[!DNL modelview.asp]和[!DNL xmlmodelview.asp]。 一個頁面用於瀏覽器流量，另一個頁面用於系統對系統XML通訊。 應用程式伺服器進程使用cs-uri-query的ID名稱來確定要執行的操作。 因此，您可以從id欄位中擷取值，並將其附加至URI。 結果會是URI的集合，其變數範圍會反映網站上的訪客流量。 在此，[!DNL String Match]條件通過搜索感興趣的兩個網頁的cs-uri-stem欄位並忽略所有其它網頁來確定應用轉換的日誌條目。 輸入（名稱值對的值）是cs-uri-query(id)的結果，即「login」。 如查詢字串索引鍵參數所指定，所附加的名稱為「id」。 因此，對於我們示例的傳入cs-uri值，[!DNL URI]維使用的結果URI為[!DNL /modelview.asp&id=login]。
+在此範例中，系統使用兩個頁面來處理所有請求： [!DNL modelview.asp] 和 [!DNL xmlmodelview.asp]. 一個頁面用於瀏覽器流量，另一個頁面用於系統對系統XML通訊。 應用程式伺服器進程使用cs-uri-query的ID名稱來確定要執行的操作。 因此，您可以從id欄位中擷取值，並將其附加至URI。 結果會是URI的集合，其變數範圍會反映網站上的訪客流量。 這裡，a [!DNL String Match] 條件會搜尋感興趣的兩個網頁的cs-uri-stem欄位，並忽略所有其他網頁，以決定套用轉換的記錄項目。 輸入（名稱值對的值）是cs-uri-query(id)的結果，即「login」。 如查詢字串索引鍵參數所指定，所附加的名稱為「id」。 因此，對於我們範例的傳入cs-uri值，將會產生 [!DNL URI] 維度為 [!DNL /modelview.asp&id=login].

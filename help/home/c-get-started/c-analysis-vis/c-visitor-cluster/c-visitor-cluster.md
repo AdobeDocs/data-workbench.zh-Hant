@@ -3,7 +3,7 @@ description: 訪客叢集可讓您運用客戶特性，以動態方式分類訪�
 title: 訪客叢集
 uuid: 0c16aaa0-1d86-43a6-a7e2-b43b3ea80dc5
 exl-id: 68c1845d-9c49-4ad9-adf3-c123d08cf758
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # 訪客叢集{#visitor-clustering}
+
+{{eol}}
 
 訪客叢集可讓您運用客戶特性，以動態方式分類訪客，並根據選取的資料輸入產生叢集，借此識別具有類似興趣和行為的群組，以便進行客戶分析和鎖定。
 
@@ -25,13 +27,13 @@ ht-degree: 2%
 * 每個K簇的平均值成為新中心。
 * 在步驟2和步驟3中重複該算法，直到達到收斂。 這可能需要多次。
 
-**[!UICONTROL Options]**&#x200B;功能表中的&#x200B;**[!UICONTROL Maximum Iterations]**&#x200B;可讓分析人員指定要由叢集演算法執行的最大迭代次數。 設定此選項可能會導致基於最大迭代次數上限的群集過程更快完成，而犧牲群集中心的精確收斂。
+此 **[!UICONTROL Maximum Iterations]** 在 **[!UICONTROL Options]** 菜單允許分析人員指定要由群集算法執行的最大迭代次數。 設定此選項可能會導致基於最大迭代次數上限的群集過程更快完成，而犧牲群集中心的精確收斂。
 
 >[!NOTE]
 >
 >定義叢集後，即可儲存叢集Dimension以像任何其他維度一樣使用。 它也可以載入到群集資源管理器中，以檢查群集中心的分離。
 
-在叢集產生器中，您可以選取&#x200B;**[!UICONTROL Options]** > **[!UICONTROL Algorithm]**&#x200B;以在定義叢集時選取演算法。 目前有3種支援的演算法：
+在「叢集產生器」中，您可以選取 **[!UICONTROL Options]** > **[!UICONTROL Algorithm]** 定義群集時選擇算法。 目前有3種支援的演算法：
 
 * KMeans
 * Kmeans`++`
@@ -39,8 +41,8 @@ ht-degree: 2%
 
 有2種方法可運行群集過程：
 
-* 方法1 — 在叢集視覺效果視窗中按一下&#x200B;**[!UICONTROL Go]**。
-* 方法2 — 按一下群集可視化窗口中的&#x200B;**[!UICONTROL Submit]**，該窗口將直接將群集作業發送到伺服器。 您可以透過「查詢的詳細狀態」選項追蹤進度。
+* 方法1 — 按一下 **[!UICONTROL Go]** （在「群集視覺效果」窗口中）。
+* 方法2 — 按一下 **[!UICONTROL Submit]** 在「集群可視化」窗口中，將集群作業直接發送到伺服器。 您可以透過「查詢的詳細狀態」選項追蹤進度。
 
 ![](assets/dwb_visitorclustering.png)
 
@@ -51,7 +53,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->在[!DNL DPU.cfg]檔案中，「Query, Memory Limit」的值預設為500 MB。 運行多個群集作業時，必須增加此值。 例如，如果您同時執行5個叢集作業，請將此值增加為1 GB。 在不重新啟動伺服器的情況下，無法取消群集作業。
+>在 [!DNL DPU.cfg] 檔案中，「查詢，記憶體限制」的值預設為500 MB。 運行多個群集作業時，必須增加此值。 例如，如果您同時執行5個叢集作業，請將此值增加為1 GB。 在不重新啟動伺服器的情況下，無法取消群集作業。
 
 **Recommendations**
 

@@ -3,7 +3,7 @@ description: 在網頁中輸入的表單值，可透過使用JavaScript收集並
 title: 一般資訊
 uuid: 401816a5-1d95-48e6-bedf-ee2a5dbd2d50
 exl-id: 9effc72b-e75f-423c-87ec-6ac25edee8d6
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # 一般資訊{#general-information}
+
+{{eol}}
 
 在網頁中輸入的表單值，可透過使用JavaScript收集並附加至後續請求頁面（表單提交時）的查詢字串中。
 
@@ -53,7 +55,7 @@ document.formname.action = document.formname.action + '?' + formvalues;
 https://www.myserver.com/thankyou.asp?v_1=John Smith&v_2=Los Angeles&v_3=California&v_4=90210
 ```
 
-除了[!DNL Sensor]所收集的基線測量資料外，還將利用此請求獲得以下擴展測量資料：
+除下列所收集的基線測量資料外，還將利用此請求獲得以下擴展測量資料 [!DNL Sensor]:
 
 | 收集的資料 | 解釋 | 範例 |
 |---|---|---|

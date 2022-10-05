@@ -3,7 +3,7 @@ description: 「資料集結構」介面會顯示任何轉換資料集組態檔�
 title: 資料集結構介面
 uuid: 3726e568-d3ea-47f8-8ac4-582c97fbbe0a
 exl-id: a8d4cf02-4ff7-4fcc-9062-425c1fe1fb28
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 3%
@@ -12,9 +12,11 @@ ht-degree: 3%
 
 # 資料集結構介面{#dataset-schema-interface}
 
+{{eol}}
+
 「資料集結構」介面會顯示任何轉換資料集組態檔中所定義的延伸維度（可數、簡單、多對多、數值、非正規和時間維度），並提供這些維度間關係的檢視。
 
-此外，[!DNL Dataset Schema]介面還顯示您已定義的任何派生維，以及配置為隱藏的任何擴展維。
+此外， [!DNL Dataset Schema] 介面顯示您已定義的任何衍生維度，以及任何已設定為隱藏的延伸維度。
 
 ![](assets/vis_DatasetSchema_Example2.png)
 
@@ -22,9 +24,9 @@ ht-degree: 3%
 >
 >您可以從架構圖中搜尋維度。 搜尋字串找到的維度名稱會反白顯示，而父類的行會變更子維度中找到的任何點擊的顏色。 當您捲動以提供可檢視的階層和內容時，可數維度會保持可見。
 
-**要使用介面解釋維類 [!DNL Dataset Schema] 型**
+**要使用 [!DNL Dataset Schema] 介面**
 
-下表列出了維類型及其名稱在[!DNL Dataset Schema]介面中顯示的顏色。 也會說明範例維度的父項（來自上述範例）。
+下表列出維度類型和其名稱出現在 [!DNL Dataset Schema] 介面。 也會說明範例維度的父項（來自上述範例）。
 
 <table id="table_CF888522626E49A4A10D87085CAB5CC1"> 
  <thead> 
@@ -78,16 +80,16 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-如需這些維度類型的詳細資訊，請參閱&#x200B;*資料集設定指南*。
+如需這些維度類型的詳細資訊，請參閱 *資料集組態指南*.
 
 **顯示維度的預設視覺效果**
 
-* 在[!DNL Dataset Schema]介面中，按一下所需的維度。 預設視覺效果隨即顯示。 例如，如果預設視覺效果為顯示「會話」和選定維的表，並按一下URI維，則Data Workbench將按「會話」顯示一個具有URI的表。
+* 在 [!DNL Dataset Schema] 介面，按一下所需的維度。 預設視覺效果隨即顯示。 例如，如果預設視覺效果為顯示「會話」和選定維的表，並按一下URI維，則Data Workbench將按「會話」顯示一個具有URI的表。
 
    >[!NOTE]
    >
-   >如果您想要變更顯示的預設視覺效果，請參閱[資料集結構介面](../../../home/c-get-started/c-admin-intrf/c-dtst-sch-intrf.md#concept-e147b3a5b542453ca2b121e1c85bb175)。
+   >如果您想要變更顯示的預設視覺效果，請參閱 [資料集結構介面](../../../home/c-get-started/c-admin-intrf/c-dtst-sch-intrf.md#concept-e147b3a5b542453ca2b121e1c85bb175).
 
 **顯示維度的特定視覺效果**
 
-* 在[!DNL Dataset Schema]介面中，以滑鼠右鍵按一下所需的維度，然後按一下&#x200B;**[!UICONTROL Add Visualization]** > *&lt;**[!UICONTROL visualization type]**>*。
+* 在 [!DNL Dataset Schema] 介面，以滑鼠右鍵按一下所需的維度，然後按一下 **[!UICONTROL Add Visualization]** > *&lt;**[!UICONTROL visualization type]**>*.

@@ -3,7 +3,7 @@ description: 2D程式圖可顯示代表活動量的量度量，這些活動量�
 title: 顯示量度數量
 uuid: ec336af1-ff5b-4c0a-86a5-8186d76cdf07
 exl-id: fbe40dfa-0597-4d78-8673-4e9b63581c47
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # 顯示量度數量{#display-a-metric-quantity}
+
+{{eol}}
 
 2D程式圖可顯示代表活動量的量度量，這些活動量會傳至或來自地圖上的節點。
 
@@ -26,8 +28,8 @@ ht-degree: 4%
 
 **要選擇數量的顯示方式**
 
-1. 按一下右鍵節點，然後按一下&#x200B;**[!UICONTROL Options]** > **[!UICONTROL Quantify Links]**。
-1. 按一下&#x200B;**[!UICONTROL Percentage]**、**[!UICONTROL Absolute Value]**&#x200B;或&#x200B;**[!UICONTROL Off]**。
+1. 以滑鼠右鍵按一下節點，然後按一下 **[!UICONTROL Options]** > **[!UICONTROL Quantify Links]**.
+1. 按一下 **[!UICONTROL Percentage]**, **[!UICONTROL Absolute Value]**，或 **[!UICONTROL Off]**.
 
    ![](assets/mnu_2DProcessMap_quantifyLinks.png)
 

@@ -3,20 +3,22 @@ description: Data Workbench控制面板包含側邊欄和工具列，以及功�
 title: 控制面板使用者介面
 uuid: cfa6c553-e223-4b0e-8b4a-255afa85c999
 exl-id: f80da6c7-02cb-4916-b139-617703cf27b6
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '276'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
 # 控制面板使用者介面{#dashboard-user-interface}
 
+{{eol}}
+
 Data Workbench控制面板包含側邊欄和工具列，以及功能功能表和控制面板畫布，您可在其中顯示資料視覺效果。
 
 ![](assets/dashboard_ui.png)
 
-## 控制面板畫布{#section-39c9352f5e8d407e8d76c7f2e6267b3d}
+## 控制面板畫布 {#section-39c9352f5e8d407e8d76c7f2e6267b3d}
 
 控制面板畫布是用來建立視覺效果並與之互動的介面區域。
 
@@ -24,7 +26,7 @@ Data Workbench控制面板包含側邊欄和工具列，以及功能功能表和
 |---|---|
 | 視覺效果 | 根據一組已設定的准則以圖形方式定義的呈現資料。 多個視覺效果組成控制面板。 |
 
-## 側欄{#section-12e155c782e74851b0dbaa00c40deb8c}
+## 側欄 {#section-12e155c782e74851b0dbaa00c40deb8c}
 
 左側邊欄提供定義功能表的快速存取和可見性：
 
@@ -43,6 +45,6 @@ Data Workbench控制面板包含側邊欄和工具列，以及功能功能表和
 | 控制面板功能表 | 控制面板的開啟、建立、儲存和匯出下拉式功能表。 |
 | 新增視覺效果功能表 | 用於新增視覺效果至控制面板的下拉式功能表。 |
 | 控制面板標題 | 顯示當前儀表板的標題。 |
-| 更新功能表 | 按一下&#x200B;**[!UICONTROL Update]**&#x200B;指標將更新當前儀表板，同時考慮到任何新的選擇和/或配置更改。 此功能表提供調整&#x200B;**[!UICONTROL Query-to]**&#x200B;參數的功能，以及管理員的一些進階功能。 |
+| 更新功能表 | 按一下 **[!UICONTROL Update]** 指示器將更新當前儀表板，同時考慮到任何新的選擇和/或配置更改。 功能表可讓您調整 **[!UICONTROL Query-to]** 參數，以及管理員的一些進階函式。 |
 | 說明功能表 | 此下拉式功能表可用來存取應用程式的使用手冊、常見問題集和關於區段。 |
 | 使用者功能表 | 用於登出、存取帳戶設定和存取管理區域（僅限管理員使用）的下拉式功能表。 |

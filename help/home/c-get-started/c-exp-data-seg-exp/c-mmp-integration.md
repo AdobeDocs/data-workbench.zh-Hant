@@ -3,7 +3,7 @@ description: Data Workbench可讓您匯出檔案，以整合整合式Adobe Exper
 title: 主行銷描述檔匯出
 uuid: bae0f0c5-a452-4afd-9f2c-5f3ab69a12d2
 exl-id: 9fc89815-d31d-41a7-a0c0-de1e84b24baa
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 3%
@@ -12,16 +12,18 @@ ht-degree: 3%
 
 # 主行銷描述檔匯出{#master-marketing-profile-export}
 
+{{eol}}
+
 Data Workbench可讓您匯出檔案，以整合整合式Adobe Experience Cloud中的「設定檔和對象」。
 
 <!-- <a id="section_731922BC8628479198A41EF3EA72F2FF"></a> -->
 
-「設定檔與對象」是[Experience Cloud身分識別服務](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)的一部分，此服務是[!DNL Adobe Experience Cloud]的核心服務。 「設定檔與對象」匯出可讓您使用唯一的Experience CloudID(ECID)，在整個Experience Cloud中共用對象，此ID會指派給每個訪客，然後由[Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html?lang=zh-Hant)使用。 使用[!DNL ExportIntegration.exe]應用程式([!DNL E:\Server\Scripts])來產生MMP和Adobe Target匯出。
+設定檔和對象是 [Experience CloudIdentity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)，此為 [!DNL Adobe Experience Cloud]. 「設定檔與對象」匯出功能可讓您使用唯一的Experience CloudID(ECID)，在整個Experience Cloud中共用對象，此ID會指派給每個訪客，然後由 [Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html). 此 [!DNL ExportIntegration.exe] 應用程式( [!DNL E:\Server\Scripts])，以產生MMP和Adobe Target出口。
 
 **設定FSU伺服器以使用設定檔和對象**
 
 1. 訪問FSU伺服器。
-1. 開啟MMPExport.cfg檔案。`Server/Admin/Export/MMPExport.cfg`。
+1. 開啟MMPExport.cfg檔案。 `Server/Admin/Export/MMPExport.cfg`.
 1. 視需要在所有欄位中輸入值。 例如：
 
    >[!NOTE]
@@ -51,7 +53,7 @@ Data Workbench可讓您匯出檔案，以整合整合式Adobe Experience Cloud�
 
    >[!NOTE]
    >
-   >[!DNL MMPExport.cfg]檔案也可讓您取用所有記錄、將其分割為一組，以及建立大塊的記錄。 然後會將大塊的記錄匯出至Amazon S3。 建立記錄區塊需要三個必要參數：[!DNL numRecordsPerChunk]、[!DNL numThreads]和[!DNL maxRetriesOnSendFailure]。
+   >此 [!DNL MMPExport.cfg]檔案也可讓您取用所有記錄、將其分割為集，以及建立大塊的記錄。 然後會將大塊的記錄匯出至Amazon S3。 建立記錄區塊需要三個必要參數： [!DNL numRecordsPerChunk], [!DNL numThreads]，和 [!DNL maxRetriesOnSendFailure].
 
 **參數定義**
 
@@ -69,15 +71,15 @@ Data Workbench可讓您匯出檔案，以整合整合式Adobe Experience Cloud�
   </tr> 
   <tr> 
    <td colname="col1"> <i>s3對象目錄</i> </td> 
-   <td colname="col2"> 儲存s3檔案的路徑。 這支援子目錄。 <p> <p>重要： 路徑中不允許使用空格和多位元組字元，且會在匯出中產生錯誤。 （允許連字型大小）。 </p> </p> </td> 
+   <td colname="col2"> 儲存s3檔案的路徑。 這支援子目錄。 <p> <p>重要：路徑中不允許使用空格和多位元組字元，且會在匯出中產生錯誤。 （允許連字型大小）。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>s3地區</i> </td> 
-   <td colname="col2"> 將匯出傳送至的AWS s3地區。 例如 us-east-1 </td> 
+   <td colname="col2"> 匯出內容所在的AWS s3地區。 例如 us-east-1 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>s3存取金鑰</i> </td> 
-   <td colname="col2"> AWS s3訪問密鑰 </td> 
+   <td colname="col2"> AWS s3存取金鑰 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>s3密鑰</i> </td> 
@@ -105,7 +107,7 @@ Data Workbench可讓您匯出檔案，以整合整合式Adobe Experience Cloud�
   </tr> 
   <tr> 
    <td colname="col1"> <i>numRecordsPerChunk</i> </td> 
-   <td colname="col2"> <p>根據記錄數確定區塊大小。 </p> <p>實作會將使用者指定的值剪輯為：min = 1000 records&amp;nbsp；（~50 KB區塊）&amp;nbsp；和max = 50000記錄（~2.5 MB區塊）。&amp;nbsp；若使用者未指定此設定屬性，則使用預設值10000。 </p> </td> 
+   <td colname="col2"> <p>根據記錄數確定區塊大小。 </p> <p>實作會將使用者指定的值剪輯為：最小= 1000筆記錄&amp;nbsp；（~50 KB區塊）&amp;nbsp；而最大= 50000筆記錄（~2.5 MB區塊）。&amp;nbsp；如果用戶未指定此配置屬性，則使用預設值10000。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>numThreads</i> </td> 
@@ -120,22 +122,22 @@ Data Workbench可讓您匯出檔案，以整合整合式Adobe Experience Cloud�
 
 **從用戶端產生MMP匯出**
 
-1. 從客戶端開啟工作區，然後按一下右鍵&#x200B;**[!UICONTROL Tools]**> **[!UICONTROL Detail Table]**。
-1. 添加&#x200B;**Level**。
-1. 按一下右鍵標題，然後選擇&#x200B;**添加屬性**。
-1. 按一下右鍵標題，然後選擇&#x200B;**新建主營銷配置檔案導出**。 ![](assets/mmp_mmp_export.png)
-1. 展開&#x200B;**Query**。
+1. 從用戶端開啟工作區，然後按一下滑鼠右鍵 **[!UICONTROL Tools]**> **[!UICONTROL Detail Table]**.
+1. 新增 **層級**.
+1. 以滑鼠右鍵按一下標題並選取 **新增屬性**.
+1. 以滑鼠右鍵按一下標題並選取 **新主行銷描述檔匯出**. ![](assets/mmp_mmp_export.png)
+1. 展開 **查詢**.
 
    ![](assets/mmp_mmp_query.png)
 
-1. 展開&#x200B;**MMP配置**。
-1. （必要）輸入&#x200B;**MMP區段名稱**&#x200B;和&#x200B;**MMP訪客ID欄位**。 這些參數不能留空。
-1. **MMP區段名稱**&#x200B;應符合MMP中定義的區段ID。
-1. **MMP訪客ID**&#x200B;是步驟4中定義的屬性欄，與&#x200B;**訪客ID**&#x200B;相對應。
-1. 輸入這些欄位後，可以按一下右鍵導出的標題，然後選擇&#x200B;**Save**&#x200B;作為&quot;User\.export&quot;來保存導出。
-1. 開啟&#x200B;**Admin** > **設定檔管理員**&#x200B;並將匯出儲存至設定檔。
+1. 展開 **MMP配置**.
+1. （必要）輸入 **MMP區段名稱** 和 **MMP訪客ID欄位**. 這些參數不能留空。
+1. 此 **MMP區段名稱** 應符合MMP中定義的區段ID。
+1. 此 **MMP訪客ID** 是在步驟4中定義，且與 **訪客ID**.
+1. 輸入這些欄位後，您可以按一下右鍵匯出的標題，然後選擇 **儲存** 為&quot;User\.export&quot;。
+1. 開啟 **管理** > **設定檔管理員** 並將匯出儲存至設定檔。
 
-   如果所有資料都正確輸入，則這將在FSU([!DNL Server/Exports])中生成導出檔案，並且還將使用[!DNL MMPExport.cfg]中的資訊將導出轉移到AWS。 此日誌在[!DNL Server/Trace/]中提供。 例如， [!DNL MMP-102014-133651- `<Segment Export Name>` .log]
+   如果所有資料都正確輸入，則會在FSU中產生匯出檔案([!DNL Server/Exports])，而且也會使用 [!DNL MMPExport.cfg]. 此項目的記錄檔提供於 [!DNL Server/Trace/]. 例如， [!DNL MMP-102014-133651- `<Segment Export Name>` .log]
 
 ```
 Query = SegmentExportQuery: 

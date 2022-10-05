@@ -3,7 +3,7 @@ description: 有關評估和監控地址空間負載的資訊。
 title: 監控記憶體使用情況
 uuid: e7f1c51b-d874-43f4-a074-1c064b5f298a
 exl-id: b8c0b33b-dbec-4947-911b-11c8a83bbc9c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 2%
@@ -12,13 +12,15 @@ ht-degree: 2%
 
 # 監控記憶體使用情況{#monitoring-memory-usage}
 
+{{eol}}
+
 有關評估和監控地址空間負載的資訊。
 
 **監視地址空間負載**
 
 **建議頻率：** 每日
 
-地址空間負載是對正確配置[!DNL Insight Server]使用的最大地址空間百分比的度量。 即使配置參數被更改以減少記憶體使用量，它通常在[!DNL Insight Server]服務重新啟動之前不會減少。
+地址空間負載是對正確配置的最大地址空間百分比的度量 [!DNL Insight Server] 使用。 即使配置參數被更改以減少記憶體使用，它通常也不會減少，直到 [!DNL Insight Server] 服務重新啟動。
 
 地址空間負載最大值中內置了安全裕量，以說明地址空間利用率的意外增加。 你絕不應該故意割傷這個安全區。 它存在於緊急情況，而不是支援您的Adobe應用程式新增的功能。
 
@@ -26,7 +28,7 @@ ht-degree: 2%
 >
 >要使更多地址空間可用並避免記憶體耗盡錯誤，請確保您的作業系統已啟用/3GB交換機，並且低碎片堆正在運行。
 
-記錄到[!DNL Insight Server]事件資料日誌的錯誤可提供線索，說明問題正隨著地址空間負載而發展：
+記錄到 [!DNL Insight Server] 事件資料日誌可提供線索，告知您的地址空間負載正在發生問題：
 
 * 「請求的X位元組塊太大」錯誤表明某些錯誤可能對地址空間負載、效能和網路頻寬造成過大影響。 這樣大的塊可以極大地增加地址空間的使用，這既需要大量記憶體，又需要大的地址空間連續塊。
 
@@ -39,13 +41,13 @@ ht-degree: 2%
 
 **評估地址空間負載**
 
-為了準確評估系統的「地址空間」負載，Adobe建議重新處理資料集，執行一些普通查詢，而不隨後重新啟動[!DNL Insight Server]，然後按照這些步驟查看測量的「地址空間」負載。
+為了準確評估系統的「位址空間」負載，Adobe建議重新處理資料集，執行一些一般查詢，而後不重新啟動 [!DNL Insight Server]，然後依照下列步驟檢視測量的位址空間負載。
 
-如果自上次重新啟動以來未重新處理和查詢[!DNL Insight Server]，則不應從「地址空間」負載得出結論。
+若 [!DNL Insight Server] 自上次重新啟動以來未重新處理和查詢，因此您不應從「地址空間」負載得出結論。
 
-1. 在[!DNL Insight]中，在[!DNL Admin] > [!DNL Dataset and Profile]標籤上，按一下&#x200B;**[!UICONTROL Servers Manager]**&#x200B;縮圖以開啟「伺服器管理器」工作區。
-1. 按一下右鍵要配置的[!DNL Insight Server]表徵圖，然後按一下&#x200B;**[!UICONTROL Detailed Status]**。
-1. 在「詳細狀態」介面中，按一下&#x200B;**[!UICONTROL Memory Status]**&#x200B;查看其內容。 在「地址空間載入」參數中，您可以看到以百分比表示的「地址空間」載入，以及用括弧表示狀態的說明。
+1. 在 [!DNL Insight]，在 [!DNL Admin] > [!DNL Dataset and Profile] ，按一下 **[!UICONTROL Servers Manager]** 縮圖以開啟「伺服器管理器」工作區。
+1. 以滑鼠右鍵按一下 [!DNL Insight Server] 要配置，請按一下 **[!UICONTROL Detailed Status]**.
+1. 在詳細狀態介面中，按一下 **[!UICONTROL Memory Status]** 來檢視其內容。 在「地址空間載入」參數中，您可以看到以百分比表示的「地址空間」載入，以及用括弧表示狀態的說明。
 
    下表顯示「地址空間」負載的範圍和狀態。 會針對每個範圍列出建議的動作。
 

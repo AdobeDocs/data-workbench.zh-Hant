@@ -3,14 +3,16 @@ description: 有關Sensor記錄的基線事件資料記錄欄位的資訊。
 title: 基線事件資料記錄欄位
 uuid: aa36d332-089c-4ae2-98e2-a93d2fa023b7
 exl-id: ad3d8806-863a-4871-a35b-6680163f00ac
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '461'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
 # 基線事件資料記錄欄位{#baseline-event-data-record-fields}
+
+{{eol}}
 
 有關Sensor記錄的基線事件資料記錄欄位的資訊。
 
@@ -24,7 +26,7 @@ ht-degree: 3%
  <tbody>
   <tr>
    <td colname="col1"> c-ip </td>
-   <td colname="col2"> <p>向伺服器發出的請求中包含的客戶端的IP地址。 </p> <p>例如: 207.68.146.68 </p> </td>
+   <td colname="col2"> <p>向伺服器發出的請求中包含的客戶端的IP地址。 </p> <p>範例：207.68.146.68 </p> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(cookie) </td>
@@ -56,11 +58,11 @@ ht-degree: 3%
   </tr>
   <tr>
    <td colname="col1"> sc-bytes </td>
-   <td colname="col2"> <p>響應請求從伺服器發送到客戶端的資料位元組數。 </p> <p>例如: 4996 </p> </td>
+   <td colname="col2"> <p>響應請求從伺服器發送到客戶端的資料位元組數。 </p> <p>範例：4996 </p> </td>
   </tr>
   <tr>
    <td colname="col1"> sc-status </td>
-   <td colname="col2"> <p>伺服器返回給客戶端的狀態代碼。 </p> <p>例如: 200 </p> <p>參考資料：https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html </p> </td>
+   <td colname="col2"> <p>伺服器返回給客戶端的狀態代碼。 </p> <p>範例：200 </p> <p>參考資料：https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html </p> </td>
   </tr>
   <tr>
    <td colname="col1"> s-dns </td>
@@ -72,13 +74,13 @@ ht-degree: 3%
   </tr>
   <tr>
    <td colname="col1"> x-timestamp </td>
-   <td colname="col2"> <p>伺服器收到請求的日期和時間(GMT)。 </p> <p>時間以1600年1月1日以來的100納秒數表示。 </p> <p>範例：127710989320000000會是2005年9月13日星期二11:28:52.0000000的x-timestamp值。 </p> </td>
+   <td colname="col2"> <p>伺服器收到請求的日期和時間(GMT)。 </p> <p>時間以1600年1月1日以來的100納秒數表示。 </p> <p>範例：127710989320000000為11的x-timestamp值:28:52.0000000 2005年9月13日星期二。 </p> </td>
   </tr>
   <tr>
    <td colname="col1"> x-trackingid </td>
-   <td colname="col2"> <p>由<span class="wintitle">感測器</span>設定、由客戶端向伺服器提供的、在永久Cookie中找到的唯一瀏覽器標識符的64位十六進位值。 </p> <p>範例：42FDF66DE610CF36 </p> </td>
+   <td colname="col2"> <p>在永久性Cookie中找到的唯一瀏覽器識別碼的64位十六進位值，由 <span class="wintitle"> 感測器 </span> 由客戶端向伺服器提出請求。 </p> <p>範例：42FDF66DE610CF36 </p> </td>
   </tr>
  </tbody>
 </table>
 
-[!DNL data workbench server]可從基線事件資料記錄欄位衍生許多變數。 如需詳細資訊，請參閱&#x200B;*資料集組態指南*。
+此 [!DNL data workbench server] 可從基線事件資料記錄欄位衍生許多變數。 如需詳細資訊，請參閱 *資料集組態指南*.

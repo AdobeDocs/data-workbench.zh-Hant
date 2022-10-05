@@ -3,7 +3,7 @@ description: 延時維度是從父項可數維度（例如工作階段）和時�
 title: 建立延遲維度
 uuid: 531d8bf6-a66f-4b02-9d81-05664fb9c988
 exl-id: 38b470ef-9409-455b-b2b8-b0391f80b800
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 2%
@@ -12,15 +12,17 @@ ht-degree: 2%
 
 # 建立延遲維度{#create-a-latency-dimension}
 
+{{eol}}
+
 延時維度是從父項可數維度（例如工作階段）和時間維度（例如日）建立。
 
 在Data Workbench中建立延遲表格時，會自動將延遲維度新增至視覺效果檔案(.vw)。 您可以依照下列步驟編輯表格的延遲維度。
 
 **編輯延遲維度的方式**
 
-1. 開啟在文本編輯器（如記事本）中建立的延遲表。 它位於Data Workbench安裝目錄的「用戶」>「`working profile name`」>「工作」資料夾中。
+1. 開啟在文本編輯器（如記事本）中建立的延遲表。 位於「使用者>」 `working profile name` >在Data Workbench安裝目錄中工作資料夾。
 
-   定義的延遲維度包含下列範例所示的參數。 （延遲維度的定義可能包含其他參數。） [!DNL line entity = LatencyDim:]表示延遲維度定義的開始。
+   定義的延遲維度包含下列範例所示的參數。 （延遲維度的定義可能包含其他參數。） 此 [!DNL line entity = LatencyDim:] 指出延遲維度定義的開始。
 
    ```
    entity = LatencyDim:
@@ -55,7 +57,7 @@ ht-degree: 2%
    </tr> 
    <tr> 
       <td colname="col1"> <p>片段 </p> </td> 
-      <td colname="col2"> <p>與延遲維度的層級有一對多關係的可數維度。 不會計算此維度的延遲。 例如，如果您指定「頁面檢視」層級和「工作階段」片段，則會針對在與事件相同的工作階段期間發生的頁面檢視計算延遲。 </p> <p>如需一對多（簡單）維度的相關資訊，請參閱<i>資料集組態指南</i>。 </p> </td> 
+      <td colname="col2"> <p>與延遲維度的層級有一對多關係的可數維度。 不會計算此維度的延遲。 例如，如果您指定「頁面檢視」層級和「工作階段」片段，則會針對在與事件相同的工作階段期間發生的頁面檢視計算延遲。 </p> <p>如需一對多（簡單）維度的相關資訊，請參閱 <i>資料集組態指南</i>. </p> </td> 
    </tr> 
    <tr> 
       <td colname="col1"> <p>時間 </p> </td> 
@@ -80,7 +82,7 @@ ht-degree: 2%
    </tbody> 
    </table>
 
-1. 將[!DNL .vw]檔案保存到User\*working profile name*\Work資料夾。
+1. 儲存 [!DNL .vw] 檔案到「用戶\*工作配置檔案名*\工作」資料夾。
 
    以下是預設延遲維度的設定：
 

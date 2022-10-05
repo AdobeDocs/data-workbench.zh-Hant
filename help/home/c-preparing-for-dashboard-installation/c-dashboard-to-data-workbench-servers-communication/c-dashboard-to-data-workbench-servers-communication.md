@@ -3,7 +3,7 @@ description: Data Workbench 伺服器通訊控制面板
 title: Data Workbench 伺服器通訊控制面板
 uuid: 8baa1057-8a03-4a99-a808-db1424342375
 exl-id: 35ad83ed-3fd4-4815-8f4c-e13bb4a3e636
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 15%
@@ -11,6 +11,8 @@ ht-degree: 15%
 ---
 
 # Data Workbench 伺服器通訊控制面板{#dashboard-to-data-workbench-servers-communication}
+
+{{eol}}
 
 您必須準備Data Workbench的例項，以允許控制面板與您的伺服器通訊。 您至少必須執行Data Workbench伺服器5.45版，且具備有效的Data Workbench查詢API授權。 控制面板要使用的每台伺服器都必須安裝有效的查詢API許可證。
 

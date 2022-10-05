@@ -3,14 +3,16 @@ description: 統計圖說文字會測量有意義的關係，以識別隱藏的�
 title: 統計圖說文字
 uuid: 04911ac4-bc3f-4813-800b-087d9668a782
 exl-id: d4ed540e-f837-4db9-a81e-b8a30c15f270
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 23%
+ht-degree: 22%
 
 ---
 
 # 統計圖說文字{#statistical-callouts}
+
+{{eol}}
 
 統計圖說文字會測量有意義的關係，以識別隱藏的機會和興趣變數，以提供受眾叢集和訪客回應計分中更進階的資料挖掘功能。
 
@@ -19,7 +21,7 @@ ht-degree: 23%
 若要新增統計圖說文字：
 
 1. 在表格中，以滑鼠右鍵按一下量度標題。
-1. 選擇&#x200B;**[!UICONTROL Statistics]**，然後選擇或清除每個必需設定的複選標籤。 「顯示標注」(Display Callout)中的全部都被選為預設設定。
+1. 選擇 **[!UICONTROL Statistics]** ，然後選取或清除每個必要設定的勾號。 「顯示標注」(Display Callout)中的全部都被選為預設設定。
 
    ![](assets/statistical_callouts.png)
 
@@ -58,7 +60,7 @@ ht-degree: 23%
    <td colname="col2"><p> 傳回量度值的總和。 </p></td>
   </tr>
   <tr>
-   <td colname="col1"> 變數 </td>
+   <td colname="col1"> 變異數 </td>
    <td colname="col2"><p> 量度值與該維度之「量度」平均值的變異數。 等於標準差的平方。 </p></td>
   </tr>
  </tbody>

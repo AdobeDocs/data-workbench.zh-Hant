@@ -3,7 +3,7 @@ description: 要更徹底地監視實施，您可以監視伺服器電腦上的�
 title: 監控連接埠和應用程式
 uuid: 63d92718-81df-49eb-adda-8b49bde57a9d
 exl-id: 418b2e5c-42ec-40f0-9cae-375194288143
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # 監控連接埠和應用程式{#monitoring-ports-and-applications}
+
+{{eol}}
 
 要更徹底地監視實施，您可以監視伺服器電腦上的所有埠以及每個埠上運行的軟體產品。
 
@@ -20,8 +22,8 @@ ht-degree: 4%
 
 **請求應用程式狀態頁**
 
-1. 在要監視的電腦上，修改訪問控制，以允許監視應用程式或指令碼訪問電腦。 有關說明，請參閱[配置訪問控制](../../../home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-config-acs-ctrl.md#concept-ac385e870dbe4b57a72bf7266b60f93d)。
-1. 連接到[!DNL https://IP Address/Status/]，其中IP地址是要接收狀態的電腦的IP地址。
+1. 在要監視的電腦上，修改訪問控制，以允許監視應用程式或指令碼訪問電腦。 如需指示，請參閱 [配置訪問控制](../../../home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-config-acs-ctrl.md#concept-ac385e870dbe4b57a72bf7266b60f93d).
+1. 連線至 [!DNL https://IP Address/Status/]，其中IP地址是要接收狀態的電腦的IP地址。
 
    範例：[!DNL https://127.0.0.1/Status/]
 

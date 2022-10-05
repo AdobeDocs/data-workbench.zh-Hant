@@ -3,7 +3,7 @@ description: DWB中不同檔案傳輸方法的快速指南。
 title: 檔案傳輸控管
 uuid: a3e19f8a-1cc4-437c-9661-408f675109c0
 exl-id: a0ecd8e1-6d6f-4811-9869-092837dc9e55
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # 檔案傳輸控管{#file-transfer-governance}
+
+{{eol}}
 
 DWB中不同檔案傳輸方法的快速指南。
 
@@ -20,8 +22,8 @@ DWB中不同檔案傳輸方法的快速指南。
 
 1. AWS(Amazon Web Services)
 
-   1. 提出Ticket ，在伺服器上安裝若尚未安裝的AWS命令列介面(請參閱[https://docs.aws.amazon.com/cli/latest/userguide/installing.html](https://docs.aws.amazon.com/cli/latest/userguide/installing.html))。
-   1. 如何檢查？ 嘗試使用命令提示字元來設定AWS(請參閱[https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html))。
+   1. 提出票證以在伺服器上安裝AWS命令列介面（如果尚未安裝）(請參閱 [https://docs.aws.amazon.com/cli/latest/userguide/installing.html](https://docs.aws.amazon.com/cli/latest/userguide/installing.html))。
+   1. 如何檢查？ 嘗試使用命令提示字元來設定AWS(請參閱 [https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html))。
 
 1. 將檔案從FTP伺服器傳輸到NAS目錄。
 
@@ -53,10 +55,10 @@ DWB中不同檔案傳輸方法的快速指南。
 
       >[!NOTE]
       >
-      >如果Scripository資料夾不可用，請參閱[每週重新處理](../../../home/dwb-implement-overview/dwb-implement-configure/dwb-implement-reprocess-scripting.md#concept-60529e12d6d94386a02c1c6fdedf0295)以下載該資料夾。
+      >如果「Scripository」資料夾不可用，請參閱 [每週重新處理](../../../home/dwb-implement-overview/dwb-implement-configure/dwb-implement-reprocess-scripting.md#concept-60529e12d6d94386a02c1c6fdedf0295) 下載資料夾。
 
    1. 根據ftp_address上的檔案可用性排程指令碼。
-   1. 檔案的命名慣例應為YYYYMMDD-&lt;offline_feed_name>-00。*
+   1. 檔案的命名慣例應為YYYYMMDD-&lt;offline_feed_name>-00。&#42;
 
 1. 將檔案從NAS目錄傳輸到FTP伺服器。
 
@@ -228,7 +230,7 @@ DWB中不同檔案傳輸方法的快速指南。
       ```
 
    1. 根據ftp_address上的檔案可用性排程指令碼。
-   1. 檔案的命名慣例應為YYYYMMDD-&lt;offline_feed_name>-00。*
+   1. 檔案的命名慣例應為YYYYMMDD-&lt;offline_feed_name>-00。&#42;
 
 1. 將檔案從一個NAS目錄傳輸到其他NAS目錄。
 

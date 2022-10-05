@@ -3,7 +3,7 @@ description: 使用JavaScript檔案物件模型時，可使用其他指令碼方
 title: 取得文件物件
 uuid: 7681c337-b147-4937-9d9c-0ff48d9bdd00
 exl-id: eae6609c-be86-44cf-a1a1-69ffb43231fa
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 5%
@@ -11,6 +11,8 @@ ht-degree: 5%
 ---
 
 # 取得文件物件{#acquiring-document-objects}
+
+{{eol}}
 
 使用JavaScript檔案物件模型時，可使用其他指令碼方法來增加zig.js檔案的要求。
 

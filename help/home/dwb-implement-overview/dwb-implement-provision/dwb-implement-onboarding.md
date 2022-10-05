@@ -3,7 +3,7 @@ description: 請依照下列步驟，開始AdobeData Workbench(DWB)(Adobe Analyt
 title: DWB Managed Services 的基本入門指示
 uuid: ad44a4eb-00ea-49c7-8401-58976d8fe39e
 exl-id: 49fb6afe-b417-4554-9238-fd6381c00029
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # DWB Managed Services 的基本入門指示{#basic-onboarding-instructions-for-dwb-managed-services}
+
+{{eol}}
 
 請依照下列步驟，開始AdobeData Workbench(DWB)(Adobe Analytics Premium(AAP)的元件)的入門程式。
 
@@ -55,14 +57,14 @@ Adobe數位行銷團隊隨後會取用您的資訊，建立設定檔、設定帳
    >
    >您的瀏覽器可能會在這時提示您提供數位憑證。如果出現提示，請按一下取消以關閉對話框。
 
-1. 在「下載」區段中找出為您的AdobeData Workbench例項(`<PrimaryUser>`.pem)核發的憑證，然後下載。
+1. 找到為您的AdobeData Workbench例項核發的憑證(`<PrimaryUser>`.pem)，並下載。
 1. 在「下載」區段中找到「標準用戶端安裝程式」，以下載DWB設定精靈(InsightSetup-x.xx.exe檔案)。
 1. 從Adobe客戶服務接收並下載檔案後，請執行DWB設定精靈，將工作站軟體安裝至用戶端電腦。
 
 >[!NOTE]
-DWB設定精靈會引導您完成DWB用戶端工作站的安裝，並協助您找出Insight.cfg和`<PrimaryUser>`.pem檔案，以放置在所需的資料夾中。 Insight.cfg檔案與您安裝之用戶端工作站的Insight.exe檔案共用。 `<PrimaryUser>`.pem檔案位於Certificates資料夾中，包含trust_ca_cert.pem檔案。 DWB必須有所有憑證和設定檔案才能運作。
+DWB設定精靈會引導您完成DWB用戶端工作站的安裝，並協助您找出Insight.cfg和 `<PrimaryUser>`.pem檔案放入所需資料夾中。 Insight.cfg檔案與您安裝之用戶端工作站的Insight.exe檔案共用。 此 `<PrimaryUser>`.pem檔案位於Certificates資料夾中，包含trust_ca_cert.pem檔案。 DWB必須有所有憑證和設定檔案才能運作。
 
-如需詳細資訊，請參閱[DWB設定精靈](https://experienceleague.adobe.com/docs/data-workbench/using/install/workstation-setup/install-setup.html)。
+如需詳細資訊，請參閱 [DWB設定精靈](https://experienceleague.adobe.com/docs/data-workbench/using/install/workstation-setup/install-setup.html).
 
 ## 與DWB伺服器的連線 {#section-8e79c4e07c2a4342a5bb8af6ee7be3c9}
 
@@ -83,4 +85,4 @@ DWB設定精靈會引導您完成DWB用戶端工作站的安裝，並協助您�
 
 ·AdobeTechOps會將主要生產叢集設定為包含三個月的滾動資料，以便每月重設及重新處理。 重新處理任務中也會更新查閱（Geography、DeviceAtlas、標準分類）。 預設情況下，該任務在每個月的第一個星期五運行。 如有需要，客戶服務可以修改排程。
 
-如需其他資訊，請聯絡[Adobe客戶服務](https://helpx.adobe.com/support/programs/enterprise-support-terms.html)。
+如需其他資訊，請聯絡 [Adobe客戶服務](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).

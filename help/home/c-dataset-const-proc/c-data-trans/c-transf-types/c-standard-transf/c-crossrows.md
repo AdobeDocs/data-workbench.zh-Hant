@@ -3,7 +3,7 @@ description: 與其他轉換一樣，CrossRows轉換也會套用至記錄來源�
 title: CrossRows
 uuid: 5910c150-6bec-4d98-b116-9b382fd54d3c
 exl-id: 321f986e-44a9-454c-9311-0ae37a11a088
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1137'
 ht-degree: 1%
@@ -12,15 +12,17 @@ ht-degree: 1%
 
 # CrossRows{#crossrows}
 
+{{eol}}
+
 與其他轉換一樣，CrossRows轉換也會套用至記錄來源中的資料列（記錄項目）。
 
-對於每一行資料，轉換會取用指定輸入欄位的值，執行一組處理步驟，並將結果記錄在您指定的輸出欄位中。 不過，當[!DNL CrossRows]轉換對一列資料運作時（此列稱為輸出列），會考慮該列加上與相同追蹤ID相關聯的一或多列其他資料（這些列稱為輸入列）。 因此，對於給定的跟蹤ID，每個輸出行的輸出欄位的值基於一個或多個輸入行的輸入欄位的值。
+對於每一行資料，轉換會取用指定輸入欄位的值，執行一組處理步驟，並將結果記錄在您指定的輸出欄位中。 但若 [!DNL CrossRows] 轉換適用於一列資料（此列稱為輸出列），它會考慮該列加上與相同追蹤ID相關聯的一列或多列其他資料（這些列稱為輸入列）。 因此，對於給定的跟蹤ID，每個輸出行的輸出欄位的值基於一個或多個輸入行的輸入欄位的值。
 
-轉換提供了多個條件和限制，使您能夠限制轉換的輸入行。 您可以根據Data Workbench伺服器的條件（請參閱[Conditions](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)）、與輸出列相對的輸入列範圍，或與輸出列時間相對的時間範圍來表示這些限制。 對於滿足轉換條件和約束的輸入行，可以應用確定輸出欄位值的操作（如SUM）。
+轉換提供了多個條件和限制，使您能夠限制轉換的輸入行。 您可以透過Data Workbench伺服器的條件來表達這些限制(請參閱 [條件](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md))、相對於輸出行的輸入行範圍，或相對於輸出行時間的時間範圍。 對於滿足轉換條件和約束的輸入行，可以應用確定輸出欄位值的操作（如SUM）。
 
 >[!NOTE]
 >
->若要運作，[!DNL CrossRows]轉換需要及時排序資料，並依來源資料中的追蹤ID分組。 因此，[!DNL CrossRows]僅在[!DNL Transformation.cfg]檔案或[!DNL Transformation Dataset Include]檔案中定義時有效。
+>若要運作， [!DNL CrossRows] 轉換需要資料按時間排序，並依來源資料中的追蹤ID分組。 因此， [!DNL CrossRows] 只有在 [!DNL Transformation.cfg] 檔案或 [!DNL Transformation Dataset Include] 檔案。
 
 查看下表中參數的說明時，請記住以下幾點：
 
@@ -63,7 +65,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> 金鑰 </td> 
-   <td colname="col2"> <p>選填。要作為索引鍵的欄位名稱。 </p> <p> 如果指定了鍵，則給定輸出行的輸入行被限制為與輸出行具有相同鍵值的行的連續塊。 除了<span class="wintitle"> CrossRows</span>轉換的其他參數對輸入行施加的所有其他限制之外，還有此限制。 </p> <p> 例如，如果您使用Web資料，並將欄位x-session-key（每個會話的值都唯一）設為鍵，則轉換的輸入行將限於那些與輸出行具有相同x-session-key值的行。 因此，您僅考慮那些代表頁面檢視的輸入列，這些檢視發生在與輸出列相同的工作階段期間。 </p> </td> 
+   <td colname="col2"> <p>選填。要作為索引鍵的欄位名稱。 </p> <p> 如果指定了鍵，則給定輸出行的輸入行被限制為與輸出行具有相同鍵值的行的連續塊。 此限制是除了 <span class="wintitle"> CrossRows</span> 轉換。 </p> <p> 例如，如果您使用Web資料，並將欄位x-session-key（每個會話的值都唯一）設為鍵，則轉換的輸入行將限於那些與輸出行具有相同x-session-key值的行。 因此，您僅考慮那些代表頁面檢視的輸入列，這些檢視發生在與輸出列相同的工作階段期間。 </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -103,10 +105,10 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-此範例中的[!DNL CrossRows]轉換會套用至Web資料列，以尋找每個頁面檢視的下一個頁面檢視的時間。 因為我們知道[!DNL CrossRows]僅在資料集建構程式的轉換階段才會套用，所以資料列會依訪客（每個訪客都有不重複的追蹤ID）和時間排序。
+此 [!DNL CrossRows] 此範例中的轉換會套用至網頁資料列，以尋找每個頁面檢視的下一個頁面檢視時間。 因為我們知道 [!DNL CrossRows] 只有在資料集建構程式的轉換階段才會套用，資料列會依訪客（每位訪客都有不重複的追蹤ID）和時間排序。
 
-輸入欄位x-timestamp僅會針對填入了x-is-page-view欄位的輸入列（表示資料列代表頁面檢視）而考慮。 會為Key參數指定x-session-key欄位（每個工作階段的值都有唯一值）。 因此，用於轉換的輸入行（日誌條目）被限制為與輸出行具有相同x-session-key值的連續行塊。 換言之，要考慮轉換，輸入行必須代表在與輸出行中的頁面檢視相同的工作階段期間發生的頁面檢視。 第一行操作從滿足[!DNL Input]條件且與輸出行具有相同x-session-key值的第一輸入行取得輸出欄位的值。
+輸入欄位x-timestamp僅會針對填入了x-is-page-view欄位的輸入列（表示資料列代表頁面檢視）而考慮。 會為Key參數指定x-session-key欄位（每個工作階段的值都有唯一值）。 因此，用於轉換的輸入行（日誌條目）被限制為與輸出行具有相同x-session-key值的連續行塊。 換言之，要考慮轉換，輸入行必須代表在與輸出行中的頁面檢視相同的工作階段期間發生的頁面檢視。 第一行操作從滿足以下條件的第一輸入行取出輸出欄位的值 [!DNL Input] 條件，且與輸出列具有相同的x-session-key值。
 
 ![](assets/cfg_TransformationType_CrossRows.png)
 
-[!DNL CrossRows] 以與其輸入大小加上其輸出大小成比例的時間量執行。這表示對於操作SUM 、 FIRST ROW和LAST ROW ，它的效率與其他轉換一樣低。 對於「全部」，情況更複雜，因為可以配置[!DNL CrossRows]以輸出與指定追蹤ID的總行數（日誌條目）成比例的每行資料量（日誌條目）。
+[!DNL CrossRows] 以與其輸入大小加上其輸出大小成比例的時間量執行。 這表示對於操作SUM 、 FIRST ROW和LAST ROW ，它的效率與其他轉換一樣低。 對於ALL，情況更複雜，因為可以進行配置 [!DNL CrossRows] 輸出與指定追蹤ID的總列數（記錄項目）成比例的每列資料量（記錄項目）。

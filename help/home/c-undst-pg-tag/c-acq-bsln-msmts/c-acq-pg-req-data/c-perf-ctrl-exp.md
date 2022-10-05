@@ -3,7 +3,7 @@ description: Sensor可讓您進行受控網站實驗，讓您對訪客人口的�
 title: 執行受控實驗
 uuid: 2fe16713-21c8-497a-a765-8cea011d419b
 exl-id: 8cbe9a10-72d8-4964-bd0b-0a262fd7ede2
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 5%
@@ -11,6 +11,8 @@ ht-degree: 5%
 ---
 
 # 執行受控實驗{#performing-controlled-experiments}
+
+{{eol}}
 
 Sensor可讓您進行受控網站實驗，讓您對訪客人口的隨機子集執行受控實驗，而對您進行中的作業造成的中斷降至最低。
 

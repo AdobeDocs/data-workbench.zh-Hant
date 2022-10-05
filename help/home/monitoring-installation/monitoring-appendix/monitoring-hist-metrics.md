@@ -3,7 +3,7 @@ description: 下表列出Data Workbench歷史監控設定檔中包含的量度�
 title: Data Workbench 歷史監控設定檔中的量度
 uuid: 47b874f7-8acb-4593-9ac9-5997d5279e52
 exl-id: 65f0f605-f128-45bb-8f6c-95284b2da740
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Data Workbench 歷史監控設定檔中的量度{#metrics-in-the-data-workbench-historical-monitoring-profile}
+
+{{eol}}
 
 下表列出Data Workbench歷史監控設定檔中包含的量度，以及其衍生方式。
 
@@ -49,6 +51,6 @@ ht-degree: 2%
 | **輸出行** | 每個Ping的「輸出行」維度總和除以「Ping」量度，再乘以100000。 |
 | **即時模式** | 「處理模式」維度等於「即時」的Ping數，除以「Ping」量度，再加100。 |
 | **重新處理模式** | 100減去處理模式等於「即時」除以Ping量度再乘以100的Ping數。 |
-| **已停止** | 分析[設定檔狀態](../../../home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md#concept-d4cd7da41c8a42bab4aea25418264e64)設定檔中的處理中止維度的總和。 |
+| **已停止** | Insight中處理中止維度的總和 [設定檔狀態](../../../home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md#concept-d4cd7da41c8a42bab4aea25418264e64) 設定檔。 |
 | **臨時DB** | 每個Ping的臨時資料庫空間百分比總和，除以Ping度量。 |
 | **轉換** | 每個Ping的轉換百分比除以Ping量度的總和除以10。 |

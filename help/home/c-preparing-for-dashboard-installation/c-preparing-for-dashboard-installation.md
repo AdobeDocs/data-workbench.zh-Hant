@@ -2,7 +2,7 @@
 description: Data Workbench控制面板管理員指南
 title: Data Workbench控制面板管理員指南
 uuid: 662f8cac-e5af-4892-afc1-78f705d3033e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '15'
 ht-degree: 0%
@@ -10,5 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Data Workbench儀表板管理員指南{#data-workbench-dashboard-administrator-guide}
+# Data Workbench控制面板管理員指南{#data-workbench-dashboard-administrator-guide}
 
+
+{{eol}}

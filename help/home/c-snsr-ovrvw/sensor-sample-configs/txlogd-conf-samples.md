@@ -1,20 +1,24 @@
 ---
-description: 支援的Web伺服器/OS組合的txlogd.conf檔案示例。
-title: Txlogd.conf檔案示例
+description: 支援Web伺服器/OS組合的txlogd.conf檔案範例。
+title: Txlogd.conf 檔案範例
 uuid: ba8f3938-b7d6-44bd-93ca-eb66f509ef4e
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 3bbb794f-c771-43c6-9ebf-8892c1d9a707
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 7%
 
 ---
 
+# Txlogd.conf 檔案範例{#txlogd-conf-file-samples}
 
-# Txlogd.conf檔案示例{#txlogd-conf-file-samples}
+{{eol}}
 
-支援的Web伺服器/OS組合的txlogd.conf檔案示例。
+支援Web伺服器/OS組合的txlogd.conf檔案範例。
 
-## Microsoft Windows Server 2000或更高版本上的IIS {#section-d5d602c3e87b4ecf910e71772350e865}
+## Microsoft Windows Server 2000或更新版本上的IIS {#section-d5d602c3e87b4ecf910e71772350e865}
 
-運行在Microsoft Windows Server 2000或更高版本下的Sensor for Internet Information Service(IIS)5.x或6.x所需的txlogd.conf檔案示例。
+在Microsoft Windows Server 2000或更新版本下運行的Sensor for Internet Information Service(IIS)5.x或6.x所需的txlogd.conf檔案範例。
 
 ```
 # sample txlogd configuration file for IIS
@@ -115,9 +119,9 @@ NewUserCacheControl no-cache=Set-Cookie
 CacheControl private,max-age=0,must-revalidate
 ```
 
-## Windows Server 2000或更新版本上的Lotus Sametime {#section-36265b8192484a268ebafc42e941fdf2}
+## Windows Server 2000 或更新版本上的 Lotus Sametime {#section-36265b8192484a268ebafc42e941fdf2}
 
-運行在Microsoft Windows Server 2000或更高版本下的Sensor for Lotus Sametime所需的txlogd.conf檔案示例。
+在Microsoft Windows Server 2000或更新版本下運行的Sensor for Lotus Sametime所需的txlogd.conf檔案範例。
 
 ```
 # sample txlogd configuration file for Lotus Sametime
@@ -191,9 +195,9 @@ ExpPartialMatch on
 SiteTest http,localhost,80,/test.html
 ```
 
-## Windows Server 2000或更高版本上的Lotus Domino {#section-d2fd9e0684fe460bbccaaabc4197bb48}
+## Windows 2000 或更新版本上的 Lotus Domino Server {#section-d2fd9e0684fe460bbccaaabc4197bb48}
 
-運行在Microsoft Windows Server 2000或更高版本下的Lotus Domino感測器所需的txlogd.conf檔案示例。
+在Microsoft Windows Server 2000或更新版本下運行的Lotus Domino所需的txlogd.conf檔案示例。
 
 ```
 # sample txlogd configuration file for Lotus Domino
@@ -273,7 +277,7 @@ SpecialLogField cs(cert)=vars.certificate vys_log
 
 ## IBM AIX 5.2上的IBM HTTP Server {#section-d7c88cc65b0b4c7a877bf7a084cbf4fb}
 
-運行在IBM AIX 5.2下的IBM HTTP Server 2.0.x感測器所需的txlogd.conf檔案示例。
+在IBM AIX 5.2下執行的IBM HTTP Server 2.0.x感測器所需的txlogd.conf檔案範例。
 
 ```
 # sample txlogd configuration file for IHS 2.0.x
@@ -554,7 +558,7 @@ CacheControl private,max-age=0,must-revalidate
 
 ## Windows 2000 Server或更新版本上的Apache Server 1.3.x {#section-d225f200da28441895fb90a64c2a2ffd}
 
-運行在Microsoft Windows Server 2000或更高版本下的Apache Server 1.3.x感測器所需的txlogd.conf檔案示例。
+在Microsoft Windows Server 2000或更新版本下執行的Apache Server 1.3.x感測器所需的txlogd.conf檔案範例。
 
 ```
 # sample txlogd configuration file for Apache 1.3
@@ -697,7 +701,7 @@ CacheControl private,max-age=0,must-revalidate
 
 ## Linux、Sun Solaris或FreeBSD上的Apache Server 2.0.x或2.2 {#section-b87565beba44472483348d442329c3fe}
 
-以下Apache伺服器的感測器所需的txlogd.conf檔案示例。
+下列Apache伺服器的Sensor所需的txlogd.conf檔案範例。
 
 ```
 Apache Server 2.0.40 running under RedHat Linux 7.x or later or Sun Solaris SPARC 2.6 or later
@@ -844,7 +848,7 @@ CacheControl private,max-age=0,must-revalidate
 
 ## Windows Server 2000或更新版本上的Apache Server 2.0.x或2.2 {#section-a1749d32a8aa4ca0b81f8b95c8dc511c}
 
-運行在Microsoft Windows Server 2000或更高版本下的Apache Server 2.0.x或2.2感測器所需的txlogd.conf檔案示例。
+在Microsoft Windows Server 2000或更新版本下執行的Apache Server 2.0.x或2.2的Sensor所需的txlogd.conf檔案範例。
 
 ```
 # sample txlogd configuration file for Apache 2.0.x or 2.2
@@ -989,5 +993,4 @@ NewUserCacheControl no-cache=Set-Cookie
 CacheControl private,max-age=0,must-revalidate
 ```
 
-## 章節標題 {#section-f25d181e181e4bb7bf46d4410756e945}
-
+## 區段標題 {#section-f25d181e181e4bb7bf46d4410756e945}

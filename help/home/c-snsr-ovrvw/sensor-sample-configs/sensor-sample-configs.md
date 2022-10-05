@@ -1,20 +1,24 @@
 ---
-description: 配置檔案的示例檔案。
-title: 配置檔案示例
+description: 組態檔的範例檔案。
+title: 組態檔範例
 uuid: 9bc5c0a9-e67a-4c63-952d-9a39d75e6975
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 8a9abadb-228b-4da6-bfe6-8e828bb6ace9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '68'
+ht-degree: 8%
 
 ---
 
+# 組態檔範例{#sample-configuration-files}
 
-# 配置檔案示例{#sample-configuration-files}
+{{eol}}
 
-配置檔案的示例檔案。
+組態檔的範例檔案。
 
 ## Magnus.conf檔案示例 {#section-aec81c734d0f483591c3ede1fe588b6a}
 
-用於Netscape Enterprise Server、iPlanet、Sun ONE和Sun Java System Web伺服器安裝和配置的完整magnus.conf檔案示例。
+用於Netscape Enterprise Server、iPlanet、Sun ONE和Sun Java System Web伺服器安裝和配置的完整magnus.conf檔案的示例。
 
 ```
 #ServerRoot /usr/iplanet/servers/https-nova.visualsciences.net
@@ -42,9 +46,9 @@ Init fn="load-modules" shlib="/usr/iplanet/servers/visual_sciences/saf_visual_sc
 Init fn="vys-init" config-file="/etc/txlogd.conf"
 ```
 
-## Obj.conf檔案示例 {#section-1acd3ae557074ee6a46492eb98f89805}
+## Obj.conf檔案範例 {#section-1acd3ae557074ee6a46492eb98f89805}
 
-用於Netscape Enterprise Server、iPlanet、Sun ONE和Sun Java System Web伺服器安裝和配置的完整obj.conf檔案示例。
+用於Netscape Enterprise Server、iPlanet、Sun ONE和Sun Java System Web伺服器安裝和配置的完整obj.conf檔案的示例。
 
 ```
 <Object name=default>
@@ -94,4 +98,3 @@ Init fn="vys-init" config-file="/etc/txlogd.conf"
   PathCheck fn="check-acl" acl="es-internal"
 </Object>
 ```
-

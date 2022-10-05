@@ -3,14 +3,16 @@ description: 數學轉換允許對日誌條目內的欄位使用算術運算。
 title: Math
 uuid: 9e1a5950-8fb2-48e9-b9a1-82c5165fba10
 exl-id: d8b9cacd-67d1-447c-94dd-7028aa371dfa
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '256'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
 # 數學{#math}
+
+{{eol}}
 
 數學轉換允許對日誌條目內的欄位使用算術運算。
 
@@ -44,10 +46,10 @@ ht-degree: 6%
    <td colname="col1"> 運算式 </td> 
    <td colname="col2"> <p>描述要執行的計算的算術表達式。 </p> <p> 您可以使用下列任何操作和函式，並且可以將欄位名稱併入表達式中： </p> <p> 運作 
      <ul id="ul_DB5915FADA0A41A3B11F1F48615F40A9">
-      <li id="li_CA9EA97243F04760A81313C17EE057B3"> 加法 (+) </li>
-      <li id="li_908A272EBA2340098C20F22AA8D9ED26"> 減法 (-) </li>
-      <li id="li_C62257FF3AAB436D9148BBEA441621D7"> 乘法 (*) </li>
-      <li id="li_B5A9EAB3E49D4CB9A297172199F23542"> 除法 (/) </li>
+      <li id="li_CA9EA97243F04760A81313C17EE057B3"> 加(+) </li>
+      <li id="li_908A272EBA2340098C20F22AA8D9ED26"> 減(-) </li>
+      <li id="li_C62257FF3AAB436D9148BBEA441621D7"> 乘(*) </li>
+      <li id="li_B5A9EAB3E49D4CB9A297172199F23542"> 除(/) </li>
       <li id="li_D2D2B51DB2C8412A9B6F9D5F3CC03F8A"> 余數(%) </li>
       <li id="li_07E7E368FFD2437A852B785E159848E5"> 乘冪 (^) </li>
      </ul></p> <p>函數 
@@ -74,4 +76,4 @@ ht-degree: 6%
 
 ![](assets/cfg_TransformationType_Math.png)
 
-有關[!DNL Not Empty]條件的資訊，請參閱[條件](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)。
+如需 [!DNL Not Empty] 條件，請參閱 [條件](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md).

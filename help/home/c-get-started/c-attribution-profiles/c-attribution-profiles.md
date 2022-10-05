@@ -1,14 +1,17 @@
 ---
-description: 資料工作台中的歸因報表和視覺化包括以規則為基礎的歸因和最適歸因。
-title: 使用歸因報告
+description: Data Workbench中的歸因報表和視覺效果包括規則型歸因和最適化歸因。
+title: 使用歸因報表
 uuid: 1182b686-c18d-40bc-bb01-3a924ec7bb7e
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: ced2fcc4-d439-4ebc-a921-5f1dd8763748
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '34'
+ht-degree: 17%
 
 ---
 
+# 使用歸因報表{#using-attribution-reports}
 
-# 使用歸因報告{#using-attribution-reports}
+{{eol}}
 
-資料工作台中的歸因報表和視覺化包括以規則為基礎的歸因和最適歸因。
-
+Data Workbench中的歸因報表和視覺效果包括規則型歸因和最適化歸因。

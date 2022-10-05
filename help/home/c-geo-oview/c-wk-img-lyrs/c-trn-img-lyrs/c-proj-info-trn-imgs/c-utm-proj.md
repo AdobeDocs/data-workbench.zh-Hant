@@ -3,7 +3,7 @@ description: 通用橫麥卡托(UTM)投影由8個參數定義。
 title: 世界橫麥卡托投影
 uuid: 55421412-5c68-4a4f-88d6-650d5999a77c
 exl-id: 7d7610c3-14e7-474e-b792-ad413c86a2ef
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 3%
@@ -12,19 +12,21 @@ ht-degree: 3%
 
 # 世界橫麥卡托投影{#universal-transverse-mercator-projections}
 
+{{eol}}
+
 通用橫麥卡托(UTM)投影由8個參數定義。
 
 為地形影像層指定通用橫麥卡托投影時，您的地形影像檔案必須與朝影像頂端的偽（投影）對齊，並且與影像右側的偽東對齊。
 
-要為任何地形影像源指定UTM投影，必須在文本編輯器（如記事本）中開啟[!DNL Terrain Images.cfg]檔案，將「投影資訊」參數設定為「VersouseMercatorProjection」，並添加UTM投影的設定。
+要為任何地形影像源指定UTM投影，必須開啟 [!DNL Terrain Images.cfg] 在文本編輯器（如記事本）中，將「投影資訊」參數設定為「VersouseMercatorProjection」，並添加UTM投影的設定。
 
 **指定通用橫麥卡托投影**
 
-1. 在[!DNL Server Files Manager]中，按一下&#x200B;**[!UICONTROL Components]**&#x200B;以查看其內容。 [!DNL Terrain Images.cfg]檔案位於此目錄中。
+1. 在 [!DNL Server Files Manager]，按一下 **[!UICONTROL Components]** 來檢視其內容。 此 [!DNL Terrain Images.cfg] 檔案位於此目錄中。
 
-1. 按一下右鍵[!DNL Terrain Images.cfg]*伺服器名稱*&#x200B;列中的複選標籤，然後按一下&#x200B;**[!UICONTROL Make Local]**。 在[!DNL Terrain Images.cfg]的[!DNL Temp]列中出現複選標籤。
+1. 以滑鼠右鍵按一下 *伺服器名稱* 欄 [!DNL Terrain Images.cfg]，然後按一下 **[!UICONTROL Make Local]**. 勾號會出現在 [!DNL Temp] 欄 [!DNL Terrain Images.cfg].
 
-1. 在[!DNL Temp]欄中按一下右鍵新建立的複選標籤，然後按一下&#x200B;**[!UICONTROL Open]** > **[!UICONTROL in Notepad]**。 [!DNL Terrain Images.cfg]檔案將出現在記事本窗口中。
+1. 在 [!DNL Temp] 欄，按一下 **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. 此 [!DNL Terrain Images.cfg]檔案將出現在記事本窗口中。
 
 1. 使用以下示例檔案片段和參數表作為參考線編輯「投影資訊」參數。 請務必指定投影類型，如下面突出顯示。
 

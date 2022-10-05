@@ -3,7 +3,7 @@ description: 轉換功能包含三個組態檔，其中包含讀取和匯出資�
 title: 轉換的組態檔
 uuid: abb5b7a4-ade6-4658-b3a1-7ce4c2c17507
 exl-id: 9cd5ae3a-e3fc-466f-a6ab-20582001fb4a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 12%
@@ -11,6 +11,8 @@ ht-degree: 12%
 ---
 
 # 轉換的組態檔{#configuration-files-for-transform}
+
+{{eol}}
 
 轉換功能包含三個組態檔，其中包含讀取和匯出資料所需的參數。
 
@@ -20,4 +22,4 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->開始設定轉換功能的實作之前，請確認您已正確安裝Data Workbench [!DNL Transform.cfg]和Data Workbench T [!DNL ransform Mode.cfg]檔案，以及實作所需的所有Adobe軟體產品和應用程式。 有關安裝說明，請參閱&#x200B;*伺服器產品安裝和管理指南*。
+>開始設定轉換功能的實作之前，請確認您已正確安裝Data Workbench [!DNL Transform.cfg] 和data workbench T [!DNL ransform Mode.cfg] 檔案，以及實施所需的所有Adobe軟體產品和應用程式。 如需安裝指示，請參閱 *《伺服器產品安裝與管理指南》*.

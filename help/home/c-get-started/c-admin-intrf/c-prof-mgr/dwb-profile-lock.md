@@ -1,27 +1,31 @@
 ---
-description: 「描述檔管理員」中套用的Internal.cfg檔案可防止使用者透過「描述檔」、「維度」、「報表」、「工作區」、「量度」和「篩選器」管理員變更自訂描述檔。
-title: 在工作站中鎖定配置檔案
+description: 套用至「設定檔管理器」的Internal.cfg檔案，可防止使用者透過「設定檔」、「Dimension」、「報表」、「工作區」、「量度」和「篩選器」管理員對自訂設定檔進行變更。
+title: 在工作站中鎖定設定檔
 uuid: 6b65d7c1-dade-4c6e-9d59-09693e62f3f5
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 2604ceea-0e55-4ae7-a286-e5257e974a64
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '177'
+ht-degree: 5%
 
 ---
 
+# 在工作站中鎖定設定檔{#locking-profiles-in-the-workstation}
 
-# 在工作站中鎖定配置檔案{#locking-profiles-in-the-workstation}
+{{eol}}
 
-「描述檔管理員」中套用的Internal.cfg檔案可防止使用者透過「描述檔」、「維度」、「報表」、「工作區」、「量度」和「篩選器」管理員變更自訂描述檔。
+套用至「設定檔管理器」的Internal.cfg檔案，可防止使用者透過「設定檔」、「Dimension」、「報表」、「工作區」、「量度」和「篩選器」管理員對自訂設定檔進行變更。
 
-在使用管理器時，您可以通過在「配置檔案管理器」中將檔案保存到您的自 **[!DNL Internal.cfg]** 定義配置檔案，防止配置檔案被修改和覆蓋。 此設定檔案可防止使用者在管理員中工作時覆寫多個檔案(從「管理員 **>設定檔** 選單存取 **** )。
+您可以儲存 **[!DNL Internal.cfg]** 檔案至您的自訂設定檔（位於「設定檔管理員」中）。 此設定檔案可防止使用者在管理員中工作時覆寫多個檔案(從 **管理** > **設定檔** 功能表)。
 
 **在配置檔案管理器中鎖定配置檔案**
 
-1. 在工作區中，以滑鼠右鍵按一下「管 **理** >描述 **檔管理員**」。
+1. 在工作區中，按一下滑鼠右鍵 **管理** > **設定檔管理員**.
 
-1. 在「描述 **檔管理員**」中，以滑鼠右鍵按一 **[!DNL Context > Internal.cfg]** 下並設 **定為本機**。
+1. 在 **設定檔管理員**，按一下右鍵 **[!DNL Context > Internal.cfg]** 和 **使本地**.
 
-1. 在「使用者」欄中按一 **下滑鼠右鍵** ，然後儲存至 `<custom profile>`。
+1. 在中按一下右鍵複選標籤 **使用者** 欄和儲存到 `<custom profile>`.
 
 ![](assets/dwb_lock_profiles.png)
 
-**注意**:在「描述檔管理員」中將描述檔儲存至自訂描述檔時，只 **[!DNL Internal.cfg]** 會防止管理員變更描述檔檔案。 您仍然可以使用「保存到伺服器」( **Save to server** )命令，將工作區從工作台保存到伺服器。
+**附註**:儲存時，只會防止管理員變更設定檔檔案 **[!DNL Internal.cfg]** 設定檔管理員中的自訂設定檔。 您仍可使用 **保存到伺服器** 命令。

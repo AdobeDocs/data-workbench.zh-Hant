@@ -2,8 +2,8 @@
 description: 建立參考Tab分隔值(.tsv)檔案的向量層時，通過檢索繪圖指令以及.tsv檔案中的經度和緯度資料來獲取向量資料。
 title: 參考 Tab 字元分隔值檔案的向量層
 uuid: 42607b34-e9f2-420a-ba5a-05562598b480
-exl-id: be16ba73-4a98-472b-98f1-1b32e671b763,7b0b0286-072b-4b31-b6ec-ced322da5236
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+exl-id: be16ba73-4a98-472b-98f1-1b32e671b763
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 6%
@@ -12,19 +12,21 @@ ht-degree: 6%
 
 # 參考 Tab 字元分隔值檔案的向量層{#vector-layers-referencing-tab-separated-values-files}
 
+{{eol}}
+
 建立參考Tab分隔值(.tsv)檔案的向量層時，通過檢索繪圖指令以及.tsv檔案中的經度和緯度資料來獲取向量資料。
 
-要定義參照[!DNL .tsv]檔案的向量層，必須具有以下內容：
+定義參考 [!DNL .tsv] 檔案，您必須具備下列條件：
 
-* **一 [!DNL .tsv]** 個檔案，包含用來繪製地球向量的資料，包括經度和緯度資料。有關[!DNL .tsv]檔案所需格式的詳細資訊，請參閱[向量TSV檔案格式](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-a29012c9ff4444ac8a6d41c68482828e)。
+* **A [!DNL .tsv] 檔案** 包含用來繪製地球向量的資料，包括經度和緯度資料。 如需 [!DNL .tsv] 檔案，請參閱 [向量TSV檔案格式](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-a29012c9ff4444ac8a6d41c68482828e).
 
-* **指定** 檔案位置的層檔 [!DNL .tsv] 案。有關所需的層檔案格式的詳細資訊，請參閱[向量層檔案格式](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-c430923f341f4c93852e9f24b61e82bf)。
+* **圖層檔案** 會指定 [!DNL .tsv] 檔案。 有關所需圖層檔案格式的詳細資訊，請參見 [向量層檔案格式](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-c430923f341f4c93852e9f24b61e82bf).
 
-## 向量TSV檔案格式{#section-a29012c9ff4444ac8a6d41c68482828e}
+## 向量TSV檔案格式 {#section-a29012c9ff4444ac8a6d41c68482828e}
 
-[!DNL .tsv]檔案必須包含以下三個以頁簽分隔的列：
+此 [!DNL .tsv] 檔案必須包含下列三個以Tab分隔的欄：
 
-* **[!DNL Begin]:** 此欄應指出是否開始新的行。此欄中的值可以是0（不開頭新行）或1（開頭新行）。
+* **[!DNL Begin]:** 此欄應指示是否開始新行。 此欄中的值可以是0（不開頭新行）或1（開頭新行）。
 * **[!DNL Longitude]:** 此欄應包含經度值。
 * **[!DNL Latitude]:** 此欄應包含緯度值。
 
@@ -32,13 +34,13 @@ ht-degree: 6%
 >
 >會忽略任何其他欄。
 
-以下是包含向量層資料的範例[!DNL .tsv]檔案：
+以下是範例 [!DNL .tsv] 包含向量層資料的檔案：
 
 ![](assets/tsv_vectorlayer.png)
 
-## 向量層檔案格式{#section-c430923f341f4c93852e9f24b61e82bf}
+## 向量層檔案格式 {#section-c430923f341f4c93852e9f24b61e82bf}
 
-參考[!DNL .tsv]檔案的每個向量層檔案都必須使用下列範本格式化：
+每個參考的向量層檔案 [!DNL .tsv] 檔案必須使用以下模板進行格式化：
 
 ```
 Layer = VectorLayer:
@@ -63,11 +65,11 @@ Layer = VectorLayer:
  <tbody> 
   <tr> 
    <td colname="col1"> TSV檔案 </td> 
-   <td colname="col2"> <p>包含向量資料的<span class="filepath"> .tsv</span>檔案的路徑。 </p> <p>範例：<span class="filepath"> Maps\\USVectorData.tsv</span> </p> </td> 
+   <td colname="col2"> <p>路徑至 <span class="filepath"> .tsv</span> 包含向量資料的檔案。 </p> <p>範例： <span class="filepath"> 映射\\USVectorData.tsv</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 色彩 </td> 
-   <td colname="col2"> RGB顏色向量，表示為（紅、綠、藍）。 對於向量中的每種顏色，可以輸入一個0.0到1.0的值。例如，(1.0、0.0、0.0)為亮紅色，(0.5、0.5、0.5)為灰色。 </td> 
+   <td colname="col2"> RGB顏色向量，以（紅色、綠色、藍色）表示。 對於向量中的每種顏色，可以輸入一個0.0到1.0的值。例如，(1.0、0.0、0.0)為亮紅色，(0.5、0.5、0.5)為灰色。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Alpha </td> 

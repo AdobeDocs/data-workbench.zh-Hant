@@ -3,7 +3,7 @@ description: 安裝並配置在Microsoft Windows Server 2008或更新版本下�
 title: Windows Server 2008 或更新版本上的 Microsoft IIS
 uuid: 7fd8da68-1553-4395-b13e-b08a6ee1948e
 exl-id: cc909daa-60c0-4188-8e90-035c41bf3105
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1589'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Windows Server 2008 或更新版本上的 Microsoft IIS{#microsoft-iis-on-windows-server-or-later}
+
+{{eol}}
 
 安裝並配置在Microsoft Windows Server 2008或更新版本下運行的Microsoft IIS 7.x或8.x感測器。
 
@@ -83,20 +85,20 @@ txlogd.conf檔案包含Sensor的配置參數。
 
 您必須編輯檔案，以指定磁碟佇列的大小、Insight Server的位址，以及將附加至此感測器產生之資料的ID。 設定檔案包含必要參數和選用參數。
 
-* **必** 需參數是安裝Sensor時必須指定的設定。沒有這些設定，Sensor將無法成功運行。
-* **可** 選參數是預設為預定義值（您可以修改）或啟用可選功能的設定。
+* **必要參數** 是安裝Sensor時必須指定的設定。 沒有這些設定，Sensor將無法成功運行。
+* **選用參數** 是預設為預先定義值（您可以修改）或啟用可選功能的設定。
 
 **編輯Sensor配置檔案**
 
-1. 在文字編輯器中開啟`<SensorDirectory>/txlogd.conf`檔案，並設定所需的參數以及任何所需的選用參數。
+1. 開啟 `<SensorDirectory>/txlogd.conf` 檔案，並設定所需的參數以及任何所需的選用參數。
 
-   有關[!DNL txlogd.conf]參數的說明，請參閱[Sensor Txlogd.conf檔案參數](../../../home/c-snsr-ovrvw/sensor-txlogd-params/sensor-txlogd-params.md#concept-4bb629f058894b4abc65a31eb02eebed)。
+   如需 [!DNL txlogd.conf] 參數，請參閱 [Sensor Txlogd.conf檔案參數](../../../home/c-snsr-ovrvw/sensor-txlogd-params/sensor-txlogd-params.md#concept-4bb629f058894b4abc65a31eb02eebed).
 
 1. 儲存並關閉檔案。
 
 ## 啟動發射器並建立磁碟隊列 {#section-2b8dfd06996d4ab49998eeb99bd9f5f0}
 
-配置[!DNL txlogd.conf]檔案後，可以啟動發送器程式，將其註冊為Windows服務，然後建立磁碟隊列。
+設定 [!DNL txlogd.conf]檔案中，可以啟動發送器程式，將其註冊為Windows服務，然後建立磁碟隊列。
 
 1. 從Windows的「開始」菜單中，選擇「附件」>「命令提示符」。
 1. 在命令提示符窗口中，導航到安裝Sensor的目錄，然後執行以下命令：
@@ -147,15 +149,15 @@ txlogd.conf檔案包含Sensor的配置參數。
 
 對於IIS，收集器是一個ISAPI篩選器，您將其添加到IIS中的Web伺服器。
 
-1. 使用&#x200B;**開始>管理工具> Internet Information Services(IIS)管理器**&#x200B;開啟IIS管理器。
-1. 展開&#x200B;**本地電腦**&#x200B;和&#x200B;**站點**&#x200B;節點。
-1. 選擇該網站，然後在右窗格中，按兩下&#x200B;**ISAPI篩選器**。
-1. 在&#x200B;**Actions**&#x200B;窗格下，按一下&#x200B;**Add**。
+1. 使用開啟IIS管理器 **「開始」>「管理工具」>「Internet資訊服務(IIS)管理器」**.
+1. 展開 **本地電腦** 和 **網站** 節點。
+1. 選取網站，然後在右窗格中，按兩下 **ISAPI篩選器**.
+1. 在 **動作** 按一下 **新增**.
 
-1. 在&#x200B;**篩選器名稱**&#x200B;欄位中，輸入篩選器的顯示名稱。 建議的篩選器名稱為「Sensor」。
-1. 按一下&#x200B;**瀏覽**，選擇qlog.dll檔案（位於安裝Sensor的目錄中），然後按一下&#x200B;**確定**。
+1. 在 **篩選器名稱** 欄位，輸入篩選器的顯示名稱。 建議的篩選器名稱為「Sensor」。
+1. 按一下 **瀏覽**，選擇qlog.dll檔案（位於安裝Sensor的目錄中），然後按一下 **確定**.
 
-1. 按一下&#x200B;**OK**&#x200B;以新增篩選器。
+1. 按一下 **確定** 來新增篩選器。
 
    新增篩選器後，收集器會立即運作並準備好收集資料。
 
@@ -167,9 +169,9 @@ txlogd.conf檔案包含Sensor的配置參數。
    >
    >此命令序列可能因您使用的Windows版本而異。
 
-1. 在「事件查看器」窗口的左窗格中，選擇&#x200B;**Application**&#x200B;日誌。
-1. 在右窗格中，查找&#x200B;**Source**&#x200B;列中帶有「Adobe」的事件。
-1. 如果發現錯誤，請按兩下錯誤以顯示&#x200B;**Event Properties**&#x200B;窗口。
+1. 在「事件查看器」窗口的左窗格中，選擇 **應用程式** 記錄檔。
+1. 在右窗格中，尋找在 **來源** 欄。
+1. 如果發現錯誤，請連按兩下錯誤以顯示 **事件屬性** 窗口。
 
 ## 擷取其他資料 {#section-98db9625efdc4b60bfd76f7adf4af74d}
 

@@ -3,15 +3,16 @@ description: 自訂憑證的使用指示。
 title: 在 Data Workbench 中使用自訂憑證
 uuid: c3a2db27-bdb2-44b3-95dd-65eedd05c957
 exl-id: f813d599-723f-4b5d-a0b5-f4d71c1b1a22
-translation-type: ht
-source-git-commit: 233b04c65a45d3f92b8670bc244b907dc198b51d
-workflow-type: ht
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
 source-wordcount: '732'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # 在 Data Workbench 中使用自訂憑證{#using-custom-certificates-in-data-workbench}
+
+{{eol}}
 
 自訂憑證的使用指示。
 
@@ -21,7 +22,7 @@ Data Workbench 用戶端或伺服器所使用的憑證，都需由受信任的 C
 
 以下指示說明使用自訂憑證在 Data Workbench 用戶端和伺服器之間通訊時應遵循的程序。並非每個細節都是硬性要求，程序中可運用不同的變化。不過，以下程序經測試成功。
 
-## 設定自訂用戶端憑證{#section-2083fd41973e451fa404e7a4ae4da591}
+## 設定自訂用戶端憑證 {#section-2083fd41973e451fa404e7a4ae4da591}
 
 1. 將發行 CA 的憑證新增至 [!DNL trust_cert_ca.pem]，該憑證安裝於用戶端的 **Certificates** 目錄中，並安裝於每個叢集中要使用此自訂憑證存取之每個伺服器的相同目錄。
 
@@ -45,7 +46,7 @@ Data Workbench 用戶端或伺服器所使用的憑證，都需由受信任的 C
       ```
 
    1. 憑證有 CN、O、OU 等，根據伺服器的 [!DNL Access Control.cfg] 檔案中適用於此用戶端的要求。
-   1. 憑證發行時具有 *purpose **** *client* (或 *server* **和** *client*)。
+   1. 憑證已以 *用途&#42;&#42;&#42;* of *客戶* （或兩者） *伺服器* **和** *客戶*)。
 
       若要確認憑證有 server 和/或 client 目的碼，可以使用以下命令：
 
@@ -72,7 +73,7 @@ Data Workbench 用戶端或伺服器所使用的憑證，都需由受信任的 C
    <my_custom_client_cert.pem>
    ```
 
-## 設定自訂伺服器憑證{#setting-up-custom-server-certificates}
+## 設定自訂伺服器憑證 {#setting-up-custom-server-certificates}
 
 本節假設您的叢集已啟動且執行中、使用 Visual Sciences 發行的憑證，而且設定遵循常規 (例如主要伺服器的 *Components for Processing Servers* 目錄同步到所有 DPU 的 *Components* 目錄)。
 

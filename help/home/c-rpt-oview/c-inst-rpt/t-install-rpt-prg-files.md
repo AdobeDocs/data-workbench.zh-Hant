@@ -3,7 +3,7 @@ description: 安裝報表伺服器程式檔案的步驟。
 title: 安裝報表程式檔案
 uuid: 9c250783-7080-4c27-bd8c-add208b2b1bf
 exl-id: 8f871e5c-1267-4564-a168-398f9dc793a4
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 10%
@@ -11,6 +11,8 @@ ht-degree: 10%
 ---
 
 # 安裝報表程式檔案{#installing-the-report-program-files}
+
+{{eol}}
 
 安裝報表伺服器程式檔案的步驟。
 
@@ -24,11 +26,11 @@ ht-degree: 10%
 1. 將安裝檔案的內容解壓縮至您在上面建立的目錄。
 1. 要在Windows 2008系統中導出到Excel，請建立以下目錄之一：
 
-   對於Windows 2008 Server 64位：[!DNL C:\Windows\SysWOW64\config\systemprofile\Desktop]。
+   對於Windows 2008 Server 64位： [!DNL C:\Windows\SysWOW64\config\systemprofile\Desktop].
 
 1. 以滑鼠右鍵按一下資料夾。
 1. 選擇 **[!UICONTROL Properties]**.
 1. 選擇 **[!UICONTROL Security]**.
 1. 按一下 **[!UICONTROL Edit]**。
 1. 新增 **[!UICONTROL Everyone]**.
-1. 授予&#x200B;**[!UICONTROL Everyone]**&#x200B;的完全控制權。
+1. 授予對 **[!UICONTROL Everyone]**.

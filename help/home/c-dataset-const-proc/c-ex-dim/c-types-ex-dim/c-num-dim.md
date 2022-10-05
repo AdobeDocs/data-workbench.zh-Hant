@@ -3,7 +3,7 @@ description: 數值維度由有序的數值元素組成，且與其父項可數�
 title: 數值維度
 uuid: 19fab770-1535-41b2-bad1-811eba5f3575
 exl-id: 69a4dfa6-8402-4c2b-8b04-e6e1a0fd5ccb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # 數值維度{#numeric-dimensions}
+
+{{eol}}
 
 數值維度由有序的數值元素組成，且與其父項可數維度間具有一對多關係。
 
@@ -38,7 +40,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> 剪輯值 </td> 
-   <td colname="col2"> True 或 False. 指定輸入值（在操作後）是否被剪切為介於最小值和最大值之間。 如果「剪輯值」為true，則值被剪切到該範圍。 如果「剪輯值」為false，則不返回父維的元素的值。 </td> 
+   <td colname="col2"> True或False。 指定輸入值（在操作後）是否被剪切為介於最小值和最大值之間。 如果「剪輯值」為true，則值被剪切到該範圍。 如果「剪輯值」為false，則不返回父維的元素的值。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -53,7 +55,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> 固定大小 </td> 
-   <td colname="col2"> True 或 False. 控制維中的元素數（基數）。 如果為true，則從「最小值」到「最大」的所有元素都包含在維中。 如果為false，則維度的大小會隨著新增值而增加。 </td> 
+   <td colname="col2"> True或False。 控制維中的元素數（基數）。 如果為true，則從「最小值」到「最大」的所有元素都包含在維中。 如果為false，則維度的大小會隨著新增值而增加。 </td> 
    <td colname="col3"> false </td> 
   </tr> 
   <tr> 
@@ -85,14 +87,14 @@ ht-degree: 2%
    <td colname="col1"> 操作 </td> 
    <td colname="col2"> <p>可用操作如下： </p> <p> 
      <ul id="ul_E04733E5E8824A2BAAB90D9356078D99"> 
-      <li id="li_CAEE9167D45540BEAC538345F250B509"> 計數：會使用<span class="wintitle">輸入</span>欄位中所有符合維度條件之記錄項目的非空白值總數。 如果<span class="wintitle">輸入</span>欄位是向量欄位，則計算每個日誌條目中非空值的總數。 </li> 
-      <li id="li_64A4D671E78642BD9A9334F8098450B9"> 第一個非空白：無論輸入值是否來自第一個日誌條目，都會使用第一個非空白輸入值。 如果<span class="wintitle">輸入</span>為向量欄位，則使用相關日誌條目的向量中的第一行。 如果值不是數字，則不會使用任何值。 </li> 
-      <li id="li_C967964729BD4A638FF78D8883CE513F"> 第一行：系統會使用與父維度元素相關的第一個記錄項目的值，即使輸入為空白亦然。 如果<span class="wintitle">輸入</span>為向量欄位，則使用相關日誌條目的向量中的第一行。 如果此值為空或不是數字，或相關記錄項目不符合維度的條件，則不會使用任何值。 </li> 
-      <li id="li_74171B17F480478B8547E1A361B22DA4"> 最後一個非空白：系統會使用最後一個非空白輸入值，而不論其是否來自最後一個記錄項目。 如果<span class="wintitle">輸入</span>為向量欄位，則使用相關日誌條目的向量中的第一行。 如果值不是數字，則不會使用任何值。 </li> 
-      <li id="li_1253ECF507BD4BBF97CBB2FA12915045"> 最後一行：系統會使用與上層維度元素相關的最後一個記錄項目的值，即使輸入為空白亦然。 如果<span class="wintitle">輸入</span>為向量欄位，則使用相關日誌條目的向量中的第一行。 如果此值為空或不是數字，或相關記錄項目不符合維度的條件，則不會使用任何值。 </li> 
-      <li id="li_20819E3944544F98853D6A02814F47B2"> 總和：會使用<span class="wintitle">輸入</span>欄位中所有符合維度條件之記錄項目的數值總計。 如果沒有此類日誌條目或未找到數值，則使用數值0。 </li> 
-      <li id="li_086C2E57604B4645A9203A984C6F9A04">最小值或最大值：會使用<span class="wintitle">輸入</span>欄位中所有符合維度條件之記錄項目的最小值或最大值。 如果沒有此類日誌條目或沒有數值，則不使用任何值。 </li> 
-     </ul> </p> <p> <p>注意： 您應指定一個操作，以確保維按預期的方式定義。 </p> </p> </td> 
+      <li id="li_CAEE9167D45540BEAC538345F250B509"> 計數：中的非空白值總數 <span class="wintitle"> 輸入</span> 欄位，會使用符合維度條件的所有記錄項目。 若 <span class="wintitle"> 輸入</span> 欄位是向量欄位，則會計算每個記錄項目中非空白值的總數。 </li> 
+      <li id="li_64A4D671E78642BD9A9334F8098450B9"> 第一個非空白：無論輸入值是否來自第一個日誌條目，都會使用第一個非空白輸入值。 若 <span class="wintitle"> 輸入</span> 是向量欄位，則會使用向量中相關記錄項目的第一列。 如果值不是數字，則不會使用任何值。 </li> 
+      <li id="li_C967964729BD4A638FF78D8883CE513F"> 第一行：系統會使用與父維度元素相關的第一個記錄項目的值，即使輸入為空白亦然。 若 <span class="wintitle"> 輸入</span> 是向量欄位，則會使用向量中相關記錄項目的第一列。 如果此值為空或不是數字，或相關記錄項目不符合維度的條件，則不會使用任何值。 </li> 
+      <li id="li_74171B17F480478B8547E1A361B22DA4"> 最後一個非空白：系統會使用最後一個非空白輸入值，而不論其是否來自最後一個記錄項目。 若 <span class="wintitle"> 輸入</span> 是向量欄位，則會使用向量中相關記錄項目的第一列。 如果值不是數字，則不會使用任何值。 </li> 
+      <li id="li_1253ECF507BD4BBF97CBB2FA12915045"> 最後一行：系統會使用與上層維度元素相關的最後一個記錄項目的值，即使輸入為空白亦然。 若 <span class="wintitle"> 輸入</span> 是向量欄位，則會使用向量中相關記錄項目的第一列。 如果此值為空或不是數字，或相關記錄項目不符合維度的條件，則不會使用任何值。 </li> 
+      <li id="li_20819E3944544F98853D6A02814F47B2"> 總和：中所有數值的總計 <span class="wintitle"> 輸入</span> 欄位，會使用符合維度條件的所有記錄項目。 如果沒有此類日誌條目或未找到數值，則使用數值0。 </li> 
+      <li id="li_086C2E57604B4645A9203A984C6F9A04">最小值或MAX:在 <span class="wintitle"> 輸入</span> 欄位，會使用符合維度條件的所有記錄項目。 如果沒有此類記錄項目或沒有數值，則不使用任何值。 </li> 
+     </ul> </p> <p> <p>注意：您應指定一個操作，以確保維按預期的方式定義。 </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -110,7 +112,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->如果[!DNL Operation]未產生任何值，或[!DNL Clip Values]為false且值不介於[!DNL Min]和[!DNL Max]之間，則數值維度的任何元素都不與父維度的元素相關。
+>若 [!DNL Operation] 不產生值，或 [!DNL Clip Values] 為false且值不介於 [!DNL Min] 和 [!DNL Max]，數值維度的元素不會與父維度的元素相關。
 
 此範例說明使用從網站流量收集的事件資料來定義數值維度。 此名為「廣告檢視計數器」的數值維度會計算訪客在指定工作階段期間看見廣告的次數。 假設是所有播發資源都是從Web伺服器請求的，其中ad=是cs-uri-query的一部分。 在此範例中，訪客收到廣告的次數(COUNT)是感興趣的值，而非欄位中的實際值。
 

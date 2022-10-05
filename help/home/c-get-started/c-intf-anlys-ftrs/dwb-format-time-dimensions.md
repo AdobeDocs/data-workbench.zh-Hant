@@ -1,32 +1,36 @@
 ---
-description: 設定時間維度以正確顯示地區設定。
-title: 本地化時間維
+description: 配置時間維以正確顯示區域設定。
+title: 將時間維度當地語系化
 uuid: a2098522-bf05-4680-9b78-6fb284695a0a
-translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+exl-id: 950fe70b-a687-4b9c-b29f-555139740809
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 2%
 
 ---
 
+# 將時間維度當地語系化{#localizing-time-dimensions}
 
-# 本地化時間維{#localizing-time-dimensions}
+{{eol}}
 
-設定時間維度以正確顯示地區設定。
+配置時間維以正確顯示區域設定。
 
-您可以根據檔案中的地區設定來設定時間維度的顯示格式 **[!DNL Standard Time Dimensions.cfg]** (依預設位於 **[!DNL Server/Profiles/`<my profile>`/Dataset/Transformation/Time/Standard Time Dimensions.cfg]**)。
+您可以根據 **[!DNL Standard Time Dimensions.cfg]** 檔案(預設位於 **[!DNL Server/Profiles/`<my profile>`/Dataset/Transformation/Time/Standard Time Dimension.cfg]**)。
 
-例如，在北美洲，您可以將日期2015年5月3日表示為5/3/15或 **`%m/%d/%y`**。 然而，在世界其他地區，這可以解讀為 `%d/%m/%y`2015年3月5日，因為價值觀模稜兩可。 為避免這種情況，管理員可能希望更改顯示的格式，以符合區域設定中用戶的期望。
+例如，在北美洲，您可以將日期表示為5/3/15，或 **`%m/%d/%y`**. 然而，在世界其他地區，這可以解釋為 `%d/%m/%y`，或2015年3月5日，因為值模糊。 為避免此情況，管理員可能希望更改顯示的格式，以符合區域設定中用戶的期望。
 
-## 1.覆寫標準時間維度。cfg中的預設時間維度 {#section-7d0b24657bef4b15abb3cbea66cb617f}
+## 1.覆寫標準時間Dimension.cfg中的預設時間Dimension {#section-7d0b24657bef4b15abb3cbea66cb617f}
 
-要啟用此功能，管理員必須通過編輯現有時間維或通過使用其他參數建立新時間維來覆蓋預設值。
+要啟用此功能，管理員必須通過編輯現有時間維或使用其他參數建立新時間維來覆蓋預設值。
 
-下面是修改時間維的示例。
+以下是修改時間維度的範例。
 
-「 **周** 」、「小時」、「日」、「月」和「小時」的「格式」值在範例中設定為預設值。
+此 **格式** 將「周」、「小時」、「日」、「月」和「小時」的值設定為示例中的預設值。
 
 >[!NOTE]
 >
->如果省略這些行，資料工作台的行為不會變更，而且維度會使用預設值進行編譯。
+>如果省略這些行，Data Workbench的行為將不會變更，且維度將會使用預設值編譯。
 
 ```
 Transformation Include = TransformationInclude:  
@@ -62,9 +66,9 @@ Transformation Include = TransformationInclude:
 
 ## 2.設定meta.cfg檔案 {#section-5e077d3298dd48fda7f7bb16af9ea00c}
 
-此外，套件管理員必須將這些參數及其預設值新增至描述檔的檔 **[!DNL meta.cfg]** 案。 這允許從工作站進行編輯。
+此外，套件管理員必須將這些參數及其預設值新增至設定檔的 **[!DNL meta.cfg]** 檔案。 這可讓您從工作站進行編輯。
 
-這是一段節錄，來自一個配置的 **[!DNL meta.cfg]** 檔案。
+以下是摘自已設定的 **[!DNL meta.cfg]** 檔案。
 
 ```
 dimensions = vector: 6 items 
@@ -95,8 +99,8 @@ dimensions = vector: 6 items
         Month = string: Month
 ```
 
-以下是工作站中的 **[!DNL meta.cfg]** 檔案示例：
+以下是 **[!DNL meta.cfg]** 檔案：
 
 ![](assets/dwb_time_format.png)
 
-然後，管理員可以進入「檔案管理器」 **，開啟配置時間維的檔案(如****[!DNL Standard Time Dimensions.cfg]**)，並在工作站中使用它們進行編輯。
+然後，管理員便能 **檔案管理員**，開啟設定時間維度的檔案(例如 **[!DNL Standard Time Dimensions.cfg]**)，並在工作站中使用編輯。

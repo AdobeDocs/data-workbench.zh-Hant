@@ -3,7 +3,7 @@ description: 系統可以計算可數維度的元素。
 title: 可數維度
 uuid: 3312f5eb-69b9-43af-b32a-5c40e3050b29
 exl-id: c607c15d-de85-4daf-af76-79b460f51b38
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # 可數維度{#countable-dimensions}
+
+{{eol}}
 
 系統可以計算可數維度的元素。
 
@@ -20,7 +22,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->如果您需要的維度只提供某個項目的計數，則應使用數值維度搭配COUNT操作。 請參閱[數值Dimension](../../../../home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-num-dim.md#concept-8513b9afaff447c8b334410b565b91ed)。
+>如果您需要的維度只提供某個項目的計數，則應使用數值維度搭配COUNT操作。 請參閱 [數值Dimension](../../../../home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-num-dim.md#concept-8513b9afaff447c8b334410b565b91ed).
 
 可數維度由下列參數定義：
 
@@ -60,7 +62,7 @@ ht-degree: 4%
   </tr> 
   <tr> 
    <td colname="col1"> 父級 </td> 
-   <td colname="col2"> <p>父維的名稱。 任何可計數維度都可以是父維度。 若要將維度設為資料集結構中的頂層維度，請將參數設為「root」。 定義的維度會成為資料集的根可數維度。 例如，如果您使用的是網站，訪客維度是資料集的根可數維度。 </p> <p> <p>注意： 雖然您的根可數維度不必與資料中的追蹤ID相關聯，但Adobe建議您設定資料集的根可數維度，以使用追蹤ID欄位(x-trackingid)作為其索引鍵。 因此，根可數的每個元素都與x-trackingid的唯一值相關聯，而每個元素的所有資料都會分組在一起。 如果您想要以不同方式設定資料集，請聯絡Adobe。 </p> </p> </td> 
+   <td colname="col2"> <p>父維的名稱。 任何可計數維度都可以是父維度。 若要將維度設為資料集結構中的頂層維度，請將參數設為「root」。 定義的維度會成為資料集的根可數維度。 例如，如果您使用的是網站，訪客維度是資料集的根可數維度。 </p> <p> <p>注意：雖然您的根可數維度不必與資料中的追蹤ID相關聯，但Adobe建議您設定資料集的根可數維度，以使用追蹤ID欄位(x-trackingid)作為其索引鍵。 因此，根可數的每個元素都與x-trackingid的唯一值相關聯，而每個元素的所有資料都會分組在一起。 如果您想要以不同方式設定資料集，請聯絡Adobe。 </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
@@ -70,6 +72,6 @@ ht-degree: 4%
 
 ![](assets/cfg_Transformation_Dim_Countable.png)
 
-此範例也說明可數維度的定義，使用從網站流量收集的事件資料，但有已定義的索引鍵參數。 「工作階段可數」維度以x-session-key欄位作為索引鍵。 （x-session-key欄位是[!DNL Sessionize]轉換的輸出，且每個工作階段的值都不重複。） 訪客維度（父項）的元素與x-session-key欄位的每個唯一組合，都是工作階段維度的元素。
+此範例也說明可數維度的定義，使用從網站流量收集的事件資料，但有已定義的索引鍵參數。 「工作階段可數」維度以x-session-key欄位作為索引鍵。 (x-session-key欄位是 [!DNL Sessionize] 轉換，且每個工作階段的值都不重複。) 訪客維度（父項）的元素與x-session-key欄位的每個唯一組合，都是工作階段維度的元素。
 
 ![](assets/cfg_Transformation_Dim_Countable2.png)

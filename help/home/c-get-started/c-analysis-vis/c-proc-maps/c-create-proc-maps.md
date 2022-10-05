@@ -3,7 +3,7 @@ description: 通過將條形圖、表和層次視圖中的元素拖放到空白�
 title: 建立程序圖
 uuid: dbcde637-0411-4296-99ca-5510e0285e4b
 exl-id: 2e417a8e-5b1c-4dce-9e4e-ac7ed044564c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 1%
@@ -12,9 +12,11 @@ ht-degree: 1%
 
 # 建立程序圖{#create-a-process-map}
 
+{{eol}}
+
 通過將條形圖、表和層次視圖中的元素拖放到空白映射上，可以建立2D和3D工藝圖。
 
-可以添加的元素必須是進程映射的基本維的元素。 只要映射使用相同的基本維，也可以將節點從一個進程映射拖放到另一個進程映射。 此外，可縮放或移動整個地圖以聚焦於特定節點，或將其變更為其他視覺效果類型。 請參閱[放大視覺效果](../../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530)。
+可以添加的元素必須是進程映射的基本維的元素。 只要映射使用相同的基本維，也可以將節點從一個進程映射拖放到另一個進程映射。 此外，可縮放或移動整個地圖以聚焦於特定節點，或將其變更為其他視覺效果類型。 請參閱 [放大視覺效果](../../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530).
 
 **使用表或條形圖向工藝圖添加元素**
 
@@ -32,16 +34,16 @@ ht-degree: 1%
 >
 >Adobe建議您從正在分析的階層的最高層級新增節點。
 
-1. 在與流程圖具有相同基本維的任何表或條形圖中，按一下右鍵某個元素或基本維的標籤，然後按一下&#x200B;**[!UICONTROL Hierarchy View]**。
+1. 在與流程圖具有相同基本維的任何表或條形圖中，按一下右鍵某個元素或基本維的標籤，然後按一下 **[!UICONTROL Hierarchy View]**.
 1. 按住Ctrl+Alt鍵，同時按一下並拖曳元素至程式圖。 在滑鼠到達地圖之前，滑鼠游標將顯示&quot;No&quot;。
 
    >[!NOTE]
    >
    >可以添加的元素必須是進程映射的基本維的元素。
 
-   將單一元素拖曳至程式圖會建立該元素的對應節點，但如果您選取多個元素（群組）或包含多個元素的資料夾，從階層拖曳會為該群組或資料夾建立單一節點。 例如，如果您正在處理網站資料，將名為[!DNL site.com/cgi-bin]的資料夾拖曳至地圖會建立名為[!DNL site.com/cgi-bin/*]的節點，該節點代表該資料夾的子項所有頁面和目錄。
+   將單一元素拖曳至程式圖會建立該元素的對應節點，但如果您選取多個元素（群組）或包含多個元素的資料夾，從階層拖曳會為該群組或資料夾建立單一節點。 例如，若您使用網站資料，請拖曳名為 [!DNL site.com/cgi-bin] 在地圖上會使節點稱為 [!DNL site.com/cgi-bin/*]，代表該資料夾之子項的所有頁面和目錄。
 
-如需頁面階層檢視的詳細資訊，請參閱[套用階層檢視](../../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff)。
+如需頁面階層檢視的詳細資訊，請參閱 [套用階層檢視](../../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff).
 
 **從其他進程映射向進程映射添加節點**
 

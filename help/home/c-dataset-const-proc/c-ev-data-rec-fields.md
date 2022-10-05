@@ -3,7 +3,7 @@ description: Data Workbench伺服器可處理以建立資料集之資料欄位�
 title: 事件資料記錄欄位
 uuid: b0232bfa-0a3b-4e3d-876e-6a15a3764eae
 exl-id: 35433b87-991a-4fb9-ba6a-3217e89eb769
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # 事件資料記錄欄位{#event-data-record-fields}
+
+{{eol}}
 
 Data Workbench伺服器可處理以建立資料集之資料欄位的相關資訊。
 
@@ -22,9 +24,9 @@ Data Workbench伺服器可處理以建立資料集之資料欄位的相關資訊
 
 用來建立資料集的事件資料位於稱為記錄來源的檔案中。 記錄來源中可用的資料稱為事件資料，因為每個資料記錄代表交易記錄或具有相關時間戳記之事件的單一例項。
 
-[!DNL Sensors]即時收集日誌源的事件資料。 由[!DNL Sensors]從HTTP和應用程式伺服器收集的事件資料會傳送至Data Workbench伺服器，這些伺服器會將資料轉換為壓縮的記錄檔([!DNL .vsl])檔案。 一般檔案、XML檔案或ODBC資料來源中的事件資料由Data Workbench伺服器讀取，該伺服器提供您定義的解碼器，以便從這些不同格式中擷取一般資料欄位集。
+日誌源的事件資料由 [!DNL Sensors]. 收集的事件資料 [!DNL Sensors] 從HTTP和應用程式伺服器傳送至Data Workbench伺服器，這些伺服器會將資料轉換為壓縮記錄( [!DNL .vsl])檔案。 一般檔案、XML檔案或ODBC資料來源中的事件資料由Data Workbench伺服器讀取，該伺服器提供您定義的解碼器，以便從這些不同格式中擷取一般資料欄位集。
 
-以下小節提供由[!DNL Sensors]收集或讀取並提供給Data Workbench伺服器使用的資料欄位（稱為事件資料記錄欄位或記錄項目欄位）的相關資訊。
+以下小節提供收集到的資料欄位（稱為事件資料記錄欄位或記錄項目欄位）的相關資訊 [!DNL Sensors] 或讀取並供data workbench伺服器使用。
 
 >[!NOTE]
 >
@@ -38,7 +40,7 @@ Data Workbench伺服器可處理以建立資料集之資料欄位的相關資訊
 
 ## 基線事件資料記錄欄位 {#section-a882ed7aa6af41eeb45a55bf8c1ca3d7}
 
-記錄檔([!DNL .vsl])檔案包含由[!DNL Sensors]從伺服器收集，並由Data Workbench伺服器在資料集建構程式中使用的事件資料欄位。 下表列出由[!DNL Sensor]記錄的典型事件資料記錄中的欄位：
+記錄( [!DNL .vsl])檔案包含從伺服器收集的事件資料欄位(由 [!DNL Sensors] 和供data workbench伺服器用於資料集建構程式。 下表列出典型事件資料記錄中的欄位，如 [!DNL Sensor]:
 
 <table id="table_98E135FE4EAF44D6ADEB3C6C1C0BF6A4">
  <thead>
@@ -50,7 +52,7 @@ Data Workbench伺服器可處理以建立資料集之資料欄位的相關資訊
  <tbody>
   <tr>
    <td colname="col1"> c-ip </td>
-   <td colname="col2"> <p>向伺服器發出的請求中包含的客戶端的IP地址。 </p> <p> 例如: 207.68.146.68 </p> </td>
+   <td colname="col2"> <p>向伺服器發出的請求中包含的客戶端的IP地址。 </p> <p> 範例：207.68.146.68 </p> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(cookie) </td>
@@ -58,7 +60,7 @@ Data Workbench伺服器可處理以建立資料集之資料欄位的相關資訊
   </tr>
   <tr>
    <td colname="col1"> cs(referrer) </td>
-   <td colname="col2"> <p>由用戶端隨請求傳送至伺服器的HTTP反向連結字串。 </p> <p> 範例：<span class="filepath"> https://www.mysite.net/cgi-bin/websearch?qry </span> </p> </td>
+   <td colname="col2"> <p>由用戶端隨請求傳送至伺服器的HTTP反向連結字串。 </p> <p> 範例： <span class="filepath"> https://www.mysite.net/cgi-bin/websearch?qry </span> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(user-agent) </td>
@@ -66,7 +68,7 @@ Data Workbench伺服器可處理以建立資料集之資料欄位的相關資訊
   </tr>
   <tr>
    <td colname="col1"> cs-method </td>
-   <td colname="col2"> <p>HTTP要求的方法類型。 </p> <p> 範例：GET </p> <p> 參考資料：<span class="filepath"> https://www.w3.org/TR/2000/NOTE-shoplogfileformat-20001115/#field_method </span> </p> </td>
+   <td colname="col2"> <p>HTTP要求的方法類型。 </p> <p> 範例：GET </p> <p> 參考資料： <span class="filepath"> https://www.w3.org/TR/2000/NOTE-shoplogfileformat-20001115/#field_method </span> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> cs-uri-query </td>
@@ -74,7 +76,7 @@ Data Workbench伺服器可處理以建立資料集之資料欄位的相關資訊
   </tr>
   <tr>
    <td colname="col1"> cs-uri-stem </td>
-   <td colname="col2"> <p>URI的幹部分（乾+查詢字串= URI）。 乾是伺服器上請求資源的實際路徑或邏輯路徑。 </p> <p> 範例：<span class="filepath"> /index.asp </span> </p> </td>
+   <td colname="col2"> <p>URI的幹部分（乾+查詢字串= URI）。 乾是伺服器上請求資源的實際路徑或邏輯路徑。 </p> <p> 範例： <span class="filepath"> /index.asp </span> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> sc(content-type) </td>
@@ -82,15 +84,15 @@ Data Workbench伺服器可處理以建立資料集之資料欄位的相關資訊
   </tr>
   <tr>
    <td colname="col1"> sc-bytes </td>
-   <td colname="col2"> <p>響應請求從伺服器發送到客戶端的資料位元組數 </p> <p> 例如: 4996 </p> </td>
+   <td colname="col2"> <p>響應請求從伺服器發送到客戶端的資料位元組數 </p> <p> 範例：4996 </p> </td>
   </tr>
   <tr>
    <td colname="col1"> sc-status </td>
-   <td colname="col2"> <p>伺服器返回給客戶端的狀態代碼。 </p> <p> 例如: 200 </p> <p> 參考資料：<span class="filepath"> https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html </span> </p> </td>
+   <td colname="col2"> <p>伺服器返回給客戶端的狀態代碼。 </p> <p> 範例：200 </p> <p> 參考資料： <span class="filepath"> https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html </span> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> s-dns </td>
-   <td colname="col2"> <p>所請求資源的主機的完全限定的域名或IP地址。 </p> <p> 範例：<span class="filepath"> www.adobe.com </span> </p> </td>
+   <td colname="col2"> <p>所請求資源的主機的完全限定的域名或IP地址。 </p> <p> 範例： <span class="filepath"> www.adobe.com </span> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> x實驗 </td>
@@ -98,11 +100,11 @@ Data Workbench伺服器可處理以建立資料集之資料欄位的相關資訊
   </tr>
   <tr>
    <td colname="col1"> x-timestamp </td>
-   <td colname="col2"> <p>伺服器收到請求的日期和時間(GMT)。 時間以1600年1月1日以來的100納秒數表示。 </p> <p> 範例：127710989320000000會是2005年9月13日星期二11:28:52.0000000的x-timestamp值。 </p> </td>
+   <td colname="col2"> <p>伺服器收到請求的日期和時間(GMT)。 時間以1600年1月1日以來的100納秒數表示。 </p> <p> 範例：127710989320000000為11的x-timestamp值:28:52.0000000 2005年9月13日星期二。 </p> </td>
   </tr>
   <tr>
    <td colname="col1"> x-trackingid </td>
-   <td colname="col2"> <p>由<span class="wintitle">感測器</span>設定、由客戶端向伺服器提供的、在永久Cookie中找到的唯一瀏覽器標識符的64位十六進位值。 </p> <p> 範例：42FDF66DE610CF36 </p> </td>
+   <td colname="col2"> <p>在永久性Cookie中找到的唯一瀏覽器識別碼的64位十六進位值，由 <span class="wintitle"> 感測器 </span> 由客戶端向伺服器提出請求。 </p> <p> 範例：42FDF66DE610CF36 </p> </td>
   </tr>
  </tbody>
 </table>
@@ -125,26 +127,26 @@ Data Workbench伺服器可處理以建立資料集之資料欄位的相關資訊
   </tr>
   <tr>
    <td colname="col1"> cs(referrer-domain) </td>
-   <td colname="col2"> <p>HTTP反向連結URI的域名或IP地址。 </p> <p> <p>注意： 此欄位為唯讀欄位。 </p> </p> </td>
+   <td colname="col2"> <p>HTTP反向連結URI的域名或IP地址。 </p> <p> <p>注意：此欄位為唯讀欄位。 </p> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(referrer-host) </td>
-   <td colname="col2"> <p>反向連結的整個主機名稱。 </p> <p> 範例：如果cs(referrer)為<span class="filepath"> https://my.domain.com/my/page </span>，則cs(referrer-host)為<span class="filepath"> my.domain.com </span>。 </p> </td>
+   <td colname="col2"> <p>反向連結的整個主機名稱。 </p> <p> 範例：如果cs(referrer)為 <span class="filepath"> https://my.domain.com/my/page </span>, cs(referrer-host)為 <span class="filepath"> my.domain.com </span>. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(referrer-query)(name) </td>
-   <td colname="col2"> <p>反向連結查詢字串的值。 </p> <p> <p>注意： 您無法使用cs(referrer)(name)欄位存取反向連結查詢字串值。 </p> </p> </td>
+   <td colname="col2"> <p>反向連結查詢字串的值。 </p> <p> <p>注意：您無法使用cs(referrer)(name)欄位存取反向連結查詢字串值。 </p> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> cs-uri </td>
-   <td colname="col2"> <p>完整的URI（stem +查詢字串=整個URI）。 </p> <p> 範例：<span class="filepath"> /shopping/checkout.html?product1=8Track&amp;product2=casette&amp;product3=cd </span> </p> </td>
+   <td colname="col2"> <p>完整的URI（stem +查詢字串=整個URI）。 </p> <p> 範例： <span class="filepath"> /shopping/checkout.html?product1=8Track&amp;product2=casette&amp;product3=cd </span> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> cs-uri-query(name) </td>
    <td colname="col2"> <p>與指定名稱相關聯的值。 如果指定名稱有多個值，此欄位會傳回這些值的最後一個。 </p> 範例：
     <ul id="ul_47BBB2E3076A46629BFCDB2A460F700B">
-     <li id="li_AC9BB29505A54AE4AFF49438530C9EA4"> 對於URI <span class="filepath"> /shopping/checkout.html?product1=8Track&amp;product2=casette&amp;product3=cd </span>,cs-uri-query(product3)將返回cd。 </li>
-     <li id="li_B036C1D0B25748E0A155DDC9B1B999CB"> 對於URI <span class="filepath"> /shopping/checkout.html?product1=8Track&amp;product1=casette </span>, <span class="wintitle"> cs-uri-query(product1)</span>將返回casette。 </li>
+     <li id="li_AC9BB29505A54AE4AFF49438530C9EA4"> URI <span class="filepath"> /shopping/checkout.html?product1=8Track&amp;product2=casette&amp;product3=cd </span>, cs-uri-query(product3)會傳回cd。 </li>
+     <li id="li_B036C1D0B25748E0A155DDC9B1B999CB"> URI <span class="filepath"> /shopping/checkout.html?product1=8Track&amp;product1=casette </span>, <span class="wintitle"> cs-uri-query(product1) </span> 會回卡塞特。 </li>
     </ul> <p> </p> </td>
   </tr>
   <tr>
@@ -157,23 +159,23 @@ Data Workbench伺服器可處理以建立資料集之資料欄位的相關資訊
   </tr>
   <tr>
    <td colname="col1"> 時間 </td>
-   <td colname="col2"> 格式為HH:MM:SS的x-timestamp。 </td>
+   <td colname="col2"> HH格式的x-timestamp:MM:SS。 </td>
   </tr>
   <tr>
    <td colname="col1"> x-local-timestring </td>
-   <td colname="col2"> <p>x-timestamp轉換為資料集<span class="filepath"> Transformation.cfg </span>檔案中指定的本機時區。 格式為YYYY-MM-DD HH:MM:SS.mm。 </p> <p> <p>注意： 您也可以在<span class="filepath"> Log Processing.cfg </span>檔案中定義時間轉換，例如x-local-timestring。 有關資訊，請參閱<a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md">日誌處理配置檔案</a>。 </p> </p> </td>
+   <td colname="col2"> <p>x-timestamp轉換為 <span class="filepath"> Transformation.cfg </span> 檔案。 格式為YYYY-MM-DD HH:MM:嗯。 </p> <p> <p>注意：您也可以在 <span class="filepath"> Log Processing.cfg </span> 檔案。 如需詳細資訊，請參閱 <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> 記錄處理組態檔 </a>. </p> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> x-log-source-id </td>
-   <td colname="col2"> <p>與特定日誌條目的日誌源對應的標識符。 要記錄的標識符，在定義<span class="wintitle">感測器</span>、日誌檔案或ODBC資料源時，必須在<span class="filepath"> Log Processing.cfg </span>檔案的<span class="wintitle"> Log Source ID </span>欄位中指定。 如需詳細資訊，請參閱<a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md">記錄處理組態檔</a>。 </p> <p> 範例：來自VSensor01。 </p> </td>
+   <td colname="col2"> <p>與特定日誌條目的日誌源對應的標識符。 若要記錄識別碼，您必須在 <span class="wintitle"> 日誌源ID </span> 欄位 <span class="filepath"> Log Processing.cfg </span> 定義檔案時 <span class="wintitle"> 感測器 </span>、日誌檔案或ODBC資料源。 如需詳細資訊，請參閱 <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> 記錄處理組態檔 </a>. </p> <p> 範例：來自VSensor01。 </p> </td>
   </tr>
   <tr>
    <td colname="col1"> x遮色片 </td>
-   <td colname="col2"> <span class="wintitle">感測器</span>資料源的掩碼模式（從<span class="filepath"> .vsl </span>檔案名派生）。 對於名稱為<span class="filepath"> YYYYYMMDD-SENSORID.VSL </span>格式的檔案，x-mask為SENSORID。 </td>
+   <td colname="col2"> 的遮色片圖案 <span class="wintitle"> 感測器 </span> 資料來源(衍生自 <span class="filepath"> .vsl </span> 檔案名)。 對於名稱為格式的檔案 <span class="filepath"> YYYYMMDD-SENSORID.VSL </span>, x-mask為SENSORID。 </td>
   </tr>
   <tr>
    <td colname="col1"> x-timestring </td>
-   <td colname="col2"> x-timestamp格式，格式為YYYY-MM-DD HH:MM:SS.mm。 </td>
+   <td colname="col2"> x-timestamp，格式為YYYY-MM-DD HH:MM:嗯。 </td>
   </tr>
   <tr>
    <td colname="col1"> x-unixtime </td>
@@ -182,4 +184,4 @@ Data Workbench伺服器可處理以建立資料集之資料欄位的相關資訊
  </tbody>
 </table>
 
-[!DNL Sensor]，在伺服器上使用時，可透過伺服器的API，從任何有效的HTTP要求或回應標題或可用的變數中收集事件資料的欄位。要收集此類資料欄位，必須在[!DNL txlogd.conf]配置檔案中為[!DNL Sensor]指定所需的標題欄位或變數。 如需詳細資訊，請參閱&#x200B;*Data Workbench[!DNL Sensor]指南*。
+[!DNL Sensor]，在伺服器上使用時，可透過伺服器的API，從任何有效的HTTP要求或回應標題或可用的變數中收集事件資料的欄位。 若要收集這類資料欄位，您必須在 [!DNL txlogd.conf]配置檔案 [!DNL Sensor]. 如需詳細資訊，請參閱 *Data Workbench [!DNL Sensor] 指南*.

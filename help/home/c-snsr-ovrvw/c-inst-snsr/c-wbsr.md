@@ -3,7 +3,7 @@ description: 安裝和配置在AIX 5.1或更新版本上運行的WebSphere 5.x�
 title: AIX 上的 WebSphere
 uuid: a5a3fd79-a7f0-4861-adca-8da3a185d0df
 exl-id: e560d265-dc84-4ff2-ac86-7a2ac5261451
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1645'
 ht-degree: 0%
@@ -12,15 +12,17 @@ ht-degree: 0%
 
 # AIX 上的 WebSphere{#websphere-on-aix}
 
+{{eol}}
+
 安裝和配置在AIX 5.1或更新版本上運行的WebSphere 5.x感測器的詳細說明。
 
-[!DNL Sensor]的程式檔案將打包在從Adobe下載站點獲取的安裝檔案中。 如果您尚未擁有特定Web伺服器的[!DNL Sensor]安裝檔案，請先下載該檔案(或從Adobe代表處獲取)，然後再開始執行以下過程。
+的程式檔案 [!DNL Sensor] 會封裝在您從Adobe下載網站取得的安裝檔案中。 如果您尚未擁有 [!DNL Sensor] 安裝檔案，請先下載(或從Adobe代表處取得)，然後再開始下列程式。
 
 >[!NOTE]
 >
->WebSphere伺服器的[!DNL Sensor]不支援受控實驗。 有關受控實驗的資訊，請參閱&#x200B;*Data Workbench受控實驗指南。*
+>此 [!DNL Sensor] 對於WebSphere伺服器，不支援受控實驗。 如需受控實驗的相關資訊，請參閱 *Data Workbench受控實驗指南。*
 
-## 安裝程式檔案{#section-86f69127278c41bc90b97b68bb40bc6e}
+## 安裝程式檔案 {#section-86f69127278c41bc90b97b68bb40bc6e}
 
 將Sensor的程式檔案解壓並安裝到伺服器電腦的過程。
 
@@ -99,7 +101,7 @@ ht-degree: 0%
 
 如果您想使用建議預設值以外的權限，請查看Sensor UNIX File Permissions（感測器UNIX檔案權限）中的資訊，以確保您了解這些檔案的使用方式。
 
-## 編輯感測器配置檔案{#section-283c8a92fa8841c1b6034e5f834ef4e7}
+## 編輯感測器配置檔案 {#section-283c8a92fa8841c1b6034e5f834ef4e7}
 
 txlogd.conf檔案包含Sensor的配置參數。
 
@@ -115,7 +117,7 @@ txlogd.conf檔案包含Sensor的配置參數。
 1. 在文字編輯器中開啟/etc/txlogd.conf檔案，並設定所需的參數以及任何需要的選用參數。
 1. 儲存並關閉檔案。
 
-## 啟動發射器並建立磁碟隊列{#section-63285a2328604f20a2cb31b3d5cb80e6}
+## 啟動發射器並建立磁碟隊列 {#section-63285a2328604f20a2cb31b3d5cb80e6}
 
 配置txlogd.conf檔案後建立磁碟隊列的過程。
 
@@ -138,14 +140,14 @@ txlogd.conf檔案包含Sensor的配置參數。
    1. 檢查分配給磁碟隊列的設備是否正常運行，並且有足夠的空間容納在QueueSize參數中指定的大小的檔案。
    1. 進行任何必要的更正，並重複此過程。
 
-## 將收集器添加到Web應用程式{#section-d17297b1193f4e3cb150fb41f754ef12}
+## 將收集器添加到Web應用程式 {#section-d17297b1193f4e3cb150fb41f754ef12}
 
 對於WebSphere伺服器，收集器在Servlet容器中作為篩選器操作。
 
 要將收集器添加到Web應用程式中，請將篩選器添加到Web應用程式的web.xml部署描述符中，然後重新啟動Web應用程式。
 
 1. 使用文本編輯器，開啟Sensor捕獲的Web伺服器的web.xml檔案。
-1. 將以下`<filter>`和`<filter-mapping>`元素添加到描述符檔案中。 如果您未在/etc目錄中安裝txlogd.conf，則需要在`<param-value>`元素中輸入此檔案的正確路徑。
+1. 新增下列項目 `<filter>` 和 `<filter-mapping>` 元素。 若您未在/etc目錄中安裝txlogd.conf，您必須在 `<param-value>` 元素。
 
    ```
    <filter>
@@ -173,7 +175,7 @@ txlogd.conf檔案包含Sensor的配置參數。
 
 1. 重新啟動Web應用程式。 收集器已載入應用程式，並將開始收集事件資料並將其寫入磁碟隊列。
 
-## 聲明收集器和共用對象檔案的位置{#section-e641f08999d34a648aaee2111b69ca25}
+## 聲明收集器和共用對象檔案的位置 {#section-e641f08999d34a648aaee2111b69ca25}
 
 編輯Websphere啟動指令碼以聲明J2EECollector.jar和libvisual_sciences.so檔案的位置的過程。
 
@@ -190,9 +192,9 @@ txlogd.conf檔案包含Sensor的配置參數。
    WAS_LIBPATH="$WAS_LIBPATH":/usr/local/visual_sciences
    ```
 
-1. 保存[!DNL setupCmdLine.sh]檔案。
+1. 儲存 [!DNL setupCmdLine.sh] 檔案。
 
-## 測試感測器{#section-07f2da5c4caa46bf9dd1cb4ae4b61af5}
+## 測試感測器 {#section-07f2da5c4caa46bf9dd1cb4ae4b61af5}
 
 啟動傳送器並確認其可成功連線至Insight Server並傳送事件資料至此程式。
 
@@ -214,7 +216,7 @@ txlogd.conf檔案包含Sensor的配置參數。
    * 在txtlogd.conf中正確設定ServerAddress和ServerPort參數。 如果您使用伺服器名稱指定了伺服器地址，請嘗試改用其數值IP地址。
    * CertName參數的值與目標Insight Server數位憑證上顯示的通用名稱完全相符。
 
-## 將發射器添加到系統啟動指令碼{#section-23bb905100d04f018af93873dd4d5f68}
+## 將傳輸器添加到系統啟動指令碼 {#section-23bb905100d04f018af93873dd4d5f68}
 
 確保在重新啟動Web伺服器電腦時自動載入的資訊。
 
@@ -226,7 +228,7 @@ txlogd.conf檔案包含Sensor的配置參數。
 
 此命令將發送器作為守護程式啟動。 發送器生成的操作和錯誤消息將寫入syslog。
 
-## 擷取其他資料{#section-d5ccf8ee50914a87938e0c17480757e6}
+## 擷取其他資料 {#section-d5ccf8ee50914a87938e0c17480757e6}
 
 所有平台的感測器都可以收集HTTP要求和回應標題中可用的任何資料。
 
@@ -240,7 +242,7 @@ J2EE平台的感測器提供了一種收集其他平台上不可用資料的機�
 
 當J2EE平台的感測器收到請求時，它調用匯入appendToLog函式的收集器類。 appendToLog函式會將appendToLog函式中指定的查詢字串參數附加到初始請求中。 這會導致初始請求的URI包含與正在捕獲的資料的名稱和值相對應的其他查詢字串名稱值對。 例如，當特定廣告版位或點進連結的值為20美分時，CPC=20會附加至初始請求。 Insight Server會將這些值處理至資料集中以進行分析。 此收集方法的另一個優點是，它可以收集其他資料，而不會建立額外的記錄項目，使用頁面標籤方法可能會建立這些項目。
 
-如需處理的詳細資訊，請參閱&#x200B;*資料集組態指南*。
+如需處理的詳細資訊，請參閱 *資料集組態指南*.
 
 1. 將以下代碼添加到要從中捕獲資料的.jsp頁的頂部：
 

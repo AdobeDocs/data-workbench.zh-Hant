@@ -3,7 +3,7 @@ description: 行銷您的網站可能涉及在第三方網站上以影像或其�
 title: 測量廣告曝光次數
 uuid: ca2bd6bf-4f49-406c-b47a-18d6abfb48a4
 exl-id: 77cd816e-63a4-4080-ac65-0661e1de4ec0
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 4%
@@ -12,11 +12,13 @@ ht-degree: 4%
 
 # 測量廣告曝光次數{#measuring-advertisement-impression}
 
+{{eol}}
+
 行銷您的網站可能涉及在第三方網站上以影像或其他多媒體檔案（從您的網站伺服器提供）的形式放置廣告。
 
 在這種情況下，您可能會想要測量廣告在瀏覽器上的曝光次數，以及後續的點進次數（如果有的話），以測量您網站上廣告的目標URL。
 
-對於以影像形式的廣告，將[!DNL Log=1]附加到查詢字串會導致影像請求，從而導致廣告曝光，由[!DNL Sensor]用於分析目的捕獲。
+用於以影像形式的廣告，附加 [!DNL Log=1] 至查詢字串會產生影像要求，進而產生廣告曝光，由 [!DNL Sensor] 供分析之用。
 
 ```
 <!—REFERENCE IMPRESSION TAG->
@@ -30,7 +32,7 @@ ht-degree: 4%
 | v_ica= | 表示曝光促銷活動資產的值 | v_ica=」72890ab」 |
 | v_icr= | 表示曝光促銷活動反向連結的值 | v_icr=」https://money.cnn.com/markets/ |
 
-除了將[!DNL Log=1]附加至影像要求之外，還應將識別碼新增至從廣告導向至網站內目標頁面的URL，以追蹤導致點進的廣告，並追蹤點進回該廣告的特定促銷活動。
+除了附加 [!DNL Log=1] 在影像要求中，應將識別碼新增至從廣告導向至網站內目標頁面的URL，以追蹤導向點進的廣告，並追蹤該廣告的點進回特定促銷活動。
 
 ```
 <a href=”www.mysite.com/path/to/landingpage?Log=1&v_c=CAMPAIGN&v_ca=72890ab&v_cr=https://money.cnn.com/markets/”>

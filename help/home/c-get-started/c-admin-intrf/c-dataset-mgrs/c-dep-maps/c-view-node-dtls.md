@@ -3,7 +3,7 @@ description: 關於檢視設定檔元件之識別資訊的資訊。
 title: 檢視節點詳細資訊
 uuid: 2016a650-b021-4295-8313-d6287578ed10
 exl-id: f8ce7741-8ba2-484d-ac35-5c286b65f098
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # 檢視節點詳細資訊{#view-node-details}
+
+{{eol}}
 
 關於檢視設定檔元件之識別資訊的資訊。
 
@@ -36,7 +38,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->只有在為相依性映射啟用[!DNL Show Performance Data]選項時，才會顯示轉換的效能資訊。 如需詳細資訊，請參閱[顯示效能資料](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb)。
+>轉換的效能資訊只有在 [!DNL Show Performance Data] 相依性對應已啟用選項。 如需詳細資訊，請參閱 [顯示效能資料](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
 
 **延伸維度**
 
@@ -46,7 +48,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->只有在對相依性映射啟用[!DNL Show Performance Data]選項時，才會顯示擴展維的效能資訊。 如需詳細資訊，請參閱[顯示效能資料](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb)。
+>只有在 [!DNL Show Performance Data] 相依性對應已啟用選項。 如需詳細資訊，請參閱 [顯示效能資料](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
 
 **量度**
 
@@ -80,4 +82,4 @@ ht-degree: 4%
 
 **查看配置檔案元件的輸入或輸出**
 
-* 按一下右鍵所需節點，然後按一下&#x200B;**[!UICONTROL Inputs]**&#x200B;或&#x200B;**[!UICONTROL Outputs]**。 輸入或輸出的清單隨即顯示。
+* 以滑鼠右鍵按一下所需的節點，然後按一下 **[!UICONTROL Inputs]** 或 **[!UICONTROL Outputs]**. 輸入或輸出的清單隨即顯示。

@@ -3,7 +3,7 @@ description: 在控制面板畫布中，您可輕鬆移動和重新排列視覺�
 title: 移動視覺效果
 uuid: 2a2e0b31-79e9-450b-89b6-5654758176f6
 exl-id: 3ee09209-081a-4f74-8c5c-29e9c04d661c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # 移動視覺效果{#moving-visualizations}
+
+{{eol}}
 
 在控制面板畫布中，您可輕鬆移動和重新排列視覺效果。
 

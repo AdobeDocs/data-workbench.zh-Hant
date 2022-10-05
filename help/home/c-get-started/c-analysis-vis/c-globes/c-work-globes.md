@@ -3,7 +3,7 @@ description: 當您將滑鼠移至地圖上時，與指標位置的地理位置�
 title: 使用地球
 uuid: 8aa3ad86-8129-47f6-8af9-d645ff9c566b
 exl-id: 2dc410fd-e452-4d03-88b9-fe1027b54e9c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # 使用地球{#working-with-globes}
+
+{{eol}}
 
 當您將滑鼠移至地圖上時，與指標位置的地理位置對應的任何可用資料都會顯示在視覺效果的右上角。
 
@@ -38,4 +40,4 @@ ht-degree: 2%
 
 您可以根據給定一天時間的太陽位置開啟或關閉地球上的照明。 時間由Data Workbench伺服器設定。
 
-* 在視覺效果內按一下滑鼠右鍵，然後按一下&#x200B;**[!UICONTROL Toggle Lighting]**。 菜單項左側的X表示已啟用照明。
+* 在視覺效果中按一下滑鼠右鍵，然後按一下 **[!UICONTROL Toggle Lighting]**. 菜單項左側的X表示已啟用照明。

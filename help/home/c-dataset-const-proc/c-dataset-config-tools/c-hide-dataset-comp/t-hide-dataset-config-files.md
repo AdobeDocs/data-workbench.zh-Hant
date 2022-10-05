@@ -3,7 +3,7 @@ description: 如果您不想從內部或其他繼承的配置檔案繼承配置�
 title: 隱藏資料集組態檔
 uuid: eb33cf54-e067-4af2-a10e-7ffe43910e4f
 exl-id: 327847d1-421a-4ed1-9a5f-2491765a34bd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 2%
@@ -12,17 +12,19 @@ ht-degree: 2%
 
 # 隱藏資料集組態檔{#hiding-dataset-configuration-files}
 
+{{eol}}
+
 如果您不想從內部或其他繼承的配置檔案繼承配置檔案（即，您希望在資料集構建期間忽略檔案中的說明），但不想修改檔案，則可以建立同名的空（零位元組）檔案，並將檔案儲存在另一個配置檔案中。
 
 **若要將資料集組態檔設為零位元組**
 
-1. 在[!DNL Profile Manager]中，開啟必要的資料夾和子資料夾，以找到要零位元組的檔案。
-1. 按一下右鍵檔案名稱旁的複選標籤，然後按一下&#x200B;**[!UICONTROL Make Local]**。
+1. 在 [!DNL Profile Manager]，請開啟必要的資料夾和子資料夾，以找到您要零位元組的檔案。
+1. 以滑鼠右鍵按一下檔案名稱旁的核取記號，然後按一下 **[!UICONTROL Make Local]**.
 1. 在文本編輯器（如記事本）中開啟本地檔案，並刪除其內容。
 1. 儲存並關閉檔案。
-1. 在[!DNL Profile Manager]中，將零位元組檔案保存到原始檔案所在的配置檔案的右側。 （您希望零位元組檔案優先於原始檔案。）
+1. 在 [!DNL Profile Manager]，將零位元組檔案保存到原始檔案所在配置檔案的右側。 （您希望零位元組檔案優先於原始檔案。）
 
-   在[!DNL Profile Manager]中，欄中的連字型大小(-)（而非勾號）可識別零位元組檔案，如下列範例所示。
+   在 [!DNL Profile Manager]，欄中會加上連字型大小(-)（而非勾號），以識別零位元組檔案，如下列範例所示。
 
    ![](assets/vis_ProfileManager_ZeroByteFile.png)
 
@@ -32,4 +34,4 @@ ht-degree: 2%
 >
 >如果您以零位元組為組態，定義視覺效果或量度定義中使用的延伸維度，Data Workbench會分別針對該視覺效果或量度產生錯誤。
 
-您也可以使用零位元組檔案將量度、維度或篩選器移至設定檔中的其他位置，或隱藏功能表項目。 如需詳細資訊，請參閱&#x200B;*Data Workbench使用手冊*。
+您也可以使用零位元組檔案將量度、維度或篩選器移至設定檔中的其他位置，或隱藏功能表項目。 如需詳細資訊，請參閱 *Data Workbench使用手冊*.

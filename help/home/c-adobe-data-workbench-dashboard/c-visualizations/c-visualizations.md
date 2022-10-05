@@ -3,7 +3,7 @@ description: 視覺效果是新增至控制面板畫布的元素，且設定為�
 title: 視覺效果
 uuid: 1e15de30-7761-422a-a836-7a1b49b58daf
 exl-id: 7e8b23cd-5e95-4cd5-b07e-3aa53f26fac7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # 視覺效果{#visualizations}
+
+{{eol}}
 
 視覺效果是新增至控制面板畫布的元素，且設定為顯示各種量度和維度型資料。
 
@@ -31,7 +33,7 @@ ht-degree: 3%
 * 散布圖
 * RTF
 
-## 可視化用戶介面{#section-54a73865f00742268340cf9123d6c590}
+## 視覺效果使用者介面 {#section-54a73865f00742268340cf9123d6c590}
 
 視覺效果的標題部分包含視覺效果標題和視覺效果工具，視視覺效果的類型和狀態而異。 視覺效果的內文包含內容，且取決於所顯示視覺效果的類型和設定。 視覺效果工具只有在滑鼠進入視覺效果視窗時才會顯示。 否則會隱藏。
 

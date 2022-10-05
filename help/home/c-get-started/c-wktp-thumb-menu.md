@@ -3,7 +3,7 @@ description: 如何從操作台匯出、複製和建立書籤。
 title: 使用「操作台」縮圖功能表
 uuid: bada2260-3ae7-4fb6-938a-40b7acb1ffa7
 exl-id: 2220051d-5c53-48ed-8e13-62883819f22a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 3%
@@ -12,21 +12,23 @@ ht-degree: 3%
 
 # 使用「操作台」縮圖功能表{#using-the-worktop-thumbnail-menu}
 
+{{eol}}
+
 如何從操作台匯出、複製和建立書籤。
 
 以滑鼠右鍵按一下工作區，即可從操作台匯出、複製和建立書籤功能。
 
 ![](assets/thumbnail_menu.png)
 
-## 介面說明{#section-fd027dd94b7d4cb6b933d70c08ccd3e2}
+## 介面說明 {#section-fd027dd94b7d4cb6b933d70c08ccd3e2}
 
-[!DNL Worktop]縮圖功能表中提供下列元素：
+下列元素適用於 [!DNL Worktop] 縮圖功能表：
 
 **伺服器工作區：** *名稱*
 
 僅對未編輯的伺服器工作區顯示。 將命名的工作區識別為與儲存在伺服器上的工作區相同。
 
-**日期：** *日期和時間*
+**日期：** *日期與時間*
 
 上次開啟工作區的日期和時間。
 
@@ -42,8 +44,8 @@ ht-degree: 3%
 
 僅當聯機工作時才顯示。 繼續工作時，使所選工作區中的查詢在後台運行。 選取後，縮圖會顯示下列資訊，指出查詢的進度：
 
-* 工作：*n%* — 指出查詢正在處理，且處理完成的百分比。
-* ** nMB查詢載入 — 查詢結果的總大小。查詢負載與Data Workbench伺服器的記憶體總負載成比例，但不直接相關。 建議為10 MB或更高的查詢負載可能會對系統造成壓力。 列出的查詢載入沒有考慮群集。
+* 工作： *n%*  — 指出查詢正在處理中，且處理完成的百分比。
+* *n* MB查詢載入 — 查詢結果的總大小。 查詢負載與Data Workbench伺服器的記憶體總負載成比例，但不直接相關。 建議為10 MB或更高的查詢負載可能會對系統造成壓力。 列出的查詢載入沒有考慮群集。
 
    >[!NOTE]
    >
@@ -57,9 +59,9 @@ ht-degree: 3%
 
 匯出至Excel範本(.xltx)。
 
-**Copy**
+**副本**
 
-複製工作區。 有關貼上複製的工作區的詳細資訊，請參閱[複製和貼上現有工作區](../../home/c-get-started/c-work-worksp/c-create-worksp.md#section-f91ae89b845640c9a4a52820a6110e65)。
+複製工作區。 如需貼上複製工作區的詳細資訊，請參閱 [複製和貼上現有工作區](../../home/c-get-started/c-work-worksp/c-create-worksp.md#section-f91ae89b845640c9a4a52820a6110e65).
 
 **還原到伺服器版本**
 
@@ -67,14 +69,14 @@ ht-degree: 3%
 
 **刪除**
 
-僅對用戶工作區顯示。 刪除僅存在於本地電腦上的用戶工作區。 有關從連接的Data Workbench伺服器刪除工作區的資訊，請參閱[從工作配置檔案刪除檔案](../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-del-files-wkg-prof.md#task-1e29c25e6c824cc9b51cb651e835856b)。
+僅對用戶工作區顯示。 刪除僅存在於本地電腦上的用戶工作區。 有關從連接的Data Workbench伺服器刪除工作區的資訊，請參見 [從工作設定檔刪除檔案](../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-del-files-wkg-prof.md#task-1e29c25e6c824cc9b51cb651e835856b).
 
 **保存到伺服器**
 
-只會針對伺服器工作區和使用者工作區的本機版本顯示，且僅適用於具有適當權限的使用者。 將工作區的本地副本保存到伺服器。 預設情況下，工作區將保存到相應的工作`<profile name>\Workspaces\<tab name>`資料夾。
+只會針對伺服器工作區和使用者工作區的本機版本顯示，且僅適用於具有適當權限的使用者。 將工作區的本地副本保存到伺服器。 預設情況下，工作區將保存到相應的工作狀態 `<profile name>\Workspaces\<tab name>` 檔案夾。
 
 **書籤**
 
 將工作區加入書籤，以便稍後快速擷取。
 
-書籤圖示![](assets/bookmark_icon.png)會出現在操作台的工作區上方，而工作區的名稱會顯示在書籤面板中。![](assets/bookmark_worktop.png)
+書籤圖示 ![](assets/bookmark_icon.png) 工作區的上方會顯示，而工作區的名稱會顯示在「書籤」面板中。 ![](assets/bookmark_worktop.png)

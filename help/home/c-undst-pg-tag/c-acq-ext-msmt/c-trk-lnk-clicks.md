@@ -3,7 +3,7 @@ description: 透過使用參考頁面標籤來加速收集連結點按次數的�
 title: 追蹤連結點按次數
 uuid: e4c492d2-9c90-4ed7-b997-6c50bdf98f93
 exl-id: 0cb743e6-5c6e-4f80-bc77-83d1e706c92b
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 3%
@@ -12,13 +12,15 @@ ht-degree: 3%
 
 # 追蹤連結點按次數{#tracking-link-clicks}
 
+{{eol}}
+
 透過使用參考頁面標籤來加速收集連結點按次數的步驟。
 
-透過[!DNL Reference Page Tag]的部署，可收集表示訪客在瀏覽特定頁面時所點按之連結（或href值）的測量資料。 通常，此集合不涉及將其他連結識別碼實施至您的HTML頁面。
+透過部署 [!DNL Reference Page Tag]，則可收集表示訪客瀏覽特定頁面時點按之連結（或href值）的測量資料。 通常，此集合不涉及將其他連結識別碼實施至您的HTML頁面。
 
-若要透過使用[!DNL Reference Page Tag]來加速收集連結點按次數，請完成下列步驟：
+若要利用 [!DNL Reference Page Tag]，請完成下列步驟：
 
-1. 將以下代碼複製到名為[!DNL zig.js]的現有檔案中：
+1. 將下列程式碼複製到名為 [!DNL zig.js]:
 
    ```
    //REFERENCE LINK AND FORM CLICK PAGE TAG
@@ -77,12 +79,12 @@ ht-degree: 3%
    //END FORM CLICK CAPTURE PAGE TAG
    ```
 
-1. 將名為[!DNL zag2.gif]的1像素影像檔案建立或放置到Web伺服器上的目錄。
-1. 修改[!DNL lc.src]變數，以參考參考[!DNL zag2.gif]檔案的網站適當網域。
+1. 建立或放置1個像素的影像檔案，命名為 [!DNL zag2.gif] 進入網路伺服器上的目錄。
+1. 修改 [!DNL lc.src] 變數來參照您網站中，用來 [!DNL zag2.gif]檔案時，才會考量此變數。
 
-1. 確保為[!DNL zag.gif]和[!DNL zig.js]檔案建立適當的快取控制標頭。
+1. 確保為 [!DNL zag.gif] 和 [!DNL zig.js] 檔案。
 
-1. 在您要從中收集連結點按值的HTML檔案中，必須修改[!DNL Reference Page Tag Execution Call]以通知[!DNL Page Tag Execution Script]以擷取該頁面的連結點按。 若要這麼做，請將vlc變數值變更為「1」，如下列程式碼範例中強調顯示：
+1. 在您要從收集連結點擊值的HTML檔案中， [!DNL Reference Page Tag Execution Call] 必須修改以通知 [!DNL Page Tag Execution Script] 來擷取該頁面的連結點按次數。 若要這麼做，請將vlc變數值變更為「1」，如下列程式碼範例中強調顯示：
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG-->

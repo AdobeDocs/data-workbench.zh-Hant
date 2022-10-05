@@ -3,7 +3,7 @@ description: 設定檔篩選器會限制資料集中可用資料的範圍。
 title: 內建設定檔篩選器
 uuid: d6854d2c-4643-476e-8a44-f188e18cb115
 exl-id: bb167487-415d-44a8-9a0a-9a76d90ba5c0
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # 內建設定檔篩選器{#built-in-profile-filters}
+
+{{eol}}
 
 設定檔篩選器會限制資料集中可用資料的範圍。
 
@@ -51,4 +53,4 @@ entity = derived_filter:
 
 依預設，工作區將「中斷工作階段」篩選器套用至其選取範圍及其基準，而且您可以在工作區中按一下滑鼠右鍵，然後按一下「資料>中斷工作階段篩選器」來切換。
 
-在篩選器運算式中，即使未為目前工作區啟用「中斷工作階段篩選器」，也可將「中斷工作階段篩選器」引用為「中斷工作階段篩選器」。 如需詳細資訊，請參閱[篩選運算式](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers) 。
+在篩選器運算式中，即使未為目前工作區啟用「中斷工作階段篩選器」，也可將「中斷工作階段篩選器」引用為「中斷工作階段篩選器」。 請參閱 [篩選器運算式](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers) 以取得其他資訊。

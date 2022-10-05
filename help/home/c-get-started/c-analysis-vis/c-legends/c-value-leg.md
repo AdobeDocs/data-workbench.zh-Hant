@@ -3,7 +3,7 @@ description: 值圖例顯示定義的值事件。
 title: 值圖例
 uuid: 7779f442-2f45-4bf8-a62a-585aaceaeb3a
 exl-id: b28ba604-93ef-4081-ae55-937fb537c068
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 2%
@@ -12,11 +12,13 @@ ht-degree: 2%
 
 # 值圖例{#value-legends}
 
+{{eol}}
+
 值圖例顯示定義的值事件。
 
-值圖例僅在HBX和[!DNL Site]應用程式中配置，但可為其他應用程式配置。 如需詳細資訊，請連絡Adobe諮詢服務。
+值圖例僅在HBX和 [!DNL Site] 應用程式，但可針對其他應用程式進行配置。 如需詳細資訊，請連絡Adobe諮詢服務。
 
-在HBX和[!DNL Site]中，值事件定義為產生業務值的工作階段。 例如，與特定頁面檢視相關聯的事件資料記錄（例如，訂單感謝頁面或應用程式完成頁面）可能代表對業務組織的價值事件。
+在HBX和 [!DNL Site]，值事件定義為產生業務值的工作階段。 例如，與特定頁面檢視相關聯的事件資料記錄（例如，訂單感謝頁面或應用程式完成頁面）可能代表對業務組織的價值事件。
 
 使用值事件，您可以測量及追蹤網站產生的值量。 您可以評估每項活動的業務價值（以美元為單位），並回答以下問題：
 
@@ -35,7 +37,7 @@ ht-degree: 2%
 
 您可以輕鬆將訪客在網站中執行的任何動作定義為值事件：張貼客戶服務請求、完成應用程式、檢視內容，或完成購買。 每個值事件對應於訪問網站上特定頁面或一組頁面的用戶，並且與以美元表示的業務值相關聯。 例如，您可能假設每個到達「感謝您購買」頁面的使用者平均會產生$20的貢獻邊際。 您可以為值為$20的頁面定義值事件。
 
-## 定義新值事件{#section-2ea4d168336e4d2e98b22b636ed43853}
+## 定義新值事件 {#section-2ea4d168336e4d2e98b22b636ed43853}
 
 **在HBX或[!DNL Site]**
 
@@ -57,7 +59,7 @@ ht-degree: 2%
 
 1. 在值圖例中，為發生事件的每個工作階段指派業務值：
 
-   1. 在[!DNL Value per Event]欄中，按一下與您已新增為值事件之頁面相對應的儲存格。
+   1. 在 [!DNL Value per Event] 欄中，按一下與您新增作為值事件之頁面相對應的儲存格。
    1. 鍵入要為事件值分配的金額，然後按Enter鍵。
 
    ![](assets/lgd_ValueLegend_Value.png)
@@ -66,16 +68,16 @@ ht-degree: 2%
 
 定義至少一個值事件後，「值區段」維度便可供使用。 此維度代表訪客在所有工作階段中產生的總值。
 
-## 刪除值事件{#section-25cd90a859384ca183c0fc0998f888cf}
+## 移除值事件 {#section-25cd90a859384ca183c0fc0998f888cf}
 
-* 以滑鼠右鍵按一下所需的事件，然後按一下&#x200B;**[!UICONTROL Delete Event]**。
+* 以滑鼠右鍵按一下所需的事件，然後按一下 **[!UICONTROL Delete Event]**.
 
    ![](assets/lgd_ValueLegend_deleteEvent.png)
 
 >[!NOTE]
 >
->Data Workbench伺服器會計算您所使用之設定檔可存取之整組資料的量度。 依預設，[!DNL Data Workbench Server]會計算分析資料集中所有資料的值、值事件、平均值和轉換等量度，即使資料不是來自相同的邏輯來源亦然。
+>Data Workbench伺服器會計算您所使用之設定檔可存取之整組資料的量度。 依預設， [!DNL Data Workbench Server] 會計算分析資料集中所有資料的值、值事件、平均值和轉換等量度，即使資料並非來自相同的邏輯來源亦然。
 
 ## 匯出至 Microsoft Excel {#section-feaa7a8eb8124fafbc74169bebaed6d8}
 
-有關導出窗口的資訊，請參閱[導出窗口資料](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)。
+有關導出窗口的資訊，請參見 [導出窗口資料](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).

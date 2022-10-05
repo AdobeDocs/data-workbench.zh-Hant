@@ -1,9 +1,9 @@
 ---
-description: 本節說明不同類型的Dimension，以及如何在DWB中設定它們。
+description: 本節說明不同類型的Dimension，以及如何在DWB中設定。
 title: 維度設定
 uuid: 5b40cb43-7790-4b87-a0bb-be395a420157
 exl-id: 04afd773-e938-49f7-83c9-1d706a6dc525
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 4%
@@ -12,7 +12,9 @@ ht-degree: 4%
 
 # 維度設定{#dimension-setup}
 
-本節說明不同類型的Dimension，以及如何在DWB中設定它們。
+{{eol}}
+
+本節說明不同類型的Dimension，以及如何在DWB中設定。
 
 ## 什麼是Dimension {#section-dac631943df24706827cedc6f0641543}
 
@@ -20,7 +22,7 @@ ht-degree: 4%
 
 最佳實務：資料結構中的Dimension可以提供任何名稱。 本課程中使用和說明的Dimension名稱被視為最佳實務。 Dimension的名稱可能不同。 當您接觸到其他資料集時，就會開始看到資料集的差異。 請務必了解維度的用途，而非其名稱。 例如，無論名稱是「訪客」、「客戶」、「人員」、「消費者」或「使用者」，請務必了解這些辭彙通常用來指稱用於收集單一人員相關資訊的最高層級可數維度。
 
-如需完整資訊，請參閱[資料集設定](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html)指南。
+如需完整資訊，請參閱 [資料集組態](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html) 指南。
 
 ## DWB中的Dimension類型 {#section-a4fbb7bf2bde44528ac0f94a96465862}
 
@@ -69,7 +71,7 @@ Data Workbench中有兩種維度類型：延伸Dimension和衍生Dimension。
 **4)數值Dimension**
 
 數值維度是具有數值的簡單維度類型。 數值維度的建立通常用於量度。 數值維度的範例包括「收入」、「訂購」和「件數」。 在上述範例中，「客戶訂單」是數值維度。
-**5)非正規** 維度非正規維度是指與父項可數維度間具有一對一關係的維度。非正規維度通常與身分識別資料等基數較高（許多不重複元素）的維度搭配使用。 例如，訪客只能有一個使用者ID，而使用者ID只能屬於一個訪客。 因此，這是一對一關係，可以是非正規維度。
+**5)非正規Dimension** 非正規維度是與父項可計數維度具有一對一關係的維度。 非正規維度通常與身分識別資料等基數較高（許多不重複元素）的維度搭配使用。 例如，訪客只能有一個使用者ID，而使用者ID只能屬於一個訪客。 因此，這是一對一關係，可以是非正規維度。
 
 例如，「Geometrixx網頁使用者ID」是客戶層級的非正規維度。 由於為非正規行為，因此與其父維度間具有一對一關係，這表示每個Web使用者ID都有一個客戶，而每個客戶只有一個Web使用者ID。 因此，「Geometrixx」量度對於Web使用者ID的每個元素只能是「1」。
 
@@ -79,7 +81,7 @@ Data Workbench中有兩種維度類型：延伸Dimension和衍生Dimension。
 
 >[!NOTE]
 >
->用於顯示格式的%逸出與標準C庫&#x200B;*strftime*&#x200B;相同。
+>用於顯示格式的%逸出與標準C庫相同 *strftime*.
 
 ## 定義延伸維度 {#section-38ee124ec74b43fb95f13194a9582b97}
 
@@ -87,7 +89,7 @@ Data Workbench中有兩種維度類型：延伸Dimension和衍生Dimension。
 
 1. 使用資料集設定檔時，請開啟「設定檔管理員」 ，然後按一下「資料集」以顯示其內容。
 1. 開啟Transformation.cfg檔案或要在其中定義擴展維的Transformation Dataset Include檔案。
-1. 按一下右鍵「轉換」 ，然後按一下「新增」 > `<Extended dimension type>`。
+1. 按一下右鍵「轉換」 ，然後按一下「新增」 > `<Extended dimension type>`.
 1. 輸入延伸維度的適當資訊。 有關轉換類型的說明及其參數的資訊，請參閱以下各節：
 
    * [可數維度](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/extended-dimensions/extended-dimensions-types/c-count-dim.html)
@@ -97,7 +99,7 @@ Data Workbench中有兩種維度類型：延伸Dimension和衍生Dimension。
    * [非正規維度](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/extended-dimensions/extended-dimensions-types/c-denormal-dim.html)
    * [時間維度](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/extended-dimensions/extended-dimensions-types/c-time-dim.html)
 
-1. 對於您定義的任何擴展維，可以在「注釋」參數中添加一個或多個注釋行，以進一步說明該維或添加有關其使用的注釋。 要添加註釋，請按一下右鍵&#x200B;*注釋*&#x200B;標籤，然後按一下*添加新的>注釋行*。
+1. 對於您定義的任何擴展維，可以在「注釋」參數中添加一個或多個注釋行，以進一步說明該維或添加有關其使用的注釋。 若要新增註解，請以滑鼠右鍵按一下 *註解* 標籤，然後按一下*「新增>注釋行」*。
 
 1. 在設定檔案中定義延伸維度後，請將檔案儲存在本機，然後儲存至DWB伺服器上的資料集設定檔。
 

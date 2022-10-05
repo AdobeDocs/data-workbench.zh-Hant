@@ -3,7 +3,7 @@ description: 顯示如何設定標題、設定檔、Dimension、量度、篩選�
 title: 設定視覺效果
 uuid: aca77188-8f28-4554-8913-412b252f688c
 exl-id: 153adf94-5689-4917-9d71-625caef49903
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # 設定視覺效果{#configuring-visualizations}
+
+{{eol}}
 
 顯示如何設定標題、設定檔、Dimension、量度、篩選、顯示排名最前、排序依據和時段。
 
@@ -20,9 +22,9 @@ ht-degree: 1%
 >
 >視顯示的視覺效果類型而定，設定選項稍有不同。
 
-## 視覺效果標題{#section-0414844283d745ae912e85f8ea14a51d}
+## 視覺效果標題 {#section-0414844283d745ae912e85f8ea14a51d}
 
-此欄位可讓您自訂視覺效果頂端顯示的標題。 依預設，標題會設為&#x200B;**[!UICONTROL Automatic Title]**，這會自動為視覺效果視窗產生標題。 清除&#x200B;**[!UICONTROL Automatic Title]**&#x200B;按鈕後，即可在此欄位中放置任何標題。 （此欄位會套用至所有視覺效果。）
+此欄位可讓您自訂視覺效果頂端顯示的標題。 依預設，標題會設為 **[!UICONTROL Automatic Title]**，會自動產生視覺效果視窗的標題。 清除 **[!UICONTROL Automatic Title]** 按鈕，您可以在此欄位中放置任何標題。 （此欄位會套用至所有視覺效果。）
 
 ![](assets/title.png)
 
@@ -46,7 +48,7 @@ Dimension是類似資料類型的類別。 例如，「星期」維度由下列�
 
 ![](assets/dimension.png)
 
-## 量度{#section-7d46f2f1b9fe4e539b5eb0a0dc6e5ad3}
+## 量度 {#section-7d46f2f1b9fe4e539b5eb0a0dc6e5ad3}
 
 可讓您選取要視覺化的量度。 量度是量化物件，由某些可量化的運算式定義。 例如，每個工作階段的頁面檢視次數是從頁面檢視次數除以工作階段次數的運算式衍生而來。 量度可回答「多少？」的問題
 
@@ -60,11 +62,11 @@ Dimension是類似資料類型的類別。 例如，「星期」維度由下列�
 
 清單會從「設定檔」欄位中選取之設定檔的可用量度清單中填入。
 
-按一下所需的量度，然後按一下&#x200B;**[!UICONTROL Select]**。 （此欄位不適用於RTF視覺效果。）
+按一下所需的量度，然後按一下 **[!UICONTROL Select]**. （此欄位不適用於RTF視覺效果。）
 
 ## 篩選器 {#section-f8619ae2f8e54735a2c1b0fbb8bb1281}
 
-選取您要套用至視覺效果的篩選器。 篩選器選擇窗口允許您從篩選器清單中選擇多個篩選器。 清單會從「設定檔」欄位中選取之設定檔中可用的篩選器清單填入。 按一下所需的篩選器，然後按一下&#x200B;**[!UICONTROL Select]**。
+選取您要套用至視覺效果的篩選器。 篩選器選擇窗口允許您從篩選器清單中選擇多個篩選器。 清單會從「設定檔」欄位中選取之設定檔中可用的篩選器清單填入。 按一下所需的篩選，然後按一下 **[!UICONTROL Select]**.
 
 >[!NOTE]
 >
@@ -72,17 +74,17 @@ Dimension是類似資料類型的類別。 例如，「星期」維度由下列�
 
 ![](assets/filter.png)
 
-## 顯示頂部{#section-7ce71cb0fa6446998b710b427e68b133}
+## 顯示頂端 {#section-7ce71cb0fa6446998b710b427e68b133}
 
 控制面板中的視覺效果並非用來顯示資料整體。 反之，它們可讓您指定要顯示在視覺效果上的維度記錄數。 這會根據下方提供的排序依據值，顯示排名最前的維度數量。 （此欄位不適用於表格、量度圖例和RTF視覺效果。）
 
 ![](assets/display_top.png)
 
-## 排序依據: {#section-f686249e20444359bff87c00cc2ba29f}
+## 排序依據:  {#section-f686249e20444359bff87c00cc2ba29f}
 
 這可讓您指定資料在視覺效果中顯示時的排序方式。 （此欄位不適用於表格、量度圖例和RTF視覺效果。） 有多個排序選項：
 
-* **[!UICONTROL Default]**  — 根據Data Workbench中儲存的排序順序，傳回未排序的資料。此選項可用於以時間為基礎的資料，例如小時、日、周或月。
+* **[!UICONTROL Default]**  — 根據Data Workbench中儲存的排序順序，傳回未排序的資料。 此選項可用於以時間為基礎的資料，例如小時、日、周或月。
 * **[!UICONTROL Dimension]**  — 根據英數字元維度值排序資料。
 * **[!UICONTROL Metric]**  — 根據量度值排序資料，有助於快速視覺化最上層維度。
 * **[!UICONTROL Descending]**  — 以降序排序資料。
@@ -94,9 +96,9 @@ Dimension是類似資料類型的類別。 例如，「星期」維度由下列�
 
 此視覺效果可讓您指定要在視覺效果中顯示之資料的開始和/或結束日期。
 
-選取**[!UICONTROL All Dates]**會顯示設定檔中可用的整個日期範圍。
+選擇**[!UICONTROL All Dates]**顯示設定檔中可用的整個日期範圍。
 
-選擇&#x200B;**[!UICONTROL Range]**&#x200B;只顯示指定範圍內的資料。 若要輸入日期範圍，您可以輸入開始和/或結束日期，或選取日曆圖示以使用日曆輸入。
+選取 **[!UICONTROL Range]** 僅顯示落在指定範圍內的資料。 若要輸入日期範圍，您可以輸入開始和/或結束日期，或選取日曆圖示以使用日曆輸入。
 
 （此欄位不適用於RTF視覺效果。）
 

@@ -3,7 +3,7 @@ description: 您可以使用「匯出工作區」功能表，將工作區列印�
 title: 共用工作區
 uuid: 6100143a-d602-42d7-b742-987fe5f835d6
 exl-id: c05b0f8f-cd73-4025-825b-32471c8681b8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 4%
@@ -12,9 +12,11 @@ ht-degree: 4%
 
 # 共用工作區{#share-a-workspace}
 
+{{eol}}
+
 您可以使用「匯出工作區」功能表，將工作區列印並匯出至.png檔案或Excel。
 
-在工作區中，按一下&#x200B;**[!UICONTROL Export]**。
+在工作區中，按一下 **[!UICONTROL Export]**.
 
 ![](assets/mnu_export.png)
 
@@ -45,15 +47,15 @@ ht-degree: 4%
   </tr> 
   <tr> 
    <td colname="col1"> 匯出PNG </td> 
-   <td colname="col2">以可移植網路圖形格式（.png檔案）保存工作區的快照。 請參閱<a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-f9fbe0f0a1c341e2b063cce106cac35e">將工作區匯出為PNG檔案</a>。 </td> 
+   <td colname="col2">以可移植網路圖形格式（.png檔案）保存工作區的快照。 請參閱 <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-f9fbe0f0a1c341e2b063cce106cac35e"> 將工作區導出為PNG檔案</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Excel </td> 
-   <td colname="col2"> 如果Data Workbench電腦上已安裝Microsoft Excel，則會自動啟動Microsoft Excel，並將特定視覺效果、特定圖例和文字註解的資料匯出至新的Excel檔案(.xls或.xlsx)。 請參閱<a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-fe214e3dbc364d2eba3834d62d295acb">將工作區資料匯出至Microsoft Excel</a>。 </td> 
+   <td colname="col2"> 如果Data Workbench電腦上已安裝Microsoft Excel，則會自動啟動Microsoft Excel，並將特定視覺效果、特定圖例和文字註解的資料匯出至新的Excel檔案(.xls或.xlsx)。 請參閱 <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-fe214e3dbc364d2eba3834d62d295acb"> 將工作區資料匯出至Microsoft Excel</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 從範本匯出(Excel) </td> 
-   <td colname="col2"> 如果Data Workbench電腦上已安裝Microsoft Excel，則會自動啟動Microsoft Excel，並將來自特定視覺效果、特定圖例和文字註解的資料匯出至您選取的範本Excel檔案（<span class="filepath"> .xls</span>或<span class="filepath"> .xlsx</span>）。 請參閱<a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302">匯出至範本Excel檔案</a>。 </td> 
+   <td colname="col2"> 如果已在Data Workbench電腦上安裝Microsoft Excel，則會自動啟動Microsoft Excel，並將特定視覺效果、特定圖例和文字註解的資料匯出至範本Excel檔案(<span class="filepath"> .xls</span> 或 <span class="filepath"> .xlsx</span>)。 請參閱 <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302"> 匯出至範本Excel檔案</a>. </td> 
   </tr> 
  </tbody> 
 </table>

@@ -3,7 +3,7 @@ description: 使用Flash架構的網站，在擷取多媒體內容中執行的�
 title: 追蹤 Flash 多媒體內容中的訪客活動
 uuid: fe2e75eb-0897-4f63-b582-b4f1fdce02a1
 exl-id: f51c7034-a7fd-4575-80e1-18fc6513ca2b
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 5%
@@ -12,13 +12,15 @@ ht-degree: 5%
 
 # 追蹤 Flash 多媒體內容中的訪客活動{#tracking-visitor-activity-within-flash-rich-media-content}
 
+{{eol}}
+
 使用Flash架構的網站，在擷取多媒體內容中執行的訪客動作時，需要特別注意。
 
-使用[!DNL Flash]ActionScript，您可以對現有的[!DNL Flash]影片進行簡單的變更，以追蹤與影片的所有訪客互動，例如按鈕點按或滑鼠動作。
+使用 [!DNL Flash] ActionScript，您可以對現有的 [!DNL Flash] 影片，以追蹤與影片的所有訪客互動，例如按鈕點按或滑鼠動作。
 
-若要促進[!DNL Flash]影片中的訪客活動追蹤，請遵循下列步驟：
+加速您 [!DNL Flash] 電影，請遵循下列步驟：
 
-1. 將下列ActionScript程式碼新增至您的影片。 此代碼表示一個函式，可由您要追蹤之[!DNL Flash]影片中的事件呼叫。
+1. 將下列ActionScript程式碼新增至您的影片。 此程式碼代表一個函式，可由 [!DNL Flash] 您要追蹤的電影。
 
    ```
    // FLASH TAG CODE BEGIN
@@ -29,8 +31,8 @@ ht-degree: 5%
    // FLASH TAG CODE END
    ```
 
-1. 建立名為[!DNL flashtag.txt]的空白檔案，並將該檔案放置在Web伺服器上。
-1. 在步驟1的函式中，以[!DNL flashtag.txt]檔案位置的完全限定或相對路徑取代\[[!DNL PATH_TO_WEB_SERVER]\]預留位置。 例如：
+1. 建立名為的空白檔案 [!DNL flashtag.txt] 並將檔案放置在您的Web伺服器上。
+1. 在步驟1的函式中，取代\[[!DNL PATH_TO_WEB_SERVER]\]預留位置，帶有指向 [!DNL flashtag.txt] 檔案。 例如：
 
    ```
    var FLASHTAGURI = https://www.mysite.com/flashtag/flashtag.txt”;
@@ -44,7 +46,7 @@ ht-degree: 5%
 
    此範例說明on(release)事件的使用方式；不過，標籤()函式可能會透過您要追蹤的任何事件來參照，例如on(press)、on(rollove)、on(rollove)或on(keypress)事件。
 
-   應以字串取代\[[!DNL PUT_PAGE_NAME_HERE]\]預留位置，該字串代表您要追蹤的頁面或事件名稱。 可手動修改\[[!DNL PUT_PAGE_NAME_HERE]\]變數，或透過變數參考修改變數，以表示[!DNL Flash]應用程式中頁面或事件的唯一名稱。 替換\[[!DNL PUT_PAGE_NAME_HERE]\]佔位符的值可能由簡單名稱組成，或者可以結構化為表示類似於完整URI的層次結構。 例如：
+   \[[!DNL PUT_PAGE_NAME_HERE]\]預留位置應替換為代表您所追蹤之頁面或事件名稱的字串。 \[[!DNL PUT_PAGE_NAME_HERE]\]變數可以手動修改，或透過變數參考修改，以表示頁面或事件在 [!DNL Flash] 應用程式。 取代\[的值[!DNL PUT_PAGE_NAME_HERE]\]佔位符可以由簡單名稱組成，也可以被結構化為表示類似於完整URI的層次結構。 例如：
 
    ```
    on(release) {tag(“/about_us/index.swf","[PUT_ADDITIONAL_VAR_HERE]");}
@@ -52,21 +54,21 @@ ht-degree: 5%
 
    Adobe建議，在代碼部署之前，您應編譯有關頁面名稱和事件名稱的書面規範，以便協調業務需求和開發任務，並減少可能出現的額外開發週期。
 
-1. 如果需要，可以收集其他變數，並將其與[!DNL Flash]影片中的頁面或事件相關聯。 若要這麼做，請以一組名稱=值配對取代\[[!DNL PUT_ADDITIONAL_VAR_HERE]\]預留位置，並以&amp;符號分隔。 例如：
+1. 如有需要，可收集其他變數，並與 [!DNL Flash] 電影。 若要這麼做，請取代\[[!DNL PUT_ADDITIONAL_VAR_HERE]\]預留位置，其中一組名稱=值配對由&amp;符號分隔。 例如：
 
    ```
    on(release) {tag(“/about_us/index.swf"," var1=value1&var2=value2");}
    ```
 
-   您可以手動或透過變數參考來修改變數，以表示要收集並與頁面或事件相關聯的其他屬性。 如果沒有可收集的其他可用變數，請移除\[[!DNL PUT_ADDITIONAL_VAR_HERE]\]。
+   您可以手動或透過變數參考來修改變數，以表示要收集並與頁面或事件相關聯的其他屬性。 如果沒有可收集的其他適用變數，請移除\[[!DNL PUT_ADDITIONAL_VAR_HERE]\]。
 
-   [!DNL Flash]多媒體內容中的訪客追蹤設定現已完成。 叫用事件時，將會呼叫標籤[!DNL (PAGENAME,VARIABLES)]函式，導致對下列檔案提出HTTP要求。 除了可依照[!DNL Flash]影片中的定義觸發的其他函式外，還會呼叫此函式：
+   您在 [!DNL Flash] 多媒體內容現已完成。 叫用事件時，會加上標籤 [!DNL (PAGENAME,VARIABLES)] 函式，導致對下列檔案發出HTTP要求。 除了可依您 [!DNL Flash] 電影：
 
    ```
    https://www.mysite.com/flashtag/flashtag.txt?PAGENAME=/about_us/index.swf&var1=value1&var2=value2
    ```
 
-由[!DNL Flash]標籤ActionScript函式產生的HTTP要求會導致針對[!DNL Flash]影片內的每個事件收集下列資訊。 表格中的最後一列（W3C名稱cs-uri-query）代表針對函式呼叫中指定的其他變數所收集的資訊。
+由 [!DNL Flash] 標籤ActionScript函式會導致系統針對 [!DNL Flash] 電影。 表格中的最後一行（W3C名稱cs-uri-query）代表針對函式呼叫中指定的其他變數所收集的資訊。
 
 <table id="table_A7ED9D38F36B4405947B2F48EA94D3C4">
  <thead>
@@ -81,7 +83,7 @@ ht-degree: 5%
   <tr>
    <td colname="col1"> x-trackingid </td>
    <td colname="col2"> 追蹤識別碼（不重複訪客） </td>
-   <td colname="col3"> 訪客初始請求時， <span class="wintitle">感測器</span>從使用者瀏覽器中放置的Cookie讀取的識別碼 </td>
+   <td colname="col3"> 從使用者瀏覽器中置入之Cookie讀取的識別碼，由 <span class="wintitle"> 感測器 </span> 訪客的初始請求時 </td>
    <td colname="col4"> v1st=3C94007B4E01F9C2 </td>
   </tr>
   <tr>

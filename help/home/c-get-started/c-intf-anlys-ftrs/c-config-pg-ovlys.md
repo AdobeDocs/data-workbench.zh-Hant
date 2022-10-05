@@ -3,7 +3,7 @@ description: 頁面覆蓋圖僅在網站應用程式中設定，但可針對其�
 title: 設定頁面覆蓋
 uuid: c4c612ed-5154-4b20-96ab-24b74fba19a2
 exl-id: 4e0dfce8-def2-49f3-93e8-41d82922fb88
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # 設定頁面覆蓋{#configure-a-page-overlay}
+
+{{eol}}
 
 頁面覆蓋圖僅在網站應用程式中設定，但可針對其他應用程式進行設定。
 
@@ -26,16 +28,16 @@ ht-degree: 1%
 
 頁面覆蓋從本質上向用戶建議它顯示「人們點擊的位置」的心理模型。 如果支援視覺效果的資料不符合此模型，則可能造成混淆的可能性很高。
 
-在[!DNL Site]中，連結通常表示下一個URI或下一個連結維中的元素，但您可以將連結映射到對您的分析有意義的任何維。 如需為其他維度設定頁面覆蓋的相關資訊，請聯絡Adobe諮詢服務。
+在 [!DNL Site]，連結通常代表下一個URI或下一個連結維度的元素，但您可以將連結對應至任何對您的分析有意義的維度。 如需為其他維度設定頁面覆蓋的相關資訊，請聯絡Adobe諮詢服務。
 
 >[!NOTE]
 >
 >不建議將頁面維度用於頁面覆蓋。 使用者可以重新命名頁面維度的元素，進而變更頁面覆蓋功能所仰賴的連結語法。
 
-若要設定[!DNL Site]的頁面覆蓋，您必須編輯兩個檔案：
+為配置頁面覆蓋 [!DNL Site]，您必須編輯兩個檔案：
 
-* **[!DNL Page Overlay.vw]:** 此檔案是建立頁面覆蓋視覺效果的範本檔案。您要為其設定頁面覆蓋的設定檔中必須至少有一個範本檔案。
-* **[!DNL Page Overlay Link Templates.cfg]:** 頁面覆蓋圖視覺效果載入頁面時，會自動識別頁面中的連結及其目的地。若要將這些連結與資料中的元素產生關聯，您必須在此檔案中定義一組規則運算式。
+* **[!DNL Page Overlay.vw]:** 此檔案是建立頁面覆蓋圖視覺效果的範本檔案。 您要設定頁面覆蓋的設定檔中必須至少有一個範本檔案。
+* **[!DNL Page Overlay Link Templates.cfg]:** 頁面覆蓋圖視覺效果載入頁面時，會自動識別頁面中的連結及其目的地。 若要將這些連結與資料中的元素產生關聯，您必須在此檔案中定義一組規則運算式。
 
    您可以定義多個規則運算式，以比對維度的元素。 定義運算式的順序很重要。 當您請求特定頁面的覆蓋時，Data Workbench會擷取實際頁面的快照，就像在Web瀏覽器中顯示的一樣，並根據您定義的規則運算式清單來剖析代表連結的HTML代碼。 對於所選頁面上的每個連結，軟體會嘗試透過下列清單來尋找規則運算式模式符合，直到找到第一個相符項目為止。 比對維度元素的第一個運算式是使用的。 因此，最好先列出具有最特定比對模式的規則運算式，接著是較不特定的運算式。 如果有相符項目，連結會在頁面覆蓋圖視覺效果中反白顯示。
 
@@ -43,14 +45,14 @@ ht-degree: 1%
 
 1. I
 
-   在[!DNL Profile Manager]中，導覽至&#x200B;**[!UICONTROL Context]** > **[!UICONTROL Dimension Element]** > **[!UICONTROL URI]**。
+   n [!DNL Profile Manager]，導覽至 **[!UICONTROL Context]** > **[!UICONTROL Dimension Element]** > **[!UICONTROL URI]**.
 
    >[!NOTE]
    >
    >「Dimension元素」目錄包含在您按一下右鍵維元素時出現的上下文菜單項。 例如，開啟URI表，然後選擇URI元素。 以滑鼠右鍵按一下URI，接著會出現「頁面覆蓋」。
 
-1. 在URI資料夾中，按一下右鍵[!DNL Page Overlay.vw]檔案旁的複選標籤，然後按一下&#x200B;**[!UICONTROL Make Local]**。 [!DNL User]列中將顯示此檔案的複選標籤。
-1. 按一下右鍵新建立的複選標籤，然後按一下&#x200B;**[!UICONTROL Open]** > **[!UICONTROL in Notepad]**。
+1. 在URI資料夾中，以滑鼠右鍵按一下 [!DNL Page Overlay.vw] 按一下 **[!UICONTROL Make Local]**. 此檔案的複選標籤會顯示在 [!DNL User] 欄。
+1. 按一下右鍵新建立的複選標籤，然後按一下 **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
 1. 指定網域（如有需要，則指定瀏覽器高度）。
 
    ```
@@ -74,18 +76,18 @@ ht-degree: 1%
    ```
 
 1. 儲存檔案。
-1. 要使工作配置檔案的所有用戶都能使用此更改，請在[!DNL Profile Manager]中，按一下右鍵[!DNL User]列中[!DNL .vw]檔案的複選標籤，然後按一下&#x200B;**[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]***。
+1. 若要讓此變更可供工作設定檔的所有使用者使用，請在 [!DNL Profile Manager]，按一下右鍵 [!DNL .vw] 檔案 [!DNL User] 欄，按一下 **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
 
    >[!NOTE]
    >
-   >您可以為其他網站或子網域建立其他範本檔案。 您建立的每個範本都會顯示在[!DNL Page Overlay menu]中。
+   >您可以為其他網站或子網域建立其他範本檔案。 您建立的每個範本都會顯示在 [!DNL Page Overlay menu].
 
-1. 在[!DNL Profile Manager]的「上下文」資料夾中，按一下右鍵[!DNL Page Overlay Link Templates.cfg]檔案旁的複選標籤，然後按一下&#x200B;**[!UICONTROL Make Local]**。
+1. 在 [!DNL Profile Manager]，請以滑鼠右鍵按一下 [!DNL Page Overlay Link Templates.cfg] 按一下 **[!UICONTROL Make Local]**.
 
-   [!DNL User]列中將顯示此檔案的複選標籤。
+   此檔案的複選標籤會顯示在 [!DNL User] 欄。
 
-1. 按一下右鍵新建立的複選標籤，然後按一下&#x200B;**[!UICONTROL Open]** > **[!UICONTROL from the workbench]**。
-1. 按一下右鍵&#x200B;**[!UICONTROL Link Templates]**，然後按一下&#x200B;**[!UICONTROL Add new]** > **[!UICONTROL Regular Expression]**。
+1. 按一下右鍵新建立的複選標籤，然後按一下 **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**.
+1. 按一下右鍵 **[!UICONTROL Link Templates]** 按一下 **[!UICONTROL Add new]** > **[!UICONTROL Regular Expression]**.
 1. 視需要編輯LinkRegex向量的參數：
 
 <table id="table_24DD4BB5009542F7BB1DA3318E2E6E2B">
@@ -102,7 +104,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td colname="col1"> <p>運算式 </p> </td>
-   <td colname="col2"> <p>用於選取HTML連結的相關部分，以從Dimension中尋找下一個元素的規則運算式。 規則運算式必須完全相符，且所需的輸出模式會以括弧分組。 如需規則運算式的詳細資訊，請參閱<i>資料集組態指南</i>。 </p> </td>
+   <td colname="col2"> <p>用於選取HTML連結的相關部分，以從Dimension中尋找下一個元素的規則運算式。 規則運算式必須完全相符，且所需的輸出模式會以括弧分組。 如需規則運算式的詳細資訊，請參閱 <i>資料集組態指南</i>. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>輸出模式 </p> </td>
@@ -115,5 +117,5 @@ ht-degree: 1%
 
 ![](assets/cfg_PageOverlayLinkTemplates_Example.png)
 
-1. 若要儲存檔案，請以滑鼠右鍵按一下視窗頂端的&#x200B;**[!UICONTROL (modified)]**，然後按一下&#x200B;**[!UICONTROL Save]**。
-1. 要使工作配置檔案的所有用戶都能使用此更改，請在[!DNL User]列中按一下右鍵[!DNL Page Overlay Link Templates.cfg]的複選標籤，然後按一下&#x200B;**[!UICONTROL Save to]** > ***[!UICONTROL working profile name]***。
+1. 若要儲存檔案，請按一下滑鼠右鍵 **[!UICONTROL (modified)]** 在視窗頂端按一下 **[!UICONTROL Save]**.
+1. 要使工作配置檔案的所有用戶都能使用此更改，請按一下右鍵 [!DNL Page Overlay Link Templates.cfg] 在 [!DNL User] 欄，按一下 **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.

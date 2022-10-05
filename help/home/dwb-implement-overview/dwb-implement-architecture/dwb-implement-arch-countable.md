@@ -3,7 +3,7 @@ description: Dataworkbench(DWB)中用於設計和實作結構的可數表說明�
 title: 結構設計可數架構
 uuid: 2530980d-1c6b-4a96-b9c1-431fc75678bb
 exl-id: 4f2a2f8a-7b42-42bb-8ba1-2675ffe6b2c2
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # 結構設計可數架構{#schema-design-countable-structures}
+
+{{eol}}
 
 Dataworkbench(DWB)中用於設計和實作結構的可數表說明。
 
@@ -22,7 +24,7 @@ Dataworkbench(DWB)中用於設計和實作結構的可數表說明。
 
 * 來自Google.com的瀏覽數？
 
-`<discoiqbr>`可數維度通常用來建立總和量度，以傳回維度所有元素的計數或總和。您可以定義可數維度，以計算例項，例如訂房預訂或產品訂單。 例如，您可以定義可數維度訂單，其元素（與線上商店訂單對應的記錄項目）可被計算。 如果您想在視覺效果中顯示訂單計數，可定義訂單總和量度，此量度可透過維度評估或套用篩選器。
+`<discoiqbr>`可數維度通常用來建立總和量度，以傳回維度所有元素的計數或總和。 您可以定義可數維度，以計算例項，例如訂房預訂或產品訂單。 例如，您可以定義可數維度訂單，其元素（與線上商店訂單對應的記錄項目）可被計算。 如果您想在視覺效果中顯示訂單計數，可定義訂單總和量度，此量度可透過維度評估或套用篩選器。
 
 可計數維度可以是其他維度的父項，或是其他可計數維度的子項。
 
@@ -79,18 +81,18 @@ Dataworkbench(DWB)中用於設計和實作結構的可數表說明。
 ![](assets/dwb_impl_arch_1.png)
 
 可數的第二項主要功能是，它們構成資料集結構的骨幹。 您的資料結構和所有其他維度會組織成分組，並屬於可數。 換句話說，如果將維度視為「類別」，則可數是將這些「類別」組織成群組的方式。
-將維度分組在可數維度下時，會說明維度位於可數維度的「層級」。 例如，在下圖中，您會看到「電子郵件地址」位於訪客層級，而「瀏覽器」位於瀏覽層級。 「父項」和「子項」是指可數與其下分組的維度之間的關係。 例如，訪客是電子郵件地址的「父項」。 相反地，電子郵件地址是訪客的「子項」。![](assets/dwb_impl_arch_2.png) ![](assets/dwb_impl_arch_3.png)
+將維度分組在可數維度下時，會說明維度位於可數維度的「層級」。 例如，在下圖中，您會看到「電子郵件地址」位於訪客層級，而「瀏覽器」位於瀏覽層級。 「父項」和「子項」是指可數與其下分組的維度之間的關係。 例如，訪客是電子郵件地址的「父項」。 相反地，電子郵件地址是訪客的「子項」。 ![](assets/dwb_impl_arch_2.png) ![](assets/dwb_impl_arch_3.png)
 
 ## 在Data Workbench中建立可數 {#section-491f3e8e4fbc429e95d6c97f012a208e}
 
 執行下列步驟以在Dataworkbench中建立可數：
 
 1. 開啟設定檔管理員
-1. 在「轉換」資料夾下，建立設定檔案並在工作站中開啟。
-1. 在「延伸Dimension」下，按一下滑鼠右鍵並選擇「新增 — >可數」，如下所示：![](assets/dwb_impl_arch_4.png)
+1. 在轉換資料夾下，建立設定檔案並在工作站中開啟。
+1. 在「延伸Dimension」下，按一下滑鼠右鍵並選擇「新增 — >可數」，如下所示： ![](assets/dwb_impl_arch_4.png)
 
-1. 輸入新可數的名稱。 在以下範例中，已定義客戶可數。 如果它是最高級別可數，則在父寫入根中。![](assets/dwb_impl_arch_5.png)
+1. 輸入新可數的名稱。 在以下範例中，已定義客戶可數。 如果它是最高級別可數，則在父寫入根中。 ![](assets/dwb_impl_arch_5.png)
 
-   如果可數不是頂層可數，則在父欄位中提供父可數的名稱。 在以下範例中，會建立「參與可數」，且此可數的父項為「客戶」。![](assets/dwb_impl_arch_5.png)
+   如果可數不是頂層可數，則在父欄位中提供父可數的名稱。 在以下範例中，會建立「參與可數」，且此可數的父項為「客戶」。 ![](assets/dwb_impl_arch_5.png)
 
-如需架構設計、可計數結構及離線資料摘要設定的Data Workbench架構詳細資訊，請參閱[資料集架構介面](https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html)。
+如需結構設計、可數結構和離線資料饋送設定的Data Workbench架構詳細資訊，請參閱 [資料集結構介面](https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html).

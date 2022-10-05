@@ -3,7 +3,7 @@ description: 選取輸入變數、叢集數目和目標母體（如果需要）�
 title: 建立叢集
 uuid: f8462445-b7d2-48ae-aed7-2a3abc491cfb
 exl-id: 60bc75bf-2f89-455b-8be9-aa20bb837752
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 1%
@@ -12,29 +12,31 @@ ht-degree: 1%
 
 # 建立叢集{#building-clusters}
 
+{{eol}}
+
 選取輸入變數、叢集數目和目標母體（如果需要），以定義資料集中的叢集。
 
 **建立叢集**
 
 1. 開啟 **[!UICONTROL Cluster Builder]**.
 
-   按一下「**視覺效果** > **預測分析** > **叢集** > **叢集產生器**」。
+   按一下 **視覺效果** > **預測性分析** > **聚類** > **叢集產生器**.
 
    ![](assets/cluster-builder-step1.png)
 
 1. 選取輸入變數。
 
-   * 從工具列的&#x200B;**[!UICONTROL Metric]**&#x200B;功能表選取，將量度新增至&#x200B;**[!UICONTROL Input Variables]**&#x200B;清單。
+   * 新增量度至 **[!UICONTROL Input Variables]** 清單，從 **[!UICONTROL Metric]** 的雙曲餘切值。
 
       ![](assets/cluster_metric_select.png)
 
-   * 從Dimension的表格拖曳維度元素，將維度元素新增至&#x200B;**[!UICONTROL Input Variables]**&#x200B;清單。
+   * 新增維度元素至 **[!UICONTROL Input Variables]** 清單，從Dimension的表格中拖曳。
 
-      按&#x200B;**[!UICONTROL Ctrl + Alt]**&#x200B;鍵，然後將選定的維元素拖動到工具欄的&#x200B;**[!UICONTROL Input Variables]**&#x200B;清單或&#x200B;**[!UICONTROL Element]**&#x200B;框。
+      Press **[!UICONTROL Ctrl + Alt]** 和拖動選定的維元素至 **[!UICONTROL Input Variables]** 清單或 **[!UICONTROL Element]** 框中，選擇該選項。
 
       ![](assets/cluster_dim_select.png)
-   依預設，會對整個資料集執行叢集。 您可以在左&#x200B;**[!UICONTROL Preprocessing]**&#x200B;窗格中看到所有輸入變數。
-1. 使用&#x200B;**[!UICONTROL Options]**&#x200B;功能表來選取所需的叢集數。
+   依預設，會對整個資料集執行叢集。 您可以在左側看到所有輸入變數 **[!UICONTROL Preprocessing]** 框。
+1. 使用 **[!UICONTROL Options]** 選項，選擇所需的群集數。
 
    ![](assets/build_cluster_2.png)
 
@@ -42,11 +44,11 @@ ht-degree: 1%
 
    ![](assets/build_cluster_3.png)
 
-   首先，使用工作區中的選取項目或使用&#x200B;**[!UICONTROL Filter Editor]**&#x200B;定義所需的子集。 選取所需的子集後，在&#x200B;**[!UICONTROL Options]**&#x200B;功能表中設定「目標母體」 。 建議您為目標群組指定識別名稱。
+   首先，使用工作區中的選取項目或使用 **[!UICONTROL Filter Editor]**. 選取所需的子集後，在 **[!UICONTROL Options]** 功能表。 建議您為目標群組指定識別名稱。
 
-   **[!UICONTROL Options]**&#x200B;菜單還具有控制最大刀路數和中心收斂的可接受閾值的設定。
+   此 **[!UICONTROL Options]** 菜單還具有控制最大刀路數和中心收斂的可接受閾值的設定。
 
-1. 設定輸入和選項後，按一下&#x200B;**Go**&#x200B;按鈕以在本機執行叢集，或按&#x200B;**[!UICONTROL Submit]**&#x200B;將任務傳送至預測分析伺服器。 收斂完成時，提交至伺服器會將產生的維度儲存至資料集。
+1. 設定輸入和選項後，按一下 **開始** 按鈕在本地運行群集或按鍵 **[!UICONTROL Submit]** 將任務傳送至預測分析伺服器。 收斂完成時，提交至伺服器會將產生的維度儲存至資料集。
 
    在本地運行時，你會看到集群生成器在四個樹冠叢集階段中移動，它根據輸入定義智慧中心。
 
@@ -62,7 +64,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >如果在收斂期間添加或刪除輸入，則進程將暫停，直到再次按&#x200B;**Go**。
+   >如果在收斂期間添加或刪除輸入，則進程將暫停，直到您按下 **開始** 。
 
    建立叢集後，您可以開啟檢色器，為不同的分佈結果指派顏色。
 
@@ -72,10 +74,10 @@ ht-degree: 1%
 
    ![](assets/build_cluster_6.png)
 
-1. 如果您想在其他視覺效果中使用此叢集維度，可以在本機&#x200B;**[!UICONTROL Save]**&#x200B;或將其&#x200B;**[!UICONTROL Submit]**&#x200B;用於伺服器。
+1. 如果您想在其他視覺效果中使用此叢集維度，您可以 **[!UICONTROL Save]** 本機或 **[!UICONTROL Submit]** 到伺服器。
 
 如果您想要再次運行收斂，或查看輸入的相關性，則群集生成器還可載入現有群集維。
 
 >[!TIP]
 >
->選取後，**[!UICONTROL Reset]**&#x200B;將完全釋放所有輸入變數，並提供空白的叢集產生器視覺效果以定義新叢集。
+>若選取， **[!UICONTROL Reset]** 會完全釋出所有輸入變數，並提供空白的叢集產生器視覺效果來定義新叢集。
