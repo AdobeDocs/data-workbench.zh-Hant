@@ -17,7 +17,7 @@ ht-degree: 99%
 # Data Workbench 說明 {#using}
 
 + [Data Workbench 說明](home.md)
-+ [終止公告](eol.md)
++ [生命週期結束公告](eol.md)
 + 發行說明 {#release-notes}
    + [發行說明概述](c-release-notes-insight/release-notes.md)
    + [Data Workbench 6.74 發行說明](c-release-notes-insight/dwb-6-74-release-notes.md)
