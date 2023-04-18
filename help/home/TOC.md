@@ -6,9 +6,9 @@ feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Data Workbench 說明
 user-guide-description: 了解 Data Workbench 的多通道功能。 包含 Data Workbench 用戶端、安裝、資料集設定指南和更多內容。
-source-git-commit: 90b9fff995cb37a62024f454f009e9e0d7b927cd
+source-git-commit: fd815415e55e72ab01a1beee9b7ebed0432eded9
 workflow-type: tm+mt
-source-wordcount: '3498'
+source-wordcount: '3501'
 ht-degree: 99%
 
 ---
@@ -963,3 +963,4 @@ ht-degree: 99%
 + [查詢 API](https://www.adobe.io/)
 + [Data Workbench 與 Adobe Target 整合](dwb-adobe-target.md)
 + [Data Workbench 字彙表](dwb-glossary.md)
++ [隱藏的測試頁](hidden-test-page.md)
