@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: 87af4ae77f71701b52247f996b89edfb93794dd7
+source-git-commit: c08189cf57f08fc5be4bc24ec06d9b9a865a53c8
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '680'
 ht-degree: 2%
 
 ---
@@ -113,17 +113,21 @@ This entire paragraph should NOT be highlighted. <span class="preview"> This wor
 ```
 Highlighting should start after this paragraph.
 
-<span class="preview">
+<div class="preview">
 
-**This is a test**
+Start of DIV.
 
->[!TIP]
+>[!NOTE]
 >
->Drink 6 cups of water a day.
+>This is a note.
+>
+>I have a request to highlight the note's background.
 
-Last highlighted paragraph
+![image](/help/quicksilver/administration-and-setup/add-users/create-and-manage-users/assets/add-admin-1.png)
 
-</span>
+Last highlighted item.
+
+</div>
 
 Not highlighted
 ```
@@ -132,17 +136,21 @@ Not highlighted
 
 在本段之後應開始強調。
 
-<span class="preview">
+<div class="preview">
 
-**這是個測試**
+開始DIV。
 
->[!TIP]
+>[!NOTE]
 >
->每天喝6杯水。
+>這是張紙條。
+>
+>我要求突顯筆記的背景。
 
-最後強調的段落
+![影像](/help/home/assets/analytics-icon-24.png)
 
-</span>
+最後一個突出顯示的項目。
+
+</div>
 
 未突出顯示
 
