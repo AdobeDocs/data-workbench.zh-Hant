@@ -5,14 +5,70 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: 0cd0a201aa10e519fa9760a64ab95fa1a10a3799
+exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
+source-git-commit: a3625867de6b7b8f8b7f71b3b124f028356dabad
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 2%
+source-wordcount: '749'
+ht-degree: 3%
 
 ---
 
 # 隱藏的測試頁
+
+## 附註類型
+
+
+所有支援的附註類型。
+
+>[!NOTE]
+>
+>This is a standard NOTE block.
+
+>[!TIP]
+>
+>This is a standard tip.
+
+>[!IMPORTANT]
+>
+>這是一個重要備注。
+
+>[!WARNING]
+>
+>這是警告。
+
+>[!CAUTION]
+>
+>這是一種謹慎。
+
+>[!ADMIN]
+>
+>這是管理注釋。 僅限EXL。
+
+>[!AVAILABILITY]
+>
+>這是可用性說明。 僅限EXL。
+
+>[!PREREQUISITES]
+>
+>此為必要條件附註。 僅限EXL。
+
+>[!INFO]
+>
+>這是資訊注釋。 僅限EXL。
+
+>[!ERROR]
+>
+>這是錯誤備注。 僅限EXL。
+
+>[!SUCCESS]
+>
+>這是成功附註。 僅限EXL。
+
+>[!MORELIKETHIS]
+>
+>* 頁面 1
+>* 頁面 2
+
 
 ## 徽章
 
