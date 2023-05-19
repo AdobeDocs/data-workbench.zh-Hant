@@ -6,9 +6,9 @@ feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Data Workbench 說明
 user-guide-description: 了解 Data Workbench 的多通道功能。 包含 Data Workbench 用戶端、安裝、資料集設定指南和更多內容。
-source-git-commit: fd815415e55e72ab01a1beee9b7ebed0432eded9
+source-git-commit: 35cd94fdde735cc24f88083a16881a12bbc33f4f
 workflow-type: tm+mt
-source-wordcount: '3501'
+source-wordcount: '3504'
 ht-degree: 99%
 
 ---
@@ -859,7 +859,7 @@ ht-degree: 99%
          + [鎖定和解鎖視覺效果](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-locking-and-unlocking-visualizations.md)
          + [收合和展開視覺效果](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-collapsing-and-expanding-visualizations.md)
          + [匯出視覺效果](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-exporting-visualizations.md)
-         + [設定和重新設定視覺效果](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-configure-visualizations.md)
+         + [配置和重新配置可視化效果](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-configure-visualizations.md)
          + [移除視覺效果](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-remove-visualizations.md)
          + [調整視覺效果大小](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-sizing-visualizations.md)
          + [移動視覺效果](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-moving-visualizations.md)
@@ -902,7 +902,7 @@ ht-degree: 99%
    + 伺服器通訊 {#servers-communication}
       + [Data Workbench 伺服器通訊控制面板](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/c-dashboard-to-data-workbench-servers-communication.md)
       + [驗證查詢 API 啟用](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-verifying-qurey-api-enablement.md)
-      + [設定控制面板存取控制](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
+      + [配置儀表板訪問控制](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
    + 控制面板部署 {#dashboard-deployment}
       + [控制面板部署](c-preparing-for-dashboard-installation/c-dashboard-deployment/c-dashboard-deployment.md)
       + [部署控制面板](c-preparing-for-dashboard-installation/c-dashboard-deployment/t-deploying-the-dashboard.md)
@@ -963,4 +963,5 @@ ht-degree: 99%
 + [查詢 API](https://www.adobe.io/)
 + [Data Workbench 與 Adobe Target 整合](dwb-adobe-target.md)
 + [Data Workbench 字彙表](dwb-glossary.md)
-+ [隱藏的測試頁](hidden-test-page.md)
++ [隱藏test頁](hidden-test-page.md)
++ [隱藏支援概述](hidden-support-overview.md)
