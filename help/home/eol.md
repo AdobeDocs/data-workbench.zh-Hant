@@ -1,44 +1,44 @@
 ---
 title: Data Workbench 生命週期結束常見問題
-description: 深入了解Data Workbench的終止公告。
-source-git-commit: 4f591a65d4cfbb69b3e5397cf27a9ed3ee498a30
-workflow-type: tm+mt
+description: 進一步了解 Data Workbench 的生命週期結束公告。
+exl-id: 0abb72f1-b68b-48cc-829c-cac7bd21a6de
+source-git-commit: 020a39b7f22d08b76e641e437c1ecaaf26f1b50a
+workflow-type: ht
 source-wordcount: '393'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
-
 # Data Workbench 生命週期結束常見問題
 
-Data Workbench的終止日期為 **2023年12月31日**.
+Data Workbench 的生命週期結束日期為 **2023 年 12 月 31 日**。
 
-## 包含哪些項目？
+## 包括什麼？
 
-此次發佈會影響所有依賴Data Workbench的解決方案，包括Managed Services和內部部署軟體解決方案。 這種壽終正寢只會影響Data Workbench;不會影響Adobe Analytics中的其他功能或元件。
+此公告影響所有依賴 Data Workbench 的解決方案，包括 Managed Services 和內部部署軟體解決方案。 此生命週期結束僅影響 Data Workbench；不影響 Adobe Analytics 中的其他功能或元件。
 
-## 為什麼Data Workbench要退休？
+## Data Workbench 為何停用？
 
-隨著Adobe Experience Platform的推出和持續改善，客戶可以跨管道結合資料，並在多個Adobe解決方案中使用。 具體來說，Customer Journey Analytics可讓您取用跨通道資料，對該資料執行進階分析。
+隨著 Adobe Experience Platform 的發行和持續改進，客戶可以跨管道結合資料，並用於多個 Adobe 解決方案中。 具體來說，Customer Journey Analytics 允許您獲取跨管道資料並對該資料執行進階分析。
 
-目前Data Workbench中提供的大部分功能和使用案例，目前都可在Adobe Experience Platform解決方案中使用。 不過，在少數情況下，Data Workbench功能不會透過個別的Adobe Experience Platform解決方案複製。 請連絡貴組織的Adobe客戶經理，以討論特定功能或使用案例相容性領域。
+Data Workbench 中目前可用的大多數功能和使用案例目前在 Adobe Experience Platform 解決方案中均可用。 但是，在有限的情況下，Data Workbench 功能不會隨個別的 Adobe Experience Platform 解決方案一起複寫。請聯繫您組織的 Adobe 客戶經理，討論特定領域的功能或使用案例相容性。
 
-## Adobe對於內部部署有何指引？
+## Adobe 對於內部部署有何指引？
 
-建議客戶改用進階分析的目前Adobe解決方案。 舊版永久授權客戶可決定繼續使用Data Workbench。 但是，Adobe沒有支援或更新產品的計畫，包括重大錯誤或安全漏洞。 在Data Workbench終止後持續使用內部部署，需由貴組織自行承擔風險。
+我們鼓勵客戶移往目前的 Adobe 解決方案以進行進階分析。 舊版永久授權客戶可以決定繼續使用 Data Workbench。 但是，Adobe 沒有支援或更新該產品的計劃，包括嚴重錯誤或安全性漏洞。在 Data Workbench 的生命週期結束日期之後繼續使用內部部署的 Data Workbench 的風險由您的組織自行承擔。
 
-## 我可以購買諮詢服務來協助Data Workbench嗎？
+## 我可以購買諮詢服務來幫助使用 Data Workbench 嗎？
 
-您可以購買Adobe Professional Services，直到服務終止為止。 在此日期後，將無法使用Adobe Professional Services。 某些外部合作夥伴可能會選擇繼續提供Data Workbench服務。 如果他們這樣做，則完全由外部合作夥伴完成，而無任何Adobe的認可。
+您可以在生命週期結束日期前購買 Adobe Professional Services。 在此日期之後，將不再提供 Adobe Professional Services。 一些外部合作夥伴可能會選擇繼續為 Data Workbench 提供服務。 如果他們這麼做，這是由該外部合作夥伴獨立完成，Adobe 不予以背書。
 
-## Adobe建議改用哪些解決方案或產品？
+## Adobe 建議移往哪些解決方案或產品？
 
-Adobe目前提供下列Adobe Experience Platform解決方案，可滿足與Data Workbench類似的需求：
+Adobe 目前提供以下 Adobe Experience Platform 解決方案來滿足與 Data Workbench 類似的需求：
 
-* [**Customer Journey Analytics**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html):對來自Adobe Experience Platform的多管道資料使用進階分析技術，例如歸因、篩選、流量和流失。
-* [**查詢服務**](https://experienceleague.adobe.com/docs/experience-platform/query/home.html):對來自Adobe Experience Platform的資料執行SQL查詢。
-* [**資料準備**](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hant):映射、轉換及驗證資料，以便在其他Adobe Experience Platform解決方案中更有效地使用。
+* [**Customer Journey Analytics**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=zh-Hant)：對來自 Adobe Experience Platform 的多管道資料使用歸因、篩選、流量和流失等進階分析技術。
+* [**查詢服務**](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hant)：對來自 Adobe Experience Platform 的資料執行 SQL 查詢。
+* [**資料準備**](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hant)：對應、轉換和驗證資料，以便在其他 Adobe Experience Platform 解決方案中更有效地使用。
 
-## 如需詳細資訊，請前往何處？
+## 在那裡可以找到更多資訊？
 
-如需此服務終止公告的詳細資訊或問題，請連絡貴組織的Adobe客戶經理。
+如需有關此生命週期結束公告的任何詳細資訊或對此有相關問題，請聯絡您組織的 Adobe 客戶經理。
