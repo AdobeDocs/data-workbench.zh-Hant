@@ -3,17 +3,23 @@ title: 隱藏測試頁面
 description: 此頁面在搜尋和目錄中隱藏
 hide: true
 hidefromtoc: true
-badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
-badgeExam: label="Exam ADO-E903" type="neutral"
+badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="下載Premium"
+badgeExam: label="考試ADO-E903" type="neutral"
 exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: 62b03629815f33344189c2562bc486301878a146
+source-git-commit: 3480cc9b82a5561a364a88f3d09c14cca56a0c7a
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '796'
 ht-degree: 4%
 
 ---
 
 # 隱藏測試頁面
+
+## 預覽問題
+
+下列段落無法在VSC預覽中正確呈現。 我不確定為什麼。
+
+如果您的密碼是由 [!DNL Adobe]，您可以 [變更您Adobe帳戶中的密碼](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html){target="_blank"}.
 
 ## 附註型別
 
