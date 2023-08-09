@@ -6,14 +6,16 @@ hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="下載Premium"
 badgeExam: label="考試ADO-E903" type="neutral"
 exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: 3480cc9b82a5561a364a88f3d09c14cca56a0c7a
+source-git-commit: 51cc5fb0196d1bc34325e65c2715eaeab5590938
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '797'
 ht-degree: 4%
 
 ---
 
 # 隱藏測試頁面
+
+啟動?
 
 ## 預覽問題
 
@@ -23,7 +25,7 @@ ht-degree: 4%
 
 ## 附註型別
 
-所有支援的附註型別。
+所有支援的註記型別。
 
 >[!NOTE]
 >
@@ -55,7 +57,7 @@ ht-degree: 4%
 
 >[!PREREQUISITES]
 >
->本為先決條件注意事項。 僅限EXL。
+>這是先決條件注意事項。 僅限EXL。
 
 >[!INFO]
 >
@@ -63,11 +65,11 @@ ht-degree: 4%
 
 >[!ERROR]
 >
->此為錯誤備註。 僅限EXL。
+>這是錯誤備註。 僅限EXL。
 
 >[!SUCCESS]
 >
->這是Success備註。 僅限EXL。
+>這是Success附註。 僅限EXL。
 
 >[!MORELIKETHIS]
 >
@@ -76,18 +78,18 @@ ht-degree: 4%
 
 ## 徽章
 
-徽章是用作內容指示器的彩色標籤。 例如，您可以新增徽章，將文章標示為 _Beta_ 或區段為 _Premium_. 您可以變更徽章的顏色，並建立URL與工具提示的關聯。
+徽章是用作內容指示器的彩色標籤。 例如，您可以新增徽章，將文章標示為 _測試版_ 或區段為 _Premium_. 您可以變更徽章的顏色，並建立URL與工具提示的關聯。
 
 [!BADGE 徽章範例]
 
-有兩種型別的徽章，各有不同的語法：
+有兩種型別的徽章，每一種都有不同的語法：
 
 * **中繼資料**  — 在頁面頂端附近顯示徽章
 * **內嵌**  — 顯示語法所在的徽章
 
-### 中繼資料預算
+### 中繼資料徽章
 
-在中繼資料中新增徽章語法，會在文章的頁面標題(H1)上方放置徽章。
+在中繼資料中新增徽章語法可將徽章放置在文章的頁面標題(H1)上方。
 
 例如，您可以使用以下名稱來命名徽章： _徽章1_ 或 _徽章2_. 或者，您可以更有創意(只要名稱開頭為 _徽章_)。
 
@@ -119,7 +121,7 @@ badgeExam: label="Exam ADO-E903" type="neutral"
 | 資訊（預設） | [!BADGE Beta]{type=Informative url="https://www.example.com"} |
 | 正面 | [!BADGE 新功能]{type=Positive url="https://www.example.com" tooltip="前往example.com"} |
 | 負面 | [!BADGE 已終止]{type=negative tooltip="此功能現已終止服務"} |
-| 中性 | [!BADGE 可能]{type=Neutral tooltip="一個騎手從馬上掉下來……"} |
+| 中性 | [!BADGE 可能]{type=Neutral tooltip="一名騎手從馬上掉了下來……"} |
 | 注意 | [!BADGE 注意]{type=Caution tooltip="黃色狀態"} |
 
 語法範例
@@ -134,16 +136,16 @@ badgeExam: label="Exam ADO-E903" type="neutral"
 |Caution|[!BADGE Attention]{type=Caution tooltip="Yellow status"}|
 ```
 
-### 徽章需求
+### 徽章的需求
 
 * 中繼資料中只允許兩個徽章。 此規則可設定，因此如果您需要例外狀況，請通知我們。
-* 只需要徽章標籤。 此 `type`， `url`、和 `tooltip` 引數為選用。 此 `type` 引數會決定顏色。 此 `url` 引數可讓使用者按一下徽章以開啟文章或頁面。 此 `tooltip` 引數會在mouseover上顯示工具提示文字。
-* 將徽章新增至 `TOC.md` 檔案會在指南中的每篇文章上顯示徽章。 如果您指定徽章跳至文章的URL，請務必使用根連結(例如 `/help/guide/article.md`)不是相對連結(例如， `article.md`)以說明不同資料夾中的文章。
+* 只需要徽章標籤。 此 `type`， `url`、和 `tooltip` 引數為選用專案。 此 `type` 引數會決定顏色。 此 `url` 引數可讓使用者按一下徽章，以開啟文章或頁面。 此 `tooltip` 引數會顯示滑鼠懸停時的工具提示文字。
+* 新增徽章至 `TOC.md` 檔案會顯示指南中每篇文章的徽章。 如果您指定讓徽章跳至文章的URL，請務必使用根連結(例如 `/help/guide/article.md`)不是相對連結(例如， `article.md`)來說明不同資料夾中的文章。
 * 新增徽章至 `metadata-new.md` 在存放庫中的每個文章上顯示徽章。
-* 對於中繼資料預算，請確定所有值都用引號括住。 對於內嵌徽章，請確定 `url` 和 `tooltip` 都會用引號包住。
+* 對於中繼資料徽章，請確定所有值都用引號包住。 對於內嵌徽章，請確定 `url` 和 `tooltip` 都會用引號包住。
 * 有效的型別值包括 *資訊性* （預設，藍色）， *正面* （綠色）， *負面* （紅色）， *中性* （深灰色），和 *注意* （黃色）。
 * 徽章標籤已本地化。
-* 如果指定了多個中繼資料徽章，則會根據徽章名稱以字母順序顯示徽章，例如 `badge1:` 或 `badgeWeb`.
+* 如果指定了多個中繼資料徽章，會根據徽章名稱以字母順序顯示徽章，例如 `badge1:` 或 `badgeWeb`.
 * 如果您想要URL在新索引標籤中開啟，請使用以下語法：
 
   ```
@@ -156,7 +158,7 @@ badgeExam: label="Exam ADO-E903" type="neutral"
 
 ## 文字反白顯示
 
-Workfront團隊要求能夠使用黃色醒目提示來表示即將推出的功能預覽。 以下是運作方式。
+Workfront團隊要求能夠使用黃色反白來指示即將推出的功能預覽。 以下是運作方式。
 
 範例 1:
 
@@ -166,7 +168,7 @@ This entire paragraph should NOT be highlighted. <span class="preview"> This wor
 
 已呈現:
 
-此整個段落不應反白顯示。 <span class="preview"> 這個字是 **粗體** 在醒目提示的句子內。</span> 而這只是最後一句。
+此整個段落不應反白顯示。 <span class="preview"> 這個字是 **粗體** 在醒目提示的句子內。</span> 這是最後一句。
 
 範例 2:
 
@@ -196,7 +198,7 @@ Not highlighted
 
 DIV的開頭。
 
-這是新的段落，然後是影像
+這是一個新的段落，然後是一個影像
 
 ![影像](/help/home/assets/analytics-icon-24.png)
 
@@ -208,7 +210,7 @@ DIV的開頭。
 
 ## 程式碼區塊的語法醒目提示
 
-Experience League支援程式碼區塊的語法醒目提示。 請務必指定語言，例如 `java` 在開頭的一組反引號之後，確定語法已正確反白。 如需有效語言的清單，請參閱 [https://prismjs.com](https://prismjs.com/#supported-languages). 如果缺少任何語言，請記錄jira票證。
+Experience League支援程式碼區塊的語法醒目提示。 請務必指定語言，例如 `java` 在開頭的一組反引號之後，確定語法已正確反白。 如需有效語言的清單，請參閱 [https://prismjs.com](https://prismjs.com/#supported-languages). 如果有任何語言遺失，請記錄jira票證。
 
 ### 程式碼區塊中的行編號
 
@@ -230,7 +232,7 @@ Experience League支援程式碼區塊的語法醒目提示。 請務必指定�
 
 **開始線上上編號_**
 
-新增 `start-number="n"` 在行號語法之後，以開始編號1以外的編號。
+新增 `start-number="n"` 在行號語法之後，在非1的編號上開始編號。
 
 以新的起始線(&amp;grave；&amp;grave；&amp;grave；`html {line-numbers="true" start-line="7"}`)：
 
@@ -249,7 +251,7 @@ Experience League支援程式碼區塊的語法醒目提示。 請務必指定�
 
 ### 程式碼區塊中的線條醒目提示
 
-新增 `highlight="n"` 在行號語法之後，反白標示程式碼區塊中的列。 指定 `11-13, 16` 將反白顯示第11到13和16行。
+新增 `highlight="n"` 在行號語法之後，用於反白顯示程式碼區塊中的列。 指定 `11-13, 16` 會醒目顯示第11到13和16行。
 
 反白線條(&amp;grave；&amp;grave；&amp;grave；`html {line-numbers="true" start-line="7" highlight="11-13, 16"}`)：
 
