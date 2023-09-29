@@ -5,9 +5,9 @@ audience: end-user
 feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Data Workbench 說明
-user-guide-description: 了解 Data Workbench 的多通道功能。 包含 Data Workbench 用戶端、安裝、資料集設定指南和更多內容。
+user-guide-description: 了解 Data Workbench 的多通道功能。包含 Data Workbench 用戶端、安裝、資料集設定指南和更多內容。
 source-git-commit: 0939146f59b86437027606aeaa824adf0c6b591c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3501'
 ht-degree: 100%
 
