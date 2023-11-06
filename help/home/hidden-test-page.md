@@ -5,17 +5,17 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="下載Premium"
 badgeExam: label="考試ADO-E903" type="neutral"
-exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: 51cc5fb0196d1bc34325e65c2715eaeab5590938
+exl-id: 02245655-511e-4e89-8846-dac85681ea91
+source-git-commit: 6df7ed2c80f04416a48db8d4bc52ede2e87bf372
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '803'
 ht-degree: 4%
 
 ---
 
 # 隱藏測試頁面
 
-啟動?
+啟動? 重複，這個自動啟用是在太平洋時間上午11:30嗎？
 
 ## 預覽問題
 
@@ -82,7 +82,7 @@ ht-degree: 4%
 
 [!BADGE 徽章範例]
 
-有兩種型別的徽章，每一種都有不同的語法：
+有兩種型別 of 徽章，每個都具有不同的語法：
 
 * **中繼資料**  — 在頁面頂端附近顯示徽章
 * **內嵌**  — 顯示語法所在的徽章
@@ -198,7 +198,7 @@ Not highlighted
 
 DIV的開頭。
 
-這是一個新的段落，然後是一個影像
+這是新的段落，然後是影像
 
 ![影像](/help/home/assets/analytics-icon-24.png)
 
