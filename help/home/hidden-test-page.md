@@ -6,16 +6,16 @@ hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="下載Premium"
 badgeExam: label="考試ADO-E903" type="neutral"
 exl-id: 02245655-511e-4e89-8846-dac85681ea91
-source-git-commit: 6df7ed2c80f04416a48db8d4bc52ede2e87bf372
+source-git-commit: c71bf8c5b40b478c5b1901b79a29b3d1c3ca8fde
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '805'
 ht-degree: 4%
 
 ---
 
 # 隱藏測試頁面
 
-啟動? 重複，這個自動啟用是在太平洋時間上午11:30嗎？
+啟動? 在下午3:00左右重新檢查提交。 3:30會上線嗎？
 
 ## 預覽問題
 
