@@ -3,9 +3,9 @@ title: Data Workbench 生命週期結束常見問題
 description: 進一步了解 Data Workbench 的生命週期結束公告。
 exl-id: 0abb72f1-b68b-48cc-829c-cac7bd21a6de
 source-git-commit: 9097a4ac8dc4339193d745c54c94129470a7c11f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '379'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Data Workbench 的生命週期結束日期為 **2023 年 12 月 31 日**。
 
 ## Data Workbench 為何停用？
 
-隨著 Adobe Experience Platform 的發行和持續改進，客戶可以跨管道結合資料，並用於多個 Adobe 解決方案中。 具體來說， [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=zh-Hant) 可讓您取得跨管道資料，以便對該資料執行進階分析。
+隨著 Adobe Experience Platform 的發行和持續改進，客戶可以跨管道結合資料，並用於多個 Adobe 解決方案中。 具體來說，[Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=zh-Hant) 允許您獲取跨管道資料並對該資料執行進階分析。
 
 Data Workbench 中目前可用的大多數功能和使用案例目前在 Adobe Experience Platform 解決方案中均可用。 但是，在有限的情況下，Data Workbench 功能不會隨個別的 Adobe Experience Platform 解決方案一起複寫。請聯繫您組織的 Adobe 客戶經理，討論特定領域的功能或使用案例相容性。
 
